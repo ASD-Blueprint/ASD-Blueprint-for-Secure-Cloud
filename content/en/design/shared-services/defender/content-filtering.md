@@ -6,7 +6,7 @@ description: "This section describes the design decisions associated with Conten
 
 Content Filtering within Exchange Online Protection refers to SPAM management and SPAM policies.
 
-Content Filtering polices allow for:
+Content Filtering polices enable:
 
 * The customisation of response on SPAM detection
 * Marking emails as SPAM based on language detected
@@ -14,7 +14,7 @@ Content Filtering polices allow for:
 * Increasing the SPAM score if certain content is present in the email
 * Marking emails as SPAM if certain content is present in the email
 
-The use of these policies allows greater management control over SPAM emails.
+The use of these policies enables greater management control over SPAM emails.
 
 {{% alert title="Design Decisions" color="warning" %}}
 

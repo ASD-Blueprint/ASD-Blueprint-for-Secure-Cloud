@@ -23,7 +23,7 @@ On deletion of a user's OneDrive account, its content will be deleted. The delet
 
 | Decision Point  | Design Decision                                                                                                                                 | Justification                                                                                              |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Deployment Type | Migration of data is out of scope for the blueprint however Microsoft provides vendor guidance on possible migration paths for the organisation. | Migration method is dependent on the outcome of an assessment of quantity and type of data to be migrated. |
+| Deployment Type | Migration of data is out of scope for the Blueprint however Microsoft provides vendor guidance on possible migration paths for the organisation. | Migration method is dependent on the outcome of an assessment of quantity and type of data to be migrated. |
 
 {{% /alert %}}
 

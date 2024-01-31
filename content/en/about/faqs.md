@@ -28,7 +28,7 @@ ASD is responsible for updating and maintaining the Blueprint, responding to que
 
 ### What benefit does the Blueprint provide to organisations?
 
-The Blueprint provides a pathway for organisations to build secure cloud or hybrid workspaces. Using the Blueprint's templates and guidance to securely implement cloud or hybrid workspaces will help organisations drive productivity and business outcomes by enabling employees to work and collaborate from the office or from home.
+The Blueprint provides a pathway for organisations to build secure cloud or hybrid workspaces. Using the Blueprint's templates and guidance to securely implement cloud or hybrid workspaces will help organisations drive productivity and business outcomes by enabling staff to work and collaborate from the office or from home.
 
 The Blueprint also aims to support organisations to move away from using unsecure, aging, and bespoke legacy systems, and move to innovative, secure, and configurable systems that are well-supported by enterprise vendors including Microsoft.
 
@@ -54,7 +54,7 @@ Cloud systems developed or configured by NCCEs need to be assessed to ensure the
 
 Endorsed IRAP assessors assist in securing systems and data by independently assessing an organisation's cyber security posture, identifying security risks and suggesting mitigation measures.
 
-You can find the [list of IRAP assessors](https://www.cyber.gov.au/resources-business-and-government/assessment-and-evaluation-programs/infosec-registered-assessors-program/irap-assessors) online. 
+A [list of IRAP assessors](https://www.cyber.gov.au/resources-business-and-government/assessment-and-evaluation-programs/infosec-registered-assessors-program/irap-assessors) can be found online. 
 
 ### How do I get in touch with other organisations using the Blueprint?
 
@@ -62,4 +62,4 @@ The Blueprint provides an avenue to share lessons learnt and best practice in de
 
 ### Where can I go to for more information or if I have a question  not addressed above?
 
-If you have any further questions or need more information about anything above, please get in touch with us at [blueprint@asd.gov.au](mailto:blueprint@asd.gov.au) or on [GitHub](https://github.com/govau/desktop.gov.au). You can also sign up to ASD's [Cyber Security Partnership Program](https://www.cyber.gov.au/partnershipprogram) to be informed of new cyber security advice and alerted to emerging cyber threats.
+If you have any further questions or need more information about anything above, please get in touch with us at [blueprint@asd.gov.au](mailto:blueprint@asd.gov.au) or on [GitHub](https://github.com/ASD-Blueprint/ASD-Blueprint-for-Secure-Cloud). You can also sign up to ASD's [Cyber Security Partnership Program](https://www.cyber.gov.au/partnershipprogram) to be informed of new cyber security advice and alerted to emerging cyber threats.

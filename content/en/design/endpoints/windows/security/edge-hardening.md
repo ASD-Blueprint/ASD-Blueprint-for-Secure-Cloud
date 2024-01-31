@@ -29,7 +29,7 @@ The Microsoft Edge security settings support Edge version 90 and later. The Micr
 
 Web advertisements may be used by threat actors to deliver malicious code or to attempt to phish legitimate users.
 
-The ASD recommends blocking browsers from processing web advertisements as part of the Essential Eight. Microsoft Edge's native web advertisement capability is limited and does not provide an effective mitigation against the risk of malicious web advertisement. Edge supports third-party add-ons to provide greater web advertisement blocking with examples including uBlock Origin and Ad Block Plus. However, please note that the ASD does not explicitly recommend either product or other third-party add-ons. Instead, organisations should perform their own risk-based assessment prior to using them as part of a blueprint deployment.
+The ASD recommends blocking browsers from processing web advertisements as part of the Essential Eight. Microsoft Edge's native web advertisement capability is limited and does not provide an effective mitigation against the risk of malicious web advertisement. Edge supports third-party add-ons to provide greater web advertisement blocking with examples including uBlock Origin and Ad Block Plus. However, please note that the ASD does not explicitly recommend either product or other third-party add-ons. Instead, organisations should perform their own risk-based assessment prior to using them as part of a deployment.
 
 If supported by their existing web content filtering implementations, organisations may also implement web advertisement blocking at the proxy level for additional protection against web advertisement-based threats.
 

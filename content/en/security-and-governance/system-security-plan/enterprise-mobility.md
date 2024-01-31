@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The enterprise mobility section of a System Security Plan (SSP) should document an organisation's approach to enterprise mobility, including allowing privately owned devices to access systems and data and mobile device management. As with other sections of the SSP, information in the enterprise mobility section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to enterprise mobility. When complete, remove any instructional boxes throughout. 
 
@@ -34,10 +34,10 @@ Use of `<SYSTEM-NAME>` by `<ORGANISATION-NAME>`'s staff and contractors is in ac
 
 Technical controls for `<SYSTEM-NAME>`'s implementation of enterprise mobility are configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au), and includes the following technical configurations:
 
-- conditional access policies are set to prevent non corporately-issued devices from connecting to `<SYSTEM-NAME>` or its resources
-- application control is configured on corporately issued mobile devices to provide some restriction of personal use on these devices
-- corporately issued devices connect to the internet through `<ORGANISATION-NAME>`'s `<VPN-SYSTEM>` when connecting remotely, and do so with split tunnelling disabled
-- corporately issued devices connect to the internet through `<ORGANISATION-NAME>`'s `<GATEWAY-SYSTEM>`, which also restricts web categories associated with personal use on these devices.
+* conditional access policies are set to prevent non corporately-issued devices from connecting to `<SYSTEM-NAME>` or its resources
+* application control is configured on corporately issued mobile devices to provide some restriction of personal use on these devices
+* corporately issued devices connect to the internet through `<ORGANISATION-NAME>`'s `<VPN-SYSTEM>` when connecting remotely, and do so with split tunnelling disabled
+* corporately issued devices connect to the internet through `<ORGANISATION-NAME>`'s `<GATEWAY-SYSTEM>`, which also restricts web categories associated with personal use on these devices.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -66,12 +66,12 @@ Technical controls for `<SYSTEM-NAME>`'s implementation of mobile device managem
 `<SYSTEM-NAME>` requires use of the latest version of iOS, which is currently iOS 17. The most recent version of iOS to have completed the relevant protection profile assessment is iOS 16. However, `<ORGANISATION-NAME>` considers that while the protection profile assessment is not of the implemented operating system (iOS 17), the recency of the assessment of iOS 16 (OS version N-1) mitigates associated risks.
 
 iOS devices are configured to:
-- operate in Supervised Mode
-- be remotely wipeable using Intune
-- operate with a secure lock screen
-- apply the latest security patches released by Apple
-- restrict iOS users from installing applications from the App Store on iOS
-- restrict iOS users from disabling or modifying security functionality once provisioned.
+* operate in Supervised Mode
+* be remotely wipeable using Intune
+* operate with a secure lock screen
+* apply the latest security patches released by Apple
+* restrict iOS users from installing applications from the App Store on iOS
+* restrict iOS users from disabling or modifying security functionality once provisioned.
 
 Mobile device encryption is also inherently enabled for iOS devices' internal storage. 
 
@@ -100,8 +100,8 @@ Procedures related to overseas travel by `<SYSTEM-NAME>` users are outlined in t
 #### Technical controls implemented
 
 Technical controls for `<SYSTEM-NAME>`'s implementation of mobile device usage were configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au), and implements the following technical configurations:
-- Windows Defender for Endpoint is configured to restrict allowed peripherals to an approved list
-- iOS is configured to restrict allowed peripherals to an approved list.
+* Windows Defender for Endpoint is configured to restrict allowed peripherals to an approved list
+* iOS is configured to restrict allowed peripherals to an approved list.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -116,7 +116,7 @@ Technical controls for `<SYSTEM-NAME>`'s implementation of mobile device usage w
 
 #### Design
 
-- [Conditional Access]({{< ref "conditional-access.md">}})
+- [Conditional Access]({{< ref "design/platform/identity/conditional-access.md">}})
 - [Securing iOS devices]({{< ref "securing-ios-devices.md">}})
 - [Endpoint Management]({{<ref "design/platform/client">}})
 

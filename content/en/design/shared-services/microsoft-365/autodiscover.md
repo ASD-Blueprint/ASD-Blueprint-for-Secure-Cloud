@@ -50,7 +50,7 @@ The above process requires appropriate [External DNS records](https://learn.micr
 
 {{% alert title="Note" color="info" %}}
 
-Public DNS records should be maintained within the Australian Protective Domain Name (AUPDNS) service per ACSC [Gateway Security Guidance Package: Gateway Technology Guide](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/gateway-hardening/gateway-security-guidance-package-gateway-technology-guides).
+Public DNS records should be maintained within the Australian Protective Domain Name (AUPDNS) service per ASD's [Gateway Security Guidance Package: Gateway Technology Guide](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/gateway-hardening/gateway-security-guidance-package-gateway-technology-guides).
 
 {{% /alert %}}
 

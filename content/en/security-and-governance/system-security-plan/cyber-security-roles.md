@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The Cyber Security Roles section of a System Security Plan (SSP) should outline the relevant managerial and leadership roles involved in managing cyber security risks and controls relating to a system within an organisation. This information should be documented according to relevant controls outlined in ASD's ISM.
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the cyber security roles in their organisation. When complete, remove any grey instructional or blue guidance boxes throughout. 
 
@@ -113,12 +113,12 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to these roles
 
 #### Security & Governance
 
-- None identified
+* None identified
 
 #### Design
 
-- None identified
+* None identified
 
 #### External Documentation
 
-- ASD's [*Guidelines for Cyber Security Roles*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-cyber-security-roles)
+* ASD's [*Guidelines for Cyber Security Roles*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-cyber-security-roles)

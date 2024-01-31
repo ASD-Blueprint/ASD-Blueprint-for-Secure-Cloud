@@ -10,7 +10,7 @@ Language packs add additional display, help and proofing tools to Microsoft Offi
 
 | Decision Point      | Design Decision           | Justification                                                                                                                                                                                                                                               |
 |---------------------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Default Language    | English (UK) – AU Default | Required to support the Microsoft Office deployment and allow user productivity.<br>English (US) language pack is removed from the SOE as part of the English (UK) install. English (UK) contains the AU region language pack which is then set as default. |
+| Default Language    | English (UK) – AU Default | Required to support the Microsoft Office deployment and enable user productivity.<br>English (US) language pack is removed from the SOE as part of the English (UK) install. English (UK) contains the AU region language pack which is then set as default. |
 | Additional Language | Not Configured            | Additional languages will be installed if required to meet organisation requirements.                                                                                                                                                                       |
 
 {{% /alert %}}

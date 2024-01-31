@@ -27,8 +27,8 @@ This System Security Plan (SSP) describes the organisational policies and proces
 
 ### Purpose of this System Security Plan
 
-The purpose of this SSP is to describe the organisational policies and processes relevant to, and technical controls implemented within `<ORGANISATION-NAME>`'s `<SYSTEM-NAME>`, including the underlying components leveraged in the system's deployment. This document has been developed to comply with the Australian Signals Directorate's (ASD's) *Information Security Manual's* (ISM's) requirements in relation to documentation for system authorisation.
+The purpose of this SSP is to describe the organisational policies and processes relevant to, and technical controls implemented within `<ORGANISATION-NAME>`'s `<SYSTEM-NAME>`, including the underlying components leveraged in the system's deployment. This document has been developed to comply with the Australian Signals Directorate's (ASD's) [*Information Security Manual's*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism) (ISM's) requirements in relation to documentation for system authorisation.
 
 This document is written using descriptive and explanatory language to assist readers in understanding how `<SYSTEM-NAME>` operates securely, the controls implemented, and the residual controls that are addressed elsewhere by `<ORGANISATION-NAME>`.
 
-For detailed information on how `<SYSTEM-NAME>` addresses specific controls in the ISM, please refer to the [System Security Plan Annex]({{<ref "/security-and-governance/annex">}}).
+For detailed information on how `<SYSTEM-NAME>` addresses specific controls in ASD's ISM, please refer to the [System Security Plan Annex]({{<ref "/security-and-governance/annex">}}).

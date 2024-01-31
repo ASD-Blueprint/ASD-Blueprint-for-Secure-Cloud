@@ -8,7 +8,7 @@ The type of deployment methods used for the Standard Operating Environment (SOE)
 
 Hybrid can benefit from enabling the Microsoft Endpoint Configuration Manager (MECM) Co-management feature. Once enabled this allows additional deployment methods which can be utilised to ensure images remain light weight. Co-management provides a more staged approach to moving workloads into the cloud that may assist existing larger environments to complete a more gradual transition.
 
-Windows 10 and 11 can be deployed via Intune or MECM, or a combination of both. The configuration of a Windows deployment will depend upon which technologies are available to an organisation and whether a hybrid deployment is required.
+Windows 10 and 11 can be deployed via Intune or MECM, or a combination of both. The configuration of a Windows deployment will depend upon which technologies are available to organisations and whether a hybrid deployment is required.
 
 Windows deployments will be based on either a deployment which is cloud native or hybrid.
 

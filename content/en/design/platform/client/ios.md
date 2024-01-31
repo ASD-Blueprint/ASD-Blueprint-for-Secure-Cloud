@@ -4,7 +4,7 @@ weight: 35
 description: "This section describes the design decisions associated with the management of Applications deployed to endpoints for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-iOS devices are enrolled with the Microsoft Intune portal to gain secure access to organisational data. After devices are enrolled, they become `managed`. Organisations can assign policies and apps to the device through their Mobile Device Management (MDM) provider, such as Microsoft Intune.
+iOS devices are enrolled with the Microsoft Intune portal to gain secure access to organisational data. After devices are enrolled, they become `MANAGED`. Organisations can assign policies and apps to the device through a Mobile Device Management (MDM) provider, such as Microsoft Intune.
 
 {{% alert title="Design Decisions" color="warning" %}}
 

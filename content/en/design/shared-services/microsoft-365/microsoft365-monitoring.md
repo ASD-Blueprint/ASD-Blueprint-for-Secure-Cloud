@@ -39,7 +39,7 @@ Microsoft Defender for Office 365 is part of the Microsoft 365 Defender stack. I
 
 #### Design
 
-* [Data Loss Prevention]({{<ref "data-loss-prevention">}})
+* [Data Loss Prevention]({{<ref "design/shared-services/purview/data-loss-prevention">}})
 * [Logging and Auditing]({{<ref "audit-and-logging">}})
 * [Security logging and monitoring overview]({{<ref "siem">}})
 

@@ -10,7 +10,7 @@ The Power Platform is made up of the following services.
 * **Microsoft Power Automate**:  lets organisations create automated workflows between applications and services, for example to synchronise files, get notifications, and collect data
 * **Microsoft Power BI**: a business analytics service that delivers visual insights to enable fast, informed decisions. Users can collaboratively create and share customised dashboards and interactive reports
 * **AI Builder** - a Power Platform capability that helps quickly bring AI to apps and flows that connect to business data. AI Builder provides prebuilt AI models, where organisations do not need to gather data to build and train the model, as well as the ability to create custom AI models  
-* **Power Virtual Agents** : allows easily creation of bots using a guided, no-code graphical interface without the need for data scientists or developers
+* **Power Virtual Agents** : enables easy creation of bots using a guided, no-code graphical interface without the need for data scientists or developers
 * **Microsoft Power Automate RPA** – An additional robotic process automation (RPA) capability within Microsoft Power Automate that enables automation of manual business processes across on-premises, cloud apps and services 
 * **Power Apps Portals** – an additional service that delivers a complete content management system out of the box, with all content stored in Dataverse. Content can be edited through Power Apps Portals Studio or directly by using the Portal Management app
 * **Microsoft Power Pages** (*currently preview*) - a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites.  

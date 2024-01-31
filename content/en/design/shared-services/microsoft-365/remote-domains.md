@@ -4,7 +4,7 @@ weight: 30
 description: "This section describes the design decisions associated with Remote Domains for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Remote Domains allow administrators to control the type of replies and format of messages users send to the destination domain.
+Remote Domains enable administrators to control the type of replies and format of messages users send to the destination domain.
 
 Administrators can configure Exchange to allow (or block) the following:
 
@@ -32,8 +32,8 @@ Remote Domain Configuration
 | Out of Office Automatic Replies | Allow only external Out of Office replies: `Selected`                                                                       | Limits the type of client automatic replies.                                     |
 | Automatic Replies               | Allow automatic replies: `Unchecked`<br>Allow automatic forwarding: `Unchecked`                                             | Limits automatic replies and automatic forwards.                                 |
 | Message Reporting               | Allow Delivery Reports: `Ticked`<br>Allow Non-delivery Reports:`Ticked`<br>Allow Meeting Forward Notifications: `Unchecked` | Limits delivery reports, no-delivery reports, and meeting forward notifications. |
-| Use rich text format            | Follow User Settings: `Selected`                                                                                            | Allows the control over message format.                                          |
-| Supported Character Set         | None                                                                                                                        | Allows the control over the character set.                                       |
+| Use rich text format            | Follow User Settings: `Selected`                                                                                            | Enables control over message format.                                          |
+| Supported Character Set         | None                                                                                                                        | Enables control over the character set.                                       |
 
 ### Related information
 

@@ -4,16 +4,16 @@ weight: 100
 description: "This section describes the design decisions associated with operational support for Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
-Windows 10 and 11, and supporting management tools, offer various Standard Operating Environment (SOE) support features to allow support personnel to access a machine remotely or provide users with the option to perform automated repairs. The following support components are available to support Windows 10 and 11:
+Windows 10 and 11, and supporting management tools, offer various Standard Operating Environment (SOE) support features to enable support staff to access a machine remotely or provide users with the option to perform automated repairs. The following support components are available to support Windows 10 and 11:
 
 * **Intune** – Intune can remotely wipe, reset and remove a device from Microsoft Entra ID. These functions are controlled by role-based administration, permitting only certain administrators to control these settings.
-* **Windows Remote Management (WinRM)** – WinRM is the Microsoft implementation of the WS-Management Protocol, a standard Simple Object Access Protocol (SOAP) based, firewall-friendly protocol that allows hardware and Operating Systems from different vendors to interoperate.
+* **Windows Remote Management (WinRM)** – WinRM is the Microsoft implementation of the WS-Management Protocol, a standard Simple Object Access Protocol (SOAP) based, firewall-friendly protocol that enables hardware and Operating Systems from different vendors to interoperate.
 * **WS-Management protocol** - The WS-Management protocol specification provides a common way for systems to access and exchange management information across an IT infrastructure. WinRM and Intelligent Platform Management Interface (IPMI), along with the Event Collector are components of the Windows Hardware Management features.
 * **Windows Remote Assistance** – Windows Remote Assistance in Windows uses the Remote Desktop Protocol (RDP) protocol to provide a Remote Desktop connection that is interactive between the locally logged on user and a remote user.
 * **Remote Desktop** – Remote Desktop enables a user to remotely logon interactively to a workstation from another computer with a supported Remote Desktop client.
 * **Remote Control** – Remote control options are limited to the following:
   * TeamViewer which is a paid service that fully integrates in Intune.
-  * Remote Control within Microsoft Endpoint Configuration Manager (MECM) is this is configured in a hybrid deployment.
+  * Remote Control within Microsoft Endpoint Configuration Manager (MECM) is configured in hybrid deployments.
   * Microsoft Teams assuming the user can share the desktop.
 
 {{% alert title="Design Decisions" color="warning" %}}

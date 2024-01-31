@@ -21,7 +21,7 @@ Azure dynamically (every 48 hours) compares the security configuration against t
 
 The identity score feeds into Microsoft 365 Defender where trends in the score over time can also be reviewed.
 
-The secure score does not express an absolute measure of how likely an organisation is to get breached. It expresses the extent to which the organisation has adopted features that can offset the risk of being breached. No service can guarantee that an organisation will not be breached, and the secure score should not be interpreted as a guarantee in any way.
+The secure score does not express an absolute measure of how likely an organisation is to get breached. It expresses the extent to which the organisation has adopted features that can offset the risk of being breached. No service can guarantee that organisations will not be breached, and the secure score should not be interpreted as a guarantee in any way.
 
 {{% alert title="Design Decisions" color="warning" %}}
 
@@ -37,7 +37,7 @@ See the [Identity Monitoring]({{<ref "reporting-and-monitoring">}}) design decis
 
 #### Identity Protection
 
-See the [Identity Protection]({{<ref "protection">}}) design decisions.
+See the [Identity Protection]({{<ref "design/platform/identity/protection">}}) design decisions.
 
 #### Microsoft Defender for Identity
 
@@ -76,13 +76,13 @@ Microsoft recommends using all the above methods, however if this is not possibl
 | Internet connectivity                                        | Domain controllers must have internet connectivity                                  | Domain controllers which will have Defender for Identity sensors installed, must have internet connectivity to the Defender for Identity Cloud Service. <br>Defender for Identity sensors support the use of a web proxy / WPAD for internet connectivity.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Directory service accounts                                   | A standard AD user account & password<br><br>A group Managed Service Account (gMSA) | If the organisation environment consists of Windows Server 2008 R2 SP1 domain controllers a standard AD user account and password is required with read access to all objects in the monitored domains.<br><br>If organisation environment consists of Windows Server 2012 or above domain controllers than a group Managed Service Account (gMSA) is required with read access to all objects in the monitored domain.<br><br>If the organisation environment consists of a mixture of domain controller operating system versions, then a combination of group Managed Service Account (gMSA) and Standard user account is required. See [Microsoft Defender for Identity prerequisites](https://learn.microsoft.com/defender-for-identity/prerequisites). |
 | Network Name Resolution (NNR)                                | Reverse DNS lookup and one other method (listed above)                              | This is the minimum NNR requirement for Defender for Identity. Microsoft recommends using all of the above-mentioned resolution methods available within organisation environment.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Deleted Objects container permissions                        | Read-only                                                                           | Microsoft recommends users should have read-only permissions assigned on the [Deleted objects container](https://learn.microsoft.com/defender-for-identity/directory-service-accounts#permissions-required-for-the-dsa) to allow Defender for Identity to detect user deletions from the organisations Active Directory.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Deleted Objects container permissions                        | Read-only                                                                           | Microsoft recommends users should have read-only permissions assigned on the [Deleted objects container](https://learn.microsoft.com/defender-for-identity/directory-service-accounts#permissions-required-for-the-dsa) to enable Defender for Identity to detect user deletions from the organisations Active Directory.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 {{% /alert %}}
 
 ##### Role groups
 
-Defender for Identity provides security groups to allow the implementation of a RBAC model.
+Defender for Identity provides security groups to enable the implementation of a RBAC model.
 
 Microsoft Entra ID provides the basis for the Defender for Identity role groups. When Defender for Identity is enabled for the first time it automatically creates the three security groups in Microsoft Entra ID, using the product's previous name - Azure ATP. The three Defender for Identity security groups are:
 
@@ -138,7 +138,7 @@ The purpose of this is to combine Defender for Identity's monitoring of AD and D
 
 ##### Firewall
 
-As Defender for Identity is reliant upon the Defender for Identity portal and the Defender for Identity sensors, firewall ports are required to be opened to allow communication between infrastructure (Domain Controllers and standalone servers) and Defender for Identity. These port configurations are updated frequently and are available online from Microsoft ([Configure endpoint proxy and Internet connectivity settings for the Microsoft Defender for Identity Sensor](https://learn.microsoft.com/defender-for-identity/configure-proxy), [Microsoft Defender for Identity prerequisites](https://learn.microsoft.com/defender-for-identity/prerequisites)).
+As Defender for Identity is reliant upon the Defender for Identity portal and the Defender for Identity sensors, firewall ports are required to be opened to enable communication between infrastructure (Domain Controllers and standalone servers) and Defender for Identity. These port configurations are updated frequently and are available online from Microsoft ([Configure endpoint proxy and Internet connectivity settings for the Microsoft Defender for Identity Sensor](https://learn.microsoft.com/defender-for-identity/configure-proxy), [Microsoft Defender for Identity prerequisites](https://learn.microsoft.com/defender-for-identity/prerequisites)).
 
 It is important to note the traffic between the client and the Defender for Identity portal offering is TLS1.2 encrypted. Configuration will occur on the proxy, external gateway and local infrastructure servers of the organisation as required.
 
@@ -153,7 +153,7 @@ Further details on the firewall configuration for the solution can be found in t
 
 Defender for Cloud Apps is a Cloud Access Security Broker that provide visibility, control over data travel and powerful analytics to identify and deal with cyberthreats. Integrating Defender for Identity with Defender for Cloud Apps extends this capability to hybrid environments and presents all Defender for Identity Suspicious Activity (SA) alerts to the Defender for Cloud Apps dashboard, reducing the need for security analysts to monitor multiple consoles.
 
-To connect Defender for Identity to Defender for Cloud Apps the administrator enabling the setting must be a Microsoft Entra ID Global Admin. Integration is enabled in the Defender for Cloud Apps console and does not require configuration from the Defender for Identity console. Defender for Cloud Apps allows organisations to access the Defender for Identity data within a single monitoring and management portal reducing the number of monitoring consoles required, however the following needs to be considered:
+To connect Defender for Identity to Defender for Cloud Apps the administrator enabling the setting must be a Microsoft Entra ID Global Admin. Integration is enabled in the Defender for Cloud Apps console and does not require configuration from the Defender for Identity console. Defender for Cloud Apps enables organisations to access the Defender for Identity data within a single monitoring and management portal reducing the number of monitoring consoles required, however the following needs to be considered:
 
 * **Alerts** – Defender for Cloud Apps can display Defender for Identity alerts within the Alerts queue. Defender for Cloud Apps also provides additional alert filtering not available within Defender for Identity.
 * **Alerts management** – Management of alerts can be performed in both Defender for Cloud Apps and Defender for Identity portals. Closing alerts in one portal will not necessarily close the same alert in the other portal. It is recommended to choose which portal will be used to manage and remediate alerts to avoid duplicate effort.
@@ -176,14 +176,14 @@ To connect Defender for Identity to Defender for Cloud Apps the administrator en
 
 #### Design
 
-* [Identity Protection]({{<ref "protection">}})
+* [Identity Protection]({{<ref "design/platform/identity/protection">}})
 * [Identity Monitoring]({{<ref "reporting-and-monitoring">}})
 
 #### References
 
 * [Microsoft Identity Security Overview](https://learn.microsoft.com/azure/security/fundamentals/identity-management-overview)
 * [Azure security baseline for Azure Active Directory](https://learn.microsoft.com/security/benchmark/azure/baselines/aad-security-baseline)
-* [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is)
-* [Identity secure score in Azure Active Directory](https://learn.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)
-* [Azure Active Directory security operations guide](https://learn.microsoft.com/azure/active-directory/fundamentals/security-operations-introduction)
+* [Microsoft Defender for Identity](https://learn.microsoft.com/defender-for-identity/what-is)
+* [Identity secure score in Azure Active Directory](https://learn.microsoft.com/entra/identity/monitoring-health/concept-identity-secure-score)
+* [Azure Active Directory security operations guide](https://learn.microsoft.com/entra/architecture/security-operations-introduction)
 * [Azure Active Directory identity management and access management for AWS](https://learn.microsoft.com/azure/architecture/reference-architectures/aws/aws-azure-ad-security)

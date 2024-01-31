@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The server application hardening section of a System Security Plan (SSP) should document an organisation's approach to hardening server applications using vendor and ASD guidance. As with other sections of the SSP, information in the server application hardening section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex.
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to operating system hardening. When complete, remove any instructional boxes throughout. 
 
@@ -33,8 +33,8 @@ This section of the SSP is applicable to application hardening of applications o
 #### Organisational policies and processes implemented
 
 All vendors of server applications used within `<SYSTEM-NAME>` have been assessed by `<ORGANISATION-NAME>` as demonstrating a commitment to secure-by-design and secure-by-default principles, use of memory-safe programming languages where possible, secure programming practices, and maintaining the security of their products.
-- `<ORGANISATION-NAME>` [Vendor Assessment: Microsoft]({{<ref "security-and-governance/general-documentation">}})
-- `<ORGANISATION-NAME>` [Vendor Assessment: \<VENDOR-2>]({{<ref "security-and-governance/general-documentation">}})
+* `<ORGANISATION-NAME>` [Vendor Assessment: Microsoft]({{<ref "security-and-governance/general-documentation">}})
+* `<ORGANISATION-NAME>` [Vendor Assessment: \<VENDOR-2>]({{<ref "security-and-governance/general-documentation">}})
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -47,20 +47,20 @@ Technical controls for hardening of Entra Connect and Exchange Hybrid Configurat
 ### Related information
 
 #### Security & Governance
-- [Essential Eight: Application Control]({{< ref "application-control.md">}})
-- [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
-- [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
+* [Essential Eight: Application Control]({{< ref "application-control.md">}})
+* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
+* [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
 
 #### Design
 
-- [Operating System]({{< ref "operating-system.md">}})
-- [Windows Hardening]({{< ref "windows-hardening.md">}})
-- [Windows Update and Patching]({{< ref "windows-update-and-patching.md">}})
-- [Endpoint Device Updates]({{<ref "device-updates">}})
+* [Operating System]({{< ref "operating-system.md">}})
+* [Windows Hardening]({{< ref "windows-hardening.md">}})
+* [Windows Update and Patching]({{< ref "windows-update-and-patching.md">}})
+* [Endpoint Device Updates]({{<ref "device-updates">}})
 
 
 #### External documentation
 
-- ASD's [*Guidelines for System Hardening*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-hardening)
-- ASD's [*Shifting the Balance of Cybersecurity Risk: Principles and Approaches for Security-by-Design and Default*](https://www.cyber.gov.au/about-us/view-all-content/publications/principles-and-approaches-for-security-by-design-and-default)
-- ASD's [*The Case for Memory Safe Roadmaps*](https://www.cyber.gov.au/about-us/view-all-content/publications/case-memory-safe-roadmaps)
+* ASD's [*Guidelines for System Hardening*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-hardening)
+* ASD's [*Shifting the Balance of Cybersecurity Risk: Principles and Approaches for Security-by-Design and Default*](https://www.cyber.gov.au/about-us/view-all-content/publications/principles-and-approaches-for-security-by-design-and-default)
+* ASD's [*The Case for Memory Safe Roadmaps*](https://www.cyber.gov.au/about-us/view-all-content/publications/case-memory-safe-roadmaps)

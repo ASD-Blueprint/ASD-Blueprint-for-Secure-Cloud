@@ -4,7 +4,7 @@ weight: 20
 description: "This section describes the design decisions associated with securing Web Services or cloud Software as a Services (SaaS) applications including Microsoft and other third party services for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-[Microsoft Defender for Cloud Apps](https://docs.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps) is a part of the [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-365-defender) suite of capabilities. Capabilities include a cloud access security broker (CASB) to help control access to and secure an organisations cloud assets.
+[Microsoft Defender for Cloud Apps](https://docs.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps) is a part of the [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-365-defender) suite of capabilities. Capabilities include a cloud access security broker (CASB) to help control access to and secure organisations cloud assets.
 
 [Office 365 Cloud App Security](https://docs.microsoft.com/defender-cloud-apps/editions-cloud-app-security-o365) is a subset of Microsoft Defender for Cloud Apps that provides enhanced visibility and control for Office 365. Office 365 Cloud App Security has access to all of the features of Microsoft Defender for Cloud Apps, however only supports the Office 365 app connector. Office 365 Cloud App Security is accessed through the same portal as Microsoft Defender for Cloud Apps.
 
@@ -58,9 +58,9 @@ Continuous reports can be generated a few ways such as configuring one or more o
 * **Log collector** – centralisation of logs from one or more proxy or firewall devices to a Docker-powered collector using Syslog and/or File Transfer Protocol (FTP).
 * **Microsoft Defender Advanced Threat Protection (ATP) integration** – native integration with Defender ATP logs directly from onboarded endpoint devices running, regardless of whether they connect to cloud services via a managed gateway or directly via the internet.
 
-Microsoft Defender for Cloud Apps supports a wide range of [popular proxy and firewall vendors and products](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery#supported-firewalls-and-proxies-) for both snapshot and continuous reports (via log collectors). A custom parser can also be configured for unsupported devices allowing manual attribute mapping.
+Microsoft Defender for Cloud Apps supports a wide range of [popular proxy and firewall vendors and products](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery#supported-firewalls-and-proxies-) for both snapshot and continuous reports (via log collectors). A custom parser can also be configured for unsupported devices enabling manual attribute mapping.
 
-Once a cloud app has been discovered and its usage reviewed, it can be either sanctioned (approved) or unsanctioned (prohibited) via the Discovered Apps tab. Tagging a cloud app as unsanctioned does not block access directly but allows for the generation of a block script that can be downloaded from Microsoft Defender for Cloud Apps and imported into a proxy of firewall appliance. When integrated with Microsoft Defender for Endpoint, app access enforcement can be enabled to block access to apps marked as unsanctioned.
+Once a cloud app has been discovered and its usage reviewed, it can be either sanctioned (approved) or unsanctioned (prohibited) via the Discovered Apps tab. Tagging a cloud app as unsanctioned does not block access directly but enables the generation of a block script that can be downloaded from Microsoft Defender for Cloud Apps and imported into a proxy or firewall appliance. When integrated with Microsoft Defender for Endpoint, app access enforcement can be enabled to block access to apps marked as unsanctioned.
 
 {{% alert title="Note" color="info" %}}
 
@@ -121,7 +121,7 @@ This capability is enabled from within the Endpoints > Advanced Features setting
 
 To further enrich cloud discovery data Microsoft Defender for Cloud Apps can integrate with Entra ID to replace users identified with usernames.
 
-This simplifies identification and investigation of user activity, as well as allowing correlation with API collected activities.
+This simplifies identification and investigation of user activity, as well as enabling correlation with API collected activities.
 
 {{% alert title="Design Decisions" color="warning" %}}
 
@@ -147,9 +147,9 @@ Security analysts can resolve encrypted usernames on demand to assist in investi
 
 #### Custom apps
 
-In addition to the extensive library of cloud apps that are natively available within Cloud Discovery, custom cloud apps, such internally developed Line-of-Business (LOB) applications, can be added to provide visibility in their use.
+In addition to the extensive library of cloud apps that are natively available within Cloud Discovery, custom cloud apps, such as internally developed Line-of-Business (LOB) applications, can be added to provide visibility in their use.
 
-The addition of custom cloud apps will enable This allows Cloud Discovery to identify these custom cloud apps from uploaded firewall and proxy logs and enables security analysts to filter on them specifically.
+This enables Cloud Discovery to identify these custom cloud apps from uploaded firewall and proxy logs and enables security analysts to filter on them specifically.
 
 {{% alert title="Design Decisions" color="warning" %}}
 
@@ -266,7 +266,7 @@ App Governance is an add-on capability for Microsoft Defender for Cloud Apps tha
 
 | Decision Point | Design Decision | Justification                                                                                   |
 |----------------|-----------------|-------------------------------------------------------------------------------------------------|
-| App Governance | Not configured  | The blueprint does not include a third-party OAuth-enabled apps that access Microsoft 365 data. |
+| App Governance | Not configured  | The Blueprint does not include a third-party OAuth-enabled apps that access Microsoft 365 data. |
 
 {{% /alert %}}
 
@@ -327,7 +327,7 @@ There are no design considerations.
 
 | Decision Point  | Design Decision | Justification                                                                            |
 |-----------------|-----------------|------------------------------------------------------------------------------------------|
-| File monitoring | Enabled         | Allow Microsoft Defender for Cloud Apps to monitor files stored in connected cloud apps. |
+| File monitoring | Enabled         | Enable Microsoft Defender for Cloud Apps to monitor files stored in connected cloud apps. |
 
 {{% /alert %}}
 
@@ -441,7 +441,7 @@ A common use-case for this is to generate block scripts from a third-party netwo
 
 | Decision Point | Design Decision | Justification                                                                                                                                                                                                     |
 |----------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| API tokens     | Not configured  | An organisation can determine and identify whether use cases exist for the creation of API tokens in their specific environments however for a base implementation of the Blueprint, API tokens are not required. |
+| API tokens     | Not configured  | Organisations can determine and identify whether use cases exist for the creation of API tokens in their specific environments however for a base implementation of the Blueprint, API tokens are not required. |
 
 {{% /alert %}}
 
@@ -489,13 +489,13 @@ In addition to the SIEM agent, Microsoft Defender for Cloud Apps supports native
 
 In addition to integration with third-party SIEMs, Microsoft Defender for Cloud Apps also supports integration with third-party DLP providers, enabling existing investments in on-premises solutions to be extended into the cloud.
 
-Integration between external DLP solution and Microsoft Defender for Cloud Apps is performed via the Internet Content Adaptation Protocol (ICAP) protocol which is tunnelled over TLS. This allows Microsoft Defender for Cloud Apps to use the external DLP engine to scan content identified in connected cloud apps for policy violations.
+Integration between external DLP solution and Microsoft Defender for Cloud Apps is performed via the Internet Content Adaptation Protocol (ICAP) protocol which is tunnelled over TLS. This enables Microsoft Defender for Cloud Apps to use the external DLP engine to scan content identified in connected cloud apps for policy violations.
 
 {{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point | Design Decision | Justification                                                                                                                                                                                   |
 |----------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| External DLP   | Not configured  | Not configured by default however an organisation can determine whether a DLP solution will be leveraged and if there is a requirement to be integrated with Microsoft Defender for Cloud Apps. |
+| External DLP   | Not configured  | Not configured by default, however, organisations can determine whether a DLP solution will be leveraged and if there is a requirement to be integrated with Microsoft Defender for Cloud Apps. |
 
 {{% /alert %}}
 
@@ -509,7 +509,7 @@ Specific Microsoft Defender for Cloud Apps alerts can be configured as playbook 
 
 | Decision Point | Design Decision | Justification                                                                                                                                                                                                                              |
 |----------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Playbooks      | Not configured  | Not configured by default however an organisation can determine whether Playbooks will be leveraged to assist in automating pre-approved and consistent responses reducing analyst intervention. Use of Playbooks is subject to licensing. |
+| Playbooks      | Not configured  | Not configured by default, however, organisations can determine whether Playbooks will be leveraged to assist in automating pre-approved and consistent responses reducing analyst intervention. Use of Playbooks is subject to licensing. |
 
 {{% /alert %}}
 

@@ -102,7 +102,7 @@ description:
 | GCP   | *Google Cloud Platform*                                                                             |
 | GDPR  | *General Data Protection Regulation*                                                                |
 | GIF   | *Graphics Interchange Format*                                                                       |
-| GIPHY | *An online database and search engine that allows users to search for and share animated GIF files* |
+| GIPHY | *An online database and search engine that enables users to search for and share animated GIF files* |
 | GMT   | *Greenwich Mean Time*                                                                               |
 | GPO   | *Group Policy Object*                                                                               |
 
@@ -157,7 +157,7 @@ description:
 | LAPS    | *Local Administrator Password Solution*                                                                                                                                          |
 | LDAP    | *Lightweight Directory Access Protocol*                                                                                                                                          |
 | LOB     | *Line Of Business*                                                                                                                                                               |
-| Lockbox | *Customer Lockbox is a means to ensure Microsoft is restricted from accessing an organisations content without explicit approval from an authorised organisation representative* |
+| Lockbox | *Customer Lockbox is a means to ensure Microsoft is restricted from accessing an organisation's content without explicit approval from an authorised organisation representative* |
 | LSA     | *Local Security Authority*                                                                                                                                                       |
 | LTSC    | *Long-Term Servicing Channel*                                                                                                                                                    |
 | Lync    | *Microsoft Lync is a instant messaging (IM), audio and video call solution*                                                                                                      |
@@ -175,7 +175,7 @@ description:
 | MEM    | *Microsoft Endpoint Manager*                                                                           |
 | MFA    | *Multi-Factor Authentication*                                                                          |
 | MIM    | *Microsoft Identity Manager*                                                                           |
-| MIP    | *Microsoft Information Protection*                                                                     |
+| MPIP   | *Microsoft Purview Information Protection*                                                             |
 | MPIM   | *Microsoft Privileged Identity Management*                                                             |
 | MSDT   | *Microsoft Support Diagnostic Tool*                                                                    |
 | MS-DRS | *Microsoft Directory Replication Service*                                                              |

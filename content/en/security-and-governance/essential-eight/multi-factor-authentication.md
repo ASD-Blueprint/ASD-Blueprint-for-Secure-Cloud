@@ -47,8 +47,8 @@ In particular, this is applicable to the configuration of Microsoft Entra ID `AN
 {{% alert title="Essential Eight guidance" color="success" %}}
 
 The Essential Eight Maturity Model requires that all MFA used is either:
- - something users have and something users know, or 
- - something users have that is unlocked by something users know or are.
+* something users have and something users know, or 
+* something users have that is unlocked by something users know or are.
 
 Applicability to online services is determined by the following table:
 
@@ -99,8 +99,8 @@ Microsoft Entra ID is configured to utilise the following authentication methods
 {{% alert title="Essential Eight guidance" color="success" %}}
 
 Maturity Levels 2 and 3 require that
-- all successful and unsuccessful MFA events to be captured from all systems and services and centrally logged
-- event logs are protected from unauthorised modification and deletion.                         
+* all successful and unsuccessful MFA events to be captured from all systems and services and centrally logged
+* event logs are protected from unauthorised modification and deletion.                         
 
 {{% /alert %}}
 
@@ -154,11 +154,11 @@ Maturity Levels 2 and 3 require all successful and unsuccessful MFA event logs f
 
 
 Both Maturity Levels 2 and 3 also require the following:
-- cyber security events are analysed in a timely manner to identify cyber security incidents
-- as soon as possible after a cyber security incident occurs or is discovered the:
-  - cyber security incident response plan is enacted.
-  - incident is reported to the CISO, or one of their delegates
-  - incident is reported to ASD. 
+* cyber security events are analysed in a timely manner to identify cyber security incidents
+* as soon as possible after a cyber security incident occurs or is discovered the:
+* cyber security incident response plan is enacted.
+* incident is reported to the CISO, or one of their delegates
+* incident is reported to ASD. 
 
 {{% /alert %}}
 
@@ -166,7 +166,7 @@ Both Maturity Levels 2 and 3 also require the following:
 
 The Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents. However, the section below is provided for organisations to describe the measures implemented within their system. 
 
-Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and personnel across an organisation.
+Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
 
 {{% /alert %}}
 
@@ -196,7 +196,7 @@ This includes the processing, analysis, and response to the following event logs
 #### Design
 
 - [Authentication]({{<ref "design/platform/identity/authentication.md">}})
-- [Conditional Access]({{<ref "conditional-access.md">}})
+- [Conditional Access]({{<ref "design/platform/identity/conditional-access.md">}})
 - [Identity Monitoring and Auditing]({{<ref "design/platform/identity/reporting-and-monitoring.md">}})
 - [Platform Monitoring and Auditing]({{<ref "platform-monitoring-auditing.md">}})
 - [Security Information and Event Monitoring]({{<ref "siem.md">}})

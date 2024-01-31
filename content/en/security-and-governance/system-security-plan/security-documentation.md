@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The security documentation section of a System Security Plan (SSP) should document an organisation's approach to development of organisational and system-specific security documentation associated with systems built using the Blueprint. As with other sections of the SSP, information in the security documentation section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex.
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the approach to security documentation within their organisation. When complete, remove any instructional boxes throughout. 
 
@@ -44,18 +44,18 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to security do
 
 #### Security & Governance
 
--   `<ORGANISATION-NAME>`'s [Cyber Security Strategy]({{<ref "security-and-governance/policies">}})
--   `<SYSTEM-NAME>`'s [Continuous Monitoring Plan]({{<ref "security-and-governance/general-documentation">}})
--   `<SYSTEM-NAME>`'s [System Security Plan]({{<ref "security-and-governance/system-security-plan">}}) (This document)
--   [System Security Plan Annex]({{<ref "annex.md">}})
--   `<SYSTEM-NAME>`'s [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}})
--   `<SYSTEM-NAME>`'s [Security Assessment Report]({{<ref "security-and-governance/general-documentation">}})
--   `<SYSTEM-NAME>`'s [Plan of Actions and Milestones]({{<ref "security-and-governance/general-documentation">}})
+*   `<ORGANISATION-NAME>`'s [Cyber Security Strategy]({{<ref "security-and-governance/policies">}})
+*   `<SYSTEM-NAME>`'s [Continuous Monitoring Plan]({{<ref "security-and-governance/general-documentation">}})
+*   `<SYSTEM-NAME>`'s [System Security Plan]({{<ref "security-and-governance/system-security-plan">}}) (This document)
+*   [System Security Plan Annex]({{<ref "annex.md">}})
+*   `<SYSTEM-NAME>`'s [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}})
+*   `<SYSTEM-NAME>`'s [Security Assessment Report]({{<ref "security-and-governance/general-documentation">}})
+*   `<SYSTEM-NAME>`'s [Plan of Actions and Milestones]({{<ref "security-and-governance/general-documentation">}})
 
 #### Design
 
--   [System Administration]({{<ref "_index.md">}})
+*   [System Administration]({{<ref "_index.md">}})
 
 #### External links
 
--   ASD's [*Guidelines for Security Documentation*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-security-documentation)
+*   ASD's [*Guidelines for Security Documentation*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-security-documentation)

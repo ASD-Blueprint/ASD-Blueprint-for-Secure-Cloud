@@ -4,7 +4,7 @@ weight: 30
 description: "This section describes the design decisions associated with Customer Lockbox for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Customer Lockbox is a means to ensure Microsoft is restricted from accessing an organisations content without explicit approval from an authorised organisation representative. The service is used to address situations where Microsoft Engineers require access to client data within Microsoft 365 to resolve an incident. Similar to PIM role activations, Customer Lockbox requests are time-boxed with all actions performed by the Microsoft engineer logged in the audit log, which the organisation can review within their audit records. The audit logs contain the following information:
+Customer Lockbox is a means to ensure Microsoft is restricted from accessing an organisation's content without explicit approval from an authorised organisation representative. The service is used to address situations where Microsoft Engineers require access to client data within Microsoft 365 to resolve an incident. Similar to PIM role activations, Customer Lockbox requests are time-boxed with all actions performed by the Microsoft engineer logged in the audit log, which organisations can review within their audit records. The audit logs contain the following information:
 
 | Audit record property | Description                                                                                                                             |
 |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,7 +13,7 @@ Customer Lockbox is a means to ensure Microsoft is restricted from accessing an 
 | User                  | Microsoft Operator; this value indicates the record is related to a Customer Lockbox request.                                           |
 | Activity              | Name of the activity performed by the Microsoft engineer.                                                                               |
 
-Per the support agreement terms and conditions, when an organisation has not enabled Customer Lockbox, Microsoft support engineers will use an internal Microsoft approval process, but will be able to access content without an organisations approval. Enabling the Customer Lockbox provides the ability to deny access requests, providing additional security.
+Per the support agreement terms and conditions, when organisations have not enabled Customer Lockbox, Microsoft support engineers will use an internal Microsoft approval process, but will be able to access content without an organisation's approval. Enabling the Customer Lockbox provides the ability to deny access requests, providing additional security.
 
 {{% alert title="Design Decisions" color="warning" %}}
 

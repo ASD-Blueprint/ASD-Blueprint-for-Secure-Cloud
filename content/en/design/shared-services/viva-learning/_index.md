@@ -16,7 +16,7 @@ Note, Viva Learning content is subject to terms other than the Microsoft Product
 | LinkedIn Learning      | Disabled        | LinkedIn Learning content is subject to third-party content provider’s terms that have not been reviewed as part of the Office 365 IRAP assessment.                         |
 | Microsoft Learn        | Disabled        | Microsoft Learn content is subject to terms other than the Microsoft Product Terms and have not been reviewed as part of the Office 365 IRAP assessment.                    |
 | Microsoft 365 Training | Disabled        | Microsoft 365 Training content is subject to terms other than the Microsoft Product Terms and have not been reviewed as part of the Office 365 IRAP assessment.             |
-| SharePoint             | Disabled        | The blueprint does not provide training content. organisations with existing content may enable a SharePoint site to host Viva Learning content, subject to internal assessment. |
+| SharePoint             | Disabled        | The Blueprint does not provide training content. organisations with existing content may enable a SharePoint site to host Viva Learning content, subject to internal assessment. |
 
 {{% /alert %}}
 

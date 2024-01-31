@@ -20,7 +20,7 @@ Users in the Security Administrator, Security Reader, Report Reader, Global Read
 Monitoring routes activity logs to different endpoints:
 
 * An Azure storage account.
-* An Azure event hub, so the system can be integrated with and Splunk and Sumologic instances.
+* An Azure event hub, so the system can be integrated with Splunk and Sumologic instances.
 * Azure Log Analytics workspace, wherein the data can be analysed, dashboards created, and alerts configured for specific events.
     This is used to retain them for long-term use and integrate it with the Security Information and Event Management (SIEM) tool - [Azure Sentinel](https://learn.microsoft.com/azure/sentinel/overview) - to gain insights into the environment.
 
@@ -47,7 +47,6 @@ Workbooks provide several pre-built reports related to common scenarios involvin
 
 #### References
 
-* [What is reporting](https://docs.microsoft.com/azure/active-directory/reports-monitoring/overview-reports)
-* [What is monitoring](https://docs.microsoft.com/azure/active-directory/reports-monitoring/overview-monitoring)
+* [What is Microsoft Entra monitoring and health](https://learn.microsoft.com/entra/identity/monitoring-health/overview-monitoring-health)
 
 

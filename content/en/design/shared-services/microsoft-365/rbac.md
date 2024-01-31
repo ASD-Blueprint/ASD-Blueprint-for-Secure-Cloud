@@ -72,8 +72,8 @@ Using PIM for the SharePoint administrator role, the Device administrator role, 
 
 * [Microsoft 365 Understanding Roles](https://learn.microsoft.com/entra/identity/role-based-access-control/concept-understand-roles)
 * [Microsoft 365 Roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
-* [Azure AD Roles](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference)
-* [Microsoft 365 Roles in AAD](https://docs.microsoft.com/azure/active-directory/roles/m365-workload-docs)
+* [Azure AD Roles](https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference)
+* [Microsoft 365 Roles in AAD](https://learn.microsoft.com/entra/identity/role-based-access-control/m365-workload-docs)
 * [Exchange Online Permissions](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
 * [SharePoint Admin Role](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
 * [Teams Administrator roles](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
@@ -87,7 +87,7 @@ Using PIM for the SharePoint administrator role, the Device administrator role, 
 * [Power Platform Security Roles](https://docs.microsoft.com/power-platform/admin/security-roles-privileges)
 * [Power Platform Admin Roles](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant)
 * [Dataverse Security Roles](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant)
-* [Dataverse System and Application (Built In) Users](https://docs.microsoft.com/power-platform/admin/system-application-users)
+* [Dataverse System and Application (Built In) Users](https://learn.microsoft.com/power-platform/admin/system-application-users)
 
 #### Related design secisions
 

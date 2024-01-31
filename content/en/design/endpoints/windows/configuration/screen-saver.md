@@ -4,7 +4,7 @@ weight: 90
 description: "This section describes the design decisions associated with screen savers on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
-The screen saver was originally designed to prevent burn-in on Cathode Ray Tube (CRT) and plasma screens. Modern usage of the screen saver allows the operating system to detect a period of inactivity and lock or blank the screen reducing power usage.
+The screen saver was originally designed to prevent burn-in on Cathode Ray Tube (CRT) and plasma screens. Modern usage of the screen saver enables the operating system to detect a period of inactivity and lock or blank the screen reducing power usage.
 
 Screensavers should be applied at regular intervals in instances that a user may walk away from their endpoint and leave their workstation unlocked. Screensavers can also be used in some circumstances as a communication mechanism to users. 
 

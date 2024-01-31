@@ -39,7 +39,7 @@ Using the native Microsoft 365 tools only, in combination with recycle bins, the
 * Teams chat, channel and files data retained indefinitely by default unless retention policies have been implemented.
 * Exchange Online has a recover deleted items from server option allowing recovery of data for up to 30 days.
 
-The Blueprint [defines retention policies]({{<ref "retention-policies">}}), which can be modified to ensure that data is retained for longer than the defined seven years:
+The Blueprint [defines retention policies]({{<ref "design/shared-services/purview/retention-policies">}}), which can be modified to ensure that data is retained for longer than the defined seven years:
 
 * Exchange
 * SharePoint
@@ -93,7 +93,7 @@ Organisations should review native Microsoft 365 capabilities and determine whet
 
 | Decision Point     | Design Decision                                                                                                                                            | Justification                                                                                                                                                                                                      |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Restoration tools  | Third party backup and restoration tools                                                                                                                   | organisations should investigate third-party backup tools to backup and restore data on-premises and within the cloud.                                                                                                  |
+| Restoration tools  | Third party backup and restoration tools                                                                                                                   | Organisations should investigate third-party backup tools to backup and restore data on-premises and within the cloud.                                                                                                  |
 | Items to Backup    | Exchange Online<br>SharePoint Online<br>Microsoft Teams<br>OneDrive for Business<br>Microsoft 365 groups<br>On-premises Exchange<br>On-premises SharePoint | Backups must cover the Microsoft suite of tools at a minimum.                                                                                                                                                      |
 | Retention Policies | At discretion of organisation                                                                                                                              | Retention policies for the backups should be determined by the organisation and measured against the business, application, regulatory (including the organisation's records authority) and security requirements. |
 
@@ -101,7 +101,7 @@ Organisations should review native Microsoft 365 capabilities and determine whet
 
 ### Data availability
 
-Microsoft Azure services are available globally and provides geographical, regional, data centre, virtual infrastructure, and application resiliency. This allows the Microsoft Azure platform and Microsoft 365 to combat and minimise potential disasters such as customers loss of connectivity to data or loss of data.
+Microsoft Azure services are available globally and provides geographical, regional, data centre, virtual infrastructure, and application resiliency. This enables the Microsoft Azure platform and Microsoft 365 to combat and minimise potential disasters such as customers loss of connectivity to data or loss of data.
 
 The cloud-based services of Microsoft 365 replicate and store organisation's data in multiple data centres which are geographically dispersed to provide the greatest possible availability for organisational data. [Data resiliency in Microsoft 365](https://learn.microsoft.com/compliance/assurance/assurance-data-resiliency-overview) and [Exchange Online data resiliency in Microsoft 365](https://learn.microsoft.com/compliance/assurance/assurance-exchange-data-resiliency) provide further information. 
 

@@ -4,15 +4,15 @@ weight: 10
 description: "This section describes the design decisions associated with management of Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
-Windows 10 and 11 can be managed via Intune or Microsoft Endpoint Configuration Manager (MECM), or a combination of both. The configuration of Windows management will depend upon which technologies are available to an organisation and whether a hybrid deployment is required.
+Windows 10 and 11 can be managed via Intune or Microsoft Endpoint Configuration Manager (MECM), or a combination of both. The configuration of Windows management will depend upon which technologies are available to organisations and whether a hybrid deployment is required.
 
 Windows management options will be based on either a deployment which is cloud native or hybrid. This section provides detailed information on the different configuration options for Windows management.
 
 Cloud native deployments provides the organisation the immediate benefits of working with Intune and Windows Autopilot while also integrating directly with other cloud services including Microsoft 365 and Azure Active Directory (AAD). Using Intune will simplify the overall deployment and management of Windows to a single console which is also shared with the mobile device management of iOS devices.
 
-A hybrid deployment gives the option of co-management which enables the organisation to manage Windows by using both MECM and Intune. Enabling co-management within MECM allows the organisation to utilise their investment in MECM and take advantage of additional cloud capabilities. This allows the organisation additional flexibility to use the technology solution that works best for them and facilitates a more gradual move to cloud native as the organisation can pilot test various workloads in Intune first.
+Hybrid deployments give the option of co-management which enables the organisation to manage Windows by using both MECM and Intune. Enabling co-management within MECM allows the organisation to utilise their investment in MECM and take advantage of additional cloud capabilities. This gives the organisation additional flexibility to use the technology solution that works best for them and facilitates a more gradual move to cloud native as the organisation can pilot test various workloads in Intune first.
 
-Hybrid deployments can choose to enable MECM or Intune for client management depending on the cloud maturity level of the organisation or operational requirements. It is not a requirement of organisations undertaking hybrid implementations to use MECM. This blueprint provides guidance on integration between MECM and Intune for hybrid deployments however organisations with existing infrastructure may alternatively elect to migrate device management from MECM to Intune, which will not affect cyber security postures.
+Hybrid deployments can choose to enable MECM or Intune for client management depending on the cloud maturity level of the organisation or operational requirements. It is not a requirement of organisations undertaking hybrid implementations to use MECM. The Blueprint provides guidance on integration between MECM and Intune for hybrid deployments however organisations with existing infrastructure may alternatively elect to migrate device management from MECM to Intune, which will not affect cyber security postures.
 
 Management methods that can be used to manage Windows in a Microsoft 365 environment.
 

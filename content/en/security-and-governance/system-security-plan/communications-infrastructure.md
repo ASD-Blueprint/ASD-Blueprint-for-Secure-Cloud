@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The communications infrastructure section of a System Security Plan (SSP) should document an organisation's approach to managing communications infrastructure, such as cabling. As with other sections of the SSP, information in the communications infrastructure section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex.
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the approach to communications infrastructure within their organisation. When complete, remove any instructional boxes throughout. 
 
@@ -18,9 +18,9 @@ When completing the below template, organisations should insert and update infor
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The Blueprint does not cover an organisation's direct management of communications infrastructure and the below template therefore excludes communications infrastructure from the documented scope.
+The Blueprint does not cover management of communications infrastructure and the below template therefore excludes communications infrastructure from the documented scope.
 
-Where an organisation decides to implement communications infrastructure within the boundary of their system, they are responsible for assessing and documenting risk and applicability of each associated security control, and describing the implementation of these controls below.
+Where organisations decide to implement communications infrastructure within the boundary of their system, they are responsible for assessing and documenting risk and applicability of each associated security control, and describing the implementation of these controls below.
 
 {{% /alert %}}
 
@@ -30,8 +30,8 @@ As `<ORGANISATION-NAME>`'s approach to implementing controls related to communic
 
 ISM controls relating to communications infrastructure are not applicable to `<SYSTEM-NAME>` as direct management of these physical facilities or systems are not within its system boundary. `<SYSTEM-NAME>` relies on the implementation of relevant controls from the following system assessments:
 
-- `ORG-NETWORKING-SYSTEM`
-- `ORG-IDENTITY-SYSTEM`
+* `ORG-NETWORKING-SYSTEM`
+* `ORG-IDENTITY-SYSTEM`
 
 As such the requirements of this section are **not** directly applicable for this SSP.
 
@@ -53,12 +53,12 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to the managem
 
 #### Security & Governance
 
--   None Applicable
+*   None Identified
 
 #### Design
 
-- [Networking]({{< ref "networking.md">}})
+* [Networking]({{< ref "networking.md">}})
 
 #### External documentation
 
-- ASD's [*Guidelines for Communications Infrastructure*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-communications-infrastructure)
+* ASD's [*Guidelines for Communications Infrastructure*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-communications-infrastructure)

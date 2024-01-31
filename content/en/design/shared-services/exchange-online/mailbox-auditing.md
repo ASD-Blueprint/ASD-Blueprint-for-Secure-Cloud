@@ -22,11 +22,11 @@ Security Operations teams may have a requirement that all Exchange Online (EXO) 
 
 ### Cloud native deployments
 
-Within a cloud native deployment, the option to capture all emails for Security Operations is limited as Exchange Online mailboxes cannot be used as a journaling mailbox. To meet possible organisation security team requirements, an alternative option is use of Exchange Online Transport Rules and a shared Exchange Online mailbox. The Transport Rules will copy all internal, inbound, and outbound emails to the shared mailbox, which is restricted to members of an Entra ID Security Group.
+Within cloud native deployments, the option to capture all emails for Security Operations is limited as Exchange Online mailboxes cannot be used as a journaling mailbox. To meet possible organisation security team requirements, an alternative option is use of Exchange Online Transport Rules and a shared Exchange Online mailbox. The Transport Rules will copy all internal, inbound, and outbound emails to the shared mailbox, which is restricted to members of an Entra ID Security Group.
 
 ### Hybrid deployments
 
-Journaling within a hybrid deployment is accomplished using Exchange Journaling. See (/design/shared-services/exchange-online/journaling.md).
+Journaling within hybrid deployments is accomplished using Exchange Journaling. See (/design/shared-services/exchange-online/journaling.md).
 
 ### Mailbox Auditing configuration
 

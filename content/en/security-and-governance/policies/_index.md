@@ -6,7 +6,7 @@ weight: 40
 description: 
 ---
       
-ASD’s *Information Security Manual* (ISM) requires organisations to develop and maintain a range of organisational policies or strategies. ASD’s *Blueprint for Secure Cloud* (the Blueprint) does not provide guidance or templates for these important artefacts. The Blueprint does provide the following checklist that organisations can refer to when reviewing, developing and updating their documentation associated with a system or systems built using the Blueprint.
+ASD’s [*Information Security Manual*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism) (ISM) requires organisations to develop and maintain a range of organisational policies or strategies. ASD’s *Blueprint for Secure Cloud* (the Blueprint) does not provide guidance or templates for these important artefacts. The Blueprint does provide the following checklist that organisations can refer to when reviewing, developing and updating their documentation associated with a system or systems built using the Blueprint.
 
 #### Cyber Security Strategy  
 A Cyber Security Strategy is a requirement of ISM control ISM-0039.

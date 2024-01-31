@@ -8,13 +8,13 @@ Microsoft Office files can include Visual Basic for Applications (VBA) programmi
 
 A macro can comprise of several repeatable actions that can be coded or recorded and rerun later to automate repetitive tasks. Macros are powerful tools that can be easily created by novice users to greatly improve their productivity. However, an adversary can also create macros to perform a variety of malicious activities, such as assisting in the compromise of workstations to exfiltrate or deny access to sensitive information.
 
-The ACSC provides guidelines in securing systems against malicious macros and recommend they are implemented in all Windows environments. The ACSC recommends that one of the following approaches is implemented:
+ASD's provides guidelines in securing systems against malicious macros and recommend they are implemented in all Windows environments. ASD's recommends that one of the following approaches is implemented:
 
 * All macros are disabled.
 * Only macros from trusted locations or sandboxed environment are enabled.
 * Only macros digitally signed by trusted publishers are enabled.
 
-Where trusted locations are used, ACSC recommends that when using trusted locations, only privileged users that are responsible for validating that the macros are free from malicious code can write to and modify contents within the trusted location. 
+Where trusted locations are used, ASD's recommends that when using trusted locations, only privileged users that are responsible for validating that the macros are free from malicious code can write to and modify contents within the trusted location. 
 
 Microsoft Office products can log macro execution attempts (both successful and failures) by enabling the Trust Center logging feature. This provides valuable information for incident response and digital forensics activities. The Trust Center logs are not written to the Windows Event Log but instead as an individual file per Microsoft Office product to the C:\Users\USERNAME\AppData\Local\Microsoft\Office\TCDiag directory.
 

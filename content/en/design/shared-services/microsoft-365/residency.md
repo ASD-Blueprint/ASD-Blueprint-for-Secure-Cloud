@@ -12,7 +12,7 @@ Microsoft 365 tenant data residency is critical to ensure the organisation's ten
 
 | Decision Point       | Design Decision | Justification                                                                |
 |----------------------|-----------------|------------------------------------------------------------------------------|
-| Microsoft 365 Region | Australia       | Aligns with ACSC guidance to utilise cloud services located within Australia |
+| Microsoft 365 Region | Australia       | Aligns with ASD's guidance to utilise cloud services located within Australia |
 
 {{% /alert %}}
 

@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The database systems section of a System Security Plan (SSP) should document an organisation's approach to databases and database servers. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how organisations must scope, build, document, or assess its system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to databases and database servers. When complete, remove any instructional boxes throughout. 
 
@@ -44,13 +44,13 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to databases.
 
 #### Security & Governance
 
-- None identified
+* None identified
 
 #### Design
 
-- None identified
+* None identified
 
 #### External links
 
-- ASD's [*Guidelines for Database Systems*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-database-systems)
-- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
+* ASD's [*Guidelines for Database Systems*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-database-systems)
+* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)

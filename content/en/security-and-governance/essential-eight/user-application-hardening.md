@@ -44,31 +44,31 @@ The User Application Hardening mitigation strategy is applicable to hardening of
 
 All maturity levels require:
 
-- Internet Explorer 11 is disabled or removed
-- web browsers:
-  - security settings cannot be changed by users
-  - do not process Java from the internet
-  - do not process web advertisements from the internet.
+* Internet Explorer 11 is disabled or removed
+* web browsers:
+* security settings cannot be changed by users
+* do not process Java from the internet
+* do not process web advertisements from the internet.
 
 In addition, Maturity Levels Two and Three require:
-- web browsers are hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur
-- office productivity suites:
-  - security settings cannot be changed by users
-  - are hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur
-  - Microsoft Office:
-    - is blocked from creating child processes
-    - is blocked from creating executable content
-    - is blocked from injecting code into other processes
-    - is configured to prevent activation of Object Linking and Embedding packages
-- PDF software
-  - security settings cannot be changed by users
-  - is hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur
-  - is blocked from creating child processes.
+* web browsers are hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur
+* office productivity suites:
+* security settings cannot be changed by users
+* are hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur
+* Microsoft Office:
+* is blocked from creating child processes
+* is blocked from creating executable content
+* is blocked from injecting code into other processes
+* is configured to prevent activation of Object Linking and Embedding packages
+* PDF software
+* security settings cannot be changed by users
+* is hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur
+* is blocked from creating child processes.
 
 In addition, Maturity Level Three requires:
-- .NET Framework 3.5 (includes .NET 2.0 and 3.0) is disabled or removed,
-- Windows PowerShell 2.0 is disabled or removed, and
-- PowerShell is configured to use Constrained Language Mode.
+* .NET Framework 3.5 (includes .NET 2.0 and 3.0) is disabled or removed,
+* Windows PowerShell 2.0 is disabled or removed, and
+* PowerShell is configured to use Constrained Language Mode.
 
 {{% /alert %}}
 
@@ -176,11 +176,11 @@ PDF software is not installed on `<SYSTEM-NAME>` servers.
 {{% alert title="Essential Eight guidance" color="success" %}}
 
 Maturity Levels Two and Three require that
-- all command line process creation, PowerShell module logging, script block logging and transcription events to be captured from all of the following:
-  - workstations
-  - internet-facing servers
-  - non-internet-facing servers
-- event logs are protected from unauthorised modification and deletion.                        
+* all command line process creation, PowerShell module logging, script block logging and transcription events to be captured from all of the following:
+* workstations
+* internet-facing servers
+* non-internet-facing servers
+* event logs are protected from unauthorised modification and deletion.                        
 
 {{% /alert %}}
 
@@ -223,17 +223,17 @@ Maturity Levels Two and Three require all command line process creation, PowerSh
 | Workstations:                |  -  | Yes |
 
 Both Maturity Levels Two and Three also require the following:
-- cyber security events are analysed in a timely manner to identify cyber security incidents
-- as soon as possible after a cyber security incident occurs or is discovered the:
-  - cyber security incident response plan is enacted
-  - incident is reported to the Chief Information Security Officer, or one of their delegates
-  - incident is reported to ASD.
+* cyber security events are analysed in a timely manner to identify cyber security incidents
+* as soon as possible after a cyber security incident occurs or is discovered the:
+* cyber security incident response plan is enacted
+* incident is reported to the Chief Information Security Officer, or one of their delegates
+* incident is reported to ASD.
 
 {{% /alert %}}
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and personnel across an organisation.
+While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
 
 {{% /alert %}}
 
@@ -257,14 +257,14 @@ This includes the processing, analysis, and response to the following event logs
 
 #### Security & Governance
 
-- [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
+* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
 
 #### Design
 
-- None identified
+* None identified
 
 #### External links
 
-- ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
-- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-- Microsoft's [*Guidance for meeting ASD's Essential Eight - User Application Hardening*](https://learn.microsoft.com/compliance/essential-eight/e8-app-harden)
+* ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
+* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
+* Microsoft's [*Guidance for meeting ASD's Essential Eight - User Application Hardening*](https://learn.microsoft.com/compliance/essential-eight/e8-app-harden)

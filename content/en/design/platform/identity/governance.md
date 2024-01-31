@@ -18,7 +18,7 @@ Access Management delegates the management of continued access from the Platform
 | Decision Point             | Design Decision                                             | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | -------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Access Packages            | Used for all Security Groups                                | Assignment to groups providing access to resources or services should be explicitly obtained and granted on a business needs basis.                                                                                                                                                                                                                                                                                                                            |
-| Access Reviews             | Maximum 6 months                                            | In line with the organisation's Information Management policy.<br><br>**Essential 8**<br><ul><li>Privileged access to systems and applications is automatically disabled after 12 months unless revalidated.</li></ul>                                                                                                                                                                                                                                                     |
+| Access Reviews             | Maximum 6 months                                            | In line with an organisation's Information Management policy.<br><br>**Essential 8**<br><ul><li>Privileged access to systems and applications is automatically disabled after 12 months unless revalidated.</li></ul>                                                                                                                                                                                                                                                     |
 | Privileged Role Delegation | Where Privileged Roles are delegated by the Platform Owners | Privileged Role delegations are explicitly obtained and granted when delegated.<br><br>**Essential 8**<br><ul><li>Requests for privileged access to systems and applications are validated when first requested.</li><li>Privileged access to systems and applications is limited to only what is required for users and services to undertake their duties.</li><li>Just-in-time administration is used for administering systems and applications.</li></ul> |
 | Account inactivity         | Inactive accounts automatically disabled                    | **Essential 8**<br><ul><li>Access to systems and applications is automatically disabled after 45 days of inactivity.</li></ul>                                                                                                                                                                                                                                                                                                                                 |
 
@@ -26,7 +26,7 @@ Access Management delegates the management of continued access from the Platform
 
 ### Access Reviews
 
-A base recommendation for access reviews is below; however, the organisation should review and update these configurations based on their risk appetite and organisational policies.
+A base recommendation for access reviews is below. However, organisations should review and update these configurations based on their risk appetite and organisational policies.
 
 | Review Type                               | Reviewer              | Recurrence  |
 | ----------------------------------------- | --------------------- | ----------- |
@@ -50,5 +50,5 @@ A base recommendation for access reviews is below; however, the organisation sho
 
 #### References
 
-* [Identity Governance](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview)
+* [Identity Governance](https://learn.microsoft.com/entra/id-governance/identity-governance-overview)
 

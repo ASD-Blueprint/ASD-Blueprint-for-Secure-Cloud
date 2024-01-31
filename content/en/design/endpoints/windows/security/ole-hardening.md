@@ -4,11 +4,11 @@ weight: 50
 description: "This section describes the design decisions associated with Object Linking and Embedding (OLE) on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
-Object Linking and Embedding (OLE) is a functionality within Microsoft Office which allows for the embedding and linking to documents and other objects. OLE is utilised to seamlessly integrate several types of data or components within a Microsoft Office file. 
+Object Linking and Embedding (OLE) is a functionality within Microsoft Office which enables the embedding and linking to documents and other objects. OLE is utilised to seamlessly integrate several types of data or components within a Microsoft Office file. 
 
 Adversaries have leveraged the OLE functionality to enable and download malicious content or execute a malicious payload. Within Microsoft Office 365 and Microsoft Office 2019 clients, the activation of objects that link to extensions that are considered high risk are blocked from executing. The list of high risk extensions can be configured through the use of Intune or GPOs.
 
-The ACSC provides guidance around securing systems against malicious OLE packages and recommend they are implemented in all Windows environments. The guidance is to block all OLE packages from executing in Word, PowerPoint, and Excel.
+ASD's provides guidance around securing systems against malicious OLE packages and recommend they are implemented in all Windows environments. The guidance is to block all OLE packages from executing in Word, PowerPoint, and Excel.
 
 {{% alert title="Design Decisions" color="warning" %}}
 

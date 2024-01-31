@@ -51,7 +51,7 @@ The following design components apply to the hardening of Microsoft Windows 10 2
     * Only elevate UIAccess applications that are installed in secure locations: Enabled
     * Run all administrators in Admin Approval Mode: Enabled
     * Switch to the secure desktop when prompting for elevation: Enabled
-    * Virtualize file and registry write failures to per-user locations: Enabled
+    * Virtualise file and registry write failures to per-user locations: Enabled
 * Exploit protection
   * Justification: To align with the ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations*guidance.
   * Use a common set of exploit protection settings: Enabled

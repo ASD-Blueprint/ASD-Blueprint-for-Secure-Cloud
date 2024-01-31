@@ -4,7 +4,7 @@ weight: 45
 description: "This section describes the design decisions associated with Teams Unified Communication for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Microsoft Office Teams provides a Unified Communication (UC) capability which allows users to participate in audio-visual conferencing in meetings and on-demand.
+Microsoft Office Teams provides a Unified Communication (UC) capability that enables users to participate in audio-visual conferencing in meetings and on-demand.
 
 Microsoft Office Teams can integrate with third-party UC products and provide configurable levels of functionality when integrated. Third party UC products will be the responsibility of the organisation.
 

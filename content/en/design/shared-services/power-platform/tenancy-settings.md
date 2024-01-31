@@ -7,15 +7,15 @@ Power BI is a data visualisation tool which can be leveraged to provide interact
 
 Power BI consists of five components:
 
-* **Power BI Desktop** - Power BI desktop is a Windows desktop application which allows for the manipulation of data and the creation of reports and dashboards.
-* **Power BI Service** - The Power BI service is a SaaS offering which allows the creation, modification, and sharing of reports and dashboards.
-* **Power BI Mobile** - Power BI mobile is a mobile application which allows for the consumption of reports and dashboards.
+* **Power BI Desktop** - Power BI desktop is a Windows desktop application which enables the manipulation of data and the creation of reports and dashboards.
+* **Power BI Service** - The Power BI service is a SaaS offering that enables the creation, modification, and sharing of reports and dashboards.
+* **Power BI Mobile** - Power BI mobile is a mobile application that enables the consumption of reports and dashboards.
 * **Power BI Report Server** - The Power BI report server is an on-premises tool which enables reports to be distributed as required.
-* **Power BI Embedded** – Power BI embedded allows organisation to publish Power BI report to be consumed in a public website.
+* **Power BI Embedded** – Power BI embedded enables organisations to publish Power BI reports to be consumed on a public website.
 
 Inside the Power BI Service, the creation of workspaces, content packs, custom visualisations, and data flows can be controlled both on an enterprise level and a group level. This simplifies management of the service.
 
-Power BI also allows administrators to control the sharing of datasets, content, report publishing, and template apps. This ensures adequate control over sharing of organisation information.
+Power BI also enables administrators to control the sharing of datasets, content, report publishing, and template apps. This ensures adequate control over sharing of organisation information.
 
 {{% alert title="Design Decisions" color="warning" %}}
 

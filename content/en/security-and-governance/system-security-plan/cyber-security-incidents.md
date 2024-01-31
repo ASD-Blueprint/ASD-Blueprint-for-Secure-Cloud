@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The cyber security incidents section of a System Security Plan (SSP) should document an organisation's approach to managing and responding to cyber security incidents. As with other sections of the SSP, information in the cyber security incidents section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex.
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the approach to managing and responding to cyber security incidents within their organisation. When complete, remove any instructional boxes throughout. 
 
@@ -42,7 +42,7 @@ The management of the threat that trusted insiders pose to `<SYSTEM-NAME>` is ad
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and personnel across an organisation.
+While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
 
 {{% /alert %}}
 
@@ -56,15 +56,15 @@ While the Blueprint provides limited guidance to support organisations in develo
 
 #### Security & Governance
 
-- [Incident Management Policy]({{< ref "security-and-governance/policies" >}})
-- [Cyber Security Incident Response Plan]({{< ref "security-and-governance/general-documentation" >}})
-- [Cyber Security Incident Register]({{< ref "security-and-governance/general-documentation" >}})
+* [Incident Management Policy]({{< ref "security-and-governance/policies" >}})
+* [Cyber Security Incident Response Plan]({{< ref "security-and-governance/general-documentation" >}})
+* [Cyber Security Incident Register]({{< ref "security-and-governance/general-documentation" >}})
 
 #### Design
 
-- [SIEM]({{< ref "siem.md" >}})
+* [SIEM]({{< ref "siem.md" >}})
 
 #### External links
 
-- ASD's [*Guidelines for Cyber Security Incidents*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-cyber-security-incidents)
-- [Microsoft Defender portal](https://security.microsoft.com/)
+* ASD's [*Guidelines for Cyber Security Incidents*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-cyber-security-incidents)
+* [Microsoft Defender portal](https://security.microsoft.com/)

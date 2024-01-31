@@ -14,7 +14,7 @@ In a hybrid configuration SharePoint Online integrates with an existing on-premi
 
 | Decision Point    | Design Decision                              | Justification                                                                         |
 |-------------------|----------------------------------------------|---------------------------------------------------------------------------------------|
-| SharePoint Hybrid | SharePoint Hybrid Search will be configured. | To allow searching capabilities between SharePoint on-premises and SharePoint Online. |
+| SharePoint Hybrid | SharePoint Hybrid Search will be configured. | To enable hybrid searching capabilities between SharePoint on-premises and SharePoint Online. |
 
 {{% /alert %}}
 

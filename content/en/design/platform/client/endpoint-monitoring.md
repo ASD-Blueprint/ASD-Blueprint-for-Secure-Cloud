@@ -4,9 +4,9 @@ weight: 55
 description: "Design decisions associated with monitoring of endpoint management activities for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Endpoint management is managed predominantly by Microsoft Intune with additional security layers provided by Microsoft Defender for Endpoint.
+Endpoint management is performed predominantly by Microsoft Intune with additional security layers provided by Microsoft Defender for Endpoint. Microsoft Defender for Endpoint is part of the Microsoft 365 Defender stack. 
 
-Microsoft Defender for Endpoint is part of the Microsoft 365 Defender stack. Integration with Azure Sentinel Security Information and Event Management (SIEM) is managed via the Sentinel Microsoft 365 Defender Data Connector. This connector writes Defender for Endpoint information to the following Sentinel Log Analytics tables:
+Integration with Azure Sentinel Security Information and Event Management (SIEM) is managed via the Sentinel Microsoft 365 Defender Data Connector. This connector writes Defender for Endpoint information to the following Sentinel Log Analytics tables:
 
 | Sentinel Table name                | Events type                                                                                                                     |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -21,7 +21,7 @@ Microsoft Defender for Endpoint is part of the Microsoft 365 Defender stack. Int
 | DeviceFileEvents                   | File creation, modification, and other file system events                                                                       |
 | DeviceRegistryEvents               | Creation and modification of registry entries                                                                                   |
 | DeviceLogonEvents                  | Sign-ins and other authentication events on devices                                                                             |
-| DeviceImageLoadEvents              | DLL loading events                                                                                                              |
+| DeviceImageLoadEvents              | Dynamic Link Library (DLL) loading events                                                                                       |
 | DeviceEvents                       | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
 | DeviceFileCertificateInfo          | Certificate information of signed files obtained from certificate verification events on endpoints                              |
 

@@ -28,8 +28,8 @@ As with implementation of ISM controls, the Blueprint does not itself *achieve* 
 
 The Patch Applications mitigation strategy is applicable to the appropriate patching of applications for the following components of `<SYSTEM-NAME>`:
 
-- Endpoints (Windows laptops and desktops)
-- `<ON-PREMISES SERVERS>`
+* Endpoints (Windows laptops and desktops)
+* `<ON-PREMISES SERVERS>`
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -53,7 +53,7 @@ All maturity levels require that an automated method of asset discovery is used 
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The blueprint design does not provide guidance for an organisation's direct management of asset discovery, though the below template serves as a guide of a typical implementation of this section for systems built using this blueprint.
+The Blueprint design does not provide guidance for direct management of asset discovery, though the below template serves as a guide of a typical implementation of this section for systems built using the Blueprint.
 
 {{% /alert %}}
 
@@ -82,7 +82,7 @@ All maturity levels require that a vulnerability scanner is used to identify mis
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The Blueprint design does not provide guidance for an organisation's direct management of vulnerability scanning, though the below template serves as a guide of a typical implementation of this section for systems built using this blueprint.
+The Blueprint design does not provide guidance for direct management of vulnerability scanning, though the below template serves as a guide of a typical implementation of this section for systems built using the Blueprint.
 
 Given that scanning is generally performed on an asset basis rather than an application basis, the below describes the scanning of all applications on endpoints on a weekly basis, while on-premise servers are described as being scanned on a daily basis (to account for the requirements outlined in *Patch Operating Systems*), particularly to account for internet facing servers including Exchange servers.
 
@@ -196,15 +196,15 @@ In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Proce
 
 #### Security & Governance
 
-- [System Management]({{<ref "system-management.md">}})
-- [`<SYSTEM-NAME>` Vulnerability and Patch Management Process]({{<ref "security-and-governance/general-documentation">}})
+* [System Management]({{<ref "system-management.md">}})
+* [`<SYSTEM-NAME>` Vulnerability and Patch Management Process]({{<ref "security-and-governance/general-documentation">}})
 
 #### Design
 
-- [Endpoint Device Updates]({{<ref "device-updates">}})
+* [Endpoint Device Updates]({{<ref "device-updates">}})
 
 #### External links
 
-- ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
-- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-- Microsoft's [*Guidance for meeting ASD's Essential Eight - Patch Applications*](https://learn.microsoft.com/compliance/essential-eight/e8-patch-app)
+* ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
+* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
+* Microsoft's [*Guidance for meeting ASD's Essential Eight - Patch Applications*](https://learn.microsoft.com/compliance/essential-eight/e8-patch-app)

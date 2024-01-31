@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The cryptography section of a System Security Plan (SSP) should document an organisation's approach to data transfers. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how organisations must scope, build, document, or assess its system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to data transfers. When complete, remove any instructional boxes throughout.
 
@@ -35,8 +35,8 @@ Data transfers associated with `<SYSTEM-NAME>` are performed in accordance with 
 #### Technical controls implemented
 
 Technical controls for `<SYSTEM-NAME>`'s implementation of data transfers are configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au) including the following technical configurations:
-- Defender for Endpoint will scan all data copied onto Windows 11 devices
-- event logs are generated when data is transferred from a Windows 11 endpoint to external media. These Logs are then centrally stored and monitored.
+* Defender for Endpoint will scan all data copied onto Windows 11 devices
+* event logs are generated when data is transferred from a Windows 11 endpoint to external media. These Logs are then centrally stored and monitored.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -44,13 +44,13 @@ Technical controls for `<SYSTEM-NAME>`'s implementation of data transfers are co
 
 #### Security & Governance
 
-- `<SYSTEM-NAME>`'s [Data Transfer Process]({{< ref "security-and-governance/general-documentation">}})
-- `<SYSTEM-NAME>`'s [Continuous Monitoring Plan]({{< ref "security-and-governance/general-documentation">}})
+* `<SYSTEM-NAME>`'s [Data Transfer Process]({{< ref "security-and-governance/general-documentation">}})
+* `<SYSTEM-NAME>`'s [Continuous Monitoring Plan]({{< ref "security-and-governance/general-documentation">}})
 
 #### Design
 
--   [Platform Monitoring and Auditing]({{< ref "platform-monitoring-auditing.md" >}})
+*   [Platform Monitoring and Auditing]({{< ref "platform-monitoring-auditing.md" >}})
 
 #### External links
 
-- ASD's [*Guidelines for Data Transfers*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-data-transfers)
+* ASD's [*Guidelines for Data Transfers*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-data-transfers)

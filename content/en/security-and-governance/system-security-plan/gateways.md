@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The gateways section of a System Security Plan (SSP) should document an organisation's approach to gateways, cross domain solutions, firewalls, diodes, web proxies and content filtering and peripheral switches. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how organisations must scope, build, document, or assess its system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to gateways, cross domain solutions, firewalls, diodes, web proxies and content filtering and peripheral switches. When complete, remove any instructional boxes throughout. 
 
@@ -21,9 +21,9 @@ When completing the below template, organisations should insert and update infor
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The Blueprint does not cover an organisation's direct management of gateways and the below template excludes these from the scope of a SSP for systems built on the Blueprint. However, the implementation of demilitarised zones, traffic inspections and filtering is often conducted as part of a separate system specific to these services and should be documented elsewhere.
+The Blueprint does not cover management of gateways and the below template excludes these from the scope of a SSP for systems built on the Blueprint. However, the implementation of demilitarised zones, traffic inspections and filtering is often conducted as part of a separate system specific to these services and should be documented elsewhere.
 
-Where an organisation decides to implement their own internal gateways, cross domain solutions or diodes within the boundary of a system built on the Blueprint, they are responsible for assessing and documenting the risk and applicability associated with each individual security control and describing the implementation of these controls here.
+Where organisations decides to implement their own internal gateways, cross domain solutions or diodes within the boundary of a system built on the Blueprint, they are responsible for assessing and documenting the risk and applicability associated with each individual security control and describing the implementation of these controls here.
 
 {{% /alert %}}
 
@@ -157,9 +157,9 @@ Web content filtering as implemented within `<SYSTEM-NAME>` is performed accordi
 
 Technical controls for `<SYSTEM-NAME>`'s implementation of web content filtering (as scoped above) are configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au) including the following technical configurations on Windows endpoints:
 
-- web content filtering is enabled for Windows devices using Microsoft Defender for Endpoint
-- client-side active content, including all Java and Flash content, is blocked on all Windows devices
-- Microsoft Defender for Endpoint blocks specific web categories that are maintained by Microsoft.
+* web content filtering is enabled for Windows devices using Microsoft Defender for Endpoint
+* client-side active content, including all Java and Flash content, is blocked on all Windows devices
+* Microsoft Defender for Endpoint blocks specific web categories that are maintained by Microsoft.
 
 For information on implementation of web content filtering via `<ORGANISATION-NAME>`'s `GATEWAY-SYSTEM`, please see the `GATEWAY-SYSTEM` [SSP]({{<ref "security-and-governance/general-documentation">}}) and [IRAP assessment]({{<ref "security-and-governance/general-documentation">}}).
 
@@ -187,12 +187,12 @@ Content filtering as implemented within `<SYSTEM-NAME>` is performed to meet all
 
 Technical controls for `<SYSTEM-NAME>`'s implementation of web content filtering (as scoped above) are configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au) including the following technical configurations on Windows endpoints:
 
-- Exchange Online Protection and Defender for Microsoft 365 are configured to prevent specific file types from entering `<SYSTEM-NAME>` via email
-- Defender for Microsoft 365 provides content filtering including sandboxing of attachments (Safe Attachments) and inspection of links (Safe Links)
-- multiple scanning engines are provided by Exchange Online Protection, Defender for Microsoft 365 and Defender for Endpoint
-- archives are scanned for malware
-- Defender for Microsoft 365 alerts are configured
-- integrity of patches is verified before installation.
+* Exchange Online Protection and Defender for Microsoft 365 are configured to prevent specific file types from entering `<SYSTEM-NAME>` via email
+* Defender for Microsoft 365 provides content filtering including sandboxing of attachments (Safe Attachments) and inspection of links (Safe Links)
+* multiple scanning engines are provided by Exchange Online Protection, Defender for Microsoft 365 and Defender for Endpoint
+* archives are scanned for malware
+* Defender for Microsoft 365 alerts are configured
+* integrity of patches is verified before installation.
 
 For implementation of content filtering by `<ORGANISATION-NAME>`'s `GATEWAY-SYSTEM`, please see the `GATEWAY-SYSTEM` [SSP]({{<ref "security-and-governance/general-documentation">}}) and [IRAP assessment]({{<ref "security-and-governance/general-documentation">}}).
 
@@ -222,16 +222,16 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to peripheral 
 
 #### Security & Governance
 
-- `<ORGANISATION-NAME>`'s [`GATEWAY-SYSTEM` SSP]({{<ref "security-and-governance/general-documentation">}})
-- `<ORGANISATION-NAME>`'s [`GATEWAY-SYSTEM` IRAP Assessment Report]({{<ref "security-and-governance/general-documentation">}})
-- `<SYSTEM-NAME>`'s [Continuous Monitoring Plan]({{<ref "security-and-governance/general-documentation">}})
-- `<SYSTEM-NAME>`'s [System Usage Policy]({{<ref "security-and-governance/policies">}})
+* `<ORGANISATION-NAME>`'s [`GATEWAY-SYSTEM` SSP]({{<ref "security-and-governance/general-documentation">}})
+* `<ORGANISATION-NAME>`'s [`GATEWAY-SYSTEM` IRAP Assessment Report]({{<ref "security-and-governance/general-documentation">}})
+* `<SYSTEM-NAME>`'s [Continuous Monitoring Plan]({{<ref "security-and-governance/general-documentation">}})
+* `<SYSTEM-NAME>`'s [System Usage Policy]({{<ref "security-and-governance/policies">}})
 
 #### Design
 
-- None identified
+* None identified
 
 #### External links
 
-- ASD's [*Guidelines for Gateways*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-gateways)
-- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
+* ASD's [*Guidelines for Gateways*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-gateways)
+* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)

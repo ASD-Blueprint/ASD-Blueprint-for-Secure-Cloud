@@ -4,7 +4,7 @@ weight: 55
 description: "This section describes the design decisions associated with Windows search and Cortana on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
-The Windows Search feature of Windows 10 and 11 provides indexing capability of the operating and file system allowing rapid searching for content stored on an attached hard disk. Once indexed, a file can be searched using either the file name or the content contained within the file.
+The Windows Search feature of Windows 10 and 11 provides indexing capability of the operating and file system enabling rapid searching for content stored on an attached hard disk. Once indexed, a file can be searched using either the file name or the content contained within the file.
 
 Cortana is a voice search capability of Windows 10. Cortana's features include being able to set reminders, recognise natural voice without the user having to input a predefined series of commands, and answer questions using information from Bing (like current weather and traffic conditions, sports scores, and biographies).
 

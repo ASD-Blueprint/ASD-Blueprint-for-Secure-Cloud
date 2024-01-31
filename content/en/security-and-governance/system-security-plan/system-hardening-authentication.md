@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The authentication hardening section of a System Security Plan (SSP) should document an organisation's approach to hardening user authentication. As with other sections of the SSP, information in the server application hardening section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex.
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to operating system hardening. When complete, remove any instructional boxes throughout. 
 
@@ -30,7 +30,7 @@ This section of the SSP is applicable to the hardening of authentication methods
 
 `<SYSTEM-NAME>` provides a central identity store that governs and grants all user access prior to accessing `<SYSTEM-NAME>` resources. Users are assigned specific user roles according to their business requirements.
 
-Credentials for break glass accounts, local administrator accounts and service accounts are required to be a minimum of 30 characters, uniquely and unpredictably generated, and managed in accordance with the `<SYSTEM-NAME>` [System Administration Process and Procedures]({{<ref "security-and-governance/policies">}}), including ensuring that all service accounts are created as Managed Service Accounts.
+Credentials for Break Glass Accounts, local administrator accounts and service accounts are required to be a minimum of 30 characters, uniquely and unpredictably generated, and managed in accordance with the `<SYSTEM-NAME>` [System Administration Process and Procedures]({{<ref "security-and-governance/policies">}}), including ensuring that all service accounts are created as Managed Service Accounts.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -48,7 +48,7 @@ Technical controls are implemented according to the relevant ISM control topics 
 | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- | --- |
 | **Authenticating to Systems:**                                                                                               | Microsoft Entra ID is configured to require all users to be authenticated before granting access                                                                                                                                                  |     |     |     |
 | **Insecure Authentication Methods:**                                                                                         | legacy authentication methods are disabled                                                                                                                                                                                                        |     |     |     |
-| **Multi-factor and Single Factor Authentication Methods:**                                                                   | Microsoft Entra ID MFA is enforced for all standard and privileged users accessing M365 services                                                                                                                                                  |     |     |     |
+| **Multi-factor and Single Factor Authentication Methods:**                                                                   | Microsoft Entra ID MFA is enforced for all standard and privileged users accessing Microsoft 365 services                                                                                                                                                  |     |     |     |
 |                                                                                                                              | Microsoft Entra ID MFA requires Microsoft Entra ID password and Microsoft Authenticator app (either acceptance of push notification or entry of OTP)                                                                                              |     |     |     |
 |                                                                                                                              | Entra ID password/passphrase complexity enforces a minimum of least 4 random words with a total minimum length of 14 characters                                                                                                                   |     |     |     |
 |                                                                                                                              | none of the authentication factors on their own can be used for single-factor authentication to another system                                                                                                                                    |     |     |     |
@@ -77,7 +77,7 @@ Technical controls are implemented according to the relevant ISM control topics 
 
 - [Platform Monitoring and Auditing]({{< ref "platform-monitoring-auditing.md" >}})
 - [Authentication]({{< ref "design/platform/identity/authentication.md" >}})
-- [Entra ID Protection]({{< ref "protection.md" >}})
+- [Entra ID Protection]({{< ref "design/platform/identity/protection.md" >}})
 
 #### External documentation
 

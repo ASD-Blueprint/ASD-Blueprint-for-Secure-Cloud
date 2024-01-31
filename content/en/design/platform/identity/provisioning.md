@@ -34,5 +34,5 @@ The provisioning mode supported by an application is also visible on the Provisi
 
 #### References
 
-* [Application Provisioning Overview](https://docs.microsoft.com/azure/active-directory/app-provisioning/user-provisioning)
-* [How Provisioning Works](https://docs.microsoft.com/azure/active-directory/app-provisioning/how-provisioning-works)
+* [Application Provisioning Overview](https://learn.microsoft.com/entra/identity/app-provisioning/user-provisioning)
+* [How Provisioning Works](https://learn.microsoft.com/entra/identity/app-provisioning/how-provisioning-works)

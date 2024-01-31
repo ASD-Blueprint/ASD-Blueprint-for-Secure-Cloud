@@ -44,7 +44,7 @@ The below are the settings specific to a cloud native deployment of SharePoint O
 | Configuration                                                                                 | Value                                                                               | Description                                                                                                                  |
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | **External Sharing**                                                                          |                                                                                     |                                                                                                                              |
-| SharePoint                                                                                    | New and existing guests                                                             | Guest access is available in accordance with [Collaboration]({{<ref "external-identities">}})                                 |
+| SharePoint                                                                                    | New and existing guests                                                             | Guest access is available in accordance with [Collaboration]({{<ref "design/platform/identity/external-identities">}})                                 |
 | More external sharing settings                                                                | Limit external sharing by domain: Checked <br>Add domains that are allowed: Checked | Guests must sign in using the same account to which the sharing invitations are sent.                                        |
 | OneDrive                                                                                      | Only people in the organisation                                                     | No external sharing allowed.                                                                                                 |
 | **File and folder links**                                                                     |                                                                                     |                                                                                                                              |
@@ -57,7 +57,7 @@ The below are the settings specific to a cloud native deployment of SharePoint O
 
 #### Hybrid deployments
 
-The below are the settings specific to a hybrid deployment of SharePoint Online.
+The below are the settings specific to hybrid deployments of SharePoint Online.
 
 | Configuration                                                                                 | Value                           | Description                                                                                                                  |
 | --------------------------------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |

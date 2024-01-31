@@ -6,7 +6,7 @@ description: "This section describes the design decisions associated with delive
 
 Delivery optimisation makes use of configurable peer-to-peer or caching technologies to decrease the internet bandwidth consumed by patches and updates.
 
-Within an organisation application deployments and patch updates can occur daily to keep an organisation secure and provide the end users the capabilities to perform their work. These application deployments and patch updates can consume high levels of bandwidth, increasing the cost to an organisation. To allow organisations to decrease bandwidth use and cost organisations can implement Delivery Optimisation solutions within their main and remote offices. Delivery Optimisation is essentially a peer-to-peer client service that allows end clients to source installation packages and updates from other clients/servers within the network as opposed to always obtaining them from the source servers or the internet. There are two types of configuration options for Delivery Optimisation:
+Within organisations application deployments and patch updates can occur daily to keep them secure and provide the end users the capabilities to perform their work. These application deployments and patch updates can consume high levels of bandwidth, increasing the cost to organisations. To enable organisations to decrease bandwidth use and cost organisations can implement Delivery Optimisation solutions within their main and remote offices. Delivery Optimisation is essentially a peer-to-peer client service that enables end clients to source installation packages and updates from other clients/servers within the network as opposed to always obtaining them from the source servers or the internet. There are two types of configuration options for Delivery Optimisation:
 
 The following options apply to cloud native and Hybrid (configured in Intune):
 
@@ -19,14 +19,14 @@ The following options apply to cloud native and Hybrid (configured in Intune):
 
 The following options apply to Hybrid (configured in MECM):
 
-* **BranchCache** - Allows systems within the same subnet and separated from a content source to share downloaded content locally instead of traversing a latent network link back to the MECM content source. 
+* **BranchCache** - Enables systems within the same subnet and separated from a content source to share downloaded content locally instead of traversing a latent network link back to the MECM content source. 
 
 BranchCache provides two modes of operation being:
 
 * **Distributed Cache Mode** - Content cache at a remote office is distributed among client systems.
 * **Hosted Cache Mode** - Content cache at a remote office is hosted on one or more hosted cache servers.
-* **Peer Cache** - Is a built-in Configuration Manager solution that allows the clients to share content with other clients directly from their local cache providing Delivery Optimisation. 
-* **Microsoft Connected Cache** - With MECM version 1910 a MECM distribution point can be configured as a Microsoft Connected Cache server allowing it to act as an on-demand cache for content downloaded by Delivery Optimisation. 
+* **Peer Cache** - Is a built-in Configuration Manager solution that enables the clients to share content with other clients directly from their local cache providing Delivery Optimisation. 
+* **Microsoft Connected Cache** - With MECM version 1910 a MECM distribution point can be configured as a Microsoft Connected Cache server enabling it to act as an on-demand cache for content downloaded by Delivery Optimisation. 
 
 ### Cloud native deployments
 

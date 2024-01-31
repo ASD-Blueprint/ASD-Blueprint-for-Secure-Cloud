@@ -11,5 +11,5 @@ Microsoft Purview provides the following:
 * **Sensitivity Labels** - provides the ability for users to label documents and additionally protect those documents with rights management
 * **Office 365 Message Encryption** - enables users to securely send encrypted email messages based on pre-defined rights management templates
 * **Data Loss Prevention** - working across Microsoft workloads and endpoints, provides administrators the ability to define internal and external information sharing policies
-* **Double Key Encryption** - allows users to encrypt information twice so that the most sensitive of information is only accessible by users who have been granted the requisite permissions
+* **Double Key Encryption** - enables users to encrypt information twice so that the most sensitive of information is only accessible by users who have been granted the requisite permissions
 * **Trainable classifiers** - provides organisations with a tool which which they can train to recognise various types of content.

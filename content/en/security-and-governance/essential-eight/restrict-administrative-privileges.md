@@ -56,7 +56,7 @@ The Restrict Administrative Privileges mitigation strategy is applicable to rest
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The Blueprint does not currently provide guidance for automating the disabling of accounts. Organisations building a system using this Blueprint should implement appropriate organisational processes for both validating initial privileged access requests, and disabling them where appropriate.
+The Blueprint does not currently provide guidance for automating the disabling of accounts. Organisations building a system using the Blueprint should implement appropriate organisational processes for both validating initial privileged access requests, and disabling them where appropriate.
 
 {{% /alert %}}
 
@@ -140,15 +140,15 @@ Furthermore, these accounts have appropriate Role Based Access Control applied, 
 
 Maturity Levels Two and Three require that credentials for the following account types are long, unique, unpredictable and managed:
 
-- Break Glass Accounts
-- Local Administrator Accounts
-- Service Accounts
+* Break Glass Accounts
+* Local Administrator Accounts
+* Service Accounts
 
 {{% /alert %}}
 
 `<SYSTEM-NAME>` provides a central identity store that governs and grants all user access prior to accessing resources on the system. Users are assigned specific user roles according to their business requirements.
 
-Credentials for break glass accounts, local administrator accounts and service accounts are required to be a minimum of 30 characters, uniquely and unpredictably generated, and managed in accordance with the `<SYSTEM-NAME>` [System Administration Process and Procedures]({{<ref "security-and-governance/policies">}}), including ensuring that all service accounts are created as Managed Service Accounts.
+Credentials for Break Glass Accounts, local administrator accounts and service accounts are required to be a minimum of 30 characters, uniquely and unpredictably generated, and managed in accordance with the `<SYSTEM-NAME>` [System Administration Process and Procedures]({{<ref "security-and-governance/policies">}}), including ensuring that all service accounts are created as Managed Service Accounts.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -157,10 +157,10 @@ Credentials for break glass accounts, local administrator accounts and service a
 {{% alert title="Essential Eight guidance" color="success" %}}
 
 Maturity Level Three Requires the following functionality to be enabled for protecting accounts:
-- Memory integrity
-- Local Security Authority protection
-- Credential Guard
-- Remote Credential Guard
+* Memory integrity
+* Local Security Authority protection
+* Credential Guard
+* Remote Credential Guard
 
 {{% /alert %}}
 
@@ -181,8 +181,8 @@ Maturity Level Three Requires the following functionality to be enabled for prot
 {{% alert title="Essential Eight guidance" color="success" %}}
 
 Maturity Levels Two and Three require that
-- all Allowed and blocked application control events to be captured from all systems and services and centrally logged
-- event logs are protected from unauthorised modification and deletion.                         
+* all Allowed and blocked application control events to be captured from all systems and services and centrally logged
+* event logs are protected from unauthorised modification and deletion.                         
 
 {{% /alert %}}
 
@@ -219,17 +219,17 @@ Maturity Levels Two and Three require all Privileged access, privileged account,
 | Workstations:                |  -  | Yes |
 
 Both Maturity Levels Two and Three also require the following:
-- cyber security events are analysed in a timely manner to identify cyber security incidents
-- as soon as possible after a cyber security incident occurs or is discovered the:
-  - cyber security incident response plan is enacted
-  - incident is reported to the Chief Information Security Officer, or one of their delegates
-  - incident is reported to ASD. 
+* cyber security events are analysed in a timely manner to identify cyber security incidents
+* as soon as possible after a cyber security incident occurs or is discovered the:
+* cyber security incident response plan is enacted
+* incident is reported to the Chief Information Security Officer, or one of their delegates
+* incident is reported to ASD. 
 
 {{% /alert %}}
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and personnel across an organisation.
+While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
 
 {{% /alert %}}
 
@@ -252,16 +252,16 @@ This includes the processing, analysis, and response to the following event logs
 
 #### Security & Governance
 
-- [System Management]({{<ref "system-management.md">}})
-- [System Monitoring]({{<ref "system-monitoring.md">}})
-- [Cyber Security Incidents]({{<ref "cyber-security-incidents.md">}})
+* [System Management]({{<ref "system-management.md">}})
+* [System Monitoring]({{<ref "system-monitoring.md">}})
+* [Cyber Security Incidents]({{<ref "cyber-security-incidents.md">}})
 
 #### Design
 
-- None identified
+* None identified
 
 #### External links
 
-- ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
-- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-- Microsoft's [*Guidance for meeting ASD's Essential Eight - Restrict Administrative Privileges*](https://learn.microsoft.com/compliance/essential-eight/e8-admin)
+* ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
+* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
+* Microsoft's [*Guidance for meeting ASD's Essential Eight - Restrict Administrative Privileges*](https://learn.microsoft.com/compliance/essential-eight/e8-admin)

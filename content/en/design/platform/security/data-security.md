@@ -42,7 +42,7 @@ In Microsoft Purview, organisations implement data loss prevention (DLP) by defi
 
 {{% alert title="Note" color="info" %}}
 
-For Data Loss Prevention policies associated with Microsoft 365 and Office applications see Data Loss Prevention within the [Microsoft 365 Security]({{<ref "data-loss-prevention">}}) section.
+For Data Loss Prevention policies associated with Microsoft 365 and Office applications see Data Loss Prevention within the [Microsoft 365 Security]({{<ref "design/shared-services/purview/data-loss-prevention">}}) section.
 
 {{% /alert %}}
 
@@ -134,7 +134,7 @@ The Blueprint recommends organisations review the [Microsoft guidance on Informa
 
 #### Design
 
-* [Data Loss Prevention]({{<ref "data-loss-prevention">}})
+* [Data Loss Prevention]({{<ref "design/shared-services/purview/data-loss-prevention">}})
 
 #### References
 

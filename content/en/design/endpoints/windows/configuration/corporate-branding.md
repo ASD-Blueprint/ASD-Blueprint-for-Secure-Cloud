@@ -6,7 +6,7 @@ description: "This section describes the design decisions associated with corpor
 
 Corporate branding enables a consistent corporate user experience. Windows 10 and 11 permit the image displayed on the lock screen, logon screen and desktop wallpaper to be customised and support various resolutions. The appropriate resolution is selected based on an image file name. Windows will automatically select the appropriate image based on the current screen resolution. If a file matching the screen resolution cannot be found, a default image file is used, and the picture stretched to fit the screen.
 
-Custom themes can be deployed to workstations either enforcing the theme or allowing a user to customise it after the initial Standard Operating Environment (SOE) deployment. Each organisation would be required to provide information necessary to customise the branding.
+Custom themes can be deployed to workstations either enforcing the theme or enabling a user to customise it after the initial Standard Operating Environment (SOE) deployment. Each organisation would be required to provide information necessary to customise the branding.
 
 Although a system is capable of being assessed as PROTECTED, banners and backgrounds should not be set to PROTECTED in the SOE or desktop background until an IRAP assessment has been completed.
 

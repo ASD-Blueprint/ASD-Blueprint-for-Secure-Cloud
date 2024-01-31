@@ -44,7 +44,7 @@ Audit logging is not enabled by default and must be turned on first within Micro
 
 {{% alert title="Note" color="info" %}}
 
-Organisations implementing Microsoft 365 should review their alignment with the Information Security Manual for logging and auditing. Where required organisations may need to implement long term logging storage such as that offered through [Microsoft Purview Premium](https://learn.microsoft.com/purview/audit-premium?view=o365-worldwide#long-term-retention-of-audit-logs) 
+Organisations implementing Microsoft 365 should review their alignment with ASD's [*Information Security Manual*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism) for logging and auditing. Where required organisations may need to implement long term logging storage such as that offered through [Microsoft Purview Premium](https://learn.microsoft.com/purview/audit-premium?view=o365-worldwide#long-term-retention-of-audit-logs) 
 
 {{% /alert %}}
 

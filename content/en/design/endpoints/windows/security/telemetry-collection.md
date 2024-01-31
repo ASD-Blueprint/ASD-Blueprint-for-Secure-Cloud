@@ -21,7 +21,7 @@ Telemetry level options are:
 
 | Decision Point  | Design Decision | Justification                                                                                                             |
 |-----------------|-----------------|---------------------------------------------------------------------------------------------------------------------------|
-| Allow Telemetry | Enabled         | In line with the ACSC hardening guideline policy recommendations and meets requirements for future Desktop Analytics use. |
+| Allow Telemetry | Enabled         | In line with the ASD's hardening guideline policy recommendations and meets requirements for future Desktop Analytics use. |
 | Telemetry Level | 2 – Enhanced    | Microsoft recommend Enhanced Limited for Desktop Analytics.                                                               |
 
 {{% /alert %}}

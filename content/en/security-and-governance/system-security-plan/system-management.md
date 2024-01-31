@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The system management section of a System Security Plan (SSP) should document an organisation's approach to system administration, patching, backups and restoration. As with other sections of the SSP, information in the system management section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how organisations must scope, build, document, or assess its system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to system administration, patching and backups and restoration. When complete, remove any instructional boxes throughout. 
 
@@ -41,7 +41,7 @@ Administration of Microsoft services within `<SYSTEM-NAME>` is performed as per 
 | Power Platform Admin centre             | The unified portal to administer Power Apps, Power Automate, Power Pages, and Power Virtual Agents                 | [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) |
 | SharePoint Admin centre                 | Inform, configure, and govern management of all aspects of SharePoint Online across the tenant                     | [https://admin.microsoft.com/sharepoint](https://admin.microsoft.com/sharepoint)       |
 | Defender for Cloud Apps portal          | Configure and manage threat detection, session controls, data protections, and Shadow IT detection                 | [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)             |
-| Azure Portal                            | View and manage all aspects of an organisations Azure environment                                                  | [https://portal.azure.com](https://portal.azure.com)                                   |
+| Azure Portal                            | View and manage all aspects of an organisation's Azure environment                                                  | [https://portal.azure.com](https://portal.azure.com)                                   |
 | Network Connectivity Test Tool          | Enables measurement of the connectivity between a device and Microsoft's network for troubleshooting and tuning    | [https://connectivity.office.com/](https://connectivity.office.com/)                   |
 | Microsoft Teams Call Quality Dashboard  | Shows organisation wide information for call and meeting quality with relation to Microsoft Teams                  | [https://cqd.teams.microsoft.com](https://cqd.teams.microsoft.com)                     |
 
@@ -83,9 +83,9 @@ System Patching for `<SYSTEM-NAME>` is performed in accordance with the [`<SYSTE
 
 Technical controls for `<SYSTEM-NAME>`'s implementation of system patching were configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au), and includes the following technical configurations for `<SYSTEM-NAME>` endpoints and mobile devices via Intune:
 
-- Intune is configured to provide a centralised approach to patching Windows endpoints, and automatically installs updates within 48-hours on all Windows devices
-- Windows Update verifies the integrity of patches before installing them
-- Microsoft Defender for Endpoint provides a level of continuous vulnerability management capability for all Windows devices.
+* Intune is configured to provide a centralised approach to patching Windows endpoints, and automatically installs updates within 48-hours on all Windows devices
+* Windows Update verifies the integrity of patches before installing them
+* Microsoft Defender for Endpoint provides a level of continuous vulnerability management capability for all Windows devices.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -108,8 +108,8 @@ ISM controls relating to the backups and restoration, to the extent that they re
 #### Organisational policies and processes implemented
 
 Backups and restoration, including for information within the system boundary of `<SYSTEM-NAME>`, are performed in accordance with `<ORGANISATION-NAME>`'s [Digital Preservation Policy]({{< ref "security-and-governance/policies">}}) and associated SOPs:
-- [`<SYSTEM-NAME>` Data Backup Process]({{< ref "security-and-governance/general-documentation">}})
-- [`<SYSTEM-NAME>` Data Restoration Process]({{< ref "security-and-governance/general-documentation">}})
+* [`<SYSTEM-NAME>` Data Backup Process]({{< ref "security-and-governance/general-documentation">}})
+* [`<SYSTEM-NAME>` Data Restoration Process]({{< ref "security-and-governance/general-documentation">}})
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -117,9 +117,9 @@ Backups and restoration, including for information within the system boundary of
 
 Technical controls backups and restoration are configured with reference to `<RELEVANT-GUIDANCE>` and includes the following technical configurations:
 
-- `<TECHNICAL-CONFIGURATION-1>`
-- `<TECHNICAL-CONFIGURATION-2>`
-- `<TECHNICAL-CONFIGURATION-3>`
+* `<TECHNICAL-CONFIGURATION-1>`
+* `<TECHNICAL-CONFIGURATION-2>`
+* `<TECHNICAL-CONFIGURATION-3>`
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -127,15 +127,15 @@ Technical controls backups and restoration are configured with reference to `<RE
 
 #### Security & Governance
 
-- [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
-- [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
-- [Essential Eight: Regular Backups]({{< ref "regular-backups.md">}})
-- [System Administration Process]({{<ref "security-and-governance/general-documentation">}})
+* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
+* [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
+* [Essential Eight: Regular Backups]({{< ref "regular-backups.md">}})
+* [System Administration Process]({{<ref "security-and-governance/general-documentation">}})
 
 #### Design
 
--  None Applicable
+*  None Identified
 
 #### External links
 
-- ASD's [*Guidelines for System Management*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-management)
+* ASD's [*Guidelines for System Management*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-management)

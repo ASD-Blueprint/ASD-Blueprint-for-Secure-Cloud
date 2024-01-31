@@ -1,14 +1,12 @@
 ---
 title: Entra ID Protection
 weight: 40
-description: "This section describes the design decisions associated with Entra ID Protection features for system(s) built using ASD's Blueprint for Secure Cloud."
+description: "This section describes the design decisions associated with Entra ID Protection for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
 Entra ID Protection is the function of provisioning access rights to a resource. Entra ID Protection can take the form of an access policy. An access policy defines the business rules on whether an authenticated user is granted or denied access to a resource. Entra ID utilises Conditional Access to define the access policies for Microsoft 365 data. Entra ID using Entra ID Protection utilises analytics to further minimise risk that access is provisioned to a compromised authenticated user.
 
-Entra ID Protection enables configuration of automated responses to suspicious activities and actions related to user identities. With Entra ID Protection, risk-based policies can be configured that automatically respond to detected issues when a specified risk level has been reached.
-
-These policies, in addition to other conditional access controls provided by Entra ID, can either automatically block, Smart Lockout, or initiate adaptive remediation actions including password resets and MFA enforcement.
+Entra ID Protection enables configuration of automated responses to suspicious activities and actions related to user identities. With Entra ID Protection, risk-based policies can be configured that automatically respond to detected issues when a specified risk level has been reached. These policies, in addition to other conditional access controls provided by Entra ID, can either automatically block, Smart Lockout, or initiate adaptive remediation actions including password resets and MFA enforcement.
 
 Entra ID Protection uses the following mechanisms to detect anomalous activity within the environment:
 
@@ -22,14 +20,14 @@ Entra ID Protection provides mechanisms for logging and reporting functionality 
 | Decision Point      | Design Decision                                                       | Justification                                                                                                                                                                                                                    |
 | ------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Entra ID Protection | Enable the sign-in risk policy and user risk policy within the tenant | Provide reporting of detected suspicious sign-in activity based on defined MFA, sign-in risk and user risk policies for increased security.                                                                                      |
-| User risk policy    | Enabled                                                               | The user risk policy detects the probability that a user account has been compromised by detecting risk events that are a typical of a user's behaviour, alerting when high risk behaviour is detected.                          |
+| User risk policy    | Enabled                                                               | The user risk policy detects the probability that a user account has been compromised by detecting risk events that are atypical of a user's behaviour, alerting when high risk behaviour is detected.                          |
 | Sign-in risk policy | Enabled                                                               | Entra ID analyses each sign-in of a user. The objective of the analysis is to detect suspicious actions that come along with the sign-in. Automated actions will be configured to be taken when high risk behaviour is detected. |
 
 {{% /alert %}}
 
 {{% alert title="Note" color="info" %}}
 
-These policies are replicated in the Conditional Access policies MS007, MS008 and MS002. [Microsoft recommends](https://learn.microsoft.com/entra/identity/conditional-access/howto-conditional-access-policy-risk-user) Conditional Access over Identity Protection. The Blueprint has configured both Conditional Access and Identity Protection in alignment with each other.
+These policies are replicated in the Conditional Access policies MS007, MS008 and MS002. [Microsoft recommends](https://learn.microsoft.com/entra/identity/conditional-access/howto-conditional-access-policy-risk-user) Conditional Access over Identity Protection. The Blueprint recommends configuration of both Conditional Access and Identity Protection in alignment with each other.
 
 {{% /alert %}}
 
@@ -64,6 +62,6 @@ Smart lockout duration automatically increases with subsequent lockouts.
 
 #### References
 
-* [Identity Protection Overview](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+* [Identity Protection Overview](https://learn.microsoft.com/entra/id-protection/overview-identity-protection)
 * [API Reference](https://docs.microsoft.com/graph/api/resources/identityprotection-root?view=graph-rest-beta)
 * [Microsoft Entra smart lockout](https://learn.microsoft.com/entra/identity/authentication/howto-password-smart-lockout)

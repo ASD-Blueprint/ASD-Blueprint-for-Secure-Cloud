@@ -16,11 +16,7 @@ There are many supported platforms, each of which have several profile sub-types
 * Windows 8.1 and later
 * Windows 10 and later
 
-Within each platform there are number of profile types allowing many settings to be configured. The profile types and settings that are configurable vary depending on the platform.
-
-In general terms configuration profiles either enable configuration of the device for use by a user, or to enable security of the device through application of controls.
-
-Custom profiles can be created for a platform although this should be considered a last resort if the settings are not available in any other way.
+Within each platform there are number of profile types enabling many settings to be configured. The profile types and settings that are configurable vary depending on the platform. In general terms configuration profiles either enable configuration of the device for use by a user, or to enable security of the device through application of controls. Custom profiles can be created for a platform although this should be considered a last resort if the settings are not available in any other way.
 
 In a co-managed state, these settings may be superfluous to existing Group Policies and Standard Operating Environment (SOE) settings.
 
@@ -87,7 +83,7 @@ Different sets of Microsoft Intune Configuration Profiles are used to configure 
 | Decision Point          | Design Decision                                                                                                                                                                                | Justification                                                                                                |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | `SAW` Configuration Set | Strongest Security - includes limitations on internet access, limited collaboration tools, etc.                                                                                                | Used for Privileged Access Administration where users have access to the highest impact assets and accounts. |
-| `SOE` Configuration Set | Enhanced Security - additional limitations on collaboration tools - This profile supports compliance with the ACSC Devices Hardening Guide Recommendations and ISM PROTECTED Security Controls | Used for specialised use cases where users are managing or creating assets (Management Plane).               |
+| `SOE` Configuration Set | Enhanced Security - additional limitations on collaboration tools - This profile supports compliance with ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/acsc/view-all-content/publications/hardening-microsoft-windows-10-version-21h1-workstations) guidance and ISM PROTECTED Security Controls | Used for specialised use cases where users are managing or creating assets (Management Plane).               |
 
 {{% /alert %}}
 
@@ -106,7 +102,7 @@ Users who span different profiles require separate devices, i.e. a `Platform Adm
 
 Endpoint Manager Configuration Profiles apply settings and features to devices. A collection of Configuration Profiles are assigned to devices as a Configuration Set depending on the machine usage. A naming convention is used to indicate which Configuration Profiles belong to which Configuration Set, the device components the settings relate to and the source for the setting.
 
-Microsoft Intune applies settings through different types of Configuration Profiles, some due to legacy profiles (Administrative Templates, Custom Profiles), others due to group settings in other related settings (Microsoft Defender for Endpoint). Where available, Configuration Settings should use the modern `Setting Catalogue` profile type for applying settings. This allows for easier resolution of setting conflicts.
+Microsoft Intune applies settings through different types of Configuration Profiles, some due to legacy profiles (Administrative Templates, Custom Profiles), others due to group settings in other related settings (Microsoft Defender for Endpoint). Where available, Configuration Settings should use the modern `Setting Catalogue` profile type for applying settings. This enables easier resolution of setting conflicts.
 
 The deployment of the settings, including any conflicts caused by implementation of a setting, can be monitored within Microsoft Intune [Device Profile Monitor.](https://docs.microsoft.com/mem/intune/configuration/device-profile-monitor)
 

@@ -6,8 +6,8 @@ description: "This section describes the design decisions associated with Micros
 
 Classification labels, located within Microsoft Purview, offers the ability to both control the data flow of sensitive information and control the retention of data. Classifications labels consists of the following:
 
-* **Sensitivity Labels** – Allow label specific protection policy settings to be enforced
-* **Retention Labels** – Allow label specific retention policy settings to be enforced
+* **Sensitivity Labels** – Enable label specific protection policy settings to be enforced
+* **Retention Labels** – Enable label specific retention policy settings to be enforced
 
 Sensitivity labels can be applied in the supported Microsoft applications either in Office 365 ProPlus, Microsoft Online or using the Azure Information Protection (AIP) unified labelling client.
 
@@ -26,12 +26,12 @@ At the time of writing, sensitivity labels cannot be configured to satisfy all o
   * Exchange Transport rules do not have these character limitations
 * When downgrading a sensitivity label, the downgrade cannot be prevented, only forcing the user to justify the downgrade
 
-The following MIP methods can be used to assist with PSPF compliance:
+The following Microsoft Purview Information Protection (formerly Microsoft Information Protection; MPIP) methods can be used to assist with PSPF compliance:
 
 * For calendar invites, advise users to add the classification to the body, and use transport rules or DLP to add the required subject and header values.
-* Update the `X-Protective-Marking` header associated with the MIP label at the email gateway with the `ORIGIN=user@organisation.com.au` property. Note, internal emails inside the organisation wouldn't be tagged using this method.
+* Update the `X-Protective-Marking` header associated with the MPIP label at the email gateway with the `ORIGIN=user@organisation.com.au` property. Note, internal emails inside the organisation wouldn't be tagged using this method.
 
-Example email gateway rules that work with MIP are available in the [Network Configuration ABAC document]({{< ref "configuration">}}). These rules are based on regular expressions and are easily adaptable to vendor specific email gateways.
+Example email gateway rules that work with MPIP are available in the [Network Configuration ABAC document]({{< ref "configuration">}}). These rules are based on regular expressions and are easily adaptable to vendor specific email gateways.
 
 Sensitivity labels create a protective marking within the message header and when combined with Exchange mail flow rules the subject can be modified to prepend text in the subject according to the sensitivity.
 

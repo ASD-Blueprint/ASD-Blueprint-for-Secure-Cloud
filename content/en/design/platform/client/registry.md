@@ -18,9 +18,9 @@ ASD's [*Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016*](http
 
 {{% alert title="Design Decisions" color="warning" %}}
 
-| Decision Point          | Design Decision  | Justification                                                                                                                                                                  |
-| ----------------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Registry Setting Method | Microsoft Intune | The organisation should use Microsoft Intune to implement and modify user and computer registry settings to comply with ASD's *Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016* guidance. |
+| Decision Point          | Design Decision  | Justification                                                                                                                                                                                            |
+| ----------------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Registry Setting Method | Microsoft Intune | Organisations should use Microsoft Intune to implement and modify user and computer registry settings to comply with ASD's *Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016* guidance. |
 
 {{% /alert %}}
 
@@ -28,9 +28,9 @@ ASD's [*Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016*](http
 
 {{% alert title="Design Decisions" color="warning" %}}
 
-| Decision Point          | Design Decision             | Justification                                                                                                                                                                                                             |
-| ----------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Registry Setting Method | Group Policy Objects & MECM | The organisation may utilise management solutions such as Group Policy Objects and MECM to implement and modify user and computer registry settings to comply with ASD's *Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016* guidance. |
+| Decision Point          | Design Decision             | Justification                                                                                                                                                                                                                                       |
+| ----------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Registry Setting Method | Group Policy Objects & MECM | Organisations can utilise management solutions such as Group Policy Objects and MECM to implement and modify user and computer registry settings to comply with ASD's *Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016* guidance. |
 
 {{% /alert %}}
 

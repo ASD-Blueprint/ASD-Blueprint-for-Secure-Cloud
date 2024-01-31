@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The cryptography section of a System Security Plan (SSP) should document an organisation's approach to cryptography, TLS, SSH, S/MiME and IPSec. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how organisations must scope, build, document, or assess its system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to cryptography, TLS, SSH, S/MiME and IPSec. When complete, remove any instructional boxes throughout. 
 
@@ -34,10 +34,10 @@ No organisational policies or processes have been implemented in `<SYSTEM-NAME>`
 
 Technical controls for `<SYSTEM-NAME>`'s implementation of cryptography are configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au) including the following technical configurations:
 
-- Microsoft BitLocker is configured on endpoints for disk encryption leveraging AES which is an AACA
-- Microsoft BitLocker is configured to provide full disk encryption of `<SYSTEM-NAME>`'s mobile devices, implementing AES-256 
-- BitLocker recovery keys are stored in Microsoft Entra ID
-- TLS with AES is used to protect traffic to and from Azure and Microsoft 365 servers over the internet.
+* Microsoft BitLocker is configured on endpoints for disk encryption leveraging AES which is an AACA
+* Microsoft BitLocker is configured to provide full disk encryption of `<SYSTEM-NAME>`'s mobile devices, implementing AES-256 
+* BitLocker recovery keys are stored in Microsoft Entra ID
+* TLS with AES is used to protect traffic to and from Azure and Microsoft 365 servers over the internet.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -59,20 +59,20 @@ No organisational policies or processes have been implemented in `<SYSTEM-NAME>`
 
 Technical controls for `<SYSTEM-NAME>`'s implementation of AACAs are configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au) including the following technical configurations:
 
-- BitLocker is configured to use AES-256 encryption.
+* BitLocker is configured to use AES-256 encryption.
 
 `<SYSTEM-NAME>`'s use of Microsoft 365 also inherits the following technical configurations from Microsoft:
 
-- Microsoft Azure and Microsoft 365 services:
-  - implement AACAs where possible
-  - implement Elliptic-Curve Diffie-Hellman Ephemeral (ECDHE) as the preferred algorithm
-  - do not use Diffie-Hellman (DH)
-  - do not use Digital Signature Algorithm (DSA)
-  - implement National Institute of Standards and Technology (NIST) P-256 and P-384
-  - use a 256-bit key where possible for Elliptic-Curve Diffie-Hellman (ECDH)
-  - use a 2048-bit key for Rivest–Shamir–Adleman (RSA)
-  - use separate RSA key pairs for these purposes
-  - use SHA-384 as the preferred hashing algorithm for Microsoft 365 TLS components.
+* Microsoft Azure and Microsoft 365 services:
+* implement AACAs where possible
+* implement Elliptic-Curve Diffie-Hellman Ephemeral (ECDHE) as the preferred algorithm
+* do not use Diffie-Hellman (DH)
+* do not use Digital Signature Algorithm (DSA)
+* implement National Institute of Standards and Technology (NIST) P-256 and P-384
+* use a 256-bit key where possible for Elliptic-Curve Diffie-Hellman (ECDH)
+* use a 2048-bit key for Rivest–Shamir–Adleman (RSA)
+* use separate RSA key pairs for these purposes
+* use SHA-384 as the preferred hashing algorithm for Microsoft 365 TLS components.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -93,7 +93,7 @@ No organisational policies or processes have been implemented in `<SYSTEM-NAME>`
 #### Technical Controls Implemented
 
 `<SYSTEM-NAME>`'s use of Microsoft 365 inherits the following technical controls from Microsoft:
-- Microsoft Azure and Microsoft 365 services implement AACPs where possible.
+* Microsoft Azure and Microsoft 365 services implement AACPs where possible.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -115,16 +115,16 @@ No organisational policies or processes have been implemented in `<SYSTEM-NAME>`
 
 `<SYSTEM-NAME>`'s use of Microsoft 365 inherits the following technical controls from Microsoft:
 
-- Microsoft Azure and Microsoft 365 services: 
-  - implement TLS
-    - however, `<ORGANISATION-NAME>` notes that Microsoft services do not currently allow organisations to select which TLS versions to use
-  - implement AES in Galois Counter Mode (GCM)
-  - implement secure renegotiation
-  - implement ECDHE as the preferred algorithm
-    - Perfect Forward Secrecy is used when ECDHE is prioritised
-  - use SHA-2 based certificates
-  - use SHA-2 as part of the Message Authentication Code and Pseudo-Random Function
-  - disable TLS compression.
+* Microsoft Azure and Microsoft 365 services: 
+* implement TLS
+* however, `<ORGANISATION-NAME>` notes that Microsoft services do not currently allow organisations to select which TLS versions to use
+* implement AES in Galois Counter Mode (GCM)
+* implement secure renegotiation
+* implement ECDHE as the preferred algorithm
+* Perfect Forward Secrecy is used when ECDHE is prioritised
+* use SHA-2 based certificates
+* use SHA-2 as part of the Message Authentication Code and Pseudo-Random Function
+* disable TLS compression.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -202,13 +202,13 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to IPsec.
 
 #### Security & Governance
 
--   None Applicable
+*   None Identified
 
 #### Design
 
--   None Applicable
+*   None Identified
 
 #### External documentation
 
-- ASD's [*Guidelines for Cryptography*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-cryptography)
-- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
+* ASD's [*Guidelines for Cryptography*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-cryptography)
+* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)

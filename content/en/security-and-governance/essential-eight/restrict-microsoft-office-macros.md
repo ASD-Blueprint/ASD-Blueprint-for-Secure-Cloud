@@ -42,24 +42,24 @@ The Restrict Microsoft Office Macros mitigation strategy is applicable to restri
 {{% alert title="Essential Eight guidance" color="success" %}}
 
 All Maturity levels require that for all systems and users:
-- all Microsoft Office macros are disabled, unless the user has a demonstrated business requirement
-- Microsoft Office macros in files originating from the internet are blocked
-- Microsoft Office macro antivirus scanning is enabled
-- Microsoft Office macro security settings cannot be changed by users.
+* all Microsoft Office macros are disabled, unless the user has a demonstrated business requirement
+* Microsoft Office macros in files originating from the internet are blocked
+* Microsoft Office macro antivirus scanning is enabled
+* Microsoft Office macro security settings cannot be changed by users.
 
 Maturity Levels Two and Three also require that for user accounts that have a demonstrated business requirement to run Microsoft Office macros:
-- these macros are blocked from making Win32 API calls.
+* these macros are blocked from making Win32 API calls.
 
 Maturity Level Three also requires that for user accounts that have a demonstrated business requirement to run Microsoft Office macros:
-- Microsoft Office macros are only allowed to execute where they are running in one of the following conditions:
-  - running from within a sandboxed environment, 
-  - running from a Trusted Location, or
-  - are digitally signed by a trusted publisher.
-- that before being digitally signed or placed within Trusted Locations:
-  - Microsoft Office macros are checked to ensure they are free of malicious code
-- Microsoft Office macros cannot be enabled via the Message Bar or Backstage View where they have been digitally signed by either:
-  - an untrusted publisher
-  - signatures other than V3 signatures.
+* Microsoft Office macros are only allowed to execute where they are running in one of the following conditions:
+* running from within a sandboxed environment, 
+* running from a Trusted Location, or
+* are digitally signed by a trusted publisher.
+* that before being digitally signed or placed within Trusted Locations:
+* Microsoft Office macros are checked to ensure they are free of malicious code
+* Microsoft Office macros cannot be enabled via the Message Bar or Backstage View where they have been digitally signed by either:
+* an untrusted publisher
+* signatures other than V3 signatures.
 
 {{% /alert %}}
 
@@ -96,16 +96,16 @@ Office productivity suites are not installed on `<SYSTEM-NAME>` servers.
 
 #### Security & Governance
 
-- [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
+* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
 
 #### Design
 
-- Microsoft's [Office Macro Hardening]({{< ref "microsoft-office-macro-hardening.md">}})
+* Microsoft's [Office Macro Hardening]({{< ref "microsoft-office-macro-hardening.md">}})
 
 #### External links
 
-- ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
-- ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations)
-- ASD's [*Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-365-office-2021-office-2019-and-office-2016)
-- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-- Microsoft's [*Guidance for meeting ASD's Essential Eight - Configure Microsoft Office Macro Settings*](https://learn.microsoft.com/compliance/essential-eight/e8-macro)
+* ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
+* ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations)
+* ASD's [*Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-365-office-2021-office-2019-and-office-2016)
+* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
+* Microsoft's [*Guidance for meeting ASD's Essential Eight - Configure Microsoft Office Macro Settings*](https://learn.microsoft.com/compliance/essential-eight/e8-macro)

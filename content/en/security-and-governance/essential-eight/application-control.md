@@ -27,8 +27,8 @@ As with implementation of ISM controls, the Blueprint does not itself *achieve* 
 ### Applicability
 
 The application control mitigation strategy is applicable to the management of applications on the following `<SYSTEM-NAME>` components:
-- Windows Endpoints
-- `<HYBRID SERVERS>`
+* Windows Endpoints
+* `<HYBRID SERVERS>`
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -86,18 +86,18 @@ Maturity Levels 2 and 3 additionally require that application control rule-sets 
 
 Windows Defender Application Control (WDAC) is used to apply application control on `<SYSTEM-NAME>` workstations and is configured via Microsoft Intune to:
 
-- prevent users (other than local administrators) from installing or uninstalling applications
-- utilise a combination of hash, publisher certificate and path rules in enforcing defined application control policies
-- restrict the execution of the following filetypes to a `<ORGANISATION-NAME>` approved set:
-  - executables
-  - software libraries
-  - scripts
-  - installers
-  - compiled html
-  - HTML applications
-  - control panel applets
-  - drivers
-- implement [Microsoft’s recommended application blocklist](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/Microsoft-recommended-block-rules) and [Microsoft’s vulnerable driver blocklist](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/Microsoft-recommended-driver-block-rules).
+* prevent users (other than local administrators) from installing or uninstalling applications
+* utilise a combination of hash, publisher certificate and path rules in enforcing defined application control policies
+* restrict the execution of the following filetypes to a `<ORGANISATION-NAME>` approved set:
+* executables
+* software libraries
+* scripts
+* installers
+* compiled html
+* HTML applications
+* control panel applets
+* drivers
+* implement [Microsoft’s recommended application blocklist](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/Microsoft-recommended-block-rules) and [Microsoft’s vulnerable driver blocklist](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/Microsoft-recommended-driver-block-rules).
 
 A current list of `<SYSTEM-NAME>` allowed applications can be found in the `<SYSTEM-NAME>` Intune portal. As per `<SYSTEM-NAME>`'s [System Administration Process]({{<ref "security-and-governance/general-documentation">}}), `<ORGANISATION-NAME>` will continually review the list of allowed applications within these filetypes for relevant groups of users, including a specific annual review.
 
@@ -209,11 +209,11 @@ The Blueprint does not provide guidance for implementing application control on 
 {{% alert title="Essential Eight guidance" color="success" %}}
 
 Maturity Levels 2 and 3 require that:
-- all allowed and blocked application control events are to be captured from all of the following and centrally logged:
-  - workstations
-  - internet-facing servers
-  - non-internet-facing servers
-- event logs are protected from unauthorised modification and deletion.                         
+* all allowed and blocked application control events are to be captured from all of the following and centrally logged:
+* workstations
+* internet-facing servers
+* non-internet-facing servers
+* event logs are protected from unauthorised modification and deletion.                         
 
 {{% /alert %}}
 
@@ -255,11 +255,11 @@ Maturity Levels 2 and 3 require all allowed and blocked application control even
 | Workstations:                |  -  | Yes |
 
 Both Maturity Levels 2 and 3 also require the following:
-- cyber security events are analysed in a timely manner to identify cyber security incidents
-- as soon as possible after a cyber security incident occurs or is discovered the:
-  - cyber security incident response plan is enacted
-  - incident is reported to the Chief Information Security Officer (CISO), or one of their delegates
-  - incident is reported to ASD.
+* cyber security events are analysed in a timely manner to identify cyber security incidents
+* as soon as possible after a cyber security incident occurs or is discovered the:
+* cyber security incident response plan is enacted
+* incident is reported to the Chief Information Security Officer (CISO), or one of their delegates
+* incident is reported to ASD.
 
 {{% /alert %}}
 
@@ -267,7 +267,7 @@ Both Maturity Levels 2 and 3 also require the following:
 
 The Blueprint provides limited guidance on developing an approach for response to cyber security incidents. However, the section below is provided for organisations to describe the measures implemented within their system(s) built on the Blueprint. 
 
-Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and personnel across an organisation.
+Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
 
 {{% /alert %}}
 
@@ -289,16 +289,16 @@ This includes the processing, analysis, and response to the following event logs
 
 #### Security & Governance
 
-- [System Management]({{<ref "system-management.md">}})
-- [System Monitoring]({{<ref "system-monitoring.md">}})
-- [Cyber Security Incidents]({{<ref "cyber-security-incidents.md">}})
+* [System Management]({{<ref "system-management.md">}})
+* [System Monitoring]({{<ref "system-monitoring.md">}})
+* [Cyber Security Incidents]({{<ref "cyber-security-incidents.md">}})
 
 #### Design
 
-- None identified
+* None identified
 
 #### External links
 
-- ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
-- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-- Microsoft's [*Guidance for meeting ASD's Essential Eight - Application Control*](https://learn.microsoft.com/compliance/essential-eight/e8-app-control)
+* ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
+* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
+* Microsoft's [*Guidance for meeting ASD's Essential Eight - Application Control*](https://learn.microsoft.com/compliance/essential-eight/e8-app-control)

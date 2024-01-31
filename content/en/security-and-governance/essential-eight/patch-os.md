@@ -28,8 +28,8 @@ As with implementation of ISM controls, the Blueprint does not itself *achieve* 
 
 The Patch Operating Systems mitigation strategy is applicable to the appropriate patching of operating systems for the following components of `<SYSTEM-NAME>`:
 
-- Endpoints (Windows laptops and desktops)
-- `<ON-PREMISES SERVERS>`
+* Endpoints (Windows laptops and desktops)
+* `<ON-PREMISES SERVERS>`
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -47,7 +47,7 @@ The Patch Operating Systems mitigation strategy is applicable to the appropriate
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The Blueprint design does not provide guidance for an organisation's direct management of asset discovery, though the below template serves as a guide of a typical implementation of this section for systems built using this blueprint.
+The Blueprint design does not provide guidance for management of asset discovery, though the below template serves as a guide of a typical implementation of this section for systems built using the Blueprint.
 
 All maturity levels require that an automated method of asset discovery is used at least fortnightly to support the detection of assets for subsequent vulnerability scanning activities.
 
@@ -80,7 +80,7 @@ All maturity levels require that a vulnerability scanner is used to identify mis
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The Blueprint design does not provide guidance for an organisation's direct management of vulnerability scanning, though the below template serves as a guide of a typical implementation of this section for systems built using this blueprint.
+The Blueprint design does not provide guidance for  management of vulnerability scanning, though the below template serves as a guide of a typical implementation of this section for systems built using the Blueprint.
 
 Given that scanning is generally performed on an asset basis rather than an application basis, and that the patching of applications calls for weekly scans to be run the below describes the scanning of endpoints on a weekly basis, while on-premise servers are described as being scanned on a daily basis, particularly to account for internet facing servers including Exchange servers.
 
@@ -183,15 +183,15 @@ In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Proce
 
 #### Security & Governance
 
-- [System Management]({{<ref "system-management.md">}})
-- [`<SYSTEM-NAME>` Vulnerability and Patch Management Process]({{<ref "security-and-governance/general-documentation">}})
+* [System Management]({{<ref "system-management.md">}})
+* [`<SYSTEM-NAME>` Vulnerability and Patch Management Process]({{<ref "security-and-governance/general-documentation">}})
 
 #### Design
 
-- [Endpoint Device Updates]({{<ref "device-updates">}})
+* [Endpoint Device Updates]({{<ref "device-updates">}})
 
 #### External links
 
-- ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
-- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-- Microsoft's [*Guidance for meeting ASD's Essential Eight - Patch Operating Systems*](https://learn.microsoft.com/compliance/essential-eight/e8-patch-os)
+* ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
+* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
+* Microsoft's [*Guidance for meeting ASD's Essential Eight - Patch Operating Systems*](https://learn.microsoft.com/compliance/essential-eight/e8-patch-os)

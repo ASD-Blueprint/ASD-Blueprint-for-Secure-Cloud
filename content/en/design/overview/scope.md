@@ -1,10 +1,10 @@
 ---
 title: "Scope"
 weight: 15
-description: This section provides an overview of the scope and context of operation of system(s) built on ASD's Blueprint for Secure Cloud.
+description: This section provides an overview of the scope and concept of operation of system(s) built on ASD's Blueprint for Secure Cloud.
 ---
 
-The Blueprint targets Australian Government organisations. However, it remains available to other organisations as good practice guidance. The Blueprint focuses on providing information, rationale, and configuration settings for Australian hosted services assessed under the ASD's [Infosec Registered Assessor Program (IRAP)](https://www.cyber.gov.au/resources-business-and-government/assessment-and-evaluation-programs/infosec-registered-assessors-program) to enable secure implementation of the following:
+While the Blueprint is primarily developed for Australian Government organisations, private sector organisations may also find the Blueprint a useful resource. The Blueprint focuses on providing information, rationale, and configuration settings for Australian hosted services assessed under ASD's [Infosec Registered Assessor Program (IRAP)](https://www.cyber.gov.au/resources-business-and-government/assessment-and-evaluation-programs/infosec-registered-assessors-program) to enable secure implementation of the following:
 
 * **Identity** including:
   * Microsoft Entra ID (previously known as Azure Active Directory)
@@ -15,14 +15,14 @@ The Blueprint targets Australian Government organisations. However, it remains a
   * Exchange Online & Exchange Online Protection
   * SharePoint Online
   * OneDrive for Business
-  * Power Platform** (Power Automate and Power Apps)
+  * Power Platform (Power Automate and Power Apps)
   * Microsoft Teams
   * Office 365 Applications
 * **Device management** (Intune) including:
   * Windows 10
   * Windows 11
   * iOS
-* **Connectivity**
+* **Connectivity** including:
   * Cloud to cloud
   * Endpoints
   * Point to site

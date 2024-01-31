@@ -4,7 +4,7 @@ weight: 5
 description: "This section describes the design decisions associated with drivers and peripherals on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
-Drivers allow hardware and software to function within a SOE. Drivers are essentially written code that allows Windows to recognise physical components of a computer such as printers, keyboards, mouse, graphics cards and peripherals. It is critical these drivers are supported on the Operating System version and are deployed at the right time.
+Drivers enable hardware and software to function within a SOE. Drivers are essentially written code that enable Windows to recognise physical components of a computer such as printers, keyboards, mouse, graphics cards and peripherals. It is critical these drivers are supported on the Operating System version and are deployed at the right time.
 
 Drivers that are essential to the hardware platform can be deployed in the base reference image, during device deployment task sequence through MECM, via Microsoft Intune or later by Microsoft Windows Update. Drivers such as network drivers are critical during the deployment phase, whereas a microphone driver is not. The more generic a reference image, the lower the deployment and maintenance costs.
 

@@ -10,7 +10,7 @@ description: This page provides a template and guidance to assist organisations 
 
 The communications systems section of a System Security Plan (SSP) should document an organisation's approach to managing communications systems, such as telephone, videoconferencing and faxes. As with other sections of the SSP, information in the communications systems section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
-All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
+All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the approach to communications systems organisation. When complete, remove any instructional boxes throughout. 
 
@@ -22,7 +22,7 @@ When completing the below template, organisations should insert and update infor
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The Blueprint does not cover an organisation's direct management of landline and mobile telephone systems. However, the use of Microsoft Teams does constitute a telephone system for the purpose of organisational policies relating to these systems.
+The Blueprint does not cover management of landline and mobile telephone systems. However, the use of Microsoft Teams does constitute a telephone system for the purpose of organisational policies relating to these systems.
   
 Please note that the Blueprint does not currently provide guidance on implementing [Telstra Calling for Office 365](https://www.telstra.com.au/small-business/business-software/telstra-calling-for-office-365). This service enables calling between Microsoft Teams and landline and mobile telephones. Organisations wishing to use this service or another similar service should ensure it is implemented, assessed, and managed appropriately.
 
@@ -36,7 +36,7 @@ ISM controls relating to communications systems are applicable to the use of Mic
 
 Use of Microsoft Teams within `<SYSTEM-NAME>` is subject to `<ORGANISATION-NAME>`'s [Telephone Usage Policy]({{< ref "security-and-governance/policies">}}), which describes the sensitivity or classification of information that can be discussed over applicable systems and connection types.
 
-`<ORGANISATION-NAME>` cyber security awareness training also informs personnel of the security risks associated with using each of these connection types, particularly in areas where sensitive classified conversations may occur.
+`<ORGANISATION-NAME>` cyber security awareness training also informs staff of the security risks associated with using each of these connection types, particularly in areas where sensitive classified conversations may occur.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -74,12 +74,12 @@ Technical controls for `<SYSTEM-NAME>`'s implementation of Microsoft Teams for v
 
 `<SYSTEM-NAME>` use of Microsoft Teams inherits the implementation of the following controls from Microsoft:
 
-- use of Entra ID as the source of authentication and authorisation
-- use of Microsoft Azure's Distributed Denial of Service (DDoS) protection capabilities
-- implementation of secure signalling data encryption, including:
-  - Session Initiation Protocol (SIP) 
-  - Secure Real Time Protocol (SRTP)
-- use of a dedicated Virtual Local Area Network (VLAN) within the Microsoft cloud.
+* use of Entra ID as the source of authentication and authorisation
+* use of Microsoft Azure's Distributed Denial of Service (DDoS) protection capabilities
+* implementation of secure signalling data encryption, including:
+* Session Initiation Protocol (SIP) 
+* Secure Real Time Protocol (SRTP)
+* use of a dedicated Virtual Local Area Network (VLAN) within the Microsoft cloud.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -87,7 +87,7 @@ Technical controls for `<SYSTEM-NAME>`'s implementation of Microsoft Teams for v
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The Blueprint does not cover an organisation's direct management of fax machines or multifunction devices. However, organisations may find the below template a useful guide for documenting the use of fax machines or multifunction devices associated with system(s) built using the Blueprint.
+The Blueprint does not cover management of fax machines or multifunction devices. However, organisations may find the below template a useful guide for documenting the use of fax machines or multifunction devices associated with system(s) built using the Blueprint.
 
 {{% /alert %}}
 
@@ -117,17 +117,17 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to the use of 
 
 #### Security & Governance
 
-- [Telephone Usage Policy]({{< ref "security-and-governance/policies">}})
-- [Denial of Service Response Plan for IP Telephony]({{< ref "security-and-governance/general-documentation">}})
-- [Fax Machine and MFD Usage Policy]({{< ref "security-and-governance/policies">}})
+* [Telephone Usage Policy]({{< ref "security-and-governance/policies">}})
+* [Denial of Service Response Plan for IP Telephony]({{< ref "security-and-governance/general-documentation">}})
+* [Fax Machine and MFD Usage Policy]({{< ref "security-and-governance/policies">}})
 
 #### Design
 
-- [Teams Policies and Settings]({{< ref "policies-and-settings.md">}})
-- [Authentication]({{< ref "design/platform/identity/authentication.md" >}})
+* [Teams Policies and Settings]({{< ref "policies-and-settings.md">}})
+* [Authentication]({{< ref "design/platform/identity/authentication.md" >}})
 
 #### External documentation
 
-- ASD's [*Guidelines for Communications Systems*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-communications-systems)
-- [Telstra Calling for Office 365](https://www.telstra.com.au/small-business/business-software/telstra-calling-for-office-365)
-- ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au)
+* ASD's [*Guidelines for Communications Systems*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-communications-systems)
+* [Telstra Calling for Office 365](https://www.telstra.com.au/small-business/business-software/telstra-calling-for-office-365)
+* ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au)

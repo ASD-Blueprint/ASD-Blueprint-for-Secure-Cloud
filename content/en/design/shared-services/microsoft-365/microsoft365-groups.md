@@ -4,13 +4,13 @@ weight: 30
 description: "This section describes the design decisions associated with Microsoft 365 groups for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Microsoft 365 Groups are an extension on the traditional mail Distribution Lists, Mail-enabled Security groups and Shared Mailboxes.
+Microsoft 365 Groups are an extension on the traditional mail distribution lists, Mail-enabled Security groups and Shared Mailboxes.
 
-Microsoft 365 Groups allow members to collaborate with a group email, shared a workspace for conversations, files, calendar events, and a Planner. Unlike Shared Mailboxes, Microsoft 365 groups can be accessed via mobile applications. Microsoft 365 groups are also integrated with Microsoft Teams and are created when a Team is created.
+Microsoft 365 Groups enable members to collaborate with a group email, shared a workspace for conversations, files, calendar events, and a Planner. Unlike Shared Mailboxes, Microsoft 365 groups can be accessed via mobile applications. Microsoft 365 groups are also integrated with Microsoft Teams and are created when a Team is created.
 
 Membership of an Microsoft 365 Group can be dynamically updated using user attributes available in Microsoft 365. This removes some of the management overhead involved with managing the traditional group structures.
 
-Management of Microsoft 365 Groups can be streamlined through the enforcement of a Naming Policy, Microsoft 365 group expiry, and creation restrictions. An Microsoft 365 Group Naming Policy allows the enforcement of a consistent naming strategy across Microsoft 365 Groups. It consists of two parts:
+Management of Microsoft 365 Groups can be streamlined through the enforcement of a Naming Policy, Microsoft 365 group expiry, and creation restrictions. An Microsoft 365 Group Naming Policy enables the enforcement of a consistent naming strategy across Microsoft 365 Groups. It consists of two parts:
 
 * **Prefix-Suffix Naming Policy** – Setting of prefixes or suffixes for groups names. The prefixes/suffixes can be either fixed strings or user attributes; and
 * **Custom Blocked Words** – Blocking of words in the name based on a custom list.
@@ -44,7 +44,7 @@ Microsoft 365 Groups, by default can be created by any user. This can be restric
 
 #### Design
 
-* [Group Naming Conventions]({{<ref "groups">}})
+* [Group Naming Conventions]({{<ref "design/platform/identity/groups">}})
 
 #### References
 

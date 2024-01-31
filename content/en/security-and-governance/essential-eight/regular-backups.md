@@ -45,9 +45,9 @@ The Regular Backups mitigation strategy is applicable to mitigating the risk of 
 {{% alert title="Essential Eight guidance" color="success" %}}
 
 All maturity levels require that backups of data, applications and settings are:
-- performed and retained in accordance with business criticality and business continuity requirements
-- synchronised to enable restoration to a common point in time
-- retained in a secure and resilient manner.
+* performed and retained in accordance with business criticality and business continuity requirements
+* synchronised to enable restoration to a common point in time
+* retained in a secure and resilient manner.
 
 {{% /alert %}}
 
@@ -112,14 +112,14 @@ While the Blueprint does not provide specific guidance on hardening data backups
 
 #### Security & Governance
 
-- [System Management]({{<ref "system-management.md">}})
+* [System Management]({{<ref "system-management.md">}})
 
 #### Design
 
-- None identified
+* None identified
 
 #### External links
 
-- ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
-- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-- Microsoft's [*Guidance for meeting ASD's Essential Eight - Regular Backups*](https://learn.microsoft.com/compliance/essential-eight/e8-backups)
+* ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
+* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
+* Microsoft's [*Guidance for meeting ASD's Essential Eight - Regular Backups*](https://learn.microsoft.com/compliance/essential-eight/e8-backups)

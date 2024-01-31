@@ -4,7 +4,7 @@ weight: 60
 description: "This section describes the design decisions associated with Data Loss Prevention Microsoft 365 security features for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Data Loss Prevention (DLP) policies enable an organisation to identify, monitor, and automatically protect sensitive information across Office 365 and endpoint devices. DLP policies can be targeted to one or more products within the Office 365 suite.
+Data Loss Prevention (DLP) policies enable organisations to identify, monitor, and automatically protect sensitive information across Office 365 and endpoint devices. DLP policies can be targeted to one or more products within the Office 365 suite.
 
 A DLP policy can be configured to:
 

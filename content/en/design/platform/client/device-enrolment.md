@@ -6,7 +6,7 @@ description: "This section describes the design decisions associated with Device
 
 Device enrolment registers the Windows 10 and iOS devices into the corporate device management solution and ensures the device is then able to be managed by administrators.
 
-Microsoft Intune provides a mechanism for enrolling devices into Entra ID. Once registered the device is populated into Intune policy groups using dynamic membership. This ensures that the device meets the compliance policy, is monitored and secured to the organisations security requirements.
+Microsoft Intune provides a mechanism for enrolling devices into Entra ID. Once registered the device is populated into Intune policy groups using dynamic membership. This ensures that the device meets the compliance policy, is monitored and secured to an organisation's security requirements.
 
 Microsoft Intune provides three separate experiences to enrol iOS devices into Entra ID:
 
@@ -16,10 +16,10 @@ Microsoft Intune provides three separate experiences to enrol iOS devices into E
 
 {{% alert title="Design Decisions" color="warning" %}}
 
-| Decision Point           | Design Decision                             | Justification                                                                                                                                                                                                                         |
-| ------------------------ | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows Enrolment Method | Automated Enrolment using Windows Autopilot | Windows 10/11 devices must be enrolled in Microsoft Intune prior to management of the device.Devices are reset to Factory Defaults, the device is associated to a user and the users cannot un-enrol the device (remove MDM profile). |
-| iOS Enrolment            | Configured                                  | iOS devices must be enrolled in Microsoft Intune prior to management of the device.                                                                                                                                                   |
+| Decision Point           | Design Decision                             | Justification                                                                                                                                                                                                                                                        |
+| ------------------------ | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Windows Enrolment Method | Automated Enrolment using Windows Autopilot | Windows 10/11 devices must be enrolled in Microsoft Intune prior to management of the device. Devices are reset to Factory Defaults, the device is associated to a user and the users cannot un-enrol the device (i.e. remove the Mobile Device Management (MDM) profile). |
+| iOS Enrolment            | Configured                                  | iOS devices must be enrolled in Microsoft Intune prior to management of the device.                                                                                                                                                                                  |
 
 {{% /alert %}}
 
@@ -39,33 +39,31 @@ Autopilot can be deployed based on a number of scenarios:
 * **User-Driven** - Deploy and configure devices so that an end user can set it up for themselves.
 * **Self Deploying** - Deploy devices to be automatically configured for shared use, as a kiosk, or as a digital signage device.
 * **Autopilot reset** - Redeploy a device in a business-ready state when assigning a previously used device to another user.
-* **Pre-provisioning** (White Glove) - This splits the autopilot process into two separate parts in order to reduce the time to set up for end users by performing the first half of the setup prior to the user receiving the device. In this scenario either the Original Equipment Manufacturer (OEM), partner, or the organisation IT department can pre-provision device apps, settings, and policies. When the user receives the device the process will finish the autopilot configuration applying the user applications, settings, and policies.
+* **Pre-provisioning** (White Glove) - This splits the autopilot process into two separate parts in order to reduce the time to set up for end users by performing the first half of the setup prior to the user receiving the device. In this scenario either the Original Equipment Manufacturer (OEM), partner, or an organisation's IT department can pre-provision device apps, settings, and policies. When the user receives the device the process will finish the autopilot configuration applying the user applications, settings, and policies.
 
 ### Windows build image
 
-Where organisations wish to build from a "trusted image" rather than a manufacturers base/recovery image, which often contains unwanted "bloatware", the organisation will need to build a base image using the [Microsoft Deployment Toolkit (MDT)](https://learn.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit). This method will additionally allow fine grained control over installed drivers. Devices from the factory must be re-imaged using this process before the autopilot pre-provisioning process is kicked off.
+Where organisations wish to build from a "trusted image" rather than a manufacturers base/recovery image, which often contains unwanted "bloatware", the organisation will need to build a base image using the [Microsoft Deployment Toolkit (MDT)](https://learn.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit). This method will additionally enable fine grained control over installed drivers. Devices from the factory must be re-imaged using this process before the autopilot pre-provisioning process is kicked off.
 
 {{% alert title="Design Decisions" color="warning" %}}
 
-| Decision Point                           | Design Decision | Justification                                                                                                                               |
-| ---------------------------------------- | ----------------| ------------------------------------------------------------------------------------------------------------------------------------------- |
-| Automatically Join Devices               | Entra ID        | Devices will automatically join organisation Entra ID                                                                                       |
-| Auto-enrol devices                       | Configured      | Enrolled automatically into Microsoft Intune                                                                                                |
-| Restrict the Local Administrator Account | Configured      | Aligns with the ACSC Windows 10 and Windows 11 Hardening Guides                                                                             |
-| Create and auto-assign devices           | Configured      | For ease of management and enrolment for devices within the organisation                                                                    |
-| Deployment profile                       | Configured      | Deployment profile will ensure that all workstations are configured in accordance with the organisation standards with no user intervention |
+| Decision Point                           | Design Decision | Justification                                                                                                                                                                                                                                                                                          |
+| ---------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Automatically Join Devices               | Entra ID        | Devices will automatically join organisation Entra ID                                                                                                                                                                                                                                                  |
+| Auto-enrol devices                       | Configured      | Enrolled automatically into Microsoft Intune                                                                                                                                                                                                                                                           |
+| Restrict the Local Administrator Account | Configured      | Aligns with the ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance. |
+| Create and auto-assign devices           | Configured      | For ease of management and enrolment of devices within the organisation                                                                                                                                                                                                                               |
+| Deployment profile                       | Configured      | Deployment profile will ensure that all workstations are configured in accordance with an organisation's standards with no user intervention                                                                                                                                                            |
 
 {{% /alert %}}
 
 ### Access requirements for autopilot enrolment
 
-In order to pre-provision a device a user needs specific rights to enrol the device. The organisation will need to create a privileged group within Entra ID and assign administrator accounts as eligible for elevation to this group, requiring them to activate these rights through Privileged Identity Manager (PIM).
+In order to pre-provision a device a user needs specific rights to enrol the device. Organisations will need to create a privileged group within Entra ID and assign administrator accounts as eligible for elevation to this group, requiring them to activate these rights through Privileged Identity Manager (PIM). The privileged group must be assigned to a Microsoft Intune role which has the `Enrolment Program` permission to provide least privileged access for the accounts to Microsoft Intune.
 
-The privileged group must be assigned to a Microsoft Intune role which has the `Enrolment Program` permission to provide least privileged access for the accounts to Microsoft Intune.
+The privileged group should also be excluded from the [Conditional Access policies]({{<ref "design/platform/identity/conditional-access#conditional-access-policies">}}) `Allow access from compliant iOS devices`, `Allow access from compliant Windows devices`, `Block non-trusted IPs` and `Block privileged user access from non-SAW` to allow device registration from a non organisation managed devices. Devices are considered as non-organisation managed devices until they are enrolled.
 
-The privileged group should also be excluded from the [Conditional Access policies]({{<ref "conditional-access#conditional-access-policies">}}) `Allow access from compliant iOS devices`, `Allow access from compliant Windows devices`, `Block non-trusted IPs` and `Block privileged user access from non-SAW` to allow device registration from a non organisation managed devices. Devices are considered as non-organisation managed devices until they are enrolled.
-
-Finally, the group should be assigned as a user to the `Microsoft Graph PowerShell` application. This will enable the relevant enrolment script to access Microsoft Graph as part of the manual enrolment process. Platform Administrators will need to grant consent to users for the Graph permission. Granting consent is a one off operation that will be required the first time a user enrols a device. Users can "request consent" which then triggers an approval process for a Platform Administrator to action and approve via the Enterprise Applications Admin Consent Requests page.
+Finally, the group should be assigned as a user to the `Microsoft Graph PowerShell` application. This will enable the relevant enrolment script to access Microsoft Graph as part of the manual enrolment process. Platform Administrators will need to grant consent to users for the Graph permission. Granting consent is a one off operation that will be required the first time a user enrols a device. Users can "request consent" which then triggers an approval process for a Platform Administrator to action and approve via the Enterprise Applications Admin Consent Requests portal.
 
 ### Related information
 

@@ -4,7 +4,7 @@ weight: 20
 description: "This section describes the design decisions associated with Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
-The operating system allows software application to interface with the hardware. The operating system manages input and output device components like the mouse, keyboard, network and storage.
+The operating system enables software applications to interface with the hardware. The operating system manages input and output device components like the mouse, keyboard, network and storage.
 Windows 10 and 11 are available in several editions, including:
 
 * **Home** – minimal management and deployment features and cannot be joined to either an on-premises or Microsoft Entra ID domain. It is targeted from home use only.
@@ -13,8 +13,8 @@ Windows 10 and 11 are available in several editions, including:
 
 Servicing of Windows 10 and 11 falls into three distinct channels (previously known as rings):
 
-* **Windows Insider Program** – Windows Insider Program receive feature updates immediately allowing pilot machines to evaluate early builds than the General Availability channel. A business must opt-in for this service and install a specific Windows Insider Program for Business Preview build.
-* **General Availability** – General Availability Channel receives feature update annually and is designed for the broad population of general-purpose devices within an organisation. The General Availability Channel is the default servicing channel for all Windows 10 and 11 devices with the exception of Long Term Servicing Channel (LTSC) release of Windows 10 and 11 Enterprise.
+* **Windows Insider Program** – Windows Insider Program receive feature updates immediately enabling pilot machines to evaluate builds earlier than the General Availability channel. A business must opt-in for this service and install a specific Windows Insider Program for Business Preview build.
+* **General Availability** – General Availability Channel receives feature update annually and is designed for the broad population of general-purpose devices within organisations. The General Availability Channel is the default servicing channel for all Windows 10 and 11 devices with the exception of Long Term Servicing Channel (LTSC) release of Windows 10 and 11 Enterprise.
 * **Long-Term Servicing Channel** – Long-Term Servicing Channel (LTSC) receives releases much more gradually (expected every 2 - 3 years) and is designed for special purpose devices such as those used in Point of Sale (POS) systems or controlling factory or medical equipment, and those machines without Microsoft Office. Additionally, a number of applications are not supported on LTSC Windows devices, for example Microsoft Edge, Microsoft Store, and Microsoft Mail, amongst others.
 
 {{% alert title="Design Decisions" color="warning" %}}

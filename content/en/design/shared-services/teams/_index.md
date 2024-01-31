@@ -4,7 +4,7 @@ weight: 35
 description: "This section describes the design decisions associated with Teams for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-A Team in the context of Microsoft Teams is a grouping of users who are working together to achieve an outcome. It allows users to communicate together through chat and meeting functions as well as collaborate on documents and files uploaded. Within the Team, Channels can be used to breakdown the work into smaller more specific items. These channels can be extended using Bots, Tabs and connectors.
+A Team in the context of Microsoft Teams is a grouping of users who are working together to achieve an outcome. It enables users to communicate together through chat and meeting functions as well as collaborate on documents and files uploaded. Within the Team, Channels can be used to breakdown the work into smaller more specific items. These channels can be extended using Bots, Tabs and connectors.
 
 Microsoft Teams leverages most of the functionality of the Office 365 components. When a Team is created the following items are also created :
 

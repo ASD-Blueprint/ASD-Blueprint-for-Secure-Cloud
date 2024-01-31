@@ -11,7 +11,7 @@ The Microsoft Office security settings detailed in this section are based on Mic
 {{% alert title="Design Decisions" color="warning" %}}
 
 * Attack Surface Reduction
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Attack Surface Reduction rules: Enabled
   * Block executable content from email client and webmail
 ```
@@ -38,32 +38,32 @@ D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 26190899-1602-49E8-8B27-EB1D0A1CE869
 ```
 * Flash content
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Block Flash activation in Office documents: Block all activation
 * Loading external content
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Always prevent untrusted Microsoft Query files from opening: Enabled
   * Don't allow Dynamic Data Exchange (DDE) server launch in Excel: Enabled
   * Don't allow Dynamic Data Exchange (DDE) server lookup in Excel: Enabled
   * Update automatic links at Open: Disabled
 * Macros
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * See following section.
 * Object Linking and Embedding packages
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * See following section.
 * ActiveX
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Disable All ActiveX: Enabled
 * Add-ins
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Disable Trust Bar Notification for unsigned application add-ins and block them: Enabled
   * Require that application add-ins are signed by Trusted Publishers: Enabled
 * Extension Hardening
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Force file extension to match file type: Enabled - Always match file type
 * File Type Blocking
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Set default file block behaviour: Enabled - Blocked files are not opened
   * Excel: File Block Settings
 ```
@@ -103,27 +103,27 @@ D4F940AB-401B-4EFC-AADC-AD5F3C50688A
   Word XP binary documents and templates
 ```
 * Office File Validation
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Turn off file validation: Disabled (Excel, PowerPoint and Word)
 * Running external programs
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Run Programs: Disable (Don't run any programs)
 * Protected View
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Always open untrusted database files in Protected View: Enabled
   * Do not open files from the Internet zone in Protected View: Disabled
   * Do not open files in unsafe locations in Protected View: Disabled
   * Set document behaviour if file validation fails: Enabled (Block files)
   * Turn off Protected View for attachments opened from Outlook: Disabled
 * Trusted documents
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Turn off trusted documents: Enabled
   * Turn off trusted documents on the network: Enabled
 * Hidden markup
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Make hidden markup visible: Enabled (PowerPoint and Word)
 * Reporting information
-  * Justification: To align with ASD's ACSC Microsoft Office hardening guidance.
+  * Justification: To align with ASD's Microsoft Office hardening guidance.
   * Allow including screenshot with Office Feedback: Disabled
   * Automatically receive small updates to improve reliability: Disabled
   * Configure the type of diagnostic data sent by Office to Microsoft: Enabled (Basic)

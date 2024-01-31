@@ -1,7 +1,19 @@
 ---
-title: "Microsoft Purview"
-weight: 30
-description: "Guidance on configuring Microsoft Purview is currently being finalised and will be published in January 2024."
+Title: Microsoft Purview
+weight: 050
+description: "This section describes the configuration of Microsoft Purview associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
-Guidance on configuring Microsoft Purview is currently being finalised and will be published in January 2024. 
+{{% alert title="Instruction" color="dark" %}}
+ 
+The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* for the Microsoft Purview portal blade at the following URL: 
+
+https://compliance.microsoft.com
+
+The settings described on these pages should be used to provide reference to a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
+
+Implementation of the guidance provided by the Blueprint will differ depending on an organisation’s operating context and organisational culture. Organisations should implement the Blueprint in alignment with their existing change management, business processes and frameworks.
+
+Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-NAME>` should be replaced with the relevant details as required.
+ 
+{{% /alert %}}
