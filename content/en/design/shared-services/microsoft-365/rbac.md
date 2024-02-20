@@ -89,6 +89,6 @@ Using PIM for the SharePoint administrator role, the Device administrator role, 
 * [Dataverse Security Roles](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant)
 * [Dataverse System and Application (Built In) Users](https://learn.microsoft.com/power-platform/admin/system-application-users)
 
-#### Related design secisions
+#### Related design decisions
 
 * [Privileged Access Management](../../identity/pim)
