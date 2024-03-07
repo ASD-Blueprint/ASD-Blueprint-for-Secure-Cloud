@@ -29,7 +29,7 @@ At the time of writing, sensitivity labels cannot be configured to satisfy all o
 The following Microsoft Purview Information Protection (formerly Microsoft Information Protection; MPIP) methods can be used to assist with PSPF compliance:
 
 * For calendar invites, advise users to add the classification to the body, and use transport rules or DLP to add the required subject and header values.
-* Update the `X-Protective-Marking` header associated with the MPIP label at the email gateway with the `ORIGIN=user@organisation.com.au` property. Note, internal emails inside the organisation wouldn't be tagged using this method.
+* Update the `X-Protective-Marking` header associated with the MPIP label at the email gateway with the `ORIGIN=user@organisation.gov.au` property. Note, internal emails inside the organisation wouldn't be tagged using this method.
 
 Example email gateway rules that work with MPIP are available in the [Network Configuration ABAC document]({{< ref "configuration">}}). These rules are based on regular expressions and are easily adaptable to vendor specific email gateways.
 
