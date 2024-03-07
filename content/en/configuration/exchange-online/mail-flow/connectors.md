@@ -48,7 +48,7 @@ Organisations that are required to route traffic through a 3rd party mail gatewa
 | Status                                               |                                                                                                                                                                                                                                       On |
 | Retain internal Exchange email headers (recommended) |                                                                                                                                                                                                                                   Enable |
 | How to identify your organization                    |                                                                                                                        Identify the organization by verifying that messages are coming Inbound from xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
-| Security restrictions                                | Reject messages if they aren’t encrypted using Transport Layer Security (TLS), or the subject name on the certificate that the organization uses to authenticate with Office 365 doesn’t match this domain name: `*.Organisation.com.au` |
+| Security restrictions                                | Reject messages if they aren’t encrypted using Transport Layer Security (TLS), or the subject name on the certificate that the organization uses to authenticate with Office 365 doesn’t match this domain name: `*.organisation.gov.au` |
 
 
 #### Outbound mail connector
@@ -62,8 +62,8 @@ Organisations that are required to route traffic through a 3rd party mail gatewa
 | Retain internal Exchange email headers (recommended) |                                                                                                                                                                                                                         Enable |
 | How to identify your organization                    |                                                                                                              Identify the organization by verifying that messages are going outbound from xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
 | When to use the connector                            |                                                                                                                                                                          Only when email messages are sent to these domains: * |
-| Routing method                                       |                                                                                                                                                            Route email messages through these smart hosts: Organisation.com.au |
-| Security restrictions                                | Always use Transport Layer Security (TLS) and connect only if the recipient’s email server certificate is issued by a trusted certificate authority (CA), and the subject name matches this domain: `mail.organisation.com.au` |
+| Routing method                                       |                                                                                                                                                            Route email messages through these smart hosts: organisation.gov.au |
+| Security restrictions                                | Always use Transport Layer Security (TLS) and connect only if the recipient’s email server certificate is issued by a trusted certificate authority (CA), and the subject name matches this domain: `mail.organisation.gov.au` |
 
 ### Related information
 
