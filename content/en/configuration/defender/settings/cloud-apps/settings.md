@@ -25,7 +25,7 @@ Placeholders such as ‘organisation.gov.au’, ‘blueprint.gov.au’ and ‘te
 | ------------------------- | -----------------------------------------------------:|
 | Organization display name | *Organisation name*                                   |
 | Environment name          | *Organisation environment name*                       |
-| Managed domains           | `organisation.onmicrosoft.com`, `organisation.com.au` |
+| Managed domains           | `organisation.onmicrosoft.com`, `organisation.gov.au` |
 
 ### Redirection To Microsoft Defender XDR
 
