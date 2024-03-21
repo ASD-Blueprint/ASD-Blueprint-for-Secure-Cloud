@@ -16,9 +16,9 @@ Text included in the guidance boxes throughout this template should be deleted f
 
 **Download Template:**
 
-[Download SSP Annex Template (.xlsx)](</content/files/Blueprint System Security Plan Annex Template (December 2023).xlsx>)
+[Download SSP Annex Template (.xlsx)](</content/files/Blueprint System Security Plan Annex Template (March 2024).xlsx>)
 
 {{% /alert %}}
 
-The System Security Plan Annex (SSP-A) for `<SYSTEM-NAME>` covers both applicable controls from this document and any additional controls that have been identified. The completed SSP-A for `<SYSTEM-NAME>` can be found at [`System Security Plan Annex`](</content/files/Blueprint System Security Plan Annex Template (December 2023).xlsx>). 
+The System Security Plan Annex (SSP-A) for `<SYSTEM-NAME>` covers both applicable controls from this document and any additional controls that have been identified. The completed SSP-A for `<SYSTEM-NAME>` can be found at [`System Security Plan Annex`](</content/files/Blueprint System Security Plan Annex Template (March 2024).xlsx>). 
 
