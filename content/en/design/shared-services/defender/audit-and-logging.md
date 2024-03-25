@@ -15,29 +15,29 @@ The Microsoft 365 Management Activity API enables third-party applications to co
 A list of Office 365 applications, their auditing capabilities and duration wait time once an event occurs.
 
 | Application                                                      | User Activity | Admin Activity | Duration wait time |
-|------------------------------------------------------------------|:-------------:|:--------------:|--------------------|
-| Exchange Online                                                  | x             | x              | 30 minutes         |
-| OneDrive for Business                                            | x             |                | 30 minutes         |
-| SharePoint Online                                                | x             | x              | 30 minutes         |
-| Sway                                                             | x             | x              | 24 hours           |
-| Power Bi                                                         | x             | x              | 30 minutes         |
-| Workplace Analytics                                              |               | x              | 30 minutes         |
-| Dynamics 365                                                     | x             | x              | 24 hours           |
-| Yammer                                                           | x             | x              | 24 hours           |
-| Microsoft Power Apps                                             | x             | x              | 24 hours           |
-| Microsoft Power Automate                                         | x             | x              | 24 hours           |
-| Microsoft Steam                                                  | x             | x              | 30 minutes         |
-| Microsoft Teams                                                  | x             | x              | 30 minutes         |
-| Microsoft Forms                                                  | x             | x              | 30 minutes         |
-| Entra ID                                                         |               | x              | 24 hours           |
-| eDiscovery activities in Office 365 Security & Compliance Center | x             | x              | 30 minutes         |
+| ---------------------------------------------------------------- | :-----------: | :------------: | ------------------ |
+| Exchange Online                                                  |       x       |       x        | 30 minutes         |
+| OneDrive for Business                                            |       x       |                | 30 minutes         |
+| SharePoint Online                                                |       x       |       x        | 30 minutes         |
+| Sway                                                             |       x       |       x        | 24 hours           |
+| Power Bi                                                         |       x       |       x        | 30 minutes         |
+| Workplace Analytics                                              |               |       x        | 30 minutes         |
+| Dynamics 365                                                     |       x       |       x        | 24 hours           |
+| Yammer                                                           |       x       |       x        | 24 hours           |
+| Microsoft Power Apps                                             |       x       |       x        | 24 hours           |
+| Microsoft Power Automate                                         |       x       |       x        | 24 hours           |
+| Microsoft Stream                                                 |       x       |       x        | 30 minutes         |
+| Microsoft Teams                                                  |       x       |       x        | 30 minutes         |
+| Microsoft Forms                                                  |       x       |       x        | 30 minutes         |
+| Entra ID                                                         |               |       x        | 24 hours           |
+| eDiscovery activities in Office 365 Security & Compliance Center |       x       |       x        | 30 minutes         |
 
 Audit logging is not enabled by default and must be turned on first within Microsoft Purview before user or administrator activities can be audited.
 
 {{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point        | Design Decision               | Justification                                                                                 |
-|-----------------------|-------------------------------|-----------------------------------------------------------------------------------------------|
+| --------------------- | ----------------------------- | --------------------------------------------------------------------------------------------- |
 | Unified Audit Logging | Enabled<br>One-year retention | To provide visibility into the actions being undertaken within the Microsoft 365 environment. |
 
 {{% /alert %}}

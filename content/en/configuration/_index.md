@@ -6,7 +6,7 @@ weight: 41
 
 {{% alert title="Instruction" color="dark" %}}
  
-The *as built* configuration for ASD's *Blueprint for Secure Cloud*.
+These pages provide the *as built* configuration for ASD's *Blueprint for Secure Cloud*.
  
 The settings described on these pages should be used to provide reference of a baseline implementation for a system configured using the blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
  

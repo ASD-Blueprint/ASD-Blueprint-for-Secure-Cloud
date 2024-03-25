@@ -50,9 +50,9 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ##### Conditions
 
-| Item                   |                                                                                                         Value |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------: |
-| Header matches pattern | Header name: `X-Protective-Marking`<br>Regular expression: `(?im)(SEC=PROTECTED)(?!\u002C\s*[ACCESS|CAVEAT])` |
+| Item                   |                                                                                                          Value |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------: |
+| Header matches pattern | Header name: `X-Protective-Marking`<br>Regular expression: `(?im)(SEC=PROTECTED)(?!\u002C\s*[ACCESS\|CAVEAT])` |
 
 #### Check for PROTECTED subject
 
@@ -63,9 +63,9 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ##### Conditions
 
-| Item                    |                                                                 Value |
-| ----------------------- | --------------------------------------------------------------------: |
-| Subject matches pattern | Regular expression: `(?im)(SEC=PROTECTED)(?!\u002C\s[ACCESS|CAVEAT])` |
+| Item                    |                                                                  Value |
+| ----------------------- | ---------------------------------------------------------------------: |
+| Subject matches pattern | Regular expression: `(?im)(SEC=PROTECTED)(?!\u002C\s[ACCESS\|CAVEAT])` |
 
 ### Label
 

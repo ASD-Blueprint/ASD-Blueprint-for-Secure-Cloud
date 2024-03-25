@@ -8,7 +8,7 @@ description: This page provides a template and guidance to assist organisations 
 
 {{% alert title="Instruction" color="dark" %}}
 
-The networking section of a System Security Plan (SSP) should document an organisation's approach to networking design and configuration, wireless networks and service continuity for online services. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
+The networking section of a System Security Plan (SSP) should document an organisation's approach to networking design and configuration, wireless networks and service continuity for online services. As with other sections of the SSP, information in this section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how organisations must scope, build, document, or assess its system.
 

@@ -10,7 +10,7 @@ All material presented on this website is provided under a [Creative Commons Att
 * content supplied by third parties, and 
 * other material specifically not provided under a Creative Commons Attribution 4.0 licence.
 
-The details of the relevant licence conditions are available on the [Creative Commmons](http://creativecommons.org/) website, as is the full [legal code](https://creativecommons.org/licenses/by/4.0/legalcode) for the CC BY 4.0 licence.
+The details of the relevant licence conditions are available on the [Creative Commons](http://creativecommons.org/) website, as is the full [legal code](https://creativecommons.org/licenses/by/4.0/legalcode) for the CC BY 4.0 licence.
 
 ## Attribution
 Material obtained from this website is to be attributed to the Australian Signals Directorate as: <br>© Commonwealth of Australia 2023.

@@ -1,5 +1,5 @@
 ---
-Title: 
+Title: "iOS Microsoft Enterprise SSO Plugin"
 weight: 30
 description: "This section describes the configuration of device configuration profiles within Microsoft Intune associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---

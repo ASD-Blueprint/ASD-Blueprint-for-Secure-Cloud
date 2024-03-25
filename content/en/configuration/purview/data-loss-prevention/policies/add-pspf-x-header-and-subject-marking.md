@@ -124,25 +124,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### UNOFFICIAL add x-header
 
-| Item                                                                                             |                                                                    Value |
-| ------------------------------------------------------------------------------------------------ | -----------------------------------------------------------------------: |
-| Name                                                                                             |                                                  UNOFFICIAL add x-header |
-| **Conditions**                                                                                   |                                                                          |
-| Content contains                                                                                 |                                                                          |
-| - Group name                                                                                     |                                                                  Default |
-| - Group operator                                                                                 |                                                             Any of these |
-| - Sensitivity labels                                                                             |                                                               UNOFFICIAL |
-| **Actions**                                                                                      |                                                                          |
-| Set headers                                                                                      | Value:VER=2018.6, NS=gov.au, SEC=UNOFFICIAL<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                          |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                      Off |
-| **Incident reports**                                                                             |                                                                          |
-| Use this severity level in admin alerts and reports                                              |                                                                      Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                      Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                      Off |
-| **Additional options**                                                                           |                                                                          |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                Unchecked |
-| Priority                                                                                         |                                                                        2 |
+| Item                                                                                             |                                                          Value |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------: |
+| Name                                                                                             |                                        UNOFFICIAL add x-header |
+| **Conditions**                                                                                   |                                                                |
+| Content contains                                                                                 |                                                                |
+| - Group name                                                                                     |                                                        Default |
+| - Group operator                                                                                 |                                                   Any of these |
+| - Sensitivity labels                                                                             |                                                     UNOFFICIAL |
+| **Actions**                                                                                      |                                                                |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=UNOFFICIAL" |
+| **User notifications**                                                                           |                                                                |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                            Off |
+| **Incident reports**                                                                             |                                                                |
+| Use this severity level in admin alerts and reports                                              |                                                            Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                            Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                            Off |
+| **Additional options**                                                                           |                                                                |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                      Unchecked |
+| Priority                                                                                         |                                                              2 |
 
 
 #### OFFICIAL append subject
@@ -173,25 +173,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### OFFICIAL add x-header
 
-| Item                                                                                             |                                                                  Value |
-| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------: |
-| Name                                                                                             |                                                  OFFICIAL add x-header |
-| **Conditions**                                                                                   |                                                                        |
-| Content contains                                                                                 |                                                                        |
-| - Group name                                                                                     |                                                                Default |
-| - Group operator                                                                                 |                                                           Any of these |
-| - Sensitivity labels                                                                             |                                                               OFFICIAL |
-| **Actions**                                                                                      |                                                                        |
-| Set headers                                                                                      | Value:VER=2018.6, NS=gov.au, SEC=OFFICIAL<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                        |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                    Off |
-| **Incident reports**                                                                             |                                                                        |
-| Use this severity level in admin alerts and reports                                              |                                                                    Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                    Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                    Off |
-| **Additional options**                                                                           |                                                                        |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                              Unchecked |
-| Priority                                                                                         |                                                                      4 |
+| Item                                                                                             |                                                        Value |
+| ------------------------------------------------------------------------------------------------ | -----------------------------------------------------------: |
+| Name                                                                                             |                                        OFFICIAL add x-header |
+| **Conditions**                                                                                   |                                                              |
+| Content contains                                                                                 |                                                              |
+| - Group name                                                                                     |                                                      Default |
+| - Group operator                                                                                 |                                                 Any of these |
+| - Sensitivity labels                                                                             |                                                     OFFICIAL |
+| **Actions**                                                                                      |                                                              |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=OFFICIAL" |
+| **User notifications**                                                                           |                                                              |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                          Off |
+| **Incident reports**                                                                             |                                                              |
+| Use this severity level in admin alerts and reports                                              |                                                          Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                          Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                          Off |
+| **Additional options**                                                                           |                                                              |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                    Unchecked |
+| Priority                                                                                         |                                                            4 |
 
 
 #### OFFICIAL: Sensitive append subject
@@ -222,25 +222,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### OFFICIAL: Sensitive add x-header
 
-| Item                                                                                             |                                                                      Value |
-| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------: |
-| Name                                                                                             |                                           OFFICIAL: Sensitive add x-header |
-| **Conditions**                                                                                   |                                                                            |
-| Content contains                                                                                 |                                                                            |
-| - Group name                                                                                     |                                                                    Default |
-| - Group operator                                                                                 |                                                               Any of these |
-| - Sensitivity labels                                                                             |                                      OFFICIAL Sensitive/OFFICIAL Sensitive |
-| **Actions**                                                                                      |                                                                            |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                            |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                        Off |
-| **Incident reports**                                                                             |                                                                            |
-| Use this severity level in admin alerts and reports                                              |                                                                        Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                        Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                        Off |
-| **Additional options**                                                                           |                                                                            |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                  Unchecked |
-| Priority                                                                                         |                                                                          6 |
+| Item                                                                                             |                                                                  Value |
+| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------: |
+| Name                                                                                             |                                       OFFICIAL: Sensitive add x-header |
+| **Conditions**                                                                                   |                                                                        |
+| Content contains                                                                                 |                                                                        |
+| - Group name                                                                                     |                                                                Default |
+| - Group operator                                                                                 |                                                           Any of these |
+| - Sensitivity labels                                                                             |                                  OFFICIAL Sensitive/OFFICIAL Sensitive |
+| **Actions**                                                                                      |                                                                        |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive" |
+| **User notifications**                                                                           |                                                                        |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                    Off |
+| **Incident reports**                                                                             |                                                                        |
+| Use this severity level in admin alerts and reports                                              |                                                                    Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                    Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                    Off |
+| **Additional options**                                                                           |                                                                        |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                              Unchecked |
+| Priority                                                                                         |                                                                      6 |
 
 
 #### OFFICIAL: Sensitive Legal-Privilege append subject
@@ -271,25 +271,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### OFFICIAL: Sensitive Legal-Privilege add x-header
 
-| Item                                                                                             |                                                                                              Value |
-| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                                   OFFICIAL: Sensitive Legal-Privilege add x-header |
-| **Conditions**                                                                                   |                                                                                                    |
-| Content contains                                                                                 |                                                                                                    |
-| - Group name                                                                                     |                                                                                            Default |
-| - Group operator                                                                                 |                                                                                       Any of these |
-| - Sensitivity labels                                                                             |                                                                 OFFICIAL Sensitive/Legal-Privilege |
-| **Actions**                                                                                      |                                                                                                    |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive, ACCESS=Legal-Privilege<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                                                    |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                Off |
-| **Incident reports**                                                                             |                                                                                                    |
-| Use this severity level in admin alerts and reports                                              |                                                                                                Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                                Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                                Off |
-| **Additional options**                                                                           |                                                                                                    |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                          Unchecked |
-| Priority                                                                                         |                                                                                                  8 |
+| Item                                                                                             |                                                                                         Value |
+| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                              OFFICIAL: Sensitive Legal-Privilege add x-header |
+| **Conditions**                                                                                   |                                                                                               |
+| Content contains                                                                                 |                                                                                               |
+| - Group name                                                                                     |                                                                                       Default |
+| - Group operator                                                                                 |                                                                                  Any of these |
+| - Sensitivity labels                                                                             |                                                            OFFICIAL Sensitive/Legal-Privilege |
+| **Actions**                                                                                      |                                                                                               |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive ACCESS=Legal-Privilege" |
+| **User notifications**                                                                           |                                                                                               |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                           Off |
+| **Incident reports**                                                                             |                                                                                               |
+| Use this severity level in admin alerts and reports                                              |                                                                                           Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                           Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                           Off |
+| **Additional options**                                                                           |                                                                                               |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                     Unchecked |
+| Priority                                                                                         |                                                                                             8 |
 
 
 #### OFFICIAL: Sensitive Legislative-Secrecy append subject
@@ -320,25 +320,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### OFFICIAL: Sensitive Legislative-Secrecy add x-header
 
-| Item                                                                                             |                                                                                                  Value |
-| ------------------------------------------------------------------------------------------------ | -----------------------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                                   OFFICIAL: Sensitive Legislative-Secrecy add x-header |
-| **Conditions**                                                                                   |                                                                                                        |
-| Content contains                                                                                 |                                                                                                        |
-| - Group name                                                                                     |                                                                                                Default |
-| - Group operator                                                                                 |                                                                                           Any of these |
-| - Sensitivity labels                                                                             |                                                                 OFFICIAL Sensitive/Legislative-Secrecy |
-| **Actions**                                                                                      |                                                                                                        |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive, ACCESS=Legislative-Secrecy<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                                                        |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                    Off |
-| **Incident reports**                                                                             |                                                                                                        |
-| Use this severity level in admin alerts and reports                                              |                                                                                                    Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                                    Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                                    Off |
-| **Additional options**                                                                           |                                                                                                        |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                              Unchecked |
-| Priority                                                                                         |                                                                                                     10 |
+| Item                                                                                             |                                                                                             Value |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                              OFFICIAL: Sensitive Legislative-Secrecy add x-header |
+| **Conditions**                                                                                   |                                                                                                   |
+| Content contains                                                                                 |                                                                                                   |
+| - Group name                                                                                     |                                                                                           Default |
+| - Group operator                                                                                 |                                                                                      Any of these |
+| - Sensitivity labels                                                                             |                                                            OFFICIAL Sensitive/Legislative-Secrecy |
+| **Actions**                                                                                      |                                                                                                   |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive ACCESS=Legislative-Secrecy" |
+| **User notifications**                                                                           |                                                                                                   |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                               Off |
+| **Incident reports**                                                                             |                                                                                                   |
+| Use this severity level in admin alerts and reports                                              |                                                                                               Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                               Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                               Off |
+| **Additional options**                                                                           |                                                                                                   |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                         Unchecked |
+| Priority                                                                                         |                                                                                                10 |
 
 
 #### OFFICIAL: Sensitive Personal-Privacy append subject
@@ -369,25 +369,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### OFFICIAL: Sensitive Personal-Privacy add x-header
 
-| Item                                                                                             |                                                                                               Value |
-| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                                   OFFICIAL: Sensitive Personal-Privacy add x-header |
-| **Conditions**                                                                                   |                                                                                                     |
-| Content contains                                                                                 |                                                                                                     |
-| - Group name                                                                                     |                                                                                             Default |
-| - Group operator                                                                                 |                                                                                        Any of these |
-| - Sensitivity labels                                                                             |                                                                 OFFICIAL Sensitive/Personal-Privacy |
-| **Actions**                                                                                      |                                                                                                     |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive, ACCESS=Personal-Privacy<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                                                     |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                 Off |
-| **Incident reports**                                                                             |                                                                                                     |
-| Use this severity level in admin alerts and reports                                              |                                                                                                 Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                                 Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                                 Off |
-| **Additional options**                                                                           |                                                                                                     |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                           Unchecked |
-| Priority                                                                                         |                                                                                                  12 |
+| Item                                                                                             |                                                                                          Value |
+| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                              OFFICIAL: Sensitive Personal-Privacy add x-header |
+| **Conditions**                                                                                   |                                                                                                |
+| Content contains                                                                                 |                                                                                                |
+| - Group name                                                                                     |                                                                                        Default |
+| - Group operator                                                                                 |                                                                                   Any of these |
+| - Sensitivity labels                                                                             |                                                            OFFICIAL Sensitive/Personal-Privacy |
+| **Actions**                                                                                      |                                                                                                |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive ACCESS=Personal-Privacy" |
+| **User notifications**                                                                           |                                                                                                |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                            Off |
+| **Incident reports**                                                                             |                                                                                                |
+| Use this severity level in admin alerts and reports                                              |                                                                                            Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                            Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                            Off |
+| **Additional options**                                                                           |                                                                                                |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                      Unchecked |
+| Priority                                                                                         |                                                                                             12 |
 
 
 #### OFFICIAL: Sensitive NATIONAL CABINET append subject
@@ -418,25 +418,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### OFFICIAL: Sensitive NATIONAL CABINET add x-header
 
-| Item                                                                                             |                                                                                                  Value |
-| ------------------------------------------------------------------------------------------------ | -----------------------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                                      OFFICIAL: Sensitive NATIONAL CABINET add x-header |
-| **Conditions**                                                                                   |                                                                                                        |
-| Content contains                                                                                 |                                                                                                        |
-| - Group name                                                                                     |                                                                                                Default |
-| - Group operator                                                                                 |                                                                                           Any of these |
-| - Sensitivity labels                                                                             |                                                                    OFFICIAL Sensitive/NATIONAL CABINET |
-| **Actions**                                                                                      |                                                                                                        |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive, CAVEAT=SH-NATIONAL-CABINET<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                                                        |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                    Off |
-| **Incident reports**                                                                             |                                                                                                        |
-| Use this severity level in admin alerts and reports                                              |                                                                                                    Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                                    Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                                    Off |
-| **Additional options**                                                                           |                                                                                                        |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                              Unchecked |
-| Priority                                                                                         |                                                                                                     14 |
+| Item                                                                                             |                                                                                             Value |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                 OFFICIAL: Sensitive NATIONAL CABINET add x-header |
+| **Conditions**                                                                                   |                                                                                                   |
+| Content contains                                                                                 |                                                                                                   |
+| - Group name                                                                                     |                                                                                           Default |
+| - Group operator                                                                                 |                                                                                      Any of these |
+| - Sensitivity labels                                                                             |                                                               OFFICIAL Sensitive/NATIONAL CABINET |
+| **Actions**                                                                                      |                                                                                                   |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive CAVEAT=SH:NATIONAL CABINET" |
+| **User notifications**                                                                           |                                                                                                   |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                               Off |
+| **Incident reports**                                                                             |                                                                                                   |
+| Use this severity level in admin alerts and reports                                              |                                                                                               Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                               Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                               Off |
+| **Additional options**                                                                           |                                                                                                   |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                         Unchecked |
+| Priority                                                                                         |                                                                                                14 |
 
 
 #### OFFICIAL: Sensitive NATIONAL CABINET Legal-Privilege append subject
@@ -467,25 +467,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### OFFICIAL: Sensitive NATIONAL CABINET Legal-Privilege add x-header
 
-| Item                                                                                             |                                                                                                                          Value |
-| ------------------------------------------------------------------------------------------------ | -----------------------------------------------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                                              OFFICIAL: Sensitive NATIONAL CABINET Legal-Privilege add x-header |
-| **Conditions**                                                                                   |                                                                                                                                |
-| Content contains                                                                                 |                                                                                                                                |
-| - Group name                                                                                     |                                                                                                                        Default |
-| - Group operator                                                                                 |                                                                                                                   Any of these |
-| - Sensitivity labels                                                                             |                                                                          OFFICIAL Sensitive/NATIONAL CABINET - Legal-Privilege |
-| **Actions**                                                                                      |                                                                                                                                |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive, CAVEAT=SH-NATIONAL-CABINET, ACCESS=Legal-Privilege<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                                                                                |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                                            Off |
-| **Incident reports**                                                                             |                                                                                                                                |
-| Use this severity level in admin alerts and reports                                              |                                                                                                                            Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                                                            Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                                                            Off |
-| **Additional options**                                                                           |                                                                                                                                |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                                      Unchecked |
-| Priority                                                                                         |                                                                                                                             16 |
+| Item                                                                                             |                                                                                                                     Value |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                         OFFICIAL: Sensitive NATIONAL CABINET Legal-Privilege add x-header |
+| **Conditions**                                                                                   |                                                                                                                           |
+| Content contains                                                                                 |                                                                                                                           |
+| - Group name                                                                                     |                                                                                                                   Default |
+| - Group operator                                                                                 |                                                                                                              Any of these |
+| - Sensitivity labels                                                                             |                                                                     OFFICIAL Sensitive/NATIONAL CABINET - Legal-Privilege |
+| **Actions**                                                                                      |                                                                                                                           |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive CAVEAT=SH:NATIONAL CABINET, ACCESS=Legal-Privilege" |
+| **User notifications**                                                                           |                                                                                                                           |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                                       Off |
+| **Incident reports**                                                                             |                                                                                                                           |
+| Use this severity level in admin alerts and reports                                              |                                                                                                                       Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                                                       Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                                                       Off |
+| **Additional options**                                                                           |                                                                                                                           |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                                 Unchecked |
+| Priority                                                                                         |                                                                                                                        16 |
 
 
 #### OFFICIAL: Sensitive NATIONAL CABINET Legislative-Secrecy append subject
@@ -516,25 +516,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### OFFICIAL: Sensitive NATIONAL CABINET Legislative-Secrecy add x-header
 
-| Item                                                                                             |                                                                                                                              Value |
-| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                                              OFFICIAL: Sensitive NATIONAL CABINET Legislative-Secrecy add x-header |
-| **Conditions**                                                                                   |                                                                                                                                    |
-| Content contains                                                                                 |                                                                                                                                    |
-| - Group name                                                                                     |                                                                                                                            Default |
-| - Group operator                                                                                 |                                                                                                                       Any of these |
-| - Sensitivity labels                                                                             |                                                                          OFFICIAL Sensitive/NATIONAL CABINET - Legislative-Secrecy |
-| **Actions**                                                                                      |                                                                                                                                    |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive, CAVEAT=SH-NATIONAL-CABINET, ACCESS=Legislative-Secrecy<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                                                                                    |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                                                Off |
-| **Incident reports**                                                                             |                                                                                                                                    |
-| Use this severity level in admin alerts and reports                                              |                                                                                                                                Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                                                                Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                                                                Off |
-| **Additional options**                                                                           |                                                                                                                                    |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                                          Unchecked |
-| Priority                                                                                         |                                                                                                                                 18 |
+| Item                                                                                             |                                                                                                                         Value |
+| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                         OFFICIAL: Sensitive NATIONAL CABINET Legislative-Secrecy add x-header |
+| **Conditions**                                                                                   |                                                                                                                               |
+| Content contains                                                                                 |                                                                                                                               |
+| - Group name                                                                                     |                                                                                                                       Default |
+| - Group operator                                                                                 |                                                                                                                  Any of these |
+| - Sensitivity labels                                                                             |                                                                     OFFICIAL Sensitive/NATIONAL CABINET - Legislative-Secrecy |
+| **Actions**                                                                                      |                                                                                                                               |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive CAVEAT=SH:NATIONAL CABINET, ACCESS=Legislative-Secrecy" |
+| **User notifications**                                                                           |                                                                                                                               |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                                           Off |
+| **Incident reports**                                                                             |                                                                                                                               |
+| Use this severity level in admin alerts and reports                                              |                                                                                                                           Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                                                           Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                                                           Off |
+| **Additional options**                                                                           |                                                                                                                               |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                                     Unchecked |
+| Priority                                                                                         |                                                                                                                            18 |
 
 
 #### OFFICIAL: Sensitive NATIONAL CABINET Personal-Privacy append subject
@@ -565,25 +565,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### OFFICIAL: Sensitive NATIONAL CABINET Personal-Privacy add x-header
 
-| Item                                                                                             |                                                                                                                           Value |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                                              OFFICIAL: Sensitive NATIONAL CABINET Personal-Privacy add x-header |
-| **Conditions**                                                                                   |                                                                                                                                 |
-| Content contains                                                                                 |                                                                                                                                 |
-| - Group name                                                                                     |                                                                                                                         Default |
-| - Group operator                                                                                 |                                                                                                                    Any of these |
-| - Sensitivity labels                                                                             |                                                                          OFFICIAL Sensitive/NATIONAL CABINET - Personal-Privacy |
-| **Actions**                                                                                      |                                                                                                                                 |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive, CAVEAT=SH-NATIONAL-CABINET, ACCESS=Personal-Privacy<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                                                                                 |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                                             Off |
-| **Incident reports**                                                                             |                                                                                                                                 |
-| Use this severity level in admin alerts and reports                                              |                                                                                                                             Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                                                             Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                                                             Off |
-| **Additional options**                                                                           |                                                                                                                                 |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                                       Unchecked |
-| Priority                                                                                         |                                                                                                                              20 |
+| Item                                                                                             |                                                                                                                      Value |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                         OFFICIAL: Sensitive NATIONAL CABINET Personal-Privacy add x-header |
+| **Conditions**                                                                                   |                                                                                                                            |
+| Content contains                                                                                 |                                                                                                                            |
+| - Group name                                                                                     |                                                                                                                    Default |
+| - Group operator                                                                                 |                                                                                                               Any of these |
+| - Sensitivity labels                                                                             |                                                                     OFFICIAL Sensitive/NATIONAL CABINET - Personal-Privacy |
+| **Actions**                                                                                      |                                                                                                                            |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=OFFICIAL-Sensitive CAVEAT=SH:NATIONAL CABINET, ACCESS=Personal-Privacy" |
+| **User notifications**                                                                           |                                                                                                                            |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                                        Off |
+| **Incident reports**                                                                             |                                                                                                                            |
+| Use this severity level in admin alerts and reports                                              |                                                                                                                        Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                                                        Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                                                        Off |
+| **Additional options**                                                                           |                                                                                                                            |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                                  Unchecked |
+| Priority                                                                                         |                                                                                                                         20 |
 
 
 #### PROTECTED append subject
@@ -614,25 +614,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### PROTECTED add x-header
 
-| Item                                                                                             |                                                                                     Value |
-| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                                                    PROTECTED add x-header |
-| **Conditions**                                                                                   |                                                                                           |
-| Content contains                                                                                 |                                                                                           |
-| - Group name                                                                                     |                                                                                   Default |
-| - Group operator                                                                                 |                                                                              Any of these |
-| - Sensitivity labels                                                                             |                                                                 PROTECTED/Legal-Privilege |
-| **Actions**                                                                                      |                                                                                           |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=PROTECTED, ACCESS=Legal-Privilege<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                                           |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                       Off |
-| **Incident reports**                                                                             |                                                                                           |
-| Use this severity level in admin alerts and reports                                              |                                                                                       Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                       Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                       Off |
-| **Additional options**                                                                           |                                                                                           |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                 Unchecked |
-| Priority                                                                                         |                                                                                        22 |
+| Item                                                                                             |                                                         Value |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------: |
+| Name                                                                                             |                                        PROTECTED add x-header |
+| **Conditions**                                                                                   |                                                               |
+| Content contains                                                                                 |                                                               |
+| - Group name                                                                                     |                                                       Default |
+| - Group operator                                                                                 |                                                  Any of these |
+| - Sensitivity labels                                                                             |                                     PROTECTED/Legal-Privilege |
+| **Actions**                                                                                      |                                                               |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=PROTECTED" |
+| **User notifications**                                                                           |                                                               |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                           Off |
+| **Incident reports**                                                                             |                                                               |
+| Use this severity level in admin alerts and reports                                              |                                                           Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                           Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                           Off |
+| **Additional options**                                                                           |                                                               |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                     Unchecked |
+| Priority                                                                                         |                                                            22 |
 
 
 #### PROTECTED Legal-Privilege append subject
@@ -663,25 +663,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### PROTECTED Legal-Privilege add x-header
 
-| Item                                                                                             |                                                                                     Value |
-| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                                    PROTECTED Legal-Privilege add x-header |
-| **Conditions**                                                                                   |                                                                                           |
-| Content contains                                                                                 |                                                                                           |
-| - Group name                                                                                     |                                                                                   Default |
-| - Group operator                                                                                 |                                                                              Any of these |
-| - Sensitivity labels                                                                             |                                                                 PROTECTED/Legal-Privilege |
-| **Actions**                                                                                      |                                                                                           |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=PROTECTED, ACCESS=Legal-Privilege<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                                           |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                       Off |
-| **Incident reports**                                                                             |                                                                                           |
-| Use this severity level in admin alerts and reports                                              |                                                                                       Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                       Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                       Off |
-| **Additional options**                                                                           |                                                                                           |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                 Unchecked |
-| Priority                                                                                         |                                                                                        24 |
+| Item                                                                                             |                                                                                 Value |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                PROTECTED Legal-Privilege add x-header |
+| **Conditions**                                                                                   |                                                                                       |
+| Content contains                                                                                 |                                                                                       |
+| - Group name                                                                                     |                                                                               Default |
+| - Group operator                                                                                 |                                                                          Any of these |
+| - Sensitivity labels                                                                             |                                                             PROTECTED/Legal-Privilege |
+| **Actions**                                                                                      |                                                                                       |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=PROTECTED, ACCESS=Legal-Privilege" |
+| **User notifications**                                                                           |                                                                                       |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                   Off |
+| **Incident reports**                                                                             |                                                                                       |
+| Use this severity level in admin alerts and reports                                              |                                                                                   Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                   Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                   Off |
+| **Additional options**                                                                           |                                                                                       |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                             Unchecked |
+| Priority                                                                                         |                                                                                    24 |
 
 
 #### PROTECTED Legislative-Secrecy append subject
@@ -721,7 +721,7 @@ This section lists commonly used sensitive info types within the context of the 
 | - Group operator                                                                                 |                                                                              Any of these |
 | - Sensitivity labels                                                                             |                                                                 PROTECTED/Legal-Privilege |
 | **Actions**                                                                                      |                                                                                           |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=PROTECTED, ACCESS=Legal-Privilege<br>Name:X-Protective-Marking |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=PROTECTED, ACCESS=Legislative-Secrecy" |
 | **User notifications**                                                                           |                                                                                           |
 | Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                       Off |
 | **Incident reports**                                                                             |                                                                                           |
@@ -761,25 +761,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### PROTECTED Personal-Privacy add x-header
 
-| Item                                                                                             |                                                                                      Value |
-| ------------------------------------------------------------------------------------------------ | -----------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                                    PROTECTED Personal-Privacy add x-header |
-| **Conditions**                                                                                   |                                                                                            |
-| Content contains                                                                                 |                                                                                            |
-| - Group name                                                                                     |                                                                                    Default |
-| - Group operator                                                                                 |                                                                               Any of these |
-| - Sensitivity labels                                                                             |                                                                 PROTECTED/Personal-Privacy |
-| **Actions**                                                                                      |                                                                                            |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=PROTECTED, ACCESS=Personal-Privacy<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                                            |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                        Off |
-| **Incident reports**                                                                             |                                                                                            |
-| Use this severity level in admin alerts and reports                                              |                                                                                        Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                        Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                        Off |
-| **Additional options**                                                                           |                                                                                            |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                  Unchecked |
-| Priority                                                                                         |                                                                                         28 |
+| Item                                                                                             |                                                                                  Value |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                PROTECTED Personal-Privacy add x-header |
+| **Conditions**                                                                                   |                                                                                        |
+| Content contains                                                                                 |                                                                                        |
+| - Group name                                                                                     |                                                                                Default |
+| - Group operator                                                                                 |                                                                           Any of these |
+| - Sensitivity labels                                                                             |                                                             PROTECTED/Personal-Privacy |
+| **Actions**                                                                                      |                                                                                        |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=PROTECTED, ACCESS=Personal-Privacy" |
+| **User notifications**                                                                           |                                                                                        |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                    Off |
+| **Incident reports**                                                                             |                                                                                        |
+| Use this severity level in admin alerts and reports                                              |                                                                                    Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                    Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                    Off |
+| **Additional options**                                                                           |                                                                                        |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                              Unchecked |
+| Priority                                                                                         |                                                                                     28 |
 
 
 #### PROTECTED NATIONAL CABINET append subject
@@ -810,25 +810,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### PROTECTED NATIONAL CABINET add x-header
 
-| Item                                                                                             |                                                                                         Value |
-| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                                       PROTECTED NATIONAL CABINET add x-header |
-| **Conditions**                                                                                   |                                                                                               |
-| Content contains                                                                                 |                                                                                               |
-| - Group name                                                                                     |                                                                                       Default |
-| - Group operator                                                                                 |                                                                                  Any of these |
-| - Sensitivity labels                                                                             |                                                                    PROTECTED/NATIONAL CABINET |
-| **Actions**                                                                                      |                                                                                               |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:NATIONAL-CABINET<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                                               |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                           Off |
-| **Incident reports**                                                                             |                                                                                               |
-| Use this severity level in admin alerts and reports                                              |                                                                                           Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                           Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                           Off |
-| **Additional options**                                                                           |                                                                                               |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                     Unchecked |
-| Priority                                                                                         |                                                                                            30 |
+| Item                                                                                             |                                                                                     Value |
+| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                   PROTECTED NATIONAL CABINET add x-header |
+| **Conditions**                                                                                   |                                                                                           |
+| Content contains                                                                                 |                                                                                           |
+| - Group name                                                                                     |                                                                                   Default |
+| - Group operator                                                                                 |                                                                              Any of these |
+| - Sensitivity labels                                                                             |                                                                PROTECTED/NATIONAL CABINET |
+| **Actions**                                                                                      |                                                                                           |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:NATIONAL-CABINET" |
+| **User notifications**                                                                           |                                                                                           |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                       Off |
+| **Incident reports**                                                                             |                                                                                           |
+| Use this severity level in admin alerts and reports                                              |                                                                                       Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                       Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                       Off |
+| **Additional options**                                                                           |                                                                                           |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                 Unchecked |
+| Priority                                                                                         |                                                                                        30 |
 
 
 #### PROTECTED NATIONAL CABINET Legal-Privilege append subject
@@ -859,25 +859,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### PROTECTED NATIONAL CABINET Legal-Privilege add x-header
 
-| Item                                                                                             |                                                                                    Value |
-| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                  PROTECTED NATIONAL CABINET Legal-Privilege add x-header |
-| **Conditions**                                                                                   |                                                                                          |
-| Content contains                                                                                 |                                                                                          |
-| - Group name                                                                                     |                                                                                  Default |
-| - Group operator                                                                                 |                                                                             Any of these |
-| - Sensitivity labels                                                                             |                                             PROTECTED/NATIONAL CABINET - Legal-Privilege |
-| **Actions**                                                                                      |                                                                                          |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:NATIONAL-CABINET, ACCESS=Legal-Privilege |
-| **User notifications**                                                                           |                                                                                          |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                      Off |
-| **Incident reports**                                                                             |                                                                                          |
-| Use this severity level in admin alerts and reports                                              |                                                                                      Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                      Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                      Off |
-| **Additional options**                                                                           |                                                                                          |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                Unchecked |
-| Priority                                                                                         |                                                                                       32 |
+| Item                                                                                             |                                                                                                             Value |
+| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                           PROTECTED NATIONAL CABINET Legal-Privilege add x-header |
+| **Conditions**                                                                                   |                                                                                                                   |
+| Content contains                                                                                 |                                                                                                                   |
+| - Group name                                                                                     |                                                                                                           Default |
+| - Group operator                                                                                 |                                                                                                      Any of these |
+| - Sensitivity labels                                                                             |                                                                      PROTECTED/NATIONAL CABINET - Legal-Privilege |
+| **Actions**                                                                                      |                                                                                                                   |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:NATIONAL-CABINET, ACCESS=Legal-Privilege" |
+| **User notifications**                                                                           |                                                                                                                   |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                               Off |
+| **Incident reports**                                                                             |                                                                                                                   |
+| Use this severity level in admin alerts and reports                                              |                                                                                                               Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                                               Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                                               Off |
+| **Additional options**                                                                           |                                                                                                                   |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                         Unchecked |
+| Priority                                                                                         |                                                                                                                32 |
 
 
 #### PROTECTED NATIONAL CABINET Legislative-Secrecy append subject
@@ -908,25 +908,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### PROTECTED NATIONAL CABINET Legislative-Secrecy add x-header
 
-| Item                                                                                             |                                                                                        Value |
-| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                  PROTECTED NATIONAL CABINET Legislative-Secrecy add x-header |
-| **Conditions**                                                                                   |                                                                                              |
-| Content contains                                                                                 |                                                                                              |
-| - Group name                                                                                     |                                                                                      Default |
-| - Group operator                                                                                 |                                                                                 Any of these |
-| - Sensitivity labels                                                                             |                                             PROTECTED/NATIONAL CABINET - Legislative-Secrecy |
-| **Actions**                                                                                      |                                                                                              |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:NATIONAL-CABINET, ACCESS=Legislative-Secrecy |
-| **User notifications**                                                                           |                                                                                              |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                          Off |
-| **Incident reports**                                                                             |                                                                                              |
-| Use this severity level in admin alerts and reports                                              |                                                                                          Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                          Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                          Off |
-| **Additional options**                                                                           |                                                                                              |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                    Unchecked |
-| Priority                                                                                         |                                                                                           34 |
+| Item                                                                                             |                                                                                                                 Value |
+| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                           PROTECTED NATIONAL CABINET Legislative-Secrecy add x-header |
+| **Conditions**                                                                                   |                                                                                                                       |
+| Content contains                                                                                 |                                                                                                                       |
+| - Group name                                                                                     |                                                                                                               Default |
+| - Group operator                                                                                 |                                                                                                          Any of these |
+| - Sensitivity labels                                                                             |                                                                      PROTECTED/NATIONAL CABINET - Legislative-Secrecy |
+| **Actions**                                                                                      |                                                                                                                       |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:NATIONAL-CABINET, ACCESS=Legislative-Secrecy" |
+| **User notifications**                                                                           |                                                                                                                       |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                                   Off |
+| **Incident reports**                                                                             |                                                                                                                       |
+| Use this severity level in admin alerts and reports                                              |                                                                                                                   Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                                                   Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                                                   Off |
+| **Additional options**                                                                           |                                                                                                                       |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                             Unchecked |
+| Priority                                                                                         |                                                                                                                    34 |
 
 
 #### PROTECTED NATIONAL CABINET Personal-Privacy append subject
@@ -957,25 +957,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### PROTECTED NATIONAL CABINET Personal-Privacy add x-header
 
-| Item                                                                                             |                                                                                     Value |
-| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------: |
-| Name                                                                                             |                                  PROTECTED NATIONAL CABINET Personal-Privacy add x-header |
-| **Conditions**                                                                                   |                                                                                           |
-| Content contains                                                                                 |                                                                                           |
-| - Group name                                                                                     |                                                                                   Default |
-| - Group operator                                                                                 |                                                                              Any of these |
-| - Sensitivity labels                                                                             |                                             PROTECTED/NATIONAL CABINET - Personal-Privacy |
-| **Actions**                                                                                      |                                                                                           |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:NATIONAL-CABINET, ACCESS=Personal-Privacy |
-| **User notifications**                                                                           |                                                                                           |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                       Off |
-| **Incident reports**                                                                             |                                                                                           |
-| Use this severity level in admin alerts and reports                                              |                                                                                       Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                       Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                       Off |
-| **Additional options**                                                                           |                                                                                           |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                 Unchecked |
-| Priority                                                                                         |                                                                                        36 |
+| Item                                                                                             |                                                                                                              Value |
+| ------------------------------------------------------------------------------------------------ | -----------------------------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                           PROTECTED NATIONAL CABINET Personal-Privacy add x-header |
+| **Conditions**                                                                                   |                                                                                                                    |
+| Content contains                                                                                 |                                                                                                                    |
+| - Group name                                                                                     |                                                                                                            Default |
+| - Group operator                                                                                 |                                                                                                       Any of these |
+| - Sensitivity labels                                                                             |                                                                      PROTECTED/NATIONAL CABINET - Personal-Privacy |
+| **Actions**                                                                                      |                                                                                                                    |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:NATIONAL-CABINET, ACCESS=Personal-Privacy" |
+| **User notifications**                                                                           |                                                                                                                    |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                                Off |
+| **Incident reports**                                                                             |                                                                                                                    |
+| Use this severity level in admin alerts and reports                                              |                                                                                                                Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                                                Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                                                Off |
+| **Additional options**                                                                           |                                                                                                                    |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                          Unchecked |
+| Priority                                                                                         |                                                                                                                 36 |
 
 
 #### PROTECTED CABINET append subject
@@ -1006,25 +1006,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### PROTECTED CABINET add x-header
 
-| Item                                                                                             |                                                                                Value |
-| ------------------------------------------------------------------------------------------------ | -----------------------------------------------------------------------------------: |
-| Name                                                                                             |                                                       PROTECTED CABINET add x-header |
-| **Conditions**                                                                                   |                                                                                      |
-| Content contains                                                                                 |                                                                                      |
-| - Group name                                                                                     |                                                                              Default |
-| - Group operator                                                                                 |                                                                         Any of these |
-| - Sensitivity labels                                                                             |                                                                    PROTECTED/CABINET |
-| **Actions**                                                                                      |                                                                                      |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:CABINET<br>Name:X-Protective-Marking |
-| **User notifications**                                                                           |                                                                                      |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                  Off |
-| **Incident reports**                                                                             |                                                                                      |
-| Use this severity level in admin alerts and reports                                              |                                                                                  Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                  Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                  Off |
-| **Additional options**                                                                           |                                                                                      |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                            Unchecked |
-| Priority                                                                                         |                                                                                   38 |
+| Item                                                                                             |                                                                                                    Value |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                                           PROTECTED CABINET add x-header |
+| **Conditions**                                                                                   |                                                                                                          |
+| Content contains                                                                                 |                                                                                                          |
+| - Group name                                                                                     |                                                                                                  Default |
+| - Group operator                                                                                 |                                                                                             Any of these |
+| - Sensitivity labels                                                                             |                                                                                        PROTECTED/CABINET |
+| **Actions**                                                                                      |                                                                                                          |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:CABINET, ACCESS=Legal-Privilege" |
+| **User notifications**                                                                           |                                                                                                          |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                      Off |
+| **Incident reports**                                                                             |                                                                                                          |
+| Use this severity level in admin alerts and reports                                              |                                                                                                      Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                                      Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                                      Off |
+| **Additional options**                                                                           |                                                                                                          |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                Unchecked |
+| Priority                                                                                         |                                                                                                       38 |
 
 
 #### PROTECTED CABINET - Legal-Privilege append subject
@@ -1055,25 +1055,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### PROTECTED CABINET - Legal-Privilege add x-header
 
-| Item                                                                                             |                                                                           Value |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------: |
-| Name                                                                                             |                                PROTECTED CABINET - Legal-Privilege add x-header |
-| **Conditions**                                                                                   |                                                                                 |
-| Content contains                                                                                 |                                                                                 |
-| - Group name                                                                                     |                                                                         Default |
-| - Group operator                                                                                 |                                                                    Any of these |
-| - Sensitivity labels                                                                             |                                             PROTECTED/CABINET - Legal-Privilege |
-| **Actions**                                                                                      |                                                                                 |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:CABINET, ACCESS=Legal-Privilege |
-| **User notifications**                                                                           |                                                                                 |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                             Off |
-| **Incident reports**                                                                             |                                                                                 |
-| Use this severity level in admin alerts and reports                                              |                                                                             Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                             Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                             Off |
-| **Additional options**                                                                           |                                                                                 |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                       Unchecked |
-| Priority                                                                                         |                                                                              40 |
+| Item                                                                                             |                                                                                                    Value |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                         PROTECTED CABINET - Legal-Privilege add x-header |
+| **Conditions**                                                                                   |                                                                                                          |
+| Content contains                                                                                 |                                                                                                          |
+| - Group name                                                                                     |                                                                                                  Default |
+| - Group operator                                                                                 |                                                                                             Any of these |
+| - Sensitivity labels                                                                             |                                                                      PROTECTED/CABINET - Legal-Privilege |
+| **Actions**                                                                                      |                                                                                                          |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:CABINET, ACCESS=Legal-Privilege" |
+| **User notifications**                                                                           |                                                                                                          |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                      Off |
+| **Incident reports**                                                                             |                                                                                                          |
+| Use this severity level in admin alerts and reports                                              |                                                                                                      Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                                      Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                                      Off |
+| **Additional options**                                                                           |                                                                                                          |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                Unchecked |
+| Priority                                                                                         |                                                                                                       40 |
 
 
 #### PROTECTED CABINET - Legislative-Secrecy append subject
@@ -1104,25 +1104,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### PROTECTED CABINET - Legislative-Secrecy add x-header
 
-| Item                                                                                             |                                                                               Value |
-| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------: |
-| Name                                                                                             |                                PROTECTED CABINET - Legislative-Secrecy add x-header |
-| **Conditions**                                                                                   |                                                                                     |
-| Content contains                                                                                 |                                                                                     |
-| - Group name                                                                                     |                                                                             Default |
-| - Group operator                                                                                 |                                                                        Any of these |
-| - Sensitivity labels                                                                             |                                             PROTECTED/CABINET - Legislative-Secrecy |
-| **Actions**                                                                                      |                                                                                     |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:CABINET, ACCESS=Legislative-Secrecy |
-| **User notifications**                                                                           |                                                                                     |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                 Off |
-| **Incident reports**                                                                             |                                                                                     |
-| Use this severity level in admin alerts and reports                                              |                                                                                 Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                                 Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                                 Off |
-| **Additional options**                                                                           |                                                                                     |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                           Unchecked |
-| Priority                                                                                         |                                                                                  42 |
+| Item                                                                                             |                                                                                                        Value |
+| ------------------------------------------------------------------------------------------------ | -----------------------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                         PROTECTED CABINET - Legislative-Secrecy add x-header |
+| **Conditions**                                                                                   |                                                                                                              |
+| Content contains                                                                                 |                                                                                                              |
+| - Group name                                                                                     |                                                                                                      Default |
+| - Group operator                                                                                 |                                                                                                 Any of these |
+| - Sensitivity labels                                                                             |                                                                      PROTECTED/CABINET - Legislative-Secrecy |
+| **Actions**                                                                                      |                                                                                                              |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:CABINET, ACCESS=Legislative-Secrecy" |
+| **User notifications**                                                                           |                                                                                                              |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                          Off |
+| **Incident reports**                                                                             |                                                                                                              |
+| Use this severity level in admin alerts and reports                                              |                                                                                                          Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                                          Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                                          Off |
+| **Additional options**                                                                           |                                                                                                              |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                    Unchecked |
+| Priority                                                                                         |                                                                                                           42 |
 
 
 #### PROTECTED CABINET - Personal-Privacy append subject
@@ -1153,25 +1153,25 @@ This section lists commonly used sensitive info types within the context of the 
 
 #### PROTECTED CABINET - Personal-Privacy add x-header
 
-| Item                                                                                             |                                                                            Value |
-| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------: |
-| Name                                                                                             |                                PROTECTED CABINET - Personal-Privacy add x-header |
-| **Conditions**                                                                                   |                                                                                  |
-| Content contains                                                                                 |                                                                                  |
-| - Group name                                                                                     |                                                                          Default |
-| - Group operator                                                                                 |                                                                     Any of these |
-| - Sensitivity labels                                                                             |                                             PROTECTED/CABINET - Personal-Privacy |
-| **Actions**                                                                                      |                                                                                  |
-| Set headers                                                                                      | VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:CABINET, ACCESS=Personal-Privacy |
-| **User notifications**                                                                           |                                                                                  |
-| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                              Off |
-| **Incident reports**                                                                             |                                                                                  |
-| Use this severity level in admin alerts and reports                                              |                                                                              Low |
-| Send an alert to admins when a rule match occurs                                                 |                                                                              Off |
-| Use email incident reports to notify you when a policy match occurs                              |                                                                              Off |
-| **Additional options**                                                                           |                                                                                  |
-| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                        Unchecked |
-| Priority                                                                                         |                                                                               44 |
+| Item                                                                                             |                                                                                                     Value |
+| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------: |
+| Name                                                                                             |                                                         PROTECTED CABINET - Personal-Privacy add x-header |
+| **Conditions**                                                                                   |                                                                                                           |
+| Content contains                                                                                 |                                                                                                           |
+| - Group name                                                                                     |                                                                                                   Default |
+| - Group operator                                                                                 |                                                                                              Any of these |
+| - Sensitivity labels                                                                             |                                                                      PROTECTED/CABINET - Personal-Privacy |
+| **Actions**                                                                                      |                                                                                                           |
+| Set headers                                                                                      | "X-Protective-Marking":"VER=2018.6, NS=gov.au, SEC=PROTECTED, CAVEAT=SH:CABINET, ACCESS=Personal-Privacy" |
+| **User notifications**                                                                           |                                                                                                           |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info |                                                                                                       Off |
+| **Incident reports**                                                                             |                                                                                                           |
+| Use this severity level in admin alerts and reports                                              |                                                                                                       Low |
+| Send an alert to admins when a rule match occurs                                                 |                                                                                                       Off |
+| Use email incident reports to notify you when a policy match occurs                              |                                                                                                       Off |
+| **Additional options**                                                                           |                                                                                                           |
+| If there's a match for this rule, stop processing additional DLP policies and rules              |                                                                                                 Unchecked |
+| Priority                                                                                         |                                                                                                        44 |
 
 
 ### Policy mode

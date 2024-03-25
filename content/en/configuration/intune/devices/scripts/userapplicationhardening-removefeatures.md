@@ -29,12 +29,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Script settings
 
-| Item                                            | Value                                                                                                                                                                                           |
-| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| PowerShell script                               | [UserApplicationHardening-RemoveFeatures](</content/files/configscripts/UserApplicationHardening-RemoveFeatures.txt>).ps1 <br> *Note: download the linked .txt file, and rename to .ps1 for upload* |
-| Run this script using the logged on credentials | No                                                                                                                                                                                              |
-| Enforce script signature check                  | No                                                                                                                                                                                              |
-| Run scrip in 64 bit PowerShell Host             | No                                                                                                                                                                                              |
+| Item                                            | Value                                                                                                                                                                                                                                    |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| PowerShell script                               | {{% download file="/content/files/configscripts/UserApplicationHardening-RemoveFeatures.txt" %}} UserApplicationHardening-RemoveFeatures {{% /download %}}.ps1 <br> *Note: download the linked .txt file, and rename to .ps1 for upload* |
+| Run this script using the logged on credentials | No                                                                                                                                                                                                                                       |
+| Enforce script signature check                  | No                                                                                                                                                                                                                                       |
+| Run script in 64 bit PowerShell Host            | No                                                                                                                                                                                                                                       |
 
 #### Assignments
 

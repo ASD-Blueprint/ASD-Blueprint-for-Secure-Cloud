@@ -57,15 +57,15 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 **Content contains**
 
-| Item                            |                                          Value |
-| ------------------------------- | ---------------------------------------------: |
-| **Group name**                  |                                        Default |
-| - Group operator                |                                   Any of these |
-| Sensitive info types            |                                                |
-| - SWIFT Code                    | Medium confidencebr>Instance count: `1` to `9` |
-| - Australia Tax File Number     |   High confidencebr>Instance count: `1` to `9` |
-| - Australia Bank Account Number | Medium confidencebr>Instance count: `1` to `9` |
-| - Credit Card Number            |   High confidencebr>Instance count: `1` to `9` |
+| Item                            |                                           Value |
+| ------------------------------- | ----------------------------------------------: |
+| **Group name**                  |                                         Default |
+| - Group operator                |                                    Any of these |
+| Sensitive info types            |                                                 |
+| - SWIFT Code                    | Medium confidence<br>Instance count: `1` to `9` |
+| - Australia Tax File Number     |   High confidence<br>Instance count: `1` to `9` |
+| - Australia Bank Account Number | Medium confidence<br>Instance count: `1` to `9` |
+| - Credit Card Number            |   High confidence<br>Instance count: `1` to `9` |
 
 ##### User notifications 
 

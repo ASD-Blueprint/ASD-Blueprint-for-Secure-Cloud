@@ -8,7 +8,7 @@ description: This page provides a template and guidance to assist organisations 
 
 {{% alert title="Instruction" color="dark" %}}
 
-The gateways section of a System Security Plan (SSP) should document an organisation's approach to gateways, cross domain solutions, firewalls, diodes, web proxies and content filtering and peripheral switches. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
+The gateways section of a System Security Plan (SSP) should document an organisation's approach to gateways, cross domain solutions, firewalls, diodes, web proxies and content filtering and peripheral switches. As with other sections of the SSP, information in this section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how organisations must scope, build, document, or assess its system.
 
@@ -208,7 +208,7 @@ This section of the SSP is not applicable as `<SYSTEM-NAME>` does not include an
 
 #### Organisational policies and processes implemented
 
-No organisational policies or processess have been implemented in `<SYSTEM-NAME>` relating to peripheral switches.
+No organisational policies or processes have been implemented in `<SYSTEM-NAME>` relating to peripheral switches.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 

@@ -70,8 +70,8 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Number of non-alphanumeric characters in password     |               1 |
 | Maximum minutes of inactivity until screen locks      |     Immediately |
 | Password expiration (days)                            |  Not configured |
-| Number of previos passwords to prevent reuse          |             365 |
-| **Device Security**                                   | 5 |
+| Number of previous passwords to prevent reuse         |             365 |
+| **Device Security**                                   |               5 |
 | Restricted apps                                       | None configured |
 
 ### Actions for noncompliance
