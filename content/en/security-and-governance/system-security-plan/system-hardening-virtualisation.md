@@ -44,11 +44,16 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to virtualisat
 
 #### Security & Governance
 
-* None identified
+* [System Management]({{<ref "system-management.md">}})
 
 #### Design
 
-* None identified
+* [Windows Hardware]({{<ref "design/endpoints/windows/hardware">}})
+
+#### Configuration
+
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+
 
 #### External documentation
 

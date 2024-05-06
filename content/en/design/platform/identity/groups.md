@@ -60,6 +60,12 @@ Microsoft 365 Groups includes a variety of governance controls, including an exp
 #### Design
 
 * [Identity Governance]({{<ref "governance">}})
+* [Microsoft 365 Groups]({{<ref "design/shared-services/microsoft-365/microsoft365-groups.md">}})
+
+#### Configuration
+
+* [Groups]({{<ref "configuration/entra-id/groups">}})
+* [Expiration]({{<ref "configuration/entra-id/groups/expiration.md">}})
 
 #### References
 

@@ -27,11 +27,15 @@ In a hybrid environment the SIEM can be located either on-premises or in the clo
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight: Multi-factor Authentication]({{<ref "security-and-governance/essential-eight/multi-factor-authentication.md">}})
 
 #### Design
 
 * None identified
+
+#### Configuration
+
+* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
 
 #### References
 

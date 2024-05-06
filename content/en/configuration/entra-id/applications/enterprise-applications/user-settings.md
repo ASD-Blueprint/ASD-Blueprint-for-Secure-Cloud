@@ -36,7 +36,10 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Security & Governance
 
-* None identified
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
+* [Essential Eight: Patch Applications]({{<ref "patch-applications.md">}})
+* [System Monitoring]({{<ref "system-monitoring.md">}})
   
 #### Design
 

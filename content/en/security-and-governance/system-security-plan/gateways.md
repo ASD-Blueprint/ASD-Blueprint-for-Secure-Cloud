@@ -229,7 +229,16 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to peripheral 
 
 #### Design
 
-* None identified
+*   [Exchange Online]({{< ref "design/shared-services/exchange-online">}})
+*   [Safe Attachments]({{< ref "design/shared-services/defender/safe-attachments.md">}})
+*   [Safe Links]({{< ref "design/shared-services/defender/safe-links.md">}})
+*   [Alerts ]({{<ref "design/shared-services/defender/alerts.md">}})
+
+#### Configuration
+
+* [Exchange Online]({{< ref "configuration/exchange-online" >}})
+* [Endpoint Security Policies]({{< ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md" >}})
+
 
 #### External links
 

@@ -28,9 +28,13 @@ Windows 10 and 11 incorporates optional features that can be enabled to offer ad
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight - User Application Hardening]({{<ref "security-and-governance/essential-eight/user-application-hardening.md">}})
 
 #### Design
+
+* None identified
+
+#### Configuration
 
 * None identified
 

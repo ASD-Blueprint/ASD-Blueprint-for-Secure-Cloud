@@ -33,6 +33,10 @@ Configuration can be applied to restrict the end-user ability to configure or ch
 
 * None identified
 
+#### Configuration
+
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
+
 #### References
 
 * None identified

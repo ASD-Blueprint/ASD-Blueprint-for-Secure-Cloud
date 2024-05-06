@@ -37,16 +37,20 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight: Patch Applications]({{<ref "patch-applications.md">}})
+* [Essential Eight: Patch Operating Systems]({{<ref "patch-os.md">}})
+* [Essential Eight: Regular Backups]({{<ref "regular-backups.md">}})
+* [System Administration Process]({{<ref "security-and-governance/general-documentation">}})
   
 #### Design
 
-* [Devices]({{<ref "design/platform/security/endpoint-security">}})
-* [Devices]({{<ref "design/endpoints">}})
+* [Endpoint Security - Devices]({{<ref "design/platform/security/endpoint-security">}})
+* [Web Filtering]({{<ref "web-filtering.md">}})
+
   
 #### Configuration
 
-* None identified
+* [Networking]({{<ref "configuration/networking">}})
 
 #### References
 

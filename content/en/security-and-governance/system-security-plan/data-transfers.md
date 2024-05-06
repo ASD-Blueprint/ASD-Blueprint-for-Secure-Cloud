@@ -51,6 +51,11 @@ Technical controls for `<SYSTEM-NAME>`'s implementation of data transfers are co
 
 *   [Platform Monitoring and Auditing]({{< ref "platform-monitoring-auditing.md" >}})
 
+
+#### Configuration
+
+* None identified
+
 #### External links
 
 * ASD's [*Guidelines for Data Transfers*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-data-transfers)

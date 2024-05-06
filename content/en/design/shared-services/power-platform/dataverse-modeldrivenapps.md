@@ -32,6 +32,10 @@ Note the following:
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [What is Dataverse?](https://docs.microsoft.com/power-apps/maker/data-platform/data-platform-intro)

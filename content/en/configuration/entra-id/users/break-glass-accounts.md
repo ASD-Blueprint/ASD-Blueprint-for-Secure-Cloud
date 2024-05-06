@@ -47,6 +47,8 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 #### Security & Governance
 
 * [Authentication Hardening]({{<ref "system-hardening-authentication">}})
+* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
+* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
 
 #### Design
 
@@ -54,7 +56,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Configuration
 
-* None identified
+* [Break Glass]({{<ref "configuration/entra-id/users/break-glass-accounts.md">}})
 
 #### References
 

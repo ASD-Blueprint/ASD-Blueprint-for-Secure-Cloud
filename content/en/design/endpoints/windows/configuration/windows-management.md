@@ -62,9 +62,15 @@ There are many benefits to going cloud native or hybrid co-management utilising 
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight - User Application Hardening]({{<ref "security-and-governance/essential-eight/user-application-hardening.md">}})
+* [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
+* [System Management]({{<ref "system-management.md">}})
 
 #### Design
+
+* [Enterprise applications]({{<ref "enterprise-applications.md">}})
+
+#### Configuration
 
 * None identified
 

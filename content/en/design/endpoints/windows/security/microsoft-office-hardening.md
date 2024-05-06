@@ -138,11 +138,18 @@ D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 
 #### Security & Governance
 
-* None identified
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
-* None identified
+* [Microsoft Office Macro Hardening]({{<ref "design/endpoints/windows/security/microsoft-office-macro-hardening.md">}})
+
+#### Configuration
+
+* [Attack Surface Reduction]({{<ref "configuration/intune/endpoint-security/attack-surface-reduction/asd-windows-hardening-asr.md">}})
+* [ASD Office Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-office-hardening-guidelines.md">}})
 
 #### References
 

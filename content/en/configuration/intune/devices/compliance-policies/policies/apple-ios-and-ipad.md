@@ -104,15 +104,23 @@ No results.
 
 #### Security & Governance
 
-* None identified
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}}) 
+* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
+* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
+* [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
   
 #### Design
 
-* None identified
+* [Securing iOS devices]({{<ref "securing-ios-devices.md">}})
+* [Endpoint Management]({{<ref "design/platform/client">}})
   
 #### Configuration
 
-* None identified
+* [Microsoft Intune - Devices]({{<ref "configuration/intune/devices">}})
+* [Microsoft Entra ID - Devices]({{<ref "configuration/entra-id/devices">}})
+* [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 
 #### References
 

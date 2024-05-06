@@ -109,16 +109,26 @@ Technical controls for `<SYSTEM-NAME>`'s implementation of mobile device usage w
 
 #### Security & Governance
 
--   [`<SYSTEM-NAME>` Mobile Device Usage Policy]({{< ref "security-and-governance/policies">}})
--   [`<SYSTEM-NAME>` Mobile Device Management Policy]({{< ref "security-and-governance/policies">}})
+-   [`<SYSTEM-NAME>` Mobile Device Usage Policy]({{<ref "security-and-governance/policies">}})
+-   [`<SYSTEM-NAME>` Mobile Device Management Policy]({{<ref "security-and-governance/policies">}})
 -   [Overseas Travel SOP]({{< ref "security-and-governance/general-documentation">}})
--   [Mobile Device Emergency Sanitisation Standard Operating Procedure]({{< ref "security-and-governance/general-documentation">}})
+-   [Mobile Device Emergency Sanitisation Standard Operating Procedure]({{<ref "security-and-governance/general-documentation">}})
 
 #### Design
 
 - [Conditional Access]({{< ref "design/platform/identity/conditional-access.md">}})
 - [Securing iOS devices]({{< ref "securing-ios-devices.md">}})
-- [Endpoint Management]({{<ref "design/platform/client">}})
+- [Endpoint Management]({{< ref "design/platform/client">}})
+
+
+
+#### Configuration
+
+- [Microsoft Intune - Devices]({{< ref "configuration/intune/devices">}})
+- [Microsoft Entra ID - Devices]({{< ref "configuration/entra-id/devices">}})
+- [iOS and iPadOS]({{< ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
+- [Endpoint Security]({{< ref "configuration/intune/endpoint-security">}})
+
 
 #### External documentation
 

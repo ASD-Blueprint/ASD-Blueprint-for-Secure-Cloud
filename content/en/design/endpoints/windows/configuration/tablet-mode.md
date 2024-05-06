@@ -26,6 +26,10 @@ Tablet Mode is a feature that switches a device experience from tablet mode to d
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

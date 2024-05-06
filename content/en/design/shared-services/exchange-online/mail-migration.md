@@ -49,6 +49,10 @@ The implementation of Exchange Online can be coupled with a migration from the e
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

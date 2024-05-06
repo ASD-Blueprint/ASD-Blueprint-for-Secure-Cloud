@@ -38,6 +38,10 @@ Power BI also enables administrators to control the sharing of datasets, content
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [About tenant settings](https://learn.microsoft.com/power-bi/admin/service-admin-portal-about-tenant-settings)

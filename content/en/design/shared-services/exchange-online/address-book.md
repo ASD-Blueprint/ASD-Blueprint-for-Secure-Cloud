@@ -29,6 +29,10 @@ The Outlook Address Lists, Global Address List (GAL), and Offline Address Book (
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

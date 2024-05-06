@@ -43,11 +43,15 @@ Windows provides support for several wireless networking technologies that enabl
 
 #### Security & Governance
 
-* None identified
+* [Networking]({{<ref "security-and-governance/system-security-plan/networking.md">}})
 
 #### Design
 
 * None identified
+
+#### Configuration
+
+* [Networking]({{<ref "configuration/networking">}})
 
 #### References
 

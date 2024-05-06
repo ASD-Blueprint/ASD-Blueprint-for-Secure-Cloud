@@ -117,6 +117,8 @@ Where an organisation appropriately assesses hardening user applications for ser
 
 * [Essential Eight: User Application Hardening]({{< ref "user-application-hardening.md">}})
 * [Essential Eight: Restrict Microsoft Office Macros]({{< ref "restrict-microsoft-office-macros.md">}})
+* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
+
 
 #### Design
 
@@ -125,6 +127,12 @@ Where an organisation appropriately assesses hardening user applications for ser
 * [Microsoft Edge Hardening]({{< ref "edge-hardening.md">}})
 * [Windows Defender Application Control]({{< ref "windows-defender-application-control.md">}})
 
+#### Configuration
+
+* [Microsoft Intune - Applications]({{<ref "configuration/intune/apps">}})
+* [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 
 #### External documentation
 

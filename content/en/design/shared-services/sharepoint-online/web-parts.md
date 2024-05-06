@@ -28,6 +28,10 @@ SharePoint Online provides spaces for users to customise their SharePoint page t
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

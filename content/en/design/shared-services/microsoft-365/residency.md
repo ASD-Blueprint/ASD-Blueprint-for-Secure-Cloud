@@ -44,6 +44,17 @@ Microsoft 365 tenant data residency is critical to ensure the organisation's ten
 
 ### Related information
 
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* None identified
+
+#### Configuration
+
+* None identified
 #### References
 
 * [Where your Microsoft 365 customer data is stored](https://docs.microsoft.com/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide)

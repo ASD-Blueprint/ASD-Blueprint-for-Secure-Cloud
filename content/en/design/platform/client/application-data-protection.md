@@ -26,7 +26,13 @@ Within Microsoft Intune, application protection policies are rules that ensure o
 
 #### Design
 
-* None identified
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+
+#### Configuration
+
+* [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
+* [Windows]({{< ref "configuration/intune/apps/by-platform/windows.md">}})
+* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
 
 #### References
 

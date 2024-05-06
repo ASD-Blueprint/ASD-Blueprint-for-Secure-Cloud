@@ -66,10 +66,22 @@ Technical controls for system monitoring of `<SYSTEM-NAME>` are configured with 
 *   [Essential Eight: Multi-factor-Authentication]({{< ref "multi-factor-authentication.md" >}})
 *   [Essential Eight: Restrict Administrative Privileges]({{< ref "restrict-administrative-privileges.md">}})
 *   [Essential Eight: User Application Hardening]({{< ref "user-application-hardening.md">}})
+*   [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
 
 #### Design
 
-*   [Platform Monitoring and Auditing]({{< ref "platform-monitoring-auditing.md" >}})
+* [Endpoint Monitoring]({{<ref "design/platform/client/endpoint-monitoring.md">}})
+* [Platform Monitoring and Auditing]({{<ref "design/platform/security/platform-monitoring-auditing.md">}})
+* [Audit and Logging]({{<ref "design/shared-services/defender/audit-and-logging.md">}})
+* [Microsoft 365 Monitoring]({{<ref "design/shared-services/microsoft-365/microsoft365-monitoring.md">}})
+* [Reporting and Monitoring]({{<ref "design/platform/identity/reporting-and-monitoring.md">}})
+
+#### Configuration
+
+* [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+
 
 #### External documentation
 

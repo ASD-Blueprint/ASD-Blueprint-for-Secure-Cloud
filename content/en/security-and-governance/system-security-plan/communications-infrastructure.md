@@ -53,11 +53,15 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to the managem
 
 #### Security & Governance
 
-*   None Identified
+* [Networking]({{< ref "networking.md">}})
 
 #### Design
 
-* [Networking]({{< ref "networking.md">}})
+*   None Identified
+
+#### Configuration
+
+- [Networking]({{<ref "configuration/networking">}})
 
 #### External documentation
 

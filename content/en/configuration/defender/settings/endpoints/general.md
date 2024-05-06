@@ -48,16 +48,17 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Security & Governance
 
-* None identified
+* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
+* [Essential Eight: User Application Hardening]({{<ref "user-application-hardening.md">}})
   
 #### Design
 
-* [Devices]({{<ref "design/platform/security/endpoint-security">}})
-* [Devices]({{<ref "design/endpoints">}})
+* [Endpoint Security - Devices]({{<ref "design/platform/security/endpoint-security">}})
+
   
 #### Configuration
 
-* None identified
+* [Microsoft Entra ID - Protection]({{<ref "configuration/entra-id/protection">}})
 
 #### References
 

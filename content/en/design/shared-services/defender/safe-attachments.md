@@ -32,8 +32,11 @@ When an Safe Attachments policy is in place and an end-user who is covered by th
 
 * None identified
 
-#### References
+#### Configuration
 
 * None identified
+
+#### References
+
 * [Malicious Email Mitigation Strategies](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/email-hardening/malicious-email-mitigation-strategies)
 * [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams?view=o365-worldwide)

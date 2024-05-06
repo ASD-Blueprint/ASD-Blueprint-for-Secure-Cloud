@@ -201,6 +201,11 @@ This includes the processing, analysis, and response to the following event logs
 - [Platform Monitoring and Auditing]({{<ref "platform-monitoring-auditing.md">}})
 - [Security Information and Event Monitoring]({{<ref "siem.md">}})
 
+#### Configuration
+
+* [Microsoft Entra ID - Protection]({{<ref "configuration/entra-id/protection">}})
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+
 #### External links
 
 - ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)

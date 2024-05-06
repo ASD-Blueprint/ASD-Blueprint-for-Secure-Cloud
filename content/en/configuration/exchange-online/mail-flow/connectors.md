@@ -73,7 +73,8 @@ Organisations that are required to route traffic through a 3rd party mail gatewa
   
 #### Design
 
-* None identified
+* [Connectors and Data Loss Prevention Policies]({{<ref "design/shared-services/power-platform/connectors-dlp-policies.md">}})
+* [Microsoft 365 Connectivity]({{<ref "design/shared-services/microsoft-365/microsoft365-connectivity.md">}})
   
 #### Configuration
 

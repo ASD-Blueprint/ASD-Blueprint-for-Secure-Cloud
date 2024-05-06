@@ -85,10 +85,17 @@ Defender for Microsoft 365 provides content filtering including sandboxing of at
 #### Security & Governance
 
 *   `<ORGANISATION-NAME>`'s [Email Usage Policy]({{<ref "security-and-governance/policies">}})
+*  [Incident Management Policy]({{< ref "security-and-governance/policies" >}})
 
 #### Design
 
 *   [Exchange Online]({{<ref "design/shared-services/exchange-online">}})
+
+
+#### Configuration
+
+* [Exchange Online]({{<ref "configuration/exchange-online" >}})
+
 
 #### External documentation
 

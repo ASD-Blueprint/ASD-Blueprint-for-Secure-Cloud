@@ -34,7 +34,9 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
+* [Essential Eight: Multi-factor Authentication]({{<ref "security-and-governance/essential-eight/multi-factor-authentication.md">}})
   
 #### Design
 
@@ -42,7 +44,8 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Configuration
 
-* None identified
+* [Sign-in risk policy]({{<ref "sign-in-risk-policy.md">}})
+* [MFA for Risky Sign-ins]({{<ref "grant-require-mfa-for-risky-signins.md">}})
 
 #### References
 

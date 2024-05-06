@@ -43,6 +43,10 @@ In addition to the above mailbox configuration, by default, standard user accoun
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

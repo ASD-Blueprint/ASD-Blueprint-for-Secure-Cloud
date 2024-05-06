@@ -40,6 +40,10 @@ Management of distribution lists can be streamlined through the enforcement of a
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

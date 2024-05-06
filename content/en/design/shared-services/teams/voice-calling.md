@@ -30,6 +30,10 @@ Enables organisations to make calls to landlines or mobiles within Microsoft Tea
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

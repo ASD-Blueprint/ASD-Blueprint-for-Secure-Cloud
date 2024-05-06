@@ -20,9 +20,13 @@ Access to a Team is controlled using Microsoft Office 365 Groups located in Micr
 
 #### Security & Governance
 
-* None identified
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
 
 #### Design
+
+* None identified
+
+#### Configuration
 
 * None identified
 

@@ -54,8 +54,13 @@ Organisations should undertake an assessment of the Universal Print service to d
 
 #### Design
 
+* [Drivers and Peripherals]({{<ref "design/endpoints/windows/hardware/drivers-and-peripherals.md">}})
 * [Windows Desktop Applications]({{<ref "/design/endpoints/windows/configuration/enterprise-applications">}})
 * [Windows Universal Applications]({{<ref "universal-platform-applications">}})
+
+#### Configuration
+
+* None identified
 
 #### References
 

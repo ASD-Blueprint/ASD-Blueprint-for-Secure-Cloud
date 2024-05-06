@@ -35,6 +35,10 @@ The Welcome Email setting is not able to be disabled across the organisation. Th
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

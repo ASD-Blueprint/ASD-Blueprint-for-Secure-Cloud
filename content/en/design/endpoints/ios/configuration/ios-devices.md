@@ -25,11 +25,16 @@ ASD’s *Blueprint for Secure Cloud* (the Blueprint) recommends organisations se
 
 #### Security & Governance
 
-* None identified
+* [Operating System Hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-os.md">}})
 
 #### Design
 
-* None identified
+* [Conditional access]({{<ref "design/platform/identity/conditional-access.md">}})
+
+#### Configuration
+
+* [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
+* [ASD iOS Hardening]({{<ref "configuration/intune/devices/configuration-profiles/asd-ios-hardening.md">}})
 
 #### References
 

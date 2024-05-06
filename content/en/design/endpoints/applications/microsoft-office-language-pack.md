@@ -25,6 +25,10 @@ Language packs add additional display, help and proofing tools to Microsoft Offi
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Add Microsoft 365 Apps to Windows 10/11 devices with Microsoft Intune](https://learn.microsoft.com/mem/intune/apps/apps-add-office365)

@@ -22,11 +22,18 @@ ASD's provides guidance around securing systems against malicious OLE packages a
 
 #### Security & Governance
 
-* None identified
+* [Microsoft Office Macro Hardening]({{<ref "security-and-governance/essential-eight/restrict-microsoft-office-macros.md">}})
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
 * None identified
+
+#### Configuration
+
+* [Microsoft Office Macro Hardening]({{<ref "design/endpoints/windows/security/microsoft-office-macro-hardening.md">}})
+
 
 #### References
 

@@ -97,10 +97,21 @@ Office productivity suites are not installed on `<SYSTEM-NAME>` servers.
 #### Security & Governance
 
 * [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
+* [Essential Eight: User Application Hardening]({{< ref "user-application-hardening.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
 * Microsoft's [Office Macro Hardening]({{< ref "microsoft-office-macro-hardening.md">}})
+* [Microsoft Office Hardening]({{< ref "microsoft-office-hardening.md">}})
+* [Microsoft Edge Hardening]({{< ref "edge-hardening.md">}})
+* [Windows Defender Application Control]({{< ref "windows-defender-application-control.md">}})
+
+#### Configuration
+
+* [Microsoft Office Macro Hardening]({{<ref "configuration/intune/devices/scripts/officemacrohardening-preventactivationofole.md">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+
 
 #### External links
 

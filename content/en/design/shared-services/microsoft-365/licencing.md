@@ -39,6 +39,10 @@ To grant access to the services a licence is assigned to an individual user acco
 
 * [Microsoft 365 Groups]({{<ref "microsoft365-groups">}})
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Microsoft 365 Maps by Aaron Dinnage](https://m365maps.com/)

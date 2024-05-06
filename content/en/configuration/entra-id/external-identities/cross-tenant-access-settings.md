@@ -62,11 +62,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Security & Governance
 
-* None identified
+* [System Management]({{<ref "system-management.md">}})
   
 #### Design
 
 * [External Identities]({{<ref "design/platform/identity/external-identities">}})
+* [Conditional Access]({{<ref "design/platform/identity/conditional-access.md">}})
   
 #### Configuration
 

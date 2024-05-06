@@ -6,4 +6,4 @@ description: "This section describes the configuration of Exchange Online associ
 
 In addition to the settings to be applied within the Exchange online portal, the below pages detail additional settings that must be applied for proper operation of Exchange Online:
 
-- [DNS Settings]({{< ref "dns-settings.md">}})
+- [DNS Settings]({{<ref "dns-settings.md">}})

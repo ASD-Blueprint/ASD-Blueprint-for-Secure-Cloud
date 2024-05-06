@@ -68,6 +68,10 @@ The below is the Entra Connect configuration applicable to organisations leverag
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Entra ID Connect Prerequisites](https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-install-prerequisites)

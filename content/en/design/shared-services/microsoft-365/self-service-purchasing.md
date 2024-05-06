@@ -22,6 +22,18 @@ The processing of data for these add-ins does not sit within Microsoft 365 tenan
 
 ### Related information
 
+
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* None identified
+
+#### Configuration
+
+* None identified
 #### References
 
 * None identified

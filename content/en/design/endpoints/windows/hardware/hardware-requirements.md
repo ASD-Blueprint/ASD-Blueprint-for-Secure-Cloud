@@ -51,6 +51,10 @@ In addition for Windows 11 SOEs, the processor must be selected from the support
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

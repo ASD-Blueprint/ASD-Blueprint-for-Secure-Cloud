@@ -44,11 +44,18 @@ Microsoft Defender Exploit guard comprises of the below features:
 
 #### Security & Governance
 
-* None identified
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
 * None identified
+
+#### Configuration
+
+* [Microsoft defender settings]({{<ref "configuration/defender/settings">}})
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
 
 #### References
 

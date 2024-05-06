@@ -33,9 +33,13 @@ Windows 10 and 11, and supporting management tools, offer various Standard Opera
 
 #### Security & Governance
 
-* None identified
+* [Operating System Hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-os.md">}})
 
 #### Design
+
+* None identified
+
+#### Configuration
 
 * None identified
 

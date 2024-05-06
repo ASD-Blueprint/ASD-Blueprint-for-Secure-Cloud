@@ -32,6 +32,10 @@ Litigation hold is not an alternative to backups. While it is true that it keeps
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

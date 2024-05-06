@@ -40,6 +40,10 @@ OneDrive sharing configuration choices:
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Content Sharing](https://docs.microsoft.com/onedrive/manage-sharing)

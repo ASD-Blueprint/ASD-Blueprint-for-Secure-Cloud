@@ -59,10 +59,18 @@ While the Blueprint provides limited guidance to support organisations in develo
 * [Incident Management Policy]({{< ref "security-and-governance/policies" >}})
 * [Cyber Security Incident Response Plan]({{< ref "security-and-governance/general-documentation" >}})
 * [Cyber Security Incident Register]({{< ref "security-and-governance/general-documentation" >}})
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [Essential Eight: Multi-factor Authentication]({{<ref "security-and-governance/essential-eight/multi-factor-authentication.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
 * [SIEM]({{< ref "siem.md" >}})
+
+
+#### Configuration
+
+* None identified
 
 #### External links
 

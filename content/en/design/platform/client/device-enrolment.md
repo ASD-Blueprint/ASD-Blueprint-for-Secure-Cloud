@@ -69,11 +69,18 @@ Finally, the group should be assigned as a user to the `Microsoft Graph PowerShe
 
 #### Security & Governance
 
-* None identified
+* [System Monitoring]({{<ref "system-monitoring.md">}})
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
 
 #### Design
 
-* None identified
+* [Conditional Access policies]({{<ref "design/platform/identity/conditional-access#conditional-access-policies">}})
+
+#### Configuration
+
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
+* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
 
 #### References
 

@@ -21,6 +21,10 @@ Below lists the core security risks for the Power Platform and how they are miti
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Microsoft Power Platform security documentation](https://docs.microsoft.com/power-platform/admin/security)

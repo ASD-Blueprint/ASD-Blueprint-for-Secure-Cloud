@@ -29,11 +29,16 @@ Integration with Azure Sentinel Security Information and Event Management (SIEM)
 
 #### Security & Governance
 
-* None identified
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [System Monitoring]({{<ref "system-monitoring.md">}})
 
 #### Design
 
-*   [Microsoft Defender Audit and Logging]({{<ref "audit-and-logging">}})
+* [Microsoft Defender Audit and Logging]({{<ref "audit-and-logging">}})
+
+#### Configuration
+
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 
 #### References
 

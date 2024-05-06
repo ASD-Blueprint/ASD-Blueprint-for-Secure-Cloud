@@ -46,6 +46,10 @@ Microsoft 365 Groups, by default can be created by any user. This can be restric
 
 * [Group Naming Conventions]({{<ref "design/platform/identity/groups">}})
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Configure the expiration policy for Microsoft 365 groups](https://learn.microsoft.com/entra/identity/users/groups-lifecycle)

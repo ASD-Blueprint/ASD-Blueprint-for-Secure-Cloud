@@ -123,6 +123,10 @@ Audit logging is not enabled by default and must be turned on first in Microsoft
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Learn about data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide)

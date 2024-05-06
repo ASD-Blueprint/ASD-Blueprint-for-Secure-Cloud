@@ -33,6 +33,10 @@ Office 365 products require licensing to enable full functionality and support. 
 
 #### Design
 
+* [Microsoft 365 Licensing]({{<ref "design/shared-services/microsoft-365/licencing.md">}})
+
+#### Configuration
+
 * None identified
 
 #### References

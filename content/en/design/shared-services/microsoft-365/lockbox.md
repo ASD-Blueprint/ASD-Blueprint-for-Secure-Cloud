@@ -33,6 +33,10 @@ Per the support agreement terms and conditions, when organisations have not enab
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Lockbox Overview](https://docs.microsoft.com/microsoft-365/compliance/customer-lockbox-requests)

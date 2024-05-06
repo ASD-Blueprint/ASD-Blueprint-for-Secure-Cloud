@@ -23,9 +23,13 @@ The organisation has indicated that the device must be able to be remotely wipe 
 
 #### Security & Governance
 
-* None identified
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
 
 #### Design
+
+* None identified
+
+#### Configuration
 
 * None identified
 

@@ -46,11 +46,18 @@ If supported by their existing web content filtering implementations, organisati
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight - User Application Hardening]({{<ref "security-and-governance/essential-eight/user-application-hardening.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
 
 #### Design
 
 * None identified
+
+#### Configuration
+
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
+* [ASD Edge Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-edge-hardening-guidelines.md">}})
 
 #### References
 

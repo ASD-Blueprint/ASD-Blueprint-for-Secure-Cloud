@@ -30,6 +30,10 @@ The default Start Menu layout can be configured for all users that use the devic
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

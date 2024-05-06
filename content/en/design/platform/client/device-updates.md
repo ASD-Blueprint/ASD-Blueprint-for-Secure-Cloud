@@ -98,11 +98,19 @@ Organisations should consider use of Windows Autopatch in accordance with their 
 
 #### Security & Governance
 
-* None identified
+* [System Monitoring]({{<ref "system-monitoring.md">}})
+* [Essential Eight - Patch Operating Systems]({{<ref "security-and-governance/essential-eight/patch-os.md">}})
+* [Essential Eight - Patch Applications]({{<ref "security-and-governance/essential-eight/patch-applications.md">}})
+* [Essential Eight - User Application Hardening]({{<ref "security-and-governance/essential-eight/user-application-hardening.md">}})
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
 
 #### Design
 
 * [Windows Update and Patching]({{<ref "windows-update-and-patching">}})
+
+#### Configuration
+
+* None identified
 
 #### References
 

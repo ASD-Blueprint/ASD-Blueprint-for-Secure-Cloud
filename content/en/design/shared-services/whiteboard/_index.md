@@ -36,6 +36,10 @@ The Whiteboard tool can be used with the Microsoft Surface hub appliance. When u
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

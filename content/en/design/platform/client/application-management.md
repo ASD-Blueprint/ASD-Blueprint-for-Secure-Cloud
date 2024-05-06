@@ -112,12 +112,18 @@ Windows Defender for Application Control (WDAC) is used to restricts the applica
 
 #### Security & Governance
 
-* None identified
+* [User application hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-user-apps.md">}})
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
 
 #### Design
 
 * [Windows Desktop Applications]({{<ref "/design/endpoints/windows/configuration/enterprise-applications">}})
 * [Windows Universal Applications]({{<ref "universal-platform-applications">}})
+
+#### Configuration
+
+* [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
+* [Windows]({{< ref "configuration/intune/apps/by-platform/windows.md">}})
 
 #### References
 

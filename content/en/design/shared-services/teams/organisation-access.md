@@ -32,6 +32,10 @@ The Australian Signals Directorate (ASD) Blueprint for Secure Cloud (The Bluepri
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

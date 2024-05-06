@@ -47,11 +47,16 @@ Log Analytics configuration for all organisations and implementation types.
 
 #### Security & Governance
 
-* None identified
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [System Monitoring]({{<ref "system-monitoring.md">}})
 
 #### Design
 
 * None identified
+
+#### Configuration
+
+* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
 
 #### References
 

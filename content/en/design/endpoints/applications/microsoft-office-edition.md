@@ -38,6 +38,12 @@ Microsoft Project and Visio (365 and 2019) are available as click-to-run edition
 
 * None identified
 
+#### Configuration
+
+* [ASD Office Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-office-hardening-guidelines.md">}})
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+
+
 #### References
 
 * [Microsoft Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117)

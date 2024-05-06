@@ -40,6 +40,18 @@ The below design decisions are based on general requirements and consider the lo
 
 ### Related information
 
+
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* None identified
+
+#### Configuration
+
+* None identified
 #### References
 
 * None identified

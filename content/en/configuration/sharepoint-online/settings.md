@@ -85,11 +85,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
   
 #### Design
 
-* None identified
+* [SharePoint]({{<ref "design/shared-services/sharepoint-online">}})
+* [Entra ID Protection]({{<ref "design/platform/identity/protection.md">}})
   
 #### Configuration
 
-* None identified
+* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
 
 #### References
 

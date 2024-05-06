@@ -37,6 +37,10 @@ Transport Rules follow the following basic structure:
 
 * None identified
 
+#### Configuration
+
+* [Mail Flow]({{<ref "configuration/exchange-online/mail-flow">}})
+
 #### References
 
 * [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules?view=o365-worldwide)

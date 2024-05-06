@@ -129,8 +129,14 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Security & Governance
 
-* None identified
-  
+* [Operating System Hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-os.md">}})
+* [Patch Operating System]({{<ref "security-and-governance/essential-eight/patch-os.md">}}) 
+* [Essential Eight: Multi-factor-Authentication]({{<ref "multi-factor-authentication.md" >}})
+* [Authentication Hardening]({{<ref "system-hardening-authentication.md">}})
+* [System Management]({{<ref "system-management.md">}})
+* [System Monitoring]({{<ref "system-monitoring.md">}})
+
+
 #### Design
 
 * [Devices]({{<ref "design/platform/security/endpoint-security">}})
@@ -138,7 +144,10 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
   
 #### Configuration
 
-* None identified
+* [Microsoft Intune - Devices]({{< ref "configuration/intune/devices">}})
+* [Microsoft Entra ID - Devices]({{< ref "configuration/entra-id/devices">}})
+* [iOS and iPadOS]({{< ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
+* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
 
 #### References
 

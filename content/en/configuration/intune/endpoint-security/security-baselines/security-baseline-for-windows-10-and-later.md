@@ -507,3 +507,27 @@ Microsoft Windows Security Baseline
 | Item                            |          Value |
 | ------------------------------- | -------------: |
 | PowerShell script block logging | Not configured |
+
+
+
+
+### Related information
+
+#### Security & Governance
+
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}}) 
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+
+  
+#### Design
+
+* None identified
+  
+#### Configuration
+
+* None identified
+
+#### References
+
+* None identified

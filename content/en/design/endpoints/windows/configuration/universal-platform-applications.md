@@ -53,6 +53,10 @@ UWP applications cannot access user resources unless the application specificall
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

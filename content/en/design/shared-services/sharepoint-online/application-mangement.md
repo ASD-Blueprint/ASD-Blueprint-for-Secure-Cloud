@@ -27,6 +27,10 @@ SharePoint default methods of displaying and sharing of sharing data are availab
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

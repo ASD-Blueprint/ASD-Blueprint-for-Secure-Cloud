@@ -50,15 +50,18 @@ Placeholders such as ‘organisation.gov.au’, ‘blueprint.gov.au’ and ‘te
 
 #### Security & Governance
 
-* None identified
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [System Management]({{<ref "system-management.md">}})
   
 #### Design
 
-* None identified
+* [Authentication]({{<ref "design/platform/identity/authentication.md" >}})
+* [Entra ID Protection]({{< ref "design/platform/identity/protection.md" >}})
   
 #### Configuration
 
-* None identified
+* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
+* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
 
 #### References
 

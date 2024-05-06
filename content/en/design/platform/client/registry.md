@@ -44,6 +44,10 @@ ASD's [*Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016*](http
 
 * None identified
 
+#### Configuration
+
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
+
 #### References
 
 * [Hardening Microsoft Windows 10](https://www.cyber.gov.au/acsc/view-all-content/publications/hardening-microsoft-windows-10-version-21h1-workstations)

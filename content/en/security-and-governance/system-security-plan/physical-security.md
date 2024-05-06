@@ -59,9 +59,15 @@ Workstations are also deployed within `<ORGANISATION-NAME>`'s offices, assessed 
 
 #### Security & Governance
 
-* None identified
+* [Physical Security Policy]({{<ref "security-and-governance/policies">}})
+* [Enterprise Mobility]({{<ref "enterprise-mobility.md">}})
 
 #### Design
+
+* None identified
+
+
+#### Configuration
 
 * None identified
 

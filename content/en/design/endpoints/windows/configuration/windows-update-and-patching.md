@@ -42,11 +42,16 @@ To deploy patches to endpoints as quickly as possible, client-side settings shou
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight - Patch Operating Systems]({{<ref "security-and-governance/essential-eight/patch-os.md">}})
+* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
 
 #### Design
 
-* None identified
+* [Windows Update and Patching]({{<ref "design/endpoints/windows/configuration/windows-update-and-patching.md">}})
+
+#### Configuration
+
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
 
 #### References
 

@@ -43,15 +43,17 @@ Whilst retention policies offer some protection against data loss and associated
 
 #### Security & Governance
 
-* None identified
+* [Regular Backups]({{<ref "security-and-governance/essential-eight/regular-backups.md">}})
 
 #### Design
 
 * [Backup and Operational Management]({{<ref "design/platform/backup">}})
+* [Retention policies]({{<ref "design/shared-services/purview/retention-policies.md">}})
+* [Audit and logging]({{<ref "design/shared-services/defender/audit-and-logging.md">}})
 
 #### Configuration
 
-* None identified
+* [Retention policies]({{<ref "configuration/purview/data-lifecycle-management/retention-policies">}})
 
 #### References
 

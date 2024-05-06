@@ -41,11 +41,16 @@ Packaging methodology should be inherited from existing organisation procedures 
 
 #### Security & Governance
 
-* None identified
+* [User application hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-server-apps.md">}})
 
 #### Design
 
-* None identified
+* [Windows management]({{<ref "windows-management.md">}})
+
+#### Configuration
+
+* [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
+* [Windows]({{<ref "configuration/intune/apps/by-platform/windows.md">}})
 
 #### References
 

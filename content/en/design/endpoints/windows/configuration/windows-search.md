@@ -33,6 +33,10 @@ Windows Search is text-based and is built into the local operating system.
 
 * None identified
 
+#### Configuration
+
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
+
 #### References
 
 * None identified

@@ -39,6 +39,10 @@ Note that only the following services are included in the current Microsoft 365 
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Set up Conditional Access for Power Platform](https://docs.microsoft.com/power-platform/guidance/adoption/conditional-access)

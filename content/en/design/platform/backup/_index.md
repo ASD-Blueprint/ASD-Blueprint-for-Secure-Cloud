@@ -111,9 +111,14 @@ Data availability and resiliency of Microsoft 365 cloud service is in-built and 
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight - Regular Backups]({{<ref "security-and-governance/essential-eight/regular-backups.md">}})
+* [System Management]({{<ref "system-management.md">}})
 
 #### Design
+
+* [Retention policies]({{<ref "design/shared-services/purview/retention-policies">}})
+
+#### Configuration
 
 * None identified
 

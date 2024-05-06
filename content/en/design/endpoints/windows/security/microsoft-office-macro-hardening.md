@@ -100,11 +100,19 @@ Microsoft Office products can log macro execution attempts (both successful and 
 
 #### Security & Governance
 
-* None identified
+* [Microsoft Office Macro Hardening]({{<ref "security-and-governance/essential-eight/restrict-microsoft-office-macros.md">}})
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
 * None identified
+
+#### Configuration
+
+* [Microsoft Office Macro Hardening]({{<ref "design/endpoints/windows/security/microsoft-office-macro-hardening.md">}})
+* [Attack Surface Reduction]({{<ref "configuration/intune/endpoint-security/attack-surface-reduction/asd-windows-hardening-asr.md">}})
 
 #### References
 

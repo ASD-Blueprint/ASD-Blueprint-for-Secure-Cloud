@@ -292,10 +292,22 @@ This includes the processing, analysis, and response to the following event logs
 * [System Management]({{<ref "system-management.md">}})
 * [System Monitoring]({{<ref "system-monitoring.md">}})
 * [Cyber Security Incidents]({{<ref "cyber-security-incidents.md">}})
+* [System Administration Process]({{<ref "security-and-governance/general-documentation">}})
+* [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}})
 
 #### Design
 
-* None identified
+* [Windows Security]({{<ref "design/endpoints/windows/security">}})
+* [Endpoint Monitoring]({{<ref "design/platform/client/endpoint-monitoring.md">}})
+* [Platform Monitoring and Auditing]({{<ref "design/platform/security/platform-monitoring-auditing.md">}})
+* [Audit and Logging]({{<ref "design/shared-services/defender/audit-and-logging.md">}})
+
+#### Configuration
+
+* [Microsoft Intune - Applications]({{<ref "configuration/intune/apps">}})
+* [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
 
 #### External links
 

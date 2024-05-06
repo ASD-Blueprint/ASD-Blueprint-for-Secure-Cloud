@@ -53,6 +53,10 @@ DLP policies enforce rules for which connectors can be used together by classify
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Planning a Power Automate project](https://learn.microsoft.com/power-automate/guidance/planning/introduction)

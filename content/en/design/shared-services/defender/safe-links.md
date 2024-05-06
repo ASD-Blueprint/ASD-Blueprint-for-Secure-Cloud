@@ -62,6 +62,10 @@ How Safe Links works within Teams:
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Safe Links in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-links?view=o365-worldwide)

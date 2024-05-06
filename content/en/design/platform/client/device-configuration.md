@@ -110,11 +110,17 @@ The deployment of the settings, including any conflicts caused by implementation
 
 #### Security & Governance
 
-* None identified
+* [System Monitoring]({{<ref "system-monitoring.md">}})
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
 
 #### Design
 
-* None identified
+* [Conditional Access policies]({{<ref "design/platform/identity/conditional-access#conditional-access-policies">}})
+
+#### Configuration
+
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
+* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
 
 #### References
 

@@ -32,15 +32,17 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Security & Governance
 
-* None identified
+* [Security Documentation]({{<ref "security-and-governance/system-security-plan/security-documentation.md">}})
+* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
   
 #### Design
 
 * [Identity Governance]({{<ref "governance">}})
+* [Conditional Access]({{<ref "design/platform/identity/conditional-access.md">}})
   
 #### Configuration
 
-* None identified
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
 
 #### References
 

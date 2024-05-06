@@ -46,6 +46,10 @@ For new Microsoft 365 customers and those customers who have not previously used
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Data Residency for Other Microsoft 365 Services - Microsoft Forms](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-other?view=o365-worldwide#forms)

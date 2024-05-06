@@ -31,6 +31,14 @@ Exchange Online Protection Connection Filtering is always enabled however it can
 
 * None identified
 
+#### Configuration
+
+* None identified
+
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Configure connection filtering](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-worldwide)

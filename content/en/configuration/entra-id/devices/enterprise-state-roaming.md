@@ -28,7 +28,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Security & Governance
 
-* None identified
+* [Enterprise Mobility]({{< ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+* [`<SYSTEM-NAME>` Mobile Device Usage Policy]({{< ref "security-and-governance/policies">}})
+* [`<SYSTEM-NAME>` Mobile Device Management Policy]({{< ref "security-and-governance/policies">}})
+* [Overseas Travel SOP]({{<ref "security-and-governance/general-documentation">}})
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
   
 #### Design
 
@@ -36,7 +40,9 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
   
 #### Configuration
 
-* None identified
+* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 
 #### References
 

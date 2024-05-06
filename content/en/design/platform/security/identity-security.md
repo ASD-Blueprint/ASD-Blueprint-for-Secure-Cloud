@@ -178,6 +178,12 @@ To connect Defender for Identity to Defender for Cloud Apps the administrator en
 
 * [Identity Protection]({{<ref "design/platform/identity/protection">}})
 * [Identity Monitoring]({{<ref "reporting-and-monitoring">}})
+* [SIEM]({{<ref "design/platform/security/siem.md">}})
+
+#### Configuration
+
+* [Hybrid - Network Configuration ABAC]({{<ref "configuration">}})
+* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
 
 #### References
 

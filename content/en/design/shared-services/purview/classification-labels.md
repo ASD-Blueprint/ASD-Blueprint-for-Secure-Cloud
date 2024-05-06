@@ -60,6 +60,10 @@ Email gateway rules are available in the [Network Configuration section]({{< ref
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Learn about sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)

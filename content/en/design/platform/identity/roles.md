@@ -46,12 +46,17 @@ Only [specific Microsoft Entra ID roles](https://learn.microsoft.com/entra/ident
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
 
 #### Design
 
 * [Privileged Identity Management]({{<ref "rbac#privileged-identity-management">}})
 * [Identity Governance]({{<ref "governance">}})
+* [Role Based Access Control]({{<ref "design/shared-services/microsoft-365/rbac.md">}})
+
+#### Configuration
+
+* None identified
 
 #### References
 

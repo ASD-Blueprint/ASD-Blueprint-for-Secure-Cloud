@@ -206,6 +206,11 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to IPsec.
 
 #### Design
 
+* [Endpoint Security]({{< ref "design/platform/security/endpoint-security">}})
+* [Windows Hardening]({{<ref "design/endpoints/windows/security/windows-hardening.md">}})
+
+#### Configuration
+
 *   None Identified
 
 #### External documentation

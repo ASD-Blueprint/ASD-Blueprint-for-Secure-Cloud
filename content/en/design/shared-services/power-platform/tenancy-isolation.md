@@ -30,6 +30,10 @@ Power Platform tenant isolation ability is available with two options: one-way o
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Cross-tenant inbound and outbound restrictions](https://docs.microsoft.com/power-platform/admin/cross-tenant-restrictions)

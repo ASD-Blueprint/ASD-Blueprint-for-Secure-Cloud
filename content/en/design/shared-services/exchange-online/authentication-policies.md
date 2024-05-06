@@ -22,9 +22,14 @@ Blocking Basic Authentication forces clients to use Modern Authentication. Block
 
 #### Security & Governance
 
-* None identified
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
+* [User application hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-user-apps.md">}})
 
 #### Design
+
+* None identified
+
+#### Configuration
 
 * None identified
 

@@ -529,7 +529,11 @@ Further details on firewall configuration and proxy allow lists for the solution
 
 #### Design
 
-* None identified
+* [Conditional Access App Control section]({{<ref "#conditional-access-app-control-protection">}})
+
+#### Configuration
+
+* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
 
 #### References
 

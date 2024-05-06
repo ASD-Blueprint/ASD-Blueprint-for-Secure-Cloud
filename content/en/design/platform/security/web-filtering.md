@@ -31,6 +31,10 @@ For more detail on Microsoft Entra ID tenant restrictions, see [use tenant restr
 
 * None identified
 
+#### Configuration
+
+* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
+
 #### References
 
 * [Tenant Restrictions](https://learn.microsoft.com/entra/identity/enterprise-apps/tenant-restrictions)

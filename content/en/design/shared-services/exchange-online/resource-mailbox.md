@@ -36,6 +36,10 @@ Room Mailboxes can be sorted into lists using Room Lists. Room Lists are leverag
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

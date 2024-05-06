@@ -34,11 +34,16 @@ Since mobile devices routinely leave the office environment, and the protection 
 
 #### Security & Governance
 
-* None identified
+* [System Monitoring]({{<ref "system-monitoring.md">}})
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
 
 #### Design
 
 * [Conditional Access]({{<ref "design/platform/identity/conditional-access">}})
+
+#### Configuration
+
+* [Compliance Policies]({{<ref "configuration/intune/devices/compliance-policies/policies">}})
 
 #### References
 

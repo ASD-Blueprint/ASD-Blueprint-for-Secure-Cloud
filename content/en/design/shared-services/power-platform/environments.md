@@ -40,6 +40,10 @@ A single 'default' environment is automatically created by Power Apps for each t
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Environments Overview](https://docs.microsoft.com/power-platform/admin/environments-overview)

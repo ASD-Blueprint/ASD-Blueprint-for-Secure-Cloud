@@ -45,15 +45,20 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Security & Governance
 
-* None identified
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
   
 #### Design
 
 * [Devices]({{<ref "design/platform/identity/devices">}})
+* [Securing iOS devices]({{< ref "securing-ios-devices.md">}})
+* [Endpoint Management]({{<ref "design/platform/client">}})
   
 #### Configuration
 
-* None identified
+* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
+* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+* [Device Settings]({{<ref "configuration/entra-id/devices/device-settings.md">}})
 
 #### References
 

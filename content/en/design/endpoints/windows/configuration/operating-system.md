@@ -32,9 +32,15 @@ Servicing of Windows 10 and 11 falls into three distinct channels (previously kn
 
 #### Security & Governance
 
-* None identified
+* [Operating System Hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-os.md">}})
+* [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
 
 #### Design
+
+* [Windows]({{<ref "design/endpoints/windows">}})
+* [Windows Update and Patching]({{<ref "design/endpoints/windows/configuration/windows-update-and-patching.md">}})
+
+#### Configuration
 
 * None identified
 

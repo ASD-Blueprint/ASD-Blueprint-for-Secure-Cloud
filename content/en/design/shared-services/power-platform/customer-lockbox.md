@@ -24,6 +24,10 @@ In addition to the tenant wide Customer Lockbox functionality, specific [Power P
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Securely access customer data using Customer Lockbox in Power Platform](https://docs.microsoft.com/power-platform/admin/about-lockbox)

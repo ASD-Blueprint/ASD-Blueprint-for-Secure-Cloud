@@ -100,16 +100,18 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Security & Governance
 
-* None identified
+* [System Management]({{<ref "system-management.md">}})
+* [Essential Eight: User Application Hardening]({{<ref "user-application-hardening.md">}})
   
 #### Design
 
-* [Devices]({{<ref "design/platform/security/endpoint-security">}})
-* [Devices]({{<ref "design/endpoints">}})
+* [Endpoint Security - Devices]({{<ref "design/platform/security/endpoint-security">}})
   
 #### Configuration
 
-* None identified
+* [Microsoft Intune - Applications]({{<ref "configuration/intune/apps">}})
+* [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
 
 #### References
 

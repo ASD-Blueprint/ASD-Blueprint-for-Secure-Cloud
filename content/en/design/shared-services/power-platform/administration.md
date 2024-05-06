@@ -46,9 +46,15 @@ User access rights can be allocated at the specific Power Apps, Power Automate a
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight - User Application Hardening]({{<ref "security-and-governance/essential-eight/user-application-hardening.md">}})
+* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
 
 #### Design
+
+* None identified
+
+#### Configuration
 
 * None identified
 

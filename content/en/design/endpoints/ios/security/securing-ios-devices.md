@@ -46,11 +46,19 @@ Using Intune together with Apple Business Manager provides the ability to restri
 
 #### Security & Governance
 
-* None identified
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
+  
 
 #### Design
 
-* None identified
+* [Entra ID Protection]({{<ref "design/platform/identity/protection.md">}})
+* [Endpoint management]({{<ref "design/platform/client">}})
+
+#### Configuration
+
+* [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
+* [ASD iOS Hardening]({{<ref "configuration/intune/devices/configuration-profiles/asd-ios-hardening.md">}})
 
 #### References
 

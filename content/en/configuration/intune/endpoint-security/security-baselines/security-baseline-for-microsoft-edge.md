@@ -91,3 +91,25 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Configure Microsoft Defender SmartScreen to block potentially unwanted apps  | Enabled |
 | Prevent bypassing Microsoft Defender SmartScreen prompts for sites           | Enabled |
 | Prevent bypassing of Microsoft Defender SmartScreen warnings about downloads | Enabled |
+
+
+
+### Related information
+
+#### Security & Governance
+
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}}) 
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+
+  
+#### Design
+
+* None identified
+  
+#### Configuration
+
+* None identified
+
+#### References
+
+* None identified

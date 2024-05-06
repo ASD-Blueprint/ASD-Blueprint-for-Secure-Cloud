@@ -137,14 +137,18 @@ Emergency access or 'break glass' accounts are accounts used to restore access t
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight]({{<ref "essential-eight">}})
 
 #### Design
 
-* [Essential Eight]({{<ref "essential-eight">}})
+
 * [Entra ID Custom Domains]({{<ref "tenant/#custom-domain">}})
 * [Microsoft 365 - Accepted Domains]({{<ref "accepted-domains">}})
 * [Exchange - User Mailbox Configuration]({{<ref "user-mailbox-configuration">}})
+
+#### Configuration
+
+* None identified
 
 #### References
 

@@ -24,6 +24,10 @@ Fast User Switching enables more than one concurrent connection to a Windows dev
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

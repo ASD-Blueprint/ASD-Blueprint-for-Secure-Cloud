@@ -35,6 +35,10 @@ Storage and Synchronisation Configuration Choices:
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Content Synchronisation](https://docs.microsoft.com/onedrive/sync-process)

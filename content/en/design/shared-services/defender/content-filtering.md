@@ -34,6 +34,10 @@ The use of these policies enables greater management control over SPAM emails.
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Anti-spam protection in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection?view=o365-worldwide)

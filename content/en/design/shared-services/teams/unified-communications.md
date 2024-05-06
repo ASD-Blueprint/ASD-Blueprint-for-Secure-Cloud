@@ -34,6 +34,10 @@ Microsoft Office Teams can natively provide the following UC features:
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

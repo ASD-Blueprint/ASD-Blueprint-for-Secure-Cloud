@@ -30,6 +30,10 @@ Microsoft Stream provides two platforms :
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

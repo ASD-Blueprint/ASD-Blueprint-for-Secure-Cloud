@@ -119,6 +119,11 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to these roles
 
 * None identified
 
+
+#### Configuration
+
+* None identified
+
 #### External Documentation
 
 * ASD's [*Guidelines for Cyber Security Roles*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-cyber-security-roles)

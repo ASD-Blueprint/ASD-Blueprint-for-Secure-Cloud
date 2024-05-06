@@ -395,11 +395,22 @@ Windows Hello for Business PIN's can be force removed by Platform Administrators
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight MFA guidance]({{<ref "multi-factor-authentication">}})
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
 * [Enterprise Users]({{<ref "users">}})
+* [Conditional Access policy]({{<ref "conditional-access" >}})
+* [Identity Protection]({{<ref "protection" >}})
+* [iOS/iPadOS]({{<ref "ios-ipad.md">}})
+
+#### Configuration
+
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
+* [Authentication methods]({{<ref "configuration/entra-id/protection/authentication-methods">}})
+* [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
 
 #### References
 

@@ -46,6 +46,9 @@ Users can adjust power and performance options via the system tray power slider 
 
 * None identified
 
+#### Configuration
+
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
 #### References
 
 * None identified

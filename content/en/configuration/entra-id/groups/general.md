@@ -48,6 +48,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 #### Design
 
 * [Groups]({{<ref "design/platform/identity/groups">}})
+* [Microsoft Groups]({{<ref "design/shared-services/microsoft-365/microsoft365-groups.md">}})
   
 #### Configuration
 

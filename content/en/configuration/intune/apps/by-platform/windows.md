@@ -157,3 +157,28 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item  |       Value |
 | ----- | ----------: |
 | Group | All devices |
+
+
+### Related information
+
+#### Security & Governance
+
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}}) 
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
+* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
+  
+#### Design
+
+* [Endpoint Management]({{<ref "design/platform/client">}})
+
+#### Configuration
+
+* [Microsoft Intune - Devices]({{<ref "configuration/intune/devices">}})
+* [Microsoft Entra ID - Devices]({{<ref "configuration/entra-id/devices">}})
+* [Windows]({{<ref "configuration/intune/apps/by-platform/windows.md">}})
+* [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
+
+#### References
+
+* [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)

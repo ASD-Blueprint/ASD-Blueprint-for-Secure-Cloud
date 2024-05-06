@@ -105,9 +105,14 @@ Exchange Online data is retained after the user departs and for as long as the r
 
 #### Security & Governance
 
-* None identified
+* [System Management]({{<ref "system-management.md">}})
+* [Essential Eight: Regular Backups]({{< ref "regular-backups.md">}})
 
 #### Design
+
+* None identified
+
+#### Configuration
 
 * None identified
 

@@ -136,6 +136,11 @@ The Blueprint recommends organisations review the [Microsoft guidance on Informa
 
 * [Data Loss Prevention]({{<ref "design/shared-services/purview/data-loss-prevention">}})
 
+#### Configuration
+
+* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
+* [Rules]({{<ref "configuration/defender/settings/endpoints/rules.md">}})
+
 #### References
 
 * [Microsoft Purview Compliance Manager](https://learn.microsoft.com/microsoft-365/compliance/compliance-manager)

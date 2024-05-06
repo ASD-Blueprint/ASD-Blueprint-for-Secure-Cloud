@@ -68,6 +68,25 @@ Using PIM for the SharePoint administrator role, the Device administrator role, 
 
 ### Related information
 
+#### Security & Governance
+
+* [Essential Eight - User Application Hardening]({{<ref "security-and-governance/essential-eight/user-application-hardening.md">}})
+* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
+
+#### Design
+
+* [Roles]({{<ref "design/platform/identity/roles.md">}})
+
+
+#### Configuration
+
+* [Security logging and monitoring overview]({{<ref "siem">}})
+
+
+
+
+
 #### References
 
 * [Microsoft 365 Understanding Roles](https://learn.microsoft.com/entra/identity/role-based-access-control/concept-understand-roles)

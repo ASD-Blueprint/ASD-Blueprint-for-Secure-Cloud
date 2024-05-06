@@ -24,6 +24,10 @@ Given the ability for the Power Platform to be used in a wide range of scenarios
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Set up Conditional Access for Power Platform](https://docs.microsoft.com/power-platform/guidance/adoption/conditional-access)

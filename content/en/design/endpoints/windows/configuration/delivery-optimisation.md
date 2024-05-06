@@ -58,6 +58,10 @@ BranchCache provides two modes of operation being:
 
 #### Design
 
+* [Optimisation]({{<ref "connectivity-optimisation.md">}})
+
+#### Configuration
+
 * None identified
 
 #### References

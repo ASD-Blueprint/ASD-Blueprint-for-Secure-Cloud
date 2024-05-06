@@ -76,7 +76,17 @@ In accordance with `<ORGANISATION-NAME>`'s ICT Equipment Management Policy, all 
 
 #### Design
 
-*   None Identified
+* [Endpoint Device Updates]({{<ref "device-updates">}})
+* [Windows Update and Patching]({{<ref "design/endpoints/windows/configuration/windows-update-and-patching.md">}})
+* [Securing iOS devices]({{< ref "securing-ios-devices.md">}})
+* [Endpoint Management]({{<ref "design/platform/client">}})
+
+
+#### Configuration
+
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [iOS and iPadOS]({{< ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
+
 
 #### External documentation
 

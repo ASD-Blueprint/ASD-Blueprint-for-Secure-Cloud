@@ -38,6 +38,10 @@ Administrators can put controls in place which restricts who can create a ShareP
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

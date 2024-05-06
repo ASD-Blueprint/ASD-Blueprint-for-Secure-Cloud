@@ -51,6 +51,11 @@ However, `<SYSTEM-NAME>` does leverage software developed by Microsoft as part o
 
 * None identified
 
+
+#### Configuration
+
+* None identified
+
 #### External links
 
 * ASD's [*Guidelines for Software Development*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-software-development)

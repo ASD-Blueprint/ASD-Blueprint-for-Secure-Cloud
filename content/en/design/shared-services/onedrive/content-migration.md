@@ -37,6 +37,10 @@ On deletion of a user's OneDrive account, its content will be deleted. The delet
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Content Migration](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise#migrating-data)

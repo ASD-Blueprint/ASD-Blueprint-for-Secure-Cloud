@@ -57,7 +57,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
   
 #### Design
 
-* None identified
+* [Microsoft 365]({{<ref "design/shared-services/microsoft-365">}})
   
 #### Configuration
 

@@ -41,11 +41,18 @@ Microsoft Defender for Endpoint can be configured with the following options:
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
 
 #### Design
 
 * None identified
+
+#### Configuration
+
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
+* [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
+
 
 #### References
 

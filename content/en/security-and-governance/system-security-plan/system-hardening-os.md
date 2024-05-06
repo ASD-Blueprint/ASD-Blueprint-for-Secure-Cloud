@@ -124,6 +124,13 @@ Where an organisation appropriately assesses this within another document, it ma
 * [iOS devices]({{< ref "ios-devices.md">}})
 * [Endpoint Device Updates]({{<ref "device-updates">}})
 
+#### Configuration
+
+* [Microsoft Intune - Devices]({{< ref "configuration/intune/devices">}})
+* [Microsoft Entra ID - Devices]({{<ref "configuration/entra-id/devices">}})
+* [iOS and iPadOS]({{< ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
+* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
+
 
 #### External documentation
 

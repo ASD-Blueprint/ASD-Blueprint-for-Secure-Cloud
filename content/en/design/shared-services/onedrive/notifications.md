@@ -40,6 +40,10 @@ OneDrive for Business Notification Configuration:
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [One Drive Notifications](https://docs.microsoft.com/onedrive/turn-on-external-sharing-notifications)

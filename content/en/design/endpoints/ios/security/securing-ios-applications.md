@@ -32,11 +32,17 @@ MAM provides the capability to configure iOS device applications. These configur
 
 #### Security & Governance
 
-* None identified
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
 
 #### Design
 
-* None identified
+* [Securing iOS devices]({{<ref "securing-ios-devices.md">}})
+* [Endpoint management]({{<ref "design/platform/client">}})
+
+#### Configuration
+
+* [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
+* [ASD iOS Hardening]({{<ref "configuration/intune/devices/configuration-profiles/asd-ios-hardening.md">}})
 
 #### References
 

@@ -27,6 +27,10 @@ Opportunistic TLS enables email traffic to be encrypted when both the sender and
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

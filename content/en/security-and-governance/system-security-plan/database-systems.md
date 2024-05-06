@@ -50,6 +50,11 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to databases.
 
 * None identified
 
+
+#### Configuration
+
+* None identified
+
 #### External links
 
 * ASD's [*Guidelines for Database Systems*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-database-systems)

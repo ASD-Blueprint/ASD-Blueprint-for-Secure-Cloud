@@ -34,6 +34,10 @@ Although a system is capable of being assessed as PROTECTED, banners and backgro
 
 #### Design
 
+* [Entra ID Tenant Settings]({{<ref "design/platform/identity/tenant.md">}})
+
+#### Configuration
+
 * None identified
 
 #### References

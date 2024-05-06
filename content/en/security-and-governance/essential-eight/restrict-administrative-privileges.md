@@ -255,10 +255,20 @@ This includes the processing, analysis, and response to the following event logs
 * [System Management]({{<ref "system-management.md">}})
 * [System Monitoring]({{<ref "system-monitoring.md">}})
 * [Cyber Security Incidents]({{<ref "cyber-security-incidents.md">}})
+* [System Administration Process and Procedures]({{<ref "security-and-governance/policies">}})
 
 #### Design
 
-* None identified
+* [Authentication]({{<ref "design/platform/identity/authentication.md" >}})
+* [Entra ID Protection]({{< ref "design/platform/identity/protection.md" >}})
+* [Windows Security]({{<ref "design/endpoints/windows/security">}})
+
+#### Configuration
+
+* [Microsoft Entra ID - Users]({{<ref "configuration/entra-id/users">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
+* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
 
 #### External links
 

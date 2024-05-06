@@ -88,6 +88,10 @@ Conditional Access policies that should be applied by the partner organisation f
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [External Identities in Azure Active Directory Overview](https://learn.microsoft.com/entra/external-id/external-identities-overview)

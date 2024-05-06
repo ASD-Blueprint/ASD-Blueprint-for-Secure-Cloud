@@ -32,6 +32,10 @@ The provisioning mode supported by an application is also visible on the Provisi
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Application Provisioning Overview](https://learn.microsoft.com/entra/identity/app-provisioning/user-provisioning)

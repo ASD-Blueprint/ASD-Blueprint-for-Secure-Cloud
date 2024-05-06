@@ -32,6 +32,10 @@ User access to the mailbox is provided using mailbox delegation rights (Full Acc
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

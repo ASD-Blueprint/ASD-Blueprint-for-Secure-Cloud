@@ -31,6 +31,10 @@ Legacy features allow for backwards compatibility for legacy capabilities from S
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

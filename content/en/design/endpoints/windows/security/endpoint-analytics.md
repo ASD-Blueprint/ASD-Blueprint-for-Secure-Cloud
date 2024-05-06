@@ -28,9 +28,14 @@ Endpoint analytics uses the Windows Connected User Experiences and Telemetry com
 
 #### Security & Governance
 
-* None identified
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
+
+* None identified
+
+#### Configuration
 
 * None identified
 

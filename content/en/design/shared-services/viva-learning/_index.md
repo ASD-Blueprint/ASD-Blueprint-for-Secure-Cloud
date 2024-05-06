@@ -30,6 +30,10 @@ Note, Viva Learning content is subject to terms other than the Microsoft Product
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

@@ -36,7 +36,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Security & Governance
 
-* None identified
+* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
 
 #### Design
 
@@ -45,7 +45,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Configuration
 
-* None identified
+* [External Identities]({{<ref "configuration/entra-id/external-identities">}})
 
 #### References
 

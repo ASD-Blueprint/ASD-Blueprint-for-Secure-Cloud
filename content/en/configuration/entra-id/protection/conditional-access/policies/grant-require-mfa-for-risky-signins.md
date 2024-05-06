@@ -101,6 +101,8 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 * [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
 * [Authentication Hardening]({{<ref "system-hardening-authentication">}})
+* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
@@ -108,7 +110,8 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Configuration
 
-* None identified
+* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
+* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
 
 #### References
 

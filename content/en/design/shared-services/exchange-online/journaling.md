@@ -40,6 +40,10 @@ Retention Policies can also be leveraged across the Office 365 organisation, whe
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

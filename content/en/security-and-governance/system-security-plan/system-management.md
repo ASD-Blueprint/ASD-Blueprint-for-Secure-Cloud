@@ -130,11 +130,24 @@ Technical controls backups and restoration are configured with reference to `<RE
 * [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
 * [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
 * [Essential Eight: Regular Backups]({{< ref "regular-backups.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+* [Essential Eight: Multi-factor Authentication]({{<ref "security-and-governance/essential-eight/multi-factor-authentication.md">}})
 * [System Administration Process]({{<ref "security-and-governance/general-documentation">}})
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* 
 
 #### Design
 
-*  None Identified
+* [Backup and Operational Management]({{<ref "design/platform/backup">}})
+* [Retention Policies]({{<ref "design/shared-services/purview/retention-policies.md">}})
+
+#### Configuration
+
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+* [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
+* [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
+
 
 #### External links
 

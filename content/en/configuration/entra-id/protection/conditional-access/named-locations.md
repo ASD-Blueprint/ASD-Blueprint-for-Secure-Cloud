@@ -34,16 +34,18 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Security & Governance
 
-* None identified
+* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
 
 #### Design
 
 * [Conditional access]({{<ref "design/platform/identity/conditional-access">}})
 * [Purview labels]({{<ref "design/shared-services/purview/classification-labels">}})
+* [Organisation Residency]({{<ref "design/shared-services/microsoft-365/residency.md">}})
 
 #### Configuration
 
-* None identified
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 
 #### References
 

@@ -32,6 +32,18 @@ Organisations that enable DKIM signing within Microsoft 365 and also add additio
 
 ### Related information
 
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* None identified
+
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

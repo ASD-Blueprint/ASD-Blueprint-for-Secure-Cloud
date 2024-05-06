@@ -41,6 +41,10 @@ The Microsoft 365 Apps for Enterprise - formerly Office 365 ProPlus - features i
 
 * None identified
 
+#### Configuration
+
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+
 #### References
 
 * [Add Microsoft 365 Apps to Windows 10/11 devices with Microsoft Intune](https://learn.microsoft.com/mem/intune/apps/apps-add-office365)

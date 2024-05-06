@@ -40,6 +40,10 @@ Accepted Domains consist of the following types:
 
 * [AD Tenant Settings - Custom Domains]({{<ref "tenant#custom-domain">}})
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Manage accepted domains in Exchange Online](https://learn.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)

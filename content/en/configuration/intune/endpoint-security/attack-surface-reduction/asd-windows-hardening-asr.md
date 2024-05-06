@@ -69,3 +69,26 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Block executable content from email client and webmail                                            |          Block |
 | - ASR Only Per Rule Exclusions                                                                    | Not configured |
 
+
+
+
+### Related information
+
+#### Security & Governance
+
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}}) 
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+
+  
+#### Design
+
+* None identified
+  
+#### Configuration
+
+* None identified
+
+#### References
+
+* None identified

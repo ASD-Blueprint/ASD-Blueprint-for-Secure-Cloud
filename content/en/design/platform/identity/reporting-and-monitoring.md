@@ -38,13 +38,20 @@ Workbooks provide several pre-built reports related to common scenarios involvin
 
 #### Security & Governance
 
-* None identified
+* [System Monitoring]({{<ref "system-monitoring.md">}})
+* [Essential Eight: Multi-factor Authentication]({{<ref "security-and-governance/essential-eight/multi-factor-authentication.md">}})
 
 #### Design
 
 * [Identity security monitoring]({{<ref "identity-security">}})
 * [Platform monitoring]({{<ref "platform-monitoring-auditing">}})
+* [Endpoint Monitoring]({{<ref "design/platform/client/endpoint-monitoring.md">}})
 
+#### Configuration
+
+* [Sign-in risk policy]({{<ref "sign-in-risk-policy.md">}})
+* [MFA for Risky Sign-ins]({{<ref "grant-require-mfa-for-risky-signins.md">}})
+  
 #### References
 
 * [What is Microsoft Entra monitoring and health](https://learn.microsoft.com/entra/identity/monitoring-health/overview-monitoring-health)

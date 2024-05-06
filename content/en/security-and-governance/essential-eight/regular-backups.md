@@ -113,10 +113,22 @@ While the Blueprint does not provide specific guidance on hardening data backups
 #### Security & Governance
 
 * [System Management]({{<ref "system-management.md">}})
+* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
+* [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
+* [Essential Eight: Regular Backups]({{< ref "regular-backups.md">}})
+* [System Administration Process]({{<ref "security-and-governance/general-documentation">}})
 
 #### Design
 
-* None identified
+* [Backup and Operational Management]({{<ref "design/platform/backup">}})
+* [Retention Policies]({{<ref "design/shared-services/purview/retention-policies.md">}})
+
+#### Configuration
+
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
+
+
 
 #### External links
 

@@ -73,15 +73,24 @@ None
 
 #### Security & Governance
 
-* None identified
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
+* [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
+* [Essential Eight: Regular Backups]({{< ref "regular-backups.md">}})
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
   
 #### Design
 
-* None identified
+* [Securing iOS devices]({{<ref "securing-ios-devices.md">}})
   
 #### Configuration
 
-* None identified
+* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+* [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
+* [Rules]({{<ref "configuration/defender/settings/endpoints/rules.md">}})
+
 
 #### References
 

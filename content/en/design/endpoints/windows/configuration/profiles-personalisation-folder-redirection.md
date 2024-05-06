@@ -90,6 +90,10 @@ Known Folder Redirection Configuration applicable to organisations leveraging a 
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

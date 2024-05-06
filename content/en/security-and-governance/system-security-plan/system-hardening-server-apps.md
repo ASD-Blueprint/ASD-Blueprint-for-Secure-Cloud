@@ -58,6 +58,11 @@ Technical controls for hardening of Entra Connect and Exchange Hybrid Configurat
 * [Windows Update and Patching]({{< ref "windows-update-and-patching.md">}})
 * [Endpoint Device Updates]({{<ref "device-updates">}})
 
+#### Configuration
+
+* [Microsoft Intune - Applications]({{<ref "configuration/intune/apps">}})
+* [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
 
 #### External documentation
 

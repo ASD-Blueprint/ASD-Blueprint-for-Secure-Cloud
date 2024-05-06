@@ -58,7 +58,8 @@ Get-label | Select displayname,guid
   
 #### Design
 
-* None identified
+* [Policy Filtering]({{<ref "design/shared-services/defender/policy-filtering.md">}})
+* [Microsoft 365 Connectivity]({{<ref "design/shared-services/microsoft-365/microsoft365-connectivity.md">}})
   
 #### Configuration
 

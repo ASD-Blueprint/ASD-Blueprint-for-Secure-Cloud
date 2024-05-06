@@ -90,11 +90,16 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to the hosting
 
 #### Security & Governance
 
-* None identified
+* None identified 
 
 #### Design
 
-* None identified
+
+* [Networking Designs ]({{< ref "design/endpoints/windows/configuration/networking.md">}})
+
+#### Configuration
+
+* [Networking ]({{< ref "configuration/networking">}})
 
 #### External links
 

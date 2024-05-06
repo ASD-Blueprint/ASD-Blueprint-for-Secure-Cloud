@@ -45,11 +45,17 @@ When deploying WDAC it is important that it is deployed utilising audit mode pri
 
 #### Security & Governance
 
-* None identified
+* [User application hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-server-apps.md">}})
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
 * None identified
+
+#### Configuration
+
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
 
 #### References
 

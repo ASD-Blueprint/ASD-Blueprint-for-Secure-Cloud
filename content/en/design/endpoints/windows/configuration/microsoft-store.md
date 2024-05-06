@@ -31,6 +31,10 @@ Licencing can also be managed through the Microsoft Store for Business and admin
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

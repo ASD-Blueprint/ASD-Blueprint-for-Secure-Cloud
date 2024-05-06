@@ -45,6 +45,10 @@ MX records should be maintained within the Australian Protective Domain Name (AU
 * [Mail Flow and Gateway]({{<ref "microsoft365-connectivity#mail-flow-and-gateway">}})
 * [Mail Connectors]({{<ref "microsoft365-connectivity#mail-connectors">}})
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [DNS Record Requirements for Exchange Online](https://learn.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records?view=o365-worldwide#external-dns-records-required-for-email-in-office-365-exchange-online)

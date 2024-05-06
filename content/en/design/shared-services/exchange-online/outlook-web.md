@@ -34,6 +34,10 @@ Features and settings which can be controlled by an OWA policy include:
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

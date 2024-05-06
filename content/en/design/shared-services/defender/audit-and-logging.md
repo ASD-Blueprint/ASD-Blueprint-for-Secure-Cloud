@@ -52,9 +52,15 @@ Organisations implementing Microsoft 365 should review their alignment with ASD'
 
 #### Security & Governance
 
-* None identified
+* [System Management]({{<ref "system-management.md">}})
+* [System Monitoring]({{<ref "system-monitoring.md">}})
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
 
 #### Design
+
+* [Audit and logging]({{<ref "design/shared-services/power-platform/audit-logging.md">}})
+
+#### Configuration
 
 * None identified
 

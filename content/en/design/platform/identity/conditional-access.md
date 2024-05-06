@@ -77,11 +77,20 @@ To enable device enrolment a group is excepted from these policies. This group w
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight MFA guidance]({{<ref "multi-factor-authentication">}})
+* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
 
 #### Design
 
 * [Multi-factor Authentication]({{<ref "authentication/#multi-factor-authentication">}})
+* [device enrolment]({{<ref "device-enrolment">}})
+* [Register the Device ID]({{<ref "device-enrolment#windows-autopilot-overview">}})
+* [Entra ID Protection]({{<ref "protection.md">}})
+
+#### Configuration
+
+* [Conditional Access policy]({{<ref "configuration/entra-id/protection/conditional-access" >}})
 
 #### References
 

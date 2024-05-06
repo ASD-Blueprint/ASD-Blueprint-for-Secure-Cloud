@@ -64,6 +64,10 @@ Public DNS records should be maintained within the Australian Protective Domain 
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Microsoft 365 DNS Record Requirements](https://learn.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records?view=o365-worldwide)

@@ -367,11 +367,20 @@ The following design components apply to the hardening of Microsoft Windows 10 2
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
+* [Essential Eight - User Application Hardening]({{<ref "security-and-governance/essential-eight/user-application-hardening.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
 
 #### Design
 
-* None identified
+* [Local Administrator]({{<ref "local-administrator.md">}})
+
+#### Configuration
+
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
+* [Attack Surface Reduction]({{<ref "configuration/intune/endpoint-security/attack-surface-reduction/asd-windows-hardening-asr.md">}})
+* [Windows]({{<ref "configuration/intune/apps/by-platform/windows.md">}})
 
 #### References
 

@@ -27,9 +27,13 @@ Power Platform activities are logged as follows:
 
 #### Security & Governance
 
-* None identified
+* [System Monitoring]({{<ref "system-monitoring.md">}})
 
 #### Design
+
+* [Audit and logging]({{<ref "design/shared-services/defender/audit-and-logging.md">}})
+
+#### Configuration
 
 * None identified
 

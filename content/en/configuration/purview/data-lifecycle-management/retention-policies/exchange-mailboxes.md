@@ -67,7 +67,9 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
   
 #### Design
 
-* None identified
+* [Backup and Operational Management]({{<ref "design/platform/backup">}})
+* [Retention policies]({{<ref "design/shared-services/purview/retention-policies.md">}})
+* [Audit and logging]({{<ref "design/shared-services/defender/audit-and-logging.md">}})
   
 #### Configuration
 

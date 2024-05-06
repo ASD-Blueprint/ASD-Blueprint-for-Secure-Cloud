@@ -54,11 +54,16 @@ Smart lockout duration automatically increases with subsequent lockouts.
 
 #### Security & Governance
 
-* None identified
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
 * [Conditional Access]({{<ref "conditional-access">}})
+
+#### Configuration
+
+* [Conditional Access policy]({{<ref "configuration/entra-id/protection/conditional-access" >}})
+* [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
 
 #### References
 

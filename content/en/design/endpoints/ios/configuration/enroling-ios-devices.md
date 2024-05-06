@@ -30,7 +30,12 @@ Microsoft Intune provides three separate experience in enrolling the iOS devices
 
 #### Design
 
-* None identified
+* [Device enrolment]({{<ref "design/platform/client/device-enrolment.md">}})
+* [Conditional access]({{<ref "design/platform/identity/conditional-access.md">}})
+
+#### Configuration
+
+* [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
 
 #### References
 

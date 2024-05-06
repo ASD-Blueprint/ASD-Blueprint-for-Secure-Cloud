@@ -51,6 +51,10 @@ Journaling within hybrid deployments is accomplished using Exchange Journaling. 
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

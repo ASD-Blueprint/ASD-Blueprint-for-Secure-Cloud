@@ -48,6 +48,10 @@ A base recommendation for access reviews is below. However, organisations should
 * [Role-Based Access Control]({{<ref "roles">}})
 * [Privileged Identity Management]({{<ref "rbac#privileged-identity-management">}})
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Identity Governance](https://learn.microsoft.com/entra/id-governance/identity-governance-overview)

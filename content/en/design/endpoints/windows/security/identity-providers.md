@@ -50,11 +50,16 @@ Windows 10 and 11 provides various user account types or identity providers. Thi
 
 #### Security & Governance
 
-* None identified
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
-* None identified
+* [Identity Synchronisation]({{<ref "design/platform/identity/synchronisation.md">}})
+
+#### Configuration
+
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
 
 #### References
 

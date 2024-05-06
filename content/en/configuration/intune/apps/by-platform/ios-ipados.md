@@ -298,3 +298,31 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item  |       Value |
 | ----- | ----------: |
 | Group | All devices |
+
+
+
+### Related information
+
+#### Security & Governance
+
+* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+* [User Application Hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-user-apps.md">}})
+* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
+  
+#### Design
+
+* [Authentication]({{<ref "design/platform/identity/authentication.md">}})
+* [Securing iOS devices]({{<ref "securing-ios-devices.md">}})
+* [iOS]({{<ref "design/platform/client/ios.md">}})
+  
+#### Configuration
+
+* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+* [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
+
+
+#### References
+
+* None identified

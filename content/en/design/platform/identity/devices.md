@@ -56,6 +56,11 @@ With Windows 10 and 11, Entra ID users gain the ability to securely synchronise 
 
 * [Conditional Access]({{<ref "conditional-access">}})
 * [Device Enrolment]({{<ref "device-enrolment">}})
+* [Register the Device ID]({{<ref "device-enrolment#windows-autopilot-overview">}})
+
+#### Configuration
+
+* None identified
 
 #### References
 

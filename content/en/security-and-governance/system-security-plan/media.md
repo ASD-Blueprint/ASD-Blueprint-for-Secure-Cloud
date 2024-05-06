@@ -55,6 +55,11 @@ Technical controls for `<SYSTEM-NAME>`'s implementation relating to to the use, 
 *   [Device Management]({{<ref "design/platform/identity/devices">}})
 *   [Device Security]({{<ref "design/platform/client/device-security">}})
 
+#### Configuration
+
+* [Microsoft Intune - Devices]({{< ref "configuration/intune/devices">}})
+* [Microsoft Entra ID - Devices]({{< ref "configuration/entra-id/devices">}})
+
 #### External documentation
 
 * ASD's [*Guidelines for Media*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-media)

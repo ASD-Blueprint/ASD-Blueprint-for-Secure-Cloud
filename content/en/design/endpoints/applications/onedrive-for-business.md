@@ -48,6 +48,10 @@ OneDrive enables users to work on content that is stored online in the cloud as 
 
 * None identified
 
+#### Configuration
+
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+
 #### References
 
 * [Introduction to SharePoint and OneDrive in Microsoft 365 for administrators](https://learn.microsoft.com/sharepoint/introduction)

@@ -41,6 +41,10 @@ The Manufacturer value is used in the title string displayed in the support sect
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

@@ -28,6 +28,10 @@ In a hybrid configuration SharePoint Online integrates with an existing on-premi
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

@@ -54,6 +54,10 @@ According to Microsoft, the following achieves optimal Microsoft 365 connectivit
 
 #### Design
 
+* [Delivery Optimisation]({{<ref "delivery-optimisation.md">}})
+
+#### Configuration
+
 * None identified
 
 #### References

@@ -38,6 +38,10 @@ Anti-spoof specifically analyses the senders address to determine if it is legit
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

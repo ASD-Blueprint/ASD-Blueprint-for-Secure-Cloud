@@ -56,6 +56,10 @@ User-assigned identities need to be manually deleted when they are no longer req
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Managed Identities for Azure Resources Overview](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview)

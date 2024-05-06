@@ -125,6 +125,11 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to the use of 
 
 * [Teams Policies and Settings]({{< ref "policies-and-settings.md">}})
 * [Authentication]({{< ref "design/platform/identity/authentication.md" >}})
+* [Windows Security]({{<ref "design/endpoints/windows/security">}})
+
+#### Configuration
+
+* [Microsoft Teams]({{<ref "configuration/microsoft-teams">}})
 
 #### External documentation
 

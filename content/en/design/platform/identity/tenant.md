@@ -107,6 +107,10 @@ The Blueprint recommends organisations register a new or existing domain (e.g. `
 
 #### Design
 
+* [Accepted Domains]({{<ref "accepted-domains.md">}})
+
+#### Configuration
+
 * None identified
 
 #### References

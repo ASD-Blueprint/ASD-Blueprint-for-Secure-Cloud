@@ -33,6 +33,10 @@ Each alert can be configured with the following settings:
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * [Alert policies in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide)

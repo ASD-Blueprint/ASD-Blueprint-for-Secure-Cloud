@@ -61,6 +61,11 @@ Technical controls for `<SYSTEM-NAME>`'s management of evaluated products are co
 
 * None identified
 
+
+#### Configuration
+
+* None identified
+
 #### External links
 
 * [Apple iOS 16: iPhones - Protection Profile for Mobile Device Fundamentals Version 3.3: Certification Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid11349-vr.pdf)

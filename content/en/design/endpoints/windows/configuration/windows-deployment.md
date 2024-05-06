@@ -45,6 +45,10 @@ Windows deployments will be based on either a deployment which is cloud native o
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified

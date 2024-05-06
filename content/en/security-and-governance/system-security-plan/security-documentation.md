@@ -56,6 +56,11 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to security do
 
 *   [System Administration]({{<ref "_index.md">}})
 
+#### Configuration
+
+* None identified
+
+
 #### External links
 
 *   ASD's [*Guidelines for Security Documentation*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-security-documentation)

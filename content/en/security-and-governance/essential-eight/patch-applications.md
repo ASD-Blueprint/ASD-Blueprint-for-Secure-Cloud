@@ -198,10 +198,22 @@ In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Proce
 
 * [System Management]({{<ref "system-management.md">}})
 * [`<SYSTEM-NAME>` Vulnerability and Patch Management Process]({{<ref "security-and-governance/general-documentation">}})
+* [Essential Eight: Regular Backups]({{< ref "regular-backups.md">}})
 
 #### Design
 
 * [Endpoint Device Updates]({{<ref "device-updates">}})
+* [Windows Update and Patching]({{<ref "design/endpoints/windows/configuration/windows-update-and-patching.md">}})
+
+
+#### Configuration
+
+* [Microsoft Intune - Applications]({{<ref "configuration/intune/apps">}})
+* [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
+
 
 #### External links
 

@@ -36,6 +36,10 @@ The below highlights the policies that can be configured with in teams:
 
 * None identified
 
+#### Configuration
+
+* None identified
+
 #### References
 
 * None identified
