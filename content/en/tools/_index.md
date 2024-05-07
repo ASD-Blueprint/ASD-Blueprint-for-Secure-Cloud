@@ -2,6 +2,6 @@
 Title: Tools
 type: docs
 weight: 50
+description: Tooling for blueprint
 ---
 
-Automation and configuration tools and scripts are planned for future releases of ASD's *Blueprint for Secure Cloud*.

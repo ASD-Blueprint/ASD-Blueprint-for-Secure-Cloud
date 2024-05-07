@@ -19,3 +19,5 @@ Implementation of the guidance provided by the Blueprint will differ depending o
 Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-NAME>` should be replaced with the relevant details as required.
  
 {{% /alert %}}
+
+An existing security group must be specified to act as a conditional access exclusion group. All conditional access policies in the DSC are set to either report only or disabled, and will need to be enabled manually. 
