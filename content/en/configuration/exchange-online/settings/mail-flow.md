@@ -5,17 +5,17 @@ description: "This section describes the configuration of mail flow within Excha
 ---
 
 {{% alert title="Instruction" color="dark" %}}
- 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* for the Microsoft Exchange Online portal blade at the following URL: 
- 
+
+The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* for the Microsoft Exchange Online portal blade at the following URL:
+
 https://admin.exchange.microsoft.com/#/settings
- 
+
 The settings described on these pages should be used to provide reference to a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 
 Implementation of the guidance provided by the Blueprint will differ depending on an organisation’s operating context and organisational culture. Organisations should implement the Blueprint in alignment with their existing change management, business processes and frameworks.
 
 Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-NAME>` should be replaced with the relevant details as required.
- 
+
 {{% /alert %}}
 
 ### General
@@ -27,10 +27,10 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Security
 
-| Item                                              |   Value |
-| ------------------------------------------------- | ------: |
-| Turn off SMTP AUTH protocol for your organisation | Checked |
-| Turn on use of legacy TLS clients                 |         |
+| Item                                              |       Value |
+| ------------------------------------------------- | ----------: |
+| Turn off SMTP AUTH protocol for your organisation |     Checked |
+| Turn on use of legacy TLS clients                 | Not checked |
 
 ### Reply-all Storm Protection
 

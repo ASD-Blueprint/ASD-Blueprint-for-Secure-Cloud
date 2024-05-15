@@ -112,9 +112,9 @@ None
 | Item                                                                                      |                               Value |
 | ----------------------------------------------------------------------------------------- | ----------------------------------: |
 | **Security Settings**                                                                     |                                     |
-| Allow file extensions for OLE embedding (User)                                            |                                     |
-| Disable All ActiveX (User)                                                                |                                     |
-| Force Runtime AV Scan (User)                                                              |                                     |
+| Allow file extensions for OLE embedding (User)                                            |                            Disabled |
+| Disable All ActiveX (User)                                                                |                             Enabled |
+| Force Runtime AV Scan (User)                                                              |                             Enabled |
 | Macro Runtime Scan Scope (User)                                                           | Enabled<br>Enable for all documents |
 | **Trust Center**                                                                          |                                     |
 | Allow including screenshot with Office Feedback (User)                                    |                            Disabled |
@@ -162,6 +162,8 @@ None
 
 | Item                                                                |                              Value |
 | ------------------------------------------------------------------- | ---------------------------------: |
+| **Visio Options > Security > Trust Center**                         |                                    |
+| Block macros from running in Office files from the Internet (User)  |                            Enabled |
 | **Visio Options > Security > Trust Center > File Block Settings**   |                                    |
 | - File block setting (User)                                         | Open/Save blocked, use open policy |
 | Visio 2000-2002 Binary Drawings, Templates and Stencils (User)      |                            Enabled |
@@ -169,7 +171,6 @@ None
 | Visio 2003-2010 Binary Drawings, Templates and Stencils (User)      |                            Enabled |
 | - File block setting (User)                                         | Open/Save blocked, use open policy |
 | Visio 5.0 or earlier Binary Drawings, Templates and Stencils (User) |                            Enabled |
-| Block macros from running in Office files from the Internet (User)  |                            Enabled |
 
 #### Microsoft Word 2016
 
@@ -203,8 +204,8 @@ None
 | Word XP binary documents and templates (User)                                                      |                                 Enabled |
 | - File block setting (User)                                                                        |      Open/Save blocked, use open policy |
 | **Word Options > Security > Trust Center > Protected View**                                        |                                         |
-| Do not open files from the Internet zone in Protected View (User)                                  |                                         |
-| Do not open files in unsafe locations in Protected View (User)                                     |                                         |
+| Do not open files from the Internet zone in Protected View (User)                                  |                                Disabled |
+| Do not open files in unsafe locations in Protected View (User)                                     |                                Disabled |
 | Set document behavior if file validation fails (User)                                              |                  Enabled<br>Block files |
 | - Checked: Allow edit. Unchecked: Do not allow edit. (User)                                        |                                   False |
 | Turn off Protected View for attachments opened from Outlook (User)                                 |                                Disabled |

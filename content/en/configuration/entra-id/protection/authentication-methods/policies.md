@@ -87,12 +87,13 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Configure
 
-| Item             |   Value |
-| ---------------- | ------: |
-| Minimum lifetime |  1 hour |
-| Maximum lifetime | 8 hours |
-| Default lifetime |  1 hour |
-| One-time         |      14 |
+| Item             |         Value |
+| ---------------- | ------------: |
+| Minimum lifetime |        1 hour |
+| Maximum lifetime |       8 hours |
+| Default lifetime |        1 hour |
+| One-time         |            No |
+| Length           | 14 characters |
 
 
 ### Related information

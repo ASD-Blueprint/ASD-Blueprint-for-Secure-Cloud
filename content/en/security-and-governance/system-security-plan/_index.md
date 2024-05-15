@@ -20,10 +20,10 @@ Text included in the guidance boxes throughout this template should be deleted f
 
 This System Security Plan (SSP) describes the organisational policies and processes relevant to, and technical controls implemented within the core `<SYSTEM-NAME>` or network that includes `<ORGANISATION-NAME>`’s Microsoft Workloads (Cloud and Software as a Service), endpoints and `<OTHER SYSTEM COMPONENTS IN SCOPE>`.
 
-|                   |               |
-| ----------------- | ------------- |
-| ISM Version used: | December 2023 |
-|                   |               |
+|                   |            |
+| ----------------- | ---------- |
+| ISM Version used: | March 2024 |
+|                   |            |
 
 ### Purpose of this System Security Plan
 

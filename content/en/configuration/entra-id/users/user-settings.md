@@ -1,7 +1,7 @@
 ---
 title: "User Settings"
 linkTitle: "User Settings"
-weight: 10
+weight: 20
 type: docs
 description: This page describes the As Built As Configured for Users - User settings in Entra ID portal.
 ---

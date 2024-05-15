@@ -1,6 +1,6 @@
 ---
-Title: "PROTECTED"
-weight: 030
+Title: "OFFICIAL: Sensitive Group"
+weight: 015
 description: "This section describes the configuration of labels within Microsoft Purview associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
@@ -20,12 +20,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Label Details
 
-| Item                  |                                                                                Value |
-| --------------------- | -----------------------------------------------------------------------------------: |
-| Name                  |                                                                              P Group |
-| Display Name          |                                                                            PROTECTED |
-| Label Priority        |                                                                                   11 |
-| Description for Users | High business impact. Damage to the national interest, organisations or individuals. |
+| Item                  |                                                                                                                Value |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------: |
+| Name                  |                                                                                                             OS Group |
+| Display Name          |                                                                                             OFFICIAL Sensitive Group |
+| Label Priority        |                                                                                                                    2 |
+| Description for Users | Low to medium business impact. Limited damage to an individual, organisation or government generally if compromised. |
 
 ### Scope
 
@@ -57,23 +57,23 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ##### Header
 
-| Item        |     Value |
-| ----------- | --------: |
-| Enabled     |   Checked |
-| Header Text | PROTECTED |
-| Font size   |        12 |
-| Font color  |       Red |
-| Align text  |    Center |
+| Item        |               Value |
+| ----------- | ------------------: |
+| Enabled     |             Checked |
+| Header Text | OFFICIAL: Sensitive |
+| Font size   |                  12 |
+| Font color  |                 Red |
+| Align text  |              Center |
 
 ##### Footer
 
-| Item        |     Value |
-| ----------- | --------: |
-| Enabled     |   Checked |
-| Header Text | PROTECTED |
-| Font size   |        12 |
-| Font color  |       Red |
-| Align text  |    Center |
+| Item        |               Value |
+| ----------- | ------------------: |
+| Enabled     |             Checked |
+| Header Text | OFFICIAL: Sensitive |
+| Font size   |                  12 |
+| Font color  |                 Red |
+| Align text  |              Center |
 
 #### Auto-labeling for files and emails
 

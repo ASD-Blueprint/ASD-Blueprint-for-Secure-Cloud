@@ -1,6 +1,6 @@
 ---
 title: "Team templates"
-weight: 00
+weight: 30
 description: "This section describes the configuration of templates within Microsoft Teams associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 

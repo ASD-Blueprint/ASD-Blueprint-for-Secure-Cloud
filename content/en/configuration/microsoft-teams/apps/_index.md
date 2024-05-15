@@ -1,6 +1,6 @@
 ---
 Title: Teams apps
-weight: 50
+weight: 30
 description: "This section describes the configuration of apps within Microsoft Teams associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 

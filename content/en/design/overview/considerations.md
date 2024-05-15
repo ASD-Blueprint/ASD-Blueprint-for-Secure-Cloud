@@ -93,17 +93,17 @@ A Secure Internet Gateway (SIG) is an information flow control mechanism to mana
 
 ### Secure system administration
 
-A secure administration solution may include privileged access workstations (PAW) and/or jump hosts, sometimes referred to as bastion host, jump box, or jump server. These solutions serve as a single point of entry between different networks or security boundaries enabling a secure and resilient boundary for the administration of critical assets.
+A secure administration solution may include Secure Administrative Workstations (SAW) and/or jump hosts, sometimes referred to as bastion host, jump box, or jump server. These solutions serve as a single point of entry between different networks or security boundaries enabling a secure and resilient boundary for the administration of critical assets.
 
 Initially, cloud native environments will not have a secure administration solution. Hybrid environments may already have a secure administration model with set policies and procedures.
 
 Secure administration solutions should comprise:
 
-*   **Separate credentials** are provided for non-privileged and privileged duties
-*   **Hardened PAW** (Windows operating system) enrolled into Intune and coupled with conditional access polices to provide a zero trust entry point into the associated cloud apps to administer. Local administrative privileges should be restricted on the PAW, it is used to access the jump server solution or direct access to cloud admin portals
-*   **Web filtering system** to restrict privileged accounts to the set of organisation approved admin portals only. This product could be a risk assessed cloud platform or built as an infrastructure as a service server. The web filtering solution should be mandatory on the jump host or PAWs. [Tenant restrictions](https://learn.microsoft.com/entra/identity/enterprise-apps/tenant-restrictions) should be implemented to prevent misuse or data exfiltration to other Microsoft tenancies
-*   **Virtual jump host** solution may be built leveraging Azure Virtual Desktop (AVD) session hosts, which seamlessly provides Multi-Factor Authentication (MFA) through Conditional Access policies. This jump host may be the trusted location where admin portals are used, as well as a secure place to administer other hybrid assets. Network security groups can be used to restrict management traffic flows to these jump hosts only
-*   **Restriction of management traffic flows** limited to only critical assets should be implemented where possible. This could be achieved by utilising the Windows Defender native firewall functionality, web filtering, network security groups on cloud hosted jump hosts, and Conditional Access policies.
+* **Separate credentials** are provided for non-privileged and privileged duties
+* **Hardened SAW** (Windows operating system) enrolled into Intune and coupled with conditional access polices to provide a zero trust entry point into the associated cloud apps to administer. Local administrative privileges should be restricted on the PAW, it is used to access the jump server solution or direct access to cloud admin portals
+* **Web filtering system** to restrict privileged accounts to the set of organisation approved admin portals only. This product could be a risk assessed cloud platform or built as an infrastructure as a service server. The web filtering solution should be mandatory on the jump host or SAWs. [Tenant restrictions](https://learn.microsoft.com/entra/identity/enterprise-apps/tenant-restrictions) should be implemented to prevent misuse or data exfiltration to other Microsoft tenancies
+* **Virtual jump host** solution may be built leveraging Azure Virtual Desktop (AVD) session hosts, which seamlessly provides Multi-Factor Authentication (MFA) through Conditional Access policies. This jump host may be the trusted location where admin portals are used, as well as a secure place to administer other hybrid assets. Network security groups can be used to restrict management traffic flows to these jump hosts only
+* **Restriction of management traffic flows** limited to only critical assets should be implemented where possible. This could be achieved by utilising the Windows Defender native firewall functionality, web filtering, network security groups on cloud hosted jump hosts, and Conditional Access policies.
 
 The Blueprint provides guidance on implementing a secure administration solution suitable for Microsoft 365. Review ASD's [*Information Security Manual's* (ISM's) controls for systems management](https://www.cyber.gov.au/acsc/view-all-content/publications/secure-administration) to assist with the implementation of a secure administration model.
 

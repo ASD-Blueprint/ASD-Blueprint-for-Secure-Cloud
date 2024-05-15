@@ -1,6 +1,6 @@
 ---
 title: "Team policies"
-weight: 00
+weight: 20
 description: "This section describes the configuration of teams policies within Microsoft Teams associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 

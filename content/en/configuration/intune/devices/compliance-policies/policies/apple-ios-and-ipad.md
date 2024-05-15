@@ -69,9 +69,9 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Required password type                                |    Alphanumeric |
 | Number of non-alphanumeric characters in password     |               1 |
 | Maximum minutes of inactivity until screen locks      |     Immediately |
-| Password expiration (days)                            |  Not configured |
-| Number of previous passwords to prevent reuse         |             365 |
-| **Device Security**                                   |               5 |
+| Password expiration (days)                            |             365 |
+| Number of previous passwords to prevent reuse         |               5 |
+| **Device Security**                                   |                 |
 | Restricted apps                                       | None configured |
 
 ### Actions for noncompliance
@@ -80,7 +80,6 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------ | ----------: |
 | **Action**               |             |
 | Mark device noncompliant | Immediately |
-
 
 ### Scope tags
 

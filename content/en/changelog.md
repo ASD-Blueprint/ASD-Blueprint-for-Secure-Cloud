@@ -14,3 +14,4 @@ description:
 | 25 March 2024    | 1.1.2   | Minor rendering/spelling issues fixed                                                                        |
 | 6 May 2024       | 1.1.3   | Improvements to "Related information" cross linking between pages of the Blueprint                           |
 | 7 May 2024       | 1.2     | Added automated tooling for the as-built configuration of the Blueprint                                      |
+| 15 May 2024      | 1.2.1   | - Minor rendering/content issues fixed<br>- Added path to page in search results                             |

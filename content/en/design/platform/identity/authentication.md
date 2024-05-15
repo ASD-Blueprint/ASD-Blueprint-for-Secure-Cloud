@@ -63,12 +63,12 @@ Whilst Microsoft Entra ID knows how the hash was generated, it cannot decrypt th
 
 When a user authenticates to Microsoft Entra ID, the password entered by the user undergoes the same process as outlined above. Only when the result is the same as the stored hash is the password considered correct.
 
-Microsoft allows combining authentication methods to address multiple risks. The below diagram outlines the decision process organisations can undertake when determining the preferred authentication method. The default configuration recommended by the Blueprint is to use PHS with PTA.
+Microsoft allows combining authentication methods to address multiple risks. The default configuration recommended by the Blueprint is to use PHS with PTA.
 
 {{% alert title="Design Decisions" color="warning" %}}
 
-| Decision Point        | Design Decision                                     | Justification                                                                                                                                       |
-| --------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Decision Point        | Design Decision                                                | Justification                                                                                                                                     |
+| --------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authentication option | Password Hash Synchronisation with Pass-through Authentication | Enables organisations to provide users with a leaked credential report, and additionally provides a failover if the primary sign-in method fails. |
 
 {{% /alert %}}

@@ -26,7 +26,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Restrict correlation to within scoped device groups    | Off   |
 | Enable EDR in block mode                               | On    |
 | Automatically resolve alerts                           | On    |
-| Allow of block file                                    | On    |
+| Allow or block file                                    | On    |
 | Hide potential duplicate device records                | On    |
 | Custom network indicators                              | On    |
 | Tamper protection                                      | On    |

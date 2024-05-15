@@ -1,7 +1,7 @@
 ---
 title: "BreakGlass account setup"
 linkTitle: "User Settings"
-weight: 30
+weight: 10
 type: docs
 description: "This page describes the configuration of BreakGlass accounts within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---

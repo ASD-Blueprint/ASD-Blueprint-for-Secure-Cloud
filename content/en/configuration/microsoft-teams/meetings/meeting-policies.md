@@ -1,21 +1,21 @@
 ---
 Title: Meeting policies
-weight: 00
+weight: 10
 description: "This section describes the configuration of meeting policies within Microsoft Teams associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
- 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* for the Microsoft Exchange Online portal blade at the following URL: 
- 
-https://admin.teams.microsoft.com/policies/meetings
+
+The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* for the Microsoft Exchange Online portal blade at the following URL:
+
+<https://admin.teams.microsoft.com/policies/meetings>
 
 The settings described on these pages should be used to provide reference to a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 
 Implementation of the guidance provided by the Blueprint will differ depending on an organisation’s operating context and organisational culture. Organisations should implement the Blueprint in alignment with their existing change management, business processes and frameworks.
 
 Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-NAME>` should be replaced with the relevant details as required.
- 
+
 {{% /alert %}}
 
 ### Global (Org-wide default) policy
@@ -35,7 +35,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Include attendees in the report  |          Always |
 | Attendee information             | Show everything |
 
-#### Meeting join & lobby   
+#### Meeting join & lobby
 
 | Item                                                    |                             Value |
 | ------------------------------------------------------- | --------------------------------: |
@@ -44,7 +44,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Who can bypass the lobby                                | Only organizers and co-organizers |
 | People dialling in can bypass the lobby                 |                               Off |
 
-#### Meeting engagement 
+#### Meeting engagement
 
 | Item                                              |                       Value |
 | ------------------------------------------------- | --------------------------: |
@@ -70,8 +70,8 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Live captions                                      | Off, but organizers and co-organizers can turn them on |
 | Copilot                                            |                                     On with transcript |
 
-#### Audio & video 
- 
+#### Audio & video
+
 | Item                                           |                               Value |
 | ---------------------------------------------- | ----------------------------------: |
 | Mode for IP audio                              | Outgoing and incoming audio enabled |
@@ -83,5 +83,3 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Participants can use video effects             |                   All video effects |
 | Live streaming                                 |                                 Off |
 | Allow streaming media input                    |                             *blank* |
-
-

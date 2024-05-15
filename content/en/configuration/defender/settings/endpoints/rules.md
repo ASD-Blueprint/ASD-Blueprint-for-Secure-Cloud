@@ -45,7 +45,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | **Scope**                     |             |
 | Machine Groups                | Select all  |
 
-#### High Traffic Sites 
+#### High Traffic Sites
 
 | Item                        | Value              |
 | --------------------------- | ------------------:|
@@ -59,27 +59,26 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | **Scope**                   |                    |
 | Machine Groups              | Select all         |
 
-#### High Traffic Sites 
+#### Legal Liability
 
-| Item                   | Value           |
-| ---------------------- | ---------------:|
+| Item                   |           Value |
+| ---------------------- | --------------: |
 | **General**            |                 |
 | Policy Name            | Legal Liability |
 | **Blocked Categories** |                 |
-| Child Abuse Images     | Enabled         |
-| Criminal Activity      | Enabled         |
-| Hacking                | Enabled         |
-| Hat & Intolerance      | Enabled         |
-| Illegal Drug           | Enabled         |
-| Illegal Software       | Enabled         |
-| School Cheating        | Enabled         |
-| Self-Harm              | Enabled         |
-| Weapons                | Enabled         |
+| Child Abuse Images     |         Enabled |
+| Criminal Activity      |         Enabled |
+| Hacking                |         Enabled |
+| Hate & Intolerance     |         Enabled |
+| Illegal Drug           |         Enabled |
+| Illegal Software       |         Enabled |
+| School Cheating        |         Enabled |
+| Self-Harm              |         Enabled |
+| Weapons                |         Enabled |
 | **Scope**              |                 |
-| Machine Groups         | Select all      |
+| Machine Groups         |      Select all |
 
 ### Automation uploads
-
 
 | Item                        |                                                                                                                       Value |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------: |
@@ -90,6 +89,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Enabled                     |                                                                                                                          On |
 
 ### Automation folder exclusions
+
 `Not configured`
 
 ### Related information

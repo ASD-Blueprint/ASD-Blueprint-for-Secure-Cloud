@@ -1,7 +1,7 @@
 ---
 title: "Cross-tenant access settings"
 linkTitle: "Cross-tenant access settings"
-weight: 10
+weight: 20
 type: docs
 description: "This page describes the configuration of cross-tenant access settings within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---

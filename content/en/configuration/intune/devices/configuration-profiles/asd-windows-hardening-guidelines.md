@@ -65,13 +65,13 @@ None
 | MSS: (NoNameReleaseOnDemand) Allow the computer to ignore NetBIOS name release requests except from WINS servers |                                                   Enabled |
 | **System**                                                                                                       |                                                           |
 | Prevent access to registry editing tools (User)                                                                  |                                                   Enabled |
-| Disable regedit from running silently? (User)                                                                    |                                                           |
+| Disable regedit from running silently? (User)                                                                    |                                                       Yes |
 | Prevent access to the command prompt (User)                                                                      |                                                   Enabled |
 | Disable the command prompt script processing also? (User)                                                        |                                                       Yes |
 | **System > Audit Process Creation**                                                                              |                                                           |
 | Include command line in process creation events                                                                  |                                                   Enabled |
-| **System > Credentials Delegation**                                                                              |                                                   Enabled |
-| Remote host allows delegation of non-exportable credentials                                                      |                                                           |
+| **System > Credentials Delegation**                                                                              |                                                           |
+| Remote host allows delegation of non-exportable credentials                                                      |                                                   Enabled |
 | **System > Early Launch Antimalware**                                                                            |                                                           |
 | Boot-Start Driver Initialization Policy                                                                          |                                                   Enabled |
 | Choose the boot-start drivers that can be initialized:                                                           |                                          Good and unknown |
@@ -257,10 +257,10 @@ None
 | Prohibit connection to non-domain networks when connected to domain authenticated network                        |                                                   Enabled |
 | **Network > Network Provider**                                                                                   |                                                           |
 | Hardened UNC Paths                                                                                               |                                                   Enabled |
-| - Value                                                                                                          |         RequireMutualAuthentication=1, RequireIntegrity=1 |
-| - Name                                                                                                           |                                              \\*\NETLOGON |
-| - Value                                                                                                          |         RequireMutualAuthentication=1, RequireIntegrity=1 |
-| - Name                                                                                                           |                                                \\*\SYSVOL |
+| - Value                                                                                                          |          RequireMutualAuthentication=1,RequireIntegrity=1 |
+| - Name                                                                                                           |                                            \\\\*\NETLOGON |
+| - Value                                                                                                          |          RequireMutualAuthentication=1,RequireIntegrity=1 |
+| - Name                                                                                                           |                                              \\\\*\SYSVOL |
 | **Network > Network Connections**                                                                                |                                                           |
 | - Select from the following states: (Device)                                                                     |                                             Enabled State |
 | Prohibit installation and configuration of Network Bridge on your DNS domain network                             |                                                   Enabled |
@@ -278,28 +278,28 @@ None
 
 #### Auditing
 
-| Item                                                     |            Value |
-| -------------------------------------------------------- | ---------------: |
-| Account Logon Logoff Audit Account Lockout               |          Failure |
-| Account Logon Logoff Audit Group Membership              |          Success |
-| Account Logon Logoff Audit Logoff                        |          Success |
-| Account Logon Logoff Audit Logon                         | Success+ Failure |
-| Account Management Audit Computer Account Management     | Success+ Failure |
-| Account Management Audit Other Account Management Events | Success+ Failure |
-| Audit Changes to Audit Policy                            |  Success+Failure |
-| Audit File Share Access                                  |  Success+Failure |
-| Audit Other Logon Logoff Events                          |  Success+Failure |
-| Audit Security Group Management                          |  Success+Failure |
-| Audit Special Logon                                      |  Success+Failure |
-| Audit User Account Management                            |  Success+Failure |
-| Detailed Tracking Audit Process Creation                 |          Success |
-| Detailed Tracking Audit Process Termination              |          Success |
-| Object Access Audit File System                          | Success+ Failure |
-| Object Access Audit Kernel Object                        | Success+ Failure |
-| Object Access Audit Other Object Access Events           | Success+ Failure |
-| Object Access Audit Registry                             | Success+ Failure |
-| Policy Change Audit Other Policy Change Events           | Success+ Failure |
-| System Audit System Integrity                            | Success+ Failure |
+| Item                                                     |           Value |
+| -------------------------------------------------------- | --------------: |
+| Account Logon Logoff Audit Account Lockout               |         Failure |
+| Account Logon Logoff Audit Group Membership              |         Success |
+| Account Logon Logoff Audit Logoff                        |         Success |
+| Account Logon Logoff Audit Logon                         | Success+Failure |
+| Account Management Audit Computer Account Management     | Success+Failure |
+| Account Management Audit Other Account Management Events | Success+Failure |
+| Audit Changes to Audit Policy                            | Success+Failure |
+| Audit File Share Access                                  | Success+Failure |
+| Audit Other Logon Logoff Events                          | Success+Failure |
+| Audit Security Group Management                          | Success+Failure |
+| Audit Special Logon                                      | Success+Failure |
+| Audit User Account Management                            | Success+Failure |
+| Detailed Tracking Audit Process Creation                 |         Success |
+| Detailed Tracking Audit Process Termination              |         Success |
+| Object Access Audit File System                          | Success+Failure |
+| Object Access Audit Kernel Object                        | Success+Failure |
+| Object Access Audit Other Object Access Events           | Success+Failure |
+| Object Access Audit Registry                             | Success+Failure |
+| Policy Change Audit Other Policy Change Events           | Success+Failure |
+| System Audit System Integrity                            | Success+Failure |
 
 #### Browser
 
@@ -482,7 +482,7 @@ None
 | ------------------------------------ | --------------------------------------------------------------------------------: |
 | Disallow Exploit Protection Override | (Enable) Local users cannot make changes in the exploit protection settings area. |
 
-#### Windows Ink WOrkspace
+#### Windows Ink Workspace
 
 | Item                        |                                                                                                 Value |
 | --------------------------- | ----------------------------------------------------------------------------------------------------: |

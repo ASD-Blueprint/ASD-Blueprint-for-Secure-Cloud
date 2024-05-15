@@ -1,5 +1,5 @@
 ---
-Title: Microsoft 365
+Title: Org settings
 weight: 20
 description: "This section describes the configuration of Microsoft 365 associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
