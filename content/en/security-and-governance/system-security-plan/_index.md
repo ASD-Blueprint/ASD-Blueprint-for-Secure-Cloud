@@ -22,7 +22,7 @@ This System Security Plan (SSP) describes the organisational policies and proces
 
 |                   |            |
 | ----------------- | ---------- |
-| ISM Version used: | March 2024 |
+| ISM Version used: | June 2024 |
 |                   |            |
 
 ### Purpose of this System Security Plan
