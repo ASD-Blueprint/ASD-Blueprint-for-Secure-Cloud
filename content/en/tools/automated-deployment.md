@@ -1,5 +1,6 @@
 --- 
-title: Automated Deployment
+title: "Automated Deployment"
+linkTitle: "Automated Deployment"
 weight: 10
 description: 
 ---
@@ -15,7 +16,32 @@ When using automated configuration files, organisations should note they will co
 
 {{% /alert %}}
 
-| Service                                                           | Deployment Mechanism(s)       | Deployment coverage |
+### Deployment Mechanism
+
+#### Microsoft 365 Desired State Configuration (DSC)
+
+Microsoft 365 DSC (M365DSC) is a configuration-as-code tool developed by Microsoft to automate the configuration of Microsoft 365 services. It is the primary tool used to automate the deployment of the configuration guidance in the Blueprint.
+
+{{% alert title="Warning" color="danger" %}}
+Any existing settings in a service that match the Name or UID of any settings in the DSC will be overwritten.
+{{% /alert %}}
+
+##### Prerequisites
+
+To deploy a M365DSC configuration, the following prerequisites are required:
+
+- Knowledge of the [M365DSC prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites/).
+- A Windows host with connectivity to Entra ID and Microsoft 365, and with:
+  - Powershell 5.1 or 7.3+ with the M365DSC module and dependencies installed. Instructions can be found [here](https://microsoft365dsc.com/user-guide/get-started/how-to-install/).
+  - The WinRM service configured and running. Instructions can be found [here](https://learn.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management/).
+- The DSC file for the targeted M365 service (discussed below).
+- The DSC configuration data file (discussed below).
+
+##### 1. Copy the DSC files
+
+- On the Windows host used for deployment, copy the DSC file for the targeted M365 service to a folder of your choosing:
+
+| Service                                                           | Deployment Mechanism          | Deployment coverage |
 | ----------------------------------------------------------------- | ----------------------------- | ------------------- |
 | [Entra ID]({{<ref "/configuration/entra-id">}})                   | - Desired State Configuration | Partial             |
 | [Microsoft 365]({{<ref "/configuration/microsoft-365">}})         | - N/A                         | None                |
@@ -27,81 +53,117 @@ When using automated configuration files, organisations should note they will co
 | [Microsoft Teams]({{<ref "/configuration/microsoft-teams">}})     | - Desired State Configuration | Full                |
 | [Power Platform]({{<ref "/configuration/power-platform">}})       | - N/A                         | None                |
 
-### Deployment Mechanisms
-
-#### Microsoft 365 Desired State Configuration (M365DSC)
-
-M365DSC is a configuration as code tool developed by Microsoft to automate the configuration of Microsoft 365 tenancies. It is the primary tool used to automate the deployment of the configuration guidance in the Blueprint.
-
-{{% alert title="Warning" color="danger" %}}
-Any existing settings in a tenancy that match the Name or UID of any settings in the DSC will be overwritten.
+{{% alert title="DSC instructions" color="info" %}}
+Additional instructions for using DSC may be provided in the above-linked pages.
 {{% /alert %}}
 
-##### Prerequisites
+##### 2. Create certificates and keys for authentication
 
-To deploy Microsoft365DSC configuration, the following prerequisites are required:
-
-- Microsoft365DSC PowerShell Module with dependencies installed. Instructions can be found [here](https://microsoft365dsc.com/user-guide/get-started/how-to-install/).
-- Powershell 5.1 with WinRM set up. Refer to [WinRM Setup](https://learn.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)
-- Understanding of PowerShell Desired State Configuration and Microsoft 365 Administration. Refer to [Microsoft365DSC Prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites/)
-- DSC File for the targeted M365 service.
-- A Configuration Data file. This file must be placed in the same directory as the DSC file.
-
-| Configuration Data File                                                                                                                                                                 |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| {{% download file="/content/files/automation/dsc/ConfigurationData.txt" %}} Configuration Data {{% /download %}} (.psd1) <br> *Note: download the linked .txt file and rename to .psd1* |
-| **DSC File**                                                                                                                                                                            |
-| The DSC files are located in the top level configuration pages of each service as linked in the table above.                                                                            |
-
-To deploy the configuration in each of the DSC files, the relevant .ps1 file must first be converted to a Managed Object Format (MOF) file. Before doing this, a service principal must be set up for M365DSC to use.
-
-##### Creating the service principal
-
-M365DSC provides a command to automate the creation of a service principal. Before this command can be used, the following components are required:
-
-- Credentials of an existing account on the tenancy with the permissions to create a service principal and grant admin consent to the required API permissions.
+- Execute the following commands in an elevated PowerShell prompt to create a PFX file for authentication:
 
 ```powershell
-$creds = Get-Credential # Credentials of existing account
-
-Update-M365DSCAzureAdApplication -ApplicationName 'M365DSC' -Type Certificate -CreateSelfSignedCertificate -CertificatePath .\M365DSC.cer -Permissions @( @{Api='Graph';PermissionName='Organization.Read.All'} ) -Credential $creds
+$certname = "M365DSC"
+$cert = New-SelfSignedCertificate -Subject "CN=$certname" -CertStoreLocation "Cert:\CurrentUser\My" -KeyExportPolicy Exportable -KeySpec Signature -KeyLength 2048 -KeyAlgorithm RSA -HashAlgorithm SHA256
+$password = ConvertTo-SecureString -String "<password>" -Force -AsPlainText # Substitute <password>
+Export-PfxCertificate -Cert $cert -FilePath "C:\<location>\M365DSC.pfx" -Password $password # Substitute <location>
 ```
 
-This will create the service principal with a basic read permission along with a certificate to be used for authentication. The certificate with the private key will be stored in the current user's personal certifcate store. In order for powershell DSC to use this certificate, it must be imported with the private key into the local machine's personal certificate store.
+##### 3. Import the PFX file into the Local Computer certificate store
 
-##### Determine required permissions
+- Double-click the ```M365DSC.pfx``` file to begin the import wizard.
+- Select Local Machine and accepting the defaults, follow the prompts to complete the wizard.
 
-The service principal will require specific Microsoft API permissions to access and update the exisitng tenancy configuration. A list of required permissions can be generated with the following powershell command
+##### 4. Export the leaf certificate from the Local Computer certificate store
+
+- Open the Local Computer certificate store (Start > Manage Computer certificates) and navigate to Personal\Certificates.
+- Right-click the M365DSC certificate, then select All Tasks > Export to begin the export wizard.
+- Accepting the defaults, follow the prompts to complete the wizard, specifying ```C:\<location>\M365DSC.cer``` as the file name. Substitute location with the name of your working folder.
+
+##### 5. Create a service principal
+
+- Authenticate to your Entra ID tenant with an account with permissions to create a service principal and grant the required admin consent to the app's permissions:
 
 ```powershell
-Get-M365DSCCompiledPermissionList -ResourceNameList [List of components to be modified] -PermissionType Application -AccessType Update
+$creds = Get-Credential
 ```
 
-A list of components can easily be generated using the [M365DSC Export Web UI](https://export.microsoft365dsc.com/). Before the service principal can be used, admin consent must be granted for the API permissions requested. Refer to [Microsoft app-only access guidance](https://learn.microsoft.com/en-us/entra/identity-platform/app-only-access-primer).
+- Create the service principal, specifying the exported certificate to be used for authentication:
 
-More information on permissions can be found on the [M365DSC Authentication and Permissions](https://microsoft365dsc.com/user-guide/get-started/authentication-and-permissions/) page.
+```powershell
+Update-M365DSCAzureAdApplication -ApplicationName 'M365DSC' -Type Certificate -CertificatePath "C:\<location>\M365DSC.cer" -Permissions @( @{Api='Graph';PermissionName='Organization.Read.All'} ) -AdminConsent -Credential $creds # Substitute <location>
+```
 
-{{% alert title="Note" color="warning" %}}
-The Exchange Administrator Entra role must be given to the service principal if Exchange is the intended DSC target.
+##### 6. Copy and edit the configuration data file
+
+- Copy the configuration data file to the same location as the DSC file:
+
+| Configuration data file                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {{% download file="/content/files/automation/dsc/ConfigurationData.txt" %}} Configuration Data {{% /download %}} (.psd1)<br>*Note: download the linked .txt file and rename to .psd1* |
+
+- Edit the configuration data file to suit:
+
+```powershell
+# Your Entra tenant ID
+TenantId = "<GUID>"
+
+# Your Entra primary domain name
+OrganizationName = "<organisation>.onmicrosoft.com"
+
+# The Application Id of your service principal
+ApplicationId = "<GUID>"
+
+# The Thumbprint of the certificate to authenticate with your service principal
+# This can be found in the certificates and secrets section of your service principal or
+#     in the the details tab of the exported CER file.
+CertificateThumbprint = "<thumbprint hash>"
+```
+
+##### 7. Determine the required permissions for the targeted M365 service
+
+The service principal will require administrative permissions to the targeted M365 service's APIs. The components specific to the Blueprint that require administrative permissions are listed on the targeted service's index page (where the service's DSC file was downloaded from).
+
+- Update the service principal with the permissions required for the targeted M365 service. Substitute list of components with those of your targeted service:
+
+```powershell
+Update-M365DSCAzureAdApplication -ApplicationName 'M365DSC' -Permissions $(Get-M365DSCCompiledPermissionList -ResourceNameList <list of components> -PermissionType Application -AccessType Update) -AdminConsent -Credential $creds
+```
+
+{{% alert title="Grant admin consent" color="info" %}}
+You may be required to manually grant admin consent which can be done in the Azure portal under the API permissions section of the service principal.
+There may also be a delay in updating the permissions via Powershell and having them appear in the portal.
 {{% /alert %}}
 
-##### Updating the Configuration Data
+{{% alert title="Remove permissions" color="warning" %}}
+Service principal permissions should always be removed after DSC operations.
+{{% /alert %}}
 
-The ```NonNodeData``` section of the ConfigurationData.psd1 file must be populated with the relevant details.
+##### 8. Compile the MOF file
 
-##### Deploying the Configuration
-
-To convert the DSC file into a MOF file, run the .ps1 file in an elevated PowerShell window.
-
-Once the MOF has been generated, run the following command to deploy the configuration.
+- Execute the DSC script in an elevated PowerShell prompt to compile the MOF file. For example:
 
 ```powershell
-Start-DSCConfiguration -Path [Path to folder where MOF is located] -Wait -Verbose -Force
+PS C:\DSC> .\entradsc.ps1
+
+    Directory: C:\DSC\M365TenantConfig
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----               #####                 108984 localhost.mof
 ```
 
-M365DSC will then deploy the configuration to the tenancy. This may take some time.
+This will create a folder named M365TenantConfig in which the MOF file will be placed.
 
-After the configuration has finished deploying, run the following commands to stop the M365DSC process.
+##### 9. Deploy the configuration
+
+- Execute the following command to deploy the configuration. Substitute MOF folder location for the full path of the M365TenantConfig folder:
+
+```powershell
+Start-DSCConfiguration -Path <MOF folder location> -Wait -Verbose -Force
+```
+
+- After the configuration has finished deploying, run the following commands to stop the M365DSC process:
 
 ```powershell
 Stop-DSCConfiguration -Force
@@ -120,7 +182,7 @@ In the DSC file, change the version parameter in the ```Import-DscResource``` co
 
 If any settings fail to deploy automatically via Microsoft365DSC then they will require manual configuration.
 
-If significant or reoccurring errors are encountered, please feel free to contact us using the details in the banner at the foot of this page.
+If significant or reoccurring errors are encountered, please feel free to contact us using the details in the footer of this page.
 
 ### Related Information
 
@@ -147,7 +209,8 @@ If significant or reoccurring errors are encountered, please feel free to contac
 #### References
 
 - [Microsoft 365 Desired State Configuration](https://microsoft365dsc.com/user-guide/get-started/how-to-install/)
-- [WinRM Setup](https://learn.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)
-- [Microsoft365DSC Prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites/)
+- [WinRM setup](https://learn.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)
+- [Microsoft365DSC prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites/)
 - [Microsoft app-only access guidance](https://learn.microsoft.com/en-us/entra/identity-platform/app-only-access-primer)
-- [M365DSC Authentication and Permissions](https://microsoft365dsc.com/user-guide/get-started/authentication-and-permissions/)
+- [M365DSC authentication and permissions](https://microsoft365dsc.com/user-guide/get-started/authentication-and-permissions/)
+- [M365DSC export tool](https://export.microsoft365dsc.com/)

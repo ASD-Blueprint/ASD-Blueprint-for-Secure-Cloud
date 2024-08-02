@@ -25,7 +25,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Overview
 
-Some of the Exchange Online configuration can be automatically deployed
+Some of the Exchange Online configurations can be automatically deployed using Microsoft 365 Desired State Configuration (DSC).
 
 | Configuration     | Blueprint Automation Provided |
 | ----------------- | ----------------------------- |
@@ -51,3 +51,15 @@ Any existing settings in a tenancy that match the Name or UID of any settings in
 | Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-exo.txt"%}} Exchange Online DSC {{% /download %}} (.ps1) <br> *Note: download the linked .txt file and rename to .ps1* |
 | **Configuration Data File:**                                                                                                                                                                 |
 | The Configuration Data File can be found on the [Automated Deployment]({{<ref "automated-deployment">}}) page.                                                                               |
+
+##### Service Principal permissions
+
+To import the DSC as per the instructions on the [Automated Deployment]({{<ref "automated-deployment">}}) page, the following permissions will need to be added to the Service Principal:
+
+```powershell
+"EXOOwaMailboxPolicy", "EXORemoteDomain", "EXOTransportConfig", "EXOTransportRule"
+```
+
+{{% alert title="Note" color="warning" %}}
+The Exchange Administrator role must be also given to the Service Principal if Exchange Online is the intended DSC target.
+{{% /alert %}}

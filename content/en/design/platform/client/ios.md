@@ -33,7 +33,7 @@ ASD’s *Blueprint for Secure Cloud* (the Blueprint) recommends organisations se
 
 #### Configuration
 
-* [ASD iOS Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-ios-hardening.md">}})
+* [ASD iOS Hardening]({{<ref "configuration/intune/devices/apple-updates/asd-ios-hardening.md">}})
 * [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
 
 #### References

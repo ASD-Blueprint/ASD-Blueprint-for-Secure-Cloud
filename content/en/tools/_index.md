@@ -1,7 +1,7 @@
 ---
-Title: Tools
+title: "Tools"
+linkTitle: "Tools"
 type: docs
 weight: 50
-description: Tooling for blueprint
+description: "Tooling for the Blueprint"
 ---
-

@@ -5,8 +5,8 @@ description: "This section describes the configuration of Microsoft Teams associ
 ---
 
 {{% alert title="Instruction" color="dark" %}}
- 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* for the Microsoft Exchange Online portal blade at the following URL: 
+
+The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* for the Microsoft Exchange Online portal blade at the following URL:
 
 https://admin.teams.microsoft.com/
 
@@ -24,7 +24,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Overview
 
-All of the Teams configuration can be automatically deployed.
+All of the Teams configurations can be automatically deployed using Microsoft 365 Desired State Configuration (DSC).
 
 #### Desired State Configuration
 
@@ -35,3 +35,11 @@ Before using the below Microsoft 365 Desired State Configuration (DSC) file, ple
 | Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-teams.txt"%}} Teams DSC {{% /download %}} (.ps1) <br> *Note: download the linked .txt file and rename to .ps1* |
 | **Configuration Data File:**                                                                                                                                                         |
 | The Configuration Data File can be found on the [Automated Deployment]({{<ref "automated-deployment">}}) page.                                                                       |
+
+##### Service Principal permissions
+
+To import the DSC as per the instructions on the [Automated Deployment]({{<ref "automated-deployment">}}) page, the following permissions will need to be added to the Service Principal:
+
+```powershell
+"TeamsAppPermissionPolicy", "TeamsAudioConferencingPolicy", "TeamsCallHoldPolicy", "TeamsCallingPolicy", "TeamsChannelsPolicy", "TeamsClientConfiguration", "TeamsComplianceRecordingPolicy", "TeamsDialInConferencingTenantSettings", "TeamsEventsPolicy", "TeamsFederationConfiguration", "TeamsFeedbackPolicy", "TeamsGroupPolicyAssignment", "TeamsGuestCallingConfiguration", "TeamsGuestMeetingConfiguration", "TeamsGuestMessagingConfiguration", "TeamsMeetingBroadcastConfiguration", "TeamsMeetingBroadcastPolicy", "TeamsMeetingConfiguration", "TeamsMeetingPolicy", "TeamsMessagingPolicy", "TeamsOrgWideAppSettings", "TeamsPstnUsage", "TeamsShiftsPolicy", "TeamsTemplatesPolicy", "TeamsTenantDialPlan", "TeamsTenantNetworkRegion", "TeamsTenantNetworkSite", "TeamsTranslationRule", "TeamsUpdateManagementPolicy", "TeamsUpgradeConfiguration"
+```
