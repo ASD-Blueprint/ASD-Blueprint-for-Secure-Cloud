@@ -1,5 +1,5 @@
 ---
-Title: "Entra ID"
+title: "Entra ID"
 linkTitle: "Entra ID"
 weight: 10
 description: "This page describes the configuration of Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -7,7 +7,7 @@ description: "This page describes the configuration of Microsoft Entra ID associ
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Entra ID portal at the following URL:
+The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/>
 
@@ -75,6 +75,7 @@ The above DSC file requires the following parameters to be populated or they wil
 | ConditionalExclude | Name of an existing security group to be used as an exclusion group for Conditional Access policies |
 | EnforcedMFA        | Name of the authentication strength specifying the organisation's enforced MFA methods              |
 | TermsOfUse         | Name of the acceptable use policy used by the organisation                                          |
+
 {{% /alert %}}
 
 ##### Service Principal permissions

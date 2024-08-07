@@ -1,21 +1,22 @@
 ---
-Title: Services
+title: "Services"
+linkTitle: "Services"
 weight: 00
 description: "This section describes the configuration of services in Microsoft 365 associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
- 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft 365 portal blade at the following URL:
 
-https://admin.microsoft.com/Adminportal/Home?#/Settings/Services
- 
-The settings described in these tables should be used to provide reference to a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
+The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft 365 portal at the following URL:
+
+<https://admin.microsoft.com/Adminportal/Home?#/Settings/Services>
+
+The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 
 Implementation of the guidance provided by the Blueprint will differ depending on an organisation’s operating context and organisational culture. Organisations should implement the Blueprint in alignment with their existing change management, business processes and frameworks.
 
 Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-NAME>` should be replaced with the relevant details as required.
- 
+
 {{% /alert %}}
 
 ### Account Linking
@@ -43,11 +44,17 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | --------------------------------------- | -------: |
 | Allow your organization to use Bookings | Disabled |
 
-### Calendar   
+### Calendar
 
 | Item                                                                                                     |    Value |
 | -------------------------------------------------------------------------------------------------------- | -------: |
 | Let users share their calendars with people outside of your organization who have Office 365 or Exchange | Disabled |
+
+### Copilot for Sales
+
+| Item                                                               |    Value |
+| ------------------------------------------------------------------ | -------: |
+| Allow users to see Copilot for Sales content in Microsoft 365 apps | Disabled |
 
 ### Cortana
 
@@ -57,11 +64,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Dynamics 365 Applications
 
-| Item                                                                                                                     |    Value |
-| ------------------------------------------------------------------------------------------------------------------------ | -------: |
-| Allow your user's data to be viewed by themselves when using Dynamic 365 Applications                                    | Disabled |
-| Allow Aggregated and non-identifiable insights to be accessed by other users of your company's Dynamics 365 Applications | Disabled |
-| Allow individualized insights to be accessed by other users of your company's Dynamics 365 Applications                  | Disabled |
+| Item                                                                                                                      |    Value |
+| ------------------------------------------------------------------------------------------------------------------------- | -------: |
+| Allow your user's data to be viewed by themselves when using Dynamic 365 Applications.                                    | Disabled |
+| Allow Aggregated and non-identifiable insights to be accessed by other users of your company's Dynamics 365 Applications. | Disabled |
+| Allow individualized insights to be accessed by other users of your company's Dynamics 365 Applications.                  | Disabled |
 
 ### Dynamics 365 Customer Voice - Security
 
@@ -129,12 +136,13 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ----------------------------------------------------------------------- | ------: |
 | Microsoft Loop workspaces are available to all users in my organization | Enabled |
 
-### Microsoft Planner 
+### Microsoft Planner
 
 | Item                                                                                                               |    Value |
 | ------------------------------------------------------------------------------------------------------------------ | -------: |
 | Allow Planner users to publish their plans and assigned tasks to Outlook or their calendars through iCalendar feed | Disabled |
-### Microsoft Search in Bing homepage
+
+### Microsoft Search in Bing homepage - Homepage
 
 | Item                                                                |    Value |
 | ------------------------------------------------------------------- | -------: |
@@ -203,13 +211,6 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Display concealed user, group, and site names in all reports             | Disabled |
 | Make report data available to Microsoft 365 usage analytics for Power BI | Disabled |
 
-### Sales Copilot
-
-| Item                                                                                              |    Value |
-| ------------------------------------------------------------------------------------------------- | -------: |
-| Allow Sales Copilot data to be associated with a user's profile information in Microsoft 365 apps | Disabled |
-| Allow users to see Sales Copilot content in Microsoft 365 apps                                    | Disabled |
-
 ### SharePoint
 
 | Item                                                           |    Value |
@@ -227,12 +228,6 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Wikipedia                                                                              | Disabled |
 | YouTube                                                                                | Disabled |
 
-### User consent to apps
-
-| Item                                                                                           |    Value |
-| ---------------------------------------------------------------------------------------------- | -------: |
-| Let users provide consent when apps request access to your organization's data on their behalf | Disabled |
-
 ### User owned apps and services
 
 | Item                                                      |    Value |
@@ -245,7 +240,6 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                                                                                                                                                                  |    Value |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------: |
-| Allow employees to add their own content from SharePoint into Viva Learning tab in Microsoft Teams chats and channels                                                 | Disabled |
 | Required Diagnostic Data. Send the minimum data necessary to Microsoft to keep Viva Learning secure, up-to-date, and performing as expected                           | Disabled |
 | Optional Diagnostic Data. Additional data that helps us make product improvements and provides enhanced information to help us detect, diagnose, and remediate issues | Disabled |
 

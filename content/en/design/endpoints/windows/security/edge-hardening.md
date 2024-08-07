@@ -21,7 +21,6 @@ The Microsoft Edge security settings support Edge version 90 and later. The Micr
 | Prevent bypassing Microsoft Defender SmartScreen prompts for sites           | Enabled                                           | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance. |
 | Prevent bypassing of Microsoft Defender SmartScreen warnings about downloads | Enabled                                           | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance. |
 | Prevent users and apps from accessing dangerous websites                     | Enabled (Block)                                   | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance. |
-| Turn on Windows Defender Application Guard in Managed Mode                   | Enabled                                           | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance. |
 
 {{% /alert %}}
 

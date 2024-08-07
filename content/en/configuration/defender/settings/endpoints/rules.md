@@ -1,22 +1,27 @@
 ---
-Title: Rules
+title: "Rules"
+linkTitle: "Rules"
 weight: 30
 description: "This section describes the configuration of rules within Microsoft Defender associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
- 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* for Defender portal blade at the following URL: 
 
-https://security.microsoft.com/securitysettings/endpoints/alert_suppression
- 
-The settings described on these pages should be used to provide reference to a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
+The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Defender portal at the following URL:
+
+<https://security.microsoft.com/securitysettings/endpoints/alert_suppression>
+
+The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 
 Implementation of the guidance provided by the Blueprint will differ depending on an organisation’s operating context and organisational culture. Organisations should implement the Blueprint in alignment with their existing change management, business processes and frameworks.
 
 Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-NAME>` should be replaced with the relevant details as required.
- 
+
 {{% /alert %}}
+
+### Alert suppression
+
+`Not configured`
 
 ### Indicators
 
@@ -28,55 +33,18 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Web Content Filtering
 
-#### Adult Sites
-
-| Item                          | Value       |
-| ----------------------------- | -----------:|
-| **General**                   |             |
-| Policy Name                   | Adult Sites |
-| **Blocked Categories**        |             |
-| Cults                         | Enabled     |
-| Gambling                      | Enabled     |
-| Nudity                        | Enabled     |
-| Pornography/Sexually Explicit | Enabled     |
-| Sex Education                 | Enabled     |
-| Tasteless                     | Enabled     |
-| Violence                      | Enabled     |
-| **Scope**                     |             |
-| Machine Groups                | Select all  |
-
-#### High Traffic Sites
-
-| Item                        | Value              |
-| --------------------------- | ------------------:|
-| **General**                 |                    |
-| Policy Name                 | High Traffic Sites |
-| **Blocked Categories**      |                    |
-| Download Sites              | Enabled            |
-| Image Sharing               | Enabled            |
-| Peer-to-Peer                | Enabled            |
-| Streaming Media & Downloads | Enabled            |
-| **Scope**                   |                    |
-| Machine Groups              | Select all         |
-
-#### Legal Liability
-
-| Item                   |           Value |
-| ---------------------- | --------------: |
-| **General**            |                 |
-| Policy Name            | Legal Liability |
-| **Blocked Categories** |                 |
-| Child Abuse Images     |         Enabled |
-| Criminal Activity      |         Enabled |
-| Hacking                |         Enabled |
-| Hate & Intolerance     |         Enabled |
-| Illegal Drug           |         Enabled |
-| Illegal Software       |         Enabled |
-| School Cheating        |         Enabled |
-| Self-Harm              |         Enabled |
-| Weapons                |         Enabled |
-| **Scope**              |                 |
-| Machine Groups         |      Select all |
+| Item                   |                                                                      Value |
+| ---------------------- | -------------------------------------------------------------------------: |
+| **General**            |                                                                            |
+| Policy Name            |                                                                Blocked content |
+| **Blocked Categories** |                                                                            |
+| Adult content          |                                                                 Select all |
+| High Bandwidth         |                                                                 Select all |
+| Legal Liability        |                                                                 Select all |
+| Leisure                | Chat<br>Games<br>Instant Messaging<br>Web-based Email<br>Social Networking |
+| Uncategorized          |                                                                 Select all |
+| **Scope**              |                                                                            |
+| Machine Groups         |                                                                 Select all |
 
 ### Automation uploads
 
@@ -92,6 +60,10 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 `Not configured`
 
+### Asset rule management
+
+`Not configured`
+
 ### Related information
 
 #### Security & Governance
@@ -102,7 +74,6 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 * [Endpoint Security - Devices]({{<ref "design/platform/security/endpoint-security">}})
 
-  
 #### Configuration
 
 * [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})

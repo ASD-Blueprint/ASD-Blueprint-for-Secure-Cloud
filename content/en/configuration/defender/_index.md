@@ -7,7 +7,7 @@ description: "This section describes the configuration of Microsoft Defender ass
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Defender portal at the following URL:
+The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Defender portal at the following URL:
 
 <https://security.microsoft.com/>
 

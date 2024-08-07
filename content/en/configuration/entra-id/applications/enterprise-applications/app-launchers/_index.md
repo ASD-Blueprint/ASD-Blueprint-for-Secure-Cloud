@@ -1,15 +1,15 @@
 ---
-title: "Multifactor authentication"
-linkTitle: "Multifactor authentication"
+title: "App launchers"
+linkTitle: "App launchers"
 weight: 10
-description: "This page describes the configuration of multifactor authentication within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
+description: "This page describes the configuration of app launchers within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
 The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
-<https://entra.microsoft.com/#view/Microsoft_AAD_IAM/MultifactorAuthenticationMenuBlade>
+<https://entra.microsoft.com/#view/Microsoft_AAD_IAM/AppLaunchersBlade/~/Collections>
 
 The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 

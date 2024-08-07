@@ -1,14 +1,15 @@
 ---
-Title: "Settings"
+title: "Settings"
+linkTitle: "Settings"
 weight: 040
 description: "This section describes the configuration of SharePoint associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* for the Sharepoint Admin portal at the following URL: 
+The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the SharePoint admin portal at the following URL:
 
-https://`<TENANT-NAME>`-admin.sharepoint.com/
+<https://`<TENANT-NAME>`-admin.sharepoint.com/>
 
 `Home` > `Settings`
 

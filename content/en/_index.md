@@ -3,10 +3,10 @@ title: "Welcome to ASD's Blueprint for Secure Cloud"
 linkTitle: "Home"
 weight: 1
 type: docs
-description: >
+description:
 ---
 
-Welcome to the Australian Signals Directorate's (ASD's) *Blueprint for Secure Cloud* (the Blueprint), previously known as the Protected Utility Blueprint. The Blueprint is an online tool to support the design, configuration and deployment of collaborative and secure cloud and hybrid workspaces, with a current focus on Microsoft 365. 
+Welcome to the Australian Signals Directorate's (ASD's) *Blueprint for Secure Cloud* (the Blueprint), previously known as the Protected Utility Blueprint. The Blueprint is an online tool to support the design, configuration and deployment of collaborative and secure cloud and hybrid workspaces, with a current focus on Microsoft 365.
 
 The Blueprint provides better practice guidance, configuration guides and templates covering risk management, architecture and standard operating procedures developed as per the controls in ASD's [*Information Security Manual* (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism). While the Blueprint is primarily developed for government organisations, private sector organisations may also find it a useful resource.
 

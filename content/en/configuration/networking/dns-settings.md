@@ -1,17 +1,18 @@
 ---
-Title: DNS Settings
+title: "DNS Settings"
+linkTitle: "DNS Settings"
 weight: 090
 description: "This section describes the DNS configuration associated with hybrid systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The settings described on these pages should be used to provide reference to a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
+The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 
 Implementation of the guidance provided by the Blueprint will differ depending on an organisation’s operating context and organisational culture. Organisations should implement the Blueprint in alignment with their existing change management, business processes and frameworks.
 
 Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-NAME>` should be replaced with the relevant details as required.
- 
+
 {{% /alert %}}
 
 ### MX records
@@ -40,7 +41,6 @@ The following table describes the SPF records to be configured per implementatio
 | Cloud-native   | `<organisation.gov.au>` | `"v=spf1 include:spf.protection.outlook.com -all"` | `"v=DMARC1; p=reject; pct=100; rua=mailto:<rua reporting address>; ruf=mailto:<ruf reporting address>; fo=1"` |
 | Hybrid         | `<organisation.gov.au>` | (Specific to gateway provider)                     | `"v=DMARC1; p=reject; pct=100; rua=mailto:<rua reporting address>; ruf=mailto:<ruf reporting address>; fo=1"` |
 
-
 ### DKIM records
 
 Note, DKIM DNS selector records are configured through the organisation's DNS provider. Cloud-native configuration assumes DKIM signing is handled by Exchange Online Protection and not a third-party selector.
@@ -49,8 +49,8 @@ The following table describes the DKIM records configuration settings per implem
 
 | Implementation | Type  | Domain                  | Host name                     | TTL      |                                                              Points to address or value |
 | -------------- | ----- | ----------------------- | ----------------------------- | -------- | --------------------------------------------------------------------------------------: |
-| Cloud-native   | CNAME | `<organisation.gov.au>` | `selector1._domainkey `       | `5 Min.` | `selector1-Organisation-gov-au._domainkey.<Organisationinitialdomain>.onmicrosoft.com.` |
-| Cloud-native   | CNAME | `<organisation.gov.au>` | `selector2._domainkey `       | `5 Min.` |              `selector2-Organisation-gov-au._domainkey.<Organisation>.onmicrosoft.com.` |
+| Cloud-native   | CNAME | `<organisation.gov.au>` | `selector1._domainkey`       | `5 Min.` | `selector1-Organisation-gov-au._domainkey.<Organisationinitialdomain>.onmicrosoft.com.` |
+| Cloud-native   | CNAME | `<organisation.gov.au>` | `selector2._domainkey`       | `5 Min.` |              `selector2-Organisation-gov-au._domainkey.<Organisation>.onmicrosoft.com.` |
 | Hybrid         | CNAME | `<organisation.gov.au>` | `<gateway provided selector>` | `5 Min.` |                                                           `<gateway provided selector>` |
 
 ### DNS records
