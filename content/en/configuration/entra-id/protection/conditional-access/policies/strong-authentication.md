@@ -1,6 +1,6 @@
 ---
-title: "USR - B - Block high-risk sign-ins"
-linkTitle: "USR - B - Block high-risk sign-ins"
+title: "USR - G - Require strong auth"
+linkTitle: "USR - G - Require strong auth"
 weight: 10
 type: docs
 description: "This page describes the configuration of policies for Conditional Access within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -20,24 +20,34 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
+{{% alert title="Caution" color="warning" %}}
+
+In order to meet ASD Essential Eight Maturity Level 2 requirements, this policy has been updated to use an Authentication Strength that enforces the use of phishing-resistant MFA methods. This excludes the use of number matching push notifications in Microsoft Authenticator as was previously documented.
+
+The use of [passkeys with Microsoft Authenticator](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-enable-authenticator-passkey) is in public preview.
+
+Before implementing these settings, organisations should continue to ensure that any settings meet their operational and security requirements.
+
+{{% /alert %}}
+
 ### Name
 
-| Item |                              Value |
-| ---- | ---------------------------------: |
-| Name | USR - B - Block high-risk sign-ins |
+| Item |                         Value |
+| ---- | ----------------------------: |
+| Name | USR - G - Require strong auth |
 
 ### Assignments
 
 #### Users
 
-| Item                    |                                                     Value |
-| ----------------------- | --------------------------------------------------------: |
-| **Include**             |                                                 All users |
-| **Exclude**             |                                                           |
-| Guest or external users |                                               Not checked |
-| Directory roles         |                                               Not checked |
-| Users and groups        |                                                   Checked |
-|                         | `<CA exclude group - USR - B - Block high-risk sign-ins>` |
+| Item                    |                                                Value |
+| ----------------------- | ---------------------------------------------------: |
+| **Include**             |                                            All users |
+| **Exclude**             |                                                      |
+| Guest or external users |                                          Not checked |
+| Directory roles         |                                          Not checked |
+| Users and groups        |                                              Checked |
+|                         | `<CA exclude group - USR - G - Require strong auth>` |
 
 #### Target Resources
 
@@ -58,11 +68,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item                               |          Value |
 | ---------------------------------- | -------------: |
 | **User risk**                      | Not configured |
-| **Sign-in risk**                   |            Yes |
-| High                               |        Checked |
-| Medium                             |    Not checked |
-| Low                                |    Not checked |
-| No risk                            |    Not checked |
+| **Sign-in risk**                   | Not configured |
 | **Insider risk**                   | Not configured |
 | **Device platforms**               | Not configured |
 | **Locations**                      | Not configured |
@@ -74,9 +80,20 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Grant
 
-| Item                                                |        Value |
-| --------------------------------------------------- | -----------: |
-| Control access enforcement to block or grant access | Block access |
+[Authentication strengths]({{<ref "conditional-access/authentication-strengths">}}) will need to be configured prior to setting this access control.
+
+| Item                                                |                                Value |
+| --------------------------------------------------- | -----------------------------------: |
+| Control access enforcement to block or grant access |                         Grant access |
+| Require multifactor authentication                  |                          Not checked |
+| Require authentication strength                     |   Phishing-resistant MFA:<br>Checked |
+| Require device to be marked as compliant            |                          Not checked |
+| Require Microsoft Entra hybrid joined device        |                          Not checked |
+| Require approved client app                         |                          Not checked |
+| Require app protection policy                       |                          Not checked |
+| Require password change                             |                          Not checked |
+| Terms                                               |                          Not checked |
+| For multiple controls                               | Require one of the selected controls |
 
 #### Session
 
@@ -103,19 +120,23 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 * [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
 * [Authentication Hardening]({{<ref "system-hardening-authentication">}})
+* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
 * [Conditional access]({{<ref "design/platform/identity/conditional-access">}})
-* [Entra ID Protection]({{<ref "design/platform/identity/protection.md">}})
 
 #### Configuration
 
+* [Authentication strengths]({{<ref "configuration/entra-id/protection/conditional-access/authentication-strengths">}})
+* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
 * [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 
 #### References
 
 * [Configure Microsoft Entra multifactor authentication settings](https://learn.microsoft.comentra/identity/authentication/howto-mfa-mfasettings)
 * [System-preferred multifactor authentication - Authentication methods policy](https://learn.microsoft.com/entra/identity/authentication/concept-system-preferred-multifactor-authentication)
 * [Protecting authentication methods in Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-default-enablement)
+* [Conditional Access authentication strength](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-strengths)
+  

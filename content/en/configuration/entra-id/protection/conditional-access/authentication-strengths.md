@@ -20,12 +20,14 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-| Item                       | Value                                                                                                       |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Legacy Methods**         |                                                                                                             |
-| Name                       | Legacy methods                                                                                              |
-| Phishing-resistant MFA     | Windows Hello For Business<br>Passkeys (FIDO2)                                                              |
-| Multifactor authentication | Temporary Access Pass (One-time use)<br>Temporary Access Pass (Multi-use)<br>Password + Hardware OATH token |
+| Item                               | Value                                                                                            |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Phishing-resistant MFA and TAP** |                                                                                                  |
+| Name                               | Phishing-resistant MFA and TAP                                                                   |
+| Phishing-resistant MFA             | Windows Hello For Business<br>Passkeys (FIDO2)<br>Certificate-based Authentication (Multifactor) |
+| Multifactor authentication         | Temporary Access Pass (One-time use)<br>Temporary Access Pass (Multi-use)                        |
+
+New authentication strengths can take some time to appear for use in Conditional Access policy drop-downs.
 
 ### Related information
 

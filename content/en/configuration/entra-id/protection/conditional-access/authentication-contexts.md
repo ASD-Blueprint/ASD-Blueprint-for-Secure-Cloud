@@ -20,14 +20,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-| Item                                                   | Value   |
-|--------------------------------------------------------|--------:|
-| **Official Sensitive Locations - Managed Device Only** |         |
-| Publish to apps                                        | Checked |
-| **Protected Location Access**                          |         |
-| Publish to apps                                        | Checked |
-| **Official Sensitive Location Access**                 |         |
-| Publish to apps                                        | Checked |
+| Item                      |   Value |
+| ------------------------- | ------: |
+| **PROTECTED information** |         |
+| Publish to apps           | Checked |
+| ID                        |      c1 |
 
 ### Related information
 

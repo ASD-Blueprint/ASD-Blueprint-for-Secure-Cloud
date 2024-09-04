@@ -22,11 +22,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Configured identity providers
 
-| Item     |                   Value |
-| -------- | ----------------------: |
-| Provider |      Microsoft Entra ID |
-| Provider | Email one-time passcode |
-| Provider |               Microsoft |
+| Item                                 |      Value |
+| ------------------------------------ | ---------: |
+| Microsoft Entra ID                   | Configured |
+| Email one-time passcode              | Configured |
+| - Email one-time passcode for guests |         No |
+| Microsoft                            | Configured |
 
 ### Related information
 

@@ -1,6 +1,6 @@
 ---
-title: "USR - B - Block high-risk sign-ins"
-linkTitle: "USR - B - Block high-risk sign-ins"
+title: "DEV - G - Intune enrolment with strong auth"
+linkTitle: "DEV - G - Intune enrolment with strong auth"
 weight: 10
 type: docs
 description: "This page describes the configuration of policies for Conditional Access within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -22,30 +22,31 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Name
 
-| Item |                              Value |
-| ---- | ---------------------------------: |
-| Name | USR - B - Block high-risk sign-ins |
+| Item |                                               Value |
+| ---- | --------------------------------------------------: |
+| Name | DEV - G - Intune enrolment with strong auth |
 
 ### Assignments
 
 #### Users
 
-| Item                    |                                                     Value |
-| ----------------------- | --------------------------------------------------------: |
-| **Include**             |                                                 All users |
-| **Exclude**             |                                                           |
-| Guest or external users |                                               Not checked |
-| Directory roles         |                                               Not checked |
-| Users and groups        |                                                   Checked |
-|                         | `<CA exclude group - USR - B - Block high-risk sign-ins>` |
+| Item                    |                                                                      Value |
+| ----------------------- | -------------------------------------------------------------------------: |
+| **Include**             |                                                                  All users |
+| **Exclude**             |                                                                            |
+| Guest or external users |                                                                Not checked |
+| Directory roles         |                                                                Not checked |
+| Users and groups        |                                                                    Checked |
+|                         | `<CA exclude group - DEV - G - Intune enrolment with strong auth>` |
 
 #### Target Resources
 
-| Item                               |          Value |
-| ---------------------------------- | -------------: |
-| Select what this policy applies to |     Cloud apps |
-| **Include**                        | All cloud apps |
-| **Exclude**                        |           None |
+| Item                               |                                           Value |
+| ---------------------------------- | ----------------------------------------------: |
+| Select what this policy applies to |                                      Cloud apps |
+| **Include**                        |                                     Select apps |
+| Select                             | Microsoft Intune<br>Microsoft Intune Enrolment |
+| **Exclude**                        |                                            None |
 
 #### Network
 
@@ -58,11 +59,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item                               |          Value |
 | ---------------------------------- | -------------: |
 | **User risk**                      | Not configured |
-| **Sign-in risk**                   |            Yes |
-| High                               |        Checked |
-| Medium                             |    Not checked |
-| Low                                |    Not checked |
-| No risk                            |    Not checked |
+| **Sign-in risk**                   | Not configured |
 | **Insider risk**                   | Not configured |
 | **Device platforms**               | Not configured |
 | **Locations**                      | Not configured |
@@ -74,9 +71,20 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Grant
 
-| Item                                                |        Value |
-| --------------------------------------------------- | -----------: |
-| Control access enforcement to block or grant access | Block access |
+[Authentication strengths]({{<ref "conditional-access/authentication-strengths">}}) will need to be configured prior to setting this access control.
+
+| Item                                                |                                Value |
+| --------------------------------------------------- | -----------------------------------: |
+| Control access enforcement to block or grant access |                         Grant access |
+| Require multifactor authentication                  |                          Not checked |
+| Require authentication strength                     |   Phishing-resistant MFA:<br>Checked |
+| Require device to be marked as compliant            |                          Not checked |
+| Require Microsoft Entra hybrid joined device        |                          Not checked |
+| Require approved client app                         |                          Not checked |
+| Require app protection policy                       |                          Not checked |
+| Require password change                             |                          Not checked |
+| Terms                                               |                          Not checked |
+| For multiple controls                               | Require one of the selected controls |
 
 #### Session
 
@@ -103,16 +111,16 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 * [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
 * [Authentication Hardening]({{<ref "system-hardening-authentication">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 
 #### Design
 
 * [Conditional access]({{<ref "design/platform/identity/conditional-access">}})
-* [Entra ID Protection]({{<ref "design/platform/identity/protection.md">}})
 
 #### Configuration
 
 * [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
 
 #### References
 

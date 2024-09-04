@@ -1,58 +1,79 @@
 ---
-title: Identity Governance
+title: "Identity governance"
+linkTitle: "Identity governance"
 weight: 30
-description: "This section describes the design decisions associated with entitlement management and access to workloads and landing zones for system(s) built using ASD's Blueprint for Secure Cloud."
+description: "This section describes the design decisions associated with identity governance for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Identity Governance encompasses:
+Identity governance encompasses:
 
-* **Entitlement Management** - the automation of request and approval workflows for access to groups, applications and sites
-* **Access Reviews** - enforcing review and expiry of continued access to these groups, applications and sites
+- Entitlement management - the management of access to resources
+- Access reviews - the audit and maintenance of ongoing access
+- Lifecycle workflows - the onboarding, offboarding and moves of users
+- Privileged Identity Management (PIM) - the just-in-time access management of privileged roles
 
-Entitlement Management delegates the management of user permissions from the Platform Administrators to the resource owners. Access Packages provide access to Azure resources, applications, and SharePoint sites using Entra ID group membership. This method is preferred over direct group assignment as it requires that access is explicitly sought by the requester and granted by the owner on a "business need" basis.
+Identity governance has a significant role to play in implementing the principle of least privilege; enhancing security and mitigating risks by ensuring users are only accessing the resources relevant to their responsibilities, and nothing more. Information Security Manual (ISM), [Guidelines for Personnel Security, Access to systems and their resources](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-personnel-security) has several controls relevant to identity governance.
 
-Access Management delegates the management of continued access from the Platform Owner to the entitlement owner. This provides a review process for the assignment of users to groups, and can be carried out for directly assigned users (via Groups), Security Groups (via Entitlement Management) and Privileged Groups (via Privileged Identity Management). Access Reviews must be carried out for all group memberships on a six monthly basis.
+### Entitlement management
+
+Entitlement management is largely focussed on the use of *access packages*, where administrators create *catalogs* of resources (like SharePoint sites, Teams, groups or applications) that are presented to select users or guests, and then lifecycle-managed with expiration and access review workflows.
+
+Access packages are particularly useful for managing access to the common resources associated with the various divisions and user-types within an organisation.
 
 {{% alert title="Design Decisions" color="warning" %}}
 
-| Decision Point             | Design Decision                                             | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| -------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Access Packages            | Used for all Security Groups                                | Assignment to groups providing access to resources or services should be explicitly obtained and granted on a business needs basis.                                                                                                                                                                                                                                                                                                                            |
-| Access Reviews             | Maximum 6 months                                            | In line with an organisation's Information Management policy.<br><br>**Essential 8**<br><ul><li>Privileged access to systems and applications is automatically disabled after 12 months unless revalidated.</li></ul>                                                                                                                                                                                                                                                     |
-| Privileged Role Delegation | Where Privileged Roles are delegated by the Platform Owners | Privileged Role delegations are explicitly obtained and granted when delegated.<br><br>**Essential 8**<br><ul><li>Requests for privileged access to systems and applications are validated when first requested.</li><li>Privileged access to systems and applications is limited to only what is required for users and services to undertake their duties.</li><li>Just-in-time administration is used for administering systems and applications.</li></ul> |
-| Account inactivity         | Inactive accounts automatically disabled                    | **Essential 8**<br><ul><li>Access to systems and applications is automatically disabled after 45 days of inactivity.</li></ul>                                                                                                                                                                                                                                                                                                                                 |
+| Decision Point  | Design Decision                                | Justification                                                      |
+| --------------- | ---------------------------------------------- | ------------------------------------------------------------------ |
+| Access packages | Access packages should be used where practical | Access packages simplify resource assignments for common use cases |
 
 {{% /alert %}}
 
-### Access Reviews
+### Access reviews
 
-A base recommendation for access reviews is below. However, organisations should review and update these configurations based on their risk appetite and organisational policies.
+Access reviews enable the audit and maintenance of group memberships, access to applications, and role assignments. Access reviews help mitigate the dangling access often associated with user's access requirements changing over time.
 
-| Review Type                               | Reviewer              | Recurrence  |
-| ----------------------------------------- | --------------------- | ----------- |
-| Privileged Access - Global Administrators | Organisation Decision | 6 monthly   |
-| Privileged Access - Privileged Group      | Global Administrators | 6 monthly   |
-| Privileged Access - Entra ID Role         | Global Administrators | 6 monthly   |
-| Workloads (Applications)                  | Application Owner     | 6 monthly   |
-| Other Security Groups                     | Group Owner           | As required |
-| Microsoft 365 Groups                      | Group Owner           | 6 monthly   |
+{{% alert title="Design Decisions" color="warning" %}}
+
+| Decision Point                                       | Design Decision                                                     | Justification                                                            |
+| ---------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Access reviews for privileged roles<sup>1</sup>      | Use 6-monthly access reviews for active and eligible assigned roles | Assist compliance with Essential Eight privileged access validation      |
+| Access reviews for Conditional Access exclude groups | Use 3-monthly access reviews for Conditional Access exclude groups  | Conditional Access exclude group membership should be tightly controlled |
+| Access reviews for role assigned groups              | Use 6-monthly access reviews for role assigned groups               | Assist compliance with Essential Eight privileged access validation      |
+
+{{% /alert %}}
+
+1: While access reviews for Teams, groups and applications are performed via the Entra Identity Governance portal page, access reviews for roles are performed via the Entra PIM portal page.
+
+Access reviews for inactive users are subject to Microsoft Entra ID Governance license requirements and are not in implemented in the Blueprint.
+
+### Lifecycle workflows
+
+Lifecycle workflows provide automation for the onboarding, offboarding and moves of users, and can integrate with an organisation's other user management systems like human resources and financial systems to further streamline such processes.
+
+Lifecycle workflows are subject to Microsoft Entra ID Governance license requirements and are not in implemented in the Blueprint.
+
+### Privileged Identity Management (PIM)
+
+The use of PIM is discussed in more detail in the [Role-Based Access Control design page]({{<ref "identity/roles">}}).
 
 ### Related information
 
 #### Security & Governance
 
-* None identified
+- None identified
 
 #### Design
 
-* [Role-Based Access Control]({{<ref "roles">}})
-* [Privileged Identity Management]({{<ref "rbac#privileged-identity-management">}})
+- [Conditional Access]({{<ref "identity/conditional-access">}})
+- [Groups]({{<ref "identity/groups">}})
+- [Role-based access control]({{<ref "identity/roles">}})
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Identity Governance](https://learn.microsoft.com/entra/id-governance/identity-governance-overview)
-
+- [Create an access review of Azure resource and Microsoft Entra roles in PIM](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-create-roles-and-resource-roles-review)
+- [Identity Governance](https://learn.microsoft.com/entra/id-governance/identity-governance-overview)
+- [Plan a Microsoft Entra access reviews deployment](https://learn.microsoft.com/en-us/entra/id-governance/deploy-access-reviews)

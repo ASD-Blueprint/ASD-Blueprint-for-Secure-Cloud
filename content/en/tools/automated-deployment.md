@@ -23,7 +23,9 @@ When using automated configuration files, organisations should note they will co
 Microsoft 365 DSC (M365DSC) is a configuration-as-code tool developed by Microsoft to automate the configuration of Microsoft 365 services. It is the primary tool used to automate the deployment of the configuration guidance in the Blueprint.
 
 {{% alert title="Warning" color="danger" %}}
+
 Any existing settings in a service that match the Name or UID of any settings in the DSC will be overwritten.
+
 {{% /alert %}}
 
 ##### Prerequisites
@@ -54,7 +56,9 @@ To deploy a M365DSC configuration, the following prerequisites are required:
 | [Power Platform]({{<ref "/configuration/power-platform">}})       | - N/A                         | None                |
 
 {{% alert title="DSC instructions" color="info" %}}
+
 Additional instructions for using DSC may be provided in the above-linked pages.
+
 {{% /alert %}}
 
 ##### 2. Create certificates and keys for authentication
@@ -130,12 +134,16 @@ Update-M365DSCAzureAdApplication -ApplicationName 'M365DSC' -Permissions $(Get-M
 ```
 
 {{% alert title="Grant admin consent" color="info" %}}
+
 You may be required to manually grant admin consent which can be done in the Azure portal under the API permissions section of the service principal.
 There may also be a delay in updating the permissions via Powershell and having them appear in the portal.
+
 {{% /alert %}}
 
 {{% alert title="Remove permissions" color="warning" %}}
+
 Service principal permissions should always be removed after DSC operations.
+
 {{% /alert %}}
 
 ##### 8. Compile the MOF file

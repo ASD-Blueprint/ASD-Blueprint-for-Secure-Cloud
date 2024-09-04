@@ -20,10 +20,10 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-| Item                                |             Value |
-| ----------------------------------- | ----------------: |
-| Self service password reset enabled |          Selected |
-| Select group                        | grp-`<org>`-users |
+| Item                                |                            Value |
+| ----------------------------------- | -------------------------------: |
+| Self service password reset enabled |                         Selected |
+| Select group                        | `<All organisation users group>` |
 
 ### Related information
 

@@ -20,9 +20,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-An existing security group must be specified to act as a Conditional Access exclusion group.
-
-All Conditional Access policies in the DSC are set to either report only or disabled, and will need to be enabled manually.
+All Conditional Access policies in the DSC are set to report only and will need to be enabled manually.
 
 Microsoft-managed policies may be created as a result of other Entra ID settings and identified by a *MICROSOFT-MANAGED* tag. These policies can be disabled as they're superseded by Blueprint policies.
 

@@ -58,7 +58,9 @@ Some of the Entra ID configurations can be automatically deployed using Microsof
 Before using the below DSC file, please refer to [Automated Deployment]({{<ref "automated-deployment">}}) for instructions.
 
 {{% alert title="Warning" color="danger" %}}
+
 Any existing settings in a tenancy that match the Name or UID of any settings in the DSC will be overwritten.
+
 {{% /alert %}}
 
 | Desired State Configuration File:                                                                                                                                                     |
@@ -68,13 +70,16 @@ Any existing settings in a tenancy that match the Name or UID of any settings in
 | The Configuration Data File can be found on the [Automated Deployment]({{<ref "automated-deployment">}}) page.                                                                        |
 
 {{% alert title="Extra Parameters" color="info"%}}
+
 The above DSC file requires the following parameters to be populated or they will be prompted for on import:
 
-| Parameter Name     | Contents                                                                                            |
-| ------------------ | --------------------------------------------------------------------------------------------------- |
-| ConditionalExclude | Name of an existing security group to be used as an exclusion group for Conditional Access policies |
-| EnforcedMFA        | Name of the authentication strength specifying the organisation's enforced MFA methods              |
-| TermsOfUse         | Name of the acceptable use policy used by the organisation                                          |
+| Parameter Name     | Contents                                                                                                    |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- |
+| ConditionalExclude | Name of an existing security group to be used as a placeholder for Conditional Access exclusion<sup>1</sup> |
+| PrivUsers          | Name of an existing security group containing all privileged users                                          |
+| TermsOfUse         | Name of the acceptable use policy used by the organisation                                                  |
+
+1: Exclude groups specific to each Conditional Access policy will need to be manually configured post-DSC import.
 
 {{% /alert %}}
 

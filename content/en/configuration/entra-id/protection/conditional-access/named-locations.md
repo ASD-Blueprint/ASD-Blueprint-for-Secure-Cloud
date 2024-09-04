@@ -31,11 +31,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### IP ranges location location
 
-| Item                     |                             Value |
-| ------------------------ | --------------------------------: |
-| **Name**                 | Organisation Trusted IP Addresses |
-| Mark as trusted location |                           Checked |
-| IPv4 or IPv6 range       |    *Relevant IPv4 or IPv6 ranges* |
+| Item                     |                          Value |
+| ------------------------ | -----------------------------: |
+| **Name**                 |                    Trusted IPs |
+| Mark as trusted location |                        Checked |
+| IPv4 or IPv6 range       | *Relevant IPv4 or IPv6 ranges* |
 
 ### Related information
 

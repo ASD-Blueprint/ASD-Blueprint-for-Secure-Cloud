@@ -1,6 +1,6 @@
 ---
-title: "USR - B - Block high-risk sign-ins"
-linkTitle: "USR - B - Block high-risk sign-ins"
+title: "GST - B - Block guests"
+linkTitle: "GST - B - Block guests"
 weight: 10
 type: docs
 description: "This page describes the configuration of policies for Conditional Access within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -22,22 +22,24 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Name
 
-| Item |                              Value |
-| ---- | ---------------------------------: |
-| Name | USR - B - Block high-risk sign-ins |
+| Item |                  Value |
+| ---- | ---------------------: |
+| Name | GST - B - Block guests |
 
 ### Assignments
 
 #### Users
 
-| Item                    |                                                     Value |
-| ----------------------- | --------------------------------------------------------: |
-| **Include**             |                                                 All users |
-| **Exclude**             |                                                           |
-| Guest or external users |                                               Not checked |
-| Directory roles         |                                               Not checked |
-| Users and groups        |                                                   Checked |
-|                         | `<CA exclude group - USR - B - Block high-risk sign-ins>` |
+| Item                     |                                                                                                                                                                             Value |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| **Include**              |                                                                                                                                                           Select users and groups |
+| Guests or external users |                                                                                                                                                                           Checked |
+|                          | 6 selected:<br>B2B collaboration guest users<br>B2B collaboration member users<br>B2B direct connect users<br>Local guest users<br>Service provider users<br>Other external users |
+| **Exclude**              |                                                                                                                                                                                   |
+| Guest or external users  |                                                                                                                                                                       Not checked |
+| Directory roles          |                                                                                                                                                                       Not checked |
+| Users and groups         |                                                                                                                                                                           Checked |
+|                          |                                                                                                 `<CA exclude group - GST - B - Block guests>`<br>`<Guest application user group>` |
 
 #### Target Resources
 
@@ -58,11 +60,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item                               |          Value |
 | ---------------------------------- | -------------: |
 | **User risk**                      | Not configured |
-| **Sign-in risk**                   |            Yes |
-| High                               |        Checked |
-| Medium                             |    Not checked |
-| Low                                |    Not checked |
-| No risk                            |    Not checked |
+| **Sign-in risk**                   | Not configured |
 | **Insider risk**                   | Not configured |
 | **Device platforms**               | Not configured |
 | **Locations**                      | Not configured |
@@ -102,16 +100,16 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 #### Security & Governance
 
 * [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 * [Authentication Hardening]({{<ref "system-hardening-authentication">}})
 
 #### Design
 
 * [Conditional access]({{<ref "design/platform/identity/conditional-access">}})
-* [Entra ID Protection]({{<ref "design/platform/identity/protection.md">}})
 
 #### Configuration
 
-* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
+* [Password protection]({{<ref "password-protection.md">}})
 * [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 
 #### References

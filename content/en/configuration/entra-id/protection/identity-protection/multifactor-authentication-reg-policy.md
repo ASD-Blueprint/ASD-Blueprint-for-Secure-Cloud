@@ -22,12 +22,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Multifactor authentication registration policy
 
-| Item                                                               |                                   Value |
-| ------------------------------------------------------------------ | --------------------------------------: |
-| Users                                                              |                      Include: All users |
-|                                                                    | Exclude: grp-Conditional_Access_Exclude |
-| Require Microsoft Entra ID multifactor authentication registration |                                 Checked |
-| Policy enforcement                                                 |                                 Enabled |
+| Item                                                               |                                               Value |
+| ------------------------------------------------------------------ | --------------------------------------------------: |
+| Users                                                              |                                  Include: All users |
+|                                                                    | Exclude: `<Conditional Access excluded identities>` |
+| Require Microsoft Entra ID multifactor authentication registration |                                             Checked |
+| Policy enforcement                                                 |                                             Enabled |
 
 ### Related information
 

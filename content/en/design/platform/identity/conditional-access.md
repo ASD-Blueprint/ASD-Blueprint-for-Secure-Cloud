@@ -1,100 +1,200 @@
 ---
-title: Conditional Access
+title: "Conditional Access"
+linkTitle: "Conditional Access"
 weight: 70
-description: "This section describes the design decisions associated with conditional access for system(s) built using ASD's Blueprint for Secure Cloud."
+description: "This section describes the design decisions associated with Conditional Access for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Conditional Access provides access controls that can be applied to user login requests. These access controls provide an extra level of security to help protect corporate data and information. When a user attempts to access an application or system from any device, one or more conditions must be met before authentication is successful.
+Conditional Access makes policy-based decisions to decide how user and workload identities access the resources associated with an Entra ID tenant. When an access request is a performed, a set of conditions, comprising the set of all Conditional Access policies, are evaluated to decide if access is granted.
 
-Conditional Access offers the following types of access controls:
+### Conditional Access deployment considerations
 
-* **User and location based** - User and location based Conditional Access limits or blocks user access based on their geolocation or IP address.
-* **Device based** - Device based Conditional Access ensures only enrolled and approved devices can access corporate data.
-* **Application based** - Application based Conditional Access policies provide the ability to allow or block an application based on policy configuration.
-* **Risk-based** - Risk-based Conditional Access protects corporate data from malicious hackers based on a user's sign-in risk. The sign-in risk is an indicator of the likelihood (high, medium, or low) that a sign-in attempt was not performed by the legitimate owner of a user account. Entra ID calculates the sign-in risk level during the sign-in process of a user.
-* **Session based** - Session based Conditional Access policies enables the control of user sessions by redirecting the user through a reverse proxy instead of directly to the app. From then on, user requests and responses go through Cloud App Security rather than directly to the app.
+Conditional access should be used for controlling access wherever possible.
 
-Based on the above conditions the user will either: be allowed, prompted for multi-factor authentication or blocked.
+#### Policy names
 
-{{% alert title="Design Decisions" color="warning" %}}
+Policy names should give a clear indication of the scope, type, and purpose of the control.
 
-| Decision Point             | Design Decision                                                                                         | Justification                                                                                                                                             |
-| -------------------------- | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Security Defaults          | Disabled                                                                                                | Security Defaults must be disabled to implement Conditional Access policies.                                                                              |
-| User based policies        | Allow user access from Australian IPs only, ensure acceptance of Terms of Use, and Block "Guest" access | Blocks all connections from countries except Australia and forces Terms of Use on all authentications.                                                    |
-| Device based policies      | Limit access to enrolled, compliant (Microsoft Endpoint enrolled) Windows devices                       | To meet security and business requirements. This allows only managed organisation issued devices access to the organisation's resources.                              |
-| Application based policies | Application connection through VPN only                                                                 | Ensure users are connected to the network before accessing applications.                                                                                  |
-| Risk-based policies        | Block Legacy Authentication and high risk logins                                                        | Blocks all connections from insecure legacy protocols like ActiveSync, IMAP, POP3, etc., and all high-risk authentications (requires Entra ID Premium P2). |
-| Session Based Policies     | Expire user sessions after 12 hours                                                                     | Removes legacy sessions.                                                                                                                                   |
+{{% alert title="Design decisions" color="warning" %}}
+
+| Decision Point | Design Decision                                                    | Justification                   |
+| -------------- | ------------------------------------------------------------------ | ------------------------------- |
+| Policy name    | [ADM\|APP\|DEV\|GST\|LOC\|OTH\|USR\|WKL] - [B\|G\|S] - [*purpose*] | Enhanced operational visibility |
 
 {{% /alert %}}
 
-Microsoft provides [Conditional Access policy templates](https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-policy-common) which cover a range of scenarios and are considered Microsoft's best practice for Conditional Access.
+- ADM - a policy that relates to administrative users
+- APP - a policy that relates to applications<sup>1</sup>
+- DEV - a policy that relates to devices
+- GST - a policy that relates to guest users
+- LOC - a policy that relates to locations
+- OTH - a policy that doesn't easily fit the other categories<sup>1</sup>
+- USR - a policy that relates to users
+- OTH - a policy that doesn't easily fit the other categories<sup>1</sup>
+- WKL - a policy that relates to workload identities<sup>1</sup>
+
+---
+
+- B - a policy that blocks access
+- G - a policy that grants access
+- S - a policy that alters session behaviour
+
+1: These policy names are not implemented in the Blueprint.
+
+See the [Conditional Access policies]({{<ref "conditional-access/policies">}}) configuration page for examples.
+
+Organisations may wish to implement numbering or other keyword standards within the policy name for versioning, to group policy types, or to substitute commonly used wording (abbreviating policy names). Consideration should be given to:
+
+- the resulting order of policy names in the Entra portal when selecting a prefix for policy names
+- the extensibility of names, including for deviations from existing policies and atypical scenarios
+- the use of special characters in policy names if using any automation or programmatic methods of management
+- marking changes to existing policies or the *pre-production* status of newly developed policies
+
+#### Groups
+
+Groups can be used to ensure that policies are scoped to the correct subset of identities.
+
+The use of *exclude* groups is a common practice that allows groups of identities to be excluded from policy control, because of this the management and membership of exclude groups should be tightly controlled.
+
+{{% alert title="Design decisions" color="warning" %}}
+
+| Decision Point                                                | Design Decision                                                               | Justification                                                                                                                       |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Conditional Access exclude groups                             | Use separate exclude groups for each Conditional Access policy                | Provide flexibility in bypassing Conditional Access policy control                                                                  |
+| Conditional Access exclude group membership                   | Use Privileged Identity Management (PIM) for exclude group membership changes | Conditional Access exclude group membership should be tightly controlled                                                            |
+| Conditional Access exclude group lifecycle                    | Use access reviews for exclude group membership                               | Effectively maintain exclude group membership                                                                                       |
+| Administrative users in Conditional Access policy assignments | Use groups as well as roles to identity administrative users                  | Using groups helps mitigate gaps that could occur in Conditional Access policy control when just using role assignments<sup>1</sup> |
+
+{{% /alert %}}
+
+1: Using roles in Conditional Access policy assignments may need regular maintenance as roles are regularly updated by Microsoft. New role assignments to users may also require Conditional Access policies to be checked to ensure the role has also been selected within the policy assignment to be included or excluded.
+
+The use of exclude groups is discussed in more detail in the [groups design page]({{<ref "identity/groups">}}).
+
+The use of access reviews is discussed in more detail in the [groups design page]({{<ref "identity/governance">}}).
+
+The use of PIM for exclude group changes is discussed in more detail in the [role-based access control design page]({{<ref "identity/roles">}}).
+
+#### Emergency access
+
+Methods like *break glass* accounts and related exclude groups can be used to mitigate a tenant lockout.
+
+{{% alert title="Design decisions" color="warning" %}}
+
+| Decision Point   | Design Decision                                                     | Justification           |
+| ---------------- | ------------------------------------------------------------------- | ----------------------- |
+| Emergency access | Exclude Break glass accounts from Conditional Access policy control | Mitigate tenant lockout |
+
+{{% /alert %}}
+
+The use of break glass accounts is discussed in more detail in the [enterprise users design page]({{<ref "identity/users">}}).
+
+#### Other deployment considerations
+
+To enhance operational visibility, policy complexity should be minimised by keeping the policy's purpose focussed on a single objective.
+
+### Named locations
+
+Named locations are used primarily for location-based policy control, and while they can be useful, they should not be used when similarly capable, location-agnostic controls are available.
+
+{{% alert title="Design decisions" color="warning" %}}
+
+| Decision Point            | Design Decision                                             | Justification                                                                                                               |
+| ------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Named locations countries | Allow access only from specific countries                   | Limit the sign-in noise associated with access attempts originating from outside the organisation's countries of operations |
+| Named locations IPs       | Set public IP addresses associated with known egress points | Enhance Identity Protection risk profiling                                                                                  |
+
+{{% /alert %}}
+
+### Terms of use
+
+Organisations may wish to consider using different terms of use targeted to different user-types or use cases. For example, a notice for beta-testing an application with external users might require different terms to an employee accessing Microsoft 365 applications.
+
+### Authentication contexts
+
+Authentication contexts allow select applications to trigger policy control.
+
+| Decision Point          | Design Decision                                            | Justification                 |
+| ----------------------- | ---------------------------------------------------------- | ----------------------------- |
+| Authentication contexts | Restrict access to PROTECTED information to employees only | Protect sensitive information |
+
+The use of authentication contexts is discussed in more detail in the [Purview design page]({{<ref "shared-services/purview">}}).
+
+### Authentication strengths
+
+Authentication strengths allow customisation of the specific methods used to authenticate users.
+
+| Decision Point                                   | Design Decision                                                | Justification                                          |
+| ------------------------------------------------ | -------------------------------------------------------------- | ------------------------------------------------------ |
+| Authentication strengths for user access         | Use phishing-resistant MFA                                     | Comply with Essential Eight requirements               |
+| Authentication strengths for bootstrapping flows | Use phishing-resistant MFA plus temporary access passes (TAPs) | Facilitate onboarding and replacement device MFA setup |
 
 ### Conditional Access policies
 
-Using the Microsoft templates as a base, the below is the list of Conditional Access policies recommended by the Blueprint:
+For policy details see the [Conditional Access policies]({{<ref "conditional-access/policies">}}) configuration page.
 
-| Policy                                                                    | Description                                                                                                                                                                                                                                         |
-| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Allow access from compliant iOS devices                                   | Grants access to managed iOS devices that are enrolled and compliant in Intune. An approved Microsoft app is required on iOS.                                                                                                                       |
-| Allow access from compliant Windows devices                               | Grants access to managed Windows devices that are Intune enrolled and compliant and/or Hybrid Entra ID joined. This policy also enforces MFA to access resources.                                                                                   |
-| Block countries not allowed                                               | Blocks all connections from countries not in the allowed countries list.                                                                                                                                                                            |
-| Block guest access                                                        | Deny all guest and external users by default.                                                                                                                                                                                                       |
-| Block legacy authentication                                               | Blocks all connections from insecure legacy protocols such as ActiveSync, IMAP, and POP3.                                                                                                                                                           |
-| Block non-trusted IPs                                                     | Blocks access from IP addresses not in the allowed IPs list.                                                                                                                                                                                        |
-| Block unapproved devices                                                  | Prevents access from device types not included in the Blueprint (Android, Windows Phone and macOS).                                                                                                                                                 |
-| Enforce MFA Legacy Methods                                                | Enforces MFA using only Windows Hello, Security Key, Password + Hard Token for all users.                                                                                                                                                           |
-| Expire administration sessions                                            | Enforces a sign-in frequency to ensure administrators sessions do not remain active for longer than 4 hours.                                                                                                                                        |
-| Expire user sessions                                                      | Enforces a sign-in frequency to ensure non-privileged users are required to complete an MFA prompt every 12 hours.                                                                                                                                  |
-| Require acceptance of Terms of Use                                        | Meet requirement for user acceptance of terms and conditions.                                                                                                                                                                                       |
-| Require multi-factor authentication for all users                         | MS004: Meets the requirement to enforce MFA for all users. This is a fallback policy given enforcement of MFA Legacy Methods.                                                                                                                       |
-| Require multi-factor authentication for administrators                    | MS001: Meets the requirement to enforce MFA for all users. This is a fallback policy given all users require MFA.                                                                                                                                   |
-| Require multi-factor authentication for management Azure Management       | MS006: Meets the requirement to enforce MFA for all users. This is a fallback policy given all users require MFA.                                                                                                                                   |
-| Require multi-factor authentication for risky sign-ins                    | Additional authentication check when sign in identified as outside normal behaviour. This is a fallback policy given all users require MFA.                                                                                                         |
-| Require password change for high-risk users                               | This is the preferred method as opposed to just using Entra ID Protection settings for risky sign-ins as it provides [additional capabilities](https://learn.microsoft.com/entra/identity/conditional-access/howto-conditional-access-policy-risk). |
-| Require phishing-resistant multi-factor authentication for administrators | Enforces use of phishing resistant multi-factor authentication for all administrators.                                                                                                                                                              |
-| Securing security info registration                                       | Enforces the requirement for token or temporary password issue before registering other MFA methods.                                                                                                                                                |
+| Administrative user policies               | Description                                                 |
+| ------------------------------------------ | ----------------------------------------------------------- |
+| Time-box web-based administrative sessions | Expire web-based administrative user sessions after 4-hours |
 
-{{% alert title="Note" color="info" %}}
+| Device policies                                    | Description                                                          |
+| -------------------------------------------------- | -------------------------------------------------------------------- |
+| Block access from unapproved devices               | Prevent access from devices other than iOS and Windows-based devices |
+| Require strong authentication for Intune enrolment | Enforce phishing-resistant MFA when enrolling a device with Intune   |
+| Require the use of compliant devices               | Require Intune device compliance for all devices                     |
 
-Persistence across browser sessions is also controlled by the [Company Branding Setting](https://learn.microsoft.com/entra/fundamentals/how-to-customize-branding) `Show option to remain signed in` which is set to `Yes`. This doesn't change the session lifetime, but allows sessions to remain active when users close and re-open their browsers thereby increasing the user experience.
+| Guest policies                              | Description                                                |
+| ------------------------------------------- | ---------------------------------------------------------- |
+| Block access for unapproved guests          | Prevent access for all guests                              |
+| Allow guest access to specific applications | Allow approved guests access to specific applications only |
 
-{{% /alert %}}
+| Location policies                      | Description                                                     |
+| -------------------------------------- | --------------------------------------------------------------- |
+| Block access from unapproved countries | Prevent access from countries not in the allowed countries list |
 
-### Conditional Access Exceptions
+| User policies                                                       | Description                                                                                     |
+| ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Block access via legacy authentication methods                      | Prevent access via legacy authentication methods that do not support MFA                        |
+| Require strong authentication for users                             | Enforce phishing-resistant MFA for non-administrative users                                     |
+| Require agreement to terms of use                                   | Require agreement to an acceptable use policy before access                                     |
+| Require strong authentication when registering security information | Enforce phishing-resistant MFA and allow the use of a TAP when registering security information |
+| Block high-risk sign-ins                                            | Prevent high risk sign-ins that are likely malicious                                            |
+| Require strong re-authentication for risky sign-ins                 | Require phishing-resistant MFA for low to medium risk sign-ins                                  |
+| Block high-risk users                                               | Prevent access from accounts that are likely compromised                                        |
+| Block users with elevated insider risks                             | Prevent access from accounts where a trusted negatively impacts the organisation                |
+| Time-box web-based user sessions                                    | Expire web-based non-administrative user sessions after 16-hours                                |
 
-#### Device Enrolment Exception
+#### Contingency policies
 
-During [device enrolment]({{<ref "device-enrolment">}}) a new machine needs to be registered with Microsoft Intune. To [register the Device ID]({{<ref "device-enrolment#windows-autopilot-overview">}}) a powershell script is run on the device which connects to Microsoft Intune and prompts the administrator enrolling the device to login. When the administrator authenticates, two Conditional Access policies block authentication:
+Organisations may wish to implement disabled policies that are activated in the event of a critical situation such as a business continuity event or security breach. The policies below are not implemented in the Blueprint but intended to example ideas for policy development.
 
-* **Allow access from compliant Windows devices** - At this stage the device has not had policies applied and therefore is not compliant.
-* **Block non-trusted IPs** - At this stage the device has no VPN and cannot be connected to the network. Any login is coming from the "cloud".
-
-To enable device enrolment a group is excepted from these policies. This group will be a privileged group containing a limited number of Platform Administrators who carry out device enrollments with an "approval" workflow to stop compromised account self elevation. This is a temporary time bound elevation of 30 minutes duration. Strong MFA is enforced when the user logs in from the non-compliant device outside the network.
+| Contingency policies                                 | Description                                                                 |
+| ---------------------------------------------------- | --------------------------------------------------------------------------- |
+| Enable for BCP activation - MFA disruption           | Enable additional authentication methods / disable MFA for particular users |
+| Enable for security break - external malicious actor | Enforce access from trusted location                                        |
 
 ### Related information
 
 #### Security & Governance
 
-* [Essential Eight MFA guidance]({{<ref "multi-factor-authentication">}})
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+- [Essential Eight MFA guidance]({{<ref "essential-eight/multi-factor-authentication">}})
+- [Authentication hardening]({{<ref "system-security-plan/system-hardening-authentication">}})
+- [Enterprise mobility]({{<ref "system-security-plan/enterprise-mobility">}})
 
 #### Design
 
-* [Multi-factor Authentication]({{<ref "authentication/#multi-factor-authentication">}})
-* [device enrolment]({{<ref "device-enrolment">}})
-* [Register the Device ID]({{<ref "device-enrolment#windows-autopilot-overview">}})
-* [Entra ID Protection]({{<ref "protection.md">}})
+- [Device enrolment]({{<ref "client/device-enrolment">}})
+- [Entra ID Protection]({{<ref "identity/protection">}})
+- [Multi-factor authentication]({{<ref "identity/authentication/#multi-factor-authentication">}})
+- [Register device IDs]({{<ref "client/device-enrolment/#windows-autopilot-overview">}})
 
 #### Configuration
 
-* [Conditional Access policy]({{<ref "configuration/entra-id/protection/conditional-access" >}})
+- [Conditional Access policies]({{<ref "conditional-access/policies">}})
 
 #### References
 
-* [Conditional Access Overview](https://learn.microsoft.com/entra/identity/conditional-access/overview)
-* [Common Policies](https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation)
-* [Security Defaults in Entra ID](https://learn.microsoft.com/entra/fundamentals/security-defaults)
-* [Session Lifetimes](https://learn.microsoft.com/entra/identity/conditional-access/howto-conditional-access-session-lifetime)
+- [Authentication strengths](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-strengths)
+- [Conditional Access](https://learn.microsoft.com/en-au/entra/identity/conditional-access/)
+- [Network assignment](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-assignment-network)
+- [Terms of use](https://learn.microsoft.com/en-us/entra/identity/conditional-access/terms-of-use)

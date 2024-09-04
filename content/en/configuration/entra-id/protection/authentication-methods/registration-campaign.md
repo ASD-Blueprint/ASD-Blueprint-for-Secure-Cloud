@@ -22,12 +22,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Settings
 
-| Item                       |                          Value |
-| -------------------------- | -----------------------------: |
-| State                      |                        Enabled |
-| Days allowed to snooze     |                        14 days |
-| Limited number of snoozes  |                        Enabled |
-| excluded users and groups  | grp-Conditional_Access_Exclude |
+| Item                      |                                    Value |
+| ------------------------- | ---------------------------------------: |
+| State                     |                                  Enabled |
+| Days allowed to snooze    |                                  14 days |
+| Limited number of snoozes |                                  Enabled |
+| excluded users and groups | `<Conditional Access excluded identities>` |
 
 ### Authentication method
 

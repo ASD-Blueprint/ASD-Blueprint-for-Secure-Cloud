@@ -1,6 +1,6 @@
 ---
-title: "USR - B - Block high-risk sign-ins"
-linkTitle: "USR - B - Block high-risk sign-ins"
+title: "ADM - S - Limit admin sessions"
+linkTitle: "ADM - S - Limit admin sessions"
 weight: 10
 type: docs
 description: "This page describes the configuration of policies for Conditional Access within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -22,22 +22,27 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Name
 
-| Item |                              Value |
-| ---- | ---------------------------------: |
-| Name | USR - B - Block high-risk sign-ins |
+| Item |                          Value |
+| ---- | -----------------------------: |
+| Name | ADM - S - Limit admin sessions |
 
 ### Assignments
 
 #### Users
 
-| Item                    |                                                     Value |
-| ----------------------- | --------------------------------------------------------: |
-| **Include**             |                                                 All users |
-| **Exclude**             |                                                           |
-| Guest or external users |                                               Not checked |
-| Directory roles         |                                               Not checked |
-| Users and groups        |                                                   Checked |
-|                         | `<CA exclude group - USR - B - Block high-risk sign-ins>` |
+| Item                    |                                                            Value |
+| ----------------------- | ---------------------------------------------------------------: |
+| **Include**             |                                                                  |
+| Guest or external users |                                                      Not checked |
+| Directory roles         |                                                          Checked |
+|                         |                          *Select applicable administrator roles* |
+| Users and groups        |                                                          Checked |
+|                         |                                    `<Administrative user group>` |
+| **Exclude**             |                                                                  |
+| Guest or external users |                                                      Not checked |
+| Directory roles         |                                                      Not checked |
+| Users and groups        |                                                          Checked |
+|                         | `<CA exclude group - DEV - G - Limit admin sessions>` |
 
 #### Target Resources
 
@@ -58,11 +63,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item                               |          Value |
 | ---------------------------------- | -------------: |
 | **User risk**                      | Not configured |
-| **Sign-in risk**                   |            Yes |
-| High                               |        Checked |
-| Medium                             |    Not checked |
-| Low                                |    Not checked |
-| No risk                            |    Not checked |
+| **Sign-in risk**                   | Not configured |
 | **Insider risk**                   | Not configured |
 | **Device platforms**               | Not configured |
 | **Locations**                      | Not configured |
@@ -74,9 +75,18 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Grant
 
-| Item                                                |        Value |
-| --------------------------------------------------- | -----------: |
-| Control access enforcement to block or grant access | Block access |
+| Item                                                |                                Value |
+| --------------------------------------------------- | -----------------------------------: |
+| Control access enforcement to block or grant access |                         Grant access |
+| Require multifactor authentication                  |                          Not checked |
+| Require authentication strength                     |                          Not checked |
+| Require device to be marked as compliant            |                          Not checked |
+| Require Microsoft Entra hybrid joined device        |                          Not checked |
+| Require approved client app                         |                          Not checked |
+| Require app protection policy                       |                          Not checked |
+| Require password change                             |                          Not checked |
+| Terms                                               |                          Not checked |
+| For multiple controls                               | Require all of the selected controls |
 
 #### Session
 
@@ -84,7 +94,9 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------------------------------------- | ----------: |
 | Use app enforced restrictions                           | Not checked |
 | Use Conditional Access App Control                      | Not checked |
-| Sign-in frequency                                       | Not checked |
+| Sign-in frequency                                       |     Checked |
+| - Periodic reauthentication                             |     4 hours |
+| - Every time                                            | Not checked |
 | Persistent browser session                              | Not checked |
 | Customize continuous access evaluation                  | Not checked |
 | Disable resilience defaults                             | Not checked |
@@ -102,17 +114,17 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 #### Security & Governance
 
 * [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
+* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
 * [Authentication Hardening]({{<ref "system-hardening-authentication">}})
 
 #### Design
 
 * [Conditional access]({{<ref "design/platform/identity/conditional-access">}})
-* [Entra ID Protection]({{<ref "design/platform/identity/protection.md">}})
 
 #### Configuration
 
+* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
 * [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 
 #### References
 

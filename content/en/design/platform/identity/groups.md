@@ -1,32 +1,106 @@
 ---
-title: Groups
+title: "Groups"
+linkTitle: "Groups"
 weight: 25
-description: "This section describes the design decisions associated with groups and group naming conventions for system(s) built using ASD's Blueprint for Secure Cloud."
+description: "This section describes the design decisions associated with groups for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Groups can be three types:
+### Group types and membership
 
-* **Privileged** - Platform-owned administrative groups for access to the critical control and management security planes (e.g. subscriptions).
-* **Security** -  Resource Owner managed groups for access to data and workload security plane resources (e.g. applications).
-* **Microsoft 365** - User managed grouping for more fluid and temporary assignment for collaboration purposes (e.g. email groups, teams).
+Groups are used to organise and manage users and devices.
 
-Users can be assigned to these groups in a number of ways:
- 
-| Type                                             | Description                                                                                                                               | Usage                                                                                                  |
-| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Dynamically                                      | Based on a set of fixed rules, usually user metadata                                                                                      | Used by the platform owners for administrative purposes.                                               |
-| Assigned Directly                                | The group's owner or those with User Management Roles can assign users directly to the group using the Entra Portal or Group Access Panel | Used by Team Leads for ad hoc assignments to organisational / project based groupings for Microsoft 365 Groups. |
-| Privileged Group Activation                      | Specialised group where membership is activated for time-boxed periods using PIM                                                          | Used for privileged groups.                                                                            |
-| [Entitlement Packages]({{<ref "governance" >}})  | Assigns users to groups through request and approval process using Access Packages                                                        | Used by Resource Owners to assign users to Security Groups.                                            |
+There are two group types:
+
+- **Security groups** - for managing user and device access to shared resources.
+- **Microsoft 365 groups** - for managing collaboration with internal and external users via Microsoft 365 apps.
+
+And there are three membership types:
+
+- **Assigned** - user and device membership is static.
+- **Dynamic user** - user membership is managed via rules and workflows.
+- **Dynamic device** - device membership is managed via rules and workflows.
 
 {{% alert title="Design Decisions" color="warning" %}}
 
-| Decision Point                                    | Design Decision                                                                                                                                                          | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Permission Assignment                             | Users should not be directly assigned to resources                                                                                                                       | Groups should be used to reduce administrative overhead.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Administrator (Owner) Roles                       | Privileged Groups (PIM) must be used for all owner roles in the Control / Management / Workload / Data planes e.g. tenant, subscription, resource group, resource scopes | <li>Essential 8 Privileged access to systems and applications is automatically disabled after 45 days of inactivity. <li>Essential 8 Use of privileged access is centrally logged and protected from unauthorised modification and deletion, monitored for signs of compromise, and actioned when cyber security events are detected.<li>Essential 8 Changes to privileged accounts and groups are centrally logged and protected from unauthorised modification and deletion, monitored for signs of compromise, and actioned when cyber security events are detected. |
-| Service / Workload Consumer (Resource User) Roles | Entitlement Management must be used for all consumers of resources in the Workload / Data planes e.g. application, service users                                         | Ensure access is based on business need and follows "need to know" principle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Ad Hoc Collaborative (Information Sharing) Roles  | Use of Microsoft 365 groups should be limited for partitioning access to information in resources rather than the resources themselves                                            | Provide flexibility and self management for ease of collaboration where appropriate.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Decision Point      | Design Decision                                    | Justification                                |
+| ------------------- | -------------------------------------------------- | -------------------------------------------- |
+| Resource assignment | Users should not be assigned directly to resources | Using groups reduces administrative overhead |
+
+{{% /alert %}}
+
+#### Group ownership
+
+Group owners have additional privileges over group members and have the ability to manage group membership as well as other unique permissions.
+
+{{% alert title="Design Decisions" color="warning" %}}
+
+| Decision Point  | Design Decision                                                 | Justification                                             |
+| --------------- | --------------------------------------------------------------- | --------------------------------------------------------- |
+| Group ownership | Conditional Access exclude groups should have designated owners | Group owners should review membership via access packages |
+
+{{% /alert %}}
+
+Group ownership and group membership are separate concepts, and are also implemented differently depending on the group type:
+
+- for security groups, a group owner is not considered a group member
+- for Microsoft 365 groups, a group owner is considered a group member
+
+{{% alert title="Design Decisions" color="warning" %}}
+
+| Decision Point                               | Design Decision                                                                          | Justification                                                            |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Group ownership                              | Groups owners should be assigned where practical                                         | Group ownership facilitates group lifecycle management                   |
+| Group ownership of security-sensitive groups | Conditional Access exclude group owners should not also be members of the exclude groups | Conditional Access exclude group membership should be tightly controlled |
+
+{{% /alert %}}
+
+#### Nested groups
+
+Nested groups are a feature that allows groups to also be members of other groups, and have several limitations:
+
+- they cannot be used with role assignments
+- they cannot be used with group-based licensing
+- they only apply to security groups
+
+### Dynamic group membership
+
+Dynamic groups simplify the management of group membership by using rules to automatically assign and remove group members based on their attributes.
+
+While some of the attributes used by group members can be highly organisation-specific, there are several scenarios where dynamic group membership facilitates the implementation of Blueprint guidance:
+
+- Identifying administrative users
+- Identifying the devices used by administrative users
+
+{{% alert title="Design Decisions" color="warning" %}}
+
+| Decision Point                                                    | Design Decision                                                           | Justification                                                                                                               |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Dynamic group membership                                          | Dynamic assignment of users and devices should be used where practical    | Using dynamic membership reduces administrative overhead                                                                    |
+| Dynamic group membership for security-sensitive users and devices | Dynamic assignment of security-sensitive users and devices should be used | Using dynamic membership reduces administrative overhead and assists the management of security-sensitive users and devices |
+
+{{% /alert %}}
+
+Note, dynamic groups cannot be used with PIM.
+
+### Groups and roles
+
+#### Privileged Identity Management (PIM) for groups
+
+PIM can be used for just-in-time membership and ownership of groups.
+
+| Decision Point | Design Decision                                                 | Justification                                                            |
+| -------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| PIM for groups | Use PIM for adding members to Conditional Access exclude groups | Conditional Access exclude group membership should be tightly controlled |
+
+#### Role assigned groups
+
+Roles can be assigned to groups as well as users which can be useful for managing multiple users requiring the same permissions. Role assigned groups are also able to be used with PIM so group members don't need to have standing access to the role.
+
+{{% alert title="Design Decisions" color="warning" %}}
+
+| Decision Point       | Design Decision                                | Justification                                              |
+| -------------------- | ---------------------------------------------- | ---------------------------------------------------------- |
+| Role assigned groups | Users should not be assigned directly to roles | Using role assigned groups reduces administrative overhead |
 
 {{% /alert %}}
 
@@ -70,5 +144,3 @@ Microsoft 365 Groups includes a variety of governance controls, including an exp
 #### References
 
 * [Microsoft 365 Groups](https://learn.microsoft.com/microsoft-365/solutions/plan-organization-lifecycle-governance?view=o365-worldwide)
-
-

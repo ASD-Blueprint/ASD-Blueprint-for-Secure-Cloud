@@ -20,27 +20,27 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-| Method                           | Target                                              | Enabled |
-| -------------------------------- | --------------------------------------------------- | ------: |
-| FIDO2 security key               | All users, excluding grp-Conditional_Access_Exclude |     Yes |
-| Microsoft Authenticator          | All users, excluding grp-Conditional_Access_Exclude |     Yes |
-| SMS                              |                                                     |      No |
-| Temporary Access Pass settings   | All users, excluding grp-Conditional_Access_Exclude |     Yes |
-| Hardware OATH tokens (Preview)   |                                                     |      No |
-| Third-party software OATH tokens |                                                     |      No |
-| Voice call                       |                                                     |      No |
-| Email OTP                        |                                                     |      No |
-| Certificate-based authentication |                                                     |      No |
+| Method                           | Target                                                          | Enabled |
+| -------------------------------- | --------------------------------------------------------------- | ------: |
+| FIDO2 security key               | All users, excluding `<Conditional Access excluded identities>` |     Yes |
+| Microsoft Authenticator          | All users, excluding `<Conditional Access excluded identities>` |     Yes |
+| SMS                              |                                                                 |      No |
+| Temporary Access Pass settings   | All users, excluding `<Conditional Access excluded identities>` |     Yes |
+| Hardware OATH tokens (Preview)   |                                                                 |      No |
+| Third-party software OATH tokens |                                                                 |      No |
+| Voice call                       |                                                                 |      No |
+| Email OTP                        |                                                                 |      No |
+| Certificate-based authentication |                                                                 |      No |
 
 ### FIDO2 security key settings
 
 #### Enable and Target
 
-| Item    |                          Value |
-| ------- | -----------------------------: |
-| Enabled |                            Yes |
-| Target  |                      All users |
-| Exclude | grp-Conditional_Access_Exclude |
+| Item    |                                      Value |
+| ------- | -----------------------------------------: |
+| Enabled |                                        Yes |
+| Target  |                                  All users |
+| Exclude | `<Conditional Access excluded identities>` |
 
 #### Configure
 
@@ -57,11 +57,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Enable and Target
 
-| Item    |                          Value |
-| ------- | -----------------------------: |
-| Enabled |                            Yes |
-| Target  |                      All users |
-| Exclude | grp-Conditional_Access_Exclude |
+| Item    |                                      Value |
+| ------- | -----------------------------------------: |
+| Enabled |                                        Yes |
+| Target  |                                  All users |
+| Exclude | `<Conditional Access excluded identities>` |
 
 #### Configure
 
@@ -81,11 +81,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Enable and Target
 
-| Item    |                          Value |
-| ------- | -----------------------------: |
-| Enabled |                            Yes |
-| Target  |                      All users |
-| Exclude | grp-Conditional_Access_Exclude |
+| Item    |                                      Value |
+| ------- | -----------------------------------------: |
+| Enabled |                                        Yes |
+| Target  |                                  All users |
+| Exclude | `<Conditional Access excluded identities>` |
 
 #### Configure
 

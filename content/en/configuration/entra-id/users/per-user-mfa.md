@@ -1,7 +1,7 @@
 ---
 title: "Per-user MFA"
 linkTitle: "Per-user MFA"
-weight: 30
+weight: 40
 type: docs
 description: "This page describes the configuration of per-user MFA within Microsoft Azure Active Directory associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
