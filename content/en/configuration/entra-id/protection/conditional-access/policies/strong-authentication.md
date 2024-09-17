@@ -80,7 +80,7 @@ Before implementing these settings, organisations should continue to ensure that
 
 #### Grant
 
-[Authentication strengths]({{<ref "conditional-access/authentication-strengths">}}) will need to be configured prior to setting this access control.
+[Authentication strengths]({{<ref "configuration/entra-id/protection/conditional-access/authentication-strengths">}}) will need to be configured prior to setting this access control.
 
 | Item                                                |                                Value |
 | --------------------------------------------------- | -----------------------------------: |

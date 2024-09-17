@@ -50,7 +50,7 @@ Workbooks provide several pre-built reports related to common scenarios involvin
 #### Configuration
 
 * [Sign-in risk policy]({{<ref "sign-in-risk-policy.md">}})
-* [MFA for Risky Sign-ins]({{<ref "grant-require-mfa-for-risky-signins.md">}})
+* [MFA for Risky Sign-ins]({{<ref "configuration/entra-id/protection/conditional-access/policies/reauthentication-for-risky-sign-ins.md">}})
   
 #### References
 

@@ -21,11 +21,13 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-### Automated Configuration Deployment
+### Automated Configuration Deployment and Assessment
 
 #### Overview
 
 Some of the Purview configurations can be automatically deployed using Microsoft 365 Desired State Configuration (DSC).
+
+Some of the Purview configurations cannot be assessed automatically with M365DSC Blueprint. Please refer to those configuration pages to conduct a manual assessment.
 
 | Configuration                 | Blueprint Automation Provided |
 | ----------------------------- | ----------------------------- |
@@ -39,7 +41,7 @@ Some of the Purview configurations can be automatically deployed using Microsoft
 | - Labels                      | Yes (DSC)<sup>2</sup>         |
 | - Label Policies              | Yes (DSC)<sup>3</sup>         |
 | - Auto-Labeling               | No                            |
-| - Records Management          | No                            |
+| **Records Management**        | No                            |
 
 1: The Data Loss Prevention policies are created automatically, but the advanced rules must be manually configured. Refer to [Data Loss Prevention Policies]({{<ref "data-loss-prevention/policies">}}) for configuration guidance.
 

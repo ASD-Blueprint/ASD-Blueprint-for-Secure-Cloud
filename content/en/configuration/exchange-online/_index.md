@@ -21,11 +21,13 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-### Automated Configuration Deployment
+### Automated Configuration Deployment and Assessment
 
 #### Overview
 
 Some of the Exchange Online configurations can be automatically deployed using Microsoft 365 Desired State Configuration (DSC).
+
+Some of the Exchange Online configurations cannot be assessed automatically with M365DSC Blueprint. Please refer to those configuration pages to conduct a manual assessment.
 
 | Configuration     | Blueprint Automation Provided |
 | ----------------- | ----------------------------- |

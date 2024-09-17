@@ -45,7 +45,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Configuration
 
-* [MFA registration]({{<ref "configuration/entra-id/protection/conditional-access/policies/grant-mfa-registration.md">}})
+* [MFA registration]({{<ref "configuration/entra-id/protection/conditional-access/policies/register-security-info.md">}})
 
 #### References
 

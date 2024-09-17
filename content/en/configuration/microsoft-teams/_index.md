@@ -21,11 +21,13 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-### Automated Configuration Deployment
+### Automated Configuration Deployment and Assessment
 
 #### Overview
 
 All of the Teams configurations can be automatically deployed using Microsoft 365 Desired State Configuration (DSC).
+
+All of the Teams configurations can be automatically assessed using M365DSC Blueprint.
 
 #### Desired State Configuration
 

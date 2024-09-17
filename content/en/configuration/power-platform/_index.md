@@ -19,6 +19,8 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-### Automated Configuration Deployment
+### Automated Configuration Deployment and Assessment
 
 The Blueprint does not currently provide an automated mechanism to deploy the settings for this service.
+
+None of the Power Platform configurations can be assessed automatically with M365DSC Blueprint. Please refer to the configuration pages to conduct a manual assessment.

@@ -30,7 +30,6 @@ Policy names should give a clear indication of the scope, type, and purpose of t
 - LOC - a policy that relates to locations
 - OTH - a policy that doesn't easily fit the other categories<sup>1</sup>
 - USR - a policy that relates to users
-- OTH - a policy that doesn't easily fit the other categories<sup>1</sup>
 - WKL - a policy that relates to workload identities<sup>1</sup>
 
 ---
@@ -41,7 +40,7 @@ Policy names should give a clear indication of the scope, type, and purpose of t
 
 1: These policy names are not implemented in the Blueprint.
 
-See the [Conditional Access policies]({{<ref "conditional-access/policies">}}) configuration page for examples.
+See the [Conditional Access policies]({{<ref "configuration/entra-id/protection/conditional-access/policies">}}) configuration page for examples.
 
 Organisations may wish to implement numbering or other keyword standards within the policy name for versioning, to group policy types, or to substitute commonly used wording (abbreviating policy names). Consideration should be given to:
 
@@ -69,11 +68,11 @@ The use of *exclude* groups is a common practice that allows groups of identitie
 
 1: Using roles in Conditional Access policy assignments may need regular maintenance as roles are regularly updated by Microsoft. New role assignments to users may also require Conditional Access policies to be checked to ensure the role has also been selected within the policy assignment to be included or excluded.
 
-The use of exclude groups is discussed in more detail in the [groups design page]({{<ref "identity/groups">}}).
+The use of exclude groups is discussed in more detail in the [groups design page]({{<ref "design/platform/identity/groups">}}).
 
-The use of access reviews is discussed in more detail in the [groups design page]({{<ref "identity/governance">}}).
+The use of access reviews is discussed in more detail in the [groups design page]({{<ref "design/platform/identity/governance">}}).
 
-The use of PIM for exclude group changes is discussed in more detail in the [role-based access control design page]({{<ref "identity/roles">}}).
+The use of PIM for exclude group changes is discussed in more detail in the [role-based access control design page]({{<ref "design/platform/identity/roles">}}).
 
 #### Emergency access
 
@@ -87,7 +86,7 @@ Methods like *break glass* accounts and related exclude groups can be used to mi
 
 {{% /alert %}}
 
-The use of break glass accounts is discussed in more detail in the [enterprise users design page]({{<ref "identity/users">}}).
+The use of break glass accounts is discussed in more detail in the [enterprise users design page]({{<ref "design/platform/identity/users">}}).
 
 #### Other deployment considerations
 
@@ -118,7 +117,7 @@ Authentication contexts allow select applications to trigger policy control.
 | ----------------------- | ---------------------------------------------------------- | ----------------------------- |
 | Authentication contexts | Restrict access to PROTECTED information to employees only | Protect sensitive information |
 
-The use of authentication contexts is discussed in more detail in the [Purview design page]({{<ref "shared-services/purview">}}).
+The use of authentication contexts is discussed in more detail in the [Purview design page]({{<ref "design/shared-services/purview">}}).
 
 ### Authentication strengths
 
@@ -131,7 +130,7 @@ Authentication strengths allow customisation of the specific methods used to aut
 
 ### Conditional Access policies
 
-For policy details see the [Conditional Access policies]({{<ref "conditional-access/policies">}}) configuration page.
+For policy details see the [Conditional Access policies]({{<ref "configuration/entra-id/protection/conditional-access/policies">}}) configuration page.
 
 | Administrative user policies               | Description                                                 |
 | ------------------------------------------ | ----------------------------------------------------------- |
@@ -155,13 +154,13 @@ For policy details see the [Conditional Access policies]({{<ref "conditional-acc
 | User policies                                                       | Description                                                                                     |
 | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | Block access via legacy authentication methods                      | Prevent access via legacy authentication methods that do not support MFA                        |
-| Require strong authentication for users                             | Enforce phishing-resistant MFA for non-administrative users                                     |
+| Require strong authentication for users                             | Enforce phishing-resistant MFA for all users                                                    |
 | Require agreement to terms of use                                   | Require agreement to an acceptable use policy before access                                     |
 | Require strong authentication when registering security information | Enforce phishing-resistant MFA and allow the use of a TAP when registering security information |
 | Block high-risk sign-ins                                            | Prevent high risk sign-ins that are likely malicious                                            |
 | Require strong re-authentication for risky sign-ins                 | Require phishing-resistant MFA for low to medium risk sign-ins                                  |
 | Block high-risk users                                               | Prevent access from accounts that are likely compromised                                        |
-| Block users with elevated insider risks                             | Prevent access from accounts where a trusted negatively impacts the organisation                |
+| Block users with elevated insider risks                             | Prevent access from accounts where a trusted insider could negatively impact the organisation   |
 | Time-box web-based user sessions                                    | Expire web-based non-administrative user sessions after 16-hours                                |
 
 #### Contingency policies
@@ -171,26 +170,26 @@ Organisations may wish to implement disabled policies that are activated in the 
 | Contingency policies                                 | Description                                                                 |
 | ---------------------------------------------------- | --------------------------------------------------------------------------- |
 | Enable for BCP activation - MFA disruption           | Enable additional authentication methods / disable MFA for particular users |
-| Enable for security break - external malicious actor | Enforce access from trusted location                                        |
+| Enable for security break - external malicious actor | Enforce access from trusted locations                                       |
 
 ### Related information
 
 #### Security & Governance
 
-- [Essential Eight MFA guidance]({{<ref "essential-eight/multi-factor-authentication">}})
-- [Authentication hardening]({{<ref "system-security-plan/system-hardening-authentication">}})
-- [Enterprise mobility]({{<ref "system-security-plan/enterprise-mobility">}})
+- [Essential Eight MFA guidance]({{<ref "security-and-governance/essential-eight/multi-factor-authentication">}})
+- [Authentication hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-authentication">}})
+- [Enterprise mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility">}})
 
 #### Design
 
-- [Device enrolment]({{<ref "client/device-enrolment">}})
-- [Entra ID Protection]({{<ref "identity/protection">}})
-- [Multi-factor authentication]({{<ref "identity/authentication/#multi-factor-authentication">}})
-- [Register device IDs]({{<ref "client/device-enrolment/#windows-autopilot-overview">}})
+- [Device enrolment]({{<ref "design/platform/client/device-enrolment">}})
+- [Entra ID Protection]({{<ref "design/platform/identity/protection">}})
+- [Multi-factor authentication]({{<ref "design/platform/identity/authentication/#multi-factor-authentication">}})
+- [Register device IDs]({{<ref "design/platform/client/device-enrolment/#windows-autopilot-overview">}})
 
 #### Configuration
 
-- [Conditional Access policies]({{<ref "conditional-access/policies">}})
+- [Conditional Access policies]({{<ref "configuration/entra-id/protection/conditional-access/policies">}})
 
 #### References
 

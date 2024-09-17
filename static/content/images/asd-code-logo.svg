@@ -1,0 +1,11 @@
+<svg width="288" height="48" viewBox="0 0 288 48" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#FFF" fill-rule="evenodd">
+        <circle cx="24" cy="24" r="24"/>
+        <circle cx="216" cy="24" r="24"/>
+        <circle cx="108" cy="12" r="12"/>
+        <circle cx="108" cy="36" r="12"/>
+        <circle cx="132" cy="36" r="12"/>
+        <circle cx="276" cy="36" r="12"/>
+        <path d="M48 0h48v48H48zM144 0h48v48h-48zM120 0h24v24h-24zM240 0h24v24h-24zM264 0h24v24h-24zM240 24h24v24h-24z"/>
+    </g>
+</svg>

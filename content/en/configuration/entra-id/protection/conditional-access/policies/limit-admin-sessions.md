@@ -30,19 +30,19 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Users
 
-| Item                    |                                                            Value |
-| ----------------------- | ---------------------------------------------------------------: |
-| **Include**             |                                                                  |
-| Guest or external users |                                                      Not checked |
-| Directory roles         |                                                          Checked |
-|                         |                          *Select applicable administrator roles* |
-| Users and groups        |                                                          Checked |
-|                         |                                    `<Administrative user group>` |
-| **Exclude**             |                                                                  |
-| Guest or external users |                                                      Not checked |
-| Directory roles         |                                                      Not checked |
-| Users and groups        |                                                          Checked |
-|                         | `<CA exclude group - DEV - G - Limit admin sessions>` |
+| Item                    |                                                 Value |
+| ----------------------- | ----------------------------------------------------: |
+| **Include**             |                                                       |
+| Guest or external users |                                           Not checked |
+| Directory roles         |                                               Checked |
+|                         |               *Select applicable administrator roles* |
+| Users and groups        |                                               Checked |
+|                         |                         `<Administrative user group>` |
+| **Exclude**             |                                                       |
+| Guest or external users |                                           Not checked |
+| Directory roles         |                                           Not checked |
+| Users and groups        |                                               Checked |
+|                         | `<CA exclude group - ADM - S - Limit admin sessions>` |
 
 #### Target Resources
 

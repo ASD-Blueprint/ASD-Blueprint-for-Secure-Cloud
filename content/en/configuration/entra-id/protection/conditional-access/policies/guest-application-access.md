@@ -39,7 +39,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Guest or external users  |                                                                                                                                                                       Not checked |
 | Directory roles          |                                                                                                                                                                       Not checked |
 | Users and groups         |                                                                                                                                                                           Checked |
-|                          |                                                                                                                         `<CA exclude group - GST - G - Guest application access>` |
+|                          |                                                                                                        `<CA exclude group - GST - G - Guest application access with strong auth>` |
 
 #### Target Resources
 
@@ -74,7 +74,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Grant
 
-[Authentication strengths]({{<ref "conditional-access/authentication-strengths">}}) will need to be configured prior to setting this access control.
+[Authentication strengths]({{<ref "configuration/entra-id/protection/conditional-access/authentication-strengths">}}) will need to be configured prior to setting this access control.
 
 | Item                                                |                                Value |
 | --------------------------------------------------- | -----------------------------------: |

@@ -12,7 +12,7 @@ Identity governance encompasses:
 - Lifecycle workflows - the onboarding, offboarding and moves of users
 - Privileged Identity Management (PIM) - the just-in-time access management of privileged roles
 
-Identity governance has a significant role to play in implementing the principle of least privilege; enhancing security and mitigating risks by ensuring users are only accessing the resources relevant to their responsibilities, and nothing more. Information Security Manual (ISM), [Guidelines for Personnel Security, Access to systems and their resources](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-personnel-security) has several controls relevant to identity governance.
+Identity governance has a significant role to play in implementing the principle of least privilege; enhancing security and mitigating risks by ensuring users are only accessing the resources relevant to their responsibilities, and nothing more. The Information Security Manual (ISM), [Guidelines for Personnel Security, Access to systems and their resources](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-personnel-security) has several controls relevant to identity governance.
 
 ### Entitlement management
 
@@ -48,13 +48,13 @@ Access reviews for inactive users are subject to Microsoft Entra ID Governance l
 
 ### Lifecycle workflows
 
-Lifecycle workflows provide automation for the onboarding, offboarding and moves of users, and can integrate with an organisation's other user management systems like human resources and financial systems to further streamline such processes.
+Lifecycle workflows provide automation for the onboarding, offboarding and moves of users, and can integrate with an organisation's other user management systems, like human resources and financial systems, to further streamline such processes.
 
 Lifecycle workflows are subject to Microsoft Entra ID Governance license requirements and are not in implemented in the Blueprint.
 
 ### Privileged Identity Management (PIM)
 
-The use of PIM is discussed in more detail in the [Role-Based Access Control design page]({{<ref "identity/roles">}}).
+The use of PIM is discussed in more detail in the [Role-Based Access Control design page]({{<ref "design/platform/identity/roles">}}).
 
 ### Related information
 
@@ -64,9 +64,9 @@ The use of PIM is discussed in more detail in the [Role-Based Access Control des
 
 #### Design
 
-- [Conditional Access]({{<ref "identity/conditional-access">}})
-- [Groups]({{<ref "identity/groups">}})
-- [Role-based access control]({{<ref "identity/roles">}})
+- [Conditional Access]({{<ref "design/platform/identity/conditional-access">}})
+- [Groups]({{<ref "design/platform/identity/groups">}})
+- [Role-based access control]({{<ref "design/platform/identity/roles">}})
 
 #### Configuration
 
