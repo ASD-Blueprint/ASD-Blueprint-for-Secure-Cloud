@@ -27,3 +27,21 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Transcription for attendees        |                          Off |
 | Who can join scheduled live events | Everyone in the organization |
 | Record an event                    |                Always record |
+
+### Related information
+
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* [Organisation Wide Configuration]({{<ref "design/shared-services/teams/policies-and-settings">}})
+
+#### Configuration
+
+* None identified
+
+#### References
+
+* None identified

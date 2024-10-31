@@ -73,7 +73,13 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ----------------------------------------- | -----------------: |
 | Who can view the tenant licensing summary | Only Tenant Admins |
 
-### Auto-claim policies
+### Auto-claim policies for Power Apps
+
+| Item                                                 |                     Value |
+| ---------------------------------------------------- | ------------------------: |
+| Where should license auto-claim policies be applied? | Only Managed Environments |
+
+### Auto-claim policies for Power Automate
 
 | Item                                                 |                     Value |
 | ---------------------------------------------------- | ------------------------: |
@@ -101,7 +107,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                   |   Value |
 | ---------------------- | ------: |
-| Tenant-level analytics | Disable |
+| Tenant-level analytics | Enabled |
 
 ### Customer Lockbox
 

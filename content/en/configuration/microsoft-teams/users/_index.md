@@ -1,6 +1,6 @@
 ---
-title: "Teams users"
-linkTitle: "Teams users"
+title: "Users"
+linkTitle: "Users"
 weight: 20
 description: "This section describes the configuration of users within Microsoft Teams associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---

@@ -84,7 +84,9 @@ The below are the settings specific to hybrid deployments of SharePoint Online.
 
 #### Configuration
 
-* None identified
+* [Services]({{<ref "configuration/microsoft-365/settings/services">}})
+* [Sharing]({{<ref "configuration/sharepoint-online/policies/sharing">}})
+* [Access Control]({{<ref "configuration/sharepoint-online/policies/access-control">}})
 
 #### References
 

@@ -35,7 +35,7 @@ Per the support agreement terms and conditions, when organisations have not enab
 
 #### Configuration
 
-* None identified
+* [Security & privacy]({{<ref "configuration/microsoft-365/settings/security-and-privacy">}})
 
 #### References
 

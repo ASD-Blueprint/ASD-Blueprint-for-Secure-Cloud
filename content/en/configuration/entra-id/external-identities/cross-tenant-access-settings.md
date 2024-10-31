@@ -48,14 +48,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | External users and groups | All blocked |
 | External applications     | All blocked |
 
-### Default settings
+### Microsoft cloud settings
 
-#### Tenant restrictions (Preview)
-
-| Applies to                                   | Status  |
-| -------------------------------------------- | -------:|
-| Microsoft Azure Government                   | Not set |
-| Microsoft Azure China (operated by 21Vianet) | Not set |
+| Applies to                                   | Status      |
+| -------------------------------------------- | -----------:|
+| Microsoft Azure Government                   | Not checked |
+| Microsoft Azure China (operated by 21Vianet) | Not checked |
 
 ### Related information
 

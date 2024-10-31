@@ -10,7 +10,7 @@ description: "This page describes the configuration of entitlement management se
 
 The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
-<https://entra.microsoft.com/#view/Microsoft_AAD_ERM/DashboardBlade/~/elmSetting>>
+<https://entra.microsoft.com/#view/Microsoft_AAD_ERM/DashboardBlade/~/elmSetting>
 
 The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 
@@ -25,7 +25,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item                                                             | Value |
 | ---------------------------------------------------------------- | ----: |
 | Block external user from signing in to this directory            |   Yes |
-| Remove external user                                             |   yes |
+| Remove external user                                             |   Yes |
 | Number of days before removing external user from this directory |    30 |
 
 ### Related information

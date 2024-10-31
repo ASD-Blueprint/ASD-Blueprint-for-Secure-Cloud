@@ -46,7 +46,7 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to security do
 
 *   `<ORGANISATION-NAME>`'s [Cyber Security Strategy]({{<ref "security-and-governance/policies">}})
 *   `<SYSTEM-NAME>`'s [Continuous Monitoring Plan]({{<ref "security-and-governance/general-documentation">}})
-*   `<SYSTEM-NAME>`'s [System Security Plan]({{<ref "security-and-governance/system-security-plan">}}) (This document)
+*   `<SYSTEM-NAME>`'s [System Security Plan]({{<ref "security-and-governance/system-security-plan">}}) (this document)
 *   [System Security Plan Annex]({{<ref "annex.md">}})
 *   `<SYSTEM-NAME>`'s [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}})
 *   `<SYSTEM-NAME>`'s [Security Assessment Report]({{<ref "security-and-governance/general-documentation">}})

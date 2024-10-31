@@ -20,7 +20,7 @@ As `<ORGANISATION-NAME>`'s overall approach to implementing controls related to 
 
 #### Applicability
 
-ISM controls relating to cyber security incidents are applicable to ensuring `<SYSTEM-NAME>`receives appropriate overarching governance of cyber security matters within `<ORGANISATION-NAME>` and are covered by this section of the SSP.
+ISM controls relating to cyber security incidents are applicable to ensuring `<SYSTEM-NAME>` receives appropriate overarching governance of cyber security matters within `<ORGANISATION-NAME>` and are covered by this section of the SSP.
 
 `<ORGANISATION-NAME>` is responsible for implementing administrative controls to govern the direct management of, and response to the cyber security incidents for `<SYSTEM-NAME>`.
 

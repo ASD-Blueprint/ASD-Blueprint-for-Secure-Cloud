@@ -41,10 +41,10 @@ Some of the Entra ID configurations cannot be assessed automatically with M365DS
 | **Applications**              | No                            |
 | **Protection**                |                               |
 | - Identity Protection         | No                            |
-| - Conditional Access Policies | Yes (DSC)<sup>1</sup>         |
+| - Conditional Access Policies | Yes (DSC)<sup>1,4</sup>       |
 | - Authentication Contexts     | Yes (DSC)                     |
-| - Authentication Strengths    | No                            |
-| - Named Locations             | Yes (DSC)<sup>2</sup>         |
+| - Authentication Strengths    | No<sup>2</sup>                |
+| - Named Locations             | Yes (DSC)<sup>3</sup>         |
 | - Authentication Methods      | No                            |
 | - Password Reset              | No                            |
 | - Risky Activities            | No                            |
@@ -53,7 +53,11 @@ Some of the Entra ID configurations cannot be assessed automatically with M365DS
 
 1: All Conditional Access policies are set to report only in the DSC and will need to be enabled manually.
 
-2: IP addresses must be set manually. Refer to [Named Locations]({{<ref "protection/conditional-access/named-locations">}}) for configuration guidance.
+2: The [Phishing-resistant MFA and TAP]({{<ref "protection/conditional-access/authentication-strengths">}}) authentication strength must be created manually before performing a DSC import.
+
+3: IP addresses must be set manually. Refer to [Named Locations]({{<ref "protection/conditional-access/named-locations">}}) for configuration guidance.
+
+4: The Microsoft Intune Enrolment app used in the [DEV - G - Intune enrolment with strong auth]({{<ref "protection/conditional-access/policies/intune-enrolment">}})  Conditional Access policy is not created by default in new tenants, see the [require multifactor authentication for Intune device enrollments](https://learn.microsoft.com/en-us/mem/intune/enrollment/multi-factor-authentication#configure-intune-to-require-multifactor-authentication-at-device-enrollment) page for instructions to create it before performing a DSC import.
 
 #### Desired State Configuration
 

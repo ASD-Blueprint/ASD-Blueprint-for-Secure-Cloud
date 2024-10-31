@@ -22,3 +22,21 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item         | Value |
 | ------------ | ----: |
 | Guest Access |   Off |
+
+### Related information
+
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* [Organisation Wide Configuration]({{<ref "design/shared-services/teams/organisation-access">}})
+
+#### Configuration
+
+* None identified
+
+#### References
+
+* None identified

@@ -1,6 +1,6 @@
 ---
-title: "Call policies"
-linkTitle: "Call policies"
+title: "Calling policies"
+linkTitle: "Calling policies"
 weight: 00
 description: "This section describes the configuration of call policies within Microsoft Teams associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
@@ -42,3 +42,21 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Spam filtering                                                          |                   On |
 | SIP devices can be used for calls                                       |                  Off |
 | Open apps in browser for incoming PSTN call                             |                  Off |
+
+### Related information
+
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* [Unified Communication]({{<ref "design/shared-services/teams/unified-communications">}})
+
+#### Configuration
+
+* None identified
+
+#### References
+
+* None identified

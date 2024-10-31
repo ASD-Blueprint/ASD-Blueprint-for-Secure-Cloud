@@ -22,31 +22,37 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Name
 
-| Item |                                               Value |
-| ---- | --------------------------------------------------: |
+| Item |                                       Value |
+| ---- | ------------------------------------------: |
 | Name | DEV - G - Intune enrolment with strong auth |
 
 ### Assignments
 
 #### Users
 
-| Item                    |                                                                      Value |
-| ----------------------- | -------------------------------------------------------------------------: |
-| **Include**             |                                                                  All users |
-| **Exclude**             |                                                                            |
-| Guest or external users |                                                                Not checked |
-| Directory roles         |                                                                Not checked |
-| Users and groups        |                                                                    Checked |
+| Item                    |                                                              Value |
+| ----------------------- | -----------------------------------------------------------------: |
+| **Include**             |                                                          All users |
+| **Exclude**             |                                                                    |
+| Guest or external users |                                                        Not checked |
+| Directory roles         |                                                        Not checked |
+| Users and groups        |                                                            Checked |
 |                         | `<CA exclude group - DEV - G - Intune enrolment with strong auth>` |
 
 #### Target Resources
 
-| Item                               |                                           Value |
-| ---------------------------------- | ----------------------------------------------: |
-| Select what this policy applies to |                                      Cloud apps |
-| **Include**                        |                                     Select apps |
+| Item                               |                                          Value |
+| ---------------------------------- | ---------------------------------------------: |
+| Select what this policy applies to |                Resources (formerly cloud apps) |
+| **Include**                        |                                    Select apps |
 | Select                             | Microsoft Intune<br>Microsoft Intune Enrolment |
-| **Exclude**                        |                                            None |
+| **Exclude**                        |                                           None |
+
+{{% alert title="Intune apps" color="info" %}}
+
+The Microsoft Intune Enrolment app is not created by default in new tenants, see the [require multifactor authentication for Intune device enrollments](https://learn.microsoft.com/en-us/mem/intune/enrollment/multi-factor-authentication#configure-intune-to-require-multifactor-authentication-at-device-enrollment) page for instructions to create it.
+
+{{% /alert %}}
 
 #### Network
 
@@ -127,3 +133,4 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 * [Configure Microsoft Entra multifactor authentication settings](https://learn.microsoft.comentra/identity/authentication/howto-mfa-mfasettings)
 * [System-preferred multifactor authentication - Authentication methods policy](https://learn.microsoft.com/entra/identity/authentication/concept-system-preferred-multifactor-authentication)
 * [Protecting authentication methods in Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-default-enablement)
+* [Require multifactor authentication for Intune device enrollments](https://learn.microsoft.com/en-us/mem/intune/enrollment/multi-factor-authentication#configure-intune-to-require-multifactor-authentication-at-device-enrollment)

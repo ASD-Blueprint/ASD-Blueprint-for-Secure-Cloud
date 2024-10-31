@@ -34,7 +34,9 @@ The Australian Signals Directorate (ASD) Blueprint for Secure Cloud (The Bluepri
 
 #### Configuration
 
-* None identified
+* [Guest access]({{<ref "configuration/microsoft-teams/users/guest-access">}})
+* [External access]({{<ref "configuration/microsoft-teams/users/external-access">}})
+
 
 #### References
 

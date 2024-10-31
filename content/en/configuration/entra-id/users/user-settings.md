@@ -54,13 +54,6 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### User features
 
-#### Manage user feature settings
-
-| Item                                      | Value |
-| ----------------------------------------- | ----: |
-| User can use preview features for My Apps |  None |
-| Administrators can access My Staff        |  None |
-
 ### Related information
 
 #### Security & Governance

@@ -1,6 +1,6 @@
 ---
-title: "External Access"
-linkTitle: "External Access"
+title: "External access"
+linkTitle: "External access"
 weight: 30
 description: "This section describes the configuration of users within Microsoft Teams associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
@@ -36,3 +36,21 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item                                                           | Value |
 | -------------------------------------------------------------- | ----: |
 | Allow users in my organization to communicate with Skype users |    On |
+
+### Related information
+
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* [Organisation Wide Configuration]({{<ref "design/shared-services/teams/organisation-access">}})
+
+#### Configuration
+
+* None identified
+
+#### References
+
+* None identified

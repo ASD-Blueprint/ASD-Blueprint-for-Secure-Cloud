@@ -1,6 +1,6 @@
 ---
-title: "Teams meetings"
-linkTitle: "Teams meetings"
+title: "Meetings"
+linkTitle: "Meetings"
 weight: 40
 description: "This section describes the configuration of meetings within Microsoft Teams associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---

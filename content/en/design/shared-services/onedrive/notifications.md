@@ -42,7 +42,7 @@ OneDrive for Business Notification Configuration:
 
 #### Configuration
 
-* None identified
+* [Settings]({{<ref "configuration/sharepoint-online/settings">}})
 
 #### References
 

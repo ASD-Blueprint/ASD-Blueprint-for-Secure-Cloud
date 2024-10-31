@@ -38,7 +38,7 @@ The Whiteboard tool can be used with the Microsoft Surface hub appliance. When u
 
 #### Configuration
 
-* None identified
+* [Services]({{<ref "configuration/microsoft-365/settings/services">}})
 
 #### References
 

@@ -32,7 +32,7 @@ Note, Viva Learning content is subject to terms other than the Microsoft Product
 
 #### Configuration
 
-* None identified
+* [Services]({{<ref "configuration/microsoft-365/settings/services">}})
 
 #### References
 

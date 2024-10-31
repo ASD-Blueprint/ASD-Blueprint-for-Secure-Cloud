@@ -37,7 +37,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                                                                      | Value |
 | ------------------------------------------------------------------------- | ----: |
-| Users can create Microsoft 365 groups in Azure portals, API or PowerShell |    No |
+| Users can create Microsoft 365 groups in Azure portals, API or PowerShell |   Yes |
 
 ### Related information
 

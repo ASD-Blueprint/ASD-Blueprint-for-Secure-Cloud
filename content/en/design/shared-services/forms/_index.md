@@ -48,7 +48,7 @@ For new Microsoft 365 customers and those customers who have not previously used
 
 #### Configuration
 
-* None identified
+* [Services]({{<ref "configuration/microsoft-365/settings/services">}})
 
 #### References
 

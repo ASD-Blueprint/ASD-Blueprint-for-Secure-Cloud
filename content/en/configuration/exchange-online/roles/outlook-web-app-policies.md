@@ -43,12 +43,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ##### Information management
 
-| Item                  | Value |
-| --------------------- | ----: |
-| Journaling            |       |
-| Notes                 |  Checked |
-| Inbox rules           |  Checked |
-| Recover deleted items |  Checked |
+| Item                  |       Value |
+| --------------------- | ----------: |
+| Journaling            | Not checked |
+| Notes                 |     Checked |
+| Inbox rules           |     Checked |
+| Recover deleted items |     Checked |
 
 ##### Security
 

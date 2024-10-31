@@ -1,6 +1,6 @@
 ---
-title: "Events policies"
-linkTitle: "Events policies"
+title: "Messaging policies"
+linkTitle: "Messaging policies"
 weight: 00
 description: "This section describes the configuration of messaging within Microsoft Teams associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
@@ -48,3 +48,22 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Chat permission role                                            |       Restricted permissions |
 | Users with full chat permissions can delete any message         |                          Off |
 | Video messages                                                  |                           On |
+
+### Related information
+
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* [Organisation Wide Configuration]({{<ref "design/shared-services/teams/policies-and-settings">}})
+* [Unified Communication]({{<ref "design/shared-services/teams/unified-communications">}})
+
+#### Configuration
+
+* None identified
+
+#### References
+
+* None identified

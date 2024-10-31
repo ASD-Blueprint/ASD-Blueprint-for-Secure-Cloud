@@ -61,7 +61,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                                        |    Value |
 | ------------------------------------------- | -------: |
-| Let user add new quests to the organization | Disabled |
+| Let user add new guests to the organization | Disabled |
 
 ### Related information
 
@@ -71,7 +71,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
   
 #### Design
 
-* None identified
+* [Customer Lockbox]({{<ref "design/shared-services/microsoft-365/lockbox">}})
   
 #### Configuration
 

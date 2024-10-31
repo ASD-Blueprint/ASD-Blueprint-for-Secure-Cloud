@@ -24,6 +24,10 @@ Microsoft Planner is a task planning and assignment tool which can integrate wit
 
 * None identified
 
+#### Configuration
+
+* [Services]({{<ref "configuration/microsoft-365/settings/services">}})
+
 #### References
 
 * None identified

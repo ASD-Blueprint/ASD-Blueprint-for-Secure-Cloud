@@ -17,13 +17,13 @@ OneDrive and SharePoint can synchronise content locally through the OneDrive for
 
 Storage and Synchronisation Configuration Choices:
 
-| Configuration                                                  | Value     | Description                                                                                                                                                        |
-|----------------------------------------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Show the Sync button on the OneDrive Website                   | Checked   | The synchronise button enables OneDrive files to be synced locally through the OneDrive for Business client.                                                        |
-| Allow syncing only on PC joined to specific domains            | Checked   | Access to OneDrive content and synchronisation is controlled via Conditional Access, so this setting is not configured. Domain GUIDs to be provided by the Domain. |
-| Block syncing of specific file type                            | Unchecked | File type synchronisation is not restricted. Microsoft Defender for Office 365 provides additional protection against malicious files.                             |
-| Days to retain files after user account is marked for deletion | 365 days  | Must align with the organisation internal record keeping policies.                                                                                                 |
-| Limit OneDrive user Capacity                                   | 1024GB    | Default setting.                                                                                                                                                   |
+| Configuration                                                  | Value     | Description                                                                                                                                                  |
+| -------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Show the Sync button on the OneDrive Website                   | Checked   | The synchronise button enables OneDrive files to be synced locally through the OneDrive for Business client.                                                 |
+| Allow syncing only on PC joined to specific domains            | Checked   | OneDrive synchronisation is controlled via Conditional Access for Entra joined devices (only). Domain GUIDs for Active Directory domains should be provided. |
+| Block syncing of specific file type                            | Unchecked | File type synchronisation is not restricted. Microsoft Defender for Office 365 provides additional protection against malicious files.                       |
+| Days to retain files after user account is marked for deletion | 365 days  | Must align with the organisation internal record keeping policies.                                                                                           |
+| Limit OneDrive user Capacity                                   | 1024GB    | Default setting.                                                                                                                                             |
 
 ### Related information
 
@@ -37,7 +37,7 @@ Storage and Synchronisation Configuration Choices:
 
 #### Configuration
 
-* None identified
+* [Settings]({{<ref "configuration/sharepoint-online/settings">}})
 
 #### References
 

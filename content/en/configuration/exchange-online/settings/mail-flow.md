@@ -44,10 +44,13 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Message Recall
 
-| Item                                                 |   Value |
-| ---------------------------------------------------- | ------: |
-| Enable cloud-based message recall                    | Checked |
-| Allow users to recall messages read by the recipient | Checked |
+| Item                                                    |                                                      Value |
+| ------------------------------------------------------- | ---------------------------------------------------------: |
+| Enable cloud-based message recall                       |                                                    Checked |
+| Allow users to recall messages read by the recipient    |                                                    Checked |
+| Enable recall alerts for recipients                     |                                                    Checked |
+|                                                         | Only for recalled messages that were read by the recipient |
+| Do not allow senders to recall messages older than this |                                                      1 Day |
 
 ### Related information
 

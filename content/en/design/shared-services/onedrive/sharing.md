@@ -42,7 +42,7 @@ OneDrive sharing configuration choices:
 
 #### Configuration
 
-* None identified
+* [Sharing]({{<ref "configuration/sharepoint-online/policies/sharing">}})
 
 #### References
 

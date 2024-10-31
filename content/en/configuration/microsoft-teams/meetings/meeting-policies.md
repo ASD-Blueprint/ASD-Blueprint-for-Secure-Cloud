@@ -47,6 +47,15 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Meeting engagement
 
+| Item                 |           Value |
+| -------------------- | --------------: |
+| Meeting chat         | On for everyone |
+| External meeting chat|              On |
+| Q&A                  |              On |
+| Reactions            |              On |
+
+#### Content Sharing
+
 | Item                                              |                       Value |
 | ------------------------------------------------- | --------------------------: |
 | Who can present                                   | People in my org and guests |
@@ -84,3 +93,21 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Participants can use video effects             |                   All video effects |
 | Live streaming                                 |                                 Off |
 | Allow streaming media input                    |                             *blank* |
+
+### Related information
+
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* [Organisation Wide Configuration]({{<ref "design/shared-services/teams/policies-and-settings">}})
+
+#### Configuration
+
+* None identified
+
+#### References
+
+* None identified

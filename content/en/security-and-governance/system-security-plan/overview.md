@@ -53,40 +53,40 @@ The objectives of the `<SYSTEM-NAME>` are to:
 `<SYSTEM-NAME>` includes the following components that will improve the security posture of `<ORGANISATION-NAME>`:
 
 *  **Identity** including:
-* Microsoft Entra ID (previously known as Azure Active Directory)
-* Multi-Factor Authentication (MFA)
-* Conditional Access
-* Privileged Identity Management
+    * Microsoft Entra ID (previously known as Azure Active Directory)
+    * Multi-Factor Authentication (MFA)
+    * Conditional Access
+    * Privileged Identity Management
 *  **Microsoft 365** including:
-* Exchange Online & Exchange Online Protection
-* SharePoint Online
-* OneDrive for Business
-* Power Platform** (Power Automate and Power Apps)
-* Microsoft Teams
-* Office 365 Applications
+    * Exchange Online & Exchange Online Protection
+    * SharePoint Online
+    * OneDrive for Business
+    * Power Platform (Power Automate and Power Apps)
+    * Microsoft Teams
+    * Office 365 Applications
 *  **Device management (Intune)** including:
-* Windows 10
-* Windows 11
-* iOS
+    * Windows 10
+    * Windows 11
+    * iOS
 *  **Connectivity**
-* Cloud to cloud
-* Endpoints
-* Point to site
-* Government to Government (GovLINK)
+    * Cloud to cloud
+    * Endpoints
+    * Point to site
+    * Government to Government (GovLINK)
 *  **Security and Compliance Services** including:
-* Microsoft Defender:
-* Microsoft Defender for Cloud Apps
-* Microsoft Defender for Endpoints
-* Microsoft Defender for Identity
-* Microsoft Defender for Office 365
-* Microsoft Defender Vulnerability Management (MDVM)
-* Microsoft Information Protection
-* Microsoft Purview
-* Log Analytics
+    * Microsoft Defender XDR
+    * Microsoft Defender for Cloud Apps
+    * Microsoft Defender for Endpoints
+    * Microsoft Defender for Identity
+    * Microsoft Defender for Office 365
+    * Microsoft Defender Vulnerability Management (MDVM)
+    * Microsoft Information Protection
+    * Microsoft Purview
+    * Log Analytics
 *  **Automation** including:
-* Desired State Configuration (DSC)
-* Microsoft Graph
-* PowerShell
+    * Desired State Configuration (DSC)
+    * Microsoft Graph
+    * PowerShell
 *  **Support**
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`

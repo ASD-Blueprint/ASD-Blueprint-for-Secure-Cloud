@@ -29,3 +29,21 @@ To create a new policy click +Add
 | Create Shared Channels                   |                        On |
 | Invite external users to shared channels |                       Off |
 | Join external shared channels            |                       Off |
+
+### Related information
+
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* [Organisation Wide Configuration]({{<ref "design/shared-services/teams/policies-and-settings">}})
+
+#### Configuration
+
+* None identified
+
+#### References
+
+* None identified

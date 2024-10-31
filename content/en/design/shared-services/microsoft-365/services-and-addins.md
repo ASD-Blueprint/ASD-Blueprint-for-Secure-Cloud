@@ -51,7 +51,8 @@ The below design decisions are based on general requirements and consider the lo
 
 #### Configuration
 
-* None identified
+* [Services]({{<ref "configuration/microsoft-365/settings/services">}})
+
 #### References
 
 * None identified

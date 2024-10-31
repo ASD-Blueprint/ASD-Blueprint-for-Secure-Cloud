@@ -23,15 +23,15 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Unmanaged devices
 
-| Item                           | Value |
-| ------------------------------ | ----: |
-| Allow limited, web-only access |  True |
+| Item                           |    Value |
+| ------------------------------ | -------: |
+| Allow limited, web-only access | Selected |
 
 ### Idle session sign-out
 
 | Item                                                 |     Value |
 | ---------------------------------------------------- | --------: |
-| Sign out inactive users automatically                |      True |
+| Sign out inactive users automatically                |        On |
 | Sign out users after:                                |    1 hour |
 | Give users this much notice before signing them out: | 5 minutes |
 
@@ -39,16 +39,34 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                                              | Value |
 | ------------------------------------------------- | ----: |
-| Allow access only from specific IP address ranges | False |
+| Allow access only from specific IP address ranges |   Off |
 
 ### Apps that don't use modern authentication
 
-| Item         | Value |
-| ------------ | ----: |
-| Block access |  True |
+| Item         |    Value |
+| ------------ | -------: |
+| Block access | Selected |
 
 ### OneDrive access restriction
 
-| Item                                                                | Value |
-| ------------------------------------------------------------------- | ----: |
-| Restrict OneDrive access to only users in specified security groups | False |
+| Item                                                                |     Value |
+| ------------------------------------------------------------------- | --------: |
+| Restrict OneDrive access to only users in specified security groups | Unchecked |
+
+### Related information
+
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* [Sharing and Access Controls]({{<ref "design/shared-services/sharepoint-online/sharing">}})
+
+#### Configuration
+
+* None identified
+
+#### References
+
+* None identified

@@ -44,7 +44,7 @@ Microsoft 365 Groups, by default can be created by any user. This can be restric
 
 #### Design
 
-* [Group Naming Conventions]({{<ref "design/platform/identity/groups">}})
+* [Groups]({{<ref "design/platform/identity/groups">}})
 
 #### Configuration
 

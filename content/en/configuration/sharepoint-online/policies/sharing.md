@@ -38,8 +38,27 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Other settings
 
-| Item                                                                                          | Value |
-| --------------------------------------------------------------------------------------------- | ----: |
-| Show owners the names of people who viewed their files in OneDrive                            |  True |
-| Let site owners choose to display the names of people who viewed files or pages in SharePoint |  True |
-| Use short links for sharing files and folders                                                 |  True |
+| Item                                                                                          |   Value |
+| --------------------------------------------------------------------------------------------- | ------: |
+| Show owners the names of people who viewed their files in OneDrive                            | Checked |
+| Let site owners choose to display the names of people who viewed files or pages in SharePoint | Checked |
+| Use short links for sharing files and folders                                                 | Checked |
+
+### Related information
+
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* [Sharing and Access Controls]({{<ref "design/shared-services/sharepoint-online/sharing">}})
+* [Sharing]({{<ref "design/shared-services/onedrive/sharing">}})
+
+#### Configuration
+
+* [Services]({{<ref "configuration/microsoft-365/settings/services">}})
+
+#### References
+
+* None identified

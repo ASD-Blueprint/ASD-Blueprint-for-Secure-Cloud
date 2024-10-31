@@ -41,11 +41,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Target Resources
 
-| Item                               |          Value |
-| ---------------------------------- | -------------: |
-| Select what this policy applies to |     Cloud apps |
-| **Include**                        | All cloud apps |
-| **Exclude**                        |           None |
+| Item                               |                                     Value |
+| ---------------------------------- | ----------------------------------------: |
+| Select what this policy applies to |           Resources (formerly cloud apps) |
+| **Include**                        | All resources (formerly 'All cloud apps') |
+| **Exclude**                        |                                      None |
 
 #### Network
 

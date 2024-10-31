@@ -43,13 +43,13 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Target Resources
 
-| Item                               |           Value |
-| ---------------------------------- | --------------: |
-| Select what this policy applies to |      Cloud apps |
-| **Include**                        |     Select apps |
-| Edit filter                        |            None |
-| Select                             | `<application>` |
-| **Exclude**                        |            None |
+| Item                               |                           Value |
+| ---------------------------------- | ------------------------------: |
+| Select what this policy applies to | Resources (formerly cloud apps) |
+| **Include**                        |                     Select apps |
+| Edit filter                        |                            None |
+| Select                             |                 `<application>` |
+| **Exclude**                        |                            None |
 
 #### Network
 

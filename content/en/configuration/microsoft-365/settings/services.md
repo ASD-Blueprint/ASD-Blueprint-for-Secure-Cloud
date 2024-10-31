@@ -101,9 +101,9 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Microsoft 365 on the web
 
-| Item                                                                                   |   Value |
-| -------------------------------------------------------------------------------------- | ------: |
-| Let users open files store in third-party storage services in Microsoft 365 on the web | Enabled |
+| Item                                                                                   |    Value |
+| -------------------------------------------------------------------------------------- | -------: |
+| Let users open files store in third-party storage services in Microsoft 365 on the web | Disabled |
 
 ### Microsoft communication to users
 
@@ -115,9 +115,9 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                                                  |    Value |
 | ----------------------------------------------------- | -------: |
-| Send a link to the form and collect responses         | Disabled |
-| Share to collaborate on the form layout and structure | Disabled |
-| Share the form as the template that can be duplicated | Disabled |
+| Send a link to the form and collect responses         |  Enabled |
+| Share to collaborate on the form layout and structure |  Enabled |
+| Share the form as the template that can be duplicated |  Enabled |
 | Share form result summary                             | Disabled |
 | Record named by default                               | Disabled |
 | Include Bing search, YouTube videos                   | Disabled |
@@ -250,7 +250,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Turn on Whiteboard for everyone in your org                                                                                     |  Enabled |
 | Neither - No diagnostic data about Whiteboard client software running on the devices in your organizations is sent to Microsoft | Selected |
 | Allow the use of optional connected experiences in legacy Whiteboard                                                            | Disabled |
-| Enable easy sharing of legacy whiteboards from Surface Hub                                                                      | Disabled |
+| Enable easy sharing of legacy whiteboards from Surface Hub                                                                      |  Enabled |
 
 ### Related information
 
@@ -260,11 +260,16 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
   
 #### Design
 
-* None identified
+* [Services and Add-Ins]({{<ref "design/shared-services/microsoft-365/services-and-addins">}})
+* [Sharing and Access Controls]({{<ref "design/shared-services/sharepoint-online/sharing">}})
+* [Microsoft Whiteboard]({{<ref "design/shared-services/whiteboard">}})
+* [Microsoft Forms]({{<ref "design/shared-services/forms">}})
+* [Microsoft Planner]({{<ref "design/shared-services/planner">}})
+* [Viva Learning]({{<ref "design/shared-services/viva-learning">}})
   
 #### Configuration
 
-* None identified
+* [Sharing]({{<ref "configuration/sharepoint-online/policies/sharing">}})
 
 #### References
 

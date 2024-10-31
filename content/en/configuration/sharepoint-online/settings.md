@@ -25,38 +25,38 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Notifications
 
-| Item                | Value |
-| ------------------- | ----: |
-| Allow notifications |  True |
+| Item                |   Value |
+| ------------------- | ------: |
+| Allow notifications | Checked |
 
 #### Pages
 
-| Item                               | Value |
-| ---------------------------------- | ----: |
-| Allow users to create modern pages |  True |
-| Allow commenting on modern pages   |  True |
+| Item                               |   Value |
+| ---------------------------------- | ------: |
+| Allow users to create modern pages | Checked |
+| Allow commenting on modern pages   | Checked |
 
 #### Site creation
 
 | Item                              |                                   Value |
 | --------------------------------- | --------------------------------------: |
-| Users can create SharePoint sites |                                   False |
+| Users can create SharePoint sites |                               Unchecked |
 | Create team sites under           |                                 /sites/ |
 | Default time zone                 | (UTC+10:00 Canberra, Melbourne, Sydney) |
 
 #### Site storage limits
 
-| Item      | Value |
-| --------- | ----: |
-| Automatic |  True |
+| Item      |    Value |
+| --------- | -------: |
+| Automatic | Selected |
 
 ### OneDrive
 
 #### Notification
 
-| Item                | Value |
-| ------------------- | ----: |
-| Allow notifications |  True |
+| Item                |   Value |
+| ------------------- | ------: |
+| Allow notifications | Checked |
 
 #### Retention
 
@@ -72,11 +72,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Sync
 
-| Item                                                       | Value |
-| ---------------------------------------------------------- | ----: |
-| Show the Sync button on the OneDrive website               |  True |
-| Allow syncing only on computers joined to specific domains | False |
-| Block upload of specific file types                        | False |
+| Item                                                          |     Value |
+| ------------------------------------------------------------- | --------: |
+| Show the Sync button on the OneDrive website                  |   Checked |
+| Allow syncing only on computers joined to specific domains    |   Checked |
+| - Enter each Active Directory domain as a GUID on a new line. |  `<GUID>` |
+| Block upload of specific file types                           | Unchecked |
 
 ### Related information
 
@@ -88,6 +89,8 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 * [SharePoint]({{<ref "design/shared-services/sharepoint-online">}})
 * [Entra ID Protection]({{<ref "design/platform/identity/protection.md">}})
+* [Notifications]({{<ref "design/shared-services/onedrive/notifications">}})
+* [Storage and Synchronisation]({{<ref "design/shared-services/onedrive/storage-and-synchronisation">}})
   
 #### Configuration
 

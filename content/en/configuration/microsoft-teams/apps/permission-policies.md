@@ -26,3 +26,21 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Microsoft apps   | Allow all apps |
 | Third-party apps | Block all apps |
 | Custom apps      | Block all apps |
+
+### Related information
+
+#### Security & Governance
+
+* None identified
+
+#### Design
+
+* [Organisation Wide Configuration]({{<ref "design/shared-services/teams/policies-and-settings">}})
+
+#### Configuration
+
+* None identified
+
+#### References
+
+* None identified
