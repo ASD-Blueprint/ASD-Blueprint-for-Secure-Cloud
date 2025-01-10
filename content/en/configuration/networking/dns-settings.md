@@ -55,7 +55,7 @@ The following table describes the DKIM records configuration settings per implem
 
 ### DNS records
 
-Note, the Autodiscover service external DNS entry is specific to the Hybrid implementation of the organisation. Once all mailboxes have been migrated to Office 365 within a Hybrid configuration this can be pointed as an alias to the Office 365 Autodiscover service using [autodiscover.outlook.com](autodiscover.outlook.com).
+Note, the Autodiscover service external DNS entry is specific to the Hybrid implementation of the organisation. Once all mailboxes have been migrated to Office 365 within a Hybrid configuration this can be pointed as an alias to the Office 365 Autodiscover service using autodiscover.outlook.com .
 
 Hybrid implementation types will require additional external DNS records depending on the hybrid implementation (classic or modern). The additional certificate requirements for hybrid can be located at - [certificate requirements for hybrid deployments](https://docs.microsoft.com/exchange/certificate-requirements).
 
