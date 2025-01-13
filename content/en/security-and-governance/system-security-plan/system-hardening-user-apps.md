@@ -117,8 +117,6 @@ Where an organisation appropriately assesses hardening user applications for ser
 
 * [Essential Eight: User Application Hardening]({{< ref "user-application-hardening.md">}})
 * [Essential Eight: Restrict Microsoft Office Macros]({{< ref "restrict-microsoft-office-macros.md">}})
-* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
-
 
 #### Design
 

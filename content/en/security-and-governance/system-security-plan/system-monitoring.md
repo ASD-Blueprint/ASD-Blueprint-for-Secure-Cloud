@@ -38,19 +38,19 @@ Technical controls for system monitoring of `<SYSTEM-NAME>` are configured with 
 * Windows devices and Microsoft 365 services leverage Microsoft's Window Time service
 * Microsoft Entra ID logs authentication events to Log Analytics
 * the following events are logged to the local event log on each Windows endpoint:
-* access to important data and processes
-* application crashes and any error messages
-* attempts to use special privileges
-* changes to accounts
-* changes to security policy
-* changes to system configurations
-* DNS and Hypertext Transfer Protocol (HTTP) requests
-* failed attempts to access data and system resources
-* service failures and restarts
-* system startup and shutdown
-* transfer of data to external media
-* user or group management
-* use of special privileges
+  * access to important data and processes
+  * application crashes and any error messages
+  * attempts to use special privileges
+  * changes to accounts
+  * changes to security policy
+  * changes to system configurations
+  * DNS and Hypertext Transfer Protocol (HTTP) requests
+  * failed attempts to access data and system resources
+  * service failures and restarts
+  * system startup and shutdown
+  * transfer of data to external media
+  * user or group management
+  * use of special privileges
 * logs include the date and time of the event, the relevant user or process, the event description, and the ICT equipment involved are recorded
 * logs stored in Log Analytics are protected from unauthorised access, modification and deletion by the Microsoft Entra ID RBAC model. 
 * Standard Windows users do not have access to modify the local event logs.

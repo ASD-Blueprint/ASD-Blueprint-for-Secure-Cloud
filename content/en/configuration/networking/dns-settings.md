@@ -49,24 +49,24 @@ The following table describes the DKIM records configuration settings per implem
 
 | Implementation | Type  | Domain                  | Host name                     | TTL      |                                                              Points to address or value |
 | -------------- | ----- | ----------------------- | ----------------------------- | -------- | --------------------------------------------------------------------------------------: |
-| Cloud-native   | CNAME | `<organisation.gov.au>` | `selector1._domainkey`       | `5 Min.` | `selector1-Organisation-gov-au._domainkey.<Organisationinitialdomain>.onmicrosoft.com.` |
-| Cloud-native   | CNAME | `<organisation.gov.au>` | `selector2._domainkey`       | `5 Min.` |              `selector2-Organisation-gov-au._domainkey.<Organisation>.onmicrosoft.com.` |
+| Cloud-native   | CNAME | `<organisation.gov.au>` | `selector1._domainkey`        | `5 Min.` | `selector1-Organisation-gov-au._domainkey.<Organisationinitialdomain>.onmicrosoft.com.` |
+| Cloud-native   | CNAME | `<organisation.gov.au>` | `selector2._domainkey`        | `5 Min.` |              `selector2-Organisation-gov-au._domainkey.<Organisation>.onmicrosoft.com.` |
 | Hybrid         | CNAME | `<organisation.gov.au>` | `<gateway provided selector>` | `5 Min.` |                                                           `<gateway provided selector>` |
 
 ### DNS records
 
-Note, the Autodiscover service external DNS entry is specific to the Hybrid implementation of the organisation. Once all mailboxes have been migrated to Office 365 within a Hybrid configuration this can be pointed as an alias to the Office 365 Autodiscover service using [autodiscover.outlook.com](autodiscover.outlook.com).
+Note, the Autodiscover service external DNS entry is specific to the Hybrid implementation of the organisation. Once all mailboxes have been migrated to Office 365 within a Hybrid configuration this can be pointed as an alias to the Office 365 Autodiscover service using `autodiscover.outlook.com`.
 
 Hybrid implementation types will require additional external DNS records depending on the hybrid implementation (classic or modern). The additional certificate requirements for hybrid can be located at - [certificate requirements for hybrid deployments](https://docs.microsoft.com/exchange/certificate-requirements).
 
 The following table describes the DNS record settings to be configured for Organisation.gov.au (default) per implementation type.
 
-| Implementation | Type  | Priority | Host name                           | Points to address or value                               |    TTL |
-| -------------- | ----- | -------- | ----------------------------------- | -------------------------------------------------------- | -----: |
-| Cloud-native   | MX    | `10`     | Organisation Domain                 | `Organisation-gov-au.mail.protection.outlook.com`        | 1 hour |
-| Hybrid         | MX    | `10`     | Organisation Domain                 | Organisation mx provider address.                        | 1 hour |
-| Hybrid         | CNAME | -        | Organisation Edge Transport address | Organisation edge transport gateway address.             | 1 hour |
-| Hybrid         | CNAME | -        | Organisation CAS/EWS NAT address    | Organisation CAS/EWS NAT when using hybrid classic full. | 1 hour |
-| All            | TXT   | -        | Organisation Domain                 | Text string provided by Office 365 domain setup wizard.  | 1 hour |
-| Cloud-native   | CNAME | -        | Autodiscover.Organisation.gov.au    | `autodiscover.outlook.com`                               | 1 hour |
-| Hybrid         | CNAME | -        | Autodiscover.Organisation.gov.au    | Organisation autodiscover NAT address.                   | 1 hour |
+| Implementation | Type  | Priority | Host name                            | Points to address or value                               |    TTL |
+| -------------- | ----- | -------- | ------------------------------------ | -------------------------------------------------------- | -----: |
+| Cloud-native   | MX    | `10`     | `<organisation.gov.au>`              | `Organisation-gov-au.mail.protection.outlook.com`        | 1 hour |
+| Hybrid         | MX    | `10`     | `<organisation.gov.au>`              | Organisation mx provider address.                        | 1 hour |
+| Hybrid         | CNAME | -        | Organisation Edge Transport address  | Organisation edge transport gateway address.             | 1 hour |
+| Hybrid         | CNAME | -        | Organisation CAS/EWS NAT address     | Organisation CAS/EWS NAT when using hybrid classic full. | 1 hour |
+| All            | TXT   | -        | `<organisation.gov.au>`              | Text string provided by Office 365 domain setup wizard.  | 1 hour |
+| Cloud-native   | CNAME | -        | `<autodiscover.organisation.gov.au>` | `autodiscover.outlook.com`                               | 1 hour |
+| Hybrid         | CNAME | -        | `<autodiscover.organisation.gov.au>` | Organisation autodiscover NAT address.                   | 1 hour |
