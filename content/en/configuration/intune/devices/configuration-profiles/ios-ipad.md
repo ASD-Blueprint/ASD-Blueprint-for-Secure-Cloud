@@ -61,7 +61,7 @@ None
 
 | Item                                                    |                                            Value |
 | ------------------------------------------------------- | -----------------------------------------------: |
-| Block Siri                                              |                                              Yes |
+| Block Siri                                              |                                              No  |
 | Require Safari fraud warnings                           |                                              Yes |
 | Block internet search results from Spotlight            |                                              Yes |
 | Safari cookies                                          | Block all cookies, and block cross site tracking |
@@ -69,20 +69,20 @@ None
 | Block Safari pop-ups                                    |                                              Yes |
 | Block Siri for dictation                                |                                              Yes |
 | Block Siri for translation                              |                                              Yes |
-| Block camera                                            |                                              Yes |
-| Block FaceTime                                          |                                              Yes |
-| Block Apple Books                                       |                                              Yes |
-| Block iMessage                                          |                                              Yes |
-| Block Podcasts                                          |                                              Yes |
-| Music service                                           |                                              Yes |
-| Block iTunes Radio                                      |                                              Yes |
+| Block camera                                            |                                              No  |
+| Block FaceTime                                          |                                              No  |
+| Block Apple Books                                       |                                              No  |
+| Block iMessage                                          |                                              No  |
+| Block Podcasts                                          |                                              No  |
+| Music service                                           |                                              No  |
+| Block iTunes Radio                                      |                                              No  |
 | Block iTunes store                                      |                                              Yes |
 | Block Find My iPhone                                    |                                              Yes |
 | Block Find My Friends                                   |                                              Yes |
 | Block user modification to the Find My Friends settings |                                              Yes |
 | Block removal of system apps from device                |                                              Yes |
-| Block Safari                                            |                                              Yes |
-| Block Safari Autofill                                   |                                              Yes |
+| Block Safari                                            |                                              No  |
+| Block Safari Autofill                                   |                                              No  |
 
 #### Cloud and Storage
 
@@ -92,8 +92,8 @@ None
 | Block managed apps from storing data in iCloud       |   Yes |
 | Block backup of enterprise books                     |   Yes |
 | Block notes and highlights sync for enterprise books |   Yes |
-| Block iCloud Photos sync                             |   Yes |
-| Block iCloud Photo Library                           |   Yes |
+| Block iCloud Photos sync                             |   No  |
+| Block iCloud Photo Library                           |   No  |
 | Block My Photo Stream                                |   Yes |
 | Block Handoff                                        |   Yes |
 | Block iCloud backup                                  |   Yes |
@@ -108,20 +108,20 @@ None
 | Require AirPlay outgoing requests pairing password |   Yes |
 | Block Apple Watch auto unlock                      |   Yes |
 | Block AirDrop                                      |   Yes |
-| Block pairing with Apple Watch                     |   Yes |
-| Block modifying Bluetooth settings                 |   Yes |
+| Block pairing with Apple Watch                     |   No  |
+| Block modifying Bluetooth settings                 |   No  |
 | Block pairing with non-Configurator hosts          |   Yes |
 | Block AirPrint                                     |   Yes |
 | Block setting up new nearby devices                |   Yes |
 | Block access to USB drive in Files app             |   Yes |
-| Disable near-field communication (NFC)             |   Yes |
+| Disable near-field communication (NFC)             |   No  |
 
 #### General
 
 | Item                                                                     | Value |
 | ------------------------------------------------------------------------ | ----: |
 | Block sending diagnostic and usage data to Apple                         |   Yes |
-| Block screenshots and screen recording                                   |   Yes |
+| Block screenshots and screen recording                                   |   No  |
 | Block untrusted TLS certificates                                         |   Yes |
 | Block over-the-air PKI updates                                           |   Yes |
 | Force limited ad tracking                                                |   Yes |
@@ -132,12 +132,12 @@ None
 | Block modification of account settings                                   |   Yes |
 | Block Screen Time                                                        |   Yes |
 | Block users from erasing all content and settings on device              |   Yes |
-| Block modification of device name                                        |   Yes |
-| Block modification of notifications settings                             |   Yes |
-| Block modification of Wallpaper                                          |   Yes |
+| Block modification of device name                                        |   No  |
+| Block modification of notifications settings                             |   No  |
+| Block modification of Wallpaper                                          |   No  |
 | Block configuration profile changes                                      |   Yes |
 | Allow activation lock                                                    |   Yes |
-| Block removing apps                                                      |   Yes |
+| Block removing apps                                                      |   No  |
 | Block app clips                                                          |   Yes |
 | Force automatic date and time                                            |   Yes |
 | Block VPN creation                                                       |   Yes |
@@ -167,9 +167,9 @@ None
 | Maximum minutes of inactivity until screen locks              |     1 Minute |
 | Password expiration (days)                                    |          365 |
 | Prevent reuse of previous passwords                           |            5 |
-| Block Touch ID and Face ID unlock                             |          Yes |
+| Block Touch ID and Face ID unlock                             |          No  |
 | Block passcode modification                                   |          Yes |
-| Block modification of Touch ID fingerprints and Face ID faces |          Yes |
+| Block modification of Touch ID fingerprints and Face ID faces |          No  |
 | Block password AutoFill                                       |          Yes |
 | Block password proximity requests                             |          Yes |
 | Block password sharing                                        |          Yes |
