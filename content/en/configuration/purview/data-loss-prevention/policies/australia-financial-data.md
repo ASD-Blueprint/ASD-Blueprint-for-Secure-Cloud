@@ -22,7 +22,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item        |                                                                                                                                    Value |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------: |
-| Name        |                                                                                               Australia Financial Data (Policy Template) |
+| Name        |                                                                                                                 Australia Financial Data |
 | Description | Helps detect the presence of information commonly considered to be financial data in Australia, including credit cards, and SWIFT codes. |
 
 ### Admin units
