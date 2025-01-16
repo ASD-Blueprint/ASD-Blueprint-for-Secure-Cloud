@@ -22,7 +22,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item        |                                                                                                                                                                                                                                                                                                     Value |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Name        |                                                                                                                                                                                                                                                          Australia Privacy Act Enhanced (Policy Template) |
+| Name        |                                                                                                                                                                                                                                                          Australia Privacy Act Enhanced  |
 | Description | Helps detect the presence of information commonly considered to be subject to the privacy act in Australia, like driver's license and passport number. This enhanced template extends the original by also detecting people's full names, medical terms and conditions, and Australia physical addresses. |
 
 ### Admin units
