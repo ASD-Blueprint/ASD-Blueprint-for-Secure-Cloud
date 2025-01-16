@@ -22,7 +22,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item        |                                                                                                                                                                 Value |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Name        |                                                                                            Australia Personally Identifiable Information (PII) Data (Policy Template) |
+| Name        |                                                                                                              Australia Personally Identifiable Information (PII) Data |
 | Description | Helps detect the presence of information commonly considered to be personally identifiable information (PII) in Australia, like tax file number and driver's license. |
 
 ### Admin units
