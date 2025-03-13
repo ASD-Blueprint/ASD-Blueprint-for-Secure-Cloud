@@ -273,7 +273,7 @@ This includes the processing, analysis, and response to the following event logs
 
 * [Microsoft Intune - Applications]({{<ref "configuration/intune/apps">}})
 * [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
 
 

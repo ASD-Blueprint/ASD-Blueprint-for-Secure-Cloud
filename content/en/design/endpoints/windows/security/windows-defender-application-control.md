@@ -55,7 +55,7 @@ When deploying WDAC it is important that it is deployed utilising audit mode pri
 
 #### Configuration
 
-* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines.md">}})
 
 #### References
 

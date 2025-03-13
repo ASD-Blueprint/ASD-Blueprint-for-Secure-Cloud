@@ -71,18 +71,18 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 [Authentication strengths]({{<ref "configuration/entra-id/protection/conditional-access/authentication-strengths">}}) will need to be configured prior to setting this access control.
 
-| Item                                                |                                Value |
-| --------------------------------------------------- | -----------------------------------: |
-| Control access enforcement to block or grant access |                         Grant access |
-| Require multifactor authentication                  |                          Not checked |
-| Require authentication strength                     |   Phishing-resistant MFA:<br>Checked |
-| Require device to be marked as compliant            |                          Not checked |
-| Require Microsoft Entra hybrid joined device        |                          Not checked |
-| Require approved client app                         |                          Not checked |
-| Require app protection policy                       |                          Not checked |
-| Require password change                             |                          Not checked |
-| Terms                                               |                          Not checked |
-| For multiple controls                               | Require one of the selected controls |
+| Item                                                |                                      Value |
+| --------------------------------------------------- | -----------------------------------------: |
+| Control access enforcement to block or grant access |                               Grant access |
+| Require multifactor authentication                  |                                Not checked |
+| Require authentication strength                     | Checked:<br>Phishing-resistant MFA and TAP |
+| Require device to be marked as compliant            |                                Not checked |
+| Require Microsoft Entra hybrid joined device        |                                Not checked |
+| Require approved client app                         |                                Not checked |
+| Require app protection policy                       |                                Not checked |
+| Require password change                             |                                Not checked |
+| Terms                                               |                                Not checked |
+| For multiple controls                               |       Require one of the selected controls |
 
 #### Session
 
@@ -117,7 +117,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Configuration
 
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
 
 #### References

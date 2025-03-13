@@ -47,7 +47,7 @@ Bluetooth pairing and allowed services are also controllable. The default state 
 
 #### Configuration
 
-* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines.md">}})
 
 #### References
 

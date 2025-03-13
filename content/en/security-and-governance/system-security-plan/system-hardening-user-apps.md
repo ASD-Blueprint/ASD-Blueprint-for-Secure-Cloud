@@ -129,11 +129,11 @@ Where an organisation appropriately assesses hardening user applications for ser
 
 * [Microsoft Intune - Applications]({{<ref "configuration/intune/apps">}})
 * [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 
 #### External documentation
 
 * ASD's [*Guidelines for System Hardening*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-hardening)
-* ASD's [*Shifting the Balance of Cybersecurity Risk: Principles and Approaches for Security-by-Design and Default*](https://www.cyber.gov.au/about-us/view-all-content/publications/principles-and-approaches-for-security-by-design-and-default)
-* ASD's [*The Case for Memory Safe Roadmaps*](https://www.cyber.gov.au/about-us/view-all-content/publications/case-memory-safe-roadmaps)
+* ASD's [*Shifting the Balance of Cybersecurity Risk: Principles and Approaches for Security-by-Design and Default*](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/secure-by-design/shifting-balance-cybersecurity-risk?ref=search)
+* ASD's [*The Case for Memory Safe Roadmaps*](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/secure-by-design/case-memory-safe-roadmaps)

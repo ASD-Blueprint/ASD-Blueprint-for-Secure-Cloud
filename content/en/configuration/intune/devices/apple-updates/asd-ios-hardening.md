@@ -29,10 +29,10 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Update policy settings
 
-| Item              |                            Value |
-| ----------------- | -------------------------------: |
-| Update to install | Install iOS/iPadOS Latest update |
-| Schedule type     |          Update at next check-in |
+| Item              |                   Value |
+| ----------------- | ----------------------: |
+| Update to install |           Latest update |
+| Schedule type     | Update at next check-in |
 
 #### Assignments
 
@@ -64,7 +64,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 #### Configuration
 
 * [iOS and iPadOS]({{< ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
-* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 * [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
 * [Rules]({{<ref "configuration/defender/settings/endpoints/rules.md">}})

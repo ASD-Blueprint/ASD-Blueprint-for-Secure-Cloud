@@ -110,7 +110,7 @@ Office productivity suites are not installed on `<SYSTEM-NAME>` servers.
 #### Configuration
 
 * [Microsoft Office Macro Hardening]({{<ref "configuration/intune/devices/scripts/officemacrohardening-preventactivationofole.md">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 
 
 #### External links
@@ -119,4 +119,4 @@ Office productivity suites are not installed on `<SYSTEM-NAME>` servers.
 * ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations)
 * ASD's [*Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-365-office-2021-office-2019-and-office-2016)
 * Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-* Microsoft's [*Guidance for meeting ASD's Essential Eight - Configure Microsoft Office Macro Settings*](https://learn.microsoft.com/compliance/essential-eight/e8-macro)
+* Microsoft's [*Guidance for meeting ASD's Essential Eight - Configure Microsoft Office Macro Settings*](https://learn.microsoft.com/compliance/anz/e8-macro)

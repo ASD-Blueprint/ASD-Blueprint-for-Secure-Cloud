@@ -25,7 +25,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item               |                              Value |
 | ------------------ | ---------------------------------: |
 | Users              |                 Include: All users |
-|                    |    Exclude: *Break Glass accounts* |
+|                    |  Exclude: `<Break Glass accounts>` |
 | User risk          |                   Medium and above |
 | Controls           | Require multifactor authentication |
 | Policy enforcement |                            Enabled |

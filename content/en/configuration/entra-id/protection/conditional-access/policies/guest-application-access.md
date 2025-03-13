@@ -1,6 +1,6 @@
 ---
-title: "GST - G - Guest application access with strong auth"
-linkTitle: "GST - G - Guest application access with strong auth"
+title: "GST - G - Guest <application> access with strong auth"
+linkTitle: "GST - G - Guest <application> access with strong auth"
 weight: 10
 type: docs
 description: "This page describes the configuration of policies for Conditional Access within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -20,11 +20,13 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
+Substitute `<application>` with the name of the application to which access is being granted.
+
 ### Name
 
-| Item |                                               Value |
-| ---- | --------------------------------------------------: |
-| Name | GST - G - Guest application access with strong auth |
+| Item |                                                   Value |
+| ---- | ------------------------------------------------------: |
+| Name | GST - G - Guest `<application>` access with strong auth |
 
 ### Assignments
 
@@ -39,7 +41,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Guest or external users  |                                                                                                                                                                       Not checked |
 | Directory roles          |                                                                                                                                                                       Not checked |
 | Users and groups         |                                                                                                                                                                           Checked |
-|                          |                                                                                                        `<CA exclude group - GST - G - Guest application access with strong auth>` |
+|                          |                                                                                                      `<CA exclude group - GST - G - Guest <application> access with strong auth>` |
 
 #### Target Resources
 
@@ -80,7 +82,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | --------------------------------------------------- | -----------------------------------: |
 | Control access enforcement to block or grant access |                         Grant access |
 | Require multifactor authentication                  |                          Not checked |
-| Require authentication strength                     |   Phishing-resistant MFA:<br>Checked |
+| Require authentication strength                     |   Checked:<br>Phishing-resistant MFA |
 | Require device to be marked as compliant            |                          Not checked |
 | Require Microsoft Entra hybrid joined device        |                          Not checked |
 | Require approved client app                         |                          Not checked |

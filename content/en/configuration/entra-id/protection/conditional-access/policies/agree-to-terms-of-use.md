@@ -20,6 +20,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
+{{% alert title="Create a terms of use" color="info" %}}
+
+This policy requires a Terms of Use to be created prior to implementation.
+
+{{% /alert %}}
+
 ### Name
 
 | Item |                               Value |

@@ -27,6 +27,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------------ | -------: |
 | Allow limited, web-only access | Selected |
 
+{{% alert title="Warning" color="danger" %}}
+
+Selecting this policy setting will automatically create two Conditional Access policies that will be enabled and scoped to all users. The policies are prefixed with `[SharePoint admin centre]` and will block access to the SharePoint Online service from unmanaged devices and from select device platforms and client applications.
+
+{{% /alert %}}
+
 ### Idle session sign-out
 
 | Item                                                 |     Value |

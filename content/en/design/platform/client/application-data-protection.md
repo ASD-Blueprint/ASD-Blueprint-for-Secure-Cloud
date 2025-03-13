@@ -32,7 +32,7 @@ Within Microsoft Intune, application protection policies are rules that ensure o
 
 * [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
 * [Windows]({{< ref "configuration/intune/apps/by-platform/windows.md">}})
-* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 
 #### References
 

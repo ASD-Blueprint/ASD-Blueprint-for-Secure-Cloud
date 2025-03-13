@@ -121,14 +121,12 @@ While the Blueprint does not provide specific guidance on hardening data backups
 #### Design
 
 * [Backup and Operational Management]({{<ref "design/platform/backup">}})
-* [Retention Policies]({{<ref "design/shared-services/purview/retention-policies.md">}})
+* [Data Lifecycle Management]({{<ref "design/shared-services/purview/data-lifecycle-management">}})
 
 #### Configuration
 
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
-
-
 
 #### External links
 

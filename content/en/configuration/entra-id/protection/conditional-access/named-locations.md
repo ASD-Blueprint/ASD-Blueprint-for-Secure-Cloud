@@ -47,7 +47,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 #### Design
 
 * [Conditional access]({{<ref "design/platform/identity/conditional-access">}})
-* [Purview labels]({{<ref "design/shared-services/purview/classification-labels">}})
+* [Purview labels]({{<ref "design/shared-services/purview/labelling-and-classification">}})
 * [Organisation Residency]({{<ref "design/shared-services/microsoft-365/residency.md">}})
 
 #### Configuration

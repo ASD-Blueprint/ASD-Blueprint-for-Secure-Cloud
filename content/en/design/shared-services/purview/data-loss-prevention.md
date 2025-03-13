@@ -1,133 +1,126 @@
 ---
 title: "Data Loss Prevention"
-weight: 60
-description: "This section describes the design decisions associated with Data Loss Prevention Microsoft 365 security features for system(s) built using ASD's Blueprint for Secure Cloud."
+linkTitle: "Data Loss Prevention"
+weight: 30
+description: "This section describes the design decisions associated with Data Loss Prevention with Microsoft Purview for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Data Loss Prevention (DLP) policies enable organisations to identify, monitor, and automatically protect sensitive information across Office 365 and endpoint devices. DLP policies can be targeted to one or more products within the Office 365 suite.
+### Data Loss Prevention
 
-A DLP policy can be configured to:
+Data Loss Prevention (DLP) helps organisations protect sensitive and security classified information by enforcing policy-based controls upon information at rest, in use, and in motion. Creating an effective policy can be complex due to the large number of options available within policy configurations, the interactions between policies and other Microsoft 365 services (for example, Exchange Transport Rules) and the interactions between policies and other Purview capabilities (for example, auto-labelling).
 
-* Identify sensitive information (Sensitive information types), documents in a specific site (for SharePoint only) or specific labels (sensitivity labels) contained in Exchange Online, SharePoint Online, locally on devices (endpoint DLP), and OneDrive for Business.
-* Prevent end-users from accidentally sharing sensitive information.
-* Prevent end-users from accidentally deleting a document.
-* Update documents or emails based on sensitivity labels or data matching, used in conjunction with auto-labelling feature can assist with PSPF compliance
-* Educate end-users by presenting messages them on how to stay compliant when relevant. This is done without interrupting their workflow.
+#### Policy rules
 
-Office 365 has over 200 prebuilt sensitive information types (Australian Passport Numbers etc.). In addition to the prebuilt sensitive information types custom types can be created. These custom types look for strings, patterns, or key words.
+DLP policies are made up of rules containing four main components:
 
-Note, endpoint DLP requires onboarding of those devices into Microsoft Defender for Endpoint. organisations should consider the use of Endpoint DLP as part of a unified DLP strategy.
+* **Conditions** define what a rule applies to, and can be grouped by boolean operators (AND, OR, NOT) to focus on specific scenarios
+* **Actions** define what happens as a consequence of a condition being met
+* **User notifications** define the end-user emails or in-application prompts for when conditions are met
+* **Administrative alerts and reports** define the admin-user emails and dashboard notices for when conditions are met
+
+Rules are evaluated in priority order and if information matches multiple rules, the rule with the most restrictive action is enforced.
+
+{{% alert title="DLP on incoming and outgoing data flows" color="info" %}}
+
+DLP rules can be used to on both incoming and outgoing data flows.
+
+{{% /alert %}}
+
+### DLP policies
 
 {{% alert title="Design Decisions" color="warning" %}}
 
-| Decision Point                | Design Decision | Justification                                                                                                                                       |
-|-------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Data Lost Prevention Policies | Configured      | To provide insights into the movement of potentially sensitive information, and for PSPF compliance (x-protected header and subject field marking). |
+| Decision Point            | Design Decision                                             | Justification                                                                                        |
+| ------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Implementing DLP policies | Block SECRET and TOP SECRET emails                          | Prevent access to emails marked as highly classified                                                 |
+| Implementing DLP policies | Apply email X-header and subject marking to outgoing emails | Mark emails in-line with requirements in the Protective Security Policy Framework (PSPF)             |
+| Implementing DLP policies | Block PROTECTED emails except for approved domains          | Restrict email communication to only domains approved for access to PROTECTED classified information |
+| Implementing DLP policies | Block PROTECTED emails except for approved users            | Restrict email communication to only users approved for access to PROTECTED classified information   |
 
 {{% /alert %}}
 
-Data Loss Prevention Configuration applicable to all organisations and implementation types.
+#### Block SECRET and TOP SECRET emails
 
-| Configuration                                                       | Value                                                                                                                                                                                                                         | Description                                                                                                             |
-|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| **Name: Australian Privacy Act**                                    |                                                                                                                                                                                                                               |                                                                                                                         |
-| Locations                                                           | Protect content in Exchange email, Teams chats, channel messages, OneDrive and SharePoint documents.                                                                                                                          | The locations where the policy will apply.                                                                              |
-| Content type                                                        | Australian Driver's Licence number<br>Australian Passport number                                                                                                                                                              | The types of sensitive information being detected.                                                                      |
-| Sharing detection                                                   | With people outside my organisation                                                                                                                                                                                           | When the policy is applied.                                                                                             |
-| Notify users                                                        | Enabled                                                                                                                                                                                                                       | Users are notified when the policy is triggered. They are also provided policy tips for managing sensitive information. |
-| Amount of instances                                                 | 5                                                                                                                                                                                                                             | The amount of sensitive information required to trigger the policy (10 is the default).                                 |
-| Send incident reports                                               | Enabled                                                                                                                                                                                                                       | User and nominated administrator are notified when the policy is triggered.                                             |
-| Restrict access or encrypt the content                              | Disabled                                                                                                                                                                                                                      | Access to the content that triggers the policy can be encrypted or and access limited.                                  |
-| **Name: Australian Personally Identifiable Information (PII) data** |                                                                                                                                                                                                                               |                                                                                                                         |
-| Locations                                                           | Protect content in Exchange email, Teams chats, channel messages, OneDrive and SharePoint documents.                                                                                                                          | The locations where the policy will apply.                                                                              |
-| Content type                                                        | Australia Tax File Number <br>Australia Driver's Licence Number                                                                                                                                                               | The types of sensitive information being detected.                                                                      |
-| Sharing detection                                                   | With people outside my organisation                                                                                                                                                                                           | When the policy is applied.                                                                                             |
-| Notify users                                                        | Enabled                                                                                                                                                                                                                       | Users are notified when the policy is triggered. They are also provided policy tips for managing sensitive information. |
-| Amount of instances                                                 | 5                                                                                                                                                                                                                             | The amount of sensitive information required to trigger the policy (10 is the default).                                 |
-| Send incident reports                                               | Enabled                                                                                                                                                                                                                       | User and nominated administrator are notified when the policy is triggered.                                             |
-| Restrict access or encrypt the content                              | Disabled                                                                                                                                                                                                                      | Access to the content that triggers the policy can be encrypted or and access limited.                                  |
-| **Name: Australian Health Records Act (HRIP Act)**                  |                                                                                                                                                                                                                               |                                                                                                                         |
-| Locations                                                           | Protect content in Exchange email, Teams chats, channel messages, OneDrive and SharePoint documents.                                                                                                                          | The locations where the policy will apply.                                                                              |
-| Content type                                                        | Australia Tax File Number <br>Australia Medical Account Number                                                                                                                                                                | The types of sensitive information being detected.                                                                      |
-| Sharing detection                                                   | With people outside my organisation                                                                                                                                                                                           | When the policy is applied.                                                                                             |
-| Notify users                                                        | Enabled                                                                                                                                                                                                                       | Users are notified when the policy is triggered. They are also provided policy tips for managing sensitive information. |
-| Amount of instances                                                 | 5                                                                                                                                                                                                                             | The amount of sensitive information required to trigger the policy (10 is the default).                                 |
-| Send incident reports                                               | Enabled                                                                                                                                                                                                                       | User and nominated administrator are notified when the policy is triggered.                                             |
-| Restrict access or encrypt the content                              | Disabled                                                                                                                                                                                                                      | Access to the content that triggers the policy can be encrypted or and access limited.                                  |
-| **Name: Australian Financial Data**                                 |                                                                                                                                                                                                                               |                                                                                                                         |
-| Locations                                                           | Protect content in Exchange email, Teams chats, channel messages, OneDrive and SharePoint documents.                                                                                                                          | The locations where the policy will apply.                                                                              |
-| Content type                                                        | SWIFT Code <br>Australia Tax File Number <br>Australia Bank Account Number <br>Credit Card Number                                                                                                                             | The types of sensitive information being detected.                                                                      |
-| Sharing detection                                                   | With people outside my organisation                                                                                                                                                                                           | When the policy is applied.                                                                                             |
-| Notify users                                                        | Enabled                                                                                                                                                                                                                       | Users are notified when the policy is triggered. They are also provided policy tips for managing sensitive information. |
-| Number of instances                                                 | 10                                                                                                                                                                                                                            | The amount of sensitive information required to trigger the policy (10 is the default).                                 |
-| Send incident reports                                               | Enabled                                                                                                                                                                                                                       | User and nominated administrator are notified when the policy is triggered.                                             |
-| Restrict access or encrypt the content                              | Disabled                                                                                                                                                                                                                      | Access to the content that triggers the policy can be encrypted or and access limited.                                  |
-| **Name: PROTECTED Data***                                           |                                                                                                                                                                                                                               |                                                                                                                         |
-| Locations                                                           | Protect content in OneDrive and SharePoint documents.                                                                                                                                                                         | The locations where the policy will apply.                                                                              |
-| Content type                                                        | All published PROTECTED sensitivity labels (Any of these)                                                                                                                                                                     | The types of sensitive information being detected.                                                                      |
-| Sharing detection                                                   | With people outside my organisation                                                                                                                                                                                           | When the policy is applied.                                                                                             |
-| Notify users                                                        | Enabled                                                                                                                                                                                                                       | Users are notified when the policy is triggered. They are also provided policy tips for managing sensitive information. |
-| Amount of instances                                                 | 1                                                                                                                                                                                                                             | The amount of sensitive information required to trigger the policy (10 is the default).                                 |
-| Send incident reports                                               | Enabled                                                                                                                                                                                                                       | User and nominated administrator are notified when the policy is triggered.                                             |
-| Restrict access or encrypt the content                              | Disabled                                                                                                                                                                                                                      | Access to the content that triggers the policy can be encrypted or and access limited.                                  |
-| **Name: *Classification* Append Subject**                           | Note: each sensitivity label published requires a separate  'Append Subject' policy                                                                                                                                           |                                                                                                                         |
-| Content type                                                        | *Classification* sensitivity labels (Any of these)                                                                                                                                                                            | The types of sensitive information being detected.                                                                      |
-| Advanced DLP Rules                                                  | Content Contains: Sensitivity labels (select classification for policy)<br />Action: Modify subject<br />Remove text that matches this patten `\[SEC=.*?\]`<br />Insert this replacement text: `[SEC=Classification and DLM]` | Classification the policy is target for Subject line modification, e.g. `[SEC=OFFICIAL:Sensitive]`                      |
-| Notify users                                                        | Disabled                                                                                                                                                                                                                      | Users are not notified when the policy is triggered.                                                                    |
+The [block SECRET and TOP SECRET emails]({{<ref "configuration/purview/data-loss-prevention/policies/block-secret-and-above-emails">}}) policy blocks emails by checking for SECRET and TOP SECRET PSPF markings in the email's X-Protective-Marking X-header and subject.
 
-The Microsoft 365 Compliance Center provides the ability to monitor and review user and administrator activities across the Microsoft 365 applications from the past 90 days.
+The policy would only apply if a user was an intended recipient of a highly classified email, or if a user attempted to forward or reply to a pre-existing highly classified email.
 
-Audit logs are kept by default for 90 days but are configurable up to 10 years using an Audit retention policy with Microsoft Purview Audit (Premium).
+#### Apply email X-header and subject marking to outgoing emails
 
-When an event occurs for the respective application it will take anywhere from 30 minutes up to 24 hours before it can be viewed in the audit log search.
+The [add PSPF X-header and subject marking]({{<ref "configuration/purview/data-loss-prevention/policies/add-pspf-x-header-and-subject-marking">}}) policy applies the PSPF X-Protective-Marking X-header and subject marking to emails.
 
-The Microsoft 365 Management Activity API enables third-party applications to consume audit logs from Microsoft 365. If audit logging is disabled, third-party applications can still consume audit logs from the Microsoft 365 Management Activity API.
+The policy has a large number of rules to cater for each different PSPF marking and has separate rules for applying X-header and subject markings:
 
-A list of Office 365 applications, their auditing capabilities and duration wait time once an event occurs.
+* The X-header marking rules check if the sensitivity label applied to the email matches the current X-header marking, if the X-header marking doesn't exist (i.e. the email is new) or if the X-header marking is different (i.e. the email is a reply or forward and the label has been changed), the X-Protective-Marking X-header is overwritten with the correct marking. Checking if the X-header marking is different helps preserve any existing X-Protective-Marking values that were created with the original email which may include `ORIGIN=`, `EXPIRES= DOWNTO=`, or other special handling markings.
+* The subject marking rules overwrite any existing subject marking according to the sensitivity label applied to the email, irrespective of whether the label is the same or not. This is done to prevent the prevent repetitively appending the subject marking on replies and forwards, for example `Re: Re: subject [SEC=OFFICIAL] [SEC=OFFICIAL] [SEC=OFFICIAL]`.
 
-| Application                                                      | User Activity | Admin Activity | Duration wait time |
-|------------------------------------------------------------------|:-------------:|:--------------:|--------------------|
-| Exchange Online                                                  | x             | x              | 30 minutes         |
-| OneDrive for Business                                            | x             |                | 30 minutes         |
-| SharePoint Online                                                | x             | x              | 30 minutes         |
-| Sway                                                             | x             | x              | 24 hours           |
-| Power Bi                                                         | x             | x              | 30 minutes         |
-| Workplace Analytics                                              |               | x              | 30 minutes         |
-| Dynamics 365                                                     | x             | x              | 24 hours           |
-| Yammer                                                           | x             | x              | 24 hours           |
-| Microsoft Power Apps                                             | x             | x              | 24 hours           |
-| Microsoft Power Automate                                         | x             | x              | 24 hours           |
-| Microsoft Steam                                                  | x             | x              | 30 minutes         |
-| Microsoft Teams                                                  | x             | x              | 30 minutes         |
-| Microsoft Forms                                                  | x             | x              | 30 minutes         |
-| Entra ID                                                         |               | x              | 24 hours           |
-| eDiscovery activities in Office 365 Security & Compliance Center | x             | x              | 30 minutes         |
+The applied markings adhere strictly to the Australian Government Email Protective Marking Standard with the exception of excluding the `ORIGIN=` marking. If the originator of an email needs to be obtained, the unified audit log can be searched with any organisation that uses Microsoft 365 services. DLP policy, auto-labelling policy, and sensitive information type configurations all use regular expressions which cater for any use of `EXPIRES= DOWNTO=` markings.
 
-Audit logging is not enabled by default and must be turned on first in Microsoft Purview (formerly Microsoft 365 Compliance Center) before user or administrator activities can be audited.
+#### Block PROTECTED emails except for approved domains
+
+The [block PROTECTED emails except for approved domains]({{<ref "configuration/purview/data-loss-prevention/policies/block-unapproved-domains">}}) policy blocks emails and attachments<sup>1</sup> with PROTECTED<sup>2</sup> sensitivity labels, except for specifically allowed internal and external organisation domains used for sending and receiving email.
+
+The policy would match incoming emails from external organisations even though the emails would not have an *internal* organisation specific sensitivity label applied, this is because an auto-labelling policy would be triggered (and apply a label) before the DLP policy, thereby enabling the DLP policy to meet its condition. The ordering of DLP and auto-labelling is discussed in more detail in the [email handling]({{<ref "design/shared-services/purview/email-handling">}}) page.
+
+1: The policy will not block PROTECTED attachments from external organisation where the email is not also marked as PROTECTED. This would be mitigated by the external organisations enabling the *email inherits highest priority label from attachments* setting in their [label publishing policies]({{<ref "configuration/purview/information-protection/policies/publishing-policies">}})).
+
+2: Including associated special handing and information management markings.
+
+#### Block PROTECTED emails except for approved users
+
+The [block PROTECTED emails except for approved users]({{<ref "configuration/purview/data-loss-prevention/policies/block-unapproved-users">}}) policy blocks emails and attachments with PROTECTED<sup>1</sup> sensitivity labels, except for specifically allowed group members.
+
+The policy is not able to cater for groups that are configured in external organisations. The policy should use the same groups as used for [publishing PROTECTED labels]({{<ref "design/shared-services/purview/labelling-and-classification#label-publishing">}}) and set in the [users up to PROTECTED]({{<ref "configuration/purview/information-protection/policies/publishing-policies/users-up-to-p-policy">}}) publishing policy configuration.
+
+While the *users up to PROTECTED* publishing policy ensures that only specific users have access to apply PROTECTED labels and to a degree, access PROTECTED labelled information, the DLP policy ensures that if users excluded from the publishing policy do access PROTECTED labelled information, they cannot email it.
+
+1: Including associated special handing and information management markings.
+
+### Endpoint DLP
+
+DLP capabilities can be extended to certain Windows desktop and server and MacOS operating systems, including virtualised environments and browsers. Endpoint DLP enables the monitoring and control of a number of actions such as copying, uploading and printing, and domain-based restrictions.
+
+Implementing endpoint DLP policies may require the deployment of the Purview Information Protection client or browser plugins, and will require some organisational specific knowledge about user behaviour. Implementation is recommended and can be started by onboarding devices and observing events in [Activity Explorer](https://learn.microsoft.com/en-us/purview/data-classification-activity-explorer) before creating policies.
 
 {{% alert title="Design Decisions" color="warning" %}}
 
-| Decision Point                    | Design Decision              | Justification                                                                                 |
-|-----------------------------------|------------------------------|-----------------------------------------------------------------------------------------------|
-| Microsoft Purview Audit (Premium) | Enabled<br>10-year retention | To provide visibility into the actions being undertaken within the Microsoft 365 environment. |
+| Decision Point            | Design Decision                                | Justification                                                                                            |
+| ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Implementing endpoint DLP | Onboard endpoints to enable policy development | Extend the protection of sensitive and security classified information to operating systems and browsers |
 
 {{% /alert %}}
+
+### Using sensitive information types
+
+Each DLP policy could be complimented by the use of sensitive information types (or other classifiers) to improve the conditional matching of information. However, due to the requirements to [implement sensitive information types]({{<ref "design/shared-services/purview/labelling-and-classification#label-#implementing-sensitive-information-types">}}), capabilities based on them types must be developed and implemented only within an organisation specific context.
+
+### User notifications
+
+Each DLP policy rule defines user notifications in terms of policy tips displayed while using an application to perform an action, or email notifications sent after an action has taken place. As with other Purview solutions, the user experience can depend on the applications used. For example, some applications cannot show policy tips and others can be slow to show policy tips which can result in actions being performed before tips are displayed<sup>1</sup>. Using both policy tips and email notifications can help ensure users are made aware of their actions regardless of the application used, email notifications are also able to be sent to external organisations for certain actions.
+
+1: This can be partially remediated by using the *dlpwaitonsendtimeout* Registry key.
 
 ### Related information
 
 #### Security & Governance
 
-* None identified
+* [Guidelines for email]({{<ref "content\en\security-and-governance\system-security-plan\email.md">}})
 
 #### Design
 
-* None identified
+* [Email handling]({{<ref "design/shared-services/purview/email-handling">}})
+* [Labelling and classification]({{<ref "design/shared-services/purview/labelling-and-classification">}})
 
 #### Configuration
 
-* None identified
+* [Auto-labeling policies]({{<ref "configuration/purview/information-protection/policies/auto-labeling-policies">}}))
+* [Data Loss Prevention policies]({{<ref "configuration/purview/data-loss-prevention/policies">}})
+* [Sensitive info types]({{<ref "configuration/purview/information-protection/classifiers/sensitive-info-types">}})
+* [Sensitivity label publishing policies]({{<ref "configuration/purview/information-protection/policies/publishing-policies">}})).
 
 #### References
 
+* [Australian Government Email Protective Marking Standard](https://www.protectivesecurity.gov.au/publications-library/australian-government-email-protective-marking-standard)
+* [Data Loss Prevention policy reference](https://learn.microsoft.com/en-us/purview/dlp-policy-reference)
 * [Learn about data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide)
-* [Learn about Endpoint data loss prevention](https://learn.microsoft.com/purview/endpoint-dlp-learn-about)
+* [Learn about Endpoint data loss prevention](https://learn.microsoft.com/en-au/purview/endpoint-dlp-learn-about)

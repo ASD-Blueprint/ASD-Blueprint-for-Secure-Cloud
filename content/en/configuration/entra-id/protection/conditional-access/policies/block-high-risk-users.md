@@ -61,7 +61,6 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | High                               |        Checked |
 | Medium                             |    Not checked |
 | Low                                |    Not checked |
-| No risk                            |    Not checked |
 | **Sign-in risk**                   | Not configured |
 | **Insider risk**                   | Not configured |
 | **Device platforms**               | Not configured |

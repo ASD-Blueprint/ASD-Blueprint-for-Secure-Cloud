@@ -408,7 +408,7 @@ Windows Hello for Business PIN's can be force removed by Platform Administrators
 
 #### Configuration
 
-* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines.md">}})
 * [Authentication methods]({{<ref "configuration/entra-id/protection/authentication-methods">}})
 * [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
 

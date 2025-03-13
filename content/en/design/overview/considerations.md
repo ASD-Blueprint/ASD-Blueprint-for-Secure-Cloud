@@ -89,7 +89,7 @@ These considerations need to be assessed for security risk on a case-by-case bas
 
 ### Secure internet gateway
 
-A Secure Internet Gateway (SIG) is an information flow control mechanism to manage the flow of information between networks from differing security domains. The Department of Home Affairs' *Protective Security Policy Framework* (PSPF) [Policy 11: Robust ICT Systems](https://www.protectivesecurity.gov.au/publications-library/policy-11-robust-ict-systems) lists implementation of a SIG as a requirement to safeguard systems. The Blueprint does not include design information on implementation of a SIG.
+A Secure Internet Gateway (SIG) is an information flow control mechanism to manage the flow of information between networks from differing security domains. The Department of Home Affairs' *Protective Security Policy Framework* (PSPF) [Policy 15: Cyber Security Programs](https://www.protectivesecurity.gov.au/system/files/2024-11/pspf-release-2024.pdf) lists implementation of a SIG as a requirement to safeguard systems. The Blueprint does not include design information on implementation of a SIG.
 
 ### Secure system administration
 

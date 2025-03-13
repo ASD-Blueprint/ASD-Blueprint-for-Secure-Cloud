@@ -27,39 +27,48 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 Some of the Intune configurations can be automatically deployed using Microsoft 365 Desired State Configuration (DSC).
 
-Some of the Intune configurations cannot be assessed automatically with M365DSC Blueprint. Please refer to those configuration pages to conduct a manual assessment.
+Some of the Intune configurations cannot be assessed using a DSC blueprint. Please refer to those configuration pages to conduct a manual assessment.
 
-| Configuration              | Blueprint Automation Provided |
+| Configuration              | Blueprint automation provided |
 | -------------------------- | ----------------------------- |
 | **Devices**                |                               |
+| - Configuration Policies   | Yes (DSC, JSON)<sup>1,2</sup> |
 | - Compliance Policies      | Yes (DSC)                     |
-| - Configuration Profiles   | Yes (DSC)<sup>1</sup>         |
 | - Scripts                  | No                            |
+| - Apple updates            | No                            |
 | **Apps**                   | No                            |
 | **Endpoint Security**      |                               |
 | - Security Baselines       | No                            |
 | - Attack Surface Reduction | Yes (DSC)                     |
 
-1: The ASD iOS Hardening, ASD Windows Hardening Guidelines-User Rights Assignment, and iOS Microsoft Enterprise SSO Plugin configuration profiles need to be manually created. Refer to [Configuration Profiles]({{<ref "configuration-profiles">}}) for configuration guidance.
+1: The [ASD iOS Hardening and iOS Microsoft Enterprise SSO Plugin]({{<ref "configuration/intune/devices/configuration-policies/ios-microsoft-enterprise-sso-plugin">}}) configuration policy needs to be created manually.
+
+2: The [ASD Windows Hardening Guidelines - User Rights Assignment]({{<ref "configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines-user-rights-management">}}) configuration policy needs to be created manually or or the corresponding JSON file imported.
 
 #### Desired State Configuration
 
-Before using the below Microsoft 365 Desired State Configuration (DSC) file, please refer to [Automated Deployment]({{<ref "automated-deployment">}}) for instructions.
+Before using the below DSC file, please refer to the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page for instructions.
 
 {{% alert title="Warning" color="danger" %}}
-Any existing settings in a tenancy that match the Name or UID of any settings in the DSC will be overwritten.
+
+Any existing settings in a tenancy that match the name or UID of any settings in the DSC will be overwritten.
+
 {{% /alert %}}
 
-| Desired State Configuration File                                                                                                                                                       |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-intune.txt"%}} Intune DSC {{% /download %}} (.ps1) <br> *Note: download the linked .txt file and rename to .ps1* |
-| **Configuration Data File:**                                                                                                                                                           |
-| The Configuration Data File can be found on the [Automated Deployment]({{<ref "automated-deployment">}}) page.                                                                         |
+| Desired State Configuration file                                                                                                                                             |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-intune.txt" %}} Intune DSC {{% /download %}} (.ps1) <br>*The linked .txt file must be renamed to .ps1* |
+| **Configuration Data File:**                                                                                                                                                 |
+| The configuration data file can be found on the [DSC setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) page.                             |
 
-##### Service Principal permissions
+##### Service principal permissions
 
-To import the DSC as per the instructions on the [Automated Deployment]({{<ref "automated-deployment">}}) page, the following permissions will need to be added to the Service Principal:
+For organisations importing the DSC as per the instructions on the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page, the following permissions will need to be added to the M365DSC app:
 
 ```powershell
 "IntuneAccountProtectionPolicy", "IntuneAppConfigurationPolicy", "IntuneApplicationControlPolicyWindows10", "IntuneAppProtectionPolicyAndroid", "IntuneAppProtectionPolicyiOS", "IntuneASRRulesPolicyWindows10", "IntuneAttackSurfaceReductionRulesPolicyWindows10ConfigManager", "IntuneDeviceCompliancePolicyAndroid", "IntuneDeviceCompliancePolicyAndroidDeviceOwner", "IntuneDeviceCompliancePolicyAndroidWorkProfile", "IntuneDeviceCompliancePolicyiOs", "IntuneDeviceCompliancePolicyMacOS", "IntuneDeviceCompliancePolicyWindows10", "IntuneDeviceConfigurationCustomPolicyWindows10", "IntuneDeviceConfigurationDefenderForEndpointOnboardingPolicyWindows10", "IntuneDeviceConfigurationDeliveryOptimizationPolicyWindows10", "IntuneDeviceConfigurationDomainJoinPolicyWindows10", "IntuneDeviceConfigurationEmailProfilePolicyWindows10", "IntuneDeviceConfigurationEndpointProtectionPolicyWindows10", "IntuneDeviceConfigurationFirmwareInterfacePolicyWindows10", "IntuneDeviceConfigurationHealthMonitoringConfigurationPolicyWindows10", "IntuneDeviceConfigurationIdentityProtectionPolicyWindows10", "IntuneDeviceConfigurationImportedPfxCertificatePolicyWindows10", "IntuneDeviceConfigurationKioskPolicyWindows10", "IntuneDeviceConfigurationNetworkBoundaryPolicyWindows10", "IntuneDeviceConfigurationPkcsCertificatePolicyWindows10", "IntuneDeviceConfigurationPolicyAndroidDeviceAdministrator", "IntuneDeviceConfigurationPolicyAndroidDeviceOwner", "IntuneDeviceConfigurationPolicyAndroidOpenSourceProject", "IntuneDeviceConfigurationPolicyAndroidWorkProfile", "IntuneDeviceConfigurationPolicyiOS", "IntuneDeviceConfigurationPolicyMacOS", "IntuneDeviceConfigurationPolicyWindows10", "IntuneDeviceConfigurationSCEPCertificatePolicyWindows10", "IntuneDeviceConfigurationSecureAssessmentPolicyWindows10", "IntuneDeviceConfigurationSharedMultiDevicePolicyWindows10", "IntuneDeviceConfigurationTrustedCertificatePolicyWindows10", "IntuneDeviceConfigurationVpnPolicyWindows10", "IntuneDeviceConfigurationWindowsTeamPolicyWindows10", "IntuneDeviceConfigurationWiredNetworkPolicyWindows10", "IntuneDeviceEnrollmentPlatformRestriction", "IntuneExploitProtectionPolicyWindows10SettingCatalog", "IntuneSettingCatalogASRRulesPolicyWindows10", "IntuneSettingCatalogCustomPolicyWindows10", "IntuneWiFiConfigurationPolicyAndroidDeviceAdministrator", "IntuneWifiConfigurationPolicyAndroidEnterpriseDeviceOwner", "IntuneWifiConfigurationPolicyAndroidEnterpriseWorkProfile", "IntuneWifiConfigurationPolicyAndroidForWork", "IntuneWifiConfigurationPolicyAndroidOpenSourceProject", "IntuneWifiConfigurationPolicyIOS", "IntuneWifiConfigurationPolicyMacOS", "IntuneWifiConfigurationPolicyWindows10", "IntuneWindowsInformationProtectionPolicyWindows10MdmEnrolled"
 ```
+
+#### Importing JSON configurations
+
+Some Intune configurations can be set by importing a configuration policy in JSON format via the Intune admin center. The specific [configuration policy]({{<ref "configuration/intune/devices/configuration-policies">}}) pages have instructions where applicable.

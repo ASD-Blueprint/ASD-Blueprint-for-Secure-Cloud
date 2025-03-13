@@ -31,7 +31,7 @@ Power Platform activities are logged as follows:
 
 #### Design
 
-* [Audit and logging]({{<ref "design/shared-services/defender/audit-and-logging.md">}})
+* None identified
 
 #### Configuration
 

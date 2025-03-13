@@ -1,7 +1,7 @@
 ---
-title: "Tools and Processes"
-linkTitle: "Tools and Processes"
+title: "Tools and processes"
+linkTitle: "Tools and processes"
 type: docs
 weight: 50
-description: "Tooling for the Blueprint."
+description: "Tools and processes for the Blueprint."
 ---

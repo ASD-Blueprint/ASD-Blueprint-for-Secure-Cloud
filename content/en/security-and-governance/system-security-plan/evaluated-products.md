@@ -70,5 +70,5 @@ Technical controls for `<SYSTEM-NAME>`'s management of evaluated products are co
 
 * [Apple iOS 16: iPhones - Protection Profile for Mobile Device Fundamentals Version 3.3: Certification Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid11349-vr.pdf)
 * [Apple iOS 16: iPhones Common Criteria Configuration Guide](https://www.niap-ccevs.org/MMO/Product/st_vid11349-agd.pdf)
-* Microsoft's [Windows 11, Windows Server 2022, and other Windows OSes PP Certification Report](https://www.commoncriteriaportal.org/files/epfiles/2*022-21-INF-3955.pdf)
+* Microsoft's [Windows 11, Windows Server 2022, and other Windows OSes PP Certification Report](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjd3Z6CwIqKAxUvR2wGHaTzBJAQFnoECBYQAQ&url=https%3A%2F%2Fdownload.microsoft.com%2Fdownload%2Fe%2F3%2F7%2Fe374af1a-3c5d-42ee-8e19-df47d2c0e3d6%2FMicrosoft%2520Windows%2C%2520Windows%2520Server%2C%2520Azure%2520Stack%2520Validation%2520Report%2520(21H2%2520et%2520al).pdf&usg=AOvVaw2niznMA9At9_Fz0BbXzG3j&opi=89978449)
 * ASD's [*Guidelines for Evaluated Products*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-evaluated-products)

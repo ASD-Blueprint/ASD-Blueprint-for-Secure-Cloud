@@ -39,7 +39,7 @@ Using the native Microsoft 365 tools only, in combination with recycle bins, the
 * Teams chat, channel and files data retained indefinitely by default unless retention policies have been implemented.
 * Exchange Online has a recover deleted items from server option allowing recovery of data for up to 30 days.
 
-The Blueprint [defines retention policies]({{<ref "design/shared-services/purview/retention-policies">}}), which can be modified to ensure that data is retained for longer than the defined seven years:
+Purview [Data Lifecycle Management policies]({{<ref "design/shared-services/purview/data-lifecycle-management">}}) can be modified to ensure that data is retained for longer than the defined seven years:
 
 * Exchange
 * SharePoint
@@ -116,7 +116,7 @@ Data availability and resiliency of Microsoft 365 cloud service is in-built and 
 
 #### Design
 
-* [Retention policies]({{<ref "design/shared-services/purview/retention-policies">}})
+* [Data lifecycle management]({{<ref "design/shared-services/purview/data-lifecycle-management">}})
 
 #### Configuration
 

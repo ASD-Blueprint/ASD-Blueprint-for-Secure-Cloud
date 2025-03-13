@@ -32,14 +32,6 @@ And there are three membership types:
 
 Group owners have additional privileges over group members and have the ability to manage group membership as well as other unique permissions.
 
-{{% alert title="Design Decisions" color="warning" %}}
-
-| Decision Point  | Design Decision                                                 | Justification                                             |
-| --------------- | --------------------------------------------------------------- | --------------------------------------------------------- |
-| Group ownership | Conditional Access exclude groups should have designated owners | Group owners should review membership via access packages |
-
-{{% /alert %}}
-
 Group ownership and group membership are separate concepts, and are also implemented differently depending on the group type:
 
 - for security groups, a group owner is not considered a group member
@@ -50,7 +42,10 @@ Group ownership and group membership are separate concepts, and are also impleme
 | Decision Point                               | Design Decision                                                                          | Justification                                                            |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | Group ownership                              | Groups owners should be assigned where practical                                         | Group ownership facilitates group lifecycle management                   |
+| Group ownership                              | Group owners should review membership via access packages                                | Access packages facilitate group lifecycle management                    |
+| Group ownership of security-sensitive groups | Conditional Access exclude groups should have designated owners                          | Conditional Access exclude group membership should be tightly controlled |
 | Group ownership of security-sensitive groups | Conditional Access exclude group owners should not also be members of the exclude groups | Conditional Access exclude group membership should be tightly controlled |
+| Group ownership of security-sensitive groups | PROTECTED users group(s) should have designated owners                                   | PROTECTED users group(s) membership should be tightly controlled         |
 
 {{% /alert %}}
 
@@ -88,9 +83,13 @@ Note, dynamic groups cannot be used with PIM.
 
 PIM can be used for just-in-time membership and ownership of groups.
 
+{{% alert title="Design Decisions" color="warning" %}}
+
 | Decision Point | Design Decision                                                 | Justification                                                            |
 | -------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | PIM for groups | Use PIM for adding members to Conditional Access exclude groups | Conditional Access exclude group membership should be tightly controlled |
+
+{{% /alert %}}
 
 #### Role assigned groups
 
@@ -104,7 +103,7 @@ Roles can be assigned to groups as well as users which can be useful for managin
 
 {{% /alert %}}
 
-### Microsoft 365 Groups
+### Microsoft 365 groups
 
 Microsoft 365 groups (as opposed to security groups) include a suite of linked resources that users can use for communication and collaboration. Groups always include a SharePoint site, a mailbox and calendar, and Stream. Depending on how the group is created other services such as Teams can be optionally added.
 
@@ -118,10 +117,10 @@ Microsoft 365 Groups includes a variety of governance controls, including an exp
 
 | Decision Point       | Design Decision                                   | Justification                                                                                                 |
 | -------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Group Creation       | Any user with acknowledgement of responsibilities | Encourage rather than block collaboration                                                                     |
-| Group Expiry         | 180 day expiry                                    | Limit group sprawl by ensuring that groups that are no longer in use are deleted                              |
-| Group Naming         | Unrestricted, but with guidelines                 | Avoid fixed organisation based group naming conventions to avoid issues with changing organisation structures |
-| Group Access Reviews | 6 Monthly                                         | Ensure group membership is reviewed periodically                                                              |
+| Group creation       | Any user with acknowledgement of responsibilities | Encourage rather than block collaboration                                                                     |
+| Group expiry         | 180 day expiry                                    | Limit group sprawl by ensuring that groups that are no longer in use are deleted                              |
+| Group naming         | Unrestricted, but with guidelines                 | Avoid fixed organisation based group naming conventions to avoid issues with changing organisation structures |
+| Group access reviews | 6 Monthly                                         | Ensure group membership is reviewed periodically                                                              |
 
 {{% /alert %}}
 
@@ -129,18 +128,18 @@ Microsoft 365 Groups includes a variety of governance controls, including an exp
 
 #### Security & Governance
 
-* None identified
+- None identified
 
 #### Design
 
-* [Identity Governance]({{<ref "governance">}})
-* [Microsoft 365 Groups]({{<ref "design/shared-services/microsoft-365/microsoft365-groups.md">}})
+- [Identity Governance]({{<ref "governance">}})
+- [Microsoft 365 Groups]({{<ref "design/shared-services/microsoft-365/microsoft365-groups.md">}})
 
 #### Configuration
 
-* [Groups]({{<ref "configuration/entra-id/groups">}})
-* [Expiration]({{<ref "configuration/entra-id/groups/expiration.md">}})
+- [Groups]({{<ref "configuration/entra-id/groups">}})
+- [Expiration]({{<ref "configuration/entra-id/groups/expiration.md">}})
 
 #### References
 
-* [Microsoft 365 Groups](https://learn.microsoft.com/microsoft-365/solutions/plan-organization-lifecycle-governance?view=o365-worldwide)
+- [Microsoft 365 Groups](https://learn.microsoft.com/microsoft-365/solutions/plan-organization-lifecycle-governance?view=o365-worldwide)

@@ -14,3 +14,7 @@ Implementation of the guidance provided by the Blueprint will differ depending o
 Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-NAME>` should be replaced with the relevant details as required.
 
 {{% /alert %}}
+
+### Automated configuration deployment and assessment
+
+The Blueprint does not currently provide a mechanism to automatically deploy or assess the settings for this service.

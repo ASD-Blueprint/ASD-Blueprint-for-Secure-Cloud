@@ -42,29 +42,29 @@ B2B only requires a small amount of user information (name and email). However, 
 
 The following table describes the identity properties that should be a minimum requirement before collaboration is enabled for all organisations and implementation types.
 
-| Field                         | Example                             | Justification                                             |
-| ----------------------------- | ----------------------------------- | --------------------------------------------------------- |
-| FirstName                     | John                                | Search and identify the user.                             |
-| LastName                      | Smith                               | Search and identify the user.                             |
-| UserName (UPN) = EmailAddress | john.smith@organisation.gov.au      | User's organisation and contract address.                 |
-| UserName                      | john.smith                          | Identity in Microsoft.                                    |
+| Field                         | Example                             | Justification                                              |
+| ----------------------------- | ----------------------------------- | ---------------------------------------------------------- |
+| FirstName                     | John                                | Search and identify the user.                              |
+| LastName                      | Smith                               | Search and identify the user.                              |
+| UserName (UPN) = EmailAddress | john.smith@organisation.gov.au      | User's organisation and contract address.                  |
+| UserName                      | john.smith                          | Identity in Microsoft.                                     |
 | EmailAddress                  | john.smith@organisation.gov.au<br>. | User's email contact.                                      |
 | OfficePhone                   | 612xx xxxxxx                        | User's phone contact.                                      |
 | MobilePhone                   | 04xx xxx xxx                        | User's phone contact.                                      |
 | JobProfile                    | Finance                             | User's job description in identifying appropriate contact. |
 | Organisation                  | Australian Signals Directorate      | User's organisation.                                       |
 | Manager                       | Julie Citizen                       | User's manager for further consultation.                   |
-| Photo                         | ID.JPEG                             | Viewing and identifying the user.                         |
+| Photo                         | ID.JPEG                             | Viewing and identifying the user.                          |
 
 In addition to the above, Conditional Access policies should be enforced requiring external individuals to use Multi Factor Authentication, block legacy authentication, and block from disallowed locations.
 
 {{% alert title="Design Decisions" color="warning" %}}
 
-| Decision Point    | Design Decision | Justification                                                                                                                                                                                                                                                                                                                                               |
-| ----------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| B2B Relationships | Not Configured  | To maintain a robust and secure platform for the organisation, B2B collaboration should not be configured.<br>In a future state, specified partner tenants may be listed assuming they are also rated at the same classification level and approved by appropriate organisation staff. Only users of these tenants would be allowed collaborative access. |
-| B2C Relationships | Not Configured  | Client collaboration other than partner organisations is not required.                                                                                                                                                                                                                                                                                      |
-| External Sharing  | Disabled        | To maintain a robust and secure platform for the organisation, B2B collaboration should not be configured.<br>In a future state, specified partner tenants may be listed assuming they are also rated at the same classification level and approved by appropriate organisation staff. Only users of these tenants would be allowed collaborative access. |
+| Decision Point    | Design Decision  | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ----------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| B2B Relationships | Block by default | Maintain a secure default configuration while allowing for partner organisations to potentially be granted access where an organisation understands, has considered and accepted any associated risks.                                                                                                                                                                                                                                                                                            |
+| B2C Relationships | Not configured   | Client collaboration other than partner organisations is not required.                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| External Sharing  | Disabled         | To maintain a robust and secure platform for the organisation, B2B collaboration should not be configured. Organisations may choose to consider specifying partner tenants, assuming they are also rated at the same classification level and approved by an appropriate authority, according to their organisational requirements and following consideration of associated risks. Only users of these tenants assessed at the same classification level should be allowed collaborative access. |
 
 {{% /alert %}}
 
@@ -72,8 +72,8 @@ In addition to the above, Conditional Access policies should be enforced requiri
 
 Conditional Access policies that should be applied by the partner organisation for all organisations and implementation types.
 
-| Decision Point              | Design Decision                                                                                                                                                                                                                                                                      | Justification                                                                                            |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| Decision Point              | Design Decision                                                                                                                                                                                                                                                                       | Justification                                                                                            |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | Conditional Access Policies | **BLOCK - Legacy Authentication**:<br>This global policy blocks all connections from unsecure legacy protocols like ActiveSync, IMAP, POP3, etc.<br>**BLOCK - Countries not Allowed:**<br>This global policy blocks all connections from countries not in the Allowed countries list. | Minimises the risk of the user in the partner organisation using credentials that have been compromised. |
 
 {{% /alert %}}
@@ -90,7 +90,8 @@ Conditional Access policies that should be applied by the partner organisation f
 
 #### Configuration
 
-* None identified
+* [Cross-tenant access settings]({{<ref "configuration/entra-id/external-identities/cross-tenant-access-settings">}})
+* [External collaboration settings]({{<ref "configuration/entra-id/external-identities/external-collaboration-settings">}})
 
 #### References
 

@@ -20,7 +20,7 @@ For organisations implementing a PROTECTED environment, organisations are requir
 * Message rules
 * Header modification
 
-This will achieve the closest alignment to whole-of-government policy for [Secure Internet Gateways](https://www.cyber.gov.au/acsc/view-all-content/programs/irap/asd-certified-gateways) and with the guidance in ASD's [*Information Security Manual*](https://www.cyber.gov.au/acsc/view-all-content/guidance/email-gateways-and-servers) and the [Protective Security Policy Framework](https://www.protectivesecurity.gov.au/sites/default/files/2019-11/policy-8-annex-g-email-protective-marking-standard.pdf).
+This will achieve the closest alignment to whole-of-government policy for [Secure Internet Gateways](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/gateway-hardening/gateway-security-guidance-package-gateway-security-principles?ref=search) and with the guidance in ASD's [*Information Security Manual*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism?ss=true) and the [Protective Security Policy Framework](https://www.protectivesecurity.gov.au/publications-library/pspf-annual-release).
 
 GovLINK enables secure communication between Commonwealth entities across public infrastructure and is required for PROTECTED mail to be securely transferred between government organisations.
 
@@ -354,4 +354,4 @@ Suggested FQDNs for hybrid deployments:
 * [GovLink](https://www.finance.gov.au/government/whole-government-information-communications-technology-services/govlink)
 * [Secure Internet Gateways](https://www.cyber.gov.au/acsc/view-all-content/programs/irap/asd-certified-gateways)
 * ASD's [*Information Security Manual*](https://www.cyber.gov.au/acsc/view-all-content/guidance/email-gateways-and-servers)
-* [Protective Security Policy Framework](https://www.protectivesecurity.gov.au/sites/default/files/2019-11/policy-8-annex-g-email-protective-marking-standard.pdf)
+* [Australian Government Protective Security Policy Framework (PSPF)](https://www.protectivesecurity.gov.au/publications-library/pspf-annual-release)

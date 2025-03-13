@@ -22,7 +22,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Method                           | Target                                                          | Enabled |
 | -------------------------------- | --------------------------------------------------------------- | ------: |
-| FIDO2 security key               | All users, excluding `<Conditional Access excluded identities>` |     Yes |
+| Passkey (FIDO2)                  | All users, excluding `<Conditional Access excluded identities>` |     Yes |
 | Microsoft Authenticator          | All users, excluding `<Conditional Access excluded identities>` |     Yes |
 | SMS                              |                                                                 |      No |
 | Temporary Access Pass settings   | All users, excluding `<Conditional Access excluded identities>` |     Yes |
@@ -32,7 +32,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Email OTP                        |                                                                 |      No |
 | Certificate-based authentication |                                                                 |      No |
 
-### FIDO2 security key settings
+### Passkey (FIDO2) settings
 
 #### Enable and Target
 
@@ -44,14 +44,14 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Configure
 
-| Item                              |                  Value |
-| --------------------------------- | ---------------------: |
-| Allow self-service set up         |                    Yes |
-| Enforce attestation               |                    Yes |
-| Enforce key restrictions          |                    Yes |
-| Restrict specific keys            |                  Allow |
-| Microsoft Authenticator (Preview) |            Not checked |
-| **Add AAGUID**                    | *organisation AAGUIDs* |
+| Item                              |                    Value |
+| --------------------------------- | -----------------------: |
+| Allow self-service set up         |                      Yes |
+| Enforce attestation               |                      Yes |
+| Enforce key restrictions          |                      Yes |
+| Restrict specific keys            |                    Allow |
+| Microsoft Authenticator (Preview) |              Not checked |
+| **Add AAGUID**                    | `<Organisation AAGUIDs>` |
 
 ### Microsoft Authenticator settings
 
@@ -114,7 +114,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Configuration
 
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 * [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
 * [Rules]({{<ref "configuration/defender/settings/endpoints/rules.md">}})

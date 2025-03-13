@@ -16,7 +16,7 @@ When deploying a hybrid solution, the allocation of printers to users should be 
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning"%}}
+{{% alert title="Design decisions" color="warning"%}}
 
 | Decision Point                | Design Decision | Justification                                                                                                                                          |
 | ----------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -27,7 +27,7 @@ When deploying a hybrid solution, the allocation of printers to users should be 
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning"%}}
+{{% alert title="Design decisions" color="warning"%}}
 
 | Decision Point                | Design Decision | Justification                                                                                                                                                |
 | ----------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |

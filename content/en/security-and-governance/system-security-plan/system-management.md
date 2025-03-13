@@ -29,10 +29,10 @@ ISM controls relating to the system administration of `<SYSTEM-NAME>`'s are appl
 Administration of Microsoft services within `<SYSTEM-NAME>` is performed as per `<SYSTEM-NAME>`'s [System Administration Process]({{<ref "security-and-governance/general-documentation">}}) via a number of Microsoft portals as listed below:
 
 | Portal                                  | Purpose                                                                                                            | URL                                                                                    |
-|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
 | Microsoft Entra admin centre            | Access and administer Microsoft Entra                                                                              | [https://entra.microsoft.com](https://entra.microsoft.com)                             |
 | Microsoft 365 admin centre              | Configuration for Microsoft 365 services, including role and licence management, and Microsoft 365 service updates | [https://admin.microsoft.com](https://admin.microsoft.com)                             |
-| Microsoft Purview compliance portal     | Access eDiscovery and management of data handling policies                                                         | [https://purview.microsoft.com](https://purview.microsoft.com)                   |
+| Microsoft Purview compliance portal     | Access eDiscovery and management of data handling policies                                                         | [https://purview.microsoft.com](https://purview.microsoft.com)                         |
 | Microsoft Defender portal               | Monitor and respond to threat activity, and apply protection and response configuration across the environment     | [https://security.microsoft.com](https://security.microsoft.com)                       |
 | Microsoft Endpoint Manager admin centre | Manage and secure organisational devices                                                                           | [https://endpoint.microsoft.com](https://endpoint.microsoft.com)                       |
 | Microsoft 365 Apps admin centre         | Create, modify and export Office applications deployment configurations                                            | [https://config.office.com](https://config.office.com)                                 |
@@ -41,7 +41,7 @@ Administration of Microsoft services within `<SYSTEM-NAME>` is performed as per 
 | Power Platform admin centre             | The unified portal to administer Power Apps, Power Automate, Power Pages, and Power Virtual Agents                 | [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) |
 | SharePoint admin centre                 | Inform, configure, and govern management of all aspects of SharePoint Online across the tenant                     | [https://admin.microsoft.com/sharepoint](https://admin.microsoft.com/sharepoint)       |
 | Defender for Cloud Apps portal          | Configure and manage threat detection, session controls, data protections, and Shadow IT detection                 | [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)             |
-| Azure Portal                            | View and manage all aspects of an organisation's Azure environment                                                  | [https://portal.azure.com](https://portal.azure.com)                                   |
+| Azure Portal                            | View and manage all aspects of an organisation's Azure environment                                                 | [https://portal.azure.com](https://portal.azure.com)                                   |
 | Network Connectivity Test Tool          | Enables measurement of the connectivity between a device and Microsoft's network for troubleshooting and tuning    | [https://connectivity.office.com/](https://connectivity.office.com/)                   |
 | Microsoft Teams Call Quality Dashboard  | Shows organisation wide information for call and meeting quality with relation to Microsoft Teams                  | [https://cqd.teams.microsoft.com](https://cqd.teams.microsoft.com)                     |
 
@@ -134,20 +134,18 @@ Technical controls backups and restoration are configured with reference to `<RE
 * [Essential Eight: Multi-factor Authentication]({{<ref "security-and-governance/essential-eight/multi-factor-authentication.md">}})
 * [System Administration Process]({{<ref "security-and-governance/general-documentation">}})
 * [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
-* 
 
 #### Design
 
 * [Backup and Operational Management]({{<ref "design/platform/backup">}})
-* [Retention Policies]({{<ref "design/shared-services/purview/retention-policies.md">}})
+* [Data Lifecycle Management]({{<ref "design/shared-services/purview/data-lifecycle-management">}})
 
 #### Configuration
 
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 * [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
 * [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
-
 
 #### External links
 

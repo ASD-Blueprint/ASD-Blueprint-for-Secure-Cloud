@@ -71,17 +71,15 @@ Technical controls for system monitoring of `<SYSTEM-NAME>` are configured with 
 #### Design
 
 * [Endpoint Monitoring]({{<ref "design/platform/client/endpoint-monitoring.md">}})
-* [Platform Monitoring and Auditing]({{<ref "design/platform/security/platform-monitoring-auditing.md">}})
-* [Audit and Logging]({{<ref "design/shared-services/defender/audit-and-logging.md">}})
+* [Platform Monitoring]({{<ref "design/platform/security/platform-monitoring-auditing">}})
 * [Microsoft 365 Monitoring]({{<ref "design/shared-services/microsoft-365/microsoft365-monitoring.md">}})
 * [Reporting and Monitoring]({{<ref "design/platform/identity/reporting-and-monitoring.md">}})
 
 #### Configuration
 
 * [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
-
 
 #### External documentation
 

@@ -8,7 +8,7 @@ description: "This section describes the configuration of devices within Microso
  
 The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Intune portal at the following URL:
 
-https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/powershell
+https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/scripts
  
 The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 

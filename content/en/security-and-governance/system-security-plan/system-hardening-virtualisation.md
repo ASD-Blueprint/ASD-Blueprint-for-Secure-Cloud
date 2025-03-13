@@ -52,7 +52,7 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to virtualisat
 
 #### Configuration
 
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 
 
 #### External documentation

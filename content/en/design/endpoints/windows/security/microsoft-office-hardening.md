@@ -149,7 +149,7 @@ D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 #### Configuration
 
 * [Attack Surface Reduction]({{<ref "configuration/intune/endpoint-security/attack-surface-reduction/asd-windows-hardening-asr.md">}})
-* [ASD Office Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-office-hardening-guidelines.md">}})
+* [ASD Office Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-policies/asd-office-hardening-guidelines.md">}})
 
 #### References
 

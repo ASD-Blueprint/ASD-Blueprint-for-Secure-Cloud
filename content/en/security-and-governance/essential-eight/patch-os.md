@@ -200,7 +200,7 @@ In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Proce
 
 #### Configuration
 
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 * [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
 

@@ -24,7 +24,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item |                                     Value |
 | ---- | ----------------------------------------: |
-| Name | USR - G - risky sign-ins with strong auth |
+| Name | USR - G - Risky sign-ins with strong auth |
 
 ### Assignments
 
@@ -80,7 +80,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | --------------------------------------------------- | -----------------------------------: |
 | Control access enforcement to block or grant access |                         Grant access |
 | Require multifactor authentication                  |                          Not checked |
-| Require authentication strength                     |   Phishing-resistant MFA:<br>Checked |
+| Require authentication strength                     |   Checked:<br>Phishing-resistant MFA |
 | Require device to be marked as compliant            |                          Not checked |
 | Require Microsoft Entra hybrid joined device        |                          Not checked |
 | Require approved client app                         |                          Not checked |

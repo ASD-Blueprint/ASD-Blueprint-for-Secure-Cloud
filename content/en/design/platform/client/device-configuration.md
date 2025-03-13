@@ -119,8 +119,8 @@ The deployment of the settings, including any conflicts caused by implementation
 
 #### Configuration
 
-* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
-* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines.md">}})
+* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 
 #### References
 

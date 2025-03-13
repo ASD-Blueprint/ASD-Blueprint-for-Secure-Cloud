@@ -106,8 +106,8 @@ Remediations use separate detect and remediation scripts to identify the conditi
 * [Endpoint Security Profiles]({{<ref "#endpoint-security-profiles">}})
 * [Security Baselines]({{<ref "#security-baselines">}})
 * [Powershell Scripts and Remediations]({{<ref "#powershell-scripts-and-remediations">}})
-* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
-* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines.md">}})
+* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 
 #### References
 

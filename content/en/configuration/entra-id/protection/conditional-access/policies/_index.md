@@ -1,6 +1,6 @@
 ---
-title: "Conditional Access policies"
-linkTitle: "Conditional Access policies"
+title: "Policies"
+linkTitle: "Policies"
 weight: 10
 type: docs
 description: "This page describes the configuration of Conditional Access policies within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."

@@ -25,9 +25,9 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 Some of the SharePoint Online configurations can be automatically deployed using Microsoft 365 Desired State Configuration (DSC).
 
-Some of the Sharepoint Online configurations cannot be assessed automatically with M365DSC Blueprint. Please refer to those configuration pages to conduct a manual assessment.
+Some of the Sharepoint Online configurations cannot be assessed using a DSC blueprint. Please refer to those configuration pages to conduct a manual assessment.
 
-| Configuration | Blueprint Automation Provided |
+| Configuration | Blueprint automation provided |
 | ------------- | ----------------------------- |
 | **Policies**  | Yes                           |
 | **Settings**  | Yes <sup>1</sup>              |
@@ -36,21 +36,23 @@ Some of the Sharepoint Online configurations cannot be assessed automatically wi
 
 #### Desired State Configuration
 
-Before using the below Microsoft 365 Desired State Configuration (DSC) file, please refer to [Automated Deployment]({{<ref "automated-deployment">}}) for instructions.
+Before using the below DSC file, please refer to the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page for instructions.
 
 {{% alert title="Warning" color="danger" %}}
-Any existing settings in a tenancy that match the Name or UID of any settings in the DSC will be overwritten.
+
+Any existing settings in a tenancy that match the name or UID of any settings in the DSC will be overwritten.
+
 {{% /alert %}}
 
-| Desired State Configuration File:                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-spo.txt"%}} Sharepoint Online DSC {{% /download %}} (.ps1)<br>*Note: download the linked .txt file and rename to .ps1* |
-| **Configuration Data File:**                                                                                                                                                                   |
-| The Configuration Data File can be found on the [Automated Tools]({{<ref "automated-deployment">}}) page.                                                                                      |
+| Desired State Configuration file:                                                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-spo.txt" %}} Sharepoint Online DSC {{% /download %}} <br>*The linked .txt file must be renamed to .ps1* |
+| **Configuration Data File:**                                                                                                                                                  |
+| The Configuration Data File can be found on the [Automated Tools]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page.                                     |
 
-##### Service Principal permissions
+##### Service principal permissions
 
-To import the DSC as per the instructions on the [Automated Deployment]({{<ref "automated-deployment">}}) page, the following permissions will need to be added to the Service Principal:
+For organisations importing the DSC as per the instructions on the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page, the following permissions will need to be added to the M365DSC app:
 
 ```powershell
 "ODSettings", "SPOAccessControlSettings", "SPOBrowserIdleSignout", "SPOSearchManagedProperty", "SPOSearchResultSource", "SPOSharingSettings"

@@ -21,33 +21,35 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Global (Org-wide default) policy
 
-| Item                                                            |                        Value |
-| --------------------------------------------------------------- | ---------------------------: |
-| Owners can delete sent messages                                 |                           On |
-| Delete sent messages                                            |                           On |
-| Delete chat                                                     |                           On |
-| Edit sent messages                                              |                           On |
-| Read receipts                                                   |              User controlled |
-| Chat                                                            |                           On |
-| Chat with groups                                                |                           On |
-| Giphy in conversations                                          |                          Off |
-| Giphy content rating                                            |                       Strict |
-| Memes in conversations                                          |                          Off |
-| Stickers in conversations                                       |                          Off |
-| URL previews                                                    |                          Off |
-| Report inappropriate content                                    |                           On |
-| Report a security concern                                       |                           On |
-| Translate messages                                              |                          Off |
-| Immersive reader for messages                                   |                           On |
-| Send urgent messages using priority notifications               |                           On |
-| Create voice messages                                           | Allowed in chat and channels |
-| On Mobile devices, display favorite channels above recent chats |                  Not enabled |
-| Remove users from group chats                                   |                           On |
-| Text predictions                                                |                           On |
-| Suggested replies                                               |                          Off |
-| Chat permission role                                            |       Restricted permissions |
-| Users with full chat permissions can delete any message         |                          Off |
-| Video messages                                                  |                           On |
+| Item                                                            |                                 Value |
+| --------------------------------------------------------------- | ------------------------------------: |
+| Owners can delete sent messages                                 |                                    On |
+| Delete sent messages                                            |                                    On |
+| Delete chat                                                     |                                    On |
+| Edit sent messages                                              |                                    On |
+| Read receipts                                                   |                       User controlled |
+| Upload custom emojis                                            |                                    On |
+| Delete custom emojis                                            |                                    On |
+| Chat                                                            |                                    On |
+| Chat with groups                                                |                                    On |
+| Giphy in conversations                                          |                                   Off |
+| Giphy content rating                                            | G (based on the GIPHY Content Rating) |
+| Memes in conversations                                          |                                   Off |
+| Stickers in conversations                                       |                                   Off |
+| URL previews                                                    |                                   Off |
+| Report inappropriate content                                    |                                    On |
+| Report a security concern                                       |                                    On |
+| Translate messages                                              |                                   Off |
+| Immersive reader for messages                                   |                                    On |
+| Send urgent messages using priority notifications               |                                    On |
+| Create voice messages                                           |          Allowed in chat and channels |
+| On Mobile devices, display favorite channels above recent chats |                           Not enabled |
+| Remove users from group chats                                   |                                    On |
+| Text predictions                                                |                                    On |
+| Suggested replies                                               |                                   Off |
+| Chat permission role                                            |                Restricted permissions |
+| Users with full chat permissions can delete any message         |                                   Off |
+| Video messages                                                  |                                    On |
 
 ### Related information
 

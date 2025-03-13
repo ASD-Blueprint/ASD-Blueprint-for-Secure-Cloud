@@ -84,7 +84,7 @@ In accordance with `<ORGANISATION-NAME>`'s ICT Equipment Management Policy, all 
 
 #### Configuration
 
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [iOS and iPadOS]({{< ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
 
 

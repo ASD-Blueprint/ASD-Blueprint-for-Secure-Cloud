@@ -55,5 +55,3 @@ Workbooks provide several pre-built reports related to common scenarios involvin
 #### References
 
 * [What is Microsoft Entra monitoring and health](https://learn.microsoft.com/entra/identity/monitoring-health/overview-monitoring-health)
-
-

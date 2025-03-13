@@ -1,0 +1,174 @@
+﻿{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
+    "createdDateTime": "2024-11-06T05:32:23.3121832Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2024-11-20T03:14:48.1209062Z",
+    "name": "ASD Windows Hardening Guidelines - User Rights Assignment",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+        "0"
+    ],
+    "settingCount": 6,
+    "technologies": "mdm",
+    "id": "82cc8d6e-d0e0-4941-8b31-874c82651ba3",
+    "templateReference": {
+        "templateId": "",
+        "templateFamily": "none",
+        "templateDisplayName": null,
+        "templateDisplayVersion": null
+    },
+    "settings": [
+        {
+            "id": "0",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_userrights_accesscredentialmanagerastrustedcaller",
+                "settingInstanceTemplateReference": null,
+                "simpleSettingCollectionValue": [
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "Name: SeTrustedCredManAccessPrivilege"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "OMA-URI: “./Device/Vendor/MSFT/Policy/Config/UserRights/AccessCredentialManagerAsTrustedCaller”"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "IsEncrypted: false"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "1",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_userrights_actaspartoftheoperatingsystem",
+                "settingInstanceTemplateReference": null,
+                "simpleSettingCollectionValue": [
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "Name: SeTcbPrivilege"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "OMA-URI: “./Device/Vendor/MSFT/Policy/Config/UserRights/ActAsPartOfTheOperatingSystem”"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "IsEncrypted: false"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "2",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_userrights_createpermanentsharedobjects",
+                "settingInstanceTemplateReference": null,
+                "simpleSettingCollectionValue": [
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "Name: SeCreatePermanentPrivilege"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "OMA-URI: “./Device/Vendor/MSFT/Policy/Config/UserRights/CreatePermanentSharedObjects”"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "IsEncrypted: false"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "3",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_userrights_createtoken",
+                "settingInstanceTemplateReference": null,
+                "simpleSettingCollectionValue": [
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "Name: SeCreateTokenPrivilege"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "OMA-URI: “./Device/Vendor/MSFT/Policy/Config/UserRights/CreateToken”"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "IsEncrypted: false"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "4",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_userrights_enabledelegation",
+                "settingInstanceTemplateReference": null,
+                "simpleSettingCollectionValue": [
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "Name: SeEnableDelegationPrivilege"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "OMA-URI: “./Device/Vendor/MSFT/Policy/Config/UserRights/EnableDelegation”"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "IsEncrypted: false"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "5",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_userrights_lockmemory",
+                "settingInstanceTemplateReference": null,
+                "simpleSettingCollectionValue": [
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "Name: SeLockMemoryPrivilege"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "OMA-URI: “./Device/Vendor/MSFT/Policy/Config/UserRights/LockMemory”"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "IsEncrypted: false"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -4,71 +4,9 @@ weight: 40
 description: "This section describes the design decisions associated with managing data security for system(s) built using ASD's Blueprint for Secure Cloud." 
 ---
 
-### Microsoft Purview Compliance Manager
-
-Microsoft Purview Compliance Manager is a solution in the Microsoft Purview compliance portal that helps organisations automatically assess and manage compliance across an environment. Compliance Manager can help identify and monitor protection risks, manage complexities associated with controls implementation, remain current with relevant regulations and certifications, and provide reporting capabilities to stakeholders.
- 
-Compliance Manager provides a Compliance score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance.
- 
-Compliance Manager includes assessments which help organisations implement data protection controls specified by compliance, security, privacy and data protection standards, regulations, and laws. Assessments include actions that have been taken by Microsoft to protect organisational data, and they're completed when taking action to implement the controls included in the assessment.  Microsoft E5 licensing includes the capability to utilise up to 3 regulation licenses (additional assessments can be purchased from Microsoft). Those of relevance within the Blueprint include ASD Essential 8, ASD Essential 8 Maturity Level 1, ASD Essential 8 Maturity Level 2, ASD Essential 8 Maturity Level 3, ASD Essential 8 Maturity Level 3 for Microsoft 365, Australia Privacy Act, Australia Public Record Act, and Infosec Registered Assessors Program (IRAP).
-
-{{% alert title="Design Decisions" color="warning" %}}
-
-| Decision Point   | Design Decision | Justification                                |
-|------------------|-----------------|----------------------------------------------|
-| Compliance Score | > 60%           | Continual monitoring and improvement program |
-| Assessments      | Use             | Assists in internal and external auditing    |
-
-{{% /alert %}}
-
-### Microsoft Purview Data Loss Prevention
-
-In Microsoft Purview, organisations implement data loss prevention (DLP) by defining and applying DLP policies. DLP policies enable organisations to identify, monitor, and automatically protect sensitive items across:
-
-* Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive accounts
-* Office applications such as Word, Excel, and PowerPoint
-* Windows 10, Windows 11 and macOS (three latest released versions) endpoints
-* Non-Microsoft cloud apps
-* On-premises file shares and on-premises SharePoint
-* Power BI
-
-{{% alert title="Design Decisions" color="warning" %}}
-
-| Decision Point                         | Design Decision                                                                                    | Justification                     |
-|----------------------------------------|----------------------------------------------------------------------------------------------------|-----------------------------------|
-| Microsoft Purview Data Loss Prevention | Implement policies across Microsoft 365 services, Office applications, Windows 10/11, and Power BI | Provides additional data security |
-
-{{% /alert %}}
-
-{{% alert title="Note" color="info" %}}
-
-For Data Loss Prevention policies associated with Microsoft 365 and Office applications see Data Loss Prevention within the [Microsoft 365 Security]({{<ref "design/shared-services/purview/data-loss-prevention">}}) section.
-
-{{% /alert %}}
-
-### Microsoft Purview Endpoint data loss prevention
-
-Endpoint data loss prevention extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10, Windows 11, and macOS devices. Once devices are onboarded into Microsoft Purview solutions, the information about user actions with sensitive items is made visible in Activity Explorer. Organisations can enforce protective actions on those items via DLP policies.
-
-Microsoft provides a full list of [endpoint activities that can be monitored and actioned](https://learn.microsoft.com/purview/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on). 
-
-{{% alert title="Design Decisions" color="warning" %}}
-
-| Decision Point                                  | Design Decision                                                    | Justification                                 |
-|-------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------|
-| Microsoft Purview Endpoint Data Loss Prevention | Investigate implementing basic policies specific to Windows 10/11. | Provide additional data security to endpoints |
-
-{{% /alert %}}
-
-{{% alert title="Note" color="info" %}}
-
-The Blueprint recommends organisations evaluate the capabilities which Endpoint data loss prevention provides and select those that fit within the organisations risk appetite.
-
-{{% /alert %}}
-
 ### Microsoft Purview eDiscovery
 
-Microsoft Purview provides eDiscovery tools to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams. 
+Microsoft Purview provides eDiscovery tools to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams.
 
 eDiscovery can search mailboxes and sites in the same eDiscovery search, and export the search results. Organisations can use Microsoft Purview eDiscovery (Standard) cases to identify, hold, and export content found in mailboxes and sites, and  can further manage custodians and analyse content by using the extended Microsoft Purview eDiscovery (Premium) solution.
 
@@ -116,7 +54,7 @@ Microsoft 365 natively supports communication and collaboration across internal 
 
 Microsoft Purview Information Barriers is supported within Microsoft Teams, SharePoint Online, and OneDrive for Business. Exchange Online does not currently support Information Barriers. Communications and collaboration between selected groups are blocked or allowed through implementation of a Microsoft Purview Information Barriers policies.  
 
-The Blueprint recommends organisations review the [Microsoft guidance on Information Barriers](https://learn.microsoft.com/purview/information-barriers-solution-overview) and assess the value of implementation in line with their risk appetite. 
+The Blueprint recommends organisations review the [Microsoft guidance on Information Barriers](https://learn.microsoft.com/purview/information-barriers-solution-overview) and assess the value of implementation in line with their risk appetite.
 
 {{% alert title="Design Decisions" color="warning" %}}
 
@@ -134,12 +72,11 @@ The Blueprint recommends organisations review the [Microsoft guidance on Informa
 
 #### Design
 
-* [Data Loss Prevention]({{<ref "design/shared-services/purview/data-loss-prevention">}})
+* [Microsoft Purview]({{<ref "design/shared-services/purview">}})
 
 #### Configuration
 
-* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
-* [Rules]({{<ref "configuration/defender/settings/endpoints/rules.md">}})
+* None identified
 
 #### References
 

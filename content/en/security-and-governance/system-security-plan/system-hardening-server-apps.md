@@ -62,7 +62,7 @@ Technical controls for hardening of Entra Connect and Exchange Hybrid Configurat
 
 * [Microsoft Intune - Applications]({{<ref "configuration/intune/apps">}})
 * [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 
 #### External documentation
 

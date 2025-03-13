@@ -18,7 +18,7 @@ When completing the below template, organisations should insert and update infor
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-For applicable government organisations to meet the minimum requirements established under the [*Protective Security Policy Framework* (PSPF)](https://www.protectivesecurity.gov.au/publications-library/policy-10-safeguarding-data-cyber-threats) maturity model, these organisations must implement Maturity Level Two for each of the below components of ASD's [*Essential Eight Maturity Model*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight).
+For applicable government organisations to meet the minimum requirements established under the [*Protective Security Policy Framework* (PSPF)](https://www.protectivesecurity.gov.au/publications-library/protective-security-policy-framework-pspf-assessment-report-2023-24) maturity model, these organisations must implement Maturity Level Two for each of the below components of ASD's [*Essential Eight Maturity Model*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight).
 
 As with implementation of ISM controls, the Blueprint does not itself *achieve* any particular Essential Eight Maturity levels, but rather assists organisations in designing and building systems to achieve their desired maturity level based on their own operating context.
 
@@ -198,7 +198,7 @@ This includes the processing, analysis, and response to the following event logs
 - [Authentication]({{<ref "design/platform/identity/authentication.md">}})
 - [Conditional Access]({{<ref "design/platform/identity/conditional-access.md">}})
 - [Identity Monitoring and Auditing]({{<ref "design/platform/identity/reporting-and-monitoring.md">}})
-- [Platform Monitoring and Auditing]({{<ref "platform-monitoring-auditing.md">}})
+- [Platform Monitoring]({{<ref "platform-monitoring-auditing.md">}})
 - [Security Information and Event Monitoring]({{<ref "siem.md">}})
 
 #### Configuration
@@ -210,4 +210,4 @@ This includes the processing, analysis, and response to the following event logs
 
 - ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
 - Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-- Microsoft's [*Guidance for meeting ASD's Essential Eight - Multi-Factor Authentication*](https://learn.microsoft.com/compliance/essential-eight/e8-mfa)
+- Microsoft's [*Guidance for meeting ASD's Essential Eight - Multi-Factor Authentication*](https://learn.microsoft.com/en-us/compliance/anz/e8-mfa)

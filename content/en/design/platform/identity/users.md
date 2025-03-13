@@ -76,7 +76,7 @@ Administrator accounts and Break Glass Accounts should be excluded from these ru
 
 ### Service accounts
 
-There are three types of service accounts native to Microsoft Entra ID: [Managed identities, service principals](/design/platform/identity/application/#application-objects-app-registration-and-service-principals-enterprise-applications), and user-based service accounts. Service accounts are a special type of account that is intended to represent a non-human entity such as an application, application programming interface (API), or other service.
+There are three types of service accounts native to Microsoft Entra ID: Managed identities, service principals, and user-based service accounts. Service accounts are a special type of account that is intended to represent a non-human entity such as an application, application programming interface (API), or other service.
 
 For services hosted within Azure, [Microsoft recommends](https://learn.microsoft.com/entra/architecture/secure-service-accounts) using a managed identity if possible, and a service principal if not. Managed identities cannot be used for services hosted outside of Azure. In that case, Microsoft recommends a service principal.
 
@@ -90,7 +90,7 @@ User based service accounts are standard user accounts where the password and MF
 
 {{% /alert %}}
 
-{{% alert title="Design Decisions" color="info" %}}
+{{% alert title="Design decisions" color="info" %}}
 
 There are two exceptions to the use of user based service accounts due to the nature and purpose of these accounts, being the Break Glass and Enterprise Enrolment Accounts. These should be closely monitored and audited with the passwords and MFA strictly controlled.
 

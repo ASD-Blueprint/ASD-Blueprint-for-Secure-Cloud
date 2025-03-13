@@ -1,7 +1,7 @@
 ---
-title: "Platform Monitoring and Auditing"
+title: "Platform Monitoring"
 weight: 70
-description: "This section articulates how security monitoring, compliance, threat detection and response from Hosted Services, Web Services, Platform Data and Identity and Endpoints come together in a centralised cloud security solution for platform security operations and audit for system(s) built using ASD's Blueprint for Secure Cloud."
+description: "This section articulates how security monitoring, compliance, threat detection and response from Hosted Services, Web Services, Platform Data and Identity and Endpoints come together in a centralised cloud security solution for platform security operations for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
 Log Analytics is a component of the Azure Monitor solution and also forms the storage location for the data analysed by Microsoft Sentinel. It is utilised for log ingestion and querying. Logs can be ingested into Log Analytics in several ways including via:

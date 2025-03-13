@@ -27,41 +27,53 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 Some of the Exchange Online configurations can be automatically deployed using Microsoft 365 Desired State Configuration (DSC).
 
-Some of the Exchange Online configurations cannot be assessed automatically with M365DSC Blueprint. Please refer to those configuration pages to conduct a manual assessment.
+Some of the Exchange Online configurations cannot be assessed using a DSC blueprint. Please refer to those configuration pages to conduct a manual assessment.
 
-| Configuration     | Blueprint Automation Provided |
-| ----------------- | ----------------------------- |
-| **Mail Flow**     |                               |
-| - Transport Rules | Yes (DSC)<sup>1</sup>         |
-| - Remote Domains  | Yes (DSC)                     |
-| - Connectors      | No                            |
-| **Roles**         | Yes (DSC)                     |
-| **Settings**      | No                            |
+| Configuration    | Blueprint automation provided |
+| ---------------- | ----------------------------- |
+| **Mail Flow**    |                               |
+| - Rules          | Yes (DSC)<sup>1</sup>         |
+| - Remote Domains | Yes (DSC)                     |
+| - Connectors     | No                            |
+| **Roles**        | Yes (DSC)                     |
+| **Settings**     | No                            |
 
-1: The words or phrases setting in the *Require TLS for sensitive items* rule must be configured manually. Refer to [Transport Rules]({{<ref "transport-rules">}}) for configuration guidance.
+1: The words or phrases setting in the *Require TLS for sensitive items* rule must be configured manually. Refer to [Rules]({{<ref "mail-flow/rules">}}) for configuration guidance.
 
 #### Desired State Configuration
 
-Before using the below Microsoft 365 Desired State Configuration (DSC) file, please refer to [Automated Deployment]({{<ref "automated-deployment">}}) for instructions.
+Before using the below DSC file, please refer to the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page for instructions.
 
 {{% alert title="Warning" color="danger" %}}
-Any existing settings in a tenancy that match the Name or UID of any settings in the DSC will be overwritten.
+
+Any existing settings in a tenancy that match the name or UID of any settings in the DSC will be overwritten.
+
 {{% /alert %}}
 
-| Desired State Configuration File                                                                                                                                                             |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-exo.txt"%}} Exchange Online DSC {{% /download %}} (.ps1) <br> *Note: download the linked .txt file and rename to .ps1* |
-| **Configuration Data File:**                                                                                                                                                                 |
-| The Configuration Data File can be found on the [Automated Deployment]({{<ref "automated-deployment">}}) page.                                                                               |
+| Desired State Configuration file                                                                                                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-exo.txt" %}} Exchange Online DSC {{% /download %}} (.ps1) <br>*The linked .txt file must be renamed to .ps1* |
+| **Configuration Data File:**                                                                                                                                                       |
+| The configuration data file can be found on the [DSC setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) page.                                   |
+
+The downloaded DSC file requires the following parameters to be populated or you will be prompted for on import:
+
+| Parameter name           | Contents                                                                     |
+| ------------------------ | ---------------------------------------------------------------------------- |
+| JournallingReportMailbox | Name of an existing mailbox used for sending journalling reports<sup>1</sup> |
+
+1: This parameter is only required to import DSC, related journalling configuration settings are not provided.
 
 ##### Service Principal permissions
 
-To import the DSC as per the instructions on the [Automated Deployment]({{<ref "automated-deployment">}}) page, the following permissions will need to be added to the Service Principal:
+For organisations importing the DSC as per the instructions on the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page, the following permissions will need to be added to the Service Principal:
 
 ```powershell
 "EXOOwaMailboxPolicy", "EXORemoteDomain", "EXOTransportConfig", "EXOTransportRule"
 ```
 
-{{% alert title="Note" color="warning" %}}
-The Exchange Administrator role must be also given to the Service Principal if Exchange Online is the intended DSC target.
-{{% /alert %}}
+##### Additional configuration
+
+The following instructions must be completed before *step 6 Deploy the configuration*, on the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page:
+
+* Assign the Entra, Exchange Administrator role to the M365DSC service principal.

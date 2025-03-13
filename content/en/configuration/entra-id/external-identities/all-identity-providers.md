@@ -1,7 +1,7 @@
 ---
 title: "All identity providers"
 linkTitle: "All identity providers"
-weight: 10
+weight: 20
 type: docs
 description: "This page describes the configuration of External Identities within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
@@ -43,7 +43,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
   
 #### Configuration
 
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 
 #### References
 

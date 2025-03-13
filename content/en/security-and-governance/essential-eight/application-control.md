@@ -8,11 +8,11 @@ description: This page provides a template and guidance to assist organisations 
 
 {{% alert title="Instruction" color="dark" %}}
 
-The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in this section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
+The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in this section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex.
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
 
-When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight Maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout. 
+When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight Maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout.
 
 {{% /alert %}}
 
@@ -27,6 +27,7 @@ As with implementation of ISM controls, the Blueprint does not itself *achieve* 
 ### Applicability
 
 The application control mitigation strategy is applicable to the management of applications on the following `<SYSTEM-NAME>` components:
+
 * Windows Endpoints
 * `<HYBRID SERVERS>`
 
@@ -68,7 +69,6 @@ Application control on workstations is required to restrict the following filety
 | Control panel applets                                                       | Yes | Yes | Yes |
 | Drivers                                                                     |  -  |  -  | Yes |
 |                                                                             |     |     |     |
-
 
 In addition, the following Microsoft blocklists should be implemented:
 
@@ -209,11 +209,12 @@ The Blueprint does not provide guidance for implementing application control on 
 {{% alert title="Essential Eight guidance" color="success" %}}
 
 Maturity Levels 2 and 3 require that:
+
 * all allowed and blocked application control events are to be captured from all of the following and centrally logged:
 * workstations
 * internet-facing servers
 * non-internet-facing servers
-* event logs are protected from unauthorised modification and deletion.                         
+* event logs are protected from unauthorised modification and deletion.
 
 {{% /alert %}}
 
@@ -255,6 +256,7 @@ Maturity Levels 2 and 3 require all allowed and blocked application control even
 | Workstations:                |  -  | Yes |
 
 Both Maturity Levels 2 and 3 also require the following:
+
 * cyber security events are analysed in a timely manner to identify cyber security incidents
 * as soon as possible after a cyber security incident occurs or is discovered the:
 * cyber security incident response plan is enacted
@@ -265,13 +267,13 @@ Both Maturity Levels 2 and 3 also require the following:
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The Blueprint provides limited guidance on developing an approach for response to cyber security incidents. However, the section below is provided for organisations to describe the measures implemented within their system(s) built on the Blueprint. 
+The Blueprint provides limited guidance on developing an approach for response to cyber security incidents. However, the section below is provided for organisations to describe the measures implemented within their system(s) built on the Blueprint.
 
 Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
 
 {{% /alert %}}
 
-`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cyber security incidents. 
+`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cyber security incidents.
 
 This includes the processing, analysis, and response to the following event logs in a timely manner:
 
@@ -299,14 +301,13 @@ This includes the processing, analysis, and response to the following event logs
 
 * [Windows Security]({{<ref "design/endpoints/windows/security">}})
 * [Endpoint Monitoring]({{<ref "design/platform/client/endpoint-monitoring.md">}})
-* [Platform Monitoring and Auditing]({{<ref "design/platform/security/platform-monitoring-auditing.md">}})
-* [Audit and Logging]({{<ref "design/shared-services/defender/audit-and-logging.md">}})
+* [Platform Monitoring]({{<ref "design/platform/security/platform-monitoring-auditing.md">}})
 
 #### Configuration
 
 * [Microsoft Intune - Applications]({{<ref "configuration/intune/apps">}})
 * [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
 
 #### External links

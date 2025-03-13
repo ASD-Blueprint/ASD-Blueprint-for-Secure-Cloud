@@ -26,7 +26,7 @@ ISM controls relating to the email usage within `<SYSTEM-NAME>`'s system boundar
 
 #### Organisational policies and processes implemented
 
-The usage of `<SYSTEM-NAME>`'s email services by users is performed in accordance with the `<ORGANISATION-NAME>`'s [Email Usage Policy]({{<ref "/security-and-governance/policies/email-usage-policy">}}).
+The usage of `<SYSTEM-NAME>`'s email services by users is performed in accordance with the `<ORGANISATION-NAME>`'s [Email Usage Policy]({{<ref "/security-and-governance/policies">}}).
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 

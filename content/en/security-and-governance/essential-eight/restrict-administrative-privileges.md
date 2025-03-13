@@ -266,7 +266,7 @@ This includes the processing, analysis, and response to the following event logs
 #### Configuration
 
 * [Microsoft Entra ID - Users]({{<ref "configuration/entra-id/users">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
 * [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
 

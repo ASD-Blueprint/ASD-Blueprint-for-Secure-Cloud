@@ -55,8 +55,8 @@ If supported by their existing web content filtering implementations, organisati
 
 #### Configuration
 
-* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
-* [ASD Edge Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-edge-hardening-guidelines.md">}})
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines.md">}})
+* [ASD Edge Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-policies/asd-edge-hardening-guidelines.md">}})
 
 #### References
 

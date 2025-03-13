@@ -117,7 +117,6 @@ Technical controls for implementation of user access to `<SYSTEM-NAME>` and its 
 
 #### Design
 
-* [Audit and Logging]({{<ref "design/shared-services/defender/audit-and-logging.md">}})
 * [Application Control]({{<ref "design/endpoints/windows/security/windows-defender-application-control.md">}})
 * [Windows Security]({{<ref "design/endpoints/windows/security">}})
   

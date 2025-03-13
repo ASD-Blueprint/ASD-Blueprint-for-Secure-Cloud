@@ -1,15 +1,15 @@
 ---
 title: "Compliance Manager"
 linkTitle: "Compliance Manager"
-weight: 010
-description: "This section describes the configuration of compliance within Microsoft Purview associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
+weight: 30
+description: "This section describes the configuration of Compliance Manager within Microsoft Purview associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
 The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
 
-<https://compliance.microsoft.com/compliancemanager?viewid=overview>
+<https://purview.microsoft.com/compliancemanager/overviewpage>
 
 The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 

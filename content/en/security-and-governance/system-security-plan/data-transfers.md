@@ -49,8 +49,7 @@ Technical controls for `<SYSTEM-NAME>`'s implementation of data transfers are co
 
 #### Design
 
-*   [Platform Monitoring and Auditing]({{< ref "platform-monitoring-auditing.md" >}})
-
+* [Platform Monitoring]({{< ref "platform-monitoring-auditing" >}})
 
 #### Configuration
 

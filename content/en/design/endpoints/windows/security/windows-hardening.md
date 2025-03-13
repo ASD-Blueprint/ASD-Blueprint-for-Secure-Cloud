@@ -378,7 +378,7 @@ The following design components apply to the hardening of Microsoft Windows 10 2
 
 #### Configuration
 
-* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-profiles/asd-windows-hardening-guidelines.md">}})
+* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines.md">}})
 * [Attack Surface Reduction]({{<ref "configuration/intune/endpoint-security/attack-surface-reduction/asd-windows-hardening-asr.md">}})
 * [Windows]({{<ref "configuration/intune/apps/by-platform/windows.md">}})
 

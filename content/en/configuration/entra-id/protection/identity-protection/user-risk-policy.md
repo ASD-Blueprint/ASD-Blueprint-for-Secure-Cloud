@@ -22,13 +22,13 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### User risk remediation policy
 
-| Item               |                           Value |
-| ------------------ | ------------------------------: |
-| Users              |              Include: All users |
-|                    | Exclude: *Break Glass accounts* |
-| User risk          |                Medium and above |
-| Controls           |         Require password change |
-| Policy enforcement |                         Enabled |
+| Item               |                             Value |
+| ------------------ | --------------------------------: |
+| Users              |                Include: All users |
+|                    | Exclude: `<Break Glass accounts>` |
+| User risk          |                  Medium and above |
+| Controls           |           Require password change |
+| Policy enforcement |                           Enabled |
 
 ### Related information
 

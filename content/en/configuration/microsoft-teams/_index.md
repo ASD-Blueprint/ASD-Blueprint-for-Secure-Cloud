@@ -27,22 +27,28 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 All of the Teams configurations can be automatically deployed using Microsoft 365 Desired State Configuration (DSC).
 
-All of the Teams configurations can be automatically assessed using M365DSC Blueprint.
+All of the Teams configurations can be assessed using a DSC blueprint.
 
 #### Desired State Configuration
 
-Before using the below Microsoft 365 Desired State Configuration (DSC) file, please refer to [Automated Deployment]({{<ref "automated-deployment">}}) for instructions.
+Before using the below DSC file, please refer to the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) for instructions.
 
-| Desired State Configuration File                                                                                                                                                     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-teams.txt"%}} Teams DSC {{% /download %}} (.ps1) <br> *Note: download the linked .txt file and rename to .ps1* |
-| **Configuration Data File:**                                                                                                                                                         |
-| The Configuration Data File can be found on the [Automated Deployment]({{<ref "automated-deployment">}}) page.                                                                       |
+| Desired State Configuration file                                                                                                                                           |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-teams.txt" %}} Teams DSC {{% /download %}} (.ps1) <br>*The linked .txt file must be renamed to .ps1* |
+| **Configuration Data File:**                                                                                                                                               |
+| The configuration data file can be found on the [DSC setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) page.                           |
 
-##### Service Principal permissions
+##### Service principal permissions
 
-To import the DSC as per the instructions on the [Automated Deployment]({{<ref "automated-deployment">}}) page, the following permissions will need to be added to the Service Principal:
+For organisations importing the DSC as per the instructions on the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page, the following permissions will need to be added to the M365DSC app:
 
 ```powershell
 "TeamsAppPermissionPolicy", "TeamsAudioConferencingPolicy", "TeamsCallHoldPolicy", "TeamsCallingPolicy", "TeamsChannelsPolicy", "TeamsClientConfiguration", "TeamsComplianceRecordingPolicy", "TeamsDialInConferencingTenantSettings", "TeamsEventsPolicy", "TeamsFederationConfiguration", "TeamsFeedbackPolicy", "TeamsGroupPolicyAssignment", "TeamsGuestCallingConfiguration", "TeamsGuestMeetingConfiguration", "TeamsGuestMessagingConfiguration", "TeamsMeetingBroadcastConfiguration", "TeamsMeetingBroadcastPolicy", "TeamsMeetingConfiguration", "TeamsMeetingPolicy", "TeamsMessagingPolicy", "TeamsOrgWideAppSettings", "TeamsPstnUsage", "TeamsShiftsPolicy", "TeamsTemplatesPolicy", "TeamsTenantDialPlan", "TeamsTenantNetworkRegion", "TeamsTenantNetworkSite", "TeamsTranslationRule", "TeamsUpdateManagementPolicy", "TeamsUpgradeConfiguration"
 ```
+
+##### Additional configuration
+
+The following instructions must be completed before *step 6 Deploy the configuration*, on the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page:
+
+* Assign the Entra, Teams Administrator role to the M365DSC service principal.

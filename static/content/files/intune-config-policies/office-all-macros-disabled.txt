@@ -1,0 +1,643 @@
+﻿{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
+    "createdDateTime": "2024-11-05T23:27:32.8629226Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2024-11-05T23:27:32.8629226Z",
+    "name": "ASD Office Hardening - All Macros Disabled",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+        "0"
+    ],
+    "settingCount": 40,
+    "technologies": "mdm",
+    "id": "67d788b2-bee3-4ede-b13f-576326f40477",
+    "templateReference": {
+        "templateId": "",
+        "templateFamily": "none",
+        "templateDisplayName": null,
+        "templateDisplayVersion": null
+    },
+    "settings": [
+        {
+            "id": "0",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "1",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter~l_trustedlocations_l_disabletrustedloc",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter~l_trustedlocations_l_disabletrustedloc_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "2",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter_l_turnofftrusteddocuments",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter_l_turnofftrusteddocuments_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "3",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter_l_turnofftrusteddocumentsonthenetwork",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter_l_turnofftrusteddocumentsonthenetwork_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "4",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter_l_vbawarningspolicy",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter_l_vbawarningspolicy_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter_l_vbawarningspolicy_l_empty",
+                            "settingInstanceTemplateReference": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter_l_vbawarningspolicy_l_empty_2",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "5",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter_l_trustaccesstovisualbasicproject",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter_l_trustaccesstovisualbasicproject_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "6",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "7",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter~l_trustedlocations_l_disabletrustedloc",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter~l_trustedlocations_l_disabletrustedloc_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "8",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter_l_turnofftrusteddocuments",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter_l_turnofftrusteddocuments_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "9",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter_l_turnofftrusteddocumentsonthenetwork",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter_l_turnofftrusteddocumentsonthenetwork_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "10",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter_l_vbawarningspolicy",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter_l_vbawarningspolicy_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty4",
+                            "settingInstanceTemplateReference": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty4_2",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "11",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_securitysettings_l_automationsecurity",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_securitysettings_l_automationsecurity_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_securitysettings_l_automationsecurity_l_settheautomationsecuritylevel",
+                            "settingInstanceTemplateReference": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_securitysettings_l_automationsecurity_l_settheautomationsecuritylevel_3",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "12",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_securitysettings_l_disablevbaforofficeapplications319",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_securitysettings_l_disablevbaforofficeapplications319_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "13",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_securitysettings~l_trustcenter241_l_allowmixofpolicyanduserlocations",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_securitysettings~l_trustcenter241_l_allowmixofpolicyanduserlocations_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "14",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_security~l_trustcenter_l_applymacrosecuritysettings",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_security~l_trustcenter_l_applymacrosecuritysettings_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "15",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_security~l_trustcenter_l_securityleveloutlook",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_security~l_trustcenter_l_securityleveloutlook_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "16",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter_l_trustaccesstovisualbasicproject",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter_l_trustaccesstovisualbasicproject_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "17",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "18",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter~l_trustedlocations_l_disabletrustedloc",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter~l_trustedlocations_l_disabletrustedloc_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "19",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter_l_turnofftrusteddocuments",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter_l_turnofftrusteddocuments_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "20",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter_l_turnofftrusteddocumentsonthenetwork",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter_l_turnofftrusteddocumentsonthenetwork_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "21",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter_l_vbawarningspolicy",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter_l_vbawarningspolicy_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty3",
+                            "settingInstanceTemplateReference": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty3_2",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "22",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_proj16v2~policy~l_proj~l_projectoptions~l_security~l_trustcenter_l_allowtrustedlocationsonthenetwork",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_proj16v2~policy~l_proj~l_projectoptions~l_security~l_trustcenter_l_allowtrustedlocationsonthenetwork_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "23",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_proj16v2~policy~l_proj~l_projectoptions~l_security~l_trustcenter_l_disabletrustedloc",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_proj16v2~policy~l_proj~l_projectoptions~l_security~l_trustcenter_l_disabletrustedloc_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "24",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_proj16v2~policy~l_proj~l_projectoptions~l_security~l_trustcenter_l_vbawarningspolicy",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_proj16v2~policy~l_proj~l_projectoptions~l_security~l_trustcenter_l_vbawarningspolicy_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "user_vendor_msft_policy_config_proj16v2~policy~l_proj~l_projectoptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty",
+                            "settingInstanceTemplateReference": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "user_vendor_msft_policy_config_proj16v2~policy~l_proj~l_projectoptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty_2",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "25",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_pub16v2~policy~l_microsoftofficepublisher~l_security_l_publisherautomationsecuritylevel",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_pub16v2~policy~l_microsoftofficepublisher~l_security_l_publisherautomationsecuritylevel_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "user_vendor_msft_policy_config_pub16v2~policy~l_microsoftofficepublisher~l_security_l_publisherautomationsecuritylevel_l_empty",
+                            "settingInstanceTemplateReference": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "user_vendor_msft_policy_config_pub16v2~policy~l_microsoftofficepublisher~l_security_l_publisherautomationsecuritylevel_l_empty_3",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "26",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_pub16v2~policy~l_microsoftofficepublisher~l_security~l_trustcenter_l_vbawarningspolicy",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_pub16v2~policy~l_microsoftofficepublisher~l_security~l_trustcenter_l_vbawarningspolicy_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "user_vendor_msft_policy_config_pub16v2~policy~l_microsoftofficepublisher~l_security~l_trustcenter_l_vbawarningspolicy_l_empty0",
+                            "settingInstanceTemplateReference": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "user_vendor_msft_policy_config_pub16v2~policy~l_microsoftofficepublisher~l_security~l_trustcenter_l_vbawarningspolicy_l_empty0_2",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "27",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_macrosecurity_l_enablemicrosoftvisualbasicforapplicationsproject",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_macrosecurity_l_enablemicrosoftvisualbasicforapplicationsproject_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "28",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_macrosecurity_l_loadmicrosoftvisualbasicforapplicationsprojectsf",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_macrosecurity_l_loadmicrosoftvisualbasicforapplicationsprojectsf_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "29",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_allowtrustedlocationsonthenetwork",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_allowtrustedlocationsonthenetwork_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "30",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_disabletrustedloc",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_disabletrustedloc_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "31",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_turnofftrusteddocuments",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_turnofftrusteddocuments_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "32",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_turnofftrusteddocumentsonthenetwork",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_turnofftrusteddocumentsonthenetwork_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "33",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_vbawarningspolicy",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_vbawarningspolicy_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty",
+                            "settingInstanceTemplateReference": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty_2",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "34",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter_l_trustaccesstovisualbasicproject",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter_l_trustaccesstovisualbasicproject_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "35",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork_0",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "36",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter~l_trustedlocations_l_disabletrustedloc",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter~l_trustedlocations_l_disabletrustedloc_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "37",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter_l_turnofftrusteddocuments",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter_l_turnofftrusteddocuments_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "38",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter_l_turnofftrusteddocumentsonthenetwork",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter_l_turnofftrusteddocumentsonthenetwork_1",
+                    "children": []
+                }
+            }
+        },
+        {
+            "id": "39",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter_l_vbawarningspolicy",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter_l_vbawarningspolicy_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty19",
+                            "settingInstanceTemplateReference": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty19_2",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

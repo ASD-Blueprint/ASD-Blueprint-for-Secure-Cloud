@@ -34,7 +34,7 @@ Integration with Azure Sentinel Security Information and Event Management (SIEM)
 
 #### Design
 
-* [Microsoft Defender Audit and Logging]({{<ref "audit-and-logging">}})
+* None identified
 
 #### Configuration
 

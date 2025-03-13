@@ -1,7 +1,7 @@
 ---
 title: "Cross-tenant access settings"
 linkTitle: "Cross-tenant access settings"
-weight: 20
+weight: 10
 type: docs
 description: "This page describes the configuration of cross-tenant access settings within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
@@ -26,8 +26,8 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Type               | Applies to                | Status      |
 | ------------------ | ------------------------- | -----------:|
-| B2B collaboration  | External users and groups | All allowed |
-| B2B collaboration  | Applications              | All allowed |
+| B2B collaboration  | External users and groups | All blocked |
+| B2B collaboration  | Applications              | All blocked |
 | B2B direct connect | External users and groups | All blocked |
 | B2B direct connect | Applications              | All blocked |
 | Trusted settings   | N/A                       | Disabled    |
@@ -36,12 +36,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Type               | Applies to            | Status      |
 | ------------------ | --------------------- | -----------:|
-| B2B collaboration  | Users and groups      | All allowed |
-| B2B collaboration  | External applications | All allowed |
+| B2B collaboration  | Users and groups      | All blocked |
+| B2B collaboration  | External applications | All blocked |
 | B2B direct connect | Users and groups      | All blocked |
 | B2B direct connect | External applications | All blocked |
 
-#### Tenant restrictions (Preview)
+#### Tenant restrictions
 
 | Applies to                | Status      |
 | ------------------------- | -----------:|

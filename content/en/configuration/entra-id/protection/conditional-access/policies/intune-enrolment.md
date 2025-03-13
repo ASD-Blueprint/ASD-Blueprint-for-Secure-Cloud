@@ -83,7 +83,7 @@ The Microsoft Intune Enrolment app is not created by default in new tenants, see
 | --------------------------------------------------- | -----------------------------------: |
 | Control access enforcement to block or grant access |                         Grant access |
 | Require multifactor authentication                  |                          Not checked |
-| Require authentication strength                     |   Phishing-resistant MFA:<br>Checked |
+| Require authentication strength                     |   Checked:<br>Phishing-resistant MFA |
 | Require device to be marked as compliant            |                          Not checked |
 | Require Microsoft Entra hybrid joined device        |                          Not checked |
 | Require approved client app                         |                          Not checked |

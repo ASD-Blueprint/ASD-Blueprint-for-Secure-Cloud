@@ -7,19 +7,19 @@ description: "This section describes the design decisions associated with Condit
 
 Conditional Access makes policy-based decisions to decide how user and workload identities access the resources associated with an Entra ID tenant. When an access request is a performed, a set of conditions, comprising the set of all Conditional Access policies, are evaluated to decide if access is granted.
 
-### Conditional Access deployment considerations
+### Deployment considerations
 
-Conditional access should be used for controlling access wherever possible.
+The following should be considered before creating Conditional Access policies:
 
 #### Policy names
 
 Policy names should give a clear indication of the scope, type, and purpose of the control.
 
-{{% alert title="Design decisions" color="warning" %}}
+{{% alert title="Design Decisions" color="warning" %}}
 
-| Decision Point | Design Decision                                                    | Justification                   |
-| -------------- | ------------------------------------------------------------------ | ------------------------------- |
-| Policy name    | [ADM\|APP\|DEV\|GST\|LOC\|OTH\|USR\|WKL] - [B\|G\|S] - [*purpose*] | Enhanced operational visibility |
+| Decision Point | Design Decision                                                                                            | Justification                   |
+| -------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| Policy name    | Name policies according to the standard [ADM\|APP\|DEV\|GST\|LOC\|OTH\|USR\|WKL] - [B\|G\|S] - [*purpose*] | Enhanced operational visibility |
 
 {{% /alert %}}
 
@@ -55,7 +55,7 @@ Groups can be used to ensure that policies are scoped to the correct subset of i
 
 The use of *exclude* groups is a common practice that allows groups of identities to be excluded from policy control, because of this the management and membership of exclude groups should be tightly controlled.
 
-{{% alert title="Design decisions" color="warning" %}}
+{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                                                | Design Decision                                                               | Justification                                                                                                                       |
 | ------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -68,17 +68,17 @@ The use of *exclude* groups is a common practice that allows groups of identitie
 
 1: Using roles in Conditional Access policy assignments may need regular maintenance as roles are regularly updated by Microsoft. New role assignments to users may also require Conditional Access policies to be checked to ensure the role has also been selected within the policy assignment to be included or excluded.
 
-The use of exclude groups is discussed in more detail in the [groups design page]({{<ref "design/platform/identity/groups">}}).
+The use of exclude groups is also discussed in the [groups]({{<ref "design/platform/identity/groups">}}) design page.
 
-The use of access reviews is discussed in more detail in the [groups design page]({{<ref "design/platform/identity/governance">}}).
+The use of access reviews is also discussed in the [groups]({{<ref "design/platform/identity/governance">}}) design page.
 
-The use of PIM for exclude group changes is discussed in more detail in the [role-based access control design page]({{<ref "design/platform/identity/roles">}}).
+The use of PIM for exclude group changes is discussed in more detail in the [role-based access control]({{<ref "design/platform/identity/roles">}}) design page.
 
 #### Emergency access
 
 Methods like *break glass* accounts and related exclude groups can be used to mitigate a tenant lockout.
 
-{{% alert title="Design decisions" color="warning" %}}
+{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point   | Design Decision                                                     | Justification           |
 | ---------------- | ------------------------------------------------------------------- | ----------------------- |
@@ -86,7 +86,7 @@ Methods like *break glass* accounts and related exclude groups can be used to mi
 
 {{% /alert %}}
 
-The use of break glass accounts is discussed in more detail in the [enterprise users design page]({{<ref "design/platform/identity/users">}}).
+The use of break glass accounts is discussed in more detail in the [enterprise users]({{<ref "design/platform/identity/users">}}) design page.
 
 #### Other deployment considerations
 
@@ -96,7 +96,7 @@ To enhance operational visibility, policy complexity should be minimised by keep
 
 Named locations are used primarily for location-based policy control, and while they can be useful, they should not be used when similarly capable, location-agnostic controls are available.
 
-{{% alert title="Design decisions" color="warning" %}}
+{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point            | Design Decision                                             | Justification                                                                                                               |
 | ------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -117,7 +117,7 @@ Authentication contexts allow select applications to trigger policy control.
 | ----------------------- | ---------------------------------------------------------- | ----------------------------- |
 | Authentication contexts | Restrict access to PROTECTED information to employees only | Protect sensitive information |
 
-The use of authentication contexts is discussed in more detail in the [Purview design page]({{<ref "design/shared-services/purview">}}).
+The use of authentication contexts is discussed in more detail in the [Purview labelling and classification]({{<ref "design/shared-services/purview/labelling-and-classification#conditional-access">}}) design page.
 
 ### Authentication strengths
 
@@ -176,9 +176,9 @@ Organisations may wish to implement disabled policies that are activated in the 
 
 #### Security & Governance
 
-- [Essential Eight MFA guidance]({{<ref "security-and-governance/essential-eight/multi-factor-authentication">}})
 - [Authentication hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-authentication">}})
 - [Enterprise mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility">}})
+- [Essential Eight MFA guidance]({{<ref "security-and-governance/essential-eight/multi-factor-authentication">}})
 
 #### Design
 

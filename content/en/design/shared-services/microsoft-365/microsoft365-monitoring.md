@@ -4,7 +4,7 @@ weight: 70
 description: "Design decisions associated with monitoring of Microsoft 365 activities for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Microsoft 365 activities are logged to the Microsoft 365 Unified Log as detailed in [Audit and Logging]({{<ref "audit-and-logging">}}). Integration with Microsoft Sentinel SIEM is managed via the Sentinel Microsoft 365 Data Connector. This connector writes information to the following Log Analytics tables : 
+Microsoft 365 activities are logged to the Microsoft 365 Unified Audit Log as detailed in [Purview Audit]({{<ref "design/shared-services/purview/audit">}}). Integration with Microsoft Sentinel SIEM is managed via the Sentinel Microsoft 365 Data Connector. This connector writes information to the following Log Analytics tables : 
 
 | Table name     | Events type                                                                                                                                                                                                           |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -40,8 +40,8 @@ Microsoft Defender for Office 365 is part of the Microsoft 365 Defender stack. I
 
 #### Design
 
+* [Audit]({{<ref "design/shared-services/purview/audit">}}).
 * [Data Loss Prevention]({{<ref "design/shared-services/purview/data-loss-prevention">}})
-* [Logging and Auditing]({{<ref "audit-and-logging">}})
 * [Security logging and monitoring overview]({{<ref "siem">}})
 
 #### Configuration

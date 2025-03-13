@@ -1,20 +1,27 @@
 ---
-title: "Data Lifecycle Management: OneDrive accounts 7 year hold"
+title: "OneDrive accounts 7 year hold"
+linkTitle: "OneDrive accounts 7 year hold"
 weight: 020
-description: "This section describes the configuration of data lifecycle management retention policies within Microsoft Purview associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
+description: "This section describes the configuration of Data Lifecycle Management retention policies within Microsoft Purview associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
- 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL: 
- 
-https://compliance.microsoft.com/informationgovernance?viewid=retention
- 
+
+The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+
+<https://purview.microsoft.com/datalifecyclemanagement/retention>
+
 The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 
 Implementation of the guidance provided by the Blueprint will differ depending on an organisation’s operating context and organisational culture. Organisations should implement the Blueprint in alignment with their existing change management, business processes and frameworks.
 
 Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-NAME>` should be replaced with the relevant details as required.
+
+{{% /alert %}}
+
+{{% alert title="Retention policy state" color="info" %}}
+
+Retention policies are enabled by default after creation. Administrators should be aware of the potential for some references to Microsoft 365 groups to remain following deletion as described [here](https://learn.microsoft.com/en-us/purview/retention-settings#what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied).
 
 {{% /alert %}}
 
@@ -31,7 +38,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ----------- | -------------: |
 | Admin units | Full directory |
 
-### Type 
+### Type
 
 | Item                                          |  Value |
 | --------------------------------------------- | -----: |
@@ -63,6 +70,8 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | - Retain items for a specific period                     |                            7 years |
 | - Start the retention period based on                    |      When items were last modified |
 | - At the end of the retention period                     |                         Do nothing |
+| Retain items forever                                     |                       Not selected |
+| Only delete items when they reach a certain age          |                       Not selected |
 
 ### Related information
 
@@ -73,13 +82,13 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 #### Design
 
 * [Backup and Operational Management]({{<ref "design/platform/backup">}})
-* [Retention policies]({{<ref "design/shared-services/purview/retention-policies.md">}})
-* [Audit and logging]({{<ref "design/shared-services/defender/audit-and-logging.md">}})
-  
+* [Data Lifecycle Management]({{<ref "design/shared-services/purview/data-lifecycle-management">}})
+
 #### Configuration
 
 * None identified
 
 #### References
 
-* None identified
+* [Learn about data lifecycle management](https://learn.microsoft.com/en-us/purview/data-lifecycle-management)
+* [Create and configure retention policies](https://learn.microsoft.com/en-us/purview/create-retention-policies?tabs=teams-retention)

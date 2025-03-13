@@ -49,7 +49,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 * [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
 * [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-profiles">}})
+* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
 * [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
 * [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
 * [Rules]({{<ref "configuration/defender/settings/endpoints/rules.md">}})

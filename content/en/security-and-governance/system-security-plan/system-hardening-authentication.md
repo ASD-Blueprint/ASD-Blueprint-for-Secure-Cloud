@@ -71,7 +71,7 @@ Technical controls are implemented according to the relevant ISM control topics 
 
 #### Security & Governance
 
-- [Essential Eight: Multi-factor-Authentication]({{< ref "multi-factor-authentication.md" >}})
+- [Essential Eight: Multi-factor-Authentication]({{<ref "multi-factor-authentication.md">}})
 - [Authentication Hardening]({{<ref "system-hardening-authentication.md">}})
 - [System Management]({{<ref "system-management.md">}})
 - [System Monitoring]({{<ref "system-monitoring.md">}})
@@ -79,14 +79,13 @@ Technical controls are implemented according to the relevant ISM control topics 
 
 #### Design
 
-- [Platform Monitoring and Auditing]({{< ref "platform-monitoring-auditing.md" >}})
-- [Authentication]({{< ref "design/platform/identity/authentication.md" >}})
-- [Entra ID Protection]({{< ref "design/platform/identity/protection.md" >}})
+- [Platform Monitoring]({{<ref "platform-monitoring-auditing">}})
+- [Authentication]({{<ref "design/platform/identity/authentication.md">}})
+- [Entra ID Protection]({{<ref "design/platform/identity/protection.md">}})
   
 #### Configuration
 
 * [Microsoft Entra ID - Protection]({{<ref "configuration/entra-id/protection">}})
-
 
 #### External documentation
 
