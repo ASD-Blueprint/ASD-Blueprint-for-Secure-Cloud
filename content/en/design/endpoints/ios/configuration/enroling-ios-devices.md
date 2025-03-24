@@ -14,9 +14,9 @@ Microsoft Intune provides three separate experience in enrolling the iOS devices
 * **Device Enrolment Manager (DEM)** – Device Enrolment Manager assigns a single Azure Active Directory account as the owner of the device. The end users cannot administer or purchase any apps on the device.
 * **User Enrolment** – User enrolment process requires users set up the iOS device and manually install Company Portal to register the device as Intune enrolled device. The device will be marked as a BYOD device.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point   | Design Decision                                            | Justification                                                                                                                                                               |
+| Decision point   | Design decision                                            | Justification                                                                                                                                                               |
 |------------------|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Enrolment method | Automated device enrolment through Apple Business Manager | Devices will be pre-configured before the device is handed over to the end user. This in line with ASD's iOS Secure Configuration Hardening guide for PROTECTED devices. |
 

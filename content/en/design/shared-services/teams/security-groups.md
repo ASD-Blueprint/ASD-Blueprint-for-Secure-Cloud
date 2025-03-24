@@ -10,9 +10,9 @@ The membership of a Dynamic Security Group is updated whenever an attribute of a
 
 Naming of Dynamic Security groups can be streamlined using a Naming Policy. The Naming Policy ensures that the groups within the environment conform to a standard and their purpose can be easily identified.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision                                         | Justification                                                                                          |
+| Decision point | Design decision                                         | Justification                                                                                          |
 |----------------|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Naming Policy  | Configured. Suggestion `grp-<Organisation>-<GroupName>` | Assists in MOGs and standardisation of organisation configuration.                                     |
 | Welcome Email  | Disabled                                                | The welcome email will be disabled to reduce the amount of generic correspondence being sent to users. |

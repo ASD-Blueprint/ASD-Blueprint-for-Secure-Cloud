@@ -26,9 +26,9 @@ Microsoft 365 groups can also be given expiration dates which assists with unuse
 
 Microsoft 365 Groups, by default can be created by any user. This can be restricted to Administrators and members of a security group. This restriction prevents the needless creation of groups. It is advisable to develop a workflow to control the provisioning process.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                            | Design Decision                                                                                | Justification                                                                                                                                                                               |
+| Decision point                            | Design decision                                                                                | Justification                                                                                                                                                                               |
 |-------------------------------------------|------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microsoft 365 Group creation restrictions | Configured <br>Only administrators and select users can create/configure Microsoft 365 groups. | This will ensure that groups are approved before being created, ensuring all groups have a purpose.<br>This setting also affects Exchange, SharePoint and Teams.                            |
 | Naming Policy                             | Organisation to determine                                                                      | Naming can align to organisational team structure and help identify the working group or a project. The organisation should determine what naming policy meets their business requirements. |

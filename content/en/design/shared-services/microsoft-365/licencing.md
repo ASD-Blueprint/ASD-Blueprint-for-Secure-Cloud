@@ -13,9 +13,9 @@ The [Microsoft 365 Maps by Aaron Dinnage](https://m365maps.com/) provides detail
 
 To grant access to the services a licence is assigned to an individual user account. A licence can be assigned by an administrator at the time of the user account is created or through Microsoft Entra ID group-based licensing. Microsoft Entra ID group-based licensing enables an administrator to associate a licence to a group. Any members within the group will be assigned that licence automatically. When a user is removed from the group the licence is removed from the user.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point            | Design Decision  | Justification                                                                                                                                                                                             |
+| Decision point            | Design decision  | Justification                                                                                                                                                                                             |
 |---------------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Products Licensed         | Microsoft 365 E5 | Microsoft 365 E5 licences combines Microsoft 365 E5, EMS E5, and Windows E5 are required to ensure that the Microsoft 365 tenant has appropriate security controls for Australian Government requirements |
 | Licence Allocation Method | Automated        | Dynamic Security Groups in Entra ID to automatically assign licenses and reduce the management overhead associated with licensing.                                                                        |

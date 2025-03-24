@@ -17,9 +17,9 @@ Windows deployments will be based on either a deployment which is cloud native o
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point    | Design Decision                                                                                                | Justification                                                                                                                                                                                   |
+| Decision point    | Design decision                                                                                                | Justification                                                                                                                                                                                   |
 |-------------------|----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Deployment method | Organisation light weight base image with Windows Autopilot and Intune deployments applied as during enrolment | An organisation specific light weight base image provides the benefit of removing all OEM applications and firmware prior to onboarding to the organisation through Intune & Windows Autopilot. |
 
@@ -27,9 +27,9 @@ Windows deployments will be based on either a deployment which is cloud native o
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point    | Design Decision                                                   | Justification                                                                                                                                                             |
+| Decision point    | Design decision                                                   | Justification                                                                                                                                                             |
 |-------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Deployment method | Organisation light-weight base image with MECM deployment applied | An organisation specific light weight base image provides the benefit of removing all OEM applications and firmware prior to onboarding to the organisation through MECM. |
 

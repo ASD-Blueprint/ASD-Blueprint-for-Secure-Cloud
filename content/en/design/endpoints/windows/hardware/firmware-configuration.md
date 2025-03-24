@@ -28,9 +28,9 @@ UEFI 2.3.1 is a requirement for the use of Device Guard.
 
 Secure Boot is required for the use of Credential Guard.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                               | Design Decision            | Justification                                                                                                            |
+| Decision point                                               | Design decision            | Justification                                                                                                            |
 |--------------------------------------------------------------|----------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | UEFI version                                                 | At least 2.3.1             | This is minimum UEFI version required for Device Guard.                                                                  |
 | Secure Boot                                                  | Enabled                    | Secure Boot is a requirement for the use of Windows Credential Guard and provides greater security protection for users. |

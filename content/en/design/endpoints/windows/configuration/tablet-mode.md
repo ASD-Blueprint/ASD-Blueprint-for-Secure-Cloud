@@ -8,9 +8,9 @@ Tablet Mode is an adaptive user experience feature in Windows that optimises the
 
 Tablet Mode is a feature that switches a device experience from tablet mode to desktop mode and back. The primary way for an end-user to enter and exit "tablet mode" is manually through the Action Centre. In addition, Original Equipment Manufacturers (OEMs) can report hardware transitions (for example, transformation of 2-in-1 device from clamshell to tablet and vice versa), enabling automatic switching between the two modes.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision                                | Justification                                                                                             |
+| Decision point | Design decision                                | Justification                                                                                             |
 |----------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Tablet Mode    | Enabled by default on devices that support it. | To provide the option to manipulate Tablet Mode behaviour through the Action Centre on supported devices. |
 

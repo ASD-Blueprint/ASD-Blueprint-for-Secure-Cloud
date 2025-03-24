@@ -29,9 +29,9 @@ Clients managed by Microsoft Intune are configured to refresh their status on an
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                                  | Design Decision                                                                                                                                       | Justification                                                                                                                                                                  |
+| Decision point                                                  | Design decision                                                                                                                                       | Justification                                                                                                                                                                  |
 | --------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Co-Management                                                   | Disabled                                                                                                                                              | Co-Management is disabled as this is not a function that is used in a cloud only solution.                                                                                     |
 | Enrolled Device Types                                           | Windows 10: 21H2 / 10.0.19044.100 (minimum)<br>iOS: 16 (minimum)<br><br>The following platforms will be prevented from enrolling:<br>macOS<br>Android | As per the Client Devices design.                                                                                                                                              |
@@ -72,9 +72,9 @@ The following figure provides an overview of Co-Management.
 {{<figure src="https://learn.microsoft.com/mem/configmgr/comanage/media/co-management-overview.svg" title="Endpoint co-management overview">}}
 *Figure reproduced from <https://learn.microsoft.com/mem/configmgr/comanage/overview>*
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                              | Design Decision                             | Justification                                                                                                                                                                                      |
+| Decision point                              | Design decision                             | Justification                                                                                                                                                                                      |
 | ------------------------------------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Co-management                               | Enabled                                     | The Microsoft co-management approach will enable the organisation to strategically move device management from on-premises to the cloud in a staged manner.                                        |
 | Enrolled Device Types                       | Windows 10: 21H2 / 10.0.19044.100 (minimum) | As per the Client Devices design.<br>Note: iOS is permitted, but controlled by Intune only.                                                                                                         |

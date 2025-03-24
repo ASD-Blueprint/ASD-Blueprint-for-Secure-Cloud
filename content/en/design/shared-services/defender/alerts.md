@@ -15,9 +15,9 @@ Each alert can be configured with the following settings:
 * **Alert Severity** - An alert severity is assigned to assist with tracking and managing the alerts generated. The severity is displayed in the subject line of the alert email
 * **Alert Notification** - An alert can be configured with a list of email addresses that should receive the alert notifications. Daily notification limits can also be configured to ensure an alert receiver is not bombarded with alert emails for the same event. Triggered alerts can also be viewed in the Security & Compliance Center
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point        | Design Decision                | Justification                                                                                                                     |
+| Decision point        | Design decision                | Justification                                                                                                                     |
 |-----------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Alert Policies Status | Default Alert Policies enabled | Custom alert policies are not required for the initial phase. Custom alert policies will be considered in a future project phase. |
 

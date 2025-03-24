@@ -12,7 +12,7 @@ Cloud native deployments provides the organisation the immediate benefits of wor
 
 Hybrid deployments give the option of co-management which enables the organisation to manage Windows by using both MECM and Intune. Enabling co-management within MECM allows the organisation to utilise their investment in MECM and take advantage of additional cloud capabilities. This gives the organisation additional flexibility to use the technology solution that works best for them and facilitates a more gradual move to cloud native as the organisation can pilot test various workloads in Intune first.
 
-Hybrid deployments can choose to enable MECM or Intune for client management depending on the cloud maturity level of the organisation or operational requirements. It is not a requirement of organisations undertaking hybrid implementations to use MECM. The Blueprint provides guidance on integration between MECM and Intune for hybrid deployments however organisations with existing infrastructure may alternatively elect to migrate device management from MECM to Intune, which will not affect cyber security postures.
+Hybrid deployments can choose to enable MECM or Intune for client management depending on the cloud maturity level of the organisation or operational requirements. It is not a requirement of organisations undertaking hybrid implementations to use MECM. The Blueprint provides guidance on integration between MECM and Intune for hybrid deployments however organisations with existing infrastructure may alternatively elect to migrate device management from MECM to Intune, which will not affect cybersecurity postures.
 
 Management methods that can be used to manage Windows in a Microsoft 365 environment.
 
@@ -39,9 +39,9 @@ There are many benefits to going cloud native or hybrid co-management utilising 
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point    | Design Decision                | Justification                                                                                                            |
+| Decision point    | Design decision                | Justification                                                                                                            |
 |-------------------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Management method | Cloud native Intune management | Cloud native implementation offers a simple and efficient implementation. Single console to manage both Windows and iOS. |
 
@@ -49,9 +49,9 @@ There are many benefits to going cloud native or hybrid co-management utilising 
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point    | Design Decision                                                                 | Justification                                                                                                                                                                                                                                                                                              |
+| Decision point    | Design decision                                                                 | Justification                                                                                                                                                                                                                                                                                              |
 |-------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Management method | Hybrid with MECM co-management enabled.                                         | Intune integration is required to enable features such as Conditional Access. <br>MECM co-management offers flexibility for the organisation to take advantage of cloud services immediately or pilot and move individual workloads across when ready while leveraging existing configuration on-premises. |
 | Management tool   | Organisation preference for Intune or MECM managing endpoints in co-management. | Each organisation has a different level of investment and different maturity in MECM and cloud products. Co-management has several options to meet the unique requirements of each organisation.                                                                                                           |

@@ -15,9 +15,9 @@ Entra ID Protection uses the following mechanisms to detect anomalous activity w
 
 Entra ID Protection provides mechanisms for logging and reporting functionality that simplify investigation activities.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point      | Design Decision                                                       | Justification                                                                                                                                                                                                                    |
+| Decision point      | Design decision                                                       | Justification                                                                                                                                                                                                                    |
 | ------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Entra ID Protection | Enable the sign-in risk policy and user risk policy within the tenant | Provide reporting of detected suspicious sign-in activity based on defined MFA, sign-in risk and user risk policies for increased security.                                                                                      |
 | User risk policy    | Enabled                                                               | The user risk policy detects the probability that a user account has been compromised by detecting risk events that are atypical of a user's behaviour, alerting when high risk behaviour is detected.                           |
@@ -35,9 +35,9 @@ These policies are replicated in the Conditional Access policies MS007, MS008 an
 
 Entra ID Smart Lockout protects Entra ID accounts from brute force attacks such as password guessing by recognising legitimate sign-in attempts from authentications from unknown sources. Smart Lockout is always-on for Entra ID but allows customisation of the number of incorrect attempts and the lockout duration.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point              | Design Decision | Justification                                                      |
+| Decision point              | Design decision | Justification                                                      |
 | --------------------------- | --------------- | ------------------------------------------------------------------ |
 | Lockout threshold           | 5               | To reduce the effectiveness of attempted password guessing attacks |
 | Lockout duration in seconds | 60              | To minimise impact to users if accidentally locked out.            |

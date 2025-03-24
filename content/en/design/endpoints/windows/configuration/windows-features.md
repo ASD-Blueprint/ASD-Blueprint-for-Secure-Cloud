@@ -6,9 +6,9 @@ description: "This section describes the design decisions associated with Window
 
 Windows 10 and 11 incorporates optional features that can be enabled to offer additional functionality. When deploying a Windows Standard Operating Environment (SOE), removing unnecessary features from the standard installation creates a simpler image to maintain. In Windows if a feature is not required or used within an environment, its removal means a faster deployment and a simpler user experience.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                                                  | Design Decision | Justification                                                                                                                                                                                                                         |
+| Decision point                                                                  | Design decision | Justification                                                                                                                                                                                                                         |
 |---------------------------------------------------------------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | .Net Framework 3.5                                                              | Disabled        | Disabled by default to meet user application hardening guidelines in ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight).                                                                                       |
 | .Net Framework 4.8                                                              | Enabled         | This is to support modern .Net applications on the Windows SOE device.                                                                                                                                                                |

@@ -20,9 +20,9 @@ When creating a new user, Microsoft Entra ID will assign the display name based 
 
 ISM Security Control 1404 lists that inactive user accounts need to be in a disabled state after more than 45 days of inactivity.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                      | Design Decision                                                                  | Justification                                                                                                               |
+| Decision point                      | Design decision                                                                  | Justification                                                                                                               |
 | ----------------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | ISM Security Controls 1404 and 1648 | Disable un-privileged and privileged user accounts after > 45 days of inactivity | Unprivileged and Privileged access to systems and applications should be automatically disabled after 45 days of inactivity |
 
@@ -38,9 +38,9 @@ This can be achieved via a custom script set to run on a scheduled basis. Below 
 
 #### Cloud-native implementation
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point  | Design Decision                     | Justification                                                                                                                                                                                                                                                                                    |
+| Decision point  | Design decision                     | Justification                                                                                                                                                                                                                                                                                    |
 |-----------------|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Identity Source | Microsoft Entra ID                  | As this is a cloud only implementation, Microsoft Entra ID will be the source of identity.                                                                                                                                                                                                       |
 | Password Reset  | Configured                          | For self-service password reset, users will need to provide an alternate email address, mobile app and phone number during registration. To reset their password, they will need to provide two methods of verification.                                                                         |
@@ -57,9 +57,9 @@ Administrator accounts and Break Glass Accounts should be excluded from these ru
 
 #### Hybrid implementation
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point  | Design Decision    | Justification                                                                                                                                                                                                                                                                                    |
+| Decision point  | Design decision    | Justification                                                                                                                                                                                                                                                                                    |
 |-----------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Identity Source | Active Directory   | As this is a hybrid implementation, Active Directory will be the source of identity.                                                                                                                                                                                                             |
 | Password Reset  | Configured         | For self-service password reset, users will need to provide an alternate email address, mobile app and phone number during registration. To reset their password, they will need to provide two methods of verification.                                                                         |
@@ -82,9 +82,9 @@ For services hosted within Azure, [Microsoft recommends](https://learn.microsoft
 
 User based service accounts are standard user accounts where the password and MFA methods are shared between multiple individuals. For this reason Microsoft does not recommend user accounts as service accounts because they are less secure. This includes on-premises service accounts synchronised to Microsoft Entra ID, because they aren't converted to service principals.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point   | Design Decision                                         | Justification                                      |
+| Decision point   | Design decision                                         | Justification                                      |
 | ---------------- | --------------------------------------------------------| -------------------------------------------------- |
 | Service Accounts | Managed Identities / Service Principals only (see note) | Alignment to Microsoft and security best practice. |
 
@@ -112,9 +112,9 @@ Emergency access or 'break glass' accounts are accounts used to restore access t
 * The accounts should be stored on paper, in two or three separate parts, in secure, fireproof safes that are in disparate locations.
 * Use of these accounts is monitored and only used in genuine emergencies.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point            | Design Decision | Justification                                                                                  |
+| Decision point            | Design decision | Justification                                                                                  |
 | ------------------------- | --------------- | ---------------------------------------------------------------------------------------------- |
 | Emergency access accounts | Configured      | Two emergency access accounts configured in alignment to Microsoft and security best practice. |
 

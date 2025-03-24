@@ -19,9 +19,9 @@ Microsoft 365 Apps for enterprise provides three feature update channels for cus
 
 Microsoft Project and Visio (365 and 2019) are available as click-to-run editions that can be either licenced through Microsoft 365 or through hybrid licensing. Regardless of the licence type, they can be installed through Intune or MECM (for hybrid deployments). The installation media is configured using the [Office Deployment Tool (ODT)](https://www.microsoft.com/download/details.aspx?id=49117) which generates the installer and configuration options for the deployment. Microsoft Office 365 E3/E5 licensing does not include the rights to use these applications. There are some caveats to what combination of Office versions are supported alongside Project and Visio, please see the [supported scenarios](https://learn.microsoft.com/deployoffice/install-different-office-visio-and-project-versions-on-the-same-computer).
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                    | Design Decision                          | Justification                                                                                 |
+| Decision point                    | Design decision                          | Justification                                                                                 |
 |-----------------------------------|------------------------------------------|-----------------------------------------------------------------------------------------------|
 | Microsoft Office Version          | Microsoft 365 Apps for Enterprise 64-bit | Aligns with modernisation vision and provides access to the latest and most updated features. |
 | Microsoft 365 Apps Update channel | Monthly Enterprise                       | Provides the latest features for Office apps, such as Excel and Word, on a regular basis.     |

@@ -13,9 +13,9 @@ Sharing and Access controls  provide granular control over external sharing and 
 
 Access Controls provides an administrative tool to restrict access contents in SharePoint.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point   | Design Decision | Justification                                                                                                                                                                                                                                                                                 |
+| Decision point   | Design decision | Justification                                                                                                                                                                                                                                                                                 |
 |------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Sharing Controls | Configured      | Sharing to external users will be `disabled`.<br>Documents within SharePoint Online can only be shared with internal users. The default setting will be to share with "View" permissions which can be modified by the user to "Edit". Collaboration and sharing will be achieved using Teams. |
 | Access Controls  | Configured      | Access to SharePoint Online will be controlled on a device level to ensure data is being accessed from approved devices.                                                                                                                                                                      |

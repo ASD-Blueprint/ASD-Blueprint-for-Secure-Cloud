@@ -16,9 +16,9 @@ The system Computer Description can also be used to display the build date, time
 
 The Manufacturer value is used in the title string displayed in the support section, being "Manufacturer support". If the actual computer manufacturer were to be populated, then the support section heading would be "HP support", for example, which would be misleading for users. Setting the Manufacturer value to "Organisation" would set the support section heading to "Organisation support".
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point       | Design Decision                                    | Justification                                                               |
+| Decision point       | Design decision                                    | Justification                                                               |
 |----------------------|----------------------------------------------------|-----------------------------------------------------------------------------|
 | Company Name         | Not Configured                                     | Not required to support deployments.                                        |
 | OEM Logo             | Configured – Australian Government crest           | To identify that the equipment is under Australian Government jurisdiction. |

@@ -12,9 +12,9 @@ Note the following:
 * Additional licensing to Microsoft 365 E5 may be required to fully utilise Microsoft Dataverse. 
 * Microsoft Dataverse for Microsoft Teams provides the capability to provision a Dataverse instance specific to a Team within Microsoft Teams, which also provisions a separate environment.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                          | Design Decision       | Justification                                                                                                                                                                                                                         |
+| Decision point                          | Design decision       | Justification                                                                                                                                                                                                                         |
 |-----------------------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dataverse usage                         | Enabled               | Dataverse will be enabled within the default Power Platform environment as this is required to support connectors.<br>Organisations need to evaluate Dataverse requirements in requests for any new Power Platform environments. |
 | Microsoft Dataverse for Microsoft Teams | Organisation decision | Power Apps for Teams App (required to create a Microsoft Teams linked Dataverse instance) requires Admin access as per Teams App Setup Policies within Teams Admin Centre.                                                       |

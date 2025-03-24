@@ -10,9 +10,9 @@ Custom themes can be deployed to workstations either enforcing the theme or enab
 
 Although a system is capable of being assessed as PROTECTED, banners and backgrounds should not be set to PROTECTED in the SOE or desktop background until an IRAP assessment has been completed.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                         | Design Decision            | Justification                                                                                                    |
+| Decision point                         | Design decision            | Justification                                                                                                    |
 |----------------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------|
 | Lock Screen                            | Custom Corporate wallpaper | Customised to the organisation corporate wallpaper to provide a corporate look and feel.                         |
 | Logon Screen                           | Custom Corporate wallpaper | Customised to the organisation corporate wallpaper to provide a corporate look and feel.                         |

@@ -6,9 +6,9 @@ description: "This section describes the design decisions associated with Applic
 
 Within Microsoft Intune, application protection policies are rules that ensure organisations' data remains safe or contained in a managed application. An application protection policy can be a rule that is enforced when the user attempts to access or move 'corporate' data, or a set of actions that are prohibited or monitored when the user is inside the app.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                                                 | Design Decision                                               | Justification                                                                                                      |
+| Decision point                                                                 | Design decision                                               | Justification                                                                                                      |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | Mobile Application Management (MAM) or Mobile Device Management (MDM) policies | MDM will be used to apply application protection policies.    | MAM based policy is not able to manage non-enlightened line of business applications. (Non-Microsoft Office apps). |
 | Desktop Protected Apps                                                         | All Microsoft Office desktop applications will be protected.  | Advice on additional desktop applications is included in the Blueprint.                                                 |

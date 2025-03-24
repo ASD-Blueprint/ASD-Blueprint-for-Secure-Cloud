@@ -10,9 +10,9 @@ The implementation of Exchange Online can be coupled with a migration from the e
 * **Cutover Migration** – A cutover migration is only recommended for organisations with less than 150 mailboxes and occurs over one or a few days. During this period email access may be unavailable. Prior to the migration event, a connection between the on-premises Exchange organisation and Exchange Online needs to be established.
 * **PST Migration** – A Personal Storage Table (PST) migration is where PST files with a mapping file are either shipped to or uploaded into Office 365. The Exchange Online instance is a greenfield deployment with no configuration required on the on-premises Exchange environment.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point    | Design Decision | Justification                                                                               |
+| Decision point    | Design decision | Justification                                                                               |
 | ----------------- | --------------- | ------------------------------------------------------------------------------------------- |
 | Office 365 Tenant | Single tenant   | Exchange Online services will be hosted within the organisation's secure Office 365 tenant. |
 
@@ -21,9 +21,9 @@ The implementation of Exchange Online can be coupled with a migration from the e
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point    | Design Decision      | Justification                                       |
+| Decision point    | Design decision      | Justification                                       |
 |-------------------|----------------------|-----------------------------------------------------|
 | Deployment Type   | Exchange Online only | No migration of mail from on prem or other services.|
 
@@ -31,9 +31,9 @@ The implementation of Exchange Online can be coupled with a migration from the e
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point    | Design Decision  | Justification                                                               |
+| Decision point    | Design decision  | Justification                                                               |
 |-------------------|------------------|-----------------------------------------------------------------------------|
 | Deployment Type   | Hybrid Migration | User mailboxes should be migrated from the on-premises Exchange environment.|
 

@@ -18,7 +18,7 @@ When deploying a hybrid solution, the allocation of printers to users should be 
 
 {{% alert title="Design decisions" color="warning"%}}
 
-| Decision Point                | Design Decision | Justification                                                                                                                                          |
+| Decision point                | Design decision | Justification                                                                                                                                          |
 | ----------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Printer addition restrictions | Configured      | Configured using scripts deployed via Microsoft Intune. Printers will need to be supported out of the box in Windows 10 / 11.                          |
 | Unsecure location Printing    | Configured      | Out of office printing is to be restricted as adequate controls for the creation, storage and destruction of classified content cannot be implemented. |
@@ -29,7 +29,7 @@ When deploying a hybrid solution, the allocation of printers to users should be 
 
 {{% alert title="Design decisions" color="warning"%}}
 
-| Decision Point                | Design Decision | Justification                                                                                                                                                |
+| Decision point                | Design decision | Justification                                                                                                                                                |
 | ----------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Printer addition restrictions | Configured      | Management tools such as Group Policy can be used to configure printer configurations. Printers will need to be supported out of the box in Windows 10 / 11. |
 | Unsecure location Printing    | Configured      | Out of office printing is to be restricted as adequate controls for the creation, storage and destruction of classified content cannot be implemented.       |

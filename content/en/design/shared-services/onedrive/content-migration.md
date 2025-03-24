@@ -19,9 +19,9 @@ Access to OneDrive can be controlled to ensure the organisation's data is protec
 
 On deletion of a user's OneDrive account, its content will be deleted. The deletion period can be customised, however it is recommended that the data be archived in an external system or migrated to a SharePoint Site.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point  | Design Decision                                                                                                                                 | Justification                                                                                              |
+| Decision point  | Design decision                                                                                                                                 | Justification                                                                                              |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | Deployment Type | Migration of data is out of scope for the Blueprint however Microsoft provides vendor guidance on possible migration paths for the organisation. | Migration method is dependent on the outcome of an assessment of quantity and type of data to be migrated. |
 

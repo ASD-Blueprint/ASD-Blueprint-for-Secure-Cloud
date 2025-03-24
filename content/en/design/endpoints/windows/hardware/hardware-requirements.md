@@ -16,9 +16,9 @@ Organisations wishing to implement virtual desktops or VDI (Virtual Desktop Infr
 
 {{% /alert %}}
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision                                                                         | Justification                      |
+| Decision point | Design decision                                                                         | Justification                      |
 |----------------|-----------------------------------------------------------------------------------------|------------------------------------|
 | Laptop Model   | Any device that meets the below requirements and the organisation procurement processes | To meet organisation requirements. |
 | Desktop Model  | Any device that meets the below requirements and the organisation procurement processes | To meet organisation requirements. |

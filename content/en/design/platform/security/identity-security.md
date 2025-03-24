@@ -23,9 +23,9 @@ The identity score feeds into Microsoft 365 Defender where trends in the score o
 
 The secure score does not express an absolute measure of how likely an organisation is to get breached. It expresses the extent to which the organisation has adopted features that can offset the risk of being breached. No service can guarantee that organisations will not be breached, and the secure score should not be interpreted as a guarantee in any way.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision | Justification                                |
+| Decision point | Design decision | Justification                                |
 |----------------|-----------------|----------------------------------------------|
 | Secure Score   | > 80%           | Continual monitoring and improvement program. |
 
@@ -65,9 +65,9 @@ Defender for Identity relies on Network Name Resolution (NNR) to correlate betwe
 
 Microsoft recommends using all the above methods, however if this is not possible the organisation should use the DNS lookup method and at least one of the other methods available at [Network Name Resolution in Microsoft Defender for Identity](https://learn.microsoft.com/defender-for-identity/nnr-policy).
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                               | Design Decision                                                                     | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Decision point                                               | Design decision                                                                     | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |--------------------------------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Number of Defender for Identity instances                    | One                                                                                 | A single Defender for Identity instance can monitor multiple AD DS forests.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Defender for Identity instance name                          | {organisation-instance-name}.atp.azure.com                                          | The Defender for Identity cloud service will be given an Defender for Identity instance name which will be used to access the Defender for Identity portal.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -92,13 +92,13 @@ Microsoft Entra ID provides the basis for the Defender for Identity role groups.
 
 Note, in addition to the role groups described above, any tenant Global and Security Admins can login to the Defender for Identity portal.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                | Design Decision       | Justification                                                                                                                      |
-|-----------------------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| Members of the Azure ATP Administrators group | Organisation decision | Only specific users that require administrative access should be added to this group.                                              |
-| Members of the Azure ATP Users group          | Organisation decision | Include membership of the cyber security team that are responsible for the day-to-day use and management of Defender for Identity. |
-| Members of the Azure ATP Viewers group        | Organisation decision | Include membership of the cyber security team to enable auditing of Defender for Identity.                                         |
+| Decision point                                | Design decision       | Justification                                                                                                                     |
+| --------------------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Members of the Azure ATP Administrators group | Organisation decision | Only specific users that require administrative access should be added to this group.                                             |
+| Members of the Azure ATP Users group          | Organisation decision | Include membership of the cybersecurity team that are responsible for the day-to-day use and management of Defender for Identity. |
+| Members of the Azure ATP Viewers group        | Organisation decision | Include membership of the cybersecurity team to enable auditing of Defender for Identity.                                         |
 
 {{% /alert %}}
 
@@ -113,9 +113,9 @@ Defender for Identity does not require a Simple Mail Transfer Protocol (SMTP) se
 * Transport protocol, either Transport Control Protocol (TCP), User Datagram Protocol (UDP) or Transport Layer Security (TLS) / Secured Syslog.
 * Request For Comments (RFC) 3164 or 5424 format.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point       | Design Decision                                          | Justification                                                                                                     |
+| Decision point       | Design decision                                          | Justification                                                                                                     |
 |----------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | Mail notifications   | Enabled for both suspicious activities and health alerts | Notify relevant security teams when unwarranted and unauthorised activities occur.                                |
 | Syslog notifications | Enabled for both suspicious activities and health alerts | If the organisation has an existing SIEM solution enable the SIEM to gather all possible security-related events. |
@@ -128,9 +128,9 @@ Defender for Identity supports native integration with Defender for Endpoint.
 
 The purpose of this is to combine Defender for Identity's monitoring of AD and DCs specifically, with Defender for Endpoint's monitoring of general endpoints, to provide a single interface that combines events and alerts from both.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                         | Design Decision | Justification                                          |
+| Decision point                         | Design decision | Justification                                          |
 |----------------------------------------|-----------------|--------------------------------------------------------|
 | Integration with Defender for Endpoint | Enabled         | To integrate data feeds and alerts from both products. |
 
@@ -160,9 +160,9 @@ To connect Defender for Identity to Defender for Cloud Apps the administrator en
 * **SIEM notification** – both Defender for Identity and Defender for Cloud Apps can be configured to send alert notification to a SIEM. In the event this is configured duplicate SIEM notifications for the same alerts will be visible within SIEM under different alert ID's. To avoid this situation, it is recommended to choose which portal will be used to perform alert management and then only this portal is to be configured to send alert notification to a SIEM.
 * **Activities** – Defender for Cloud Apps displays Defender for Identity alerts also in the activity log. Defender for Cloud Apps provides additional activity filtering not available within Defender for Identity.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                           | Design Decision | Justification                                          |
+| Decision point                           | Design decision | Justification                                          |
 |------------------------------------------|-----------------|--------------------------------------------------------|
 | Integration with Defender for Cloud Apps | Enabled         | To integrate data feeds and alerts from both products. |
 

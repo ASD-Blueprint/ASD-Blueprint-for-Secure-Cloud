@@ -15,9 +15,9 @@ Power Platform activities are logged as follows:
 * Dataverse and model-driven apps logging is stored within Dataverse. 
 * Alerting can be triggered via unified audit log alert policies or via integration with a Security Information and Event Management (SIEM) solution.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision | Justification                                                                                                                                                                                                                                          |
+| Decision point | Design decision | Justification                                                                                                                                                                                                                                          |
 |----------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Auditing       | Enabled         | Enabled for log access and read logs.<br>As a guide, logs should be retained for seven years to align ISM-0859; however, organisations should consider their overall operating context and retention strategy. Logs are sent to the unified audit log. |
 

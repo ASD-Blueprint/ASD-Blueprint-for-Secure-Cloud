@@ -11,9 +11,9 @@ Data Lifecycle Management enables the control of retention and deletion actions 
 
 Using both retention policies and labels effectively requires knowledge of at least an organisation's information classification scheme, information management strategy and information architecture. Organisations should use the [retention policy]({{<ref "configuration/purview/data-lifecycle-management/retention-policies">}}) configurations as a starting point to develop their own, organisational specific policies.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                      | Design Decision                          | Justification                                                                     |
+| Decision point                      | Design decision                          | Justification                                                                     |
 | ----------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------- |
 | Data Lifecycle Management retention | Configure placeholder retention policies | Enable the development of organisational specific retention and deletion policies |
 

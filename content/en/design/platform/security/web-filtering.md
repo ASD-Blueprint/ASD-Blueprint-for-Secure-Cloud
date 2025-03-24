@@ -13,9 +13,9 @@ Microsoft Entra ID tenant restrictions prerequisites are as follows:
 
 For more detail on Microsoft Entra ID tenant restrictions, see [use tenant restrictions to manage access to SaaS apps](https://learn.microsoft.com/entra/identity/enterprise-apps/tenant-restrictions).
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point      | Design Decision | Justification                                                                                                                                                                                                                              |
+| Decision point      | Design decision | Justification                                                                                                                                                                                                                              |
 |---------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tenant restrictions | Configured      | Organisations that have implemented an enterprise web filtering solution that is capable of this feature (using TLS inspection and HTTP header insertion) should implement tenant restrictions for PROTECTED to prevent data exfiltration. |
 

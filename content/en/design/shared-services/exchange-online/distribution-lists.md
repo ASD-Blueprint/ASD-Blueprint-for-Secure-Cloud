@@ -21,9 +21,9 @@ Management of distribution lists can be streamlined through the enforcement of a
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point               | Design Decision | Justification                                                                                                                                                                                         |
+| Decision point               | Design decision | Justification                                                                                                                                                                                         |
 |------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Distribution Groups creation | Cloud Created   | Management activities for Exchange Online will occur within the portal. The use of cloud created distribution groups also enables groups to be upgraded to Office 365 groups at a later stage. |
 | Distribution Naming Policy   | Configured      | Naming policies streamline the management of distribution lists and enable groups to be easily sorted.<br>Suggested naming convention is `OrganisationName-PolicyName`                             |

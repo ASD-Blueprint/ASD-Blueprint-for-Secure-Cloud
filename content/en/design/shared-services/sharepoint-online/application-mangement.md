@@ -8,9 +8,9 @@ Application management enables the organisation to control who can purchase thir
 
 SharePoint default methods of displaying and sharing of sharing data are available. Third party applications may circumvent controls or auditing and provide other methods of displaying or sharing of SharePoint data. Any third-party applications will need to be validated for compliance.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                                                | Design Decision | Justification                                                                                                                      |
+| Decision point                                                                | Design decision | Justification                                                                                                                      |
 |-------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------|
 | Users to have the ability to get apps from marketplace                        | Disable         | Only administrators are approved to assign or purchase application.                                                                |
 | Allow third party apps from the store be open office documents in the browser | Disable         | This setting increases the security of the solution by ensuring documents in the browser cannot start third party apps for Office. |

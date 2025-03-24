@@ -32,8 +32,8 @@ A stale device is a device that has been registered with Entra ID, but has not b
 
 With Windows 10 and 11, Entra ID users gain the ability to securely synchronise their user settings and application settings data to the cloud. Enterprise State Roaming provides users with a unified experience across their Windows devices and reduces the time needed for configuring a new device.
 
-{{% alert title="Design Decisions" color="warning" %}}
-| Decision Point              | Design Decision                                           | Justification                                                                                                                              |
+{{% alert title="Design decisions" color="warning" %}}
+| Decision point              | Design decision                                           | Justification                                                                                                                              |
 |-----------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | Device Capture              | AD join only                                              | Allow only organisation owned and managed devices access to the platform. Single Sign-on (SSO) enabled.                                    |
 | Provisioning                | [Windows Autopilot]({{<ref "device-enrolment">}})         | Automated enrolment                                                                                                                        |

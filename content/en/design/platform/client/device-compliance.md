@@ -16,9 +16,9 @@ Deployed device compliance profiles ensure a strong security posture for the ent
 * **System Security** - Password compliance, standards, length and complexity. Also includes device level firewall, Trusted Platform Module (TPM), Antivirus, Anti-spyware and Microsoft Defender Antimalware settings.
 * **Microsoft Defender for Endpoint** - Configures the maximum allowed machine risk score, if exceeded the device is marked as non-compliant.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point        | Design Decision                                                                  | Justification                |
+| Decision point        | Design decision                                                                  | Justification                |
 | --------------------- | -------------------------------------------------------------------------------- | ---------------------------- |
 | Compliance Assessment | Configured | Used for conditional access.<br>Requires compliance with Device Health, Device Properties and Microsoft Defender |
 

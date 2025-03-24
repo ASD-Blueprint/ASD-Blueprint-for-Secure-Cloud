@@ -30,7 +30,7 @@ More information on GovLINK is available on [the Department of Finance website](
 
 Enquires on the GovLINK TLS solution can also be directed to [govlinkenquiries@finance.gov.au](mailto:govlinkenquiries@finance.gov.au) or via the above website.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
 | Implementation Type | Mail Gateway                     | Mail Connectors         | Mail Ingress | Mail Egress  | Sensitivity Labels |
 | ------------------- | -------------------------------- | ----------------------- | ------------ | ------------ | ------------------ |
@@ -54,9 +54,9 @@ The following achieves optimal Microsoft 365 connectivity and performance:
 
 **Microsoft 365 Connectivity Optimisation Design Decisions for an increased security posture.**
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                   | Design Decision                   | Justification                                                                                                                       |
+| Decision point                                   | Design decision                   | Justification                                                                                                                       |
 | ------------------------------------------------ | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | Workstation Connectivity                         | VPN with central internet gateway | Provides the highest level of auditing and monitoring.                                                                              |
 | Local DNS resolution and Internet egress         | Not Configured                    | All traffic will egress centrally through an internet gateway.                                                                      |
@@ -68,9 +68,9 @@ The following achieves optimal Microsoft 365 connectivity and performance:
 
 **Microsoft 365 Connectivity Optimisation Design Decisions for an enhanced User Experience.**
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                   | Design Decision                   | Justification                                                                                                                                                                                                      |
+| Decision point                                   | Design decision                   | Justification                                                                                                                                                                                                      |
 | ------------------------------------------------ | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Workstation Connectivity                         | Direct connection to the internet | Provides the best performance for users.                                                                                                                                                                           |
 | Local DNS resolution and Internet egress         | Configured if required            | DNS will be resolved to the gateway of their internet device.                                                                                                                                                      |
@@ -113,7 +113,7 @@ The following table outlines the Exchange server roles required to be installed 
 
 Exchange Hybrid design considerations and decisions only apply to organisations leveraging a hybrid implementation.
 
-| Decision Point                                  | Design Decision       | Justification                                                                                                                                                                                             |
+| Decision point                                  | Design decision       | Justification                                                                                                                                                                                             |
 | ----------------------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Exchange Hybrid Deployment                      | Exchange 2016-based   | The organisation will use its existing Exchange 2016 server to establish the hybrid connection.                                                                                                           |
 | Edge Transport Server for hybrid mail transport | Organisation decision | The organisation can choose to leverage an Edge Transport server to prevent the exposure of internal Exchange servers directly to the internet, depending on their risk appetite and gateway environment. |
@@ -126,9 +126,9 @@ The record is a resource in the Domain Name System (DNS), and it is possible for
 
 #### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point              | Design Decision  | Justification                                                                                                       |
+| Decision point              | Design decision  | Justification                                                                                                       |
 | --------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Authoritative DNS MX Record | `<Mail Gateway>` | This is the ingress point for the mail for the organisation, the mx records will point to the organisation gateway. |
 | Mail Exchanger/s            | `<Mail Gateway>` | This is the ingress point for the mail for the organisation, the mx records will point to the organisation gateway. |
@@ -137,9 +137,9 @@ The record is a resource in the Domain Name System (DNS), and it is possible for
 
 #### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point              | Design Decision | Justification                                                                                                                    |
+| Decision point              | Design decision | Justification                                                                                                                    |
 | --------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | Authoritative DNS MX Record | Configured      | If the organisation hosts mail for more than one domain a MX record for each is required. These records are listed.              |
 | Mail Exchanger/s            | Configured      | If the organisation requires its on-premises mail gateways to continue to be used, the Virtual IP (VIP) of the gateways is used. |
@@ -154,9 +154,9 @@ Generally mail connectors are required. An exception may be where organisations 
 
 When the organisation intends to operate at the PROTECTED level, the Blueprint assumes that all organisations are implementing the configuration with a Mail Gateway and as such, provides detailed configurations on implementing mail connectors via the relevant gateway.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point  | Design Decision | Justification                                                                                                                                            |
+| Decision point  | Design decision | Justification                                                                                                                                            |
 | --------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Mail Connectors | Configured      | Mail connectors are required for all Exchange and Exchange Online implementations. Specific connectors are configured when implementing Exchange hybrid. |
 
@@ -194,9 +194,9 @@ Autodiscover for a cloud environment varies from the process utilised when on-pr
 
 To ensure this process functions as described above, appropriate DNS records are required.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point      | Design Decision                        | Justification                                                 |
+| Decision point      | Design decision                        | Justification                                                 |
 | ------------------- | -------------------------------------- | ------------------------------------------------------------- |
 | DNS Records (CNAME) | Autodiscover: autodiscover.outlook.com | A DNS record that points clients to the Autodiscover service. |
 
@@ -204,9 +204,9 @@ To ensure this process functions as described above, appropriate DNS records are
 
 #### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision                             | Justification                                                                                                  |
+| Decision point | Design decision                             | Justification                                                                                                  |
 | -------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Autodiscover   | CNAME autodiscover autodiscover.outlook.com | Autodiscover will improve the user experience and is required to configure a user's Outlook profile and inbox. |
 
@@ -214,9 +214,9 @@ To ensure this process functions as described above, appropriate DNS records are
 
 #### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point          | Design Decision                       | Justification                                                                                                                                         |
+| Decision point          | Design decision                       | Justification                                                                                                                                         |
 | ----------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Autodiscover internally | Configured - Service Connection Point | Autodiscover will continue to point to the internal Exchange Servers until all mailboxes have been migrated to Microsoft 365 to ensure functionality. |
 | Autodiscover externally | Configured -- DNS record              | To ensure autodiscover functions externally to the organisation.                                                                                      |
@@ -237,9 +237,9 @@ While DKIM within Microsoft 365 can sign messages, the organisation's gateway ma
 
 Note, organisations that enable DKIM signing within Microsoft 365 that also add additional business logic to email at the egress mail gateway, such as adding a default organisation email disclaimer, would fail DKIM authentication as the contents of the email had changed after the email had been sent from Exchange Online. In this scenario consider migrating the business logic from the mail gateway to native Exchange Online transport rules.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Decision point | Design decision | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | -------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SPF            | Configured      | Configuration of SPF record(s) are required as a baseline for the deployment and are configured to "hard fail" as per ASD's recommendations. The SPF record(s) are configured for all such authorised senders for that domain, including the Microsoft 365 SPF sender address (spf.protection.outlook.com) if applicable to ensure mail sent from Exchange Online passes SPF. SPF record(s) are to be configured by the DNS provider that that organisation consumes. |
 | DKIM           | Configured      | DKIM is a public/private key signing process used to verify the content of an email. DKIM signing should be enabled on emails originating from an organisation's domains as per ASD's recommendations. DKIM is either enabled on the organisation mail gateway solution (hybrid) or within Microsoft 365 (cloud native).                                                                                                                                                     |
@@ -256,9 +256,9 @@ Accepted Domains consist of the following types:
 *   Authoritative Domains - Authoritative Domains are domains where the Exchange Organisation accepts messages addressed to recipients and is responsible for generating non-delivery reports. On creation of an Exchange Online organisation the tenant domain Fully Qualified Domain Name (FQDN) and the `<tenantname>.mail.onmicrosoft.com` FQDN are automatically populated as an Authoritative Domains; and
 *   Relay Domains - Relay Domains are often called Non-Authoritative Domains. The Exchange Organisation will accept the messages addressed to the recipients; however, it is not responsible for generating non-delivery reports. Hybrid Exchange leverages Relay Domains and mail connectors to relay messages between both on-premises infrastructure and Exchange Online.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                        | Design Decision | Justification                                                                                                                                                                                                                                                                                         |
+| Decision point                        | Design decision | Justification                                                                                                                                                                                                                                                                                         |
 | ------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Configure Additional Accepted Domains | Configured      | Required to integrate with additional organisations. Any additional organisations that require access to the system are to be included.                                                                                                                                                               |
 | Authoritative Domains                 | Configured      | The `<tenantname>.onmicrosoft.com` authoritative domain is created during the enablement of Microsoft 365 and represents the Exchange Online Organisations SMTP address space. The additional authoritative domains are required as each organisation will have a corresponding authoritative domain. |
@@ -267,9 +267,9 @@ Accepted Domains consist of the following types:
 
 #### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision | Justification                                                            |
+| Decision point | Design decision | Justification                                                            |
 | -------------- | --------------- | ------------------------------------------------------------------------ |
 | Relay Domains  | Configured      | This setting is required to be configured in a Hybrid Exchange scenario. |
 
@@ -288,9 +288,9 @@ Administrators can configure Exchange to allow (or block) the following:
 
 The default remote domain will apply the same settings to all messages; however, administrators can configure specific settings for specific domains.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point           | Design Decision               | Justification                                                       |
+| Decision point           | Design decision               | Justification                                                       |
 | ------------------------ | ----------------------------- | ------------------------------------------------------------------- |
 | Configure Remote Domains | Default configuration applied | The default configuration within Exchange Online will be leveraged. |
 
@@ -327,9 +327,9 @@ Suggested FQDNs for hybrid deployments:
 | Autodiscover                                               | To be determined by the organisation. <br>Label that matches the external Autodiscover FQDN on the Exchange Client Access server, such as Autodiscover.contoso.com | Subject alternative name |
 | Transport                                                  | To be determined by the organisation. <br>Label that matches the external FQDN of the Edge Transport servers, such as edge.contoso.com                             | Subject alternative name |
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point            | Design Decision                 | Justification                                                                                                                                                    |
+| Decision point            | Design decision                 | Justification                                                                                                                                                    |
 | ------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Hybrid Server Certificate | New certificate to be purchased | As the only new service which is being configured is the Exchange Hybrid Server, that is the only certificate which requires validation and updates as required. |
 

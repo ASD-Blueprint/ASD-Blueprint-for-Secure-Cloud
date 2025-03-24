@@ -92,7 +92,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Use app enforced restrictions                           | Not checked |
 | Use Conditional Access App Control                      | Not checked |
 | Sign-in frequency                                       |     Checked |
-| - Periodic reauthentication                             |    16 hours |
+| - Periodic reauthentication                             |    12 hours |
 | - Every time                                            | Not checked |
 | Persistent browser session                              | Not checked |
 | Customize continuous access evaluation                  | Not checked |

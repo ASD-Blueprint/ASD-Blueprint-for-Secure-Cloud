@@ -49,9 +49,9 @@ When deploying a hybrid solution, the software and patch updates of Windows devi
 
 {{% /alert %}}
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                  | Design Decision                                                                                                                                          | Justification                                                                                              |
+| Decision point                  | Design decision                                                                                                                                          | Justification                                                                                              |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | **Update Ring Policy**          |                                                                                                                                                          |                                                                                                            |
 | Servicing Channel               | General Availability Channel                                                                                                                             | Aligns with ASD's [*Patching Applications and Operating Systems*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-administration/patching-applications-and-operating-systems) guidance.                                                    |

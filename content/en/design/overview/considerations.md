@@ -18,7 +18,7 @@ Considerations for implementation include whether an organisation has on-premise
 
 A hybrid implementation can use Microsoft Endpoint Configuration Manager (MECM) or Microsoft Intune for client management, depending on an organisation's cloud maturity.
 
-Blueprint artefacts provide guidance on integration between MECM and Intune for hybrid deployments. Organisations with existing infrastructure can migrate device management from MECM to Intune with no impact to an organisation's existing cyber security posture.
+Blueprint artefacts provide guidance on integration between MECM and Intune for hybrid deployments. Organisations with existing infrastructure can migrate device management from MECM to Intune with no impact to an organisation's existing cybersecurity posture.
 
 ### Organisation classification
 

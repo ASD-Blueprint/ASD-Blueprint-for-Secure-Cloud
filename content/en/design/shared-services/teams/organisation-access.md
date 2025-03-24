@@ -12,9 +12,9 @@ The Australian Signals Directorate (ASD) Blueprint for Secure Cloud (The Bluepri
 * Guest Access – when an external user is invited to be a member of the team. Once a team owner has granted someone guest access, they can access that team's resources, share files, and join a group chat with other team members.
 * Teams Settings – configure the default behaviour of all users in the Teams application.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point  | Design Decision                                    | Justification                                                                                                                                                                       |
+| Decision point  | Design decision                                    | Justification                                                                                                                                                                       |
 | --------------- | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | External Access | Configured:<br>Allow <organisation>.gov.au         | Allow only <organisation>.gov.au and deny sharing to external users. This will prevent users from setting up meetings with users that are not setup as a Guest of the organisation. |
 | Guest Access    | Configured:<br>Guest Access: Disabled              | Do not allow people outside of the organisation to access teams and channels.                                                                                                       |

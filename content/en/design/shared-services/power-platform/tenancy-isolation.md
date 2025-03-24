@@ -12,9 +12,9 @@ Organisations wanting to block connectors that use external identity providers s
 
 Power Platform tenant isolation ability is available with two options: one-way or two-way restriction. 
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point   | Design Decision                                                                                   | Justification                                                                                                                                                                                                                             |
+| Decision point   | Design decision                                                                                   | Justification                                                                                                                                                                                                                             |
 |------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tenant Isolation | Enabled for organisation tenant only<br>Inbound and Outbound Restricted to organisation tenant id | Tenant isolation can be used to block external tenants from establishing connections into the tenant (inbound isolation) as well as block the organisation tenant from establishing connections to external tenants (outbound isolation). |
 

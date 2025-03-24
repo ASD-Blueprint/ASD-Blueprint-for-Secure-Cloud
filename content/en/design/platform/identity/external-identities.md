@@ -58,9 +58,9 @@ The following table describes the identity properties that should be a minimum r
 
 In addition to the above, Conditional Access policies should be enforced requiring external individuals to use Multi Factor Authentication, block legacy authentication, and block from disallowed locations.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point    | Design Decision  | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Decision point    | Design decision  | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ----------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | B2B Relationships | Block by default | Maintain a secure default configuration while allowing for partner organisations to potentially be granted access where an organisation understands, has considered and accepted any associated risks.                                                                                                                                                                                                                                                                                            |
 | B2C Relationships | Not configured   | Client collaboration other than partner organisations is not required.                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -68,11 +68,11 @@ In addition to the above, Conditional Access policies should be enforced requiri
 
 {{% /alert %}}
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
 Conditional Access policies that should be applied by the partner organisation for all organisations and implementation types.
 
-| Decision Point              | Design Decision                                                                                                                                                                                                                                                                       | Justification                                                                                            |
+| Decision point              | Design decision                                                                                                                                                                                                                                                                       | Justification                                                                                            |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | Conditional Access Policies | **BLOCK - Legacy Authentication**:<br>This global policy blocks all connections from unsecure legacy protocols like ActiveSync, IMAP, POP3, etc.<br>**BLOCK - Countries not Allowed:**<br>This global policy blocks all connections from countries not in the Allowed countries list. | Minimises the risk of the user in the partner organisation using credentials that have been compromised. |
 

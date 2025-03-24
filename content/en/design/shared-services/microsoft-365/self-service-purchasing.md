@@ -9,9 +9,9 @@ By default self-service purchase of applications from Microsoft Power Platform p
 
 The processing of data for these add-ins does not sit within Microsoft 365 tenancy, which may result in data transmission or storage out of Australia.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                              | Design Decision | Justification                                              |
+| Decision point                              | Design decision | Justification                                              |
 |---------------------------------------------|-----------------|------------------------------------------------------------|
 | Global self-service purchase                | Disabled        | Only administrators are permitted to purchase applications |
 | Power BI self Service purchase              | Disabled        | Only administrators are permitted to purchase applications |

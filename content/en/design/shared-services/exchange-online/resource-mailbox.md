@@ -15,9 +15,9 @@ Users book these resources using meeting requests. Resource Mailboxes can be con
 
 Room Mailboxes can be sorted into lists using Room Lists. Room Lists are leveraged to simplify the booking process by grouping all rooms that meet a certain requirement together (Room lists are usually configured by location). When a user books a meeting, they can select the appropriate room list and then see the available rooms for that time.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                          | Design Decision | Justification                                                                                                                                                      |
+| Decision point                          | Design decision | Justification                                                                                                                                                      |
 |-----------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Room Mailboxes                          | Configured      | There is a requirement for booking rooms within the solution. Rooms will be configured with a mailbox so that users can book them through their calendars.         |
 | Equipment Mailboxes                     | Configured      | There is a requirement for booking equipment within the solution. Equipment will be configured with a mailbox so that users can book them through their calendars. |

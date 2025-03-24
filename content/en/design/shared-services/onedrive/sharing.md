@@ -6,9 +6,9 @@ description: "This section describes the design decisions associated with One Dr
 
 The OneDrive sharing administration screen provides granular configuration. Controlling OneDrive sharing ensures that data is shared internally and externally in a secure manner. OneDrive provides end users the ability to securely store their personal data in Office 365. The design considers that OneDrive is used for personal storage and sharing within the organisation.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point   | Design Decision | Justification                                                                                       |
+| Decision point   | Design decision | Justification                                                                                       |
 |------------------|-----------------|-----------------------------------------------------------------------------------------------------|
 | External Sharing | Disabled        | Sharing to external users will be disabled. Collaboration and sharing will be achieved using Teams. |
 

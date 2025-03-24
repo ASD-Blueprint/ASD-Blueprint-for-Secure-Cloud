@@ -8,9 +8,9 @@ The Safe Attachments feature checks email attachments after the email is receive
 
 When an Safe Attachments policy is in place and an end-user who is covered by that policy views their email in Office 365, their email attachments are checked, and appropriate actions are taken, based on the configured policies. 
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                                                                           | Design Decision          | Justification                                                                                                                                                                                                                |
+| Decision point                                                                                           | Design decision          | Justification                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microsoft Defender for Office 365 Safe Attachments                                                       | Configured               | Configured to align with ASD's Malicious Email Mitigation Strategies and Microsoft guidance                                                                                                                                 |
 | Protect files in SharePoint, OneDrive, and Microsoft Teams                                               | Ticked                   | If a file in any SharePoint, OneDrive, or Microsoft Teams library is identified as malicious, Microsoft Defender for Endpoints will prevent users from opening and downloading the file.                                     |

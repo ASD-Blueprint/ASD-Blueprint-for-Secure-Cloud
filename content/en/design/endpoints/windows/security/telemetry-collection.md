@@ -17,9 +17,9 @@ Telemetry level options are:
 * Full – All info necessary to identify and help to fix problems, plus info from the Security, Basic, and Enhanced levels.
 
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point  | Design Decision | Justification                                                                                                             |
+| Decision point  | Design decision | Justification                                                                                                             |
 |-----------------|-----------------|---------------------------------------------------------------------------------------------------------------------------|
 | Allow Telemetry | Enabled         | In line with the ASD's hardening guideline policy recommendations and meets requirements for future Desktop Analytics use. |
 | Telemetry Level | 2 – Enhanced    | Microsoft recommend Enhanced Limited for Desktop Analytics.                                                               |

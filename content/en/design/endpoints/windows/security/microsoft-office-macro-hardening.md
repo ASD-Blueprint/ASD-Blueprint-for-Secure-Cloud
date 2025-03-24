@@ -18,9 +18,9 @@ Where trusted locations are used, ASD's recommends that when using trusted locat
 
 Microsoft Office products can log macro execution attempts (both successful and failures) by enabling the Trust Center logging feature. This provides valuable information for incident response and digital forensics activities. The Trust Center logs are not written to the Windows Event Log but instead as an individual file per Microsoft Office product to the C:\Users\USERNAME\AppData\Local\Microsoft\Office\TCDiag directory.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point          | Design Decision                                                 | Justification                                                                                                                                        |
+| Decision point          | Design decision                                                 | Justification                                                                                                                                        |
 |-------------------------|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Implementation approach | Only macros digitally signed by a trusted publisher are enabled | To align with ASD's [*Restricting Microsoft Office Macros*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/restricting-microsoft-office-macros) guidance and enable organisations to leverage macros securely with the least business impact. |
 | Macro execution logging | Enabled via Trust Center logging                                | To align with ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight) and provide detailed logs in the event of an incident.                                                             |

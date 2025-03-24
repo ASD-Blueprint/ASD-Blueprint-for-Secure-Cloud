@@ -6,7 +6,7 @@ description: "This section describes the design decisions associated with Window
 
 The following design components apply to the hardening of Microsoft Windows 10 21H1 and above, including Windows 11. The Windows security settings detailed in this section are based on Microsoft best practice and ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
 * Attack Surface Reduction
   * Justification: To align with the ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations*guidance.

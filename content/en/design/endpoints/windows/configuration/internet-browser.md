@@ -8,9 +8,9 @@ The internet browser is a software application used for accessing web pages. Thi
 
 Alternate browsers may also be deployed to support specific business needs or requirements.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point  | Design Decision                          | Justification                                                  |
+| Decision point  | Design decision                          | Justification                                                  |
 |-----------------|------------------------------------------|----------------------------------------------------------------|
 | Default Browser | Microsoft Edge Chromium – Stable edition | To ensure compatibility and performance with modern web pages. |
 | Legacy support  | Microsoft Edge with IE mode              | To support legacy web pages not compatible with Edge.          |

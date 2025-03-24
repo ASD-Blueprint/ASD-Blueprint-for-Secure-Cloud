@@ -15,9 +15,9 @@ Administrators can configure Exchange to allow (or block) the following:
 
 The default remote domain will apply the same settings to all messages; however, administrators can configure specific settings for specific domains.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point           | Design Decision               | Justification                                                       |
+| Decision point           | Design decision               | Justification                                                       |
 |--------------------------|-------------------------------|---------------------------------------------------------------------|
 | Configure Remote Domains | Default configuration applied | The default configuration within Exchange Online will be leveraged. |
 

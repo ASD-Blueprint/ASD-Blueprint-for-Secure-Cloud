@@ -9,9 +9,9 @@ Compliance Manager helps automatically assess and manage compliance across Micro
 
 Assessments exist for many different Australian and international standards and regulations, including for ASD's Essential Eight Maturity Model and *Information Security Manual* (ISM), and while both assessments are based on older frameworks they still provide significant and relevant compliance advice and so are recommended for implementation.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                       | Design Decision                                   | Justification                                                     |
+| Decision point                       | Design decision                                   | Justification                                                     |
 | ------------------------------------ | ------------------------------------------------- | ----------------------------------------------------------------- |
 | Using Compliance Manager assessments | Add assessments for ASD's Essential Eight and ISM | Facilitate security compliance reporting and configuration advice |
 

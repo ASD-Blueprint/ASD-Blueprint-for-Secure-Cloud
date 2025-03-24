@@ -3,16 +3,16 @@ title: "Cyber Security Roles"
 linkTitle: "Cyber Security Roles"
 weight: 10
 type: docs
-description: This page provides a template and guidance to assist organisations in documenting the cyber security roles associated with their system(s) built on ASD's Blueprint for Secure Cloud.
+description: This page provides a template and guidance to assist organisations in documenting the cybersecurity roles associated with their system(s) built on ASD's Blueprint for Secure Cloud.
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The Cyber Security Roles section of a System Security Plan (SSP) should outline the relevant managerial and leadership roles involved in managing cyber security risks and controls relating to a system within an organisation. This information should be documented according to relevant controls outlined in ASD's ISM.
+The Cyber Security Roles section of a System Security Plan (SSP) should outline the relevant managerial and leadership roles involved in managing cybersecurity risks and controls relating to a system within an organisation. This information should be documented according to relevant controls outlined in ASD's ISM.
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
-When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the cyber security roles in their organisation. When complete, remove any grey instructional or blue guidance boxes throughout. 
+When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the cybersecurity roles in their organisation. When complete, remove any grey instructional or blue guidance boxes throughout. 
 
 {{% /alert %}}
 
@@ -22,7 +22,7 @@ ASD's ISM outlines the following key roles as required in relation to the operat
 
 #### Applicability
 
-ISM controls relating to the CISO role are applicable to `<SYSTEM-NAME>` as they require oversight of cyber security risks and controls within `<ORGANISATION-NAME>` and as such are applicable to this SSP. 
+ISM controls relating to the CISO role are applicable to `<SYSTEM-NAME>` as they require oversight of cybersecurity risks and controls within `<ORGANISATION-NAME>` and as such are applicable to this SSP. 
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 

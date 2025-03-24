@@ -8,9 +8,9 @@ Litigation hold preserves a mailbox and its contents from being modified or remo
 
 Litigation hold is not enabled by default, and legal teams will need to proactively enable the feature to avoid users potentially deleting any critical data elements. The duration for the hold can also be specified. This is calculated from the date a mailbox item is received or created. If a duration is not set, items are held indefinitely or until the hold is removed.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point  | Design Decision                          | Justification                                                    |
+| Decision point  | Design decision                          | Justification                                                    |
 |-----------------|------------------------------------------|------------------------------------------------------------------|
 | Litigation hold | Configured as required on selected users | Litigation hold requirements are unique to each organisation and user. |
 

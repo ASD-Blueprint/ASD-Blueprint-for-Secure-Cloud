@@ -28,9 +28,9 @@ DLP rules can be used to on both incoming and outgoing data flows.
 
 ### DLP policies
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point            | Design Decision                                             | Justification                                                                                        |
+| Decision point            | Design decision                                             | Justification                                                                                        |
 | ------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | Implementing DLP policies | Block SECRET and TOP SECRET emails                          | Prevent access to emails marked as highly classified                                                 |
 | Implementing DLP policies | Apply email X-header and subject marking to outgoing emails | Mark emails in-line with requirements in the Protective Security Policy Framework (PSPF)             |
@@ -82,9 +82,9 @@ DLP capabilities can be extended to certain Windows desktop and server and MacOS
 
 Implementing endpoint DLP policies may require the deployment of the Purview Information Protection client or browser plugins, and will require some organisational specific knowledge about user behaviour. Implementation is recommended and can be started by onboarding devices and observing events in [Activity Explorer](https://learn.microsoft.com/en-us/purview/data-classification-activity-explorer) before creating policies.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point            | Design Decision                                | Justification                                                                                            |
+| Decision point            | Design decision                                | Justification                                                                                            |
 | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | Implementing endpoint DLP | Onboard endpoints to enable policy development | Extend the protection of sensitive and security classified information to operating systems and browsers |
 

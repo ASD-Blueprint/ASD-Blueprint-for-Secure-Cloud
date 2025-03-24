@@ -20,9 +20,9 @@ According to Microsoft, the following achieves optimal Microsoft 365 connectivit
 
 ### Connectivity optimisation for increased security
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                   | Design Decision                   | Justification                                                                                                                       |
+| Decision point                                   | Design decision                   | Justification                                                                                                                       |
 |--------------------------------------------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Workstation Connectivity                         | VPN with central internet gateway | Provides the highest level of auditing and monitoring.                                                                              |
 | Local DNS resolution and Internet egress         | Not Configured                    | All traffic will egress centrally through an internet gateway.                                                                      |
@@ -34,9 +34,9 @@ According to Microsoft, the following achieves optimal Microsoft 365 connectivit
 
 ### Connectivity optimisation for enhanced user experience
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                   | Design Decision                   | Justification                                                                                                                                                                                                            |
+| Decision point                                   | Design decision                   | Justification                                                                                                                                                                                                            |
 |--------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Workstation Connectivity                         | Direct connection to the internet | Provides the best performance for users.                                                                                                                                                                                 |
 | Local DNS resolution and Internet egress         | Configured if required            | DNS will be resolved to the gateway of their internet device.                                                                                                                                                            |

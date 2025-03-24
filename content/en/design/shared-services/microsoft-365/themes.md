@@ -6,9 +6,9 @@ description: "This section describes the design decisions associated with Micros
 
 Microsoft 365 Themes provide a method to customise the portal look and feel for users. Themes may assist users with familiarisation and adoption of the Microsoft 365 environment as they can be applied to reflect existing organisation systems and styles. 
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point      | Design Decision | Justification                                                                               |
+| Decision point      | Design decision | Justification                                                                               |
 |---------------------|-----------------|---------------------------------------------------------------------------------------------|
 | Custom Portal Theme | Configured      | Customising the theme setting assists user to identify that they are in the correct portal. |
 

@@ -16,9 +16,9 @@ Windows 10 and 11, and supporting management tools, offer various Standard Opera
   * Remote Control within Microsoft Endpoint Configuration Manager (MECM) is configured in hybrid deployments.
   * Microsoft Teams assuming the user can share the desktop.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point            | Design Decision | Justification                                                                                                                                                                                                 |
+| Decision point            | Design decision | Justification                                                                                                                                                                                                 |
 |---------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Intune                    | Enabled         | Intune management functions cannot be disabled when a device is enrolled in Intune and Microsoft Entra ID.                                                                                                    |
 | WinRM                     | Enabled         | To meet operating support requirements for the organisation. Consideration should be made to harden the use of WinRM in the organisation environment to increase the security of Windows 10 and 11 endpoints. |

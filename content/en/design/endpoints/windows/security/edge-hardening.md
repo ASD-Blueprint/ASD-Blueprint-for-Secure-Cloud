@@ -6,9 +6,9 @@ description: "This section describes the design decisions associated with Micros
 
 The Microsoft Edge security settings support Edge version 90 and later. The Microsoft Edge security settings detailed in this section are based on Microsoft best practice and ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                                               | Design Decision                                   | Justification                                        |
+| Decision point                                                               | Design decision                                   | Justification                                        |
 |------------------------------------------------------------------------------|---------------------------------------------------|------------------------------------------------------|
 | Allow download restrictions                                                  | Block potentially dangerous or unwanted downloads | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance. |
 | Configure Do Not Track                                                       | Enable                                            | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance. |
@@ -32,9 +32,9 @@ The ASD recommends blocking browsers from processing web advertisements as part 
 
 If supported by their existing web content filtering implementations, organisations may also implement web advertisement blocking at the proxy level for additional protection against web advertisement-based threats.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                     | Design Decision              | Justification                                                     |
+| Decision point                     | Design decision              | Justification                                                     |
 |------------------------------------|------------------------------|-------------------------------------------------------------------|
 | Native Edge advertisement blocking | Enabled - BlockAds (default) | To leverage native capabilities within the browser.               |
 | Third-party add-on                 | Deployed via MEM             | To align with Essential Eight user application hardening guidance |

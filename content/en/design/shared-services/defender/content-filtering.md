@@ -16,9 +16,9 @@ Content Filtering polices enable:
 
 The use of these policies enables greater management control over SPAM emails.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point        | Design Decision       | Justification                                             |
+| Decision point        | Design decision       | Justification                                             |
 |-----------------------|-----------------------|-----------------------------------------------------------|
 | Configure SPAM policy | Default configuration | Exchange Online Protection will complete SPAM evaluation. |
 

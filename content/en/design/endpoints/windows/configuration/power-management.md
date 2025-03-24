@@ -12,9 +12,9 @@ Users can adjust power and performance options via the system tray power slider 
 * **Better Performance** - Better Performance is the default slider mode that slightly favours performance over battery life and is appropriate for users who want to trade-off power for better performance of applications.
 * **Best Performance** - Best Performance prioritizes performance over battery life.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                        | Design Decision                                  | Justification                                                                                                                                                  |
+| Decision point                                        | Design decision                                  | Justification                                                                                                                                                  |
 |-------------------------------------------------------|--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Power Management technology                           | Intune, MECM or Group Policy                     | Organisation preference of technology to configure power options. <br>If using MECM or GPO, consideration should be made to migrate these to Intune in future. |
 | Default Power Option Battery                          | Balanced                                         | Default setting, no requirement to change has been identified.                                                                                                 |

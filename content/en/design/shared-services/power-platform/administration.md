@@ -28,9 +28,9 @@ When planning an implementation, organisations should consider the following:
 * Environment specific administration rights can be managed by an Environment Admin Role, noting that by default all Environment users are provided with the Environment Maker role
 * Dataverse has specific built-in security roles.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point              | Design Decision                                                                            | Justification                                                                                                                                                                                                                         |
+| Decision point              | Design decision                                                                            | Justification                                                                                                                                                                                                                         |
 |-----------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Power Platform Environments | Configured Access to Power Platform tenant and environments is assigned to security groups | Security group (controlled via PIM) assigned to Power Platform Service Admin and default Environment Admin role.<br>Dynamics 365 Administrator is not required to be assigned unless Dynamics 365 specific services will be utilised. |
 

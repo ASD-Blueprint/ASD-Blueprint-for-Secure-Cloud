@@ -15,9 +15,9 @@ Packaging methodology should be inherited from existing organisation procedures 
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                    | Design Decision         | Justification                                                                                                  |
+| Decision point                    | Design decision         | Justification                                                                                                  |
 |-----------------------------------|-------------------------|----------------------------------------------------------------------------------------------------------------|
 | Application Delivery Technologies | Deployed via Intune     | Applications deployed via Intune and will be installed during the build deployment.                            |
 | Self Service                      | Company Portal          | Enable users to install the apps needed while ensuring the SOE remains as light weight as possible.             |
@@ -27,9 +27,9 @@ Packaging methodology should be inherited from existing organisation procedures 
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                    | Design Decision                        | Justification                                                                                                                                                                                                             |
+| Decision point                    | Design decision                        | Justification                                                                                                                                                                                                             |
 |-----------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Application Delivery Technologies | Deployed via Intune or MECM            | Applications deployed via Intune and will be installed during the build deployment.<br>MECM can continue to be used for existing applications, however consideration should be made to migrate these to Intune in future. |
 | Self Service                      | Company Portal or MECM Software Center | Enable users to request install of specific apps while ensuring the SOE remains as light weight as possible.                                                                                                               |

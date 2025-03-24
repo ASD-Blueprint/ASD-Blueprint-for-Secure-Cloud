@@ -22,9 +22,9 @@ Within Microsoft 365, additional options are available to be leveraged in an org
 
 Retention Policies can also be leveraged across the Office 365 organisation, whereas litigation hold is configured on a per-mailbox basis. These options reduce the complexity and management overhead involved with recording email and backing up to separate systems.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point       | Design Decision | Justification                                                                                                                                                                                                   |
+| Decision point       | Design decision | Justification                                                                                                                                                                                                   |
 |----------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Configure Journaling | Not Configured  | In place of Journaling, Litigation hold and retention policies in conjunction with eDiscovery will be leveraged by the organisation to meet investigation requirements, unless required by Security Operations. |
 

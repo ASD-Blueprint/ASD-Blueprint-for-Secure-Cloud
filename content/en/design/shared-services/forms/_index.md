@@ -22,9 +22,9 @@ For new Microsoft 365 customers and those customers who have not previously used
 
 {{% /alert %}}
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                                  | Design Decision | Justification                                                                                                                             |
+| Decision point                                                  | Design decision | Justification                                                                                                                             |
 |-----------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | External Sharing -  Sharing of link and collection of responses | Enabled         | Sharing of form links will be enabled, it is up to the organisation which forms they wish to publish.                                     |
 | External Sharing -  Collaboration on the layout and structure   | Enabled         | Collaboration on the layout and structure of forms will be enabled, it is up to the organisation which forms they wish to collaborate on. |

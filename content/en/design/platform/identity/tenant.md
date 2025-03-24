@@ -6,9 +6,9 @@ description: "This section describes the design decisions associated with a tena
 
 In terms of Microsoft 365, a tenant is a container for the set of services assigned to an organisation. Within the core of a tenant sits a dedicated instance of Microsoft Entra. The following sections provide details on the design decisions for base tenant settings.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point            | Design Decision                     | Justification                                                                                                                                                                                                                     |
+| Decision point            | Design decision                     | Justification                                                                                                                                                                                                                     |
 | ------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Region and Location       | Australia / Australian Data Centres | All data should reside in Australian data centres to meet security requirements                                                                                                                                                   |
 | Contacts                  | Configured                          | Out of band contact details in case of service lockout                                                                                                                                                                            |
@@ -21,9 +21,9 @@ In terms of Microsoft 365, a tenant is a container for the set of services assig
 
 To reduce the risk of shadow IT and rogue applications, the Blueprint recommends restricting the ability to create Microsoft Entra ID entities such as applications and security groups. This capability is limited to administrators.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                               | Design Decision     | Justification                                                                                                                                                                                         |
+| Decision point                                               | Design decision     | Justification                                                                                                                                                                                         |
 | ------------------------------------------------------------ | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Application Registrations                                    | via Administrator   | It is recommended organisations develops a service request process and/or limited developers group to enable creation of new applications. This will enable limiting of access to Microsoft Entra ID |
 | Restrict access to the Microsoft Entra administrative portal | Enabled             | Application Administrators require access to the portal. This is provided at an app level through the Application Administrator role.                                                                 |
@@ -37,9 +37,9 @@ To reduce the risk of shadow IT and rogue applications, the Blueprint recommends
 
 Microsoft 365 authentication screens provide the ability to identify the organisation to which the user is authenticating. Corporate branding enables a consistent sign-in experience for users where the branding is applied.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point   | Design Decision | Justification                                                                                                                                                                                                                             |
+| Decision point   | Design decision | Justification                                                                                                                                                                                                                             |
 | ---------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Corporate Branding | Configured      | Organisation specific logos will be required to provide a corporate look and feel. The Organisation specific logon banner text is provided under the "Sign-in page text" area of company branding to remind users of their security responsibilities. |
 
@@ -49,9 +49,9 @@ Microsoft 365 authentication screens provide the ability to identify the organis
 
 The Blueprint is built using Microsoft 365 E5 licences, which includes Microsoft Entra ID P2. The E5 license provides enhanced features such as self-service, enhanced monitoring, security reporting, and just in time access, which are required to meet maturity level 3 under ASD's [Essential Eight Maturity Model](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model). Additional feature comparisons and mapping of Essential Eight to Microsoft 365 features is available at [https://m365maps.com](https://m365maps.com/).
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision                          | Justification                                                                                                                                                                                                   |
+| Decision point | Design decision                          | Justification                                                                                                                                                                                                   |
 | -------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Licences       | Microsoft Entra ID P2 / Microsoft 365 E5 | P2 is required for advanced security features such as Privileged Identity Management and Access Reviews.<br>E5 is required for advanced security features such as Threat Protection and Information Management. |
 | Licence Groups | Configured                               | Configured to assign Microsoft 365 licences to user groups. Ensures consistent configuration.                                                                                                                   |
@@ -72,9 +72,9 @@ For cloud-native deployments, all devices are enrolled and joined to Microsoft E
 
 As part of step two, a [Automatic enrolment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) feature registers the device and joins Microsoft Entra ID. Once registered, the device is managed with Intune.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point          | Design Decision                                | Justification                                                 |
+| Decision point          | Design decision                                | Justification                                                 |
 | ----------------------- | ---------------------------------------------- | ------------------------------------------------------------- |
 | Automatic MDM Enrolment | Intune - Configured to all Users (requires P2) | Simplifies Microsoft Entra ID Join / Device Enrolment process |
 
@@ -90,9 +90,9 @@ When a new Microsoft Entra ID tenant is created it is automatically assigned a d
 
 The Blueprint recommends organisations register a new or existing domain (e.g. `<ORGANISATION.GOV.AU>`) and use it as the default for User Principal Names and email addresses.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                    | Design Decision                      | Justification                                                                                                      |
+| Decision point                    | Design decision                      | Justification                                                                                                      |
 | --------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
 | Registration of other Domains     | Configured - `<ORGANISATION.GOV.AU>` | Registered to tenant and used for User Principal Names and email.                                                  |
 | Microsoft Entra ID Primary domain | `<TENANTNAME>.onmicrosoft.com`       | Required to ensure that Azure created resources and emergency accounts contain the organisations's primary domain. |

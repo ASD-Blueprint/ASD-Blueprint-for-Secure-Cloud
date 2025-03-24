@@ -57,9 +57,9 @@ Using PIM for the SharePoint administrator role, the Device administrator role, 
 
 {{% /alert %}}
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                         | Design Decision         | Justification                                                                                                                                                                                                   |
+| Decision point                         | Design decision         | Justification                                                                                                                                                                                                   |
 |----------------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | PIM                                    | Configured              | PIM provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions on resources or workloads.                                            |
 | Microsoft 365 administrative sub-roles | Configured by Exception | Microsoft 365 administrative sub-roles, where possible, will not be configured in favour of PIM. This ensures Azure is the location to manage Role Base Access Control permission for the organisations tenant. |

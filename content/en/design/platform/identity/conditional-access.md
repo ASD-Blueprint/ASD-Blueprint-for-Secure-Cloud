@@ -15,9 +15,9 @@ The following should be considered before creating Conditional Access policies:
 
 Policy names should give a clear indication of the scope, type, and purpose of the control.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision                                                                                            | Justification                   |
+| Decision point | Design decision                                                                                            | Justification                   |
 | -------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------- |
 | Policy name    | Name policies according to the standard [ADM\|APP\|DEV\|GST\|LOC\|OTH\|USR\|WKL] - [B\|G\|S] - [*purpose*] | Enhanced operational visibility |
 
@@ -55,9 +55,9 @@ Groups can be used to ensure that policies are scoped to the correct subset of i
 
 The use of *exclude* groups is a common practice that allows groups of identities to be excluded from policy control, because of this the management and membership of exclude groups should be tightly controlled.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                                | Design Decision                                                               | Justification                                                                                                                       |
+| Decision point                                                | Design decision                                                               | Justification                                                                                                                       |
 | ------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | Conditional Access exclude groups                             | Use separate exclude groups for each Conditional Access policy                | Provide flexibility in bypassing Conditional Access policy control                                                                  |
 | Conditional Access exclude group membership                   | Use Privileged Identity Management (PIM) for exclude group membership changes | Conditional Access exclude group membership should be tightly controlled                                                            |
@@ -78,9 +78,9 @@ The use of PIM for exclude group changes is discussed in more detail in the [rol
 
 Methods like *break glass* accounts and related exclude groups can be used to mitigate a tenant lockout.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point   | Design Decision                                                     | Justification           |
+| Decision point   | Design decision                                                     | Justification           |
 | ---------------- | ------------------------------------------------------------------- | ----------------------- |
 | Emergency access | Exclude Break glass accounts from Conditional Access policy control | Mitigate tenant lockout |
 
@@ -96,9 +96,9 @@ To enhance operational visibility, policy complexity should be minimised by keep
 
 Named locations are used primarily for location-based policy control, and while they can be useful, they should not be used when similarly capable, location-agnostic controls are available.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point            | Design Decision                                             | Justification                                                                                                               |
+| Decision point            | Design decision                                             | Justification                                                                                                               |
 | ------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | Named locations countries | Allow access only from specific countries                   | Limit the sign-in noise associated with access attempts originating from outside the organisation's countries of operations |
 | Named locations IPs       | Set public IP addresses associated with known egress points | Enhance Identity Protection risk profiling                                                                                  |
@@ -113,7 +113,7 @@ Organisations may wish to consider using different terms of use targeted to diff
 
 Authentication contexts allow select applications to trigger policy control.
 
-| Decision Point          | Design Decision                                            | Justification                 |
+| Decision point          | Design decision                                            | Justification                 |
 | ----------------------- | ---------------------------------------------------------- | ----------------------------- |
 | Authentication contexts | Restrict access to PROTECTED information to employees only | Protect sensitive information |
 
@@ -123,7 +123,7 @@ The use of authentication contexts is discussed in more detail in the [Purview l
 
 Authentication strengths allow customisation of the specific methods used to authenticate users.
 
-| Decision Point                                   | Design Decision                                                | Justification                                          |
+| Decision point                                   | Design decision                                                | Justification                                          |
 | ------------------------------------------------ | -------------------------------------------------------------- | ------------------------------------------------------ |
 | Authentication strengths for user access         | Use phishing-resistant MFA                                     | Comply with Essential Eight requirements               |
 | Authentication strengths for bootstrapping flows | Use phishing-resistant MFA plus temporary access passes (TAPs) | Facilitate onboarding and replacement device MFA setup |
@@ -161,7 +161,7 @@ For policy details see the [Conditional Access policies]({{<ref "configuration/e
 | Require strong re-authentication for risky sign-ins                 | Require phishing-resistant MFA for low to medium risk sign-ins                                  |
 | Block high-risk users                                               | Prevent access from accounts that are likely compromised                                        |
 | Block users with elevated insider risks                             | Prevent access from accounts where a trusted insider could negatively impact the organisation   |
-| Time-box web-based user sessions                                    | Expire web-based non-administrative user sessions after 16-hours                                |
+| Time-box web-based user sessions                                    | Expire web-based non-administrative user sessions after 12-hours                                |
 
 #### Contingency policies
 

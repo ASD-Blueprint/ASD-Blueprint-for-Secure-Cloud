@@ -6,9 +6,9 @@ description: "This section describes the design decisions associated with the ma
 
 iOS devices are enrolled with the Microsoft Intune portal to gain secure access to organisational data. After devices are enrolled, they become `MANAGED`. Organisations can assign policies and apps to the device through a Mobile Device Management (MDM) provider, such as Microsoft Intune.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point    | Design Decision                                                                                              | Justification                                                                                                             |
+| Decision point    | Design decision                                                                                              | Justification                                                                                                             |
 | ----------------- | -------------------------------------------------------------------------------------------------------------| --------------------------------------------------------------------------------------------------------------------------|
 | iOS Enrolment     | Configured                                                                                                   | iOS is commonly deployed across the Australian Government and can be hardened in line with Apples hardening guide for iOS devices. |
 | iOS Configuration | Configurations will follow Apples hardening guide for iOS devices as much as possible using Microsoft Intune | Aligns with Apple iOS hardening guidance.                                                                                 |

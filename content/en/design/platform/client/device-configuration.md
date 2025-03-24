@@ -20,9 +20,9 @@ Within each platform there are number of profile types enabling many settings to
 
 In a co-managed state, these settings may be superfluous to existing Group Policies and Standard Operating Environment (SOE) settings.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point           | Design Decision         | Justification                                                                                  |
+| Decision point           | Design decision         | Justification                                                                                  |
 |--------------------------|-------------------------|------------------------------------------------------------------------------------------------|
 | iOS policies             | Configured              | Microsoft Intune policies are applied easing management.                                       |
 | Device security policies | Configured by exception | Security baselines as discussed below provide a better option when the settings are available. |
@@ -31,9 +31,9 @@ In a co-managed state, these settings may be superfluous to existing Group Polic
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                | Design Decision | Justification                                            |
+| Decision point                | Design decision | Justification                                            |
 |-------------------------------|-----------------|----------------------------------------------------------|
 | Windows 10 and later policies | Configured      | Microsoft Intune policies are applied easing management. |
 
@@ -41,17 +41,17 @@ In a co-managed state, these settings may be superfluous to existing Group Polic
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point               | Design Decision | Justification                                                                     |
+| Decision point               | Design decision | Justification                                                                     |
 | ---------------------------- | --------------- | --------------------------------------------------------------------------------- |
 | Windows 10 and later polices | Not Configured  | Management solution such as MECM and Group Policy are applied to manage settings. |
 
 {{% /alert %}}
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                           | Design Decision  | Justification                                                                                                                                                |
+| Decision point                                           | Design decision  | Justification                                                                                                                                                |
 | -------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Compliance policies controlled by                        | Microsoft Intune | Compliance and remediation policies to controlled via Endpoint Manager.                                                                                      |
 | Device Configuration policies controlled by              | Microsoft Intune | Device configuration policies to be controlled via Endpoint Manager.                                                                                         |
@@ -78,9 +78,9 @@ Different sets of Microsoft Intune Configuration Profiles are used to configure 
 * **Management Plane** - Privileged Access for deploying and managing workloads and data.
 * **User / Application Plane** - Standard access to applications and websites.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point          | Design Decision                                                                                                                                                                                | Justification                                                                                                |
+| Decision point          | Design decision                                                                                                                                                                                | Justification                                                                                                |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | `SAW` Configuration Set | Strongest Security - includes limitations on internet access, limited collaboration tools, etc.                                                                                                | Used for Privileged Access Administration where users have access to the highest impact assets and accounts. |
 | `SOE` Configuration Set | Enhanced Security - additional limitations on collaboration tools - This profile supports compliance with ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/acsc/view-all-content/publications/hardening-microsoft-windows-10-version-21h1-workstations) guidance and ISM PROTECTED Security Controls | Used for specialised use cases where users are managing or creating assets (Management Plane).               |

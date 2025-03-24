@@ -15,9 +15,9 @@ Customer Lockbox is a means to ensure Microsoft is restricted from accessing an 
 
 Per the support agreement terms and conditions, when organisations have not enabled Customer Lockbox, Microsoft support engineers will use an internal Microsoft approval process, but will be able to access content without an organisation's approval. Enabling the Customer Lockbox provides the ability to deny access requests, providing additional security.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point   | Design Decision | Justification                                                                                                                                                           |
+| Decision point   | Design decision | Justification                                                                                                                                                           |
 |------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Customer Lockbox | Enabled         | This is to ensure that Microsoft support engineers cannot access the organisation's content to perform a service operation without the organisation's explicit approval.|
 

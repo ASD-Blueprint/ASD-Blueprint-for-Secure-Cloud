@@ -34,7 +34,7 @@ The Blueprint also aims to support organisations to move away from using unsecur
 
 ### Will the Blueprint be updated as terminology and technology changes?
 
-The Blueprint is informed by ASD’s experience in responding to cyber security incidents, performing vulnerability assessments and penetration testing Australian government organisations. ASD uses our threat intelligence, as well as feedback from partners across government and industry, to ensure our cyber security advice is contemporary and actionable.
+The Blueprint is informed by ASD’s experience in responding to cybersecurity incidents, performing vulnerability assessments and penetration testing Australian government organisations. ASD uses our threat intelligence, as well as feedback from partners across government and industry, to ensure our cybersecurity advice is contemporary and actionable.
 
 ASD will continue to regularly update and improve the Blueprint to ensure it remains a trusted and up to date resource. 
 
@@ -52,7 +52,7 @@ Cloud systems developed or configured by NCCEs need to be assessed to ensure the
 
 [IRAP](https://www.cyber.gov.au/irap) assessors are ASD-certified ICT professionals from across Australia who have the necessary experience and qualifications in ICT, security assessment and risk management, and a detailed knowledge of ASD's ISM.
 
-Endorsed IRAP assessors assist in securing systems and data by independently assessing an organisation's cyber security posture, identifying security risks and suggesting mitigation measures.
+Endorsed IRAP assessors assist in securing systems and data by independently assessing an organisation's cybersecurity posture, identifying security risks and suggesting mitigation measures.
 
 A [list of IRAP assessors](https://www.cyber.gov.au/resources-business-and-government/assessment-and-evaluation-programs/infosec-registered-assessors-program/irap-assessors) can be found online. 
 
@@ -62,4 +62,4 @@ The Blueprint provides an avenue to share lessons learnt and best practice in de
 
 ### Where can I go to for more information or if I have a question  not addressed above?
 
-If you have any further questions or need more information about anything above, please get in touch with us at [blueprint@asd.gov.au](mailto:blueprint@asd.gov.au) or on [GitHub](https://github.com/ASD-Blueprint/ASD-Blueprint-for-Secure-Cloud). You can also sign up to ASD's [Cyber Security Partnership Program](https://www.cyber.gov.au/partnershipprogram) to be informed of new cyber security advice and alerted to emerging cyber threats.
+If you have any further questions or need more information about anything above, please get in touch with us at [blueprint@asd.gov.au](mailto:blueprint@asd.gov.au) or on [GitHub](https://github.com/ASD-Blueprint/ASD-Blueprint-for-Secure-Cloud). You can also sign up to ASD's [Cyber Security Partnership Program](https://www.cyber.gov.au/partnershipprogram) to be informed of new cybersecurity advice and alerted to emerging cyberthreats.

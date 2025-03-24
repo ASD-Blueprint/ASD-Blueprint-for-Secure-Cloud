@@ -12,9 +12,9 @@ The default Start Menu layout can be configured for all users that use the devic
 * **Partial enforcement** – The start menu is deployed centrally and can be altered by users. An application group is deployed for corporate shortcuts and users can then add applications to the start menu in a separate application group. The centrally deployed application group cannot be altered.
 * **No enforcement** – No start menu is defined centrally, and users can make any modification to the start menu.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point             | Design Decision | Justification                                                                                                                                                                                                                                                                     |
+| Decision point             | Design decision | Justification                                                                                                                                                                                                                                                                     |
 |----------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Start Menu Layout Enforced | Partially       | Corporate application group will be enforced, with the rest of the application group able to be customised by users. End-users can customise the Start Menu to suit specific needs, including the ability to resize, reorganise and choose whether to list most recent shortcuts. |
 

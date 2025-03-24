@@ -10,9 +10,9 @@ Microsoft Purview provides eDiscovery tools to search for content in Exchange On
 
 eDiscovery can search mailboxes and sites in the same eDiscovery search, and export the search results. Organisations can use Microsoft Purview eDiscovery (Standard) cases to identify, hold, and export content found in mailboxes and sites, and  can further manage custodians and analyse content by using the extended Microsoft Purview eDiscovery (Premium) solution.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point               | Design Decision | Justification                         |
+| Decision point               | Design decision | Justification                         |
 |------------------------------|-----------------|---------------------------------------|
 | Microsoft Purview eDiscovery | Use             | Useful tools for eDiscovery use cases |
 
@@ -22,9 +22,9 @@ eDiscovery can search mailboxes and sites in the same eDiscovery search, and exp
 
 Microsoft Purview Communication Compliance is an insider risk solution that helps organisations detect, capture, and act on inappropriate messages that can lead to potential data security or compliance incidents within the organisation. Communication compliance evaluates text and image-based messages in Microsoft and third-party apps (Teams, Yammer, Outlook, WhatsApp, etc.) for potential business policy violations including inappropriate sharing of sensitive information, threatening or harassing language as well as potential regulatory violations (such as stock and capital manipulations).
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point           | Design Decision | Justification                                                   |
+| Decision point           | Design decision | Justification                                                   |
 |--------------------------|-----------------|-----------------------------------------------------------------|
 | Communication Compliance | Use             | Provide additional monitoring over reported compliance breaches |
 
@@ -34,9 +34,9 @@ Microsoft Purview Communication Compliance is an insider risk solution that help
 
 Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as theft of intellectual property, data leakage, and other security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, user data undergoes pseudonymisation by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point          | Design Decision | Justification                                                         |
+| Decision point          | Design decision | Justification                                                         |
 |-------------------------|-----------------|-----------------------------------------------------------------------|
 | Insider Risk Management | Configure       | Provides additional capability to identify potential data loss events |
 
@@ -56,9 +56,9 @@ Microsoft Purview Information Barriers is supported within Microsoft Teams, Shar
 
 The Blueprint recommends organisations review the [Microsoft guidance on Information Barriers](https://learn.microsoft.com/purview/information-barriers-solution-overview) and assess the value of implementation in line with their risk appetite.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point       | Design Decision       | Justification                                                                                   |
+| Decision point       | Design decision       | Justification                                                                                   |
 |----------------------|-----------------------|-------------------------------------------------------------------------------------------------|
 | Information Barriers | Organisation decision | Enables restriction of of two-way communications and collaboration to minimise data loss events |
 

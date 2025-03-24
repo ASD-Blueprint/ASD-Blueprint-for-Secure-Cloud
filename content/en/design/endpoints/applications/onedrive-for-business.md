@@ -20,9 +20,9 @@ OneDrive Files On-Demand enables users to view, search for and interact with fil
 
 OneDrive enables users to work on content that is stored online in the cloud as well as store and synchronise content locally through the OneDrive for Business client. Synchronising this content between the client device and OneDrive storage can consume a considerable amount of bandwidth especially if the internet connection is slow. The OneDrive for Business client provides the capability to shape upload and download rates for synchronising content hence reducing the impact on the network. If the internet connection is too slow the end user can continue to work on the content locally and the content will be automatically synchronised by OneDrive for Business client when the internet connection speed improves.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                      | Design Decision                               | Justification                                                                                                                                                                                            |
+| Decision point                      | Design decision                               | Justification                                                                                                                                                                                            |
 |-------------------------------------|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | OneDrive for Business               | Enabled and silently configured               | OneDrive will be configured without user intervention on sign in.                                                                                                                                        |
 | Sync Client Update Ring             | Enterprise                                    | As per Microsoft recommendations for large environments.                                                                                                                                                 |

@@ -10,9 +10,9 @@ The Outlook Address Lists, Global Address List (GAL), and Offline Address Book (
 * **OAB** – The OAB is an offline version of the GAL leveraged by clients in Cached Mode.
 * **Outlook Address List** - An Outlook Address List is a subset of the mail-enabled objects. By default, a number of Address Lists are created, however, additional Address Lists can be created as required.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point       | Design Decision | Justification                                                                                                                                             |
+| Decision point       | Design decision | Justification                                                                                                                                             |
 |----------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Custom Address Lists | Configured      | Custom address lists can be configured by organisation administrators, however one initial custom list, OrganisationName-All, should be manually created. |
 | GAL and OAB          | Generated       | These will be generated so that users can send emails within the organisation in accordance with Microsoft best practice.                                 |

@@ -14,9 +14,9 @@ MX records should be maintained within the Australian Protective Domain Name (AU
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point              | Design Decision  | Justification                                                                                                       |
+| Decision point              | Design decision  | Justification                                                                                                       |
 |-----------------------------|------------------|---------------------------------------------------------------------------------------------------------------------|
 | Authoritative DNS MX Record |                  | This is the ingress point for the mail for the organisation, the mx records will point to the organisation gateway. |
 | Mail Exchanger/s            | `<Mail Gateway>` | This is the ingress point for the mail for the organisation, the mx records will point to the organisation gateway. |
@@ -25,9 +25,9 @@ MX records should be maintained within the Australian Protective Domain Name (AU
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point              | Design Decision | Justification                                                                                                                    |
+| Decision point              | Design decision | Justification                                                                                                                    |
 |-----------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------|
 | Authoritative DNS MX Record | Configured      | If the organisation hosts mail for more than one domain a MX record for each is required. These records are listed.              |
 | Mail Exchanger/s            | Configured      | If the organisation requires its on-premises mail gateways to continue to be used, the Virtual IP (VIP) of the gateways is used. |

@@ -10,9 +10,9 @@ To secure access to user credentials and therefore stored information assets, mu
 
 ### Cloud-Native deployment
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point        | Design Decision      | Justification                                      |
+| Decision point        | Design decision      | Justification                                      |
 | --------------------- | -------------------- | ---------------------------------------------------|
 | Authentication method | Cloud authentication | Only Microsoft Entra ID is used for authentication |
 
@@ -65,9 +65,9 @@ When a user authenticates to Microsoft Entra ID, the password entered by the use
 
 Microsoft allows combining authentication methods to address multiple risks. The default configuration recommended by the Blueprint is to use PHS with PTA.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point        | Design Decision                                                | Justification                                                                                                                                     |
+| Decision point        | Design decision                                                | Justification                                                                                                                                     |
 | --------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authentication option | Password Hash Synchronisation with Pass-through Authentication | Enables organisations to provide users with a leaked credential report, and additionally provides a failover if the primary sign-in method fails. |
 
@@ -97,9 +97,9 @@ Microsoft Entra Multifactor Authentication provides additional security by requi
 
 The MFA registration workflow uses [Combined Information Registration](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-combined). Registration is triggered via interrupt mode when the [Conditional Access policy]({{<ref "conditional-access" >}}) is triggered, which occurs when signing into any resource. [Identity Protection]({{<ref "protection" >}}), which can also trigger MFA registration, allows the user to defer registration for 14 days.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point   | Design Decision | Justification                                                                                                                                                                                                                              |
+| Decision point   | Design decision | Justification                                                                                                                                                                                                                              |
 | -----------------| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | MFA grace period | Disabled        | Implementation of Conditional Access policies for MFA will force users to immediately register for MFA. Disabling the grace period provides a fall back option for those organisations not implementing select Conditional Access policies |
 
@@ -123,9 +123,9 @@ The device on which the Microsoft Authenticator app is installed must be "Micros
 
 When implementing MFA via Microsoft Authenticator, organisations should consider other settings to align with their risk appetite.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point      | Design Decision | Justification                                                                   |
+| Decision point      | Design decision | Justification                                                                   |
 |---------------------|-----------------|---------------------------------------------------------------------------------|
 | Authentication mode | Push            | Enables enhanced MFA capabilities without enabling passwordless authentication. |
 | Number matching     | Enabled         | Reduces the risk of push notification MFA fatigue attacks.                      |
@@ -147,9 +147,9 @@ This authentication method is embedded in devices with a built-in Trusted Platfo
 
 The Blueprint recommends disabling biometric authentication. However, organisations should undertake their own assessment to determine use of biometric authentication.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point             | Design Decision                          | Justification                        |
+| Decision point             | Design decision                          | Justification                        |
 | -------------------------- | ---------------------------------------- | ------------------------------------ |
 | Windows Hello for Business | Configured via Endpoint Enrolment Policy | Consistent deployment across devices |
 
@@ -159,9 +159,9 @@ The Blueprint recommends disabling biometric authentication. However, organisati
 
 The FIDO (Fast IDentity Online) Alliance helps to promote open authentication standards and reduce the use of passwords as a form of authentication. FIDO2 is the latest standard that incorporates the web authentication (WebAuthn) standard. FIDO2 security keys can be used to sign in to Entra ID joined Windows 10/11 devices and get single-sign on to cloud and on-premises resources. Users can also use FIDO2 security keys to sign in to supported web browsers.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point  | Design Decision         | Justification                                                                                                                                                   |
+| Decision point  | Design decision         | Justification                                                                                                                                                   |
 | --------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorised Keys | Organisational decision | Align with a [compatible FIDO2 security key](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-passwordless#fido2-security-keys) |
 
@@ -171,9 +171,9 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication st
 
 Entra ID supports the use of OATH-TOTP SHA-1 tokens that refresh codes every 30 or 60 seconds. OATH TOTP hardware tokens come with a secret key, or seed, pre-programmed in the token. These keys must be input into Entra ID. Secret keys are limited to 128 characters, which may not be compatible with all tokens. The secret key can only contain the characters `a-z` or `A-Z` and digits `2-7`, and must be encoded in Base32. Programmable OATH TOTP hardware tokens that can be reseeded can also be set up with Entra ID in the software token setup flow.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point  | Design Decision | Justification                                                                  |
+| Decision point  | Design decision | Justification                                                                  |
 | --------------- | --------------- | ------------------------------------------------------------------------------ |
 | Hardware Tokens | Enabled         | Required for MFA unsupported FIDO2 security key use cases by limited user set. |
 
@@ -191,9 +191,9 @@ Administrators can create a TAP for users only after enabling the policy. Once a
 
 When MFA is enforced for adding security information, this scenario will occur if a OATH token is not registered for the user (i.e. no MFA method in place) and a security key needs to be registered by the user for MFA.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point        | Design Decision | Justification                                                                                      |
+| Decision point        | Design decision | Justification                                                                                      |
 | --------------------- | --------------- | -------------------------------------------------------------------------------------------------- |
 | Temporary Access Pass | Configured      | Required in instances where users do not have an OATH Hard Token and need to register security key |
 
@@ -207,9 +207,9 @@ For Australian Government organisations implementing MFA, Microsoft has detailed
 
 Australian Government organisations should, at minimum, look to implement an MFA solution which will achieve Essential Eight Maturity Level 2. Maturity Level 1 is considered to provide a basic level of authentication security. The following design decisions provide an example for organisations wishing to address Essential Eight MFA Maturity Level 1 requirements:
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point         | Design Decision                        | Justification                                                                                                                                                                                                               |
+| Decision point         | Design decision                        | Justification                                                                                                                                                                                                               |
 |------------------------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Authentication Methods | Microsoft Authenticator (Passwordless) | Enforce for third-party internet-facing services (Microsoft 365), administrators, and important data repositories.                                                                                                          |
 | Hardware Token Support | Allowed (supported OATH tokens only)   | Hardware token support is required to support specific use cases, such as working from locations that may not allow mobile phones, or users who may have a specific physical token, biometrics, or smartcard justification. |
@@ -225,9 +225,9 @@ The following authentication methods are not suitable for Maturity Level 1:
 
 Configuration guidance provided as part of the Blueprint primarily addresses requirements for Maturity Level 2 of the Essential Eight. Within the context of Microsoft 365 and the Blueprint, Essential Eight Maturity Level 2 and Maturity Level 3 are identical. The following design decisions provide an example for organisations wishing to address these requirements:
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point         | Design Decision                                                             | Justification                                                                                                             |
+| Decision point         | Design decision                                                             | Justification                                                                                                             |
 | ---------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Authentication Methods | FIDO2 Key / Windows Hello for Business (Pin Only) on organisational devices | Required to meet Essential Eight Maturity Level 3 requirements with alternative approach to handle unsupported use cases. |
 | Alternative Methods    | Temporary Access Pass                                                       | Enables onboarding and recovery of passwordless MFA methods (i.e. FIDO2 key).                                             |
@@ -256,9 +256,9 @@ The following authentication methods are not permitted for Maturity Level 2:
 
 Due to the strict requirements of Essential Eight MFA Maturity Level 3 controls, it is recommended to have exceptions to security key MFA for Temporary Access Passes. This exception enables registration of the security key and resetting a security key if lost or if the user has forgotten the PIN. A separate exception group could also be added to enable use of Hard Tokens as a MFA method as fall back for unsupported scenarios. Users should be placed temporarily in relevant groups only as required.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point          | Design Decision | Justification                                                                                                                                                            |
+| Decision point          | Design decision | Justification                                                                                                                                                            |
 | ----------------------- | ----------------| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | MFA                     | Configured      | Native Azure MFA will be configured to secure authentication to all organisation resources.                                                                              |
 | Trusted IP              | Not configured  | Conditional Access policies should be used in place of the legacy 'Trusted IP' feature. Trusted egress IP addresses should be defined by Conditional Access if required. |
@@ -292,9 +292,9 @@ Entra ID Password Protection detects and blocks known weak passwords and their v
 
 With Entra ID Password Protection, default global banned password lists are automatically applied to all users within an Entra ID tenant. Additional entries can be defined in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point     | Design Decision | Justification                                        |
+| Decision point     | Design decision | Justification                                        |
 | ------------------ | --------------- | ---------------------------------------------------- |
 | Password Lockout   | Configured      | Mitigates brute force password attacks               |
 | Custom Banned List | Configured      | Adds organisation keywords into banned password list |
@@ -313,9 +313,9 @@ If using a version of Entra ID Connect prior to version 1.1.553.0, ensure the se
 
 {{% /alert %}}
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point        | Design Decision       | Justification                                                                                                                             |
+| Decision point        | Design decision       | Justification                                                                                                                             |
 | --------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | Password write back   | Organisation decision | Enables additional usability and security features. However, if implemented incorrectly may introduce additional risk to the organisation |
 
@@ -325,9 +325,9 @@ If using a version of Entra ID Connect prior to version 1.1.553.0, ensure the se
 
 Entra ID self-service password reset (SSPR) gives users the ability to change or reset their password, with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point              | Design Decision       | Justification                                                                                                                                                                                         |
+| Decision point              | Design decision       | Justification                                                                                                                                                                                         |
 | --------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Self-Service Password Reset | Organisation decision | Enables additional usability and security features, However, there may exist attribution and security risks associated with SSPR authentication methods requiring personally identifiable information |
 
@@ -348,9 +348,9 @@ ASD's [*Guidelines for System Hardening*](https://www.cyber.gov.au/resources-bus
 
 The following design decisions provide recommended settings or procedures regarding setting and resetting user credentials.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point        | Design Decision        | Justification                                                                                                                                                                                                     |
+| Decision point        | Design decision        | Justification                                                                                                                                                                                                     |
 | --------------------- | -----------------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Temporary Passwords   | Randomly Generated     | Aligns with ISM-1227: Credentials set for user accounts are randomly generated.                                                                                                                                   |
 | Temporary Passwords   | Change on first use    | Aligns with ISM-1595: Credentials provided to users are changed on first use.                                                                                                                                     |

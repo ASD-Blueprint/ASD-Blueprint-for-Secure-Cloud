@@ -12,9 +12,9 @@ Microsoft Stream provides two platforms :
 
 * Stream (Classic) is using video files stored on the retiring Azure based microsoftstream.com service
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                | Design Decision                                                                                 | Justification                                                                                                                             |
+| Decision point                | Design decision                                                                                 | Justification                                                                                                                             |
 |-------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | Usage of Stream on SharePoint | Utilise Microsoft Stream (Built on SharePoint) experience rather than Stream Classic experience | Stream Classic experience is being deprecated.<br>Storing Stream videos in SharePoint Online provides additional compliance capabilities. |
 

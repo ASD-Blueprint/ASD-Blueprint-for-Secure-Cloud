@@ -60,9 +60,9 @@ Workstation configuration is stored within Microsoft Intune (Autopilot rebuild).
 
 Organisations should review native Microsoft 365 capabilities and determine whether they meet data preservation requirements, or whether a third-party backup solution is required.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                 | Design Decision                                                    | Justification                                                                                                                                                                  |
+| Decision point                 | Design decision                                                    | Justification                                                                                                                                                                  |
 |--------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Exchange Online mailboxes      | RPO – 24 hours from backup or better<br>RTO - < 48 hours or better | RPO and RTO in relation to cloud backups is for guidance only. Organisations are required to measure these against the business, application, regulatory and security requirements. |
 | Exchange Online mail items     | RPO – 24 hours from backup or better<br>RTO - < 48 hours or better | RPO and RTO in relation to cloud backups is for guidance only. Organisations are required to measure these against the business, application, regulatory and security requirements. |
@@ -77,9 +77,9 @@ Organisations should review native Microsoft 365 capabilities and determine whet
 
 #### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point     | Design Decision                                                                                          | Justification                                                                                                                                                 |
+| Decision point     | Design decision                                                                                          | Justification                                                                                                                                                 |
 |--------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Restoration tools  | Microsoft backup and restoration tools (when no backup product selected)                                 | The organisation will leverage Microsoft Office 365 native tools in the first instance to recover user data, where no third-party backup toolset is deployed. |
 | Items to Backup    | Exchange Online<br>SharePoint Online<br>Microsoft Teams<br>OneDrive for Business<br>Microsoft 365 groups | Backups must cover the Microsoft suite of tools at a minimum.                                                                                                 |
@@ -89,9 +89,9 @@ Organisations should review native Microsoft 365 capabilities and determine whet
 
 #### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point     | Design Decision                                                                                                                                            | Justification                                                                                                                                                                                                      |
+| Decision point     | Design decision                                                                                                                                            | Justification                                                                                                                                                                                                      |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Restoration tools  | Third party backup and restoration tools                                                                                                                   | Organisations should investigate third-party backup tools to backup and restore data on-premises and within the cloud.                                                                                                  |
 | Items to Backup    | Exchange Online<br>SharePoint Online<br>Microsoft Teams<br>OneDrive for Business<br>Microsoft 365 groups<br>On-premises Exchange<br>On-premises SharePoint | Backups must cover the Microsoft suite of tools at a minimum.                                                                                                                                                      |

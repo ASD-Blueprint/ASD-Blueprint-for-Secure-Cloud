@@ -10,9 +10,9 @@ Purview Audit allows organisations to investigate data captured about operations
 * Audit data is retained for 180 days by default (or one year for certain record types) and can be retained for up to ten years with E5 licensing and a licensing add-on. ASD's *Information Security Manual* (ISM) recommends that certain types of log data be retained for at least seven years, which is complimented by other guidance and publications from ASD's Australian Cyber Security Centre recommending that retention periods be informed by risk assessments and compliance with organisational regulatory requirements. It is also possible to use Microsoft 365 APIs to enable third-party applications to ingest audit data which may provide additional benefits for cost and long term retention.
 * Which data to retain is largely dictated by *record type* policy settings related to the features that are enabled for relevant Microsoft 365 services. This data can be further broken down into the specific actions performed relative to the record type. While organisations can customise data types and actions to cater for specific use cases, for simplicity, it can be useful to leave record type policy settings blank which will capture all record types and actions to the unified audit log.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point         | Design Decision                   | Justification                                 |
+| Decision point         | Design decision                   | Justification                                 |
 | ---------------------- | --------------------------------- | --------------------------------------------- |
 | Audit retention period | Retain audit data for seven years | Log information in-line with ISM requirements |
 | Audit data selection   | Retail all audit data             | Simplify audit logging management             |

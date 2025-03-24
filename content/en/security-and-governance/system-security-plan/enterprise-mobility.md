@@ -61,9 +61,9 @@ The management of corporately owned and issued mobile devices for `<SYSTEM-NAME>
 
 Technical controls for `<SYSTEM-NAME>`'s implementation of mobile device management are configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au).
 
-`<SYSTEM-NAME>` uses Microsoft Intune as its Mobile Device Management (MDM) solution. While Intune has not completed the relevant protection profile assessment, `<ORGANISATION-NAME>` considers that as Microsoft has [commenced the assessment process](https://www.niap-ccevs.org/Product/PINE.cfm) for Intune and has completed an IRAP assessment of Microsoft 365 services including Intune, associated risks are mitigated. `<ORGANISATION-NAME>` has reviewed this IRAP assessment together with the commenced protection profile assessment.
+`<SYSTEM-NAME>` uses Microsoft Intune as its Mobile Device Management (MDM) solution, which has [completed the relevant protection profile assessment](https://www.niap-ccevs.org/products/11298).
 
-`<SYSTEM-NAME>` requires use of the latest version of iOS, which is currently iOS 17. The most recent version of iOS to have completed the relevant protection profile assessment is iOS 16. However, `<ORGANISATION-NAME>` considers that while the protection profile assessment is not of the implemented operating system (iOS 17), the recency of the assessment of iOS 16 (OS version N-1) mitigates associated risks.
+`<SYSTEM-NAME>` requires use of the latest version of iOS, which is currently iOS 18. The most recent version of iOS to have completed the relevant protection profile assessment is iOS 16. However, `<ORGANISATION-NAME>` considers that while the protection profile assessment is not of the implemented operating system (iOS 18), the recency of the assessment of iOS 16 mitigates associated risks.
 
 iOS devices are configured to:
 * operate in Supervised Mode

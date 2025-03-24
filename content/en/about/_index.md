@@ -39,4 +39,4 @@ While the Blueprint is primarily developed for Australian Government organisatio
 
 ### Contact us
 
-If you have any questions or suggestions about the Blueprint, or to request targeted technical advice, please get in touch with us at [blueprint@asd.gov.au](mailto:blueprint@asd.gov.au) or on [GitHub](https://github.com/ASD-Blueprint/ASD-Blueprint-for-Secure-Cloud). You can also sign up to ASD's [Cyber Security Partnership Program](https://www.cyber.gov.au/partnershipprogram) to be informed of new cyber security advice and alerted to emerging cyber threats.
+If you have any questions or suggestions about the Blueprint, or to request targeted technical advice, please get in touch with us at [blueprint@asd.gov.au](mailto:blueprint@asd.gov.au) or on [GitHub](https://github.com/ASD-Blueprint/ASD-Blueprint-for-Secure-Cloud). You can also sign up to ASD's [Cyber Security Partnership Program](https://www.cyber.gov.au/partnershipprogram) to be informed of new cybersecurity advice and alerted to emerging cyberthreats.

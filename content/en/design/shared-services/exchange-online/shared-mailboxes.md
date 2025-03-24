@@ -12,9 +12,9 @@ Unlike user mailboxes, these mailboxes are represented within Entra ID by a disa
 
 User access to the mailbox is provided using mailbox delegation rights (Full Access, Send As, Send on Behalf). These rights can be assigned either directly or using a mail enabled security group.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                                   | Design Decision                                                                           | Justification                                                                                                                                                                                                   |
+| Decision point                                                   | Design decision                                                                           | Justification                                                                                                                                                                                                   |
 |------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Shared mailbox delegation (Full Access, Send As, Send on Behalf) | Configured via mail-enabled Security groups which are hidden from the Global Address book | Mail-enabled security groups limit the management overhead associated with mailbox delegation when compared to direct delegations. A security group is required to be mail-enabled to appear within Office 365. |
 | Naming standard for security groups                              | Configured                                                                                | To distinguish between security groups managing a shared mailbox an organisational naming standard should be followed.                                                                                        |

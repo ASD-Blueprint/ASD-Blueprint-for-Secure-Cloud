@@ -8,9 +8,9 @@ Universal Windows Platform (UWP) applications are applications that run on Windo
 
 UWP applications cannot access user resources unless the application specifically declares a need to use those resources. This ensures a clear connection between apps and the types of resources the app has access to.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point        | Design Decision | Justification                                                                                                                                                                                             |
+| Decision point        | Design decision | Justification                                                                                                                                                                                             |
 |-----------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Windows SOE Footprint | Reduce          | The organisation will reduce the size of the Windows SOE footprint by configuring the settings in the next table unless the organisation has a specific requirement for these applications to be enabled. |
 

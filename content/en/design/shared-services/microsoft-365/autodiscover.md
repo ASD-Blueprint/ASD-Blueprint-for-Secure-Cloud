@@ -19,9 +19,9 @@ The high-level process for Autodiscover is:
 
 The above process requires appropriate [External DNS records](https://learn.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records?view=o365-worldwide#external-dns-records-required-for-email-in-office-365-exchange-online)
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point      | Design Decision                                                  | Justification                                                 |
+| Decision point      | Design decision                                                  | Justification                                                 |
 |---------------------|------------------------------------------------------------------|---------------------------------------------------------------|
 | DNS Records (CNAME) | **Alias**: Autodiscover<br>**Target**:`autodiscover.outlook.com` | A DNS record that points clients to the Autodiscover service. |
 
@@ -29,9 +29,9 @@ The above process requires appropriate [External DNS records](https://learn.micr
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision                                                        | Justification                                                                                                  |
+| Decision point | Design decision                                                        | Justification                                                                                                  |
 |----------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Autodiscover   | CNAME **Alias**: Autodiscover<br>**Target**:`autodiscover.outlook.com` | Autodiscover will improve the user experience and is required to configure a user's Outlook profile and inbox. |
 
@@ -39,9 +39,9 @@ The above process requires appropriate [External DNS records](https://learn.micr
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point          | Design Decision                       | Justification                                                                                                                                      |
+| Decision point          | Design decision                       | Justification                                                                                                                                      |
 |-------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Autodiscover internally | Configured - Service Connection Point | Autodiscover will continue to point to the internal Exchange Servers until all mailboxes have been migrated to Microsoft 365 to ensure functionality. |
 | Autodiscover externally | Configured – DNS record               | To ensure autodiscover functions externally to the organisation.                                                                                   |

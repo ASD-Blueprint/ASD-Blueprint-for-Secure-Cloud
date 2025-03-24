@@ -9,9 +9,9 @@ description: "This section describes the design decisions associated with Azure 
 
 The Azure Information Protection (AIP) service underpins [sensitivity label access controls]({{<ref "design/shared-services/purview/labelling-and-classification#access-control">}}) and is used to apply encryption, usage rights, and other restrictions to labelled information. When AIP is used in the context of Purview Information Protection it is known as Azure Rights Management, or the Azure Rights Management Service (Azure RMS). Rights Management defines controls like whether online and offline access is permitted and for what length of time, the types of operations permitted, and who the rights are assigned to.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point              | Design Decision                                                                                                    | Justification                                                  |
+| Decision point              | Design decision                                                                                                    | Justification                                                  |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
 | Using labels with Azure RMS | Expire access to offline information after 3-days                                                                  | Help mitigate inactive user access to information              |
 | Using labels with Azure RMS | Assign *owner* usage rights to user groups approved for access to PROTECTED classified information                 | Allow other authorised users to change labels                  |

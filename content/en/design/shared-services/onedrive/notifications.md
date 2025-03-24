@@ -10,9 +10,9 @@ Notifications provide OneDrive users with information about how OneDrive is oper
 * External users accept invitations.
 * An anonymous access link is created or changed.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point     | Design Decision | Justification                                                                |
+| Decision point     | Design decision | Justification                                                                |
 |--------------------|-----------------|------------------------------------------------------------------------------|
 | User notifications | Configured      | Notifications will be configured to provide users with relevant information. |
 

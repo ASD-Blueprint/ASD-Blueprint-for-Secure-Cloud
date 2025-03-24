@@ -18,9 +18,9 @@ The above configurations can be completed on all new mailboxes using a Client Ac
 
 In addition to the above mailbox configuration, by default, standard user accounts have access to Exchange Online via Exchange Online PowerShell. ASD guidance to disable unneeded features requires that this feature be disabled.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                 | Design Decision                                | Justification                                                                                                                                                                                                                  |
+| Decision point                 | Design decision                                | Justification                                                                                                                                                                                                                  |
 |--------------------------------|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Disable IMAP                   | Configured                                     | IMAP will be disabled to meet ASD guidance to disable unneeded features.                                                                                                                                                      |
 | Disable POP                    | Configured                                     | POP will be disabled to meet ASD guidance to disable unneeded features.                                                                                                                                                       |

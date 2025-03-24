@@ -22,9 +22,9 @@ Microsoft Defender for Office 365 is part of the Microsoft 365 Defender stack. I
 | EmailPostDeliveryEvents | Security events that occur post-delivery, after Microsoft 365 has delivered the emails to the recipient mailbox |
 | EmailUrlInfo            | Information about URLs on emails                                                                                |
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                     | Design Decision                                                  | Justification                                                      |
+| Decision point                                     | Design decision                                                  | Justification                                                      |
 |----------------------------------------------------|------------------------------------------------------------------|--------------------------------------------------------------------|
 | Microsoft 365 Unified Log Routing                  | Microsoft Sentinel via Microsoft Microsoft 365 Data Connector    | Archive and audit solution downstream from log analytics workspace |
 | Microsoft  Defender  for Microsoft 365 Log routing | Microsoft Sentinel via Microsoft 365 Defender 365 Data Connector | Archive and audit solution downstream from log analytics workspace |

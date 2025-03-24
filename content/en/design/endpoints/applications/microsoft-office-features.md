@@ -16,9 +16,9 @@ The Microsoft 365 Apps for Enterprise - formerly Office 365 ProPlus - features i
 * Microsoft Word
 * Microsoft OneDrive Desktop
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point              | Design Decision | Justification                         |
+| Decision point              | Design decision | Justification                         |
 |-----------------------------|-----------------|---------------------------------------|
 | Microsoft Office Word       | Enabled         | Required to enable user productivity. |
 | Microsoft Office Excel      | Enabled         | Required to enable user productivity. |

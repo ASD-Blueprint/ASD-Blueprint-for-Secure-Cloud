@@ -6,9 +6,9 @@ description: "This section describes the design decisions associated with enabli
 
 In addition to the tenant wide Customer Lockbox functionality, specific [Power Platform Customer Lockbox](https://learn.microsoft.com/power-platform/admin/about-lockbox) functionality is also available to be configured within the Power Platform Administration Centre. In the rare occasion when Microsoft attempts to access customer data that's stored within Power Platform, a Customer Lockbox request is sent to the organisations Microsoft 365 `Global Administrators` and `Power Platform Administrators` for approval. 
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point   | Design Decision | Justification                                                                                                                                                                                  |
+| Decision point   | Design decision | Justification                                                                                                                                                                                  |
 |------------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Customer Lockbox | Enabled         | Customer Lockbox for Microsoft Power Platform can be used to control Microsoft operator access to customer content. It may take up to 24 hours for all supported data sources to be protected. |
 

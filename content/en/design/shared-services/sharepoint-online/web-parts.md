@@ -9,9 +9,9 @@ SharePoint Online provides spaces for users to customise their SharePoint page t
 * Microsoft published web part
 * Third party published web part
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                | Design Decision | Justification                                                                                                                                                                                                                                                                                    |
+| Decision point                | Design decision | Justification                                                                                                                                                                                                                                                                                    |
 |-------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microsoft published web part   | Enabled         | Microsoft published web parts cannot be disabled in SharePoint.                                                                                                                                                                                                                                   |
 | Third Party published web part | Disabled        | Built-in third party web parts which are able to be disabled should be disabled due to potential unsecure data flow outside of Office 365.<br><br>If a third party published web part is identified for use in future, the organisation should undertake a risk assessment before implementation. |

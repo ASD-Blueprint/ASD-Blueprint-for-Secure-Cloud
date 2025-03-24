@@ -12,9 +12,9 @@ The Microsoft Store for Business (private store) enables organisations to purcha
 
 Licencing can also be managed through the Microsoft Store for Business and administrators can reclaim and reuse application licences.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point               | Design Decision | Justification                                                                                  |
+| Decision point               | Design decision | Justification                                                                                  |
 |------------------------------|-----------------|------------------------------------------------------------------------------------------------|
 | Microsoft Public Store       | Disabled        | To align with ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance.                                             |
 | Microsoft Store for Business | Enabled         | To enable the delivery of enterprise volume purchased apps including the Intune Company Portal. |

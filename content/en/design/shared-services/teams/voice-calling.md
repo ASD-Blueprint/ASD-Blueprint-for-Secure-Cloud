@@ -11,9 +11,9 @@ Enables organisations to make calls to landlines or mobiles within Microsoft Tea
 * **Calling Plan via Telstra Calling for Office 365:** Telstra Calling avoids the complexity of separate collaboration systems and can be enabled within Teams. Similar to Operator Connect, this method provides a fully managed service by Telstra for Teams calling to PSTN systems.
 * **Direct Routing:** Direct Routing enables hybrid organisations to connect their on-premises telephony infrastructure to Microsoft Teams through a series of supported on-premises Session Border Controllers (SBC). This method provides the organisation a self-managed service for Teams calling to PSTN systems.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point         | Design Decision             | Justification                                                                                                                                         |
+| Decision point         | Design decision             | Justification                                                                                                                                         |
 |------------------------|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Voice Calling solution | Organisation decision       | The organisation should assess their requirements for calling in order to select the right calling solution for Teams.                                |
 | Security Assessment    | Organisation to risk assess | As the calling options are hosted outside of the Microsoft 365 system boundary by third party providers they should be risk assessed to determine suitability. |

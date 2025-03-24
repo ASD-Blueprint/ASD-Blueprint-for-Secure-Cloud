@@ -36,7 +36,7 @@ ISM controls relating to communications systems are applicable to the use of Mic
 
 Use of Microsoft Teams within `<SYSTEM-NAME>` is subject to `<ORGANISATION-NAME>`'s [Telephone Usage Policy]({{< ref "security-and-governance/policies">}}), which describes the sensitivity or classification of information that can be discussed over applicable systems and connection types.
 
-`<ORGANISATION-NAME>` cyber security awareness training also informs staff of the security risks associated with using each of these connection types, particularly in areas where sensitive classified conversations may occur.
+`<ORGANISATION-NAME>` cybersecurity awareness training also informs staff of the security risks associated with using each of these connection types, particularly in areas where sensitive classified conversations may occur.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 

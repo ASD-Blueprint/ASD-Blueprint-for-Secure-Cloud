@@ -14,9 +14,9 @@ Configuration of Cortana features can be managed by GPO or modern management (su
 
 Windows Search is text-based and is built into the local operating system.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision                          | Justification                                                                                                   |
+| Decision point | Design decision                          | Justification                                                                                                   |
 |----------------|------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Cortana        | Disabled                                 | As per ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance the Cortana feature will be disabled to comply with security requirements. |
 | Windows Search | Enabled and configured for local content | Windows search will be limited to local items only to prevent data leakage.                                     |

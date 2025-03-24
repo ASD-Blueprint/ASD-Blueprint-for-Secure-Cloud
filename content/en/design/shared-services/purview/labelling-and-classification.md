@@ -12,9 +12,9 @@ The labelling and classification of information are key capabilities within the 
 * Labels are logical tags, unique to each Purview tenant or organisation, that enable the control and categorisation of information in accordance with operational, security and privacy requirements.
 * Classifiers are patterns and rules that assist the identification of data types within information.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point          | Design Decision                         | Justification                                                         |
+| Decision point          | Design decision                         | Justification                                                         |
 | ----------------------- | --------------------------------------- | --------------------------------------------------------------------- |
 | Labelling information   | Use Purview sensitivity labels          | Enable the categorisation and control of organisational information   |
 | Classifying information | Use Purview sensitive information types | Enable the detection of sensitive and security classified information |
@@ -25,9 +25,9 @@ The labelling and classification of information are key capabilities within the 
 
 Sensitivity labels are applied or associated with certain types of emails, documents and containers within Microsoft 365 services, applications and endpoints, this process is primarily to provide content marking and to mitigate unauthorised access.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                  | Design Decision              | Justification                                                                          |
+| Decision point                  | Design decision              | Justification                                                                          |
 | ------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------- |
 | Implementing sensitivity labels | Provide document marking     | Mark information in-line with Protective Security Policy Framework (PSPF) requirements |
 | Implementing sensitivity labels | Mitigate unauthorised access | Protect sensitive and security classified information                                  |
@@ -38,9 +38,9 @@ Sensitivity labels are applied or associated with certain types of emails, docum
 
 Sensitive information types are pattern-based classifiers that can be developed to identify information with a degree of confidence for any number of use cases. While the development of sensitive information types can be straightforward, implementing them can be difficult without knowledge of the organisational specific context in which information is stored, used and shared. Implementation without considering this context can result in excess false positive or false negatives, excess administrative alerts or events, and a poor user experience.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                           | Design Decision                                        | Justification                                                                                                     |
+| Decision point                           | Design decision                                        | Justification                                                                                                     |
 | ---------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | Implementing sensitive information types | Provide sensitive information types with base patterns | Enable the detection of sensitive and security classified information for auto-labelling and data loss prevention |
 
@@ -63,9 +63,9 @@ Default labels are not able to be widely used in a security context without unde
 
 Auto-labelling can be performed via client-side (end-user application) or service-side (Microsoft 365 service) mechanisms, with the latter offering more flexibility in choosing conditions for labelling triggers. Service-side auto-labelling polices are able to be used in conjunction with data loss prevention policies to apply email X-header and subject markings to incoming and outgoing emails, respectively, and are discussed in more detail in the [email handling]({{<ref "design/shared-services/purview/email-handling">}}) page.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                    | Design Decision                                                                                             | Justification                                                                                                                                                                                |
+| Decision point                    | Design decision                                                                                             | Justification                                                                                                                                                                                |
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Using default labels<sup>1</sup>  | Use default labels for Teams channels                                                                       | Help mitigate data spills by ensuring channel meetings and chats use the same label as the channel container                                                                                 |
 | Manual labelling                  | Require users to apply a label to their emails, documents, groups, sites and related content                | Mark information in-line with PSPF requirements and protect sensitive and security classified information                                                                                    |
@@ -86,9 +86,9 @@ Auto-labelling can be performed via client-side (end-user application) or servic
 
 Similar to the initial application of a sensitivity label, a label can also be changed manually or automatically depending on the Microsoft 365 service, application or endpoint used, and an organisation's ability to implement classifiers.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                      | Design Decision                                                                      | Justification                                                                                                                                                  |
+| Decision point                                      | Design decision                                                                      | Justification                                                                                                                                                  |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Manual label changes                                | Allow manual label changes with justification on downgrade                           | Maintain visibility of label changes with logging and alerting while using sensitive information types to detect unauthorised label changes                    |
 | Using service-side auto-labelling for label changes | Use label inheritance from email attachments to apply labels                         | Help mitigate mis-labelling information                                                                                                                        |
@@ -100,9 +100,9 @@ Similar to the initial application of a sensitivity label, a label can also be c
 
 While a sensitivity label's name can be arbitrary, it's important that users are easily able to associate the label with its purpose of controlling or categorising information. Labels can be created with a priority order and grouped to determine how they will display in applications, the priority of auto-labelling rules will apply when labelling conflicts occur, and the user experience when changing labels or moving labelled information.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision                                                              | Justification                                                                                                                                                                    |
+| Decision point | Design decision                                                              | Justification                                                                                                                                                                    |
 | -------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label naming   | Labels are named in-line with PSPF requirements                              | Help mitigate mislabelling by associating the label name with the PSPF markings it applies                                                                                       |
 | Label naming   | Limit parent and sub-label name length                                       | Help mitigate lengthy names from being obscured in mobile and low resolution displays, while ensuring accuracy in selecting the correct label, and visibility of selected labels |
@@ -151,9 +151,9 @@ Organisations with existing labelling schemes may find the [migrating labelling 
 
 Sensitivity labels must be published to specific users or groups which then allows them to be applied in supported Microsoft 365 applications and workflows.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point    | Design Decision                                                                                              | Justification                                                    |
+| Decision point    | Design decision                                                                                              | Justification                                                    |
 | ----------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
 | Publishing labels | Labels up to OFFICIAL: Sensitive<sup>1</sup> are published to all users                                      | Publish labels suitable for use by all users in the organisation |
 | Publishing labels | Labels above OFFICIAL: Sensitive<sup>1</sup> up to PROTECTED<sup>1</sup> are published to select user groups | Publish labels for use by appropriately cleared users only       |
@@ -166,9 +166,9 @@ Sensitivity labels must be published to specific users or groups which then allo
 
 When a sensitivity label is applied to a document, email or meeting invite the process can add a watermark, header or footer to mark the information.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point              | Design Decision                                                                | Justification                                   |
+| Decision point              | Design decision                                                                | Justification                                   |
 | --------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------- |
 | Marking content with labels | Labels will apply headers and footers to documents, emails and meeting invites | Mark information in-line with PSPF requirements |
 
@@ -178,9 +178,9 @@ When a sensitivity label is applied to a document, email or meeting invite the p
 
 The access controls associated with sensitivity labels use Azure Rights Management usage rights and can be used to not only ensure the correct users are permitted or denied access, but can be used to apply encryption to documents, control offline access to information, and to restrict the specific operations allowed on information. These controls provide an effective means of mitigating risks associated with unauthorised access, and also serve to compliment and backstop many other related Microsoft 365 access controls and third party security services.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point              | Design Decision                                                  | Justification                                                           |
+| Decision point              | Design decision                                                  | Justification                                                           |
 | --------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | Using label access controls | Apply usage rights to PROTECTED<sup>1</sup> labelled information | Help protect information in motion and at rest from unauthorised access |
 
@@ -194,9 +194,9 @@ How label access controls are implemented is discussed in more detail in the [Az
 
 A sensitivity label can be used to apply privacy settings that will replace any existing privacy settings configured for a team or group site.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision                                                                                                                                    | Justification                                              |
+| Decision point | Design decision                                                                                                                                    | Justification                                              |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
 | Label privacy  | For OFFICIAL: Sensitive<sup>1</sup> and above labelled groups and teams, ensure only owners and member have access and only owners can add members | Help maintain the confidentiality of sensitive information |
 
@@ -208,9 +208,9 @@ A sensitivity label can be used to apply privacy settings that will replace any 
 
 A sensitivity label can be used to apply external sharing settings that provide restricted external sharing settings to what may be configured in SharePoint Online and at the container level. If there is a conflict in sharing permissions, the most restrictive sharing settings will always apply.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point         | Design Decision                                                             | Justification                                                               |
+| Decision point         | Design decision                                                             | Justification                                                               |
 | ---------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | Label external sharing | Prevent external sharing from PROTECTED<sup>1</sup> SharePoint Online sites | Back-stop SharePoint Online sharing settings (if modified to allow sharing) |
 
@@ -222,9 +222,9 @@ A sensitivity label can be used to apply external sharing settings that provide 
 
 By associating a sensitivity label with a Conditional Access Authentication Context, it is possible use the presence of a label as a condition to enforce a Conditional Access policy.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point           | Design Decision                                                                   | Justification                                                                                                   |
+| Decision point           | Design decision                                                                   | Justification                                                                                                   |
 | ------------------------ | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | Label Conditional Access | Prevent unauthorised access to PROTECTED<sup>1</sup> SharePoint Online containers | Help mitigate access to PROTECTED classified information from PROTECTED site owners adding unauthorised members |
 

@@ -20,9 +20,9 @@ Entitlement management is largely focussed on the use of *access packages*, wher
 
 Access packages are particularly useful for managing access to the common resources associated with the various divisions and user-types within an organisation.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point  | Design Decision                                | Justification                                                      |
+| Decision point  | Design decision                                | Justification                                                      |
 | --------------- | ---------------------------------------------- | ------------------------------------------------------------------ |
 | Access packages | Access packages should be used where practical | Access packages simplify resource assignments for common use cases |
 
@@ -32,9 +32,9 @@ Access packages are particularly useful for managing access to the common resour
 
 Access reviews enable the audit and maintenance of group memberships, access to applications, and role assignments. Access reviews help mitigate the dangling access often associated with user's access requirements changing over time.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                       | Design Decision                                                     | Justification                                                            |
+| Decision point                                       | Design decision                                                     | Justification                                                            |
 | ---------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | Access reviews for privileged roles<sup>1</sup>      | Use 6-monthly access reviews for active and eligible assigned roles | Assist compliance with Essential Eight privileged access validation      |
 | Access reviews for Conditional Access exclude groups | Use 3-monthly access reviews for Conditional Access exclude groups  | Conditional Access exclude group membership should be tightly controlled |

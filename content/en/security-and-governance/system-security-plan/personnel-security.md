@@ -12,7 +12,7 @@ The personnel security section of a System Security Plan (SSP) should document a
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
-When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to security documentation within their organisation. When complete, remove any instructional boxes throughout. 
+When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to cybersecurity documentation within their organisation. When complete, remove any instructional boxes throughout. 
 
 {{% /alert %}}
 
@@ -20,29 +20,29 @@ When completing the below template, organisations should insert and update infor
 
 #### Applicability
 
-ISM controls relating to cyber security awareness training are applicable to ensuring `<SYSTEM-NAME>`receives appropriate overarching governance of decisions and activities that might affect the cyber security within `<ORGANISATION-NAME>` and are covered by this section of the SSP.
+ISM controls relating to cybersecurity awareness training are applicable to ensuring `<SYSTEM-NAME>`receives appropriate overarching governance of decisions and activities that might affect the cybersecurity within `<ORGANISATION-NAME>` and are covered by this section of the SSP.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 #### Organisational policies and processes implemented
 
-`<ORGANISATION-NAME>` is responsible for conducting regular cyber security awareness training for all staff and contractors. As such, cyber security awareness training is undertaken annually by all `<ORGANISATION-NAME>` staff and contractors covering:
+`<ORGANISATION-NAME>` is responsible for conducting regular cybersecurity awareness training for all staff and contractors. As such, cybersecurity awareness training is undertaken annually by all `<ORGANISATION-NAME>` staff and contractors covering:
 
-* the purpose of cyber security awareness training
-* cyber security roles and key contacts
+* the purpose of cybersecurity awareness training
+* cybersecurity roles and key contacts
 * authorised use of systems and resources
 * protection of systems and resources
-* reporting of cyber security incidents and suspected compromises.
+* reporting of cybersecurity incidents and suspected compromises.
 
 Tailored privileged user training is also undertaken annually by all privileged users of `<SYSTEM-NAME>`.
 
-`<ORGANISATION-NAME>`'s cyber security awareness training material can be found [here]({{<ref "security-and-governance/general-documentation">}}).
+`<ORGANISATION-NAME>`'s cybersecurity awareness training material can be found [here]({{<ref "security-and-governance/general-documentation">}}).
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 #### Technical controls implemented
 
-No technical controls are implemented in `<SYSTEM-NAME>` relating to cyber security awareness training.
+No technical controls are implemented in `<SYSTEM-NAME>` relating to cybersecurity awareness training.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 

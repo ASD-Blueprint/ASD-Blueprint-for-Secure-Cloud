@@ -38,9 +38,9 @@ As system-assigned identities are created and deleted along with the resource, r
 
 User-assigned identities need to be manually deleted when they are no longer required, even if no resources are associated with them. Role assignments aren't automatically deleted when either system-assigned or user-assigned managed identities are deleted. These role assignments should be manually deleted so the limit of role assignments per subscription isn't exceeded. Role assignments that are associated with deleted managed identities will be displayed with "Identity not found" when viewed in the portal.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point     | Design Decision                                                | Justification                           |
+| Decision point     | Design decision                                                | Justification                           |
 | ------------------ | -------------------------------------------------------------- | --------------------------------------- |
 | Managed Identities | Varies by workload, use when available for supported resources | Reduce risks around credential exposure |
 

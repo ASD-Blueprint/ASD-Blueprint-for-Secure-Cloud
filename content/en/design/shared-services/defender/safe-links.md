@@ -36,9 +36,9 @@ How Safe Links works within Office applications:
 
 How Safe Links works within Teams:
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                                                              | Design Decision                                                                                                             | Justification                                                                                                                                                                     |
+| Decision point                                                                              | Design decision                                                                                                             | Justification                                                                                                                                                                     |
 |---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Defender for Office 365 Safe Links                                                          | Configured                                                                                                                  | Configured to align with ASD's Malicious Email Mitigation Strategies and Microsoft guidance.                                                                                     |
 | **Settings that apply to content across Office 365**                                        |                                                                                                                             |                                                                                                                                                                                   |

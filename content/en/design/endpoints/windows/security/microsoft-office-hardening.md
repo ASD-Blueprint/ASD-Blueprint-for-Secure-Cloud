@@ -8,7 +8,7 @@ The following design components apply to the hardening of Microsoft 365 Apps for
 
 The Microsoft Office security settings detailed in this section are based on Microsoft best practice and ASD's [*Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016*](https://www.cyber.gov.au/acsc/view-all-content/publications/hardening-microsoft-365-office-2021-office-2019-and-office-2016) guidance.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
 * Attack Surface Reduction
   * Justification: To align with ASD's Microsoft Office hardening guidance.

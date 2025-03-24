@@ -19,9 +19,9 @@ Transport Rules follow the following basic structure:
 * **Actions** – Actions are used to define what actions to undertake on the messages matching the conditions and which do not match any exemption. These actions include rejecting, deleting, redirecting the emails, and adding recipients, prefixes, and disclaimers. A single rule can have multiple actions applied however some actions are incompatible with others
 * **Properties** – Properties are used to define anything which do not fall into another category. This includes enforcing or testing the rule
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point  | Design Decision | Justification                                                                              |
+| Decision point  | Design decision | Justification                                                                              |
 |-----------------|-----------------|--------------------------------------------------------------------------------------------|
 | Mail flow rules | Configured      | Mail flow rules within the environment are required to enforce business rules and process. |
 

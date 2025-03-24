@@ -10,9 +10,9 @@ In a hybrid configuration SharePoint Online integrates with an existing on-premi
 * **Hybrid Cloud Search** – In Cloud Search, the index of the SharePoint Server is pushed and merged with the SharePoint Online index. All the Content Processing and Analytics are done in Office 365, where the index is stored.
 * **Hybrid Site following** – Hybrid site following can be configured to send users from the on-premises SharePoint Server to the equivalent service in Office 365.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point    | Design Decision                              | Justification                                                                         |
+| Decision point    | Design decision                              | Justification                                                                         |
 |-------------------|----------------------------------------------|---------------------------------------------------------------------------------------|
 | SharePoint Hybrid | SharePoint Hybrid Search will be configured. | To enable hybrid searching capabilities between SharePoint on-premises and SharePoint Online. |
 

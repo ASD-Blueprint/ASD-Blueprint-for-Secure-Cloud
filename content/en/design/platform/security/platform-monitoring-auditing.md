@@ -22,9 +22,9 @@ Log data stored in Log Analytics data can be consumed in various ways:
 
 Log Analytics is billed per gigabyte (GB) of data ingested and retained into the service. When ingesting into a SIEM, data retention periods can be shortened.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point            | Design Decision | Justification                                                                                                                                                      |
+| Decision point            | Design decision | Justification                                                                                                                                                      |
 |---------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Log Analytics Workspace   | Deployed        | The Log Analytics workspace will primarily be used to store log data for Microsoft Intune managed workloads and Microsoft Entra ID sign in logs.                   |
 | Pricing mode              | Per GB          | Log Analytics pricing is based on data consumed.                                                                                                                   |

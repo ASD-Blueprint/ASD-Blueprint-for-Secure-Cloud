@@ -10,9 +10,9 @@ Adversaries have leveraged the OLE functionality to enable and download maliciou
 
 ASD's provides guidance around securing systems against malicious OLE packages and recommend they are implemented in all Windows environments. The guidance is to block all OLE packages from executing in Word, PowerPoint, and Excel.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point    | Design Decision | Justification                                               |
+| Decision point    | Design decision | Justification                                               |
 |-------------------|-----------------|-------------------------------------------------------------|
 | OLE configuration | Block all       | To align with the ASD's [*Restricting Microsoft Office Macros*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/restricting-microsoft-office-macros) guidance. |
 

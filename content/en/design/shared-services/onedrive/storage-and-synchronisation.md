@@ -6,9 +6,9 @@ description: "This section describes the design decisions associated with One Dr
 
 OneDrive and SharePoint can synchronise content locally through the OneDrive for Business client. Content can be "pinned" for offline use, ensuring that specific content is available offline, and changes are merged later. The Sync Administration screen provides control Synchronising of File in OneDrive and SharePoint. The sync client is required to provide the ability for end users to work offline from Microsoft Office 365.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point         | Design Decision | Justification                                                                                                   |
+| Decision point         | Design decision | Justification                                                                                                   |
 |------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------|
 | Synchronisation client | Configured      | The organisation must use the OneDrive sync client to provide an offline file capability.                       |
 | Storage Limitations    | Configured      | To assist the organisation in managing user data specific storage and retention limitations will be configured. |

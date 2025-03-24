@@ -8,9 +8,9 @@ Message Transfer Agent - Strict Transport Security (MTA-STS) enables the configu
 
 Opportunistic TLS enables email traffic to be encrypted when both the sender and receiver domains support TLS without the need for an additional port for encrypted traffic. By default, Exchange Online always attempts to encrypt mail traffic using opportunistic TLS. Microsoft always uses TLS 1.2 when transferring mail between [Exchange Online customers](https://learn.microsoft.com/purview/exchange-online-uses-tls-to-secure-email-connections?view=o365-worldwide#how-exchange-online-uses-tls-between-exchange-online-customers).
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point           | Design Decision   | Justification                                                                             |
+| Decision point           | Design decision   | Justification                                                                             |
 |--------------------------|-------------------|-------------------------------------------------------------------------------------------|
 | Configuration of MTA-STS | Recommended       | Organisations should configure the required DNS record and policy to require TLS support. |
 | Opportunistic TLS        | Enabled (default) | To encrypt email traffic where supported by the external email domain.                    |

@@ -223,9 +223,9 @@ Maturity Levels Two and Three require all command line process creation, PowerSh
 | Workstations:                |  -  | Yes |
 
 Both Maturity Levels Two and Three also require the following:
-* cyber security events are analysed in a timely manner to identify cyber security incidents
-* as soon as possible after a cyber security incident occurs or is discovered the:
-* cyber security incident response plan is enacted
+* cybersecurity events are analysed in a timely manner to identify cybersecurity incidents
+* as soon as possible after a cybersecurity incident occurs or is discovered the:
+* cybersecurity incident response plan is enacted
 * incident is reported to the Chief Information Security Officer, or one of their delegates
 * incident is reported to ASD.
 
@@ -233,11 +233,11 @@ Both Maturity Levels Two and Three also require the following:
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
+While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cybersecurity incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
 
 {{% /alert %}}
 
-`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cyber security incidents. 
+`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cybersecurity incidents. 
 
 This includes the processing, analysis, and response to the following event logs in a timely manner:
 
@@ -249,7 +249,7 @@ This includes the processing, analysis, and response to the following event logs
 | Transcription:                 |   `<YES>`    |      `<YES>`       |
 |                                |              |                    |
 
-`<ORGANISATION-NAME>` has established a Security Operations Centre (SOC) to analyse cyber security events in a timely manner, and a [Cyber Security Incident Register]({{<ref "security-and-governance/general-documentation">}}), and [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}}) to facilitate the response to detected cyber security events in a timely and appropriate manner. This plan includes reporting all incidents to the `<ORGANISATION-NAME>` CISO and to ASD in a timely manner.
+`<ORGANISATION-NAME>` has established a Security Operations Centre (SOC) to analyse cybersecurity events in a timely manner, and a [Cyber Security Incident Register]({{<ref "security-and-governance/general-documentation">}}), and [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}}) to facilitate the response to detected cybersecurity events in a timely and appropriate manner. This plan includes reporting all incidents to the `<ORGANISATION-NAME>` CISO and to ASD in a timely manner.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 

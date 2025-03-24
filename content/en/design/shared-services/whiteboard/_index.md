@@ -15,9 +15,9 @@ The Whiteboard tool also offers optional connected experiences. These experience
 
 The Whiteboard tool can be used with the Microsoft Surface hub appliance. When using the tool easy sharing can be configured. Easy sharing enables sharing of Whiteboard sessions without logging into the Surface Hub appliance. 
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                              | Design Decision       | Justification                                                                                                            |
+| Decision point                              | Design decision       | Justification                                                                                                            |
 |---------------------------------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Whiteboard for everyone in the organisation | Enabled               | Enabling use of Whiteboard within the organisation.                                                                  |
 | Level of diagnostic data                    | Neither               | Restricts the amount of data provided to Microsoft for diagnostic and product improvements.                              |

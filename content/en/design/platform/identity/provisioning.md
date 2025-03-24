@@ -14,9 +14,9 @@ Provisioning can be done in two modes:
 
 The provisioning mode supported by an application is also visible on the Provisioning tab once the application added to the Enterprise apps. If there is no out of the box connector, and the SaaS application is SCIM 2.0 enabled then a custom SCIM Endpoint can be developed.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision                       | Justification                                                                                                             |
+| Decision point | Design decision                       | Justification                                                                                                             |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Provisioning   | Configured per service as appropriate | Use automated where out of the box connectors exists. Custom SCIM endpoints allowed with separate security accreditation. |
 

@@ -10,9 +10,9 @@ The creation and storage sizing of SharePoint Online sites can be controlled. Ou
 
 Administrators can put controls in place which restricts who can create a SharePoint site and set the size requirements.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                             | Design Decision                                                                                                                                       | Justification                                                                                                                                                       |
+| Decision point                                             | Design decision                                                                                                                                       | Justification                                                                                                                                                       |
 |------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SharePoint site naming convention                          | Avoid spaces and special characters in site collection naming                                                                                         | Spaces and special characters can cause problems with indexing and extend the length of the path. Short names are easier to remember                                |
 | Configure Site Storage limits                              | Configured                                                                                                                                            | Currently set to manually set site storage limits. Larger storage can increase management therefore default limit will be set to 200GB.                             |

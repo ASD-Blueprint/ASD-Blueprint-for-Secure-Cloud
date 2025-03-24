@@ -8,9 +8,9 @@ Connection filtering within Exchange Online Protection refers to the verificatio
 
 Exchange Online Protection Connection Filtering is always enabled however it can, to a degree, be configured. A connection filter can be implemented to always allow or always block traffic based upon an IP list.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                | Design Decision | Justification                                                                                                      |
+| Decision point                | Design decision | Justification                                                                                                      |
 |-------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------|
 | Configure Connection Filter   | Configured      | organisations are to provide IP addresses considered as safe.                                                           |
 | Connection filter policy name | Default         | This policy is the default policy configured when Exchange Online is enabled and is consistent with best practice. |

@@ -20,9 +20,9 @@ Organisations that enable DKIM signing within Microsoft 365 and also add additio
 
 {{% /alert %}}
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision | Justification                                                                                                                                                                                                                                                                                                                                                                                       |
+| Decision point | Design decision | Justification                                                                                                                                                                                                                                                                                                                                                                                       |
 |----------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SPF            | Configured      | Configuration of SPF record(s) are required as a baseline for the deployment  The SPF record(s) are configured for all such authorised senders for that domain, including the Office 365 SPF sender address (spf.protection.outlook.com) if applicable to ensure mail sent from Exchange Online passes SPF. SPF record(s) are to be configured by the DNS provider that that organisation consumes. |
 | DKIM           | Configured      | DKIM is a public/private key signing process used to verify the content of an email.<br>DKIM signing should be enabled on emails originating from an organisation's domains as per ASD's recommendations. DKIM is either enabled on the organisation mail gateway solution (hybrid) or within Exchange Online (cloud native).                                                                               |

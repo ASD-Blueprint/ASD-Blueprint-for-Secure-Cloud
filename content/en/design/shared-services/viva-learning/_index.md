@@ -8,9 +8,9 @@ Viva Learning is a Microsoft Teams app which aims to assist users to find and ac
 
 Note, Viva Learning content is subject to terms other than the Microsoft Product Terms, including third-party content provider’s terms, which have not been reviewed as part of the Office 365 IRAP assessment. It is recommended that organisations review these terms as part of any risk assessment relating to the use of this content.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point         | Design Decision | Justification                                                                                                                                                               |
+| Decision point         | Design decision | Justification                                                                                                                                                               |
 |------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Diagnostic data        | Disabled        | Prevent data from being provided to Microsoft for diagnostic and product improvements.                                                                                      |
 | LinkedIn Learning      | Disabled        | LinkedIn Learning content is subject to third-party content provider’s terms that have not been reviewed as part of the Office 365 IRAP assessment.                         |

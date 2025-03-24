@@ -26,9 +26,9 @@ Monitoring routes activity logs to different endpoints:
 
 Workbooks provide several pre-built reports related to common scenarios involving audit, sign in, and provisioning events. Alerts can also be configured on any of the data provided in the reports, using the steps described in the previous section.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point | Design Decision                                             | Justification                                                      |
+| Decision point | Design decision                                             | Justification                                                      |
 | -------------- | ----------------------------------------------------------- | ------------------------------------------------------------------ |
 | Log Routing    | Azure Monitor Logs (Log Analytics Workspace) - law-sentinel | Archive and audit solution downstream from log analytics workspace |
 

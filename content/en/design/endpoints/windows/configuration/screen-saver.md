@@ -12,9 +12,9 @@ Microsoft does not recommend enabling a screen saver on devices. Instead, Micros
 
 Configuration can be applied to restrict the end-user ability to configure or change the screen saver settings.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                       | Design Decision          | Justification                                                                                                        |
+| Decision point                       | Design decision          | Justification                                                                                                        |
 |--------------------------------------|--------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Screen Saver                         | Disabled                 | Not required, the device will be configured to sleep after 15 minutes.                                               |
 | Machine Inactivity                   | Configured – 900 seconds | To align with ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance.                                                                   |

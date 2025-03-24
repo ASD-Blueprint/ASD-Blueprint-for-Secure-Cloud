@@ -8,9 +8,9 @@ Microsoft 365 is a global service which is offered in many different physical re
 
 Microsoft 365 tenant data residency is critical to ensure the organisation's tenant is created and the data is stored in Australia.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point       | Design Decision | Justification                                                                |
+| Decision point       | Design decision | Justification                                                                |
 |----------------------|-----------------|------------------------------------------------------------------------------|
 | Microsoft 365 Region | Australia       | Aligns with ASD's guidance to utilise cloud services located within Australia |
 

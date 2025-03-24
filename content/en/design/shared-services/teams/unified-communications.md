@@ -14,9 +14,9 @@ Microsoft Office Teams can natively provide the following UC features:
 * Individual and group video calls
 * Individual and group chat.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                   | Design Decision | Justification         |
+| Decision point                   | Design decision | Justification         |
 |----------------------------------|-----------------|-----------------------|
 | Individual and group voice calls | Configured      | Default functionality |
 | Individual and group video calls | Configured      | Default functionality |

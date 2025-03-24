@@ -12,9 +12,9 @@ Windows 10 and 11 provides various user account types or identity providers. Thi
 * **Microsoft Entra ID** - Microsoft Entra ID is Microsoft's cloud directory and identity management service. Microsoft Entra ID includes a full suite of identity management capabilities. Microsoft Entra ID is a prerequisite for Microsoft Intune mobile device management including Conditional Access.
 * **Microsoft Account** - A Microsoft Account is an email address issued by or linked to a Microsoft authentication service. A Microsoft Account is a public version of a Microsoft Entra ID account. If this account is disabled certain features such as Windows Store cannot function.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                                  | Design Decision       | Justification                                                                                                                      |
+| Decision point                                  | Design decision       | Justification                                                                                                                      |
 |-------------------------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | Guest Account (Local)                           | Disabled              | To align with ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance.                                                                                 |
 | Guest Account Name                              | Renamed               | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                                                                                 |
@@ -26,9 +26,9 @@ Windows 10 and 11 provides various user account types or identity providers. Thi
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                  | Design Decision | Justification                               |
+| Decision point                  | Design decision | Justification                               |
 |---------------------------------|-----------------|---------------------------------------------|
 | Azure Active Directory Accounts | Enabled         | Machines will be Microsoft Entra ID Joined. |
 | Domain Accounts                 | Disabled        | Machine will be Microsoft Entra ID Joined.  |
@@ -37,9 +37,9 @@ Windows 10 and 11 provides various user account types or identity providers. Thi
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                  | Design Decision | Justification                                                                                                                                       |
+| Decision point                  | Design decision | Justification                                                                                                                                       |
 |---------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Azure Active Directory Accounts | Enabled         | Machines will be Hybrid Microsoft Entra ID Joined.                                                                                                  |
 | Domain Accounts                 | Enabled         | Users will log onto devices using credentials which originate in an on-premises domain.<br>Machines will also be joined to the organisation domain. |

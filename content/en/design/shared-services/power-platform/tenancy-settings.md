@@ -17,9 +17,9 @@ Inside the Power BI Service, the creation of workspaces, content packs, custom v
 
 Power BI also enables administrators to control the sharing of datasets, content, report publishing, and template apps. This ensures adequate control over sharing of organisation information.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                  | Design Decision | Justification                                                                                                                                                                                                   |
+| Decision point                  | Design decision | Justification                                                                                                                                                                                                   |
 |---------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Power BI Information Protection | Enabled         | Power BI Information Protection leverages sensitive labels to label Power BI Reports.                                                                                                                           |
 | External Sharing                | Disabled        | External Sharing is disabled to reduce the risk of data spills.                                                                                                                                                 |

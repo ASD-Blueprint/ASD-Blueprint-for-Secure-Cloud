@@ -16,9 +16,9 @@ Devices that are AD Joined are automatically enrolled for Endpoint analytics. Pr
 
 Endpoint analytics uses the Windows Connected User Experiences and Telemetry component (DiagTrack) to collect the data from Intune-managed devices. The data collected by the agent is described in the [Endpoint analytics Data Collection](https://docs.microsoft.com/mem/analytics/data-collection) documentation and can be accessed via `Endpoint Manager` > `Reports` > `Endpoint analytics`.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point     | Design Decision | Justification           |
+| Decision point     | Design decision | Justification           |
 |--------------------|-----------------|-------------------------|
 | Endpoint analytics | Connected       | Improve user experience |
 

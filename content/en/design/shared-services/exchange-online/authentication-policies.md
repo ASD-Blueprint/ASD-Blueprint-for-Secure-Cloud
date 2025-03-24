@@ -8,9 +8,9 @@ Authentication policies control the authentication methods which can be used to 
 
 Blocking Basic Authentication forces clients to use Modern Authentication. Blocking Basic Authentication can cause issues when clients within the environment do not support Modern Authentication. If this occurs, it is recommended to investigate whether the client can be upgraded to support Modern Authentication. If it can, then it is recommended that the client be upgraded. If it cannot then a separate authentication policy can be leveraged enabling Basic Authentication for that client only.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point                      | Design Decision | Justification                                                                                                                                                |
+| Decision point                      | Design decision | Justification                                                                                                                                                |
 |-------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Basic Authentication                | Disabled        | Basic Authentication has known exploits, Modern Authentication is preferred.                                                                                 |
 | Authentication Policy Configuration | Configured      | Authentication Policy will be deployed to meet the security requirements of the organisation and be deployed in conjunction with the organisation's security requirements. |

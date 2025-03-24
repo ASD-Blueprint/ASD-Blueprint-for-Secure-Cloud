@@ -6,7 +6,7 @@ description: "This section provides an overview of the architecture, design cons
 
 ### Purpose
 
-ASD's *Blueprint for Secure Cloud* (the Blueprint) provides organisations a secure, flexible, and scalable platform for key services including productivity and collaboration, and user operated endpoints (laptops, desktops, and mobile devices). It also provides a controlled base allowing organisations to deploy its own hosted additional services, workloads, and third party web services. The Blueprint describes a secure architecture, with implementation and operation guidance, and associated security documentation necessary for organisations to make well-informed risk-based decisions on implementations tailored to the operating context.
+ASD's *Blueprint for Secure Cloud* (the Blueprint) provides organisations a secure, flexible, and scalable platform for key services including productivity and collaboration, and user operated endpoints (laptops, desktops, and mobile devices). It also provides a controlled base allowing organisations to deploy its own hosted additional services, workloads, and third party web services. The Blueprint describes a secure architecture, with implementation and operation guidance, and associated cybersecurity documentation necessary for organisations to make well-informed risk-based decisions on implementations tailored to the operating context.
 
 ### Where to start
 

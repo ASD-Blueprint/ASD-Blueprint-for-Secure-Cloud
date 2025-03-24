@@ -6,9 +6,9 @@ description: "This section describes the design decisions associated with Power 
 
 Given the ability for the Power Platform to be used in a wide range of scenarios, additional access may be required. Access to Power Platform services can be controlled via Conditional Access App Control policies.
 
-{{% alert title="Design Decisions" color="warning" %}}
+{{% alert title="Design decisions" color="warning" %}}
 
-| Decision Point     | Design Decision                                                            | Justification                                                                                                                          |
+| Decision point     | Design decision                                                            | Justification                                                                                                                          |
 |--------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Conditional Access | Organisation decision | The Blueprint does not detail specific Power Platform Conditional Access policies as tenancy wide conditional access policies are defined.<br>Organisations implementing the Power Platform |
 
