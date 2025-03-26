@@ -1,7 +1,7 @@
 ---
-Title: "Microsoft Defender suite"
+Title: "Microsoft Defender for Office 365"
 weight: 20
-description: "This section describes the design decisions associated with Microsoft Defender for system(s) built using ASD's Blueprint for Secure Cloud."
+description: "This section describes the design decisions associated with Microsoft Defender for Office 365 for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
 Microsoft Defender for Office 365 extends the native security features in Office 365. The protections provided by Microsoft Defender for Office 365 are designed to defend against attacks from multiple threat vectors including email, websites and documents stored in online libraries, such as SharePoint Online. Each of the Microsoft Defender for Office 365 capabilities is enabled and managed via policies configured from the Office 365 Security and Compliance Center.

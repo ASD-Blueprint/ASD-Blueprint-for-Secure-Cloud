@@ -17,7 +17,7 @@ Features and settings which can be controlled by an OWA policy include:
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                        | Design decision | Justification                                                                                                                                                                 |
-| ------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|---------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Outlook on the Web                    | Enabled         | OWA will be enabled to allow users to access their email in a flexible manner                                                                                                 |
 | Third party file provider integration | Disabled        | Only Microsoft file providers are approved for integration, no third-party file providers will be configured. This decreases security risk associated with third-party tools. |
 | Office 365 group creation by users    | Disabled        | Groups can only be created by administrators, not users. This will ensure that the GAL is the most up to date and that there is a consistent naming convention utilised.      |

@@ -7,7 +7,7 @@ description: "This section describes the design decisions associated with Compli
 
 Compliance Manager helps automatically assess and manage compliance across Microsoft 365 services, apps and endpoints by assessing their configurations against common industry standards and regulations. These standards and regulations are implemented as *assessments* that are comprised of a set of requirements, known as *controls*, that relate to specific configurations. Controls are described alongside improvement actions to address configuration compliance, with compliance status being reported and alerts able to be generated for configuration changes.
 
-Assessments exist for many different Australian and international standards and regulations, including for ASD's Essential Eight Maturity Model and *Information Security Manual* (ISM), and while both assessments are based on older frameworks they still provide significant and relevant compliance advice and so are recommended for implementation.
+Assessments exist for many different Australian and international standards and regulations, including for ASD's *Essential Eight Maturity Model* and *Information Security Manual* (ISM), and while both assessments are based on older frameworks they still provide significant and relevant compliance advice and so are recommended for implementation.
 
 {{% alert title="Design decisions" color="warning" %}}
 

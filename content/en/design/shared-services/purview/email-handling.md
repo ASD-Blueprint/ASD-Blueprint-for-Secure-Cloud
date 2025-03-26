@@ -11,9 +11,9 @@ While the actions of data loss prevention (DLP) and auto-labelling policies are 
 
 For inter-organisation email collaboration using a Purview-based shared labelling scheme as described herein, and as is the case for organisations implementing the [Australian Government Email Protective Marking Standard](https://www.protectivesecurity.gov.au/publications-library/australian-government-email-protective-marking-standard) with Purview, the following roles apply:
 
-* **The role of a user** is to ensure an appropriate sensitivity label is applied to an email. The act of applying the label implements the content marking (link) in the email body.
-* **The role of DLP** is to check the sensitivity label applied to an email and insert an equivalent X-protective-marking X-header and subject marking. DLP will act on both incoming and outgoing email, and is sequenced to occur after auto-labelling on incoming email.
-* **The role of auto-labelling** is to check the X-protective-marking X-header and subject marking applied to an email and apply an equivalent label.
+* **The role of a user** is to ensure an appropriate sensitivity label is applied to an email. The act of applying the label implements the content marking in the email body.
+* **The role of DLP** is to check the sensitivity label applied to an email and insert an equivalent X-Protective-Marking X-header and subject marking. DLP will act on both incoming and outgoing email, and is sequenced to occur after auto-labelling on incoming email.
+* **The role of auto-labelling** is to check the X-Protective-Marking X-header and subject marking applied to an email and apply an equivalent label.
 
 ### The influence of msip_labels metadata on auto-labelling
 
@@ -52,7 +52,7 @@ For inter-organisation email collaboration using a Purview-based shared labellin
 
 #### Security & Governance
 
-* [Guidelines for email]({{<ref "content\en\security-and-governance\system-security-plan\email.md">}})
+* [Guidelines for email]({{<ref "content\en\security-and-governance\system-security-plan\email">}})
 
 #### Design
 

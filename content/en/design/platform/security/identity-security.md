@@ -1,172 +1,227 @@
 ---
-title: "Identity Security"
+title: "Identity security"
+linkTitle: "Identity security"
 weight: 30
-description: "This section covers the security features associated with ensuring configuration of identity management is effectively monitored and audited and threats can be identified and responded to correctly for system(s) built using ASD's Blueprint for Secure Cloud."
+description: "This section describes the design decisions associated with identity security for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
- Features within Identity Security include:
+### Identity security
 
-* **Secure Score** - Dynamic indicator of alignment of Entra ID alignment with Microsoft's best practice recommendations for security
-* **Monitoring and health** - Identity Activity and Security logging and monitoring
-* **Identity Protection** - Automated threat response based on sign-in and user risk
-* **Defender for Identity** - Hybrid Active Directory and Entra ID traffic monitoring
+Identity security underpins all Microsoft cloud-based service offerings, and forms the basis of the company's Zero Trust approach and [Secure Future Initiative](https://www.microsoft.com/en-au/trust-center/security/secure-future-initiative). Identity security is also an essential component of ASD's [*Modern Defensible Architecture* (MDA)](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/modern-defensible-architecture/foundations-modern-defensible-architecture), which provides a strategic framework for the consistent application of security principles throughout the design, development and maintenance of systems.
 
-### Secure Score
+Microsoft Entra ID and Microsoft Defender for Identity provide a broad range of technical capabilities to safeguard the identities used in an organisation: Entra ID manages identities and access controls, and Defender for Identity monitors and detects suspicious activity within Windows Server identity infrastructure, used together they help organisations protect access and identify potential security threats across both cloud and on-premises environments.
 
-[Identity Secure Score](https://learn.microsoft.com/entra/identity/monitoring-health/concept-identity-secure-score) provides an indicator as to how aligned the organisations Entra ID configuration is to Microsoft's [best practice](https://learn.microsoft.com/azure/security/fundamentals/identity-management-best-practices) recommendations for security. This provides an objective assessment of the identity security posture and recommendations for security improvements.
+### Microsoft Entra ID
 
-Identity secure score is found at `Entra portal` > `Entra ID` > `Security` > `Identity Secure Score`.
+[Entra ID](https://learn.microsoft.com/en-au/entra/fundamentals/whatis) provides a number of features to manage identities and control access to organisation resources, and provides an effective means to meet a number of ASD’s [*Information Security Manual* (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism) requirements.
 
-Azure dynamically (every 48 hours) compares the security configuration against the tenants settings and calculates a score based on the alignment with best practices. Where there is a variation a recommendation is provided. Recommendations can be categorised such that it is accepted as a risk, a mitigation planned or resolved through an alternate. Secure score also present a score comparison against other companies of similar size.
+#### Identity management
 
-The identity score feeds into Microsoft 365 Defender where trends in the score over time can also be reviewed.
+Centralised identity management reduces unnecessary authentication and enables simplified and holistic management of administrative configurations and security operations. Entra ID's identity management features include:
 
-The secure score does not express an absolute measure of how likely an organisation is to get breached. It expresses the extent to which the organisation has adopted features that can offset the risk of being breached. No service can guarantee that organisations will not be breached, and the secure score should not be interpreted as a guarantee in any way.
+* **[User]({{<ref "design/platform/identity/users">}}) and [group]({{<ref "design/platform/identity/groups">}}) management** allowing organisations to create, store, and manage users, groups, and devices in a centralised location
+* **[User provisioning and deprovisioning]({{<ref "design/platform/identity/provisioning">}})** automating the process of creating and removing accounts and access rights
+* **Single sign-on (SSO)** enabling users to access multiple applications and resources using a single set of credentials
+* **[Password management]({{<ref "design/platform/identity/authentication">}})** providing self-service password reset (SSPR), password policies and weak password checking
+* **[Entitlement management]({{<ref "design/platform/identity/governance">}})** allowing organisations to manage and control access to resources based on business requirements and roles
+* **[Lifecycle workflows]({{<ref "design/platform/identity/governance">}})** automating tasks related to user lifecycle, such as onboarding and offboarding
 
-{{% alert title="Design decisions" color="warning" %}}
+#### Access control
 
-| Decision point | Design decision | Justification                                |
-|----------------|-----------------|----------------------------------------------|
-| Secure Score   | > 80%           | Continual monitoring and improvement program. |
+Controlling access to resources is crucial for maintaining security, data integrity and compliance. Entra ID's access control and security features include:
 
-{{% /alert %}}
+* **[Role-based access control (RBAC)]({{<ref "design/platform/identity/roles">}})** enabling administrators to assign roles and permissions to users based on their responsibilities
+* **[Conditional Access]({{<ref "design/platform/identity/conditional-access">}})** allowing organisations to enforce security policies based on user, device, network and a number of other conditions
+* **[Multi-factor authentication (MFA)]({{<ref "design/platform/identity/authentication">}})** requiring users to provide multiple forms of verification
+* **[Privileged Identity Management (PIM)]({{<ref "design/platform/identity/governance">}})** providing fine-grained control and monitoring of access to critical resources
+* **[Access reviews]({{<ref "design/platform/identity/governance">}})** allowing organisations to periodically review and validate user access to ensure it remains appropriate
+* **Authentication protocols** supporting various authentication protocols like OpenID Connect, OAuth, and SAML
+* **[Password-free authentication]({{<ref "design/platform/identity/authentication">}})** offering passwordless authentication options like windows Hello for Business, FIDO2 and Microsoft Authenticator
 
-### Entra ID activity reports and monitoring
+#### Other features
 
-See the [Identity Monitoring]({{<ref "reporting-and-monitoring">}}) design decisions.
+* **[Identity Protection]({{<ref "design/platform/identity/protection">}})** detecting risky user behaviour and sign-ins and makes access decisions
+* **[Directory synchronisation]({{<ref "design/platform/identity/synchronisation">}})** allowing organisations to synchronise their on-premises Active Directory with Entra ID
+* **[Reporting and analytics]({{<ref "design/platform/identity/reporting-and-monitoring">}})** providing insights into user activity and access patterns
+* **Integration with other Microsoft cloud platforms** seamlessly integrating with other Microsoft services
+* **[External identities]({{<ref "design/platform/identity/external-identities">}})** Providing a range of security and enabling services for B2C and B2B collaboration
 
-#### Identity Protection
+### Defender for Identity
 
-See the [Identity Protection]({{<ref "design/platform/identity/protection">}}) design decisions.
-
-#### Microsoft Defender for Identity
-
-Microsoft Defender for Identity is an Azure-hosted security capability designed to monitor AD traffic and alert on suspicious authentication-related activities. Defender for Identity leverages Machine Learning (ML) to analyse user, device, and resource authentication behaviours to build a baseline, then alert security analysts when an authentication attempt occurs that is not consistent with the baseline. Traffic corresponding to known authentication-based attacks, such as Pass-the-Hash (PtH) and Pass-the-Ticket (PtT), is also recognised by Defender for Identity and specific alerts generated.
-
-The Defender for Identity architecture is composed of a Defender for Identity cloud service with the following components:
-
-* **Defender for Identity cloud service** – Is hosted on Azure infrastructure and at the time of writing, Defender for Identity cloud service is deployed in the US, Europe and Asia data centres.
-* **Defender for Identity portal** – Management interface where the Defender for Identity instance can be created, displays data collected by Defender for Identity sensors and is the central console for monitoring, managing and investigating threats.
-* **Defender for Identity sensor** – Sensors are installed on all domain controllers which monitor and collect domain controller traffic that is fed back to the Defender for Identity portal for analysis.
-
-A high-level illustration of Defender for Identity architecture is shown in the below diagram. 
-
-{{<figure src="/content/images/platform-defender-for-identity.png" title="Microsoft Defender for Identity Architecture">}}
-*Figure reproduced from <https://learn.microsoft.com/defender-for-identity/prerequisites>*
-
-A single Defender for Identity instance can monitor multiple AD DS forests and their respective domains.
-
-Defender for Identity relies on Network Name Resolution (NNR) to correlate between raw activities (containing IP addresses) and the relevant devices involved in the activities to be able to generate security alerts for suspicious activities. To correlate IP addresses to device names, Defender for Identity sensors lookup the IP addresses using these methods:
-
-* NTLM over RPC (TCP Port 135).
-* NetBIOS (UDP port 137).
-* RDP (TCP port 3389) – only the first packet of Client hello.
-* Queries the DNS server using reverse DNS lookup of the IP address (UDP 53).
-
-Microsoft recommends using all the above methods, however if this is not possible the organisation should use the DNS lookup method and at least one of the other methods available at [Network Name Resolution in Microsoft Defender for Identity](https://learn.microsoft.com/defender-for-identity/nnr-policy).
+[Microsoft Defender for Identity (MDI)](https://learn.microsoft.com/en-au/defender-for-identity/what-is) uses signals from Windows Server identity infrastructure to proactively assess identity security posture and respond to identity security incidents. MDI is managed and operated from the Defender portal and is an integration component of Defender XDR, sharing its signals and correlating events with other Defender XDR services.
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point                                               | Design decision                                                                     | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|--------------------------------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Number of Defender for Identity instances                    | One                                                                                 | A single Defender for Identity instance can monitor multiple AD DS forests.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Defender for Identity instance name                          | {organisation-instance-name}.atp.azure.com                                          | The Defender for Identity cloud service will be given an Defender for Identity instance name which will be used to access the Defender for Identity portal.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Forests and domains to be monitored by Defender for Identity | {organisation}.com.au                                                               | Nominated organisation forests and domains.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Defender for Identity sensor deployment                      | To all DC's within the identified forests and domains.                              | Best practice to ensure all authentication traffic is monitored by Defender for Identity.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Internet connectivity                                        | Domain controllers must have internet connectivity                                  | Domain controllers which will have Defender for Identity sensors installed, must have internet connectivity to the Defender for Identity Cloud Service. <br>Defender for Identity sensors support the use of a web proxy / WPAD for internet connectivity.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Directory service accounts                                   | A standard AD user account & password<br><br>A group Managed Service Account (gMSA) | If the organisation environment consists of Windows Server 2008 R2 SP1 domain controllers a standard AD user account and password is required with read access to all objects in the monitored domains.<br><br>If organisation environment consists of Windows Server 2012 or above domain controllers than a group Managed Service Account (gMSA) is required with read access to all objects in the monitored domain.<br><br>If the organisation environment consists of a mixture of domain controller operating system versions, then a combination of group Managed Service Account (gMSA) and Standard user account is required. See [Microsoft Defender for Identity prerequisites](https://learn.microsoft.com/defender-for-identity/prerequisites). |
-| Network Name Resolution (NNR)                                | Reverse DNS lookup and one other method (listed above)                              | This is the minimum NNR requirement for Defender for Identity. Microsoft recommends using all of the above-mentioned resolution methods available within organisation environment.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Deleted Objects container permissions                        | Read-only                                                                           | Microsoft recommends users should have read-only permissions assigned on the [Deleted objects container](https://learn.microsoft.com/defender-for-identity/directory-service-accounts#permissions-required-for-the-dsa) to enable Defender for Identity to detect user deletions from the organisations Active Directory.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Decision point            | Design decision                                          | Justification                                                          |
+| ------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Use Defender for Identity | Deploy Defender for Identity for all hybrid environments | Enable threat detection and response capabilities for identity servers |
 
 {{% /alert %}}
 
-##### Role groups
+#### MDI components
 
-Defender for Identity provides security groups to enable the implementation of a RBAC model.
+MDI consists of three main components:
 
-Microsoft Entra ID provides the basis for the Defender for Identity role groups. When Defender for Identity is enabled for the first time it automatically creates the three security groups in Microsoft Entra ID, using the product's previous name - Azure ATP. The three Defender for Identity security groups are:
+##### 1. The Defender portal
 
-* **Azure ATP {Instance Name} Administrators** – Provides full administrative access to the specific Defender for Identity instance including all configuration settings.
-* **Azure ATP {Instance Name} Users** – Able to modify configurations relating to suspicious activities (i.e. change status and add exclusions), alerts and scheduled reports, but not the configuration of Defender for Identity sensors or data sources.
-* **Azure ATP {Instance Name} Viewers** – Access to log into the Defender for Identity console to view suspicious activities and download reports. Not able to modify the status of a suspicious activity or add any exclusions.
+The Defender portal is the primary operational interface for MDI and is used to create the MDI workspace, add or activate MDI sensors, and manage the limited configuration options available to configure sensors, tag devices, and manage alerting and notification rules.
 
-Note, in addition to the role groups described above, any tenant Global and Security Admins can login to the Defender for Identity portal.
+##### 2. MDI sensors
+
+MDI sensors are software agents installed directly on Domain Controllers (DC), Active Directory Federation Services (AD FS), Active Directory Certificate Services (AD CS), and Entra Connect servers. The sensors analyse network traffic and Windows events and send the parsed information to the MDI cloud service.
+
+##### 3. The MDI cloud service
+
+The MDI cloud service ingests sensor information and uses machine learning and threat intelligence from Microsoft's Intelligent Security Graph to detect and alert on suspicious activity via the Defender portal. The MDI cloud service runs on Azure infrastructure in select regions determined by the proximity of an organisation's Entra ID tenant at the time the MDI workspace was created.
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point                                | Design decision       | Justification                                                                                                                     |
-| --------------------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Members of the Azure ATP Administrators group | Organisation decision | Only specific users that require administrative access should be added to this group.                                             |
-| Members of the Azure ATP Users group          | Organisation decision | Include membership of the cybersecurity team that are responsible for the day-to-day use and management of Defender for Identity. |
-| Members of the Azure ATP Viewers group        | Organisation decision | Include membership of the cybersecurity team to enable auditing of Defender for Identity.                                         |
+| Decision point | Design decision | Justification                                                                                                                                                                |
+| -------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| MDI location   | Australia       | Help ensure data is under and jurisdiction of the Australian Government, help ensure confidentiality, and help minimise potential impacts from international service outages |
 
 {{% /alert %}}
 
-##### Notifications
+If the MDI cloud service had been previously deployed to an incorrect location, it is possible to have the workspace location changed by raising a support case. Changing the location is a destructive process but will not affect other XDR services. Further information can be found in [this](https://techcommunity.microsoft.com/blog/microsoftdefenderatpblog/microsoft-defender-data-can-now-be-hosted-locally-in-australia/3898337) Microsoft blog article.
 
-In addition to creating alerts in the Defender for Identity console whenever a new suspicious activity or health issue is detected, Defender for Identity can also be configured to send email and syslog notifications. This enables security analysts to monitor existing mailboxes and leverage toolsets such as a Security Information and Event Management (SIEM) product rather than constantly having to login and view the Defender for Identity portal.
+#### Deployment considerations
 
-Defender for Identity does not require a Simple Mail Transfer Protocol (SMTP) server to be configured to send email alerts. However, the syslog configuration of a SIEM is required to send alerts to it. The required settings include:
+Deploying MDI is a manageable process that requires a number of prerequisite configurations to be in place for success. In addition to the linked Microsoft Learn documentation herein, organisations may also find [this](https://setup.cloud.microsoft/defender/identity) Microsoft Setup Expert guide and [this](https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/deploying-microsoft-defender-for-identity/4363501) Microsoft blog article useful.
 
-* Fully Qualified Domain Name (FQDN) / Internet Protocol (IP) address.
-* Port that that SIEM is listening on for syslog alerts.
-* Transport protocol, either Transport Control Protocol (TCP), User Datagram Protocol (UDP) or Transport Layer Security (TLS) / Secured Syslog.
-* Request For Comments (RFC) 3164 or 5424 format.
+The following should be considered before attempting to deploy MDI:
+
+##### Server capacity
+
+MDI sensors deployed on Domain Controllers (only) in busy environments can require additional server resources to operate effectively. A [capacity sizing tool](https://learn.microsoft.com/en-au/defender-for-identity/deploy/capacity-planning) exists to assist deployment planning and should be run on each Domain Controller prior to sensor deployment.
+
+MDI sensors will [self-sacrifice performance](https://learn.microsoft.com/en-au/defender-for-identity/architecture#resource-limitations) and begin limiting analysis if there is ever resource contention on the server. Notifications for these events will appear in the Defender portal.
+
+##### Network planning
+
+Each sensor deployed requires internet connectivity to the MDI cloud service:
+
+* [Forward proxy](https://learn.microsoft.com/en-au/defender-for-identity/deploy/configure-proxy) configurations can be used although SSL inspection and interception are not supported
+* Use of ExpressRoute circuits with Microsoft Peering are supported
+
+Internal network controls may also need to be modified to permit protocols used with [Network Name Resolution (NNR)](https://learn.microsoft.com/en-au/defender-for-identity/nnr-policy) ([among others](https://learn.microsoft.com/en-au/defender-for-identity/technical-faq#which-traffic-does-defender-for-identity-generate-in-the-network-from-domain-controllers--and-why)). NNR performs fingerprinting that greatly enriches sensor data by translating IP address information into computer names.
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point       | Design decision                                          | Justification                                                                                                     |
-|----------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Mail notifications   | Enabled for both suspicious activities and health alerts | Notify relevant security teams when unwarranted and unauthorised activities occur.                                |
-| Syslog notifications | Enabled for both suspicious activities and health alerts | If the organisation has an existing SIEM solution enable the SIEM to gather all possible security-related events. |
+| Decision point | Design decision                           | Justification                |
+| -------------- | ----------------------------------------- | ---------------------------- |
+| Enable NNR     | Use all primary and secondary NNR methods | Enrich threat detection data |
 
 {{% /alert %}}
 
-##### Integration with Defender for Endpoint
+Network issues can be [troubleshooted](#investigating-deployment-issues) by checking the sensor logs.
 
-Defender for Identity supports native integration with Defender for Endpoint.
+##### Server configuration
 
-The purpose of this is to combine Defender for Identity's monitoring of AD and DCs specifically, with Defender for Endpoint's monitoring of general endpoints, to provide a single interface that combines events and alerts from both.
+A number of pre and post-deployment tasks must be performed on servers to enable sensor installation and ensure they can operate to their full capabilities. The `Test-MdiReadiness.ps1` [script](https://github.com/microsoft/Microsoft-Defender-for-Identity/tree/main/Test-MdiReadiness) exists to assess compliance with several prerequisite server configurations. Guides also exist to address the following key configurations:
+
+* [Event collection](https://learn.microsoft.com/en-au/defender-for-identity/deploy/event-collection-overview) - ensure the correct events are audited and included in Windows event logs
+* [Directory Service accounts (DSA)](https://learn.microsoft.com/en-au/defender-for-identity/deploy/directory-service-accounts) - ensure servers can be queried for entities found in network, event and trace data
+* [Security Account Manager Remote (SAM-R) protocol](https://learn.microsoft.com/en-au/defender-for-identity/deploy/remote-calls-sam) - ensure Directory Service accounts can query and identify remote accounts
+* [Action account](https://learn.microsoft.com/en-au/defender-for-identity/deploy/manage-action-accounts) - ensure MDI can take remediation actions on potentially compromised accounts
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point                         | Design decision | Justification                                          |
-|----------------------------------------|-----------------|--------------------------------------------------------|
-| Integration with Defender for Endpoint | Enabled         | To integrate data feeds and alerts from both products. |
+| Decision point                    | Design decision                                                                             | Justification                                                                                |
+| --------------------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Additional event collection       | Collect all events important to MDI<sup>1</sup>                                             | Enhance threat detection                                                                     |
+| Use of Directory Service accounts | Use Group Managed Service Accounts (gMSA) with read-only permissions                        | Enhance threat detection while securing and simplifying credential management across servers |
+| Use of SAM-R protocol             | Enable the Directory Service account to perform SAM-R queries<sup>2</sup>                   | Enable lateral movement detection                                                            |
+| Use of action accounts            | Use the default LocalSystem account and do not reuse Directory Service accounts<sup>3</sup> | Enable response actions while applying the principle of least privilege                      |
+
+1: Different server roles have different event collection requirements.
+
+2: Enabling SAM-R can replace permissions used in the domain, enable in audit mode first.
+
+3: Action accounts require write permissions on user accounts to perform actions.
 
 {{% /alert %}}
 
-##### Firewall
+##### Sensor types and deployment options
 
-As Defender for Identity is reliant upon the Defender for Identity portal and the Defender for Identity sensors, firewall ports are required to be opened to enable communication between infrastructure (Domain Controllers and standalone servers) and Defender for Identity. These port configurations are updated frequently and are available online from Microsoft ([Configure endpoint proxy and Internet connectivity settings for the Microsoft Defender for Identity Sensor](https://learn.microsoft.com/defender-for-identity/configure-proxy), [Microsoft Defender for Identity prerequisites](https://learn.microsoft.com/defender-for-identity/prerequisites)).
+Two sensor types are available for installation: the [classic (versions 2.x) sensor](https://learn.microsoft.com/en-au/defender-for-identity/deploy/install-sensor), and the [new (versions 3.x) sensor](https://learn.microsoft.com/en-au/defender-for-identity/deploy/activate-capabilities).
 
-It is important to note the traffic between the client and the Defender for Identity portal offering is TLS1.2 encrypted. Configuration will occur on the proxy, external gateway and local infrastructure servers of the organisation as required.
+While the new sensor can be installed on Windows Server 2019 and newer, it does not offer the same feature parity and protections as the classic sensor, in addition:
 
-Firewall rules and proxy allow lists will be implemented as part of the Defender for Identity solution.
+* The new sensor can currently only be installed on Domain Controllers running Windows Server 2019 and newer
+* The new sensor is installed and updated via Microsoft Defender for Endpoint (MDE), and so requires the server to be onboarded to MDE and have appropriate [server licensing](https://learn.microsoft.com/en-au/defender-endpoint/minimum-requirements#licensing-requirements)
 
-* **Defender for Identity service location** – As mentioned previously, Defender for Identity data centres are deployed in the United States, Europe, and Asia. The organisation's Defender for Identity instance will be created in the data centre that is geographically closest to the organisation's Microsoft Entra ID service. This will assist in determining which service location to utilise for generating allow lists. For Microsoft Entra ID tenants located in Australia, Defender for Identity will be created in Asia.
-* **Maximal security and data privacy** – Defender for Identity cloud services use certificate based mutual authentication for communication between Defender for Identity cloud backend and all Defender for Identity sensors. To make the authentication process seamless as possible if the organisation's environment utilises SSL inspection then the inspection should be configured for mutual authentication.
+The classic sensor is not affected by the above constraints and can also be deployed as a *standalone* sensor.
 
-Further details on the firewall configuration for the solution can be found in the [Hybrid - Network Configuration ABAC]({{<ref "configuration">}}).
-
-#### Integration with Defender for Cloud Apps
-
-Defender for Cloud Apps is a Cloud Access Security Broker that provide visibility, control over data travel and powerful analytics to identify and deal with cyberthreats. Integrating Defender for Identity with Defender for Cloud Apps extends this capability to hybrid environments and presents all Defender for Identity Suspicious Activity (SA) alerts to the Defender for Cloud Apps dashboard, reducing the need for security analysts to monitor multiple consoles.
-
-To connect Defender for Identity to Defender for Cloud Apps the administrator enabling the setting must be a Microsoft Entra ID Global Admin. Integration is enabled in the Defender for Cloud Apps console and does not require configuration from the Defender for Identity console. Defender for Cloud Apps enables organisations to access the Defender for Identity data within a single monitoring and management portal reducing the number of monitoring consoles required, however the following needs to be considered:
-
-* **Alerts** – Defender for Cloud Apps can display Defender for Identity alerts within the Alerts queue. Defender for Cloud Apps also provides additional alert filtering not available within Defender for Identity.
-* **Alerts management** – Management of alerts can be performed in both Defender for Cloud Apps and Defender for Identity portals. Closing alerts in one portal will not necessarily close the same alert in the other portal. It is recommended to choose which portal will be used to manage and remediate alerts to avoid duplicate effort.
-* **SIEM notification** – both Defender for Identity and Defender for Cloud Apps can be configured to send alert notification to a SIEM. In the event this is configured duplicate SIEM notifications for the same alerts will be visible within SIEM under different alert ID's. To avoid this situation, it is recommended to choose which portal will be used to perform alert management and then only this portal is to be configured to send alert notification to a SIEM.
-* **Activities** – Defender for Cloud Apps displays Defender for Identity alerts also in the activity log. Defender for Cloud Apps provides additional activity filtering not available within Defender for Identity.
+Standalone sensors are classic sensors installed on separate servers with port mirroring from identity servers and [a number of additional configurations](https://learn.microsoft.com/en-au/defender-for-identity/deploy/prerequisites-standalone) (compared to an integrated deployment). Standalone sensor deployments are used in environments where integrated sensors are not able to be installed, and where more isolation is required due to network design, separation of services, or infrastructure capacity. Standalone sensor deployments, by virtue of the sensor's isolation from the identity servers they protect, are also not able to offer the same feature parity as integrated sensor deployments.
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point                           | Design decision | Justification                                          |
-|------------------------------------------|-----------------|--------------------------------------------------------|
-| Integration with Defender for Cloud Apps | Enabled         | To integrate data feeds and alerts from both products. |
+| Decision point            | Design decision                                                  | Justification                                                               |
+| ------------------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Sensor types/versions     | Install classic (versions 2.x) sensors                           | Maximise threat detection and response capabilities                         |
+| Sensor deployment options | Deploy integrated senors (not standalone sensors) where possible | Maximise threat detection and response capabilities and minimise complexity |
 
 {{% /alert %}}
+
+##### Deployment scope
+
+MDI sensors should be installed on [all Domain Controllers](https://learn.microsoft.com/en-au/defender-for-identity/deploy/install-sensor) in [all forests](https://learn.microsoft.com/en-au/defender-for-identity/deploy/multi-forest), even forests with no trust, and including read-only Domain Controllers; and on [all AD FS, AD CS, and Entra Connect servers](https://learn.microsoft.com/en-au/defender-for-identity/deploy/active-directory-federation-services), even in clustered configurations.
+
+{{% alert title="Design decisions" color="warning" %}}
+
+| Decision point          | Design decision                          | Justification                                       |
+| ----------------------- | ---------------------------------------- | --------------------------------------------------- |
+| Sensor deployment scope | Deploy sensors to all applicable servers | Maximise threat detection and response capabilities |
+
+{{% /alert %}}
+
+##### Licensing
+
+MDI is enabled at the tenant level requiring all users that benefit from the service to have an [E5 or equivalent license assigned](https://learn.microsoft.com/en-au/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-identity).
+
+##### Investigating deployment issues
+
+Critical health issues with sensors will be displayed in the Defender portal.
+
+Each sensor's [logs should also be checked](https://learn.microsoft.com/en-au/defender-for-identity/troubleshooting-using-logs) after deployment to ensure the completeness of its capabilities are enabled and not being blocked by misconfigurations or other issues.
+
+The `New-MDIConfigurationReport` [PowerShell command](https://learn.microsoft.com/en-au/powershell/module/defenderforidentity/new-mdiconfigurationreport?view=defenderforidentity-latest) can be a helpful tool to validate System Access Control Lists (SACLs) and the presence of the MDI related Group Policy Objects (GPOs).
+
+[Known issues](https://learn.microsoft.com/en-au/defender-for-identity/troubleshooting-known-issues) may also provide insights into deployment or operation anomalies.
+
+#### Operational considerations
+
+The following should be considered before using MDI:
+
+##### Updating sensors
+
+Sensors update automatically. It is possible to enabled delayed update on classic (versions 2.x) sensors in the Defender portal's Identities settings section. The delayed update setting will stage an update for 72 hours before deployment, which may be useful in mitigating the impacts of failed updates. New (versions 3.x) sensor updates can be similarly staged via MDE deployment rings.
+
+##### Entity tagging
+
+[Entity tagging](https://learn.microsoft.com/en-au/defender-for-identity/entity-tags) can enhance the sensitivity of threat detection and response capabilities for important users, groups and devices. Tags can be viewed and applied in the Defender portal's Identities settings section, with three types of tags supported:
+
+1. The *Sensitive* tag for users, devices and groups - apply to high-value or sensitive assets like administrative or senior executive accounts and workstations
+1. The *Honeytoken* tag for users and devices - apply to accounts created specifically to lure malicious actors
+1. The *Exchange server* tag for devices - assign to Microsoft Exchange servers<sup>1</sup>
+
+1: MDI will also automatically tag Exchange servers and a number of other sensitive users, groups and devices.
+
+{{% alert title="Design decisions" color="warning" %}}
+
+| Decision point | Design decision                                               | Justification                               |
+| -------------- | ------------------------------------------------------------- | ------------------------------------------- |
+| Entity tagging | Apply entity tags to all applicable users, groups and devices | Help protect high-value or sensitive assets |
+
+{{% /alert %}}
+
+##### Alerting
+
+Some MDI alerts require learning periods to identity patterns of behaviour which can take up to 30-days to confirm. During the learning period it can be useful for MDI operators to enable the *test mode* in the Defender portal's Identities settings section. Test mode sets applicable alert thresholds to low, triggering alerts sooner and more frequently, enabling MDI users to experience alerts, observe identity behaviour, and gain familiarity with their environment. When test mode is disabled, thresholds return to their default setting of high. While keeping alert threshold set to high is recommended, thresholds can be changed if necessary.
+
+##### Exclusions
+
+MDI detection and response actions can be excluded for specific IP addresses, computers, domains and users, and can be excluded globally or for specific detection rules. Excluding actions can be useful to reduce false positives, focus on critical issues, or to avoid unnecessary investigations into legitimate activities. Situations where exclusions could be considered include, suppressing alerts triggered by a security scanning tool, or preventing a break glass or service account from being disabled.
 
 ### Related information
 
@@ -176,20 +231,47 @@ To connect Defender for Identity to Defender for Cloud Apps the administrator en
 
 #### Design
 
-* [Identity Protection]({{<ref "design/platform/identity/protection">}})
-* [Identity Monitoring]({{<ref "reporting-and-monitoring">}})
-* [SIEM]({{<ref "design/platform/security/siem.md">}})
+* [Application and HR provisioning]({{<ref "design/platform/identity/protection">}})
+* [Authentication]({{<ref "design/platform/identity/authentication">}})
+* [Conditional Access]({{<ref "design/platform/identity/conditional-access">}})
+* [Enterprise users]({{<ref "design/platform/identity/protection">}})
+* [Entra ID Protection]({{<ref "design/platform/identity/protection">}})
+* [External identities]({{<ref "design/platform/identity/external-identities">}})
+* [Groups]({{<ref "design/platform/identity/groups">}})
+* [Identity governance]({{<ref "design/platform/identity/governance">}})
+* [Identity synchronisation]({{<ref "design/platform/identity/synchronisation">}})
+* [Reporting and monitoring]({{<ref "design/platform/identity/reporting-and-monitoring">}})
+* [Role-Based Access Control]({{<ref "design/platform/identity/protection">}})
 
 #### Configuration
 
-* [Hybrid - Network Configuration ABAC]({{<ref "configuration">}})
-* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
+* None identified
 
 #### References
 
-* [Microsoft Identity Security Overview](https://learn.microsoft.com/azure/security/fundamentals/identity-management-overview)
-* [Azure security baseline for Azure Active Directory](https://learn.microsoft.com/security/benchmark/azure/baselines/aad-security-baseline)
-* [Microsoft Defender for Identity](https://learn.microsoft.com/defender-for-identity/what-is)
-* [Identity secure score in Azure Active Directory](https://learn.microsoft.com/entra/identity/monitoring-health/concept-identity-secure-score)
-* [Azure Active Directory security operations guide](https://learn.microsoft.com/entra/architecture/security-operations-introduction)
-* [Azure Active Directory identity management and access management for AWS](https://learn.microsoft.com/azure/architecture/reference-architectures/aws/aws-azure-ad-security)
+* [Activate Microsoft Defender for Identity capabilities directly on a domain controller](https://learn.microsoft.com/en-au/defender-for-identity/deploy/activate-capabilities)
+* [Configure endpoint proxy and internet connectivity settings](https://learn.microsoft.com/en-au/defender-for-identity/deploy/configure-proxy)
+* [Configure sensors for AD FS, AD CS, and Microsoft Entra Connect](https://learn.microsoft.com/en-au/defender-for-identity/deploy/active-directory-federation-services)
+* [Configure Microsoft Defender for Identity action accounts](https://learn.microsoft.com/en-au/defender-for-identity/deploy/manage-action-accounts)
+* [Defender for Identity entity tags in Microsoft Defender XDR](https://learn.microsoft.com/en-au/defender-for-identity/entity-tags)
+* [Deploying Microsoft Defender for Identity](https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/deploying-microsoft-defender-for-identity/4363501)
+* [Directory Service Accounts for Microsoft Defender for Identity](https://learn.microsoft.com/en-au/defender-for-identity/deploy/directory-service-accounts)
+* [Event collection with Microsoft Defender for Identity](https://learn.microsoft.com/en-au/defender-for-identity/deploy/event-collection-overview)
+* [Foundations for modern defensible architecture](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/modern-defensible-architecture/foundations-modern-defensible-architecture)
+* [Information Security Manual (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism)
+* [Install a Microsoft Defender for Identity sensor](https://learn.microsoft.com/en-au/defender-for-identity/deploy/install-sensor)
+* [Licensing, Microsoft Defender for Identity](https://learn.microsoft.com/en-au/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-identity)
+* [Microsoft Defender data can now be hosted locally in Australia](https://techcommunity.microsoft.com/blog/microsoftdefenderatpblog/microsoft-defender-data-can-now-be-hosted-locally-in-australia/3898337)
+* [Microsoft Defender for Identity architecture](https://learn.microsoft.com/en-au/defender-for-identity/architecture)
+* [Microsoft Defender for Identity frequently asked questions](https://learn.microsoft.com/en-au/defender-for-identity/technical-faq)
+* [Microsoft Defender for Identity multi-forest support](https://learn.microsoft.com/en-au/defender-for-identity/deploy/multi-forest)
+* [Microsoft Defender for Identity setup guide](https://setup.cloud.microsoft/defender/identity)
+* [Microsoft Defender for Identity standalone sensor prerequisites](https://learn.microsoft.com/en-au/defender-for-identity/deploy/prerequisites-standalone)
+* [Minimum requirements for Microsoft Defender for Endpoint](https://learn.microsoft.com/en-au/defender-endpoint/minimum-requirements#licensing-requirements)
+* [Network Name Resolution in Microsoft Defender for Identity](https://learn.microsoft.com/en-au/defender-for-identity/nnr-policy)
+* [Plan capacity for Microsoft Defender for Identity deployment](https://learn.microsoft.com/en-au/defender-for-identity/deploy/capacity-planning)
+* [Secure Future Initiative](https://www.microsoft.com/en-au/trust-center/security/secure-future-initiative)
+* [Troubleshooting Microsoft Defender for Identity known issues](https://learn.microsoft.com/en-au/defender-for-identity/troubleshooting-known-issues)
+* [Troubleshooting Microsoft Defender for Identity sensor using the Defender for Identity logs](https://learn.microsoft.com/en-au/defender-for-identity/troubleshooting-using-logs)
+* [What is Microsoft Defender for Identity?](https://learn.microsoft.com/en-au/defender-for-identity/what-is)
+* [What is Microsoft Entra ID?](https://learn.microsoft.com/en-au/entra/fundamentals/whatis)

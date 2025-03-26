@@ -98,13 +98,13 @@ Each DLP policy could be complimented by the use of sensitive information types 
 
 Each DLP policy rule defines user notifications in terms of policy tips displayed while using an application to perform an action, or email notifications sent after an action has taken place. As with other Purview solutions, the user experience can depend on the applications used. For example, some applications cannot show policy tips and others can be slow to show policy tips which can result in actions being performed before tips are displayed<sup>1</sup>. Using both policy tips and email notifications can help ensure users are made aware of their actions regardless of the application used, email notifications are also able to be sent to external organisations for certain actions.
 
-1: This can be partially remediated by using the *dlpwaitonsendtimeout* Registry key.
+1: This can be partially remediated by using the *dlpwaitonsendtimeout* registry key.
 
 ### Related information
 
 #### Security & Governance
 
-* [Guidelines for email]({{<ref "content\en\security-and-governance\system-security-plan\email.md">}})
+* [Guidelines for email]({{<ref "content\en\security-and-governance\system-security-plan\email">}})
 
 #### Design
 

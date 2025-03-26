@@ -34,14 +34,15 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Skype for business integration                                                              |            On |
 | Microsoft Defender for Cloud Apps                                                           |            On |
 | Web content filtering                                                                       |            On |
-| Unified audit log                                                                           |            On |
 | Device discovery                                                                            |            On |
 | Download quarantined files                                                                  |            On |
 | Default to streamlined connectivity when onboarding devices in Defender portal​​              |            On |
 | Apply streamlined connectivity settings to devices managed by Intune and Defender for Cloud |            On |
+| Aggregated Reporting                                                                        |            On |
 | Live response                                                                               |            On |
 | Live response for Servers                                                                   |            On |
 | Live response unsigned script execution                                                     |           Off |
+| Deception                                                                                   |            On |
 | Share endpoint alerts with Microsoft Compliance Center                                      |            On |
 | Microsoft Intune connection                                                                 |            On |
 | Authenticated telemetry                                                                     |            On |

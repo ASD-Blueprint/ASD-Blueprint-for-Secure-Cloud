@@ -40,7 +40,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 |                         |                                  `<PROTECTED users group>`<sup>1</sup> |
 |                         | `<CA exclude group - USR - B - Block access to PROTECTED information>` |
 
-1: For compatability with Purview configurations, this should be either a email-enabled security group, a distribution group, or a Microsoft 365 group.
+1: For compatibility with Purview configurations, this should be either a email-enabled security group, a distribution group, or a Microsoft 365 group.
 
 #### Target Resources
 

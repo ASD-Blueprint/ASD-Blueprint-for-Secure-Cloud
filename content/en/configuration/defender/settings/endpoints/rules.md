@@ -33,18 +33,18 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Web Content Filtering
 
-| Item                   |                                                                      Value |
-| ---------------------- | -------------------------------------------------------------------------: |
-| **General**            |                                                                            |
-| Policy Name            |                                                                Blocked content |
-| **Blocked Categories** |                                                                            |
-| Adult content          |                                                                 Select all |
-| High Bandwidth         |                                                                 Select all |
-| Legal Liability        |                                                                 Select all |
-| Leisure                | Chat<br>Games<br>Instant Messaging<br>Web-based Email<br>Social Networking |
-| Uncategorized          |                                                                 Select all |
-| **Scope**              |                                                                            |
-| Machine Groups         |                                                                 Select all |
+| Item                   |           Value |
+| ---------------------- | --------------: |
+| **General**            |                 |
+| Policy Name            | Blocked content |
+| **Blocked Categories** |                 |
+| Adult content          |      Select all |
+| High Bandwidth         |      Select all |
+| Legal Liability        |      Select all |
+| Leisure                |      Select all |
+| Uncategorized          |      Select all |
+| **Scope**              |                 |
+| Machine Groups         |      Select all |
 
 ### Automation uploads
 
@@ -52,7 +52,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------: |
 | **File Content Analysis**   |                                                                                                                             |
 | Content analysis            |                                                                                                                          On |
-| File extension names        | air,elf,gadget,msi,vbe,url,cmd,js,reg,ws,pl,'',rgs,bat,vbs,inf,cpl,vb,ps1,job,ko.gz,exe,wsf,dll,py,rb,sh,scr,ko,com,tcl,sys |
+| File extension names        | ’’,air,bat,cmd,com,cpl,dll,elf,exe,gadget,inf,job,js,ko,ko.gz,msi,pl,ps1,py,rb,reg,rgs,scr,sh,sys,tcl,url,vb,vbe,vbs,ws,wsf |
 | **Memory Content Analysis** |                                                                                                                             |
 | Enabled                     |                                                                                                                          On |
 

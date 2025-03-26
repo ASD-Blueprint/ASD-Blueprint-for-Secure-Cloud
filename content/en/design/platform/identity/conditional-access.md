@@ -88,7 +88,7 @@ Methods like *break glass* accounts and related exclude groups can be used to mi
 
 The use of break glass accounts is discussed in more detail in the [enterprise users]({{<ref "design/platform/identity/users">}}) design page.
 
-#### Other deployment considerations
+#### Policy complexity
 
 To enhance operational visibility, policy complexity should be minimised by keeping the policy's purpose focussed on a single objective.
 

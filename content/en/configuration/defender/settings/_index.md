@@ -2,7 +2,7 @@
 title: "Settings"
 linkTitle: "Settings"
 weight: 10
-description: "This section describes the configuration of Microsoft Defender associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
+description: "This section describes the configuration of Microsoft Defender settings associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}

@@ -236,7 +236,7 @@ By associating a sensitivity label with a Conditional Access Authentication Cont
 
 #### Security & Governance
 
-* [Guidelines for email]({{<ref "content\en\security-and-governance\system-security-plan\email.md">}})
+* [Guidelines for email]({{<ref "content\en\security-and-governance\system-security-plan\email">}})
 
 #### Design
 

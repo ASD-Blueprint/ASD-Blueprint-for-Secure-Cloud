@@ -73,7 +73,7 @@ Permissions should always be removed after DSC operations.
 
 #### 5. Download and edit the configuration data file {#cdf}
 
-* Download the {{% download file="static/content/files/automation/dsc/configuration-data.txt"%}} configuration data {{% /download %}} file, renaming the linked .txt file to .psd1.
+* Download the {{% download file="/content/files/automation/dsc/configuration-data.txt" %}} configuration data {{% /download %}} file, renaming the linked .txt file to .psd1.
 * Edit the configuration data file to suit, substituting your Entra tenant and M365DSC app configurations:
 
 ```powershell

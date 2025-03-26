@@ -33,7 +33,7 @@ Audit policies and licensing are not retroactive, logs generated before the appl
 
 It can take up to 24 hours for activities to appear in the unified audit log. This delay should be taken into account when running searches.
 
-Some activities can appear earlier in an individual service's audit logs, for example user login activities may be searchable in Intra ID audit logs before being available in the unified audit log.
+Some activities can appear earlier in an individual service's audit logs, for example user login activities may be searchable in Intra ID audit logs before being visible in the unified audit log.
 
 ### Related information
 

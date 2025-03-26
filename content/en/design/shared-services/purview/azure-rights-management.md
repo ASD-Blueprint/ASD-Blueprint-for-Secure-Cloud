@@ -67,7 +67,7 @@ The super user feature ensures that authorised users or services will always hav
 
 #### Security & Governance
 
-* [Guidelines for email]({{<ref "content\en\security-and-governance\system-security-plan\email.md">}})
+* [Guidelines for email]({{<ref "content\en\security-and-governance\system-security-plan\email">}})
 
 #### Design
 
