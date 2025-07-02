@@ -193,7 +193,7 @@ Organisations may wish to implement disabled policies that are activated in the 
 
 #### References
 
-- [Authentication strengths](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-strengths)
+- [Authentication strengths](https://learn.microsoft.com/en-au/entra/identity/authentication/concept-authentication-strengths)
 - [Conditional Access](https://learn.microsoft.com/en-au/entra/identity/conditional-access/)
-- [Network assignment](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-assignment-network)
-- [Terms of use](https://learn.microsoft.com/en-us/entra/identity/conditional-access/terms-of-use)
+- [Network assignment](https://learn.microsoft.com/en-au/entra/identity/conditional-access/concept-assignment-network)
+- [Terms of use](https://learn.microsoft.com/en-au/entra/identity/conditional-access/terms-of-use)

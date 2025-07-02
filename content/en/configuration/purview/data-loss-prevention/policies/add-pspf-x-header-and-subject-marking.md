@@ -1407,7 +1407,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 
 #### References
 
-* [Data loss prevention Exchange reference](https://learn.microsoft.com/en-us/purview/dlp-exchange-conditions-and-actions)
-* [Data loss prevention policy reference](https://learn.microsoft.com/en-us/purview/dlp-policy-reference)
-* [Learn about using regular expressions (regex) in data loss prevention policies](https://learn.microsoft.com/en-us/purview/dlp-policy-learn-about-regex-use)
+* [Data loss prevention Exchange reference](https://learn.microsoft.com/en-au/purview/dlp-exchange-conditions-and-actions)
+* [Data loss prevention policy reference](https://learn.microsoft.com/en-au/purview/dlp-policy-reference)
+* [Learn about using regular expressions (regex) in data loss prevention policies](https://learn.microsoft.com/en-au/purview/dlp-policy-learn-about-regex-use)
 * [Regular expression quick reference](https://learn.microsoft.com/en-au/dotnet/standard/base-types/regular-expression-language-quick-reference)

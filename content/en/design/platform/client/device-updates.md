@@ -64,7 +64,7 @@ When deploying a hybrid solution, the software and patch updates of Windows devi
 | Feature Updates                 | Enabled for feature releases                                                                                                                             | Manually control deployment of Feature Releases / Operating System Versions (Win 11) to specified devices. |
 | Expedite Updates Policy         | Enabled for Zero Security Updates                                                                                                                        | Address extreme security risks within 48 hours.                                                              |
 | **Compliance Reporting**        |                                                                                                                                                          |                                                                                                            |
-| Windows Health Monitoring       | Enabled through [Device Configuration Policy](https://learn.microsoft.com/en-us/mem/intune/protect/windows-update-reports) | Allows Windows Update Compliance Reporting.                                                                 |
+| Windows Health Monitoring       | Enabled through [Device Configuration Policy](https://learn.microsoft.com/en-au/mem/intune/protect/windows-update-reports) | Allows Windows Update Compliance Reporting.                                                                 |
 
 {{% /alert %}}
 

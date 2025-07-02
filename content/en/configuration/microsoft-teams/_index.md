@@ -21,23 +21,80 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
+{{% alert title="Teams new admin experience" color="info" %}}
+
+Microsoft has introduced a number of changes to the Teams admin centre to unify settings and policies. The new admin experience will soon become the default for all organisations, and the configuration guidance provided here aligns with this updated model.
+
+Further information about the changes can be found [here](https://learn.microsoft.com/en-au/microsoftteams/unified-policies-settings-management-teams-admin-center).
+
+{{% /alert %}}
+
 ### Automated Configuration Deployment and Assessment
 
 #### Overview
 
-All of the Teams configurations can be automatically deployed using Microsoft 365 Desired State Configuration (DSC).
+Some of the Teams configurations can be automatically deployed using Microsoft 365 Desired State Configuration (DSC).
 
-All of the Teams configurations can be assessed using a DSC blueprint.
+Some of the Teams configurations cannot be assessed using a DSC blueprint. Please refer to those configuration pages to conduct a manual assessment.
+
+| Configuration              | Blueprint automation provided |
+| -------------------------- | ----------------------------- |
+| **Teams & Channels**       |                               |
+| - Teams                    | Yes (DSC)<sup>1</sup>         |
+| - Teams update management  | Yes (DSC)                     |
+| - Migrating to Teams       | Yes (DSC)                     |
+| **External collaboration** |                               |
+| - Guest access             | Yes (DSC)                     |
+| - B2B member access        | No                            |
+| **Apps**                   | Yes (DSC)                     |
+| **Meetings & Events**      |                               |
+| - Audio conferencing       | Yes (DSC)                     |
+| - Meetings                 | Yes (DSC)<sup>2</sup>         |
+| - Themes & customization   | No                            |
+| - Live events              | Yes (DSC)                     |
+| - Events                   | Yes (DSC)<sup>3</sup>         |
+| **Messaging**              | Yes (DSC)                     |
+| **Voice**                  |                               |
+| - Calling                  | Yes (DSC)                     |
+| - Call park                | Yes (DSC)                     |
+| - Caller ID                | No                            |
+| - Mobility                 | Yes (DSC)                     |
+| - Voicemail                | Yes (DSC)                     |
+| - Voice applications       | No                            |
+| **Emergency**              | Yes (DSC)                     |
+| **Enhanced encryption**    | Yes (DSC)                     |
+| **Users**                  | Yes (DSC)                     |
+| **Teams apps**             | No                            |
+
+1: The *Notifications and feeds*, *Tagging*, *Email integration*, *Search by name*, *Safety and communication* and *Shared channels* configurations must be set manually.
+
+2: The *Include attendees in the report*, *Real-time-text (RTT)*, *Allow streaming media input* and *Anonymous users can interact with apps in meetings* configurations must be set manually.
+
+3: The *Recording & transcription* configurations must be set manually.
 
 #### Desired State Configuration
 
-Before using the below DSC file, please refer to the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) for instructions.
+Before using the below DSC file, please refer to the [setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) and [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) pages for instructions.
 
-| Desired State Configuration file                                                                                                                                           |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-teams.txt" %}} Teams DSC {{% /download %}} (.ps1) <br>*The linked .txt file must be renamed to .ps1* |
-| **Configuration Data File:**                                                                                                                                               |
-| The configuration data file can be found on the [DSC setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) page.                           |
+Do not proceed with the automated deployment instructions until you've familiarised yourself with the [addition configuration](#additional-configuration) required below.
+
+**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/asdbpsc-dsc-teams.txt" %}} Teams DSC file {{% /download %}} and rename the linked .txt file to .ps1.
+
+**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/configuration-data.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
+
+{{% alert title="Non-global policy settings" color="info" %}}
+
+Teams includes a number of pre-configured default policies to help simplify onboarding by providing baseline settings for common scenarios. These policies are typically found in the *custom policies* sections of the Teams admin centre.
+
+The DSC file includes settings for managing global policies but does not modify the pre-configured or custom policies.
+
+{{% /alert %}}
+
+{{% alert title="Warning" color="danger" %}}
+
+Any existing settings in a tenancy that match the name or UID of any settings in the DSC will be overwritten.
+
+{{% /alert %}}
 
 ##### Service principal permissions
 

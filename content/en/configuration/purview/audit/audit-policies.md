@@ -21,7 +21,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% alert title="Turn auditing on" color="info" %}}
 
-Prior to configuring auditing policies, an additional one-time procedure is required to turn auditing on. Administrators can select the banner labelled "start recording user and admin activity" or follow the instructions for using PowerShell [here](https://learn.microsoft.com/en-us/purview/audit-log-enable-disable?tabs=microsoft-purview-portal#turn-on-auditing).
+Prior to configuring auditing policies, an additional one-time procedure is required to turn auditing on. Administrators can select the banner labelled "start recording user and admin activity" or follow the instructions for using PowerShell [here](https://learn.microsoft.com/en-au/purview/audit-log-enable-disable?tabs=microsoft-purview-portal#turn-on-auditing).
 
 {{% /alert %}}
 

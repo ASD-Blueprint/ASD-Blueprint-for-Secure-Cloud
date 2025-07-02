@@ -1,7 +1,7 @@
 ---
-title: "Policies & Settings"
+title: "Policies and settings"
 weight: 45
-description: "This section describes the design decisions associated with Teams Policies & Settings for system(s) built using ASD's Blueprint for Secure Cloud."
+description: "This section describes the design decisions associated with Teams policies and settings for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
 Microsoft Teams provides ability to create policies around messaging, meetings, calling, video and guest access. These settings can be configured in policies and assigned to individual users within the organisation.
@@ -38,11 +38,12 @@ The below highlights the policies that can be configured with in teams:
 
 #### Configuration
 
-* [Teams policies]({{<ref "configuration/microsoft-teams/teams/policies">}})
-* [Meeting policies]({{<ref "configuration/microsoft-teams/meetings/meeting-policies">}})
-* [Live event policies]({{<ref "configuration/microsoft-teams/meetings/live-events-policies">}})
-* [Messaging policies]({{<ref "configuration/microsoft-teams/messaging/messaging-policies">}})
-* [Permission policies]({{<ref "configuration/microsoft-teams/apps/permission-policies">}})
+* [Teams]({{<ref "configuration/microsoft-teams/Setting-&-policies/Global-(org-wide-default)-settings/Teams-&-channels/teams">}})
+* [Meetings]({{<ref "configuration/microsoft-teams/Setting-&-policies/Global-(org-wide-default)-settings/meetings-&-events/meetings">}})
+* [Live events]({{<ref "configuration/microsoft-teams/Setting-&-policies/Global-(org-wide-default)-settings/meetings-&-events/live-events">}})
+* [Messaging]({{<ref "configuration/microsoft-teams/Setting-&-policies/Global-(org-wide-default)-settings/messaging/messaging">}})
+* [App setup]({{<ref "configuration/microsoft-teams/Setting-&-policies/Global-(org-wide-default)-settings/apps/app-setup">}})
+* [manage apps]({{<ref "configuration/microsoft-teams/teams-apps/manage-apps">}})
 
 #### References
 

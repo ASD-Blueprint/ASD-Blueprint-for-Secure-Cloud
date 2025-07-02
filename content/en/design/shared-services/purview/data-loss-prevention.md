@@ -22,7 +22,7 @@ Rules are evaluated in priority order and if information matches multiple rules,
 
 {{% alert title="DLP on incoming and outgoing data flows" color="info" %}}
 
-DLP rules can be used to on both incoming and outgoing data flows.
+DLP rules can be used on both incoming and outgoing data flows.
 
 {{% /alert %}}
 
@@ -78,9 +78,9 @@ While the *users up to PROTECTED* publishing policy ensures that only specific u
 
 ### Endpoint DLP
 
-DLP capabilities can be extended to certain Windows desktop and server and MacOS operating systems, including virtualised environments and browsers. Endpoint DLP enables the monitoring and control of a number of actions such as copying, uploading and printing, and domain-based restrictions.
+DLP capabilities can be extended to certain Windows desktop and server and macOS operating systems, including virtualised environments and browsers. Endpoint DLP enables the monitoring and control of a number of actions such as copying, uploading and printing, and domain-based restrictions.
 
-Implementing endpoint DLP policies may require the deployment of the Purview Information Protection client or browser plugins, and will require some organisational specific knowledge about user behaviour. Implementation is recommended and can be started by onboarding devices and observing events in [Activity Explorer](https://learn.microsoft.com/en-us/purview/data-classification-activity-explorer) before creating policies.
+Implementing endpoint DLP policies may require the deployment of the Purview Information Protection client or browser plugins, and will require some organisational specific knowledge about user behaviour. Implementation is recommended and can be started by onboarding devices and observing events in [Activity Explorer](https://learn.microsoft.com/en-au/purview/data-classification-activity-explorer) before creating policies.
 
 {{% alert title="Design decisions" color="warning" %}}
 
@@ -121,6 +121,6 @@ Each DLP policy rule defines user notifications in terms of policy tips displaye
 #### References
 
 * [Australian Government Email Protective Marking Standard](https://www.protectivesecurity.gov.au/publications-library/australian-government-email-protective-marking-standard)
-* [Data Loss Prevention policy reference](https://learn.microsoft.com/en-us/purview/dlp-policy-reference)
+* [Data Loss Prevention policy reference](https://learn.microsoft.com/en-au/purview/dlp-policy-reference)
 * [Learn about data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide)
 * [Learn about Endpoint data loss prevention](https://learn.microsoft.com/en-au/purview/endpoint-dlp-learn-about)

@@ -65,21 +65,17 @@ Some of the Purview configurations cannot be assessed using a DSC blueprint. Ple
 
 #### Desired State Configuration
 
-Before using the below DSC file, please refer to the [setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) and [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) pages for instructions. Do not proceed with the automated deployment instructions until you've familiarised yourself with the [addition configuration](#additional-configuration) required below.
+Before using the below DSC file, please refer to the [setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) and [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) pages for instructions.
 
-{{% alert title="Warning" color="danger" %}}
-
-Any existing settings in a tenancy that match the name or UID of any settings in the DSC will be overwritten.
-
-{{% /alert %}}
+Do not proceed with the automated deployment instructions until you've familiarised yourself with the [addition configuration](#additional-configuration) required below.
 
 **Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/asdbpsc-dsc-purview.txt" %}} Purview DSC file {{% /download %}} and rename the linked .txt file to .ps1.
 
 **Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/configuration-data.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
 
-{{% alert title="Extra Parameters" color="info"%}}
+{{% alert title="Extra parameters" color="info"%}}
 
-The downloaded DSC file requires the following parameters for the configuration of sensitivity label access control settings:
+The downloaded DSC file requires the following parameters to be populated or you will be prompted for them on import:
 
 | Parameter name  | Contents                                                                                                                                                                                       |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -90,6 +86,12 @@ The downloaded DSC file requires the following parameters for the configuration 
 1: These groups must have the PROTECTED sensitivity label applied following the import of the DSC Blueprint. The same groups should also be set for the publishing policies mentioned in footnote 6 above.
 
 2: Only one domain name is currently supported by DSC Blueprints, additional domain names must be configured manually.
+
+{{% /alert %}}
+
+{{% alert title="Warning" color="danger" %}}
+
+Any existing settings in a tenancy that match the name or UID of any settings in the DSC will be overwritten.
 
 {{% /alert %}}
 
@@ -149,6 +151,6 @@ There may also be a delay in updating the permissions via Powershell and  them a
 
 8. Assign the Entra, Compliance Administrator role to the M365DSC service principal.
 
-9. A one-time procedure is required to enable sensitivity labels for containers and to synchronise labels to Entra ID. Instructions for this procedure can be found [here](https://learn.microsoft.com/en-us/purview/sensitivity-labels-teams-groups-sites#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels).
+9. A one-time procedure is required to enable sensitivity labels for containers and to synchronise labels to Entra ID. Instructions for this procedure can be found [here](https://learn.microsoft.com/en-au/purview/sensitivity-labels-teams-groups-sites#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels).
 
-10. A one-time procedure is required to turn on auditing. Confirm the status of auditing in the [Purview portal](https://purview.microsoft.com/audit/auditpolicies) by checking for the presence of a banner labelled "start recording user and admin activity" - select the banner to enable auditing. If no banner is present, auditing is already enabled. Alternative instructions for using PowerShell can be found [here](https://learn.microsoft.com/en-us/purview/audit-log-enable-disable?tabs=microsoft-purview-portal#turn-on-auditing).
+10. A one-time procedure is required to turn on auditing. Confirm the status of auditing in the [Purview portal](https://purview.microsoft.com/audit/auditpolicies) by checking for the presence of a banner labelled "start recording user and admin activity" - select the banner to enable auditing. If no banner is present, auditing is already enabled. Alternative instructions for using PowerShell can be found [here](https://learn.microsoft.com/en-au/purview/audit-log-enable-disable?tabs=microsoft-purview-portal#turn-on-auditing).

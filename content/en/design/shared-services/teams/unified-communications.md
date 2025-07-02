@@ -36,8 +36,8 @@ Microsoft Office Teams can natively provide the following UC features:
 
 #### Configuration
 
-* [Messaging policies]({{<ref "configuration/microsoft-teams/messaging/messaging-policies">}})
-* [Calling policies]({{<ref "configuration/microsoft-teams/voice/calling-policies">}})
+* [Messaging policies]({{<ref "configuration/microsoft-teams/Setting-&-policies/Global-(org-wide-default)-settings/messaging/messaging">}})
+* [Calling policies]({{<ref "configuration/microsoft-teams/Setting-&-policies/Global-(org-wide-default)-settings/voice/calling">}})
 
 #### References
 

@@ -113,4 +113,4 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### References
 
-- [Publish sensitivity labels](https://learn.microsoft.com/en-us/purview/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)
+- [Publish sensitivity labels](https://learn.microsoft.com/en-au/purview/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)

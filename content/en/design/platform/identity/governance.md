@@ -74,6 +74,6 @@ The use of PIM is discussed in more detail in the [Role-Based Access Control des
 
 #### References
 
-- [Create an access review of Azure resource and Microsoft Entra roles in PIM](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-create-roles-and-resource-roles-review)
+- [Create an access review of Azure resource and Microsoft Entra roles in PIM](https://learn.microsoft.com/en-au/entra/id-governance/privileged-identity-management/pim-create-roles-and-resource-roles-review)
 - [Identity Governance](https://learn.microsoft.com/entra/id-governance/identity-governance-overview)
-- [Plan a Microsoft Entra access reviews deployment](https://learn.microsoft.com/en-us/entra/id-governance/deploy-access-reviews)
+- [Plan a Microsoft Entra access reviews deployment](https://learn.microsoft.com/en-au/entra/id-governance/deploy-access-reviews)

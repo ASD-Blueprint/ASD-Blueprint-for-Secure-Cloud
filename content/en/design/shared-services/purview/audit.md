@@ -51,9 +51,9 @@ Some activities can appear earlier in an individual service's audit logs, for ex
 
 #### References
 
-* [Audit log activities](https://learn.microsoft.com/en-us/purview/audit-log-activities)
-* [Audit log considerations for Australian Government compliance with PSPF](https://learn.microsoft.com/en-us/compliance/anz/pspf-audit-log)
+* [Audit log activities](https://learn.microsoft.com/en-au/purview/audit-log-activities)
+* [Audit log considerations for Australian Government compliance with PSPF](https://learn.microsoft.com/en-au/compliance/anz/pspf-audit-log)
 * [Best practices for event logging and threat detection](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-monitoring/best-practices-event-logging-threat-detection)
 * [Information Security Manual (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism)
-* [Learn about auditing solutions in Microsoft Purview](https://learn.microsoft.com/en-us/purview/audit-solutions-overview)
-* [Microsoft services that support auditing](https://learn.microsoft.com/en-us/purview/audit-supported-services)
+* [Learn about auditing solutions in Microsoft Purview](https://learn.microsoft.com/en-au/purview/audit-solutions-overview)
+* [Microsoft services that support auditing](https://learn.microsoft.com/en-au/purview/audit-supported-services)

@@ -42,27 +42,31 @@ Some of the Exchange Online configurations cannot be assessed using a DSC bluepr
 
 #### Desired State Configuration
 
-Before using the below DSC file, please refer to the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page for instructions.
+Before using the below DSC file, please refer to the [setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) and [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) pages for instructions.
 
-{{% alert title="Warning" color="danger" %}}
+Do not proceed with the automated deployment instructions until you've familiarised yourself with the [addition configuration](#additional-configuration) required below.
 
-Any existing settings in a tenancy that match the name or UID of any settings in the DSC will be overwritten.
+**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/asdbpsc-dsc-exo.txt" %}} Exchange DSC file {{% /download %}} and rename the linked .txt file to .ps1.
 
-{{% /alert %}}
+**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/configuration-data.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
 
-| Desired State Configuration file                                                                                                                                                   |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-exo.txt" %}} Exchange Online DSC {{% /download %}} (.ps1) <br>*The linked .txt file must be renamed to .ps1* |
-| **Configuration Data File:**                                                                                                                                                       |
-| The configuration data file can be found on the [DSC setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) page.                                   |
+{{% alert title="Extra parameters" color="info"%}}
 
-The downloaded DSC file requires the following parameters to be populated or you will be prompted for on import:
+The downloaded DSC file requires the following parameters to be populated or you will be prompted for them on import:
 
 | Parameter name           | Contents                                                                     |
 | ------------------------ | ---------------------------------------------------------------------------- |
 | JournallingReportMailbox | Name of an existing mailbox used for sending journalling reports<sup>1</sup> |
 
 1: This parameter is only required to import DSC, related journalling configuration settings are not provided.
+
+{{% /alert %}}
+
+{{% alert title="Warning" color="danger" %}}
+
+Any existing settings in a tenancy that match the name or UID of any settings in the DSC will be overwritten.
+
+{{% /alert %}}
 
 ##### Service Principal permissions
 

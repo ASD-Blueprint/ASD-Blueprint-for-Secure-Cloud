@@ -27,7 +27,7 @@ Expiring offline access may have an impact on business continuity if the expiry 
 
 {{% alert title="AIP evolution" color="info" %}}
 
-Azure Information Protection has evolved from a number of technologies used to provide encryption and rights management services, [this](https://learn.microsoft.com/en-us/azure/information-protection/aka) page attempts to clarify any confusion on branding and terminology. The [Azure Information Protection FAQ](https://learn.microsoft.com/en-us/azure/information-protection/faqs) should also be checked for additional insights.
+Azure Information Protection has evolved from a number of technologies used to provide encryption and rights management services, [this](https://learn.microsoft.com/en-au/azure/information-protection/aka) page attempts to clarify any confusion on branding and terminology. The [Azure Information Protection FAQ](https://learn.microsoft.com/en-au/azure/information-protection/faqs) should also be checked for additional insights.
 
 {{% /alert %}}
 
@@ -81,10 +81,10 @@ The super user feature ensures that authorised users or services will always hav
 
 #### References
 
-* [Azure Information Protection - also known as ...](https://learn.microsoft.com/en-us/azure/information-protection/aka)
-* [Configure usage rights for Azure Information Protection](https://learn.microsoft.com/en-us/azure/information-protection/configure-usage-rights)
-* [Configuring super users for Azure Information Protection and discovery services or data recovery](https://learn.microsoft.com/en-us/azure/information-protection/configure-super-users)
-* [Frequently asked questions for Azure Information Protection (AIP)](https://learn.microsoft.com/en-us/azure/information-protection/faqs)
+* [Azure Information Protection - also known as ...](https://learn.microsoft.com/en-au/azure/information-protection/aka)
+* [Configure usage rights for Azure Information Protection](https://learn.microsoft.com/en-au/azure/information-protection/configure-usage-rights)
+* [Configuring super users for Azure Information Protection and discovery services or data recovery](https://learn.microsoft.com/en-au/azure/information-protection/configure-super-users)
+* [Frequently asked questions for Azure Information Protection (AIP)](https://learn.microsoft.com/en-au/azure/information-protection/faqs)
 * [Protect your sensitive data with Microsoft Purview](https://learn.microsoft.com/en-au/purview/information-protection)
 * [Restrict access to content by using sensitivity labels to apply encryption](https://learn.microsoft.com/en-au/purview/encryption-sensitivity-labels)
-* [What is Azure Information Protection?](https://learn.microsoft.com/en-us/azure/information-protection/what-is-information-protection)
+* [What is Azure Information Protection?](https://learn.microsoft.com/en-au/azure/information-protection/what-is-information-protection)

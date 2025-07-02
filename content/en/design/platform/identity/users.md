@@ -154,4 +154,4 @@ Emergency access or 'break glass' accounts are accounts used to restore access t
 
 * [Service Account Overview](https://learn.microsoft.com/entra/architecture/secure-service-accounts)
 * [Service Account Governance](https://learn.microsoft.com/entra/architecture/govern-service-accounts)
-* [Azure Roles Types](https://learn.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles)
+* [Azure Roles Types](https://learn.microsoft.com/en-au/azure/role-based-access-control/rbac-and-directory-admin-roles)

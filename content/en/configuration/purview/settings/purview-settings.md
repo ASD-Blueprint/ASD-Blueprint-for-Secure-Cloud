@@ -59,4 +59,4 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### References
 
-- [The new Purview portal](https://learn.microsoft.com/en-us/purview/purview-portal)
+- [The new Purview portal](https://learn.microsoft.com/en-au/purview/purview-portal)

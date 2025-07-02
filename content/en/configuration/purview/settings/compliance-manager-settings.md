@@ -43,4 +43,4 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### References
 
-- [Compliance Manager](https://learn.microsoft.com/en-us/purview/compliance-manager-setup)
+- [Compliance Manager](https://learn.microsoft.com/en-au/purview/compliance-manager-setup)

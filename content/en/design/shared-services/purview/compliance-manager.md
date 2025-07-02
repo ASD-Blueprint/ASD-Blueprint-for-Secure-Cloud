@@ -35,4 +35,4 @@ Assessments exist for many different Australian and international standards and 
 
 * [Essential Eight Maturity Model](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model)
 * [Information Security Manual (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism)
-* [Microsoft Purview Compliance Manager](https://learn.microsoft.com/en-us/purview/compliance-manager)
+* [Microsoft Purview Compliance Manager](https://learn.microsoft.com/en-au/purview/compliance-manager)

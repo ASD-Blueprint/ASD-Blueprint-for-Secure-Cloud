@@ -118,5 +118,5 @@ Auto-labeling polices are in simulation mode by default and must be individually
 
 #### References
 
-- [Apply a sensitivity label to content automatically](https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically)
+- [Apply a sensitivity label to content automatically](https://learn.microsoft.com/en-au/purview/apply-sensitivity-label-automatically)
 - [Regular expression quick reference](https://learn.microsoft.com/en-au/dotnet/standard/base-types/regular-expression-language-quick-reference)

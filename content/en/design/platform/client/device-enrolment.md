@@ -10,7 +10,7 @@ Microsoft Intune provides a mechanism for enrolling devices into Entra ID. Once 
 
 Microsoft Intune provides three separate experiences to enrol iOS devices into Entra ID:
 
-1. **Device Enrolment Program (DEP)** - This experience provides a managed device enrolment process. The device serial number is registered with Apple Business Manager which then allows Microsoft Intune to bypass assisted setup by preconfigured device settings. The user's account will be assigned to the device and the device will be marked as a `supervised` device.
+1. **Device Enrolment Program (DEP)** - This experience provides a managed device enrolment process. The device serial number is registered with Apple Business Manager which then allows Microsoft Intune to bypass assisted setup by pre-configured device settings. The user's account will be assigned to the device and the device will be marked as a `supervised` device.
 2. **Device Enrolment Manager (DEM)** - The DEM experience assigns a single Entra ID account as the owner of the device. End users cannot administer or purchase any apps on the device.
 3. **User Enrolment** - The user enrolment process requires users to setup an iOS device and manually install the Company Portal app. This registers the device as a Microsoft Intune enrolled device. The device will be marked as a Bring Your Own Device object.
 

@@ -15,7 +15,7 @@ Microsoft Purview encompasses a number of solutions which can be used to protect
 
 While the Purview solutions outlined above integrate with several end-user applications and services, the design guidance is largely focussed on email communications. This approach has been taken due to the detailed email marking requirements outlined in the PSPF and the complexity associated with using Purview to detect implicit sensitive and security classified information.
 
-Purview has many specific requirements depending on which applications, services and document types are used across an organisation. Organisations must assess Microsoft's [minimum versions for sensitivity labels in Office apps](https://learn.microsoft.com/en-us/purview/sensitivity-labels-versions) documentation and the Purview deployment guides in conjunction with this design and configuration guidance to ensure suitable implementation. [Known issues with sensitivity labels in Office apps](https://support.microsoft.com/en-au/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc) are also tracked and should be checked prior to implementation.
+Purview has many specific requirements depending on which applications, services and document types are used across an organisation. Organisations must assess Microsoft's [minimum versions for sensitivity labels in Office apps](https://learn.microsoft.com/en-au/purview/sensitivity-labels-versions) documentation and the Purview deployment guides in conjunction with this design and configuration guidance to ensure suitable implementation. [Known issues with sensitivity labels in Office apps](https://support.microsoft.com/en-au/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc) are also tracked and should be checked prior to implementation.
 
 ### Related information
 
@@ -43,5 +43,5 @@ Purview has many specific requirements depending on which applications, services
 * [Learn about data loss prevention](https://learn.microsoft.com/en-au/purview/dlp-learn-about-dlp)
 * [Microsoft Purview Compliance Manager](https://learn.microsoft.com/en-au/purview/compliance-manager)
 * [Microsoft Purview Information Protection Guide for Australian Government compliance with PSPF](https://learn.microsoft.com/en-au/compliance/anz/pspf-overview)
-* [Minimum versions for sensitivity labels in Office apps](https://learn.microsoft.com/en-us/purview/sensitivity-labels-versions)
+* [Minimum versions for sensitivity labels in Office apps](https://learn.microsoft.com/en-au/purview/sensitivity-labels-versions)
 * [Protect your sensitive data with Microsoft Purview](https://learn.microsoft.com/en-au/purview/information-protection)

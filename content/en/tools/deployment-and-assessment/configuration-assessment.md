@@ -13,7 +13,7 @@ When using automated configuration files, organisations should note they will co
 
 {{% /alert %}}
 
-### Overview 
+### Overview
 
 Microsoft 365 Desired State Configuration (M365DSC) is a configuration-as-code tool developed by Microsoft to automate the configuration of Microsoft 365 services. M365DSC can also be used to undertake automated assessments of an M365 configuration in order to complement manual and other automated assessment tools.
 
@@ -128,5 +128,5 @@ Remove all app permissions, and any service principal role assignments or other 
 * [M365DSC export tool](https://export.microsoft365dsc.com)
 * [M365DSC prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites)
 * [M365DSC user guide](https://microsoft365dsc.com/user-guide/get-started/how-to-install)
-* [Understanding application-only access](https://learn.microsoft.com/en-us/entra/identity-platform/app-only-access-primer)
-* [WinRM setup](https://learn.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)
+* [Understanding application-only access](https://learn.microsoft.com/en-au/entra/identity-platform/app-only-access-primer)
+* [WinRM setup](https://learn.microsoft.com/en-au/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)

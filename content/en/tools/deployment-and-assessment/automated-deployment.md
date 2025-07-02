@@ -152,5 +152,5 @@ If significant or reoccurring errors are encountered, please feel free to contac
 * [M365DSC export tool](https://export.microsoft365dsc.com)
 * [M365DSC prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites)
 * [M365DSC user guide](https://microsoft365dsc.com/user-guide/get-started/how-to-install)
-* [Understanding application-only access](https://learn.microsoft.com/en-us/entra/identity-platform/app-only-access-primer)
-* [WinRM setup](https://learn.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)
+* [Understanding application-only access](https://learn.microsoft.com/en-au/entra/identity-platform/app-only-access-primer)
+* [WinRM setup](https://learn.microsoft.com/en-au/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)

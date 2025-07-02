@@ -17,9 +17,9 @@ For inter-organisation email collaboration using a Purview-based shared labellin
 
 ### The influence of msip_labels metadata on auto-labelling
 
-When an email is sent, metadata associated with the sensitivity label applied to the email is inserted in the [*msip_labels*](https://learn.microsoft.com/en-us/information-protection/develop/concept-mip-metadata) X-header. As an email is replied to or forwarded between tenants, each tenant adds metadata associated with its own label applied to the email (if any) into the X-header. An X-header can have metadata for multiple tenant's labels, but only metadata for one label per tenant - if a label is changed on a replied to or forwarded email, the metadata associated with the previous label is overwritten.
+When an email is sent, metadata associated with the sensitivity label applied to the email is inserted in the [*msip_labels*](https://learn.microsoft.com/en-au/information-protection/develop/concept-mip-metadata) X-header. As an email is replied to or forwarded between tenants, each tenant adds metadata associated with its own label applied to the email (if any) into the X-header. An X-header can have metadata for multiple tenant's labels, but only metadata for one label per tenant - if a label is changed on a replied to or forwarded email, the metadata associated with the previous label is overwritten.
 
-When an email is received the *msip_labels* X-header is checked for any metadata associated with a label configured in the local tenant. If such metadata is found it can cause auto-labelling policy rules to be ignored and the label associated with the metadata applied instead, unless the *automatically replace existing labels that have the same or lower priority* option is checked in applicable auto-labelling policies. The setting is mentioned [here](https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically#creating-an-auto-labeling-policy) in point 10.
+When an email is received the *msip_labels* X-header is checked for any metadata associated with a label configured in the local tenant. If such metadata is found it can cause auto-labelling policy rules to be ignored and the label associated with the metadata applied instead, unless the *automatically replace existing labels that have the same or lower priority* option is checked in applicable auto-labelling policies. The setting is mentioned [here](https://learn.microsoft.com/en-au/purview/apply-sensitivity-label-automatically#creating-an-auto-labeling-policy) in point 10.
 
 The following *msip_labels* X-header example has been formatted with linebreaks for visibility and was the result of an email an email exchange between users in different tenant:
 
@@ -67,5 +67,5 @@ For inter-organisation email collaboration using a Purview-based shared labellin
 #### References
 
 * [Australian Government Email Protective Marking Standard](https://www.protectivesecurity.gov.au/publications-library/australian-government-email-protective-marking-standard)
-* [Automatically apply a sensitivity label to Microsoft 365 data](https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically)
-* [Microsoft Information Protection SDK - Metadata](https://learn.microsoft.com/en-us/information-protection/develop/concept-mip-metadata)
+* [Automatically apply a sensitivity label to Microsoft 365 data](https://learn.microsoft.com/en-au/purview/apply-sensitivity-label-automatically)
+* [Microsoft Information Protection SDK - Metadata](https://learn.microsoft.com/en-au/information-protection/develop/concept-mip-metadata)

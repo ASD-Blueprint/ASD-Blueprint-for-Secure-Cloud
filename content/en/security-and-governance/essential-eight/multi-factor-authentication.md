@@ -210,4 +210,4 @@ This includes the processing, analysis, and response to the following event logs
 
 - ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
 - Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-- Microsoft's [*Guidance for meeting ASD's Essential Eight - Multi-Factor Authentication*](https://learn.microsoft.com/en-us/compliance/anz/e8-mfa)
+- Microsoft's [*Guidance for meeting ASD's Essential Eight - Multi-Factor Authentication*](https://learn.microsoft.com/en-au/compliance/anz/e8-mfa)

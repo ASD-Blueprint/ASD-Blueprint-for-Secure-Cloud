@@ -162,4 +162,4 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### References
 
-* [Data Loss Prevention policy reference](https://learn.microsoft.com/en-us/purview/dlp-policy-reference)
+* [Data Loss Prevention policy reference](https://learn.microsoft.com/en-au/purview/dlp-policy-reference)

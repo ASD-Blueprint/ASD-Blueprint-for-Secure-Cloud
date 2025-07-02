@@ -257,12 +257,12 @@ By associating a sensitivity label with a Conditional Access Authentication Cont
 
 #### References
 
-* [Automatically apply a sensitivity label to Microsoft 365 data](https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically)
-* [Conditional access policy for SharePoint sites and OneDrive](https://learn.microsoft.com/en-us/sharepoint/authentication-context-example)
+* [Automatically apply a sensitivity label to Microsoft 365 data](https://learn.microsoft.com/en-au/purview/apply-sensitivity-label-automatically)
+* [Conditional access policy for SharePoint sites and OneDrive](https://learn.microsoft.com/en-au/sharepoint/authentication-context-example)
 * [Information Security Manual (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism)
 * [Learn about data loss prevention](https://learn.microsoft.com/en-au/purview/dlp-learn-about-dlp)
-* [Microsoft Purview Information Protection Guide for Australian Government compliance with PSPF](https://learn.microsoft.com/en-us/compliance/anz/pspf-overview)
+* [Microsoft Purview Information Protection Guide for Australian Government compliance with PSPF](https://learn.microsoft.com/en-au/compliance/anz/pspf-overview)
 * [Protect your sensitive data with Microsoft Purview](https://learn.microsoft.com/en-au/purview/information-protection)
 * [Protective Security Policy Framework Standards](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-standards)
 * [Restrict access to content by using sensitivity labels to apply encryption](https://learn.microsoft.com/en-au/purview/encryption-sensitivity-labels)
-* [What is Azure Information Protection?](https://learn.microsoft.com/en-us/azure/information-protection/what-is-information-protection)
+* [What is Azure Information Protection?](https://learn.microsoft.com/en-au/azure/information-protection/what-is-information-protection)

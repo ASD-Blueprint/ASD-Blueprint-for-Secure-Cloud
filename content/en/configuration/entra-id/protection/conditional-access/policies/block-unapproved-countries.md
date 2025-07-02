@@ -125,4 +125,4 @@ Updates or changes to the Network assignment are also reflected in the Locations
 * [Configure Microsoft Entra multifactor authentication settings](https://learn.microsoft.comentra/identity/authentication/howto-mfa-mfasettings)
 * [System-preferred multifactor authentication - Authentication methods policy](https://learn.microsoft.com/entra/identity/authentication/concept-system-preferred-multifactor-authentication)
 * [Protecting authentication methods in Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-default-enablement)
-* [Conditional Access: Network assignment](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-assignment-network)
+* [Conditional Access: Network assignment](https://learn.microsoft.com/en-au/entra/identity/conditional-access/concept-assignment-network)

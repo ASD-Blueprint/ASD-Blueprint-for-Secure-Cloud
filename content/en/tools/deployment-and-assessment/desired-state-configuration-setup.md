@@ -17,7 +17,7 @@ To deploy or assess an M365DSC configuration, the following prerequisites are re
 * Knowledge of the [Microsoft M365DSC prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites/).
 * An admin account on a Windows host with connectivity to Entra ID and Microsoft 365, and with:
   * Powershell 5.1 or 7.3+ with the M365DSC module and dependencies installed. Instructions can be found [here](https://microsoft365dsc.com/user-guide/get-started/how-to-install/).
-  * The WinRM service configured and running. Instructions can be found [here](https://learn.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management/).
+  * The WinRM service configured and running. Instructions can be found [here](https://learn.microsoft.com/en-au/windows/win32/winrm/installation-and-configuration-for-windows-remote-management/).
 * The DSC file for the targeted M365 service (discussed below).
 * A DSC configuration data file from a [configuration index](#configuration) page.
 
@@ -117,5 +117,5 @@ Refer to the [automated deployment]({{<ref "tools/deployment-and-assessment/auto
 * [M365DSC export tool](https://export.microsoft365dsc.com)
 * [M365DSC prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites)
 * [M365DSC user guide](https://microsoft365dsc.com/user-guide/get-started/how-to-install)
-* [Understanding application-only access](https://learn.microsoft.com/en-us/entra/identity-platform/app-only-access-primer)
-* [WinRM setup](https://learn.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)
+* [Understanding application-only access](https://learn.microsoft.com/en-au/entra/identity-platform/app-only-access-primer)
+* [WinRM setup](https://learn.microsoft.com/en-au/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)

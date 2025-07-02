@@ -169,4 +169,4 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### References
 
-* [Tenant settings](https://learn.microsoft.com/en-us/power-platform/admin/tenant-settings)
+* [Tenant settings](https://learn.microsoft.com/en-au/power-platform/admin/tenant-settings)

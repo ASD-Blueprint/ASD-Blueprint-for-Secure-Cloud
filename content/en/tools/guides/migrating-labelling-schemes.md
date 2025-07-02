@@ -55,7 +55,7 @@ Leaving old sensitivity labels in place is simple in terms of upfront effort, bu
 
 Azure Rights Management usage rights associated with old sensitivity labels can add complexity to a decision to relabel information, or to maintain or delete old labels:
 
-* If the intent is to relabel information and the old label usage rights do not permit reprotection, the [usage rights may need modification](https://learn.microsoft.com/en-us/azure/information-protection/configure-usage-rights).
+* If the intent is to relabel information and the old label usage rights do not permit reprotection, the [usage rights may need modification](https://learn.microsoft.com/en-au/azure/information-protection/configure-usage-rights).
 * If a label is deleted, the usage rights and protection template associated with that label remain archived in the Azure Information Protection tenant, allowing information associated with the old label to still be accessed. If the archived protection templates are to persist after label deletion, and if usage rights associated with new equivalent labels were ever updated, the old protection templates also require updating to maintain parity.
 
 {{% alert title="Warning" color="warning" %}}
@@ -193,7 +193,7 @@ Deleting labels carries some caveats which are documented in Microsoft's [removi
 
 * [Australian Government Email Protective Marking Standard](https://www.protectivesecurity.gov.au/publications-library/australian-government-email-protective-marking-standard)
 * [Australian Government Protective Security Policy Framework (PSPF)](https://www.protectivesecurity.gov.au/pspf-annual-release)
-* [Configure usage rights for Azure Information Protection](https://learn.microsoft.com/en-us/azure/information-protection/configure-usage-rights)
+* [Configure usage rights for Azure Information Protection](https://learn.microsoft.com/en-au/azure/information-protection/configure-usage-rights)
 * [driveItem: assignSensitivityLabel](https://learn.microsoft.com/en-au/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0&WT.mc_id=M365-MVP-9501&tabs=htt)
 * [Microsoft Purview Information Protection client](https://learn.microsoft.com/en-au/purview/information-protection-client?tabs=devices%2Cinstall-client-exe%2Cclassification-file-types%2Cexcluded-folders)
 * [Overview of Content search](https://learn.microsoft.com/en-au/purview/ediscovery-content-search-overview)

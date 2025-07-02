@@ -21,7 +21,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% alert title="Retention policy state" color="info" %}}
 
-Retention policies are enabled by default after creation. Administrators should be aware of the potential for some references to Microsoft 365 groups to remain following deletion as described [here](https://learn.microsoft.com/en-us/purview/retention-settings#what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied).
+Retention policies are enabled by default after creation. Administrators should be aware of the potential for some references to Microsoft 365 groups to remain following deletion as described [here](https://learn.microsoft.com/en-au/purview/retention-settings#what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied).
 
 {{% /alert %}}
 
@@ -88,5 +88,5 @@ Retention policies are enabled by default after creation. Administrators should 
 
 #### References
 
-* [Learn about data lifecycle management](https://learn.microsoft.com/en-us/purview/data-lifecycle-management)
-* [Create and configure retention policies](https://learn.microsoft.com/en-us/purview/create-retention-policies?tabs=teams-retention)
+* [Learn about data lifecycle management](https://learn.microsoft.com/en-au/purview/data-lifecycle-management)
+* [Create and configure retention policies](https://learn.microsoft.com/en-au/purview/create-retention-policies?tabs=teams-retention)

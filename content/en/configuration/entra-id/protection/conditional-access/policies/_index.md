@@ -59,4 +59,4 @@ Microsoft-managed policies may be created as a result of other Entra ID settings
 | Name          | Require multifactor authentication for all users |
 | Enable policy |                                              Off |
 
-Refer to the [Microsoft-managed policies](https://learn.microsoft.com/en-us/entra/identity/conditional-access/managed-policies) article for additional information.
+Refer to the [Microsoft-managed policies](https://learn.microsoft.com/en-au/entra/identity/conditional-access/managed-policies) article for additional information.

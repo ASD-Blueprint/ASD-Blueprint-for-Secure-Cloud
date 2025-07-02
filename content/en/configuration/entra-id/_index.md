@@ -31,7 +31,7 @@ Some of the Entra ID configurations cannot be assessed using a DSC blueprint. Pl
 
 | Configuration                 | Blueprint automation provided |
 | ----------------------------- | ----------------------------- |
-| **Properties**                | No                            |
+| Identity Properties           | No                            |
 | **Users**                     | No                            |
 | **Groups**                    |                               |
 | - General                     | No                            |
@@ -59,7 +59,7 @@ Some of the Entra ID configurations cannot be assessed using a DSC blueprint. Pl
 
 4: A Conditional Access *terms of use* policy must be created manually before performing a DSC import. You will be promoted for the name of a terms of use policy when importing the DSC Blueprint.
 
-5: The Microsoft Intune Enrolment app used in the [DEV - G - Intune enrolment with strong auth]({{<ref "protection/conditional-access/policies/intune-enrolment">}}) policy is not created by default in new tenants, see the [require multifactor authentication for Intune device enrollments](https://learn.microsoft.com/en-us/mem/intune/enrollment/multi-factor-authentication#configure-intune-to-require-multifactor-authentication-at-device-enrollment) page for instructions to create it before performing a DSC import.
+5: The Microsoft Intune Enrolment app used in the [DEV - G - Intune enrolment with strong auth]({{<ref "protection/conditional-access/policies/intune-enrolment">}}) policy is not created by default in new tenants, see the [require multifactor authentication for Intune device enrollments](https://learn.microsoft.com/en-au/mem/intune/enrollment/multi-factor-authentication#configure-intune-to-require-multifactor-authentication-at-device-enrollment) page for instructions to create it before performing a DSC import.
 
 6: Named Location IP addresses must be set manually. Refer to [Named Locations]({{<ref "protection/conditional-access/named-locations">}}) for configuration guidance.
 
@@ -67,29 +67,27 @@ Some of the Entra ID configurations cannot be assessed using a DSC blueprint. Pl
 
 #### Desired State Configuration
 
-Before using the below DSC file, please refer to the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page for instructions.
+Before using the below DSC file, please refer to the [setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) and [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) pages for instructions.
 
-{{% alert title="Warning" color="danger" %}}
+**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/asdbpsc-dsc-entra.txt" %}} Entra DSC file {{% /download %}} and rename the linked .txt file to .ps1.
 
-Any existing settings in a tenancy that match the name or UID of any settings in the DSC will be overwritten.
+**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/configuration-data.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
 
-{{% /alert %}}
+{{% alert title="Extra parameters" color="info"%}}
 
-| Desired State Configuration file:                                                                                                                                      |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Download {{% download file="/content/files/automation/dsc/asdbpsc-dsc-entra.txt" %}} Entra ID DSC {{% /download %}} <br>*The linked .txt file must be renamed to .ps1* |
-| **Configuration Data File:**                                                                                                                                           |
-| The configuration data file can be found on the [DSC setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) page.                       |
-
-{{% alert title="Extra Parameters" color="info"%}}
-
-The downloaded DSC file requires the following parameters to be populated or you will be prompted for on import:
+The downloaded DSC file requires the following parameters to be populated or you will be prompted for them on import:
 
 | Parameter name     | Contents                                                                                        |
 | ------------------ | ----------------------------------------------------------------------------------------------- |
 | ConditionalExclude | Name of an existing security group to be used as a placeholder for Conditional Access exclusion |
 | PrivUsers          | Name of an existing security group containing all privileged users                              |
 | TermsOfUse         | Name of the terms of use policy used by the organisation                                        |
+
+{{% /alert %}}
+
+{{% alert title="Warning" color="danger" %}}
+
+Any existing settings in a tenancy that match the name or UID of any settings in the DSC will be overwritten.
 
 {{% /alert %}}
 

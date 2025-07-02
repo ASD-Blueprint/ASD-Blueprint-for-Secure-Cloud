@@ -38,5 +38,5 @@ Using both retention policies and labels effectively requires knowledge of at le
 
 * [Govern your data with Microsoft Purview](https://learn.microsoft.com/en-au/purview/manage-data-governance)
 * [Information management legislation](https://www.naa.gov.au/information-management/information-management-legislation)
-* [Learn about data lifecycle management](https://learn.microsoft.com/en-us/purview/data-lifecycle-management)
-* [Learn about retention policies and retention labels](https://learn.microsoft.com/en-us/purview/retention?tabs=table-overriden)
+* [Learn about data lifecycle management](https://learn.microsoft.com/en-au/purview/data-lifecycle-management)
+* [Learn about retention policies and retention labels](https://learn.microsoft.com/en-au/purview/retention?tabs=table-overriden)

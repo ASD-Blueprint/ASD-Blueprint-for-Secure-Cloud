@@ -24,7 +24,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 In order to meet ASD Essential Eight Maturity Level 2 requirements, this policy has been updated to use an Authentication Strength that enforces the use of phishing-resistant MFA methods. This excludes the use of number matching push notifications in Microsoft Authenticator as was previously documented.
 
-The use of [passkeys with Microsoft Authenticator](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-enable-authenticator-passkey) is in public preview.
+The use of [passkeys with Microsoft Authenticator](https://learn.microsoft.com/en-au/entra/identity/authentication/how-to-enable-authenticator-passkey) is in public preview.
 
 Before implementing these settings, organisations should continue to ensure that any settings meet their operational and security requirements.
 
