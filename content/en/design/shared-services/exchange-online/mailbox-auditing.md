@@ -26,7 +26,7 @@ Within cloud native deployments, the option to capture all emails for Security O
 
 ### Hybrid deployments
 
-Journaling within hybrid deployments is accomplished using Exchange Journaling. See (/design/shared-services/exchange-online/journaling.md).
+Journaling within hybrid deployments is accomplished using Exchange Journaling. See [Journaling]({{<ref "/design/shared-services/exchange-online/journaling.md">}})	
 
 ### Mailbox Auditing configuration
 
