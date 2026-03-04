@@ -75,20 +75,20 @@ Auto-labeling polices are in simulation mode by default and must be individually
 
 #### Exchange rules
 
-| Item               |                                                Value |
-| ------------------ | ---------------------------------------------------: |
-| Name               |                         Check for PROTECTED X-header |
-| Description        |                                               _None_ |
-| Conditions         |                              Header matches patterns |
-| Header name        |                                 X-Protective-Marking |
-| Regular expression | `SEC=PROTECTED(?!, CAVEAT=\|[a-zA-Z,= /]*, ACCESS=)` |
+| Item               |                                                          Value |
+| ------------------ | -------------------------------------------------------------: |
+| Name               |                                   Check for PROTECTED X-header |
+| Description        |                                                         _None_ |
+| Conditions         |                                        Header matches patterns |
+| Header name        |                                           X-Protective-Marking |
+| Regular expression | `SEC=PROTECTED(?!\u002C CAVEAT=\|[a-zA-Z,= /]*\u002C ACCESS=)` |
 
-| Item               |                                                    Value |
-| ------------------ | -------------------------------------------------------: |
-| Name               |                              Check for PROTECTED subject |
-| Description        |                                                   _None_ |
-| Conditions         |                                 Subject matches patterns |
-| Regular expression | `\[SEC=PROTECTED(?!, CAVEAT=\|[a-zA-Z,= /]*, ACCESS=)\]` |
+| Item               |                                                              Value |
+| ------------------ | -----------------------------------------------------------------: |
+| Name               |                                        Check for PROTECTED subject |
+| Description        |                                                             _None_ |
+| Conditions         |                                           Subject matches patterns |
+| Regular expression | `\[SEC=PROTECTED(?!\u002C CAVEAT=\|[a-zA-Z,= /]*\u002C ACCESS=)\]` |
 
 ### Additional settings for email
 

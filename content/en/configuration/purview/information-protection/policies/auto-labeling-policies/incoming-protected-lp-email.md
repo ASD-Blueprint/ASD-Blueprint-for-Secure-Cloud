@@ -69,20 +69,20 @@ Auto-labeling polices are in simulation mode by default and must be individually
 
 #### Exchange rules
 
-| Item               |                                                 Value |
-| ------------------ | ----------------------------------------------------: |
-| Name               |          Check for PROTECTED Legal Privilege X-header |
-| Description        |                                                _None_ |
-| Conditions         |                               Header matches patterns |
-| Header name        |                                  X-Protective-Marking |
-| Regular expression | `SEC=PROTECTED(?!, CAVEAT).*, ACCESS=Legal-Privilege` |
+| Item               |                                                           Value |
+| ------------------ | --------------------------------------------------------------: |
+| Name               |                    Check for PROTECTED Legal Privilege X-header |
+| Description        |                                                          _None_ |
+| Conditions         |                                         Header matches patterns |
+| Header name        |                                            X-Protective-Marking |
+| Regular expression | `SEC=PROTECTED(?!\u002C CAVEAT).*\u002C ACCESS=Legal-Privilege` |
 
-| Item               |                                                     Value |
-| ------------------ | --------------------------------------------------------: |
-| Name               |               Check for PROTECTED Legal Privilege subject |
-| Description        |                                                    _None_ |
-| Conditions         |                                  Subject matches patterns |
-| Regular expression | `\[SEC=PROTECTED(?!, CAVEAT).*, ACCESS=Legal-Privilege\]` |
+| Item               |                                                               Value |
+| ------------------ | ------------------------------------------------------------------: |
+| Name               |                         Check for PROTECTED Legal Privilege subject |
+| Description        |                                                              _None_ |
+| Conditions         |                                            Subject matches patterns |
+| Regular expression | `\[SEC=PROTECTED(?!\u002C CAVEAT).*\u002C ACCESS=Legal-Privilege\]` |
 
 ### Additional settings for email
 

@@ -69,20 +69,20 @@ Auto-labeling polices are in simulation mode by default and must be individually
 
 #### Exchange rules
 
-| Item               |                                                  Value |
-| ------------------ | -----------------------------------------------------: |
-| Name               |          Check for PROTECTED Personal Privacy X-header |
-| Description        |                                                 _None_ |
-| Conditions         |                                Header matches patterns |
-| Header name        |                                   X-Protective-Marking |
-| Regular expression | `SEC=PROTECTED(?!, CAVEAT).*, ACCESS=Personal-Privacy` |
+| Item               |                                                            Value |
+| ------------------ | ---------------------------------------------------------------: |
+| Name               |                    Check for PROTECTED Personal Privacy X-header |
+| Description        |                                                           _None_ |
+| Conditions         |                                          Header matches patterns |
+| Header name        |                                             X-Protective-Marking |
+| Regular expression | `SEC=PROTECTED(?!\u002C CAVEAT).*\u002C ACCESS=Personal-Privacy` |
 
-| Item               |                                                      Value |
-| ------------------ | ---------------------------------------------------------: |
-| Name               |               Check for PROTECTED Personal Privacy subject |
-| Description        |                                                     _None_ |
-| Conditions         |                                   Subject matches patterns |
-| Regular expression | `\[SEC=PROTECTED(?!, CAVEAT).*, ACCESS=Personal-Privacy\]` |
+| Item               |                                                                Value |
+| ------------------ | -------------------------------------------------------------------: |
+| Name               |                         Check for PROTECTED Personal Privacy subject |
+| Description        |                                                               _None_ |
+| Conditions         |                                             Subject matches patterns |
+| Regular expression | `\[SEC=PROTECTED(?!\u002C CAVEAT).*\u002C ACCESS=Personal-Privacy\]` |
 
 ### Additional settings for email
 
