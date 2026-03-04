@@ -75,14 +75,14 @@ Auto-labeling polices are in simulation mode by default and must be individually
 | Description        |                                                       _None_ |
 | Conditions         |                                      Header matches patterns |
 | Header name        |                                         X-Protective-Marking |
-| Regular expression | `SEC=PROTECTED, CAVEAT=SH:CABINET(?![a-zA-Z,= /]*, ACCESS=)` |
+| Regular expression | `SEC=PROTECTED\u002C CAVEAT=SH:CABINET(?![a-zA-Z,= /]*\u002C ACCESS=)` |
 
-| Item               |                                                            Value |
-| ------------------ | ---------------------------------------------------------------: |
-| Name               |                              Check for PROTECTED CABINET subject |
-| Description        |                                                           _None_ |
-| Conditions         |                                         Subject matches patterns |
-| Regular expression | `\[SEC=PROTECTED, CAVEAT=SH:CABINET(?![a-zA-Z,= /]*, ACCESS=)\]` |
+| Item               |                                                                      Value |
+| ------------------ | -------------------------------------------------------------------------: |
+| Name               |                                        Check for PROTECTED CABINET subject |
+| Description        |                                                                     _None_ |
+| Conditions         |                                                   Subject matches patterns |
+| Regular expression | `\[SEC=PROTECTED\u002C CAVEAT=SH:CABINET(?![a-zA-Z,= /]*\u002C ACCESS=)\]` |
 
 ### Additional settings for email
 
