@@ -107,17 +107,18 @@ The MFA registration workflow uses [Combined Information Registration](https://d
 
 Previously the [MFA Service Settings](https://learn.microsoft.com/entra/identity/authentication/howto-mfa-mfasettings#mfa-service-settings) do not separate hard time-based one-time password (TOTP) and soft TOTP verification methods - enabling one enables the other. With the introduction of [Authentication Strength](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-strengths) (see below) Hard TOTP and Soft TOTP verification methods can be separated.
 
-Combined security information registration is required to use FIDO2 as an authentication method which means FIDO2 Keys are registered by the user in their account profile in the [security information](https://mysignins.microsoft.com/security-info). There is no centralised administrator provisioning / de-provisioning of keys. In order to add a security key an initial authentication method must have already been set up or a [Temporary Access Pass (TAP)](https://learn.microsoft.com/azure/active-directory/authentication/howto-authentication-temporary-access-pass) (see below) must be used. If a Hard Token is not registered or a TAP has not been enabled there will be a prompt to set up the Microsoft Authenticator app. The app can be registered to the account, but Authentication Strength policies will stop this being used as a second factor.
+Combined security information registration is required to use FIDO2 as an authentication method which means FIDO2 Keys are registered by the user in their account profile in the [security information](https://mysignins.microsoft.com/security-info). FIDO2 security keys are primarily user-registered, with administrative control provided through authentication methods policies and Conditional Access. In order to add a security key an initial authentication method must have already been set up or a [Temporary Access Pass (TAP)](https://learn.microsoft.com/azure/active-directory/authentication/howto-authentication-temporary-access-pass) (see below) must be used. If a Hard Token is not registered or a TAP has not been enabled there will be a prompt to set up the Microsoft Authenticator app. The app can be registered to the account, but Authentication Strength policies will stop this being used as a second factor.
 
 The authentication methods used by users can be monitored using the [Authentication Methods Activity Reports](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-methods-activity).
 
 #### Microsoft Authenticator
 
-The [Microsoft Authenticator App](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-authenticator-app) provides three methods for authentication:
+The [Microsoft Authenticator App](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-authenticator-app) provides four methods for authentication:
 
 - Software Token - The Authenticator App can be used to generate an OATH TOTP verification code after successful authentication with the username and password.
-- Push - Users Verify or Deny a notification sent to the Authenticator App after authentication with a username and password
+- Push - Users verify or deny a notification sent to the Authenticator App after authentication with a username and password
 - Passwordless - After entering a username, the Authenticator App displays a prompt on the registered phone to enter the number which is displayed on the initial login screen
+- Passkey - Users can sign in using a passkey stored in the Authenticator App and complete phishing-resistant authentication using their biometric sign-in or device PIN.
 
 The device on which the Microsoft Authenticator app is installed must be "Microsoft Entra Registered" (as opposed to Microsoft Entra Joined) within the Entra ID tenant to an individual user in order to use passwordless thereby allowing use of personal devices for the purpose of multi-factor authentication.
 
@@ -125,23 +126,25 @@ When implementing MFA via Microsoft Authenticator, organisations should consider
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point      | Design decision | Justification                                                                   |
-| ------------------- | --------------- | ------------------------------------------------------------------------------- |
-| Authentication mode | Push            | Enables enhanced MFA capabilities without enabling passwordless authentication. |
-| Number matching     | Enabled         | Reduces the risk of push notification MFA fatigue attacks.                      |
-| Additional context  | Enabled         | Assist users in identifying legitimate MFA requests.                            |
+| Decision point      | Design decision                                                                          | Justification                                                                                                                                        |
+| ------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authentication mode | Push (default) / Passkey (preferred where phishing-resistant authentication is required) | Enables MFA capabilities; however, this method is not phishing-resistant and should not be used where phishing-resistant authentication is required. |
+| Number matching     | Enabled                                                                                  | Reduces the risk of push notification MFA fatigue attacks.                                                                                           |
+| Additional context  | Enabled                                                                                  | Assist users in identifying legitimate MFA requests.                                                                                                 |
 
 {{% /alert %}}
 
 {{% alert title="Note" color="info" %}}
 
-Microsoft Authenticator is not phishing resistant. In addition to the above configuration, organisations electing to implement Microsoft Authenticator should also configure Conditional Access policies to require managed devices to get protection from external phishing threats and restrict access to the boundaries of specific countries by using the GPS signal from the device.
+Microsoft Authenticator software token, push notification and passwordless sign-in methods are not phishing resistant. Organisations electing to implement these methods should also configure Conditional Access policies to require managed devices to get protection from external phishing threats and restrict access to the boundaries of specific countries by using location-based Conditional Access policies.
+
+Passkeys in Microsoft Authenticator are phishing resistant when configured as a Passkey (FIDO2) authentication method and enforced using phishing-resistant authentication strength.
 
 {{% /alert %}}
 
 #### Windows Hello for Business
 
-Windows Hello for Business authentication is tied to organisation devices. A user needs both the device and a sign-in component such as a PIN or biometric factor to access corporate resources. This provides single sign-on to the device and applications.
+[Windows Hello for Business](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-windows-hello) authentication is tied to organisation devices. A user needs both the device and a sign-in component such as a PIN or biometric factor to access corporate resources. This provides single sign-on to the device and applications.
 
 This authentication method is embedded in devices with a built-in Trusted Platform Module (TPM) which enables PIN and biometric recognition methods. Windows Hello for Business is enabled through Microsoft Intune as part of device enrolment. Users are prompted for a PIN as part of device setup.
 
@@ -155,21 +158,64 @@ The Blueprint recommends disabling biometric authentication. However, organisati
 
 {{% /alert %}}
 
-#### FIDO2 Keys
+#### Passkeys (FIDO2)
 
-The FIDO (Fast IDentity Online) Alliance helps to promote open authentication standards and reduce the use of passwords as a form of authentication. FIDO2 is the latest standard that incorporates the web authentication (WebAuthn) standard. FIDO2 security keys can be used to sign in to Entra ID joined Windows 10/11 devices and get single-sign on to cloud and on-premises resources. Users can also use FIDO2 security keys to sign in to supported web browsers.
+[Passkeys](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-passwordless#fido2-security-keys) are a phishing-resistant authentication method based on FIDO2 standards. Passkeys use public key cryptography and require local user interaction, such as a PIN or biometric gesture, before authentication can occur.
+
+Microsoft Entra ID supports passkeys stored on FIDO2 security keys and within applications such as Microsoft Authenticator, as well as passkeys synchronised across devices using supported platform providers.
+
+Organisations should consider the use of passkeys where phishing-resistant authentication is required, particularly for privileged accounts and remote access scenarios.
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point  | Design decision         | Justification                                                                                                                                                   |
-| --------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorised Keys | Organisational decision | Align with a [compatible FIDO2 security key](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-passwordless#fido2-security-keys) |
+| Decision point          | Design decision                               | Justification                                                                                 |
+| ----------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Enablement and scope    | Enable passkeys for targeted users and groups | Allows controlled rollout and prioritisation of high-risk users.                              |
+| Authentication strength | Phishing-resistant MFA                        | Enforces the use of passkeys for sensitive applications and users through Conditional Access. |
+| FIDO2 key restrictions  | Restrict FIDO2 security keys by AAGUID        | Allows control over approved hardware security keys.                                          |
+| Registration controls   | Configure authentication methods policy       | Controls which users can register passkeys.                                                   |
+
+{{% /alert %}}
+#### FIDO2 Security Keys
+
+FIDO2 security keys are a device-bound passkey option that provide phishing-resistant authentication. These hardware-based authenticators store credentials securely and require user interaction, such as a PIN or biometric gesture, during authentication.
+
+FIDO2 security keys are a form of passkey that remain bound to a physical device and are commonly used in higher assurance scenarios.
+
+{{% alert title="Design decisions" color="warning" %}}
+
+| Decision point          | Design decision                                          | Justification                                                                                            |
+| ----------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Authorised keys         | Restrict FIDO2 security keys by AAGUID                   | Aligns with a compatible FIDO2 security key and allows control over approved hardware authenticators.    |
+| Enablement and scope    | Enable FIDO2 security keys for targeted users and groups | Allows controlled rollout and prioritisation of high-risk users.                                         |
+| Authentication strength | Phishing-resistant MFA                                   | Enforces the use of FIDO2 security keys for sensitive applications and users through Conditional Access. |
+| Registration controls   | Configure authentication methods policy                  | Controls which users can register FIDO2 security keys.                                                   |
+
+{{% /alert %}}
+
+#### Certificate-based authentication
+
+[Certificate-based authentication](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication) provides phishing-resistant authentication using X.509 certificates issued by an organisation’s public key infrastructure. Authentication is performed using a private key stored on the user’s device and a corresponding certificate trusted by Microsoft Entra ID.
+
+Certificate-based authentication can be used for browser-based and application sign-in and supports passwordless authentication scenarios.
+
+Organisations may consider certificate-based authentication where phishing-resistant authentication is required, particularly where an existing public key infrastructure is in place.
+
+{{% alert title="Design decisions" color="warning" %}}
+
+| Decision point          | Design decision                             | Justification                                                                                                         |
+| ----------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Certificate authority   | Restrict to trusted certificate authorities | Ensures only approved issuing authorities can generate valid authentication credentials.                              |
+| User binding            | Configure certificate-to-user mapping       | Ensures certificates are strongly associated with user identities.                                                    |
+| Authentication strength | Phishing-resistant MFA                      | Enforces the use of certificate-based authentication for sensitive applications and users through Conditional Access. |
+| Enablement and scope    | Enable for targeted users and groups        | Allows controlled rollout and prioritisation of high-risk users.                                                      |
+| Certificate revocation  | Implement certificate revocation checking   | Ensures compromised certificates can be invalidated.                                                                  |
 
 {{% /alert %}}
 
 #### Hardware tokens
 
-Entra ID supports the use of OATH-TOTP SHA-1 tokens that refresh codes every 30 or 60 seconds. OATH TOTP hardware tokens come with a secret key, or seed, pre-programmed in the token. These keys must be input into Entra ID. Secret keys are limited to 128 characters, which may not be compatible with all tokens. The secret key can only contain the characters `a-z` or `A-Z` and digits `2-7`, and must be encoded in Base32. Programmable OATH TOTP hardware tokens that can be reseeded can also be set up with Entra ID in the software token setup flow.
+Entra ID supports the use of [OATH-TOTP](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-oath-tokens) SHA-1 tokens that refresh codes every 30 or 60 seconds. OATH TOTP hardware tokens come with a secret key, or seed, pre-programmed in the token. These keys must be input into Entra ID. Secret keys are limited to 128 characters, which may not be compatible with all tokens. The secret key can only contain the characters `a-z` or `A-Z` and digits `2-7`, and must be encoded in Base32. Programmable OATH TOTP hardware tokens that can be reseeded can also be set up with Entra ID in the software token setup flow.
 
 {{% alert title="Design decisions" color="warning" %}}
 
@@ -181,7 +227,7 @@ Entra ID supports the use of OATH-TOTP SHA-1 tokens that refresh codes every 30 
 
 #### Temporary Access Pass
 
-TAP is a time-limited passcode that allows users to register passwordless methods authentication and recover access for their account without a password. This enables uses to recover MFA methods if they lose their authentication devices. An authentication methods policy is used to:
+[TAP](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass) is a time-limited passcode that allows users to register passwordless methods authentication and recover access for their account without a password. This enables uses to recover MFA methods if they lose their authentication devices. An authentication methods policy is used to:
 
 - restrict use of the TAP to select users and groups
 - limit use of the TAP for a defined short period
@@ -227,10 +273,10 @@ Configuration guidance provided as part of the Blueprint primarily addresses req
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point         | Design decision                                                             | Justification                                                                                                             |
-| ---------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Authentication Methods | FIDO2 Key / Windows Hello for Business (Pin Only) on organisational devices | Required to meet Essential Eight Maturity Level 3 requirements with alternative approach to handle unsupported use cases. |
-| Alternative Methods    | Temporary Access Pass                                                       | Enables onboarding and recovery of passwordless MFA methods (i.e. FIDO2 key).                                             |
+| Decision point         | Design decision                                                                                                                                             | Justification                                                                                                                         |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Authentication Methods | Windows Hello for Business (PIN only) on organisational devices / Passkeys (FIDO2) / FIDO2 security keys / Microsoft Entra certificate-based authentication | Required to meet Essential Eight Maturity Level 2 and Level 3 requirements with alternative approach to handle unsupported use cases. |
+| Alternative Methods    | Temporary Access Pass                                                                                                                                       | Enables onboarding and recovery of passwordless MFA methods (i.e. FIDO2 key).                                                         |
 
 {{% /alert %}}
 
@@ -381,7 +427,7 @@ In this scenario, a new user requires a FIDO2 security key to access the Microso
 
 #### Security key reset
 
-In this scenario the user is unable to log on using a security key because they have forgotten the security key PIN. This requires the security key to be reset (wiped of existing information) and re-registered to the user account using the initial security key \issuance process described above.
+In this scenario the user is unable to log on using a security key because they have forgotten the security key PIN. This requires the security key to be reset (wiped of existing information) and re-registered to the user account using the initial security key, issuance process described above.
 
 #### Windows Hello for Business reset
 
