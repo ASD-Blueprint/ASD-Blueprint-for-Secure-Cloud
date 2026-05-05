@@ -47,9 +47,9 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                                  |            Value |
 | ------------------------------------- | ---------------: |
-| Minimum OS version                    | 10.0.19043.10000 |
+| Minimum OS version                    | 10.0.19045       |
 | Maximum OS version                    |   Not configured |
-| Minimum OS version for mobile devices | 10.0.19043.10000 |
+| Minimum OS version for mobile devices | 10.0.19045       |
 | Maximum OS version for mobile devices |   Not configured |
 
 #### Configuration Manager Compliance

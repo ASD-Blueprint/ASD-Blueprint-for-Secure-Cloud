@@ -46,10 +46,10 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                                  |          Value |
 | ------------------------------------- | -------------: |
-| Minimum OS version                    |         14.8.1 |
+| Minimum OS version                    |         18.7.1 |
 | Maximum OS version                    | Not configured |
-| Minimum OS version for mobile devices |         18H107 |
-| Maximum OS version for mobile devices | Not configured |
+| Minimum OS build version              |         22H30  |
+| Maximum OS build version              | Not configured |
 
 #### Microsoft Defender for Endpoint
 
