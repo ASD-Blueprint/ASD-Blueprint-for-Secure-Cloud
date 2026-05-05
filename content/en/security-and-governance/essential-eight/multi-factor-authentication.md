@@ -72,9 +72,11 @@ Applicability to other systems and services is determined by the following table
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The use of Microsoft services constitutes user access to online services per the above table, which at Maturity Level two and three requires phishing-resistant multifactor authentication to be used. For consideration of options for authentication factors, see [Blueprint Design: Authentication](/design/platform/identity/authentication), noting that use of the Microsoft Authenticator application meets a maximum of Maturity Level Three.
+The use of Microsoft services constitutes user access to online services per the above table, which at Maturity Level two and three requires phishing-resistant multi-factor authentication to be used. For consideration of options for authentication factors, see [Blueprint Design: Authentication](/design/platform/identity/authentication), noting that authentication method selection should distinguish between Microsoft Authenticator software token, push notification and passwordless sign-in methods, and Passkeys in Microsoft Authenticator. Passkeys in Microsoft Authenticator are phishing-resistant when configured as a Passkey (FIDO2) authentication method and enforced using phishing-resistant authentication strength.
 
-Similarly, authentication to Windows endpoints constitutes access to other systems, and should similarly require phishing resistant multifactor authentication as described above.
+Phishing-resistant authentication methods include passkeys (FIDO2), FIDO2 security keys, Windows Hello for Business and certificate-based authentication.
+
+Similarly, authentication to Windows endpoints constitutes access to other systems, and should similarly require phishing-resistant multi-factor authentication as described above.
 
 {{% /alert %}}
 
