@@ -70,7 +70,6 @@ None
 | Block multiplayer gaming in the Game Center                         |       Not configured |
 | Block access to network drive in Files app                          |       Not configured |
 
-
 #### Built-in apps
 
 | Item                                                    |                                            Value |
@@ -187,27 +186,27 @@ None
 
 #### Kiosk
 
-| Item                              |          Value |
-| --------------------------------- | -------------: |
-| App to run in kiosk mode          | Not configured |
-| Require AssistiveTouch            | Not configured |
-| Require invert colours            | Not configured |
-| Require mono audio                | Not configured |
-| Require Voice Control             | Not configured |
-| Require VoiceOver                 | Not configured |
-| Require zoom                      | Not configured |
-| Block auto lock                   | Not configured |
-| Block ringer switch               | Not configured |
-| Block screen rotation             | Not configured |
-| Block screen sleep button         | Not configured |
-| Block touch                       | Not configured |
-| Block volume buttons              | Not configured |
-| Allow AssistiveTouch control      | Not configured |
-| Allow invert colours control      | Not configured |
-| Speak on selected text            | Not configured |
-| Allow Voice Control               | Not configured |
-| Allow VoiceOver control           | Not configured |
-| Allow zoom control                | Not configured |
+| Item                         |          Value |
+| ---------------------------- | -------------: |
+| App to run in kiosk mode     | Not configured |
+| Require AssistiveTouch       | Not configured |
+| Require invert colours       | Not configured |
+| Require mono audio           | Not configured |
+| Require Voice Control        | Not configured |
+| Require VoiceOver            | Not configured |
+| Require zoom                 | Not configured |
+| Block auto lock              | Not configured |
+| Block ringer switch          | Not configured |
+| Block screen rotation        | Not configured |
+| Block screen sleep button    | Not configured |
+| Block touch                  | Not configured |
+| Block volume buttons         | Not configured |
+| Allow AssistiveTouch control | Not configured |
+| Allow invert colours control | Not configured |
+| Speak on selected text       | Not configured |
+| Allow Voice Control          | Not configured |
+| Allow VoiceOver control      | Not configured |
+| Allow zoom control           | Not configured |
 
 #### Locked Screen Experience
 
@@ -265,8 +264,8 @@ None
 
 #### Shared iPad
 
-| Item                                 | Value |
-| ------------------------------------ | ----: |
+| Item                                  | Value |
+| ------------------------------------- | ----: |
 | Block Shared iPad temporary sessions​ |   Yes |
 
 #### Wireless

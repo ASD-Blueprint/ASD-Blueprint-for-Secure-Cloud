@@ -50,8 +50,7 @@ Clear text passwords are not accessible by Microsoft Entra Connect.
 
    As per ASD's [_Guidelines for Cryptography_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-cryptography), HMAC-SHA256 is a suitable cryptographic algorithm.
 
-   {{% /alert %}}
-   2. The result of the iterated PBKDF2 function is concatenated with the salted hash and number of SHA256 iterations.
+   {{% /alert %}} 2. The result of the iterated PBKDF2 function is concatenated with the salted hash and number of SHA256 iterations.
 
 7. The outcome of step 6 is then synchronised to Microsoft Entra ID over a secure Transport Layer Security (TLS) connection.
 

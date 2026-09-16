@@ -14,9 +14,9 @@ Organisations are expected to approach this SSP-A template as a starting point f
 
 Text included in the guidance boxes throughout this template should be deleted from an organisation's final SSP.
 
-{{% download file="/content/files/Blueprint System Security Plan Annex Template (March 2026).xlsx" %}} Download the Blueprint System Security Plan Annex Template (.xlsx) {{% /download %}}
+{{% download file="/content/files/Blueprint System Security Plan Annex Template (June 2026).xlsx" %}} Download the Blueprint System Security Plan Annex Template (.xlsx) {{% /download %}}
 
 {{% /alert %}}
 
 The System Security Plan Annex (SSP-A) for `<SYSTEM-NAME>` covers both applicable controls from this document and any additional controls that have been identified. The completed SSP-A for `<SYSTEM-NAME>` can be found at
-{{% download file="/content/files/Blueprint System Security Plan Annex Template (March 2026).xlsx" %}}System Security Plan Annex{{% /download %}}.
+{{% download file="/content/files/Blueprint System Security Plan Annex Template (June 2026).xlsx" %}}System Security Plan Annex{{% /download %}}.
