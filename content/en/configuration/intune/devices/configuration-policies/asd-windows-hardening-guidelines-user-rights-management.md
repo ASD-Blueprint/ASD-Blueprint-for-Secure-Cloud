@@ -1,7 +1,7 @@
 ---
 title: "ASD Windows hardening guidelines - user rights assignment"
 weight: 30
-description: "This section describes the configuration of device configuration profiles within Microsoft Intune associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
+description: "This section describes the settings for device configuration profiles within Microsoft Intune associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
@@ -18,7 +18,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-{{% alert title="Policy import" color="info" %}}
+{{% alert title="Importing policies" color="info" %}}
 
 This configuration policy can be imported.
 

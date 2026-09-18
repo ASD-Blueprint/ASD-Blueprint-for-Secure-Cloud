@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Office features"
-weight: 10
+weight: 15
 description: "This section describes the design decisions associated with installation of Microsoft Office features."
 ---
 

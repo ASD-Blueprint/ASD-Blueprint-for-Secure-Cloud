@@ -1,6 +1,6 @@
 ---
 title: Security baseline for Microsoft Edge
-weight: 30
+weight: 010
 description: "This section describes the configuration of security baselines within Microsoft Intune associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
@@ -18,37 +18,57 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
+{{% alert title="Version" color="info" %}}
+
+This security baseline was created for the [Edge v139 (April 2026)](https://learn.microsoft.com/en-au/intune/intune-service/protect/security-baseline-v2-edge-settings?pivots=edge-v139) release.
+
+{{% /alert %}}
+
 ### Basics
 
 | Item        |                                Value |
 | ----------- | -----------------------------------: |
 | Name        | Security baseline for Microsoft Edge |
-| Description |                                      |
-| Platform    |                 Windows 10 and later |
+| Description |                               _None_ |
+| Platform    |                              Windows |
 
 ### Assignments
 
-| Item            | Value |
-| --------------- | ----: |
-| Included groups |       |
-| Excluded groups |       |
+#### Included groups
+
+| Item   |       Value |
+| ------ | ----------: |
+| Groups | All devices |
+
+#### Excluded groups
+
+| Item   |              Value |
+| ------ | -----------------: |
+| Groups | No groups selected |
+
+### Scope Tags
+
+| Item       |   Value |
+| ---------- | ------: |
+| Scope tags | Default |
 
 ### Configuration settings
 
 #### Microsoft Edge
 
-| Item                                                                                    |    Value |
-| --------------------------------------------------------------------------------------- | -------: |
-| Allow unconfigured sites to be reloaded in Internet Explorer mode                       | Disabled |
-| Allow users to proceed from the HTTPS warning page                                      | Disabled |
-| Enable browser legacy extension point blocking                                          |  Enabled |
-| Enable site isolation for every site                                                    |  Enabled |
-| Enhance images enabled                                                                  | Disabled |
-| Force WebSQL to be enabled                                                              | Disabled |
-| Minimum TLS version enabled                                                             |  Enabled |
-| - Minimum SSL version enabled (Device)                                                  |  TLS 1.2 |
-| Show the Reload in Internet Explorer mode button in the toolbar                         | Disabled |
-| Specifies whether SharedArrayBuffers can be used in a non cross-origin-isolated context | Disabled |
+| Item                                                                                    |                                                  Value |
+| --------------------------------------------------------------------------------------- | -----------------------------------------------------: |
+| Allow unconfigured sites to be reloaded in Internet Explorer mode                       |                                               Disabled |
+| Allow users to proceed from the HTTPS warning page                                      |                                               Disabled |
+| Automatically open downloaded MHT or MHTML files from the web in Internet Explorer mode |                                               Disabled |
+| Dynamic Code Settings                                                                   |                                                Enabled |
+| - Dynamic Code Settings (Device)                                                        | Prevent the browser process from creating dynamic code |
+| Enable Application Bound Encryption                                                     |                                                Enabled |
+| Enable browser legacy extension point blocking                                          |                                                Enabled |
+| Enable site isolation for every site                                                    |                                                Enabled |
+| Show the Reload in Internet Explorer mode button in the toolbar                         |                                               Disabled |
+| Specifies whether SharedArrayBuffers can be used in a non cross-origin-isolated context |                                               Disabled |
+| Allow software WebGL fallback using SwiftShader                                         |                                               Disabled |
 
 ##### Extensions
 
@@ -71,18 +91,6 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ----------------------------------------------------------------------------- | -------: |
 | Allow user-level native messaging hosts (installed without admin permissions) | Disabled |
 
-##### Password manager and protection
-
-| Item                                            |    Value |
-| ----------------------------------------------- | -------: |
-| Enable saving passwords to the password manager | Disabled |
-
-##### Private Network Request Settings
-
-| Item                                                                                            |    Value |
-| ----------------------------------------------------------------------------------------------- | -------: |
-| Specifies whether to allow insecure websites to make requests to more-private network endpoints | Disabled |
-
 ##### SmartScreen settings
 
 | Item                                                                         |   Value |
@@ -91,6 +99,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Configure Microsoft Defender SmartScreen to block potentially unwanted apps  | Enabled |
 | Prevent bypassing Microsoft Defender SmartScreen prompts for sites           | Enabled |
 | Prevent bypassing of Microsoft Defender SmartScreen warnings about downloads | Enabled |
+
+##### Typosquatting Checker settings
+
+| Item                                   |   Value |
+| -------------------------------------- | ------: |
+| Configure Edge Website Typo Protection | Enabled |
 
 ### Related information
 
@@ -101,12 +115,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Design
 
-- None identified
+- [Microsoft Edge for Business](/design/endpoints/applications/microsoft-edge-for-business)
 
 #### Configuration
 
-- None identified
+- [ASD Edge hardening](/configuration/intune/devices/configuration-policies/asd-edge-hardening)
 
 #### References
 
-- None identified
+- [Microsoft Edge security baseline settings reference for Microsoft Intune](https://learn.microsoft.com/en-au/intune/intune-service/protect/security-baseline-v2-edge-settings?pivots=edge-v139)

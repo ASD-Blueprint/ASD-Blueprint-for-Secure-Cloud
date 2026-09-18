@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Office edition"
-weight: 5
+weight: 10
 description: "This section describes the design decisions associated with the editions of Microsoft Office."
 ---
 

@@ -35,8 +35,8 @@ Technical documentation of `<SYSTEM-NAME>`'s logical data flows for connecting t
 
 Technical controls for logical networking for connecting to and between Microsoft services associated with `<SYSTEM-NAME>` are configured with reference to ASD's [_Blueprint for Secure Cloud_](https://blueprint.asd.gov.au) including the following technical configurations:
 
-- all communication between `<SYSTEM-NAME>`'s Windows endpoints and Microsoft 365 components is encrypted by TLS
-- conditional Access policies are configured to restrict access to only specified geographic regions within Australia
+- all communication between `<SYSTEM-NAME>`'s Windows endpoints and Microsoft 365 components is encrypted by TLS 1.3 if available and TLS 1.2 as a minimum.
+- conditional Access policies are configured to restrict access to only specified geographic regions within Australia.
 - `<SYSTEM-NAME>` also uses Microsoft Entra ID Identity Protection to analyse sign-in logs to identify and notify administrators when users are identified as originating from anonymous proxy IP addresses.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
@@ -93,11 +93,11 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to the hosting
 
 #### Design
 
-- [Networking Designs ](/design/endpoints/windows/configuration/networking)
+- [Networking Designs](/design/endpoints/windows/configuration/networking)
 
 #### Configuration
 
-- [Networking ](/configuration/networking)
+- [Networking](/configuration/networking)
 
 #### External links
 

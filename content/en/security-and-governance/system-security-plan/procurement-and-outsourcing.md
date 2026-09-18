@@ -108,7 +108,7 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to procurement
 
 #### Organisational policies and processes implemented
 
-`<SYSTEM-NAME>` only uses cloud services that have been procured through existing `<ORGANISATION-NAME>` supply arrangements. `All cloud services have been configured to store and process data solely in Australia`.
+`<SYSTEM-NAME>` only uses cloud services that have been procured through existing `<ORGANISATION-NAME>` supply arrangements. All cloud services have been configured to store and process data solely in Australia.
 
 The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 

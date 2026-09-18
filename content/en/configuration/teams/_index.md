@@ -20,14 +20,6 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-{{% alert title="Teams new admin experience" color="info" %}}
-
-Microsoft has introduced a number of changes to the Teams admin centre to unify settings and policies. The new admin experience will soon become the default for all organisations, and the configuration guidance provided here aligns with this updated model.
-
-Further information about the changes can be found [here](https://learn.microsoft.com/en-au/microsoftteams/unified-policies-settings-management-teams-admin-center).
-
-{{% /alert %}}
-
 ### Automated Configuration Deployment and Assessment
 
 #### Overview

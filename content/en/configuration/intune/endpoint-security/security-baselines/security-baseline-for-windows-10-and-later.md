@@ -1,6 +1,6 @@
 ---
 title: Security baseline for Windows 10 and later
-weight: 10
+weight: 015
 description: "This section describes the configuration of security baselines within Microsoft Intune associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 

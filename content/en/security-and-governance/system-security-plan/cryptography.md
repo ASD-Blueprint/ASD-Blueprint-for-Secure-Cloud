@@ -117,7 +117,7 @@ No organisational policies or processes have been implemented in `<SYSTEM-NAME>`
 
 - Microsoft Azure and Microsoft 365 services:
 - implement TLS
-- however, `<ORGANISATION-NAME>` notes that Microsoft services do not currently allow organisations to select which TLS versions to use
+- however, `<ORGANISATION-NAME>` notes that Microsoft services do not currently allow organisations to select which TLS versions to use, which is a deviation from ISM-1139 (TLS 1.2 is used as a minimum on communications between Microsoft services)
 - implement AES in Galois Counter Mode (GCM)
 - implement secure renegotiation
 - implement ECDHE as the preferred algorithm

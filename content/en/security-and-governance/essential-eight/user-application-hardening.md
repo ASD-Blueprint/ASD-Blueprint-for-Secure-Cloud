@@ -80,13 +80,19 @@ Internet Explorer is not installed on `<SYSTEM-NAME>` workstations.
 
 **Web browsers**
 
+{{% alert title="Blueprint guidance" color="info" %}}
+
+The Blueprint provides guidance for configuring Microsoft Edge. It also discourages installing secondary browsers as they can unnecessarily increase the attack surface while complicating the consistent enforcement of security policies and patch management.
+
+{{% /alert %}}
+
 The following web browsers are allowed to operate on `<SYSTEM-NAME>` workstations:
 
-| Microsoft Edge                                         | Restriction Applied                                                                                                 |
-| :----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Security settings cannot be changed by users:          | `YES - RESTRICTED VIA WDAC`                                                                                         |
-| Does not process Java from the internet:               | `YES - RESTRICTED VIA WDAC`                                                                                         |
-| Does not process web advertisements from the internet: | `Yes - RESTRICTED VIA WDAC USING BUILT IN EDGE FUNCTIONALITY, AND BLOCKED VIA <ORGANISATION-NAME> <GATEWAY-SYSTEM>` |
+| Microsoft Edge                                         | Restriction Applied                                                                                                                                                  |
+| :----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Security settings cannot be changed by users:          | `YES - RESTRICTED VIA WDAC`                                                                                                                                          |
+| Does not process Java from the internet:               | `YES - RESTRICTED VIA WDAC`                                                                                                                                          |
+| Does not process web advertisements from the internet: | `YES - THIRD-PARTY WEB ADVERTISEMENT BLOCKING IS ENFORCED IN MICROSOFT EDGE VIA WDAC-CONTROLLED EXTENSIONS AND SUPPLEMENTED BY <ORGANISATION-NAME> <GATEWAY-SYSTEM>` |
 
 | `e.g. GOOGLE CHROME`                                   | Restriction Applied |
 | :----------------------------------------------------- | ------------------- |
@@ -135,11 +141,11 @@ Internet Explorer is not installed on `<SYSTEM-NAME>` servers.
 
 The following web browsers are allowed to operate on `<SYSTEM-NAME>` servers:
 
-| Microsoft Edge                                         | Restriction Applied                                                                                                 |
-| :----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Security settings cannot be changed by users:          | `YES - RESTRICTED VIA WDAC`                                                                                         |
-| Does not process Java from the internet:               | `YES - RESTRICTED VIA WDAC`                                                                                         |
-| Does not process web advertisements from the internet: | `Yes - RESTRICTED VIA WDAC USING BUILT IN EDGE FUNCTIONALITY, AND BLOCKED VIA <ORGANISATION-NAME> <GATEWAY-SYSTEM>` |
+| Microsoft Edge                                         | Restriction Applied                                                                                                                                                  |
+| :----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Security settings cannot be changed by users:          | `YES - RESTRICTED VIA WDAC`                                                                                                                                          |
+| Does not process Java from the internet:               | `YES - RESTRICTED VIA WDAC`                                                                                                                                          |
+| Does not process web advertisements from the internet: | `YES - THIRD-PARTY WEB ADVERTISEMENT BLOCKING IS ENFORCED IN MICROSOFT EDGE VIA WDAC-CONTROLLED EXTENSIONS AND SUPPLEMENTED BY <ORGANISATION-NAME> <GATEWAY-SYSTEM>` |
 
 | `e.g. GOOGLE CHROME`                                   | Restriction Applied |
 | :----------------------------------------------------- | ------------------- |
@@ -247,27 +253,27 @@ This includes the processing, analysis, and response to the following event logs
 
 #### Security and governance
 
-- [User application hardening](/security-and-governance/system-security-plan/system-hardening-user-apps)
-- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
 - [Essential Eight - User application hardening](/security-and-governance/essential-eight/user-application-hardening)
 - [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
+- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
+- [User application hardening](/security-and-governance/system-security-plan/system-hardening-user-apps)
 
 #### Design
 
+- [Microsoft Edge for Business](/design/endpoints/applications/microsoft-edge-for-business)
 - [Microsoft Office macro hardening](/design/endpoints/windows/security/microsoft-office-macro-hardening)
 - [Microsoft Office hardening](/design/endpoints/windows/security/microsoft-office-hardening)
-- [Microsoft Edge hardening](/design/endpoints/windows/security/edge-hardening)
 - [Windows Defender application control](/design/endpoints/windows/security/windows-defender-application-control)
 
 #### Configuration
 
-- [Microsoft Intune - Applications](/configuration/intune/apps)
-- [Microsoft Entra ID - Applications](/configuration/entra-id/applications)
 - [Configuration policies](/configuration/intune/devices/configuration-policies)
+- [Microsoft Entra ID - Applications](/configuration/entra-id/applications)
+- [Microsoft Intune - Applications](/configuration/intune/apps)
 - [Permissions](/configuration/defender/system/settings/endpoints/permissions)
 
 #### External links
 
-- ASD's [Essential Eight](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
-- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com)
-- Microsoft's [_Guidance for meeting ASD's Essential Eight - User Application Hardening_](https://learn.microsoft.com/en-au/compliance/anz/e8-app-harden)
+- [Essential Eight](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
+- [Essential Eight user application hardening](https://learn.microsoft.com/en-au/compliance/anz/e8-app-harden)
+- [Service Trust Portal](https://servicetrust.microsoft.com)

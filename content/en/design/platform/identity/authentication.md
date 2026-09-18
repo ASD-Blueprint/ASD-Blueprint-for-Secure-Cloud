@@ -45,16 +45,12 @@ Clear text passwords are not accessible by Microsoft Entra Connect.
 5. Microsoft Entra Connect adds a 10 byte salt to each 64 byte hash
 6. The MD4 hash and newly salted hash are combined and input to the PBKDF2 function to derive keys, see [PKCS #5: Password-Based Cryptography Specification](https://www.ietf.org/rfc/rfc2898.txt).
    1. The PBKDF2 function is iterated 1000 times using the Hash-based Message Authentication Code (HMAC) Secure Hashing Algorithm (SHA) 256 keyed hashing algorithm.
-
-   {{% alert title="Note" color="info" %}}
-
-   As per ASD's [_Guidelines for Cryptography_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-cryptography), HMAC-SHA256 is a suitable cryptographic algorithm.
-
-   {{% /alert %}} 2. The result of the iterated PBKDF2 function is concatenated with the salted hash and number of SHA256 iterations.
-
+   2. The result of the iterated PBKDF2 function is concatenated with the salted hash and number of SHA256 iterations.
 7. The outcome of step 6 is then synchronised to Microsoft Entra ID over a secure Transport Layer Security (TLS) connection.
 
 {{% alert title="Note" color="info" %}}
+
+As per ASD's [_Guidelines for Cryptography_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-cryptography), HMAC-SHA256 is a suitable cryptographic algorithm.
 
 Whilst Microsoft Entra ID knows how the hash was generated, it cannot decrypt the hash as it is a one-way hash.
 

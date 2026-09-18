@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint baseline
-weight: 20
+weight: 005
 description: "This section describes the configuration of security baselines within Microsoft Intune associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 

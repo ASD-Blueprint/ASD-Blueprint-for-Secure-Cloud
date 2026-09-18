@@ -103,7 +103,7 @@ Office productivity suites are not installed on `<SYSTEM-NAME>` servers.
 
 - [Microsoft Office Macro hardening](/design/endpoints/windows/security/microsoft-office-macro-hardening)
 - [Microsoft Office hardening](/design/endpoints/windows/security/microsoft-office-hardening)
-- [Microsoft Edge hardening](/design/endpoints/windows/security/edge-hardening)
+- [Microsoft Edge hardening](/design/endpoints/apps/microsoft-edge-for-business)
 - [Windows Defender application control](/design/endpoints/windows/security/windows-defender-application-control)
 
 #### Configuration

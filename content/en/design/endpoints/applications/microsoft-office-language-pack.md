@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Office language pack"
-weight: 15
+weight: 20
 description: "This section describes the design decisions associated with the Microsoft Office language pack."
 ---
 
